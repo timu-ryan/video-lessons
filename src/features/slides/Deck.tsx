@@ -47,8 +47,8 @@ export function Deck({ lesson }: { lesson: Lesson }) {
     progress: () => toggle('progress'),
     fullscreen: toggleFullscreen,
     audio: () => {
-      const phrase = phraseAtStep(slide, step)
-      if (phrase) playPhrase(lesson.audioDir, phrase.id)
+      const audioId = phraseAtStep(slide, step)?.audioId
+      if (audioId) playPhrase(lesson.audioDir, audioId)
     },
     presenter: () => {
       window.open(
@@ -67,8 +67,8 @@ export function Deck({ lesson }: { lesson: Lesson }) {
   }, [slide, step, next])
 
   useEffect(() => {
-    if (slide.type === 'practice' && step === 1) {
-      playPhrase(lesson.audioDir, slide.answer.id)
+    if (slide.type === 'practice' && step === 1 && slide.phrase.audioId) {
+      playPhrase(lesson.audioDir, slide.phrase.audioId)
     }
   }, [slide, step, lesson.audioDir])
 

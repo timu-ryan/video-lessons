@@ -22,27 +22,28 @@ export function stepCount(slide: Slide): number {
   }
 }
 
-export const DEFAULT_PAUSE_MS = 4000
-
 /** Пауза перед показом ответа на слайде практики. */
 export function pauseMs(slide: Slide): number {
-  return slide.type === 'practice' ? (slide.pauseMs ?? DEFAULT_PAUSE_MS) : 0
+  return slide.type === 'practice' ? slide.pauseMs : 0
 }
 
-/** Все озвучиваемые фразы слайда — для клавиши A и для окна докладчика. */
+/** Все фразы слайда — для клавиши A и для окна докладчика. */
 export function slidePhrases(slide: Slide): Phrase[] {
   switch (slide.type) {
     case 'table':
       return slide.rows
     case 'practice':
-      return [slide.answer]
+      return [slide.phrase]
     case 'dialogue':
       return slide.lines
-        .filter((line) => line.audioId !== undefined)
-        .map((line) => ({ id: line.audioId as string, es: line.es, tr: '', ru: line.ru }))
     default:
       return []
   }
+}
+
+/** Имена аудиофайлов слайда — для окна докладчика. */
+export function slideAudioIds(slide: Slide): string[] {
+  return slidePhrases(slide).flatMap((p) => (p.audioId ? [p.audioId] : []))
 }
 
 /**
@@ -53,14 +54,10 @@ export function phraseAtStep(slide: Slide, step: number): Phrase | undefined {
   switch (slide.type) {
     case 'table':
       return slide.rows[Math.min(step, slide.rows.length - 1)]
-    case 'dialogue': {
-      const phrases = slidePhrases(slide)
-      const line = slide.lines[Math.min(step, slide.lines.length - 1)]
-      if (!line?.audioId) return undefined
-      return phrases.find((p) => p.id === line.audioId)
-    }
+    case 'dialogue':
+      return slide.lines[Math.min(step, slide.lines.length - 1)]
     case 'practice':
-      return slide.answer
+      return slide.phrase
     default:
       return undefined
   }
@@ -76,7 +73,7 @@ export function slideLabel(slide: Slide): string {
     case 'table':
       return slide.part ? `${slide.title} ${slide.part[0]}/${slide.part[1]}` : slide.title
     case 'practice':
-      return `Практика ${slide.index}/${slide.total} — ${slide.ru}`
+      return `Практика ${slide.index}/${slide.total} — ${slide.phrase.ru}`
     case 'dialogue':
       return slide.part ? `${slide.title} ${slide.part[0]}/${slide.part[1]}` : slide.title
     case 'mistake':

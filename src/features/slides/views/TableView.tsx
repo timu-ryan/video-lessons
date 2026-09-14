@@ -7,6 +7,12 @@ import { FS } from './typography'
 /** Колонка перевода. Остаток ширины уходит испанскому — он главный. */
 const RU_COL = 520
 
+/**
+ * Подпись колонки транскрипции. Это свойство нотации, а не урока, поэтому
+ * живёт здесь, а не в данных: сменится нотация — сменится в одном месте.
+ */
+const IPA_LABEL = 'МФА'
+
 export function TableView({
   slide,
   step,
@@ -18,8 +24,8 @@ export function TableView({
 }) {
   const columns = options.translation ? `minmax(0, 1fr) ${RU_COL}px` : 'minmax(0, 1fr)'
   const esHeader = options.transcription
-    ? `${slide.headers[0]} · ${slide.headers[1]}`
-    : slide.headers[0]
+    ? `${slide.headers.es} · ${IPA_LABEL}`
+    : slide.headers.es
 
   return (
     <SlideRoot>
@@ -40,7 +46,7 @@ export function TableView({
         }}
       >
         <span>{esHeader}</span>
-        {options.translation ? <span>{slide.headers[2]}</span> : null}
+        {options.translation ? <span>{slide.headers.ru}</span> : null}
       </div>
 
       <div
@@ -55,7 +61,7 @@ export function TableView({
       >
         {slide.rows.map((row, index) => (
           <Reveal
-            key={row.id}
+            key={row.audioId ?? row.es}
             shown={index <= step}
             style={{
               display: 'grid',
@@ -78,17 +84,18 @@ export function TableView({
               >
                 {row.es}
               </div>
-              {options.transcription ? (
+              {options.transcription && row.ipa ? (
                 <div
                   style={{
                     marginTop: 2,
+                    fontFamily: 'var(--font-ipa)',
                     fontSize: FS.tr,
                     fontWeight: 500,
                     lineHeight: 1.15,
                     color: 'var(--text-3)',
                   }}
                 >
-                  {row.tr}
+                  {row.ipa}
                 </div>
               ) : null}
             </div>

@@ -1,8 +1,10 @@
 @import 'tailwindcss';
 
 /* ---------------------------------------------------------------- шрифт --
-   Manrope, self-hosted. Кириллический сабсет включает U+0301 (знак
-   ударения), поэтому «буэ́нос» рендерится с комбинирующим акутом. */
+   Manrope, self-hosted. В нём нет ни одного знака МФА — даже ударения ˈ,
+   — поэтому транскрипция набирается отдельным семейством (--font-ipa):
+   иначе браузер подставлял бы запасной шрифт по одному глифу и строка
+   получалась бы сборной. */
 
 @font-face {
   font-family: 'Manrope';
@@ -62,6 +64,7 @@
 
   --speaker-a: #b4471f;
   --speaker-b: #1f6b6b;
+  --speaker-c: #6b4a8a;
 
   --ok: #2f6b3f;
   --ok-soft: #e2efe4;
@@ -87,6 +90,7 @@
 
   --speaker-a: #e2643c;
   --speaker-b: #5fb3b3;
+  --speaker-c: #b492d8;
 
   --ok: #6dc088;
   --ok-soft: #1e2c22;
@@ -94,6 +98,13 @@
   --bad-soft: #2e1c1a;
 
   --shadow: 0 8px 40px rgb(0 0 0 / 0.45);
+}
+
+/* Семейство для строк МФА: Noto Sans и DejaVu Sans покрывают блок
+   IPA Extensions целиком, Manrope — нет. Задано переменной, потому что
+   компоненты о шрифтах, как и о цветах, знать не должны. */
+:root {
+  --font-ipa: 'Noto Sans', 'DejaVu Sans', 'Charis SIL', 'Segoe UI', system-ui, sans-serif;
 }
 
 html,

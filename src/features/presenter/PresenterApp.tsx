@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { probeAudio } from '../audio/audio'
 import { SlideView } from '../slides/SlideView'
 import { Stage } from '../slides/Stage'
-import { slideLabel, slidePhrases, stepCount } from '../slides/steps'
+import { slideAudioIds, slideLabel, stepCount } from '../slides/steps'
 import type { Lesson } from '../slides/types'
 import { useHotkeys } from '../slides/useHotkeys'
 import type { DeckState, NavAction, PresenterMessage } from './channel'
@@ -185,7 +185,7 @@ export function PresenterApp({ lesson }: { lesson: Lesson }) {
         )}
       </section>
 
-      <AudioStatus lesson={lesson} slideId={slide.id} ids={slidePhrases(slide).map((p) => p.id)} />
+      <AudioStatus lesson={lesson} slideId={slide.id} ids={slideAudioIds(slide)} />
 
       <footer style={{ fontSize: 13, color: 'var(--text-3)', lineHeight: 1.6 }}>
         → / Space / PageDown — вперёд · ← / PageUp — назад · Home / End — первый / последний ·

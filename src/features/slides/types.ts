@@ -1,23 +1,37 @@
-/** Типы контента урока. Компоненты знают только эти типы, но не сам урок. */
+/**
+ * Типы контента урока — то, что получают компоненты. Это НЕ форма JSON:
+ * в файле урока нет ни нумерации, ни разбивки на части, ни названия раздела
+ * на каждом слайде. Всё это считается при загрузке (features/lessons/derive.ts),
+ * а форму самого файла описывает features/lessons/source.ts.
+ *
+ * Компоненты знают только эти типы, но не сам урок.
+ */
 
-/** Испанская единица. `id` — имя аудиофайла: public/audio/<audioDir>/<id>.mp3 */
+/** Испанская единица: строка таблицы, задание практики, реплика диалога. */
 export interface Phrase {
-  id: string
   /** Испанский — переносится из сценария дословно. */
   es: string
-  /** Транскрипция русскими буквами, с ударением. */
-  tr: string
   /** Перевод. */
   ru: string
+  /** Транскрипция в МФА (IPA). Конвенция записи — в features/lessons/source.ts. */
+  ipa?: string
+  /** Имя аудиофайла: public/audio/<audioDir>/<audioId>.mp3 */
+  audioId?: string
 }
 
 export interface SlideBase {
+  /** Ключ React; если в файле не задан — собирается из типа и номера слайда. */
   id: string
   /** Блоки «ГОВОРИШЬ» из сценария. На слайд не выводятся — только в окно докладчика. */
   notes?: string[]
 }
 
-/** Титульный слайд урока. */
+/** Раздел, в который попал слайд: «3 · Знакомство». Считается по порядку слайдов. */
+export interface SectionRef {
+  section?: string
+}
+
+/** Титульный слайд урока. Всё содержимое приходит из метаданных урока. */
 export interface TitleSlide extends SlideBase {
   type: 'title'
   course: string
@@ -26,7 +40,7 @@ export interface TitleSlide extends SlideBase {
   agenda?: string[]
 }
 
-/** Переходный слайд-заголовок раздела. */
+/** Переходный слайд-заголовок раздела. Номер — по порядку среди разделов. */
 export interface SectionSlide extends SlideBase {
   type: 'section'
   number: string
@@ -36,13 +50,13 @@ export interface SectionSlide extends SlideBase {
 }
 
 /** Таблица фраз: строки открываются по одной. Не более 5 строк. */
-export interface TableSlide extends SlideBase {
+export interface TableSlide extends SlideBase, SectionRef {
   type: 'table'
-  section?: string
   title: string
   /** [1, 2] → «1/2» в углу, когда раздел разрезан на несколько слайдов. */
   part?: [number, number]
-  headers: [string, string, string]
+  /** Подписи колонок: испанская и перевод. Подпись транскрипции — у вьюхи. */
+  headers: { es: string; ru: string }
   rows: Phrase[]
 }
 
@@ -53,32 +67,34 @@ export interface PracticeSlide extends SlideBase {
   group: string
   index: number
   total: number
-  ru: string
-  answer: Phrase
-  /** Длительность паузы, мс. По умолчанию 4000. */
-  pauseMs?: number
+  /** Одна фраза: `ru` — задание, `es` и `ipa` — ответ. */
+  phrase: Phrase
+  /** Длительность паузы, мс — из группы практики. */
+  pauseMs: number
 }
 
-export interface DialogueLine {
+export interface DialogueLine extends Phrase {
   speaker: string
-  es: string
-  ru: string
-  audioId?: string
 }
 
 /** Диалог: реплики появляются построчно. */
-export interface DialogueSlide extends SlideBase {
+export interface DialogueSlide extends SlideBase, SectionRef {
   type: 'dialogue'
-  section?: string
   title: string
   part?: [number, number]
   lines: DialogueLine[]
 }
 
+/**
+ * Что именно неверно. Вьюха подаёт каждый вид по-своему: транскрипцию
+ * набирает шрифтом МФА, у ложного друга в `right` стоит значение, а не фраза.
+ */
+export type MistakeKind = 'pronunciation' | 'grammar' | 'false-friend' | 'usage'
+
 /** Разбор ошибки: неверно (✗, зачёркнуто) → верно (✓) → пояснение. */
-export interface MistakeSlide extends SlideBase {
+export interface MistakeSlide extends SlideBase, SectionRef {
   type: 'mistake'
-  section?: string
+  kind: MistakeKind
   index: number
   total: number
   wrong: string
@@ -111,11 +127,12 @@ export type SlideType = Slide['type']
 
 export interface Speaker {
   name: string
-  /** CSS-цвет реплик персонажа. */
+  /** CSS-цвет реплик — назначается по порядку, в файле урока его нет. */
   color: string
 }
 
 export interface Lesson {
+  /** Строковый номер: ключ реестра и часть адреса `#/lesson/1/0/0`. */
   id: string
   number: number
   title: string

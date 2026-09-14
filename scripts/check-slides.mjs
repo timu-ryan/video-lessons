@@ -12,7 +12,7 @@
  *        --lesson=1 — какой урок проверять
  */
 import { chromium } from 'playwright'
-import { mkdirSync } from 'node:fs'
+import { mkdirSync, readdirSync, readFileSync } from 'node:fs'
 
 const arg = (name, fallback) => {
   const found = process.argv.find((a) => a.startsWith(`--${name}=`))
@@ -37,8 +37,39 @@ const MODES = {
 
 if (SHOTS) mkdirSync(OUT, { recursive: true })
 
+let failed = checkIpa()
+
+/**
+ * Запись в поле `ipa` — фонемная (см. features/lessons/source.ts): смычные
+ * b, d, g пишутся одинаково везде. Аппроксиманты β ð ɣ и боковое ʎ — признак
+ * того, что генератор сполз к более узкой записи; в файле их быть не должно.
+ */
+function checkIpa() {
+  const FORBIDDEN = 'βðɣʎ'
+  const problems = []
+
+  for (const name of readdirSync('lessons').filter((f) => f.endsWith('.json'))) {
+    const lesson = JSON.parse(readFileSync(`lessons/${name}`, 'utf8'))
+    for (const [index, slide] of lesson.slides.entries()) {
+      const phrases = slide.rows ?? slide.lines ?? (slide.phrase ? [slide.phrase] : [])
+      for (const phrase of phrases) {
+        if (!phrase.ipa) continue
+        const found = [...phrase.ipa].filter((c) => FORBIDDEN.includes(c))
+        if (found.length > 0) {
+          problems.push(
+            `${name}, слайд ${index}: «${phrase.ipa}» — запись не фонемная (${[...new Set(found)].join(' ')})`,
+          )
+        }
+      }
+    }
+  }
+
+  console.log(`\n▸ транскрипция: ${problems.length === 0 ? '✓ конвенция соблюдена' : `✗ нарушений: ${problems.length}`}`)
+  for (const p of problems) console.log('    ' + p)
+  return problems.length
+}
+
 const browser = await chromium.launch()
-let failed = 0
 
 for (const [modeName, mode] of Object.entries(MODES)) {
   const page = await browser.newPage({ viewport: { width: 1920, height: 1080 } })

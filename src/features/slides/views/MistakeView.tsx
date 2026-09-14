@@ -1,16 +1,32 @@
 import { SAFE_COL_W } from '../canvas'
-import type { MistakeSlide } from '../types'
+import type { MistakeKind, MistakeSlide } from '../types'
 import { Eyebrow, SlideRoot } from './parts'
 import { FS } from './typography'
+
+/**
+ * Ошибки бывают разного рода, и подача у них разная: в произношении
+ * `wrong`/`right` — это транскрипция, поэтому набирается шрифтом МФА.
+ */
+const KIND_LABEL: Record<MistakeKind, string> = {
+  pronunciation: 'Произношение',
+  grammar: 'Грамматика',
+  'false-friend': 'Ложный друг',
+  usage: 'Употребление',
+}
 
 /**
  * Цвет не единственный носитель смысла: у неверного варианта ещё иконка ✗
  * и зачёркивание, у верного — ✓.
  */
 export function MistakeView({ slide, step }: { slide: MistakeSlide; step: number }) {
+  const ipa = slide.kind === 'pronunciation'
+
   return (
     <SlideRoot>
-      <Eyebrow left={slide.section ?? 'Разбор ошибок'} right={`${slide.index}/${slide.total}`} />
+      <Eyebrow
+        left={`${slide.section ?? 'Разбор ошибок'} · ${KIND_LABEL[slide.kind]}`}
+        right={`${slide.index}/${slide.total}`}
+      />
 
       <div
         style={{
@@ -31,9 +47,10 @@ export function MistakeView({ slide, step }: { slide: MistakeSlide; step: number
           strike
           size={72}
           suffix={slide.when}
+          ipa={ipa}
         />
 
-        <Line shown={step >= 1} icon="✓" tone="ok" text={slide.right} size={80} />
+        <Line shown={step >= 1} icon="✓" tone="ok" text={slide.right} size={80} ipa={ipa} />
 
         <p
           className={step >= 2 ? 'anim-fade' : undefined}
@@ -62,6 +79,7 @@ function Line({
   size,
   strike = false,
   suffix,
+  ipa = false,
 }: {
   shown: boolean
   icon: string
@@ -70,6 +88,7 @@ function Line({
   size: number
   strike?: boolean
   suffix?: string
+  ipa?: boolean
 }) {
   const color = tone === 'bad' ? 'var(--bad)' : 'var(--ok)'
   const soft = tone === 'bad' ? 'var(--bad-soft)' : 'var(--ok-soft)'
@@ -103,6 +122,7 @@ function Line({
       </span>
       <span
         style={{
+          fontFamily: ipa ? 'var(--font-ipa)' : undefined,
           fontSize: size,
           fontWeight: 800,
           lineHeight: 1.12,

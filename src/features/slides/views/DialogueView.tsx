@@ -33,7 +33,7 @@ export function DialogueView({
           const speaker = options.speakers[line.speaker]
           return (
             <Reveal
-              key={`${slide.id}-${index}`}
+              key={line.audioId ?? `${slide.id}-${index}`}
               shown={index <= step}
               style={{
                 display: 'grid',

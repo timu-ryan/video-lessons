@@ -40,7 +40,7 @@ export function PracticeView({
           color: 'var(--text)',
         }}
       >
-        {slide.ru}
+        {slide.phrase.ru}
       </div>
 
       {/* Полоска паузы: пока она бежит, зритель говорит вслух. */}
@@ -99,26 +99,27 @@ export function PracticeView({
         >
           <div
             style={{
-              fontSize: answerSize(slide.answer.es),
+              fontSize: answerSize(slide.phrase.es),
               fontWeight: 800,
               lineHeight: 1.08,
               letterSpacing: '-0.02em',
               color: 'var(--accent)',
             }}
           >
-            {slide.answer.es}
+            {slide.phrase.es}
           </div>
-          {options.transcription ? (
+          {options.transcription && slide.phrase.ipa ? (
             <div
               style={{
                 marginTop: 14,
+                fontFamily: 'var(--font-ipa)',
                 fontSize: FS.ru,
                 fontWeight: 500,
                 lineHeight: 1.2,
                 color: 'var(--text-3)',
               }}
             >
-              {slide.answer.tr}
+              {slide.phrase.ipa}
             </div>
           ) : null}
         </div>
