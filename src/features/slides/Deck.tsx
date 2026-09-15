@@ -7,7 +7,7 @@ import { ProgressBar } from './ProgressBar'
 import { SafeZone } from './SafeZone'
 import { SlideView } from './SlideView'
 import { Stage } from './Stage'
-import { presenterHash } from './route'
+import { homeHash, presenterHash } from './route'
 import { pauseMs, phraseAtStep } from './steps'
 import type { Lesson } from './types'
 import { toggleFullscreen, useHotkeys } from './useHotkeys'
@@ -49,6 +49,11 @@ export function Deck({ lesson }: { lesson: Lesson }) {
     audio: () => {
       const audioId = phraseAtStep(slide, step)?.audioId
       if (audioId) playPhrase(lesson.audioDir, audioId)
+    },
+    // Esc — назад к списку уроков. В полном экране эту клавишу забирает сам
+    // браузер на выход из него, и уходить со слайда посреди записи не нужно.
+    escape: () => {
+      if (!document.fullscreenElement) window.location.hash = homeHash()
     },
     presenter: () => {
       window.open(

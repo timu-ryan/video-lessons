@@ -178,3 +178,27 @@ body.cursor-hidden * {
     animation-duration: 1ms;
   }
 }
+
+/* ------------------------------------------------- экран выбора урока --
+   Единственный экран приложения, который не попадает в кадр. */
+
+.lesson-card {
+  transition:
+    transform 150ms ease-out,
+    border-color 150ms ease-out,
+    box-shadow 150ms ease-out;
+}
+
+.lesson-card:hover,
+.lesson-card:focus-within {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lesson-card:hover,
+  .lesson-card:focus-within {
+    transform: none;
+  }
+}

@@ -1,9 +1,13 @@
 {
   "schemaVersion": 1,
   "number": 1,
+  "level": "A0",
+  "block": "0.1",
   "title": "Первые фразы: привет, как дела и как тебя зовут",
+  "goal": "Поздороваться, познакомиться, быть вежливым и выкрутиться, если ничего не понял",
   "course": "Испанский с нуля",
   "audioDir": "lesson-01",
+  "defaultPauseMs": 4000,
   "speakers": {
     "ana": "Ana",
     "carlos": "Carlos"
@@ -13,18 +17,9 @@
     "ru": "Значение"
   },
   "practiceGroups": [
-    {
-      "name": "Разминка",
-      "pauseMs": 4000
-    },
-    {
-      "name": "Две фразы подряд",
-      "pauseMs": 5000
-    },
-    {
-      "name": "Посложнее — как в жизни",
-      "pauseMs": 6000
-    }
+    { "name": "Разминка", "pauseMs": 4000 },
+    { "name": "Две фразы подряд", "pauseMs": 5000 },
+    { "name": "Посложнее — как в жизни", "pauseMs": 6000 }
   ],
   "slides": [
     {
@@ -39,9 +34,7 @@
     {
       "type": "section",
       "title": "Привет и пока",
-      "notes": [
-        "⏱ 1:00–3:30"
-      ]
+      "notes": ["⏱ 1:00–3:30"]
     },
     {
       "type": "table",
@@ -50,34 +43,43 @@
         {
           "es": "¡Hola!",
           "ru": "Привет / Здравствуйте",
+          "tr": "óла",
           "ipa": "ˈola",
           "audioId": "hola"
         },
         {
           "es": "Buenos días",
           "ru": "Доброе утро / Добрый день (до обеда)",
+          "tr": "буэ́нос ди́ас",
           "ipa": "ˈbwenos ˈdi.as",
           "audioId": "buenos-dias"
         },
         {
           "es": "Buenas tardes",
           "ru": "Добрый день (после обеда, пока светло)",
+          "tr": "буэ́нас та́рдэс",
           "ipa": "ˈbwenas ˈtaɾdes",
           "audioId": "buenas-tardes"
         },
         {
           "es": "Buenas noches",
           "ru": "Добрый вечер / Спокойной ночи",
+          "tr": "буэ́нас но́чес",
           "ipa": "ˈbwenas ˈnotʃes",
           "audioId": "buenas-noches"
         },
         {
           "es": "Hola, buenas",
           "ru": "Здравствуйте (универсально, очень часто)",
+          "tr": "óла, буэ́нас",
           "ipa": "ˈola ˈbwenas",
           "audioId": "hola-buenas"
         }
       ],
+      "short": {
+        "hook": "В семь вечера испанец скажет вам «добрый день». И он не ошибается.",
+        "topic": "Как в Испании делятся сутки: días / tardes / noches"
+      },
       "notes": [
         "«Самое простое слово — hola. Обратите внимание: буква h в испанском никогда не читается. Не „хола“, а „óла“. 🔊",
         "Дальше — приветствия по времени суток. И вот первая ловушка для русскоговорящих: у испанцев день делится не так, как у нас. Buenos días — до обеда, а обедают в Испании поздно, часа в два. 🔊 Buenas tardes — после обеда и пока не стемнело. То есть в семь вечера, когда мы бы сказали „добрый вечер“, испанец скажет buenas tardes. 🔊 Buenas noches — когда уже темно. И это одновременно „добрый вечер“ и „спокойной ночи“. 🔊",
@@ -91,30 +93,35 @@
         {
           "es": "Adiós",
           "ru": "Пока / До свидания",
+          "tr": "адьóс",
           "ipa": "aˈdjos",
           "audioId": "adios"
         },
         {
           "es": "Hasta luego",
           "ru": "Пока (самое частое)",
+          "tr": "а́ста луэ́го",
           "ipa": "ˈasta ˈlwego",
           "audioId": "hasta-luego"
         },
         {
           "es": "Hasta mañana",
           "ru": "До завтра",
+          "tr": "а́ста манья́на",
           "ipa": "ˈasta maˈɲana",
           "audioId": "hasta-manana"
         },
         {
           "es": "Nos vemos",
           "ru": "Увидимся",
+          "tr": "нос вэ́мос",
           "ipa": "nos ˈbemos",
           "audioId": "nos-vemos"
         },
         {
           "es": "Chao",
           "ru": "Пока (разговорное)",
+          "tr": "ча́о",
           "ipa": "ˈtʃao",
           "audioId": "chao"
         }
@@ -126,33 +133,31 @@
     {
       "type": "section",
       "title": "Как дела?",
-      "notes": [
-        "⏱ 3:30–5:00"
-      ]
+      "notes": ["⏱ 3:30–5:00"]
     },
     {
       "type": "table",
       "title": "Как спросить",
-      "headers": {
-        "es": "Вопрос",
-        "ru": "Кому"
-      },
+      "headers": { "es": "Вопрос", "ru": "Кому" },
       "rows": [
         {
           "es": "¿Qué tal?",
           "ru": "Кому угодно, универсально",
+          "tr": "кэ таль",
           "ipa": "ke ˈtal",
           "audioId": "que-tal"
         },
         {
           "es": "¿Cómo estás?",
           "ru": "На «ты»",
+          "tr": "кóмо эстáс",
           "ipa": "ˈkomo esˈtas",
           "audioId": "como-estas"
         },
         {
           "es": "¿Cómo está usted?",
           "ru": "На «вы», вежливо",
+          "tr": "кóмо эстá устэ́д",
           "ipa": "ˈkomo esˈta usˈted",
           "audioId": "como-esta-usted"
         }
@@ -165,25 +170,26 @@
     {
       "type": "table",
       "title": "Как ответить",
-      "headers": {
-        "es": "Ответ"
-      },
+      "headers": { "es": "Ответ" },
       "rows": [
         {
           "es": "Bien, gracias",
           "ru": "Хорошо, спасибо",
+          "tr": "бьен, грáсьяс",
           "ipa": "ˈbjen ˈgɾaθjas",
           "audioId": "bien-gracias"
         },
         {
           "es": "Muy bien",
           "ru": "Очень хорошо",
+          "tr": "муй бьен",
           "ipa": "ˈmwi ˈbjen",
           "audioId": "muy-bien"
         },
         {
           "es": "Regular",
           "ru": "Так себе",
+          "tr": "рэгуля́р",
           "ipa": "reguˈlaɾ",
           "audioId": "regular"
         }
@@ -196,39 +202,38 @@
     {
       "type": "table",
       "title": "Как ответить",
-      "headers": {
-        "es": "Ответ"
-      },
+      "headers": { "es": "Ответ" },
       "rows": [
         {
           "es": "Más o menos",
           "ru": "Более-менее",
+          "tr": "мас о мэ́нос",
           "ipa": "ˈmas o ˈmenos",
           "audioId": "mas-o-menos"
         },
         {
           "es": "¿Y tú?",
           "ru": "А ты?",
+          "tr": "и ту",
           "ipa": "i ˈtu",
           "audioId": "y-tu"
         },
         {
           "es": "¿Y usted?",
           "ru": "А вы?",
+          "tr": "и устэ́д",
           "ipa": "i usˈted",
           "audioId": "y-usted"
         }
       ],
       "notes": [
-        "Про „ты“ и „вы“. В Испании на „ты“ говорят очень широко — с ровесниками, в кафе, даже с незнакомыми. Usted — для пожилых людей и официальных ситуаций. Если сомневаетесь, ¿qué tal? выручит в любом случае.»"
+        "«Про „ты“ и „вы“. В Испании на „ты“ говорят очень широко — с ровесниками, в кафе, даже с незнакомыми. Usted — для пожилых людей и официальных ситуаций. Если сомневаетесь, ¿qué tal? выручит в любом случае.»"
       ]
     },
     {
       "type": "section",
       "title": "Знакомство",
-      "notes": [
-        "⏱ 5:00–7:00"
-      ]
+      "notes": ["⏱ 5:00–7:00"]
     },
     {
       "type": "table",
@@ -237,30 +242,35 @@
         {
           "es": "¿Cómo te llamas?",
           "ru": "Как тебя зовут?",
+          "tr": "кóмо тэ я́мас",
           "ipa": "ˈkomo te ˈjamas",
           "audioId": "como-te-llamas"
         },
         {
           "es": "Me llamo…",
           "ru": "Меня зовут…",
+          "tr": "мэ я́мо…",
           "ipa": "me ˈjamo…",
           "audioId": "me-llamo"
         },
         {
           "es": "Soy…",
           "ru": "Я… (представиться)",
+          "tr": "сой…",
           "ipa": "ˈsoj…",
           "audioId": "soy"
         },
         {
           "es": "Mucho gusto",
           "ru": "Очень приятно",
+          "tr": "му́чо гу́сто",
           "ipa": "ˈmutʃo ˈgusto",
           "audioId": "mucho-gusto"
         },
         {
           "es": "Encantado / Encantada",
           "ru": "Очень приятно (м / ж)",
+          "tr": "энкантáдо / энкантáда",
           "ipa": "enkanˈtado / enkanˈtada",
           "audioId": "encantado"
         }
@@ -268,7 +278,7 @@
       "notes": [
         "«¿Cómo te llamas? — как тебя зовут. Двойная ll в большинстве стран читается как „й“: не „лламас“, а „я́мас“. 🔊 (В Аргентине её произносят как „ш“ — если услышите „шамас“, это не ошибка.)",
         "Отвечаем: Me llamo Tim — или короче: Soy Tim. 🔊",
-        "„Очень приятно“ — два варианта. Mucho gusto — одинаково для всех. 🔊 А encantado зависит от того, кто говорит: мужчина говорит encantado, женщина — encantada. Не собеседник, а вы сами. 🔊"
+        "„Очень приятно“ — два варианта. Mucho gusto — одинаково для всех. 🔊 А encantado зависит от того, кто говорит: мужчина говорит encantado, женщина — encantada. Не собеседник, а вы сами.» 🔊"
       ]
     },
     {
@@ -278,36 +288,41 @@
         {
           "es": "Igualmente",
           "ru": "Взаимно",
+          "tr": "игуальмэ́нтэ",
           "ipa": "igwalˈmente",
           "audioId": "igualmente"
         },
         {
           "es": "¿De dónde eres?",
           "ru": "Откуда ты?",
+          "tr": "дэ дóндэ э́рэс",
           "ipa": "de ˈdonde ˈeɾes",
           "audioId": "de-donde-eres"
         },
         {
           "es": "Soy de Rusia",
           "ru": "Я из России",
+          "tr": "сой дэ ру́сья",
           "ipa": "ˈsoj de ˈrusja",
           "audioId": "soy-de-rusia"
         },
         {
           "es": "¿Dónde vives?",
           "ru": "Где ты живёшь?",
+          "tr": "дóндэ ви́бэс",
           "ipa": "ˈdonde ˈbibes",
           "audioId": "donde-vives"
         },
         {
           "es": "Vivo en Moscú",
           "ru": "Я живу в Москве",
+          "tr": "ви́бо эн моску́",
           "ipa": "ˈbibo en mosˈku",
           "audioId": "vivo-en-moscu"
         }
       ],
       "notes": [
-        "Ответить можно одним словом: igualmente — „взаимно“. 🔊",
+        "«Ответить можно одним словом: igualmente — „взаимно“. 🔊",
         "¿De dónde eres? — откуда ты. Soy de Rusia — я из России. 🔊 ¿Dónde vives? — где живёшь. Vivo en Moscú. Буква v в испанском звучит как „б“: не „виво“, а „ви́бо“.» 🔊",
         "(коротко) «Почему soy, а не как-то ещё, и что это за te и me — разберём в следующих блоках. Сейчас просто запоминаем целыми фразами.»"
       ]
@@ -315,9 +330,7 @@
     {
       "type": "section",
       "title": "Вежливые слова",
-      "notes": [
-        "⏱ 7:00–8:00"
-      ]
+      "notes": ["⏱ 7:00–8:00"]
     },
     {
       "type": "table",
@@ -326,24 +339,28 @@
         {
           "es": "Sí / No",
           "ru": "Да / Нет",
+          "tr": "си / но",
           "ipa": "ˈsi / ˈno",
           "audioId": "si-no"
         },
         {
           "es": "Por favor",
           "ru": "Пожалуйста (прошу)",
+          "tr": "пор фабóр",
           "ipa": "poɾ faˈboɾ",
           "audioId": "por-favor"
         },
         {
           "es": "Gracias / Muchas gracias",
           "ru": "Спасибо / Большое спасибо",
+          "tr": "грáсьяс / му́час грáсьяс",
           "ipa": "ˈgɾaθjas / ˈmutʃas ˈgɾaθjas",
           "audioId": "gracias"
         },
         {
           "es": "De nada",
           "ru": "Не за что",
+          "tr": "дэ нáда",
           "ipa": "de ˈnada",
           "audioId": "de-nada"
         }
@@ -359,28 +376,36 @@
         {
           "es": "Perdón",
           "ru": "Извините (привлечь внимание, пройти, мелкая оплошность)",
+          "tr": "пэрдóн",
           "ipa": "peɾˈdon",
           "audioId": "perdon"
         },
         {
           "es": "Lo siento",
           "ru": "Мне жаль, простите (сожаление)",
+          "tr": "ло сьéнто",
           "ipa": "lo ˈsjento",
           "audioId": "lo-siento"
         },
         {
           "es": "Disculpe",
           "ru": "Извините (вежливо, на «вы»)",
+          "tr": "дискýльпэ",
           "ipa": "disˈkulpe",
           "audioId": "disculpe"
         },
         {
           "es": "Vale",
           "ru": "Окей, договорились (Испания)",
+          "tr": "бáле",
           "ipa": "ˈbale",
           "audioId": "vale"
         }
       ],
+      "short": {
+        "hook": "Если вы слышите это слово сто раз за день — вы в Испании.",
+        "topic": "Vale: что оно значит и почему звучит постоянно"
+      },
       "notes": [
         "«В русском „извините“ — одно слово на все случаи. В испанском их несколько. Perdón — когда нужно пройти, привлечь внимание или вы кого-то случайно задели. 🔊 Lo siento — когда вам действительно жаль: Lo siento, no hablo bien español — „простите, я плохо говорю по-испански“. 🔊 Disculpe — вежливое обращение к незнакомому человеку: официанту, прохожему. 🔊",
         "И бонус из реальной жизни: vale. В Испании это слово звучит постоянно — „окей“, „понял“, „договорились“. 🔊 В Латинской Америке вместо него чаще говорят está bien или dale.»"
@@ -389,9 +414,7 @@
     {
       "type": "section",
       "title": "Фразы-спасатели",
-      "notes": [
-        "⏱ 8:00–9:00"
-      ]
+      "notes": ["⏱ 8:00–9:00"]
     },
     {
       "type": "table",
@@ -400,24 +423,28 @@
         {
           "es": "No entiendo",
           "ru": "Я не понимаю",
+          "tr": "но энтьéндо",
           "ipa": "no enˈtjendo",
           "audioId": "no-entiendo"
         },
         {
           "es": "¿Puedes repetir, por favor?",
           "ru": "Можешь повторить, пожалуйста?",
+          "tr": "пуэ́дэс рэпэти́р, пор фабóр",
           "ipa": "ˈpwedes repeˈtiɾ poɾ faˈboɾ",
           "audioId": "puedes-repetir"
         },
         {
           "es": "Más despacio, por favor",
           "ru": "Помедленнее, пожалуйста",
+          "tr": "мас дэспáсьо, пор фабóр",
           "ipa": "ˈmas desˈpaθjo poɾ faˈboɾ",
           "audioId": "mas-despacio"
         },
         {
           "es": "Hablo un poco de español",
           "ru": "Я немного говорю по-испански",
+          "tr": "áбло ун пóко дэ эспаньóль",
           "ipa": "ˈablo un ˈpoko de espaˈɲol",
           "audioId": "hablo-un-poco"
         }
@@ -433,22 +460,29 @@
         {
           "es": "¿Hablas inglés?",
           "ru": "Ты говоришь по-английски?",
+          "tr": "áблас инглéс",
           "ipa": "ˈablas inˈgles",
           "audioId": "hablas-ingles"
         },
         {
           "es": "¿Cómo se dice… en español?",
           "ru": "Как сказать … по-испански?",
+          "tr": "кóмо сэ ди́сэ… эн эспаньóль",
           "ipa": "ˈkomo se ˈdiθe… en espaˈɲol",
           "audioId": "como-se-dice"
         },
         {
           "es": "¿Qué significa…?",
           "ru": "Что значит …?",
+          "tr": "кэ сигнифи́ка",
           "ipa": "ke signiˈfika",
           "audioId": "que-significa"
         }
       ],
+      "short": {
+        "hook": "Знаешь только одну фразу по-испански? Пусть это будет вот эта.",
+        "topic": "¿Cómo se dice… en español? — как учиться прямо у собеседника"
+      },
       "notes": [
         "«Особенно советую ¿Cómo se dice…? — с ней вы можете учиться прямо у собеседника.» 🔊 (озвучить все три по очереди)",
         "«И ещё про произношение: в Испании буквы c перед e, i и z читаются примерно как английское th: gracias звучит как „грáθьяс“. В Латинской Америке — просто „с“. Правильно и так, и так.»"
@@ -469,6 +503,7 @@
       "phrase": {
         "es": "¡Hola!",
         "ru": "Привет!",
+        "tr": "óла",
         "ipa": "ˈola",
         "audioId": "practice-01"
       }
@@ -479,6 +514,7 @@
       "phrase": {
         "es": "¡Buenos días!",
         "ru": "Доброе утро!",
+        "tr": "буэ́нос ди́ас",
         "ipa": "ˈbwenos ˈdi.as",
         "audioId": "practice-02"
       }
@@ -489,6 +525,7 @@
       "phrase": {
         "es": "¡Muchas gracias!",
         "ru": "Большое спасибо!",
+        "tr": "му́час грáсьяс",
         "ipa": "ˈmutʃas ˈgɾaθjas",
         "audioId": "practice-03"
       }
@@ -499,6 +536,7 @@
       "phrase": {
         "es": "De nada.",
         "ru": "Не за что.",
+        "tr": "дэ нáда",
         "ipa": "de ˈnada",
         "audioId": "practice-04"
       }
@@ -509,6 +547,7 @@
       "phrase": {
         "es": "No entiendo.",
         "ru": "Я не понимаю.",
+        "tr": "но энтьéндо",
         "ipa": "no enˈtjendo",
         "audioId": "practice-05"
       }
@@ -519,6 +558,7 @@
       "phrase": {
         "es": "Igualmente.",
         "ru": "Взаимно.",
+        "tr": "игуальмэ́нтэ",
         "ipa": "igwalˈmente",
         "audioId": "practice-06"
       }
@@ -529,6 +569,7 @@
       "phrase": {
         "es": "Bien, gracias. ¿Y tú?",
         "ru": "Хорошо, спасибо. А ты?",
+        "tr": "бьен, грáсьяс · и ту",
         "ipa": "ˈbjen ˈgɾaθjas · i ˈtu",
         "audioId": "practice-07"
       }
@@ -539,6 +580,7 @@
       "phrase": {
         "es": "¿Cómo te llamas? — Me llamo Ana.",
         "ru": "Как тебя зовут? — Меня зовут Анна.",
+        "tr": "кóмо тэ я́мас — мэ я́мо áна",
         "ipa": "ˈkomo te ˈjamas — me ˈjamo ˈana",
         "audioId": "practice-08"
       }
@@ -549,6 +591,7 @@
       "phrase": {
         "es": "¡Encantada!",
         "ru": "Очень приятно! (говорит женщина)",
+        "tr": "энкантáда",
         "ipa": "enkanˈtada",
         "audioId": "practice-09"
       }
@@ -559,6 +602,7 @@
       "phrase": {
         "es": "¿De dónde eres? — Soy de Rusia.",
         "ru": "Откуда ты? — Я из России.",
+        "tr": "дэ дóндэ э́рэс — сой дэ ру́сья",
         "ipa": "de ˈdonde ˈeɾes — ˈsoj de ˈrusja",
         "audioId": "practice-10"
       }
@@ -569,6 +613,7 @@
       "phrase": {
         "es": "¡Adiós, hasta mañana!",
         "ru": "Пока, до завтра!",
+        "tr": "адьóс · а́ста манья́на",
         "ipa": "aˈdjos · ˈasta maˈɲana",
         "audioId": "practice-11"
       }
@@ -579,6 +624,7 @@
       "phrase": {
         "es": "¡Buenas noches! ¿Cómo estás?",
         "ru": "Добрый вечер (уже стемнело)! Как ты?",
+        "tr": "буэ́нас но́чес · кóмо эстáс",
         "ipa": "ˈbwenas ˈnotʃes · ˈkomo esˈtas",
         "audioId": "practice-12"
       }
@@ -589,6 +635,7 @@
       "phrase": {
         "es": "Perdón, no entiendo. ¿Puedes repetir?",
         "ru": "Извините, я не понимаю. Можешь повторить?",
+        "tr": "пэрдóн · но энтьéндо · пуэ́дэс рэпэти́р",
         "ipa": "peɾˈdon · no enˈtjendo · ˈpwedes repeˈtiɾ",
         "audioId": "practice-13"
       }
@@ -599,6 +646,7 @@
       "phrase": {
         "es": "Vivo en Moscú, ¿y tú?",
         "ru": "Я живу в Москве, а ты?",
+        "tr": "ви́бо эн моску́ · и ту",
         "ipa": "ˈbibo en mosˈku · i ˈtu",
         "audioId": "practice-14"
       }
@@ -609,6 +657,7 @@
       "phrase": {
         "es": "Lo siento, no hablo bien español.",
         "ru": "Простите, я плохо говорю по-испански.",
+        "tr": "ло сьéнто · но áбло бьен эспаньóль",
         "ipa": "lo ˈsjento · no ˈablo ˈbjen espaˈɲol",
         "audioId": "practice-15"
       }
@@ -619,6 +668,7 @@
       "phrase": {
         "es": "Hablo un poco de español. Más despacio, por favor.",
         "ru": "Я немного говорю по-испански. Помедленнее, пожалуйста.",
+        "tr": "áбло ун пóко дэ эспаньóль · мас дэспáсьо, пор фабóр",
         "ipa": "ˈablo un ˈpoko de espaˈɲol · ˈmas desˈpaθjo poɾ faˈboɾ",
         "audioId": "practice-16"
       }
@@ -626,9 +676,7 @@
     {
       "type": "section",
       "title": "Мини-диалог",
-      "notes": [
-        "⏱ 11:30–12:30"
-      ]
+      "notes": ["⏱ 11:30–12:30"]
     },
     {
       "type": "dialogue",
@@ -737,14 +785,14 @@
       "title": "Разбор типичных ошибок",
       "notes": [
         "⏱ 12:30–13:30",
-        "🎥 КАМЕРА (фирменная рубрика — лучше в кадре)"
+        "🎥 КАМЕРА — эту часть лучше вести в кадре."
       ]
     },
     {
       "type": "mistake",
       "kind": "pronunciation",
-      "wrong": "Hola → ˈxola",
-      "right": "Hola → ˈola",
+      "wrong": "Hola → «хола»",
+      "right": "Hola → «óла»",
       "note": "Буква h не читается никогда."
     },
     {
@@ -752,7 +800,11 @@
       "kind": "grammar",
       "wrong": "Buenas días",
       "right": "Buenos días",
-      "note": "Слово día мужского рода, хоть и кончается на -a. А tardes и noches — женского, поэтому buenas."
+      "note": "Слово día мужского рода, хоть и кончается на -a. А tardes и noches — женского, поэтому buenas.",
+      "short": {
+        "hook": "Никогда не говори buenas días. Сейчас объясню почему.",
+        "topic": "Род слова día и согласование buenos / buenas"
+      }
     },
     {
       "type": "mistake",
@@ -774,8 +826,12 @@
       "type": "mistake",
       "kind": "false-friend",
       "wrong": "Regular = регулярно",
-      "right": "«так себе»",
-      "note": "Ложный друг."
+      "right": "Regular = «так себе»",
+      "note": "Ложный друг.",
+      "short": {
+        "hook": "Тебя спросили, как дела, ты ответил regular — и собеседник расстроился.",
+        "topic": "Ложные друзья: regular"
+      }
     },
     {
       "type": "mistake",
@@ -794,12 +850,16 @@
         "Быть вежливым",
         "«Спастись», если ничего не поняли"
       ],
+      "counter": {
+        "words": 45,
+        "constructions": 0
+      },
       "nextTitle": "Следующий урок",
-      "nextText": "Блок 1: разберёмся с произношением и узнаем, почему в испанском два глагола «быть»",
+      "nextText": "Урок 2: научимся читать по-испански — почему Sevilla это «Севи́йя», а gracias звучит не так, как пишется",
       "outro": "¡Hasta luego!",
       "notes": [
         "🎥 КАМЕРА. ⏱ 13:30–14:00",
-        "«Всё! Теперь вы можете поздороваться, познакомиться и не потеряться, если что-то не поняли. Это уже больше, чем знают многие туристы. Полный список фраз с озвучкой, дополнительные упражнения и карточки для повторения — по ссылке в описании. В следующем уроке начинаем Блок 1: разберёмся с произношением и узнаем, почему в испанском два глагола „быть“. ¡Hasta luego!»",
+        "«Всё! Теперь вы можете поздороваться, познакомиться и не потеряться, если что-то не поняли. Это уже больше, чем знают многие туристы. Полный список фраз с озвучкой, дополнительные упражнения и карточки для повторения — по ссылке в описании. В следующем уроке научимся читать по-испански — после него вы сможете прочитать вслух любое написанное слово. ¡Hasta luego!»",
         "🖥 Конечная заставка: ссылка на следующий урок + плейлист курса."
       ]
     }

@@ -1,0 +1,808 @@
+{
+  "schemaVersion": 1,
+  "number": 5,
+  "level": "A0",
+  "block": "0.2",
+  "title": "Как заказать еду в Испании: кафе и ресторан",
+  "goal": "Сесть за столик, заказать напиток и еду, спросить о блюде, попросить счёт и расплатиться",
+  "course": "Испанский с нуля",
+  "audioDir": "lesson-05",
+  "defaultPauseMs": 4000,
+  "speakers": {
+    "cliente": "Cliente",
+    "camarero": "Camarero"
+  },
+  "tableHeaders": {
+    "es": "Испанский",
+    "ru": "Значение"
+  },
+  "practiceGroups": [
+    {
+      "name": "Разминка",
+      "pauseMs": 4000
+    },
+    {
+      "name": "Две фразы подряд",
+      "pauseMs": 5000
+    },
+    {
+      "name": "Посложнее — как в жизни",
+      "pauseMs": 6000
+    }
+  ],
+  "slides": [
+    {
+      "type": "title",
+      "notes": [
+        "🎥 КАМЕРА. ⏱ 0:00–0:40",
+        "«Привет! Это пятый урок. Сегодня — кафе и ресторан: место, где турист проводит больше всего времени и чаще всего теряется. К концу урока вы сможете зайти, сесть, заказать, спросить, что это вообще такое в меню, попросить счёт и расплатиться.",
+        "Как и раньше, грамматику не трогаем — берём фразы целиком. Поехали!»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Что уже знаете",
+      "notes": [
+        "⏱ 0:40–1:10"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Пригодится сегодня",
+      "rows": [
+        {
+          "es": "¿Cuánto es?",
+          "ru": "Сколько с меня?",
+          "tr": "куáнто эс",
+          "ipa": "ˈkwanto ˈes",
+          "audioId": "cuanto-es"
+        },
+        {
+          "es": "Perdone…",
+          "ru": "Извините… (обращение)",
+          "tr": "пэрдóнэ",
+          "ipa": "peɾˈdone",
+          "audioId": "perdone"
+        }
+      ],
+      "notes": [
+        "«В прошлом уроке были числа и цены — сегодня они пригодятся: счёт вам назовут вслух. 🔊",
+        "И фраза Perdone из третьего урока: именно с неё начинается любое обращение к официанту. Не машите рукой, не кричите — просто Perdone.» 🔊"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Зайти и сесть",
+      "notes": [
+        "⏱ 1:10–2:20"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Зайти и сесть",
+      "rows": [
+        {
+          "es": "Hola, buenas.",
+          "ru": "Здравствуйте.",
+          "tr": "óла, буэ́нас",
+          "ipa": "ˈola ˈbwenas",
+          "audioId": "hola-buenas"
+        },
+        {
+          "es": "¿Tienen mesa para dos?",
+          "ru": "У вас есть столик на двоих?",
+          "tr": "тьéнэн мэ́са пáра дос",
+          "ipa": "ˈtjenen ˈmesa ˈpaɾa ˈdos",
+          "audioId": "tienen-mesa"
+        },
+        {
+          "es": "Para dos, por favor.",
+          "ru": "На двоих, пожалуйста.",
+          "tr": "пáра дос, пор фабóр",
+          "ipa": "ˈpaɾa ˈdos poɾ faˈboɾ",
+          "audioId": "para-dos"
+        },
+        {
+          "es": "¿Está libre?",
+          "ru": "Свободно? (про столик)",
+          "tr": "эстá ли́брэ",
+          "ipa": "esˈta ˈlibɾe",
+          "audioId": "esta-libre"
+        }
+      ],
+      "notes": [
+        "«Hola, buenas вы уже знаете с первого урока — с этого начинается вход в любое заведение. 🔊",
+        "Дальше: ¿Tienen mesa para dos? — столик на двоих. Число меняете на своё, числа были в прошлом уроке. 🔊 Часто вас просто спросят ¿Cuántos son? — сколько вас; можно ответить одним словом: Para dos. 🔊",
+        "И если столики на улице и непонятно, занято или нет — показываете на стол и говорите ¿Está libre?» 🔊"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Заказать напиток",
+      "notes": [
+        "⏱ 2:20–3:40"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Заказать напиток",
+      "rows": [
+        {
+          "es": "¿Qué van a tomar?",
+          "ru": "Что будете? (говорит официант)",
+          "tr": "кэ бан а томáр",
+          "ipa": "ke ˈban a toˈmaɾ",
+          "audioId": "que-van-a-tomar"
+        },
+        {
+          "es": "Un café con leche, por favor.",
+          "ru": "Кофе с молоком, пожалуйста.",
+          "tr": "ун кафэ́ кон лéче, пор фабóр",
+          "ipa": "un kaˈfe kon ˈletʃe poɾ faˈboɾ",
+          "audioId": "cafe-con-leche"
+        },
+        {
+          "es": "¿Me pone una caña?",
+          "ru": "Можно маленькое разливное пиво?",
+          "tr": "мэ пóнэ у́на кáнья",
+          "ipa": "me ˈpone ˈuna ˈkaɲa",
+          "audioId": "me-pone-una-cana"
+        },
+        {
+          "es": "Agua sin gas, por favor.",
+          "ru": "Воду без газа, пожалуйста.",
+          "tr": "áгуа син гас, пор фабóр",
+          "ipa": "ˈagwa sin ˈgas poɾ faˈboɾ",
+          "audioId": "agua-sin-gas"
+        }
+      ],
+      "short": {
+        "hook": "Заказал пиво в Испании — принесли бутылку. А местные пьют другое.",
+        "topic": "¿Me pone una caña? — как заказать пиво по-испански"
+      },
+      "notes": [
+        "«Первое, что вы услышите, — ¿Qué van a tomar? Эту фразу не учим наизусть, достаточно узнавать на слух: вас спрашивают, что вы будете. 🔊",
+        "Самый простой способ заказать — назвать напиток и добавить por favor. Этого достаточно, это не грубо. 🔊",
+        "А теперь фраза, которая звучит в Испании постоянно: ¿Me pone…? — буквально „поставите мне?“. ¿Me pone una caña? 🔊 Caña — это маленькое разливное пиво, самый ходовой заказ в баре. Если попросить просто „cerveza“, вам, скорее всего, принесут бутылку.",
+        "И вода: в Испании уточняют sin gas или con gas.» 🔊"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Заказать еду",
+      "notes": [
+        "⏱ 3:40–5:00"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Заказать еду",
+      "rows": [
+        {
+          "es": "¿Tienen menú del día?",
+          "ru": "У вас есть комплексный обед?",
+          "tr": "тьéнэн мэну́ дэль ди́а",
+          "ipa": "ˈtjenen meˈnu del ˈdi.a",
+          "audioId": "menu-del-dia"
+        },
+        {
+          "es": "Para mí, la paella.",
+          "ru": "Мне паэлью.",
+          "tr": "пáра ми́, ла паэ́йя",
+          "ipa": "ˈpaɾa ˈmi la paˈeja",
+          "audioId": "para-mi"
+        },
+        {
+          "es": "Lo mismo, por favor.",
+          "ru": "Мне то же самое.",
+          "tr": "ло ми́смо, пор фабóр",
+          "ipa": "lo ˈmismo poɾ faˈboɾ",
+          "audioId": "lo-mismo"
+        },
+        {
+          "es": "Nada más, gracias.",
+          "ru": "Больше ничего, спасибо.",
+          "tr": "нáда мас, грáсьяс",
+          "ipa": "ˈnada ˈmas ˈgɾaθjas",
+          "audioId": "nada-mas"
+        }
+      ],
+      "short": {
+        "hook": "В Испании есть способ пообедать вдвое дешевле. Туристам о нём не говорят.",
+        "topic": "Menú del día: что это и как спросить"
+      },
+      "notes": [
+        "«Menú del día — это не меню. Это комплексный обед: первое, второе, десерт и напиток за фиксированную цену, обычно в будни до четырёх. Самый выгодный способ поесть в Испании, и его почти никогда не предлагают туристам сами. Спрашивайте: ¿Tienen menú del día? 🔊",
+        "Заказ делается одной конструкцией: Para mí — „мне“ — и дальше блюдо. Para mí, la paella. 🔊 Если вас двое и второму то же самое — Lo mismo, por favor. 🔊",
+        "В конце заказа официант спросит ¿Algo más? — что-нибудь ещё. Ответ: Nada más, gracias.» 🔊"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Что вы увидите в меню (только узнавание)",
+      "rows": [
+        {
+          "es": "la tapa",
+          "ru": "закуска",
+          "tr": "ла тáпа",
+          "ipa": "la ˈtapa",
+          "audioId": "la-tapa"
+        },
+        {
+          "es": "la ración",
+          "ru": "большая порция закуски",
+          "tr": "ла расьóн",
+          "ipa": "la raˈθjon",
+          "audioId": "la-racion"
+        },
+        {
+          "es": "el bocadillo",
+          "ru": "сэндвич в багете",
+          "tr": "эль бокади́йо",
+          "ipa": "el bokaˈdijo",
+          "audioId": "el-bocadillo"
+        },
+        {
+          "es": "el pollo / el pescado / la carne",
+          "ru": "курица / рыба / мясо",
+          "tr": "эль пóйо / эль пэскáдо / ла кáрнэ",
+          "ipa": "el ˈpojo / el pesˈkado / la ˈkaɾne",
+          "audioId": "pollo-pescado-carne"
+        },
+        {
+          "es": "el postre / el flan / el helado",
+          "ru": "десерт / флан / мороженое",
+          "tr": "эль пóстрэ / эль флан / эль элáдо",
+          "ipa": "el ˈpostɾe / el ˈflan / el eˈlado",
+          "audioId": "postre-flan-helado"
+        }
+      ],
+      "notes": [
+        "🖥 Плашка «только узнавание» — эти слова не идут в счётчик и не отрабатываются.",
+        "«Эти слова не заучиваем — просто посмотрите один раз, чтобы узнать их в меню. Полный список еды с озвучкой — в материалах по ссылке.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Спросить о блюде",
+      "notes": [
+        "⏱ 5:00–6:20"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Спросить о блюде",
+      "rows": [
+        {
+          "es": "¿Qué es esto?",
+          "ru": "Что это?",
+          "tr": "кэ эс э́сто",
+          "ipa": "ke ˈes ˈesto",
+          "audioId": "que-es-esto"
+        },
+        {
+          "es": "¿Cuál es la especialidad?",
+          "ru": "Какое здесь фирменное блюдо?",
+          "tr": "куáль эс ла эспэсьялидáд",
+          "ipa": "ˈkwal es la espeθjaliˈdad",
+          "audioId": "cual-es-la-especialidad"
+        },
+        {
+          "es": "¿Qué hay de postre?",
+          "ru": "Что есть на десерт?",
+          "tr": "кэ ай дэ пóстрэ",
+          "ipa": "ke ˈai de ˈpostɾe",
+          "audioId": "que-hay-de-postre"
+        },
+        {
+          "es": "¿Lleva carne?",
+          "ru": "Тут есть мясо?",
+          "tr": "йéба кáрнэ",
+          "ipa": "ˈjeba ˈkaɾne",
+          "audioId": "lleva-carne"
+        },
+        {
+          "es": "Soy vegetariano / vegetariana.",
+          "ru": "Я вегетарианец / вегетарианка.",
+          "tr": "сой бэхэтарьáно / бэхэтарьáна",
+          "ipa": "ˈsoj bexetaˈɾjano / bexetaˈɾjana",
+          "audioId": "soy-vegetariano"
+        }
+      ],
+      "notes": [
+        "«Три фразы-выручалки, когда в меню непонятно. Показываете пальцем в строчку и говорите ¿Qué es esto? 🔊 Хотите, чтобы вам посоветовали, — ¿Cuál es la especialidad? 🔊 Десерты в меню часто не печатают, их называют вслух: ¿Qué hay de postre? 🔊",
+        "И важное: ¿Lleva carne? — „в этом есть мясо?“. Глагол llevar тут значит „содержать“. Так же можно спросить про что угодно: ¿Lleva cebolla?, ¿Lleva gluten? 🔊 Женщина о себе говорит vegetariana, мужчина — vegetariano.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Во время еды",
+      "notes": [
+        "⏱ 6:20–7:10"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Во время еды",
+      "rows": [
+        {
+          "es": "¡Buen provecho!",
+          "ru": "Приятного аппетита!",
+          "tr": "буэ́н пробéчо",
+          "ipa": "ˈbwen pɾoˈbetʃo",
+          "audioId": "buen-provecho"
+        },
+        {
+          "es": "Está muy bueno.",
+          "ru": "Очень вкусно.",
+          "tr": "эстá муй буэ́но",
+          "ipa": "esˈta ˈmwi ˈbweno",
+          "audioId": "esta-muy-bueno"
+        },
+        {
+          "es": "Perdone, ¿me trae una servilleta?",
+          "ru": "Извините, принесёте салфетку?",
+          "tr": "пэрдóнэ, мэ трáэ у́на сэрбийéта",
+          "ipa": "peɾˈdone me ˈtɾae ˈuna seɾbiˈjeta",
+          "audioId": "me-trae-una-servilleta"
+        },
+        {
+          "es": "¿Dónde está el baño?",
+          "ru": "Где туалет?",
+          "tr": "дóндэ эстá эль бáньо",
+          "ipa": "ˈdonde esˈta el ˈbaɲo",
+          "audioId": "donde-esta-el-bano"
+        }
+      ],
+      "notes": [
+        "«¡Buen provecho! вам скажет официант, а иногда и сосед за столиком — отвечать нужно тем же. 🔊 В Испании чаще слышно ¡Que aproveche! — то же самое.",
+        "Похвалить еду: Está muy bueno. Работает всегда и всем приятно. 🔊",
+        "Попросить что-то забытое: Perdone, ¿me trae…? — и дальше предмет. Салфетку, воду, ещё один бокал. 🔊 И фраза, которая нужна в каждой поездке: ¿Dónde está el baño?» 🔊"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Счёт и оплата",
+      "notes": [
+        "⏱ 7:10–8:30"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Счёт и оплата",
+      "rows": [
+        {
+          "es": "Perdone, la cuenta, por favor.",
+          "ru": "Извините, счёт, пожалуйста.",
+          "tr": "пэрдóнэ, ла куэ́нта, пор фабóр",
+          "ipa": "peɾˈdone la ˈkwenta poɾ faˈboɾ",
+          "audioId": "la-cuenta-por-favor"
+        },
+        {
+          "es": "¿Cuánto es?",
+          "ru": "Сколько с меня?",
+          "tr": "куáнто эс",
+          "ipa": "ˈkwanto ˈes",
+          "audioId": "cuanto-es-2"
+        },
+        {
+          "es": "¿Se puede pagar con tarjeta?",
+          "ru": "Картой можно?",
+          "tr": "сэ пуэ́дэ пагáр кон тархэ́та",
+          "ipa": "se ˈpwede paˈgaɾ kon taɾˈxeta",
+          "audioId": "pagar-con-tarjeta"
+        },
+        {
+          "es": "Quédese con el cambio.",
+          "ru": "Сдачи не надо.",
+          "tr": "кэ́дэсэ кон эль кáмбьо",
+          "ipa": "ˈkedese kon el ˈkambjo",
+          "audioId": "quedese-con-el-cambio"
+        }
+      ],
+      "short": {
+        "hook": "Сидите в испанском ресторане и ждёте счёт? Можете ждать вечно.",
+        "topic": "Счёт приносят только по просьбе: la cuenta, por favor"
+      },
+      "notes": [
+        "«Главное, что нужно знать: счёт вам никто не принесёт сам. Это не про плохой сервис — наоборот, вас не торопят. Пока не попросите, будете сидеть сколько угодно. Perdone, la cuenta, por favor. 🔊",
+        "¿Cuánto es? — если платите у стойки. 🔊 ¿Se puede pagar con tarjeta? — картой можно; в маленьких барах бывает минимальная сумма.» 🔊"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Чаевые в Испании",
+      "hint": "Не обязательны. Обычно округляют или оставляют 1–2 евро. Обслуживание уже в счёте.",
+      "notes": [
+        "🖥 Текстовый слайд без испанского, 3 строки.",
+        "«Про чаевые. В Испании они не обязательны и там нет американских двадцати процентов. Обычная практика — округлить или оставить пару монет. Если хотите оставить сдачу — Quédese con el cambio.» 🔊"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "В Латинской Америке",
+      "hint": "caña и menú del día — это про Испанию. Там пиво — una cerveza, комплексный обед — el menú ejecutivo или el almuerzo, чаевые обычно 10%.",
+      "notes": [
+        "🖥 Одна строка отличий на весь урок, без отработки."
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Практика",
+      "hint": "Фраза по-русски → пауза → правильный вариант. Говорите вслух — так запоминается в разы быстрее.",
+      "notes": [
+        "🎥→🖥 ПЕРЕХОД. ⏱ 8:30–11:00",
+        "«Теперь практика. На экране фраза по-русски, дальше пауза — скажите её вслух по-испански. Потом услышите правильный вариант от носителя.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "es": "La cuenta, por favor.",
+        "ru": "Счёт, пожалуйста.",
+        "tr": "ла куэ́нта, пор фабóр",
+        "ipa": "la ˈkwenta poɾ faˈboɾ",
+        "audioId": "practice-01"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "es": "Agua sin gas, por favor.",
+        "ru": "Воду без газа, пожалуйста.",
+        "tr": "áгуа син гас, пор фабóр",
+        "ipa": "ˈagwa sin ˈgas poɾ faˈboɾ",
+        "audioId": "practice-02"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "es": "¡Buen provecho!",
+        "ru": "Приятного аппетита!",
+        "tr": "буэ́н пробéчо",
+        "ipa": "ˈbwen pɾoˈbetʃo",
+        "audioId": "practice-03"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "es": "Está muy bueno.",
+        "ru": "Очень вкусно.",
+        "tr": "эстá муй буэ́но",
+        "ipa": "esˈta ˈmwi ˈbweno",
+        "audioId": "practice-04"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "es": "¿Cuánto es?",
+        "ru": "Сколько с меня?",
+        "tr": "куáнто эс",
+        "ipa": "ˈkwanto ˈes",
+        "audioId": "practice-05"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "es": "¿Qué es esto?",
+        "ru": "Что это?",
+        "tr": "кэ эс э́сто",
+        "ipa": "ke ˈes ˈesto",
+        "audioId": "practice-06"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Две фразы подряд",
+      "phrase": {
+        "es": "Hola, buenas. ¿Tienen mesa para dos?",
+        "ru": "Здравствуйте. Столик на двоих?",
+        "tr": "óла, буэ́нас. тьéнэн мэ́са пáра дос",
+        "ipa": "ˈola ˈbwenas ˈtjenen ˈmesa ˈpaɾa ˈdos",
+        "audioId": "practice-07"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Две фразы подряд",
+      "phrase": {
+        "es": "Para mí, la paella, por favor.",
+        "ru": "Мне паэлью, пожалуйста.",
+        "tr": "пáра ми́, ла паэ́йя, пор фабóр",
+        "ipa": "ˈpaɾa ˈmi la paˈeja poɾ faˈboɾ",
+        "audioId": "practice-08"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Две фразы подряд",
+      "phrase": {
+        "es": "¿Dónde está el baño?",
+        "ru": "Где туалет?",
+        "tr": "дóндэ эстá эль бáньо",
+        "ipa": "ˈdonde esˈta el ˈbaɲo",
+        "audioId": "practice-09"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Две фразы подряд",
+      "phrase": {
+        "es": "¿Me trae una servilleta?",
+        "ru": "Принесёте салфетку?",
+        "tr": "мэ трáэ у́на сэрбийéта",
+        "ipa": "me ˈtɾae ˈuna seɾbiˈjeta",
+        "audioId": "practice-10"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Две фразы подряд",
+      "phrase": {
+        "es": "¿Tienen menú del día?",
+        "ru": "У вас есть комплексный обед?",
+        "tr": "тьéнэн мэну́ дэль ди́а",
+        "ipa": "ˈtjenen meˈnu del ˈdi.a",
+        "audioId": "practice-11"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Две фразы подряд",
+      "phrase": {
+        "es": "Nada más, gracias.",
+        "ru": "Больше ничего, спасибо.",
+        "tr": "нáда мас, грáсьяс",
+        "ipa": "ˈnada ˈmas ˈgɾaθjas",
+        "audioId": "practice-12"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Посложнее — как в жизни",
+      "phrase": {
+        "es": "Para mí, un café con leche. Nada más, gracias.",
+        "ru": "Мне кофе с молоком. Больше ничего, спасибо.",
+        "tr": "пáра ми́, ун кафэ́ кон лéче. нáда мас, грáсьяс",
+        "ipa": "ˈpaɾa ˈmi un kaˈfe kon ˈletʃe ˈnada ˈmas ˈgɾaθjas",
+        "audioId": "practice-13"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Посложнее — как в жизни",
+      "phrase": {
+        "es": "¿Cuál es la especialidad? — La paella.",
+        "ru": "Какое здесь фирменное блюдо? — Паэлья.",
+        "tr": "куáль эс ла эспэсьялидáд? — ла паэ́йя",
+        "ipa": "ˈkwal es la espeθjaliˈdad / la paˈeja",
+        "audioId": "practice-14"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Посложнее — как в жизни",
+      "phrase": {
+        "es": "Perdone, ¿qué hay de postre?",
+        "ru": "Извините, что есть на десерт?",
+        "tr": "пэрдóнэ, кэ ай дэ пóстрэ",
+        "ipa": "peɾˈdone ke ˈai de ˈpostɾe",
+        "audioId": "practice-15"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Посложнее — как в жизни",
+      "phrase": {
+        "es": "La cuenta, por favor. ¿Se puede pagar con tarjeta?",
+        "ru": "Счёт, пожалуйста. Картой можно?",
+        "tr": "ла куэ́нта, пор фабóр. сэ пуэ́дэ пагáр кон тархэ́та",
+        "ipa": "la ˈkwenta poɾ faˈboɾ se ˈpwede paˈgaɾ kon taɾˈxeta",
+        "audioId": "practice-16"
+      }
+    },
+    {
+      "type": "section",
+      "title": "Мини-диалог",
+      "notes": [
+        "⏱ 11:00–12:00"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Обед в ресторане",
+      "lines": [
+        {
+          "speaker": "cliente",
+          "es": "Hola, buenas. ¿Tienen mesa para dos?",
+          "ru": "Здравствуйте. Столик на двоих?",
+          "audioId": "dialogue-01"
+        },
+        {
+          "speaker": "camarero",
+          "es": "Sí, claro. ¿Qué van a tomar?",
+          "ru": "Да, конечно. Что будете?",
+          "audioId": "dialogue-02"
+        },
+        {
+          "speaker": "cliente",
+          "es": "¿Tienen menú del día?",
+          "ru": "У вас есть комплексный обед?",
+          "audioId": "dialogue-03"
+        },
+        {
+          "speaker": "camarero",
+          "es": "Sí. Hay paella, pollo y pescado.",
+          "ru": "Да. Есть паэлья, курица и рыба.",
+          "audioId": "dialogue-04"
+        },
+        {
+          "speaker": "cliente",
+          "es": "Para mí, la paella.",
+          "ru": "Мне паэлью.",
+          "audioId": "dialogue-05"
+        }
+      ],
+      "notes": [
+        "🔊 Два голоса (мужской и женский), под каждой строкой мелко перевод."
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Обед в ресторане",
+      "lines": [
+        {
+          "speaker": "camarero",
+          "es": "¿Y para beber?",
+          "ru": "А пить?",
+          "audioId": "dialogue-06"
+        },
+        {
+          "speaker": "cliente",
+          "es": "Una caña y agua sin gas, por favor.",
+          "ru": "Пиво и воду без газа, пожалуйста.",
+          "audioId": "dialogue-07"
+        },
+        {
+          "speaker": "camarero",
+          "es": "¿Algo más?",
+          "ru": "Что-нибудь ещё?",
+          "audioId": "dialogue-08"
+        },
+        {
+          "speaker": "cliente",
+          "es": "¿Qué hay de postre?",
+          "ru": "Что есть на десерт?",
+          "audioId": "dialogue-09"
+        },
+        {
+          "speaker": "camarero",
+          "es": "Hay flan, helado y fruta.",
+          "ru": "Есть флан, мороженое и фрукты.",
+          "audioId": "dialogue-10"
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Обед в ресторане",
+      "lines": [
+        {
+          "speaker": "cliente",
+          "es": "Para mí, un flan.",
+          "ru": "Мне флан.",
+          "audioId": "dialogue-11"
+        },
+        {
+          "speaker": "cliente",
+          "es": "Perdone, la cuenta, por favor.",
+          "ru": "Извините, счёт, пожалуйста.",
+          "audioId": "dialogue-12"
+        },
+        {
+          "speaker": "camarero",
+          "es": "Son veintidós euros.",
+          "ru": "Двадцать два евро.",
+          "audioId": "dialogue-13"
+        },
+        {
+          "speaker": "cliente",
+          "es": "¿Se puede pagar con tarjeta?",
+          "ru": "Картой можно?",
+          "audioId": "dialogue-14"
+        }
+      ],
+      "notes": [
+        "«Вот и весь визит в ресторан. Обратите внимание: ни одной длинной фразы. Всё держится на четырёх кусках — ¿Tienen…?, Para mí…, ¿Qué hay de…?, La cuenta, por favor.»",
+        "(прогнать диалог второй раз, с паузами после реплик клиента)"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Разбор типичных ошибок",
+      "notes": [
+        "⏱ 12:00–13:15",
+        "🎥 КАМЕРА — эту часть лучше вести в кадре."
+      ]
+    },
+    {
+      "type": "mistake",
+      "kind": "usage",
+      "wrong": "Yo quiero un café.",
+      "right": "Un café, por favor. / ¿Me pone un café?",
+      "note": "Дословный перевод «я хочу» звучит требовательно. Испанцы заказывают короче и мягче.",
+      "short": {
+        "hook": "«Я хочу кофе» по-испански звучит грубее, чем вы думаете.",
+        "topic": "Как заказывают на самом деле: por favor и ¿Me pone…?"
+      }
+    },
+    {
+      "type": "mistake",
+      "kind": "usage",
+      "wrong": "¡Camarero!",
+      "when": "чтобы подозвать официанта",
+      "right": "Perdone… / Disculpe…",
+      "note": "Окликать словом «официант» звучит старомодно и грубовато. Достаточно Perdone и взгляда.",
+      "short": {
+        "hook": "Не зовите официанта так, как учат старые учебники.",
+        "topic": "¡Camarero! против Perdone"
+      }
+    },
+    {
+      "type": "mistake",
+      "kind": "pronunciation",
+      "wrong": "una caña → «кана»",
+      "right": "una caña → «ка́нья»",
+      "note": "ñ — это всегда «нь». Без этого caña превращается в другое слово.",
+      "short": {
+        "hook": "Одна буква — и вместо пива вы просите что-то другое.",
+        "topic": "Буква ñ: caña и cana"
+      }
+    },
+    {
+      "type": "mistake",
+      "kind": "false-friend",
+      "wrong": "vaso = ваза",
+      "right": "vaso = стакан",
+      "note": "Ваза — un jarrón. Un vaso de agua — стакан воды.",
+      "short": {
+        "hook": "Попросили vaso de agua — и это точно не ваза.",
+        "topic": "Ложные друзья: vaso"
+      }
+    },
+    {
+      "type": "final",
+      "title": "Теперь вы умеете",
+      "bullets": [
+        "Сесть за столик и сделать заказ",
+        "Спросить, что это за блюдо",
+        "Попросить счёт и заплатить картой",
+        "Понять, что у вас спрашивает официант"
+      ],
+      "counter": {
+        "words": 25,
+        "constructions": 0
+      },
+      "nextTitle": "Следующий урок",
+      "nextText": "Урок 6: идём в магазин — спросить цену, размер и наличие, расплатиться на кассе",
+      "outro": "¡Hasta luego!",
+      "notes": [
+        "🎥 КАМЕРА. ⏱ 13:15–13:45",
+        "🖥 Перед финалом — слайд «возврат к старой фразе»: Урок 1 — ¡Hola! ¿Qué tal? / Урок 5 — Hola, buenas. ¿Tienen mesa para dos? Para mí, la paella.",
+        "⚠️ counter.words = 25 — это фразы только этого урока. Накопительное число подставить после сведения уроков 2–4.",
+        "«Всё. Вы только что научились обедать в Испании без английского — а это, честно говоря, половина поездки. Полный список фраз с озвучкой носителя, карточки и расширенная практика — по ссылке в описании. В следующем уроке идём в магазин. ¡Hasta luego!»",
+        "🖥 Конечная заставка: ссылка на урок 6 + плейлист «Испанский для поездки»."
+      ]
+    }
+  ]
+}

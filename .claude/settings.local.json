@@ -5,7 +5,9 @@
       "Bash(curl -s -m 20 -A \"Mozilla/5.0 \\(X11; Linux x86_64\\) AppleWebKit/537.36 Chrome/120 Safari/537.36\" \"https://fonts.googleapis.com/css2?family=Manrope:wght@500..800&display=swap\" -o /tmp/claude-1000/-home-tim-Desktop-video-lessons/bacfe2b1-14f5-4950-9173-4099e0a01677/scratchpad/manrope.css)",
       "Bash(python3 -)",
       "Bash(npx tsc *)",
-      "Bash(npx oxlint *)"
+      "Bash(npx oxlint *)",
+      "Bash(node ./.shot-tmp.mjs)",
+      "Bash(npm run *)"
     ]
   }
 }

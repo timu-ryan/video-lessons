@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
+import { HomeScreen } from './features/home/HomeScreen'
 import { getLesson } from './features/lessons/registry'
 import { PresenterApp } from './features/presenter/PresenterApp'
 import { Deck } from './features/slides/Deck'
-import { parseHash, type Route } from './features/slides/route'
+import { parseHash, sameScreen, type Route } from './features/slides/route'
 
 export function App() {
   const [route, setRoute] = useState<Route>(() => parseHash(window.location.hash))
@@ -11,13 +12,14 @@ export function App() {
     const onHashChange = () => {
       setRoute((current) => {
         const next = parseHash(window.location.hash)
-        // Позицию внутри урока ведёт useDeckNav — здесь важен только режим.
-        return next.kind === current.kind && next.lessonId === current.lessonId ? current : next
+        return sameScreen(next, current) ? current : next
       })
     }
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
+
+  if (route.kind === 'home') return <HomeScreen />
 
   const lesson = getLesson(route.lessonId)
 
