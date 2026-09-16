@@ -1,12 +1,14 @@
 import { SAFE_COL_W } from '../canvas'
+import { plainText } from '../markup'
 import { pauseMs } from '../steps'
 import type { PracticeSlide } from '../types'
 import type { ViewOptions } from './options'
-import { Eyebrow, SlideRoot } from './parts'
+import { Eyebrow, Marked, SlideRoot } from './parts'
 import { FS } from './typography'
 
 /** Длинная фраза набирается меньшим кеглем, но не мельче 110px. */
-function answerSize(text: string): number {
+function answerSize(es: string): number {
+  const text = plainText(es)
   if (text.length <= 22) return FS.hero
   if (text.length <= 34) return FS.heroMid
   return FS.heroSmall
@@ -40,7 +42,20 @@ export function PracticeView({
           color: 'var(--text)',
         }}
       >
-        {slide.phrase.ru}
+        <Marked text={slide.phrase.ru} />
+        {slide.phrase.hint ? (
+          <div
+            style={{
+              marginTop: 10,
+              fontSize: FS.ru,
+              fontWeight: 600,
+              letterSpacing: 0,
+              color: 'var(--text-3)',
+            }}
+          >
+            ({slide.phrase.hint})
+          </div>
+        ) : null}
       </div>
 
       {/* Полоска паузы: пока она бежит, зритель говорит вслух. */}
@@ -106,7 +121,8 @@ export function PracticeView({
               color: 'var(--accent)',
             }}
           >
-            {slide.phrase.es}
+            {/* Ответ и так акцентного цвета — выделенное внутри него шафрановое. */}
+            <Marked text={slide.phrase.es} color="var(--accent-2)" />
           </div>
           {options.transcription && slide.phrase.ipa ? (
             <div
@@ -122,6 +138,21 @@ export function PracticeView({
               {slide.phrase.ipa}
             </div>
           ) : null}
+          {slide.phrase.alternatives?.map((alternative) => (
+            <div
+              key={alternative}
+              style={{
+                marginTop: 12,
+                fontSize: FS.ru,
+                fontWeight: 600,
+                lineHeight: 1.2,
+                color: 'var(--text-2)',
+              }}
+            >
+              <span style={{ color: 'var(--text-3)' }}>или </span>
+              <Marked text={alternative} />
+            </div>
+          ))}
         </div>
       </div>
     </SlideRoot>

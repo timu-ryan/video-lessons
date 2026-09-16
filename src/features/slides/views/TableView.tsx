@@ -1,7 +1,7 @@
 import { SAFE_COL_W } from '../canvas'
 import type { TableSlide } from '../types'
 import type { ViewOptions } from './options'
-import { CompactHeader, Reveal, SlideRoot } from './parts'
+import { CompactHeader, Marked, Reveal, SlideRoot } from './parts'
 import { FS } from './typography'
 
 /** Колонка перевода. Остаток ширины уходит испанскому — он главный. */
@@ -61,7 +61,7 @@ export function TableView({
       >
         {slide.rows.map((row, index) => (
           <Reveal
-            key={row.audioId ?? row.es}
+            key={row.es}
             shown={index <= step}
             style={{
               display: 'grid',
@@ -82,7 +82,7 @@ export function TableView({
                   color: 'var(--text)',
                 }}
               >
-                {row.es}
+                <Marked text={row.es} />
               </div>
               {options.transcription && row.ipa ? (
                 <div
@@ -109,7 +109,7 @@ export function TableView({
                   color: 'var(--text-2)',
                 }}
               >
-                {row.ru}
+                <Marked text={row.ru} />
               </div>
             ) : null}
           </Reveal>

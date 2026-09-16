@@ -22,6 +22,19 @@ function load(): [Lesson, ...Lesson[]] {
     return deriveLesson(parseLesson(name, Number.parseInt(number, 10), raw))
   })
 
+  // Номер в плане курса — второй адрес урока, путаницы в нём быть не должно.
+  const byPlan = new Map<string, number>()
+  for (const lesson of parsed) {
+    const key = `${lesson.level}-${lesson.planLesson}`
+    const other = byPlan.get(key)
+    if (other !== undefined) {
+      throw new Error(
+        `уроки ${other} и ${lesson.number}: оба ${lesson.level}, урок ${lesson.planLesson} по плану`,
+      )
+    }
+    byPlan.set(key, lesson.number)
+  }
+
   const [first, ...rest] = parsed.sort((a, b) => a.number - b.number)
   if (!first) throw new Error('в папке lessons/ нет файлов lesson-NN.json')
   return [first, ...rest]

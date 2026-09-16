@@ -1,7 +1,7 @@
 import { SAFE_COL_W } from '../canvas'
 import type { DialogueSlide } from '../types'
 import type { ViewOptions } from './options'
-import { CompactHeader, Reveal, SlideRoot } from './parts'
+import { CompactHeader, Marked, Reveal, SlideRoot } from './parts'
 import { FS } from './typography'
 
 const NAME_COL = 230
@@ -33,7 +33,7 @@ export function DialogueView({
           const speaker = options.speakers[line.speaker]
           return (
             <Reveal
-              key={line.audioId ?? `${slide.id}-${index}`}
+              key={`${slide.id}-${index}`}
               shown={index <= step}
               style={{
                 display: 'grid',
@@ -62,7 +62,7 @@ export function DialogueView({
                     color: 'var(--text)',
                   }}
                 >
-                  {line.es}
+                  <Marked text={line.es} />
                 </div>
                 {options.translation ? (
                   <div
@@ -74,7 +74,7 @@ export function DialogueView({
                       color: 'var(--text-3)',
                     }}
                   >
-                    {line.ru}
+                    <Marked text={line.ru} />
                   </div>
                 ) : null}
               </div>

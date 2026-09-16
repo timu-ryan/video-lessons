@@ -1,5 +1,6 @@
 import type { CSSProperties, ReactNode } from 'react'
 import { CANVAS_H, CANVAS_W, PAD_TOP, PAD_X, SAFE_COL_W } from '../canvas'
+import { splitMarks } from '../markup'
 import { FS } from './typography'
 
 export function SlideRoot({ children, style }: { children: ReactNode; style?: CSSProperties }) {
@@ -161,6 +162,33 @@ export function Reveal({
         opacity: shown ? 1 : 0,
         animationDelay: shown ? `${Math.min(delayIndex, 2) * 40}ms` : undefined,
         ...style,
+      }}
+    >
+      {children}
+    </div>
+  )
+}
+
+/** Строка с выделением нового: в "Quiero **aprender**" слово подсвечено цветом. */
+export function Marked({ text, color = 'var(--accent)' }: { text: string; color?: string }) {
+  return splitMarks(text).map((part, index) => (
+    <span key={index} style={part.marked ? { color } : undefined}>
+      {part.text}
+    </span>
+  ))
+}
+
+/** Строка транскрипции под испанским. Шрифт — свой: в Manrope нет знаков МФА. */
+export function Ipa({ children, size = FS.tr }: { children: ReactNode; size?: number }) {
+  return (
+    <div
+      style={{
+        marginTop: 2,
+        fontFamily: 'var(--font-ipa)',
+        fontSize: size,
+        fontWeight: 500,
+        lineHeight: 1.15,
+        color: 'var(--text-3)',
       }}
     >
       {children}

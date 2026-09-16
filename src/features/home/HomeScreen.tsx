@@ -123,7 +123,7 @@ function LessonCard({ lesson }: { lesson: Lesson }) {
               color: 'var(--accent)',
             }}
           >
-            Урок {lesson.number}
+            Урок {lesson.number} · {lesson.level}, урок {lesson.planLesson}
           </div>
           <h2
             style={{

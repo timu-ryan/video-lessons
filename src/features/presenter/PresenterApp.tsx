@@ -1,8 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { probeAudio } from '../audio/audio'
 import { SlideView } from '../slides/SlideView'
 import { Stage } from '../slides/Stage'
-import { slideAudioIds, slideLabel, stepCount } from '../slides/steps'
+import { slideLabel, stepCount } from '../slides/steps'
 import type { Lesson } from '../slides/types'
 import { useHotkeys } from '../slides/useHotkeys'
 import type { DeckState, NavAction, PresenterMessage } from './channel'
@@ -12,7 +11,7 @@ const THUMB_SCALE = 0.29
 
 /**
  * Второе окно: его не записывают. Здесь можно и нужно показывать интерфейс —
- * текущий и следующий слайд, текст «что говоришь», таймер, наличие озвучки.
+ * текущий и следующий слайд, текст «что говоришь», таймер.
  */
 export function PresenterApp({ lesson }: { lesson: Lesson }) {
   const [state, setState] = useState<DeckState>(() => ({
@@ -185,11 +184,9 @@ export function PresenterApp({ lesson }: { lesson: Lesson }) {
         )}
       </section>
 
-      <AudioStatus lesson={lesson} slideId={slide.id} ids={slideAudioIds(slide)} />
-
       <footer style={{ fontSize: 13, color: 'var(--text-3)', lineHeight: 1.6 }}>
         → / Space / PageDown — вперёд · ← / PageUp — назад · Home / End — первый / последний ·
-        T — транскрипция · R — перевод · A — аудио · F — полный экран · G — зона камеры ·
+        T — транскрипция · R — перевод · F — полный экран · G — зона камеры ·
         B — полоска прогресса · P — это окно
       </footer>
     </div>
@@ -227,60 +224,5 @@ function Frame({ children }: { children: React.ReactNode }) {
     >
       {children}
     </div>
-  )
-}
-
-/** Есть ли озвучка для фраз слайда — чтобы не удивляться тишине на записи. */
-function AudioStatus({
-  lesson,
-  slideId,
-  ids,
-}: {
-  lesson: Lesson
-  slideId: string
-  ids: string[]
-}) {
-  const [found, setFound] = useState<Record<string, boolean>>({})
-
-  useEffect(() => {
-    let alive = true
-    setFound({})
-    void Promise.all(
-      ids.map(async (id) => [id, await probeAudio(lesson.audioDir, id)] as const),
-    ).then((pairs) => {
-      if (alive) setFound(Object.fromEntries(pairs))
-    })
-    return () => {
-      alive = false
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [slideId, lesson.audioDir])
-
-  if (ids.length === 0) return null
-
-  return (
-    <section style={{ fontSize: 14 }}>
-      <Caption>Озвучка ({lesson.audioDir})</Caption>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-        {ids.map((id) => {
-          const ok = found[id]
-          return (
-            <span
-              key={id}
-              style={{
-                padding: '6px 12px',
-                borderRadius: 999,
-                fontWeight: 600,
-                border: '1px solid var(--rule)',
-                background: ok ? 'var(--ok-soft)' : 'var(--bg-panel)',
-                color: ok ? 'var(--ok)' : 'var(--text-3)',
-              }}
-            >
-              {ok ? '♪' : '·'} {id}
-            </span>
-          )
-        })}
-      </div>
-    </section>
   )
 }

@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 3,
+  "number": 10,
+  "level": "A0",
+  "planLesson": 10,
+  "title": "Глаголы на -er и -ir",
+  "course": "Испанский с нуля",
+  "newVocabulary": [
+    { "es": "vivir", "ru": "жить", "pos": "verb" },
+    { "es": "beber", "ru": "пить", "pos": "verb" },
+    { "es": "escribir", "ru": "писать", "pos": "verb" },
+    { "es": "comprender", "ru": "понимать", "pos": "verb" },
+    { "es": "abrir", "ru": "открывать", "pos": "verb" },
+    { "es": "recibir", "ru": "получать", "pos": "verb" },
+    { "es": "vender", "ru": "продавать", "pos": "verb" },
+    { "es": "correr", "ru": "бегать", "pos": "verb" },
+    { "es": "en", "ru": "в, на (где?)", "pos": "prep" },
+    { "es": "el café", "ru": "кофе", "pos": "noun" },
+    { "es": "la cerveza", "ru": "пиво", "pos": "noun" },
+    { "es": "el pan", "ru": "хлеб", "pos": "noun" },
+    { "es": "la carne", "ru": "мясо", "pos": "noun" },
+    { "es": "el pescado", "ru": "рыба (еда)", "pos": "noun" },
+    { "es": "el periódico", "ru": "газета", "pos": "noun" },
+    { "es": "la revista", "ru": "журнал", "pos": "noun" },
+    { "es": "la carta", "ru": "письмо", "pos": "noun" },
+    { "es": "el centro", "ru": "центр", "pos": "noun" }
+  ],
+  "newGrammar": [
+    "настоящее время глаголов на -er",
+    "настоящее время глаголов на -ir",
+    "en + место"
+  ],
+  "speakers": { "ana": "Ana", "carlos": "Carlos" },
+  "tableHeaders": { "es": "Испанский", "ru": "Перевод" },
+  "practiceGroups": [
+    { "name": "Глаголы на -er" },
+    { "name": "Глаголы на -ir" },
+    { "name": "Всё вместе" }
+  ],
+  "slides": [
+    {
+      "type": "title",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Привет! Мы уже умеем спрягать глаголы на -ar: hablo, hablas, hablamos. Сегодня добавим ещё две группы — глаголы на -er и на -ir.»",
+        "«После этого урока вы сможете сказать, где живёте, что едите и пьёте, что читаете и пишете.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Глаголы на -er",
+      "hint": "Отбрасываем -er и добавляем окончание",
+      "notes": [
+        "«Начнём с глаголов на -er. Два таких глагола вы уже знаете: comer — есть и leer — читать. Раньше мы использовали их только в начальной форме: quiero comer, tengo que leer.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Спряжение на -er",
+      "pattern": ["основа", "+", "окончание"],
+      "text": "Убираем -er и добавляем окончание лица: comer → como.",
+      "examples": [
+        { "es": "**Como** poco.", "ru": "Я мало ем.", "ipa": "ˈkomo ˈpoko" },
+        { "es": "Ella **lee** mucho.", "ru": "Она много читает.", "ipa": "ˈeja ˈle.e ˈmutʃo" },
+        { "es": "¿**Aprendes** español?", "ru": "Ты учишь испанский?", "ipa": "aˈpɾendes espaˈɲol" }
+      ],
+      "notes": [
+        "«Схема та же, что с -ar. Берём глагол, убираем -er — остаётся основа. Потом добавляем окончание, которое показывает, кто действует.»",
+        "«Comer: убираем -er, остаётся com-. Я ем — como. Как и с -ar, «я» отдельно говорить не нужно: окончание -o уже говорит, что это я.»",
+        "🔊 «Como poco. Ella lee mucho. ¿Aprendes español?»"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "verb": "comer",
+      "ru": "есть",
+      "rows": [
+        { "pronoun": "yo", "stem": "com", "ending": "o", "ru": "я ем", "ipa": "ˈkomo" },
+        { "pronoun": "tú", "stem": "com", "ending": "es", "ru": "ты ешь", "ipa": "ˈkomes" },
+        { "pronoun": "él / ella / usted", "stem": "com", "ending": "e", "ru": "он, она ест; вы едите", "ipa": "ˈkome" },
+        { "pronoun": "nosotros / nosotras", "stem": "com", "ending": "emos", "ru": "мы едим", "ipa": "koˈmemos" },
+        { "pronoun": "vosotros / vosotras", "stem": "com", "ending": "éis", "ru": "вы едите", "ipa": "koˈmeis" },
+        { "pronoun": "ellos / ellas / ustedes", "stem": "com", "ending": "en", "ru": "они едят", "ipa": "ˈkomen" }
+      ],
+      "notes": [
+        "«Вот все формы. Como, comes, come, comemos, coméis, comen.»",
+        "«Обратите внимание на ударение: в «мы» оно падает на окончание — comemos, а в «вы» над e стоит знак — coméis.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "-ar и -er",
+      "left": {
+        "label": "-ar: hablar",
+        "items": [
+          { "es": "habl**as**", "ru": "ты говоришь" },
+          { "es": "habl**a**", "ru": "он говорит" },
+          { "es": "habl**amos**", "ru": "мы говорим" }
+        ]
+      },
+      "right": {
+        "label": "-er: comer",
+        "items": [
+          { "es": "com**es**", "ru": "ты ешь" },
+          { "es": "com**e**", "ru": "он ест" },
+          { "es": "com**emos**", "ru": "мы едим" }
+        ]
+      },
+      "notes": [
+        "«Сравните с глаголами на -ar. Разница почти одна: там, где у -ar была буква a, у -er появляется e.»",
+        "«Hablas — comes. Habla — come. Hablamos — comemos. А «я» у обеих групп одинаковое: hablo, como.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Новые глаголы на -er",
+      "rows": [
+        { "es": "Quiero **beber**.", "ru": "Я хочу пить.", "ipa": "ˈkjeɾo beˈbeɾ" },
+        { "es": "**Vendo** un coche.", "ru": "Я продаю машину.", "ipa": "ˈbendo un ˈkotʃe" },
+        { "es": "Ella **corre** mucho.", "ru": "Она много бегает.", "ipa": "ˈeja ˈkore ˈmutʃo" },
+        { "es": "No **comprendo**.", "ru": "Я не понимаю.", "ipa": "no komˈpɾendo" }
+      ],
+      "notes": [
+        "«Теперь новые глаголы на -er — сразу в предложениях.»",
+        "«Beber — пить. Quiero beber — я хочу пить. 🔊»",
+        "«Vender — продавать. Vendo un coche — я продаю машину. 🔊 Помните: b и v звучат одинаково.»",
+        "«Correr — бегать. Ella corre mucho. 🔊 Двойное rr раскатываем.»",
+        "«Comprender — понимать. No comprendo — я не понимаю. 🔊 Очень полезная фраза, запомните её целиком.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Еда и напитки",
+      "rows": [
+        { "es": "No bebo **café**.", "ru": "Я не пью кофе.", "ipa": "no ˈbebo kaˈfe" },
+        { "es": "Él bebe **cerveza**.", "ru": "Он пьёт пиво.", "ipa": "ˈel ˈbebe θeɾˈbeθa" },
+        { "es": "Como **pan**.", "ru": "Я ем хлеб.", "ipa": "ˈkomo ˈpan" },
+        { "es": "No comemos **carne**.", "ru": "Мы не едим мясо.", "ipa": "no koˈmemos ˈkaɾne" },
+        { "es": "Ellos comen **pescado**.", "ru": "Они едят рыбу.", "ipa": "ˈejos ˈkomen pesˈkado" }
+      ],
+      "notes": [
+        "«С beber и comer сразу пригодится еда.»",
+        "«Café — кофе, ударение на последний слог. 🔊 Cerveza — пиво, z читаем как английское th. 🔊»",
+        "«Pan — хлеб. 🔊 Carne — мясо. 🔊 Pescado — рыба, но именно как еда. 🔊»",
+        "«Заметьте: когда говорим про еду вообще — «ем хлеб», «пью кофе» — артикль не ставим.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Глаголы на -ir",
+      "hint": "Почти как -er: отличаются только «мы» и «вы»",
+      "notes": [
+        "«Теперь третья группа — глаголы на -ir. Хорошая новость: учить почти ничего не придётся.»"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "verb": "vivir",
+      "ru": "жить",
+      "rows": [
+        { "pronoun": "yo", "stem": "viv", "ending": "o", "ru": "я живу", "ipa": "ˈbibo" },
+        { "pronoun": "tú", "stem": "viv", "ending": "es", "ru": "ты живёшь", "ipa": "ˈbibes" },
+        { "pronoun": "él / ella / usted", "stem": "viv", "ending": "e", "ru": "он, она живёт; вы живёте", "ipa": "ˈbibe" },
+        { "pronoun": "nosotros / nosotras", "stem": "viv", "ending": "imos", "ru": "мы живём", "ipa": "biˈbimos" },
+        { "pronoun": "vosotros / vosotras", "stem": "viv", "ending": "ís", "ru": "вы живёте", "ipa": "biˈbis" },
+        { "pronoun": "ellos / ellas / ustedes", "stem": "viv", "ending": "en", "ru": "они живут", "ipa": "ˈbiben" }
+      ],
+      "notes": [
+        "«Vivir — жить. Vivo, vives, vive, vivimos, vivís, viven.»",
+        "«Послушайте: vivo, vives, vive — ровно как у comer. Меняются только «мы» и «вы».»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "-er и -ir",
+      "left": {
+        "label": "-er: comer",
+        "items": [
+          { "es": "com**e**", "ru": "он ест" },
+          { "es": "com**emos**", "ru": "мы едим" },
+          { "es": "com**éis**", "ru": "вы едите" }
+        ]
+      },
+      "right": {
+        "label": "-ir: vivir",
+        "items": [
+          { "es": "viv**e**", "ru": "он живёт" },
+          { "es": "viv**imos**", "ru": "мы живём" },
+          { "es": "viv**ís**", "ru": "вы живёте" }
+        ]
+      },
+      "notes": [
+        "«Первая строка: come — vive. Одинаковое окончание.»",
+        "«А вот «мы» и «вы» отличаются: comemos — vivimos, coméis — vivís. Правило простое: в этих формах остаётся буква из инфинитива. Comer — e, vivir — i.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичная ошибка",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [{ "es": "Nosotros **vivemos**." }]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [{ "es": "Nosotros **vivimos**.", "ru": "Мы живём." }]
+      },
+      "notes": [
+        "«Самая частая ошибка — сказать «vivemos» по аналогии с comemos. Вспоминайте инфинитив: vivir, значит vivimos.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Новые глаголы на -ir",
+      "rows": [
+        { "es": "**Vivo** en Moscú.", "ru": "Я живу в Москве.", "ipa": "ˈbibo en mosˈku" },
+        { "es": "Ella **escribe** un libro.", "ru": "Она пишет книгу.", "ipa": "ˈeja esˈkɾibe un ˈlibɾo" },
+        { "es": "**Abro** el libro.", "ru": "Я открываю книгу.", "ipa": "ˈabɾo el ˈlibɾo" },
+        { "es": "Los niños **reciben** libros.", "ru": "Дети получают книги.", "ipa": "los ˈniɲos reˈθiben ˈlibɾos" }
+      ],
+      "notes": [
+        "«Vivo en Moscú — я живу в Москве. 🔊»",
+        "«Escribir — писать. Ella escribe un libro. 🔊»",
+        "«Abrir — открывать. Abro el libro. 🔊»",
+        "«Recibir — получать. Los niños reciben libros. 🔊 Здесь c перед i, поэтому читаем как английское th.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Ещё новые слова",
+      "rows": [
+        { "es": "Leo el **periódico**.", "ru": "Я читаю газету.", "ipa": "ˈle.o el peˈɾjodiko" },
+        { "es": "Ella lee una **revista**.", "ru": "Она читает журнал.", "ipa": "ˈeja ˈle.e ˈuna reˈbista" },
+        { "es": "Escribo una **carta**.", "ru": "Я пишу письмо.", "ipa": "esˈkɾibo ˈuna ˈkaɾta" },
+        { "es": "Vivimos en el **centro**.", "ru": "Мы живём в центре.", "ipa": "biˈbimos en el ˈθentɾo" }
+      ],
+      "notes": [
+        "«Periódico — газета, ударение на ó. 🔊 Revista — журнал. 🔊»",
+        "«Carta — письмо. 🔊 Centro — центр, c перед e читаем как th. 🔊»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Предлог en",
+      "pattern": ["en", "+", "место"],
+      "text": "en — это «в» или «на», когда говорим, где что-то происходит.",
+      "examples": [
+        { "es": "Como **en** casa.", "ru": "Я ем дома.", "ipa": "ˈkomo en ˈkasa" },
+        { "es": "Trabajo **en** el centro.", "ru": "Я работаю в центре.", "ipa": "tɾaˈbaxo en el ˈθentɾo" },
+        { "es": "Estudio **en** Moscú.", "ru": "Я учусь в Москве.", "ipa": "esˈtudjo en mosˈku" }
+      ],
+      "notes": [
+        "«Вы уже видели маленькое слово en. Оно отвечает на вопрос «где?» и переводится как «в» или «на».»",
+        "«En casa — дома, буквально «в доме». Артикля здесь нет — так говорят всегда.»",
+        "«А в en el centro артикль есть: центр конкретный, тот самый.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Практика",
+      "hint": "Фраза по-русски → пауза → скажите вслух по-испански",
+      "notes": [
+        "«Теперь практика. Вы видите фразу по-русски — пока идёт полоска, скажите её вслух по-испански. Потом появится ответ. Не бойтесь ошибиться: главное — говорить.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -er",
+      "phrase": { "ru": "Я много ем.", "es": "Como mucho.", "alternatives": ["Yo como mucho."], "ipa": "ˈkomo ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -er",
+      "phrase": { "ru": "Ты много читаешь?", "es": "¿Lees mucho?", "ipa": "ˈle.es ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -er",
+      "phrase": { "ru": "Она не пьёт кофе.", "es": "Ella no bebe café.", "ipa": "ˈeja no ˈbebe kaˈfe" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -er",
+      "phrase": { "ru": "Они продают книги.", "es": "Ellos venden libros.", "alternatives": ["Venden libros."], "ipa": "ˈejos ˈbenden ˈlibɾos" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -er",
+      "phrase": { "ru": "Я не понимаю.", "es": "No comprendo.", "ipa": "no komˈpɾendo" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -er",
+      "phrase": { "ru": "Вы много бегаете?", "hint": "к нескольким друзьям", "es": "¿Corréis mucho?", "alternatives": ["¿Vosotros corréis mucho?"], "ipa": "koˈreis ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -er",
+      "phrase": { "ru": "Он учит английский.", "es": "Él aprende inglés.", "alternatives": ["Él estudia inglés."], "ipa": "ˈel aˈpɾende inˈgles" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -er",
+      "phrase": { "ru": "Вы пьёте пиво?", "hint": "вежливо, одному человеку", "es": "¿Usted bebe cerveza?", "alternatives": ["¿Bebe usted cerveza?"], "ipa": "usˈted ˈbebe θeɾˈbeθa" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -ir",
+      "phrase": { "ru": "Я живу в Москве.", "es": "Vivo en Moscú.", "alternatives": ["Yo vivo en Moscú."], "ipa": "ˈbibo en mosˈku" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -ir",
+      "phrase": { "ru": "Мы живём в центре.", "es": "Vivimos en el centro.", "ipa": "biˈbimos en el ˈθentɾo" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -ir",
+      "phrase": { "ru": "Она пишет книгу.", "es": "Ella escribe un libro.", "ipa": "ˈeja esˈkɾibe un ˈlibɾo" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -ir",
+      "phrase": { "ru": "Ты открываешь книгу?", "es": "¿Abres el libro?", "ipa": "ˈabɾes el ˈlibɾo" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -ir",
+      "phrase": { "ru": "Я получаю письмо.", "es": "Recibo una carta.", "ipa": "reˈθibo ˈuna ˈkaɾta" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -ir",
+      "phrase": { "ru": "Вы живёте в Мадриде?", "hint": "к нескольким друзьям", "es": "¿Vivís en Madrid?", "alternatives": ["¿Vosotros vivís en Madrid?"], "ipa": "biˈbis en maˈdɾid" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -ir",
+      "phrase": { "ru": "Они пишут по-испански.", "es": "Ellos escriben en español.", "alternatives": ["Escriben en español."], "ipa": "ˈejos esˈkɾiben en espaˈɲol" }
+    },
+    {
+      "type": "practice",
+      "group": "Глаголы на -ir",
+      "phrase": { "ru": "Вы живёте в центре?", "hint": "вежливо, одному человеку", "es": "¿Usted vive en el centro?", "alternatives": ["¿Vive usted en el centro?"], "ipa": "usˈted ˈbibe en el ˈθentɾo" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я не ем мясо.", "es": "No como carne.", "ipa": "no ˈkomo ˈkaɾne" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мы едим рыбу дома.", "es": "Comemos pescado en casa.", "ipa": "koˈmemos pesˈkado en ˈkasa" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Он читает газету.", "es": "Él lee el periódico.", "ipa": "ˈel ˈle.e el peˈɾjodiko" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я хочу жить в Мадриде.", "es": "Quiero vivir en Madrid.", "ipa": "ˈkjeɾo biˈbiɾ en maˈdɾid" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Завтра я буду писать письмо.", "es": "Mañana voy a escribir una carta.", "ipa": "maˈɲana ˈboj a eskɾiˈbiɾ ˈuna ˈkaɾta" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мне нужно купить хлеб.", "es": "Necesito comprar pan.", "alternatives": ["Tengo que comprar pan."], "ipa": "neθeˈsito komˈpɾaɾ ˈpan" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мне нравится читать журналы.", "es": "Me gusta leer revistas.", "ipa": "me ˈgusta leˈeɾ reˈbistas" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Она русская, но живёт в Мадриде.", "es": "Ella es rusa, pero vive en Madrid.", "ipa": "ˈeja es ˈrusa ˈpeɾo ˈbibe en maˈdɾid" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я программист и работаю в центре.", "hint": "говорит мужчина", "es": "Soy programador y trabajo en el centro.", "ipa": "ˈsoj pɾogɾamaˈdoɾ i tɾaˈbaxo en el ˈθentɾo" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Дети много едят.", "es": "Los niños comen mucho.", "ipa": "los ˈniɲos ˈkomen ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Сегодня мы не можем бегать.", "es": "Hoy no podemos correr.", "ipa": "ˈoj no poˈdemos koˈreɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Ты понимаешь по-испански?", "es": "¿Comprendes español?", "alternatives": ["¿Comprendes el español?"], "ipa": "komˈpɾendes espaˈɲol" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Они пьют кофе и читают газету.", "es": "Ellos beben café y leen el periódico.", "ipa": "ˈejos ˈbeben kaˈfe i ˈle.en el peˈɾjodiko" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я не пью пиво, но пью кофе.", "es": "No bebo cerveza, pero bebo café.", "ipa": "no ˈbebo θeɾˈbeθa ˈpeɾo ˈbebo kaˈfe" }
+    },
+    {
+      "type": "section",
+      "title": "Мини-диалог",
+      "notes": [
+        "«А теперь послушаем, как Ана и Карлос знакомятся. Все слова вы уже знаете.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Где ты живёшь?",
+      "lines": [
+        { "speaker": "carlos", "es": "¿**Vives** en Moscú?", "ru": "Ты живёшь в Москве?" },
+        { "speaker": "ana", "es": "No, **vivo** en Madrid. ¿Y tú?", "ru": "Нет, я живу в Мадриде. А ты?" },
+        { "speaker": "carlos", "es": "Yo **vivo** en Moscú, en el centro.", "ru": "Я живу в Москве, в центре." },
+        { "speaker": "ana", "es": "¿**Comprendes** español?", "ru": "Ты понимаешь по-испански?" }
+      ],
+      "notes": [
+        "🔊 Проиграть диалог целиком, потом по репликам.",
+        "«¿Y tú? — «А ты?». Очень удобный вопрос: можно вернуть собеседнику любой вопрос.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Где ты живёшь?",
+      "lines": [
+        { "speaker": "carlos", "es": "Sí, pero **leo** poco.", "ru": "Да, но читаю мало." },
+        { "speaker": "ana", "es": "Yo **leo** mucho. Leo el periódico.", "ru": "Я читаю много. Читаю газету." },
+        { "speaker": "carlos", "es": "¿Y **escribes** en español?", "ru": "А по-испански пишешь?" },
+        { "speaker": "ana", "es": "Sí, **escribo** un libro.", "ru": "Да, я пишу книгу." }
+      ],
+      "notes": [
+        "«Обратите внимание: «Yo leo mucho». Здесь yo стоит, потому что Ана противопоставляет себя Карлосу: он читает мало, а она — много.»"
+      ]
+    },
+    {
+      "type": "final",
+      "title": "Теперь вы умеете",
+      "bullets": [
+        "Спрягать глаголы на -er: como, comes, comemos",
+        "Спрягать глаголы на -ir: vivo, vives, vivimos",
+        "Говорить, где что происходит: en + место",
+        "Рассказывать, где живёте, что едите, пьёте и читаете"
+      ],
+      "nextTitle": "Следующий урок",
+      "nextText": "Урок 11: вопросы — qué, dónde, cuándo, por qué",
+      "outro": "¡Adiós!",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Теперь вы знаете все три группы глаголов. Попробуйте сегодня рассказать себе вслух, где вы живёте и что едите на завтрак.»",
+        "«В следующем уроке научимся задавать вопросы: что, где, когда и почему. ¡Adiós!»"
+      ]
+    }
+  ]
+}

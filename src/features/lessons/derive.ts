@@ -1,17 +1,17 @@
 import type {
   DialogueSlide,
   Lesson,
-  MistakeKind,
   Slide,
   Speaker,
   TableSlide,
 } from '../slides/types'
+import { plainText } from '../slides/markup'
 import type { LessonSource, SlideSource } from './source'
 
 /**
- * Достраивает урок до того, что ждут компоненты: нумерация практики и ошибок,
+ * Достраивает урок до того, что ждут компоненты: нумерация практики,
  * «1/2» у разрезанных разделов, название раздела на каждом слайде, оглавление
- * на титуле, пауза из группы практики, цвета говорящих.
+ * на титуле, пауза практики, форма глагола в спряжении, цвета говорящих.
  *
  * Всё это в файле урока не хранится — иначе вставка одной фразы в середину
  * заставляла бы перенумеровывать весь файл вручную. Здесь — единственное место,
@@ -20,6 +20,24 @@ import type { LessonSource, SlideSource } from './source'
 
 /** Цвета реплик раздаются по порядку говорящих; переменные живут в index.css. */
 const SPEAKER_COLORS = ['var(--speaker-a)', 'var(--speaker-b)', 'var(--speaker-c)']
+
+/**
+ * Пауза практики, когда её не задали ни слайд, ни группа: время подумать
+ * плюс время произнести. Считаем по словам, а не по буквам — длинное слово
+ * говорится быстрее, чем столько же букв в коротких.
+ */
+const PAUSE_BASE_MS = 2500
+const PAUSE_PER_WORD_MS = 600
+const PAUSE_MIN_MS = 3000
+const PAUSE_MAX_MS = 12000
+
+export function autoPauseMs(es: string): number {
+  const words = plainText(es)
+    .split(/\s+/)
+    .filter((word) => /\p{L}|\d/u.test(word)).length
+  const ms = PAUSE_BASE_MS + PAUSE_PER_WORD_MS * words
+  return Math.round(Math.min(PAUSE_MAX_MS, Math.max(PAUSE_MIN_MS, ms)) / 100) * 100
+}
 
 export function deriveLesson(source: LessonSource): Lesson {
   const speakers: Record<string, Speaker> = Object.fromEntries(
@@ -34,10 +52,9 @@ export function deriveLesson(source: LessonSource): Lesson {
   const agenda = source.slides.flatMap((s) => (s.type === 'section' ? [s.title] : []))
   const totals = {
     practice: count(source.slides, 'practice'),
-    mistake: count(source.slides, 'mistake'),
   }
 
-  const seen = { section: 0, practice: 0, mistake: 0 }
+  const seen = { section: 0, practice: 0 }
   const perType = new Map<string, number>()
   let section: string | undefined
 
@@ -75,6 +92,37 @@ export function deriveLesson(source: LessonSource): Lesson {
           rows: raw.rows,
         }
 
+      case 'rule':
+        return {
+          ...base,
+          type: 'rule',
+          title: raw.title,
+          section,
+          pattern: raw.pattern,
+          text: raw.text,
+          examples: raw.examples,
+        }
+
+      case 'conjugation':
+        return {
+          ...base,
+          type: 'conjugation',
+          verb: raw.verb,
+          ru: raw.ru,
+          section,
+          rows: raw.rows.map((row) => ({ ...row, es: `${row.stem}${row.ending}` })),
+        }
+
+      case 'compare':
+        return {
+          ...base,
+          type: 'compare',
+          title: raw.title,
+          section,
+          left: raw.left,
+          right: raw.right,
+        }
+
       case 'practice': {
         seen.practice += 1
         return {
@@ -84,8 +132,7 @@ export function deriveLesson(source: LessonSource): Lesson {
           index: seen.practice,
           total: totals.practice,
           phrase: raw.phrase,
-          // Группа проверена в parse.ts, поэтому значение здесь всегда есть.
-          pauseMs: pauseByGroup.get(raw.group) as number,
+          pauseMs: raw.pauseMs ?? pauseByGroup.get(raw.group) ?? autoPauseMs(raw.phrase.es),
         }
       }
 
@@ -98,22 +145,6 @@ export function deriveLesson(source: LessonSource): Lesson {
           part: parts[index],
           lines: raw.lines,
         }
-
-      case 'mistake': {
-        seen.mistake += 1
-        return {
-          ...base,
-          type: 'mistake',
-          kind: raw.kind as MistakeKind,
-          index: seen.mistake,
-          total: totals.mistake,
-          section,
-          wrong: raw.wrong,
-          when: raw.when,
-          right: raw.right,
-          note: raw.note,
-        }
-      }
 
       case 'final':
         return {
@@ -138,8 +169,9 @@ export function deriveLesson(source: LessonSource): Lesson {
   return {
     id: String(source.number),
     number: source.number,
+    level: source.level,
+    planLesson: source.planLesson,
     title: source.title,
-    audioDir: source.audioDir,
     speakers,
     slides,
   }

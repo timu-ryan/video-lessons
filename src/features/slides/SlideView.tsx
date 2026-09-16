@@ -1,9 +1,11 @@
 import type { Slide } from './types'
 import type { ViewOptions } from './views/options'
+import { CompareView } from './views/CompareView'
+import { ConjugationView } from './views/ConjugationView'
 import { DialogueView } from './views/DialogueView'
 import { FinalView } from './views/FinalView'
-import { MistakeView } from './views/MistakeView'
 import { PracticeView } from './views/PracticeView'
+import { RuleView } from './views/RuleView'
 import { SectionView } from './views/SectionView'
 import { TableView } from './views/TableView'
 import { TitleView } from './views/TitleView'
@@ -25,12 +27,16 @@ export function SlideView({
       return <SectionView slide={slide} />
     case 'table':
       return <TableView slide={slide} step={step} options={options} />
+    case 'rule':
+      return <RuleView slide={slide} step={step} options={options} />
+    case 'conjugation':
+      return <ConjugationView slide={slide} step={step} options={options} />
+    case 'compare':
+      return <CompareView slide={slide} step={step} options={options} />
     case 'practice':
       return <PracticeView slide={slide} step={step} options={options} />
     case 'dialogue':
       return <DialogueView slide={slide} step={step} options={options} />
-    case 'mistake':
-      return <MistakeView slide={slide} step={step} />
     case 'final':
       return <FinalView slide={slide} step={step} />
   }

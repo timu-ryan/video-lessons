@@ -9,14 +9,12 @@
 
 /** Испанская единица: строка таблицы, задание практики, реплика диалога. */
 export interface Phrase {
-  /** Испанский — переносится из сценария дословно. */
+  /** Испанский — переносится из сценария дословно. Может содержать **выделение**. */
   es: string
   /** Перевод. */
   ru: string
   /** Транскрипция в МФА (IPA). Конвенция записи — в features/lessons/source.ts. */
   ipa?: string
-  /** Имя аудиофайла: public/audio/<audioDir>/<audioId>.mp3 */
-  audioId?: string
 }
 
 export interface SlideBase {
@@ -60,16 +58,70 @@ export interface TableSlide extends SlideBase, SectionRef {
   rows: Phrase[]
 }
 
-/** Практика: русская фраза → таймер паузы → испанский вариант + аудио. */
+/** Правило: формула конструкции, пояснение, примеры по одному. */
+export interface RuleSlide extends SlideBase, SectionRef {
+  type: 'rule'
+  title: string
+  /** ["quiero", "+", "инфинитив"]: "+" — знак, остальное — плашки. */
+  pattern: string[]
+  text?: string
+  examples: Phrase[]
+}
+
+/** Строка спряжения. `es` = stem + ending — собирается при загрузке. */
+export interface ConjugationRow extends Phrase {
+  pronoun: string
+  stem: string
+  ending: string
+}
+
+/** Спряжение: до 6 строк, открываются по одной, окончания подсвечены. */
+export interface ConjugationSlide extends SlideBase, SectionRef {
+  type: 'conjugation'
+  verb: string
+  ru: string
+  rows: ConjugationRow[]
+}
+
+/** Пункт сравнения: у неверного варианта перевода может не быть. */
+export interface CompareItem {
+  es: string
+  ru?: string
+  ipa?: string
+}
+
+export interface CompareSide {
+  label: string
+  /** wrong — ✗ и зачёркивание, right — ✓, без tone — нейтрально. */
+  tone?: 'wrong' | 'right'
+  items: CompareItem[]
+}
+
+/** Сравнение в две колонки; пункты — парами по строкам, строка за шаг. */
+export interface CompareSlide extends SlideBase, SectionRef {
+  type: 'compare'
+  title: string
+  left: CompareSide
+  right: CompareSide
+}
+
+export interface PracticePhrase extends Phrase {
+  /** Уточнение к заданию: «вежливо». */
+  hint?: string
+  /** Другие правильные ответы. */
+  alternatives?: string[]
+}
+
+/** Практика: русская фраза → таймер паузы → испанский вариант. */
 export interface PracticeSlide extends SlideBase {
   type: 'practice'
   /** «Разминка», «Две фразы подряд», «Посложнее» — метка в углу. */
   group: string
   index: number
   total: number
-  /** Одна фраза: `ru` — задание, `es` и `ipa` — ответ. */
-  phrase: Phrase
-  /** Длительность паузы, мс — из группы практики. */
+  /** Одна фраза: `ru` (+ `hint`) — задание, `es`, `alternatives` и `ipa` — ответ. */
+  phrase: PracticePhrase
+  /** Длительность паузы, мс: слайд → группа → по длине фразы. */
   pauseMs: number
 }
 
@@ -83,25 +135,6 @@ export interface DialogueSlide extends SlideBase, SectionRef {
   title: string
   part?: [number, number]
   lines: DialogueLine[]
-}
-
-/**
- * Что именно неверно. Вьюха подаёт каждый вид по-своему: транскрипцию
- * набирает шрифтом МФА, у ложного друга в `right` стоит значение, а не фраза.
- */
-export type MistakeKind = 'pronunciation' | 'grammar' | 'false-friend' | 'usage'
-
-/** Разбор ошибки: неверно (✗, зачёркнуто) → верно (✓) → пояснение. */
-export interface MistakeSlide extends SlideBase, SectionRef {
-  type: 'mistake'
-  kind: MistakeKind
-  index: number
-  total: number
-  wrong: string
-  /** Условие, при котором это ошибка («если вы девушка», «в 7 вечера»). */
-  when?: string
-  right: string
-  note: string
 }
 
 /** Финальная заставка. */
@@ -118,9 +151,11 @@ export type Slide =
   | TitleSlide
   | SectionSlide
   | TableSlide
+  | RuleSlide
+  | ConjugationSlide
+  | CompareSlide
   | PracticeSlide
   | DialogueSlide
-  | MistakeSlide
   | FinalSlide
 
 export type SlideType = Slide['type']
@@ -134,10 +169,12 @@ export interface Speaker {
 export interface Lesson {
   /** Строковый номер: ключ реестра и часть адреса `#/lesson/1/0/0`. */
   id: string
+  /** Сквозной номер в курсе. */
   number: number
+  level: string
+  /** Номер внутри уровня — как в плане курса. */
+  planLesson: number
   title: string
-  /** Папка с озвучкой: public/audio/<audioDir>/ */
-  audioDir: string
   speakers: Record<string, Speaker>
   slides: Slide[]
 }

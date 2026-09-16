@@ -62,8 +62,6 @@ function resolve(event: KeyboardEvent): string | undefined {
       return 'transcription'
     case 'KeyR':
       return 'translation'
-    case 'KeyA':
-      return 'audio'
     case 'KeyF':
       return 'fullscreen'
     case 'KeyG':

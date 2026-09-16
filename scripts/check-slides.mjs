@@ -9,7 +9,7 @@
  * Запуск: сначала `npm run dev`, потом `npm run check:slides`.
  * Флаги: --shots — сложить скриншоты слайдов в .shots/
  *        --url=http://localhost:5173 — другой адрес dev-сервера
- *        --lesson=1 — какой урок проверять
+ *        --lesson=10 — какой урок проверять (по умолчанию — первый в lessons/)
  */
 import { chromium } from 'playwright'
 import { mkdirSync, readdirSync, readFileSync } from 'node:fs'
@@ -20,7 +20,12 @@ const arg = (name, fallback) => {
 }
 
 const BASE = arg('url', 'http://localhost:5173')
-const LESSON = arg('lesson', '1')
+const firstLesson = () =>
+  readdirSync('lessons')
+    .flatMap((name) => /^lesson-(\d+)\.json$/.exec(name)?.[1] ?? [])
+    .map(Number)
+    .sort((a, b) => a - b)[0]
+const LESSON = arg('lesson', String(firstLesson()))
 const SHOTS = process.argv.includes('--shots')
 const OUT = '.shots'
 
@@ -51,7 +56,14 @@ function checkIpa() {
   for (const name of readdirSync('lessons').filter((f) => f.endsWith('.json'))) {
     const lesson = JSON.parse(readFileSync(`lessons/${name}`, 'utf8'))
     for (const [index, slide] of lesson.slides.entries()) {
-      const phrases = slide.rows ?? slide.lines ?? (slide.phrase ? [slide.phrase] : [])
+      const phrases = [
+        ...(slide.rows ?? []),
+        ...(slide.lines ?? []),
+        ...(slide.examples ?? []),
+        ...(slide.left?.items ?? []),
+        ...(slide.right?.items ?? []),
+        ...(slide.phrase ? [slide.phrase] : []),
+      ]
       for (const phrase of phrases) {
         if (!phrase.ipa) continue
         const found = [...phrase.ipa].filter((c) => FORBIDDEN.includes(c))

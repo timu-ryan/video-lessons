@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { playPhrase, stopAudio } from '../audio/audio'
 import type { DeckState, PresenterMessage } from '../presenter/channel'
 import { openChannel, readStartedAt, writeStartedAt } from '../presenter/channel'
 import { useSettings } from '../settings/useSettings'
@@ -8,7 +7,7 @@ import { SafeZone } from './SafeZone'
 import { SlideView } from './SlideView'
 import { Stage } from './Stage'
 import { homeHash, presenterHash } from './route'
-import { pauseMs, phraseAtStep } from './steps'
+import { pauseMs } from './steps'
 import type { Lesson } from './types'
 import { toggleFullscreen, useHotkeys } from './useHotkeys'
 import { useDeckNav } from './useDeckNav'
@@ -46,10 +45,6 @@ export function Deck({ lesson }: { lesson: Lesson }) {
     safeZone: () => toggle('safeZone'),
     progress: () => toggle('progress'),
     fullscreen: toggleFullscreen,
-    audio: () => {
-      const audioId = phraseAtStep(slide, step)?.audioId
-      if (audioId) playPhrase(lesson.audioDir, audioId)
-    },
     // Esc — назад к списку уроков. В полном экране эту клавишу забирает сам
     // браузер на выход из него, и уходить со слайда посреди записи не нужно.
     escape: () => {
@@ -64,20 +59,12 @@ export function Deck({ lesson }: { lesson: Lesson }) {
     },
   })
 
-  // --- практика: пауза, затем автопоказ ответа и озвучка -------------------
+  // --- практика: пауза, затем автопоказ ответа ------------------------------
   useEffect(() => {
     if (slide.type !== 'practice' || step !== 0) return
     const timer = window.setTimeout(next, pauseMs(slide))
     return () => window.clearTimeout(timer)
   }, [slide, step, next])
-
-  useEffect(() => {
-    if (slide.type === 'practice' && step === 1 && slide.phrase.audioId) {
-      playPhrase(lesson.audioDir, slide.phrase.audioId)
-    }
-  }, [slide, step, lesson.audioDir])
-
-  useEffect(() => stopAudio, [])
 
   // --- синхронизация с окном докладчика ------------------------------------
   const state: DeckState = {
