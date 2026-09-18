@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 3,
+  "number": 4,
+  "level": "A0",
+  "planLesson": 4,
+  "title": "Что я собираюсь делать",
+  "course": "Испанский с нуля",
+  "newVocabulary": [
+    { "es": "voy a", "ru": "я собираюсь, я буду", "pos": "phrase" },
+    { "es": "vas a", "ru": "ты собираешься, ты будешь", "pos": "phrase" },
+    { "es": "a", "ru": "связка в voy a + инфинитив", "pos": "prep" },
+    { "es": "tengo que", "ru": "я должен, мне нужно", "pos": "phrase" },
+    { "es": "tienes que", "ru": "ты должен, тебе нужно", "pos": "phrase" },
+    { "es": "mañana", "ru": "завтра", "pos": "adv" },
+    { "es": "pasado mañana", "ru": "послезавтра", "pos": "adv" },
+    { "es": "después", "ru": "потом, после", "pos": "adv" },
+    { "es": "luego", "ru": "потом", "pos": "adv" },
+    { "es": "tarde", "ru": "поздно", "pos": "adv" },
+    { "es": "temprano", "ru": "рано", "pos": "adv" },
+    { "es": "más tarde", "ru": "позже", "pos": "phrase" },
+    { "es": "o", "ru": "или", "pos": "conj" },
+    { "es": "comprar", "ru": "покупать", "pos": "verb" },
+    { "es": "cenar", "ru": "ужинать", "pos": "verb" },
+    { "es": "desayunar", "ru": "завтракать", "pos": "verb" },
+    { "es": "pasear", "ru": "гулять", "pos": "verb" },
+    { "es": "esperar", "ru": "ждать", "pos": "verb" },
+    { "es": "ayudar", "ru": "помогать", "pos": "verb" }
+  ],
+  "newGrammar": [
+    "voy a / vas a + инфинитив — ближайшее будущее",
+    "tengo que / tienes que + инфинитив — обязанность",
+    "no tengo que / no tienes que — «не нужно, не обязательно»"
+  ],
+  "speakers": { "ana": "Ana", "carlos": "Carlos" },
+  "tableHeaders": { "es": "Испанский", "ru": "Перевод" },
+  "practiceGroups": [
+    { "name": "Voy a, vas a" },
+    { "name": "Tengo que, tienes que" },
+    { "name": "Всё вместе" }
+  ],
+  "slides": [
+    {
+      "type": "title",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Привет! Мы уже умеем говорить, чего хотим, что можем и что нам нужно: quiero, puedo, necesito — и дальше глагол в начальной форме.»",
+        "«Сегодня добавим ещё две конструкции. Первая — чтобы рассказать о планах: «завтра я буду работать». Вторая — чтобы сказать, что вы должны сделать.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Я собираюсь",
+      "hint": "voy a + глагол в начальной форме",
+      "notes": [
+        "«Начнём с планов. По-русски мы говорим «я собираюсь работать» или «я буду работать». В испанском для этого есть очень простая конструкция.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Я собираюсь, ты собираешься",
+      "rows": [
+        { "es": "**Voy a** trabajar.", "ru": "Я буду работать.", "ipa": "ˈboj a tɾabaˈxaɾ" },
+        { "es": "**Voy a** estudiar español.", "ru": "Я собираюсь учить испанский.", "ipa": "ˈboj a estuˈdjaɾ espaˈɲol" },
+        { "es": "¿**Vas a** cocinar?", "ru": "Ты будешь готовить?", "ipa": "ˈbas a koθiˈnaɾ" },
+        { "es": "No **voy a** dormir.", "ru": "Я не буду спать.", "ipa": "no ˈboj a doɾˈmiɾ" }
+      ],
+      "notes": [
+        "«Voy a — «я собираюсь». Voy a trabajar — я буду работать. 🔊»",
+        "«Vas a — «ты собираешься». ¿Vas a cocinar? — ты будешь готовить? 🔊»",
+        "«No ставим перед voy, как перед любым глаголом: no voy a dormir. 🔊»",
+        "«Если знаете английский: voy a — почти дословно I'm going to. Voy a trabajar — I'm going to work.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Voy a + инфинитив",
+      "pattern": ["voy a / vas a", "+", "инфинитив"],
+      "text": "Меняется только voy / vas. Второй глагол — в начальной форме.",
+      "examples": [
+        { "es": "**Voy a** leer.", "ru": "Я буду читать.", "ipa": "ˈboj a leˈeɾ" },
+        { "es": "¿**Vas a** viajar?", "ru": "Ты будешь путешествовать?", "ipa": "ˈbas a bjaˈxaɾ" },
+        { "es": "**Voy a** aprender inglés.", "ru": "Я собираюсь выучить английский.", "ipa": "ˈboj a apɾenˈdeɾ inˈgles" }
+      ],
+      "notes": [
+        "«Схема как с quiero: первый глагол показывает, кто действует, второй стоит в начальной форме. Quiero leer — хочу читать. Voy a leer — буду читать.»",
+        "«Не забывайте маленькое a между ними: voy a leer, vas a viajar.»",
+        "«По-русски здесь подходят и «собираюсь», и «буду»: voy a viajar — я собираюсь путешествовать, я буду путешествовать.»",
+        "🔊 «Voy a leer. ¿Vas a viajar? Voy a aprender inglés.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Когда?",
+      "rows": [
+        { "es": "**Mañana** voy a trabajar.", "ru": "Завтра я буду работать.", "ipa": "maˈɲana ˈboj a tɾabaˈxaɾ" },
+        { "es": "**Pasado mañana** voy a descansar.", "ru": "Послезавтра я буду отдыхать.", "ipa": "paˈsado maˈɲana ˈboj a deskanˈsaɾ" },
+        { "es": "**Después** voy a leer.", "ru": "Потом я буду читать.", "ipa": "desˈpwes ˈboj a leˈeɾ" },
+        { "es": "**Luego** voy a cocinar.", "ru": "Потом я буду готовить.", "ipa": "ˈlwego ˈboj a koθiˈnaɾ" }
+      ],
+      "notes": [
+        "«Теперь слова, без которых о планах не поговоришь.»",
+        "«Mañana — завтра. 🔊 Буква ñ читается как мягкое «нь»: маньяна.»",
+        "«Pasado mañana — послезавтра, буквально «прошедшее завтра». 🔊»",
+        "«Después и luego — оба значат «потом». 🔊 Luego вы уже слышали в hasta luego — «до встречи», буквально «до потом». В Испании luego в разговоре звучит очень часто.»",
+        "«Слово времени можно поставить в начало или в конец: mañana voy a trabajar и voy a trabajar mañana — оба правильно.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Новые глаголы",
+      "rows": [
+        { "es": "Hoy voy a **comprar** mucho.", "ru": "Сегодня я буду много покупать.", "ipa": "ˈoj ˈboj a komˈpɾaɾ ˈmutʃo" },
+        { "es": "¿Vas a **cenar** ahora?", "ru": "Ты будешь ужинать сейчас?", "ipa": "ˈbas a θeˈnaɾ aˈoɾa" },
+        { "es": "Hoy no voy a **desayunar**.", "ru": "Сегодня я не буду завтракать.", "ipa": "ˈoj no ˈboj a desajuˈnaɾ" },
+        { "es": "Después quiero **pasear**.", "ru": "Потом я хочу погулять.", "ipa": "desˈpwes ˈkjeɾo paseˈaɾ" },
+        { "es": "¿Vas a pasear **o** descansar?", "ru": "Ты пойдёшь гулять или будешь отдыхать?", "ipa": "ˈbas a paseˈaɾ o deskanˈsaɾ" }
+      ],
+      "notes": [
+        "«Новые глаголы на -ar. Все они спрягаются как hablar: compro, compras.»",
+        "«Comprar — покупать. Hoy voy a comprar mucho. 🔊»",
+        "«Cenar — ужинать. ¿Vas a cenar ahora? 🔊 c перед e читаем как английское th.»",
+        "«Desayunar — завтракать. Hoy no voy a desayunar. 🔊»",
+        "«Pasear — гулять, прогуливаться. Después quiero pasear. 🔊»",
+        "«И маленькое слово o — «или». ¿Vas a pasear o descansar? 🔊»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Хочу или собираюсь",
+      "left": {
+        "label": "quiero — хочу",
+        "items": [
+          { "es": "Quiero viajar.", "ru": "Я хочу путешествовать." },
+          { "es": "Quiero cenar.", "ru": "Я хочу поужинать." },
+          { "es": "¿Quieres pasear?", "ru": "Хочешь погулять?" }
+        ]
+      },
+      "right": {
+        "label": "voy a — собираюсь, буду",
+        "items": [
+          { "es": "Voy a viajar.", "ru": "Я буду путешествовать." },
+          { "es": "Voy a cenar.", "ru": "Я буду ужинать." },
+          { "es": "¿Vas a pasear?", "ru": "Ты пойдёшь гулять?" }
+        ]
+      },
+      "notes": [
+        "«Сравните. Quiero — это желание: хочу, но, может быть, не сделаю. Voy a — это план: я уже решил.»",
+        "«Quiero viajar — мечтаю о путешествии. Voy a viajar — уже собираю чемодан.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичные ошибки",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          { "es": "Voy **viajar**." },
+          { "es": "Mañana voy a **trabajo**." }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          { "es": "Voy **a** viajar.", "ru": "Я буду путешествовать." },
+          { "es": "Mañana voy a **trabajar**.", "ru": "Завтра я буду работать." }
+        ]
+      },
+      "notes": [
+        "«Первая ошибка — потерять a. По-русски между «буду» и «работать» ничего нет, поэтому хочется сказать voy viajar. Так нельзя: voy a viajar.»",
+        "«Вторая — изменить второй глагол. После voy a глагол всегда в начальной форме: trabajar, а не trabajo.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Я должен",
+      "hint": "tengo que + глагол в начальной форме",
+      "notes": [
+        "«Вторая конструкция — про обязанности. По-русски: «я должен работать», «мне надо учиться», «приходится ждать».»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Я должен, ты должен",
+      "rows": [
+        { "es": "**Tengo que** trabajar.", "ru": "Мне нужно работать.", "ipa": "ˈtengo ke tɾabaˈxaɾ" },
+        { "es": "**Tengo que** estudiar más.", "ru": "Мне надо больше учиться.", "ipa": "ˈtengo ke estuˈdjaɾ ˈmas" },
+        { "es": "¿**Tienes que** cocinar hoy?", "ru": "Тебе сегодня нужно готовить?", "ipa": "ˈtjenes ke koθiˈnaɾ ˈoj" }
+      ],
+      "notes": [
+        "«Tengo que — «я должен, мне нужно». Tengo que trabajar. 🔊»",
+        "«Tienes que — «ты должен, тебе нужно». ¿Tienes que cocinar hoy? 🔊»",
+        "«Если знаете английский: tengo que — это I have to. Даже устроено похоже: tengo значит «имею», как have.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Tengo que + инфинитив",
+      "pattern": ["tengo que / tienes que", "+", "инфинитив"],
+      "text": "Между tengo и глаголом всегда стоит que.",
+      "examples": [
+        { "es": "**Tengo que** leer después.", "ru": "Потом мне нужно почитать.", "ipa": "ˈtengo ke leˈeɾ desˈpwes" },
+        { "es": "**Tienes que** descansar.", "ru": "Тебе надо отдохнуть.", "ipa": "ˈtjenes ke deskanˈsaɾ" },
+        { "es": "Hoy **tengo que** practicar.", "ru": "Сегодня мне нужно позаниматься.", "ipa": "ˈoj ˈtengo ke pɾaktiˈkaɾ" }
+      ],
+      "notes": [
+        "«Схема та же: меняется только первая часть — tengo или tienes. Потом обязательно que, потом начальная форма.»",
+        "«Запомните как одно целое: tengo que, tienes que. Без que фраза не работает.»",
+        "🔊 «Tengo que leer después. Tienes que descansar. Hoy tengo que practicar.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Рано, поздно, подождать",
+      "rows": [
+        { "es": "Tengo que **esperar**.", "ru": "Мне нужно подождать.", "ipa": "ˈtengo ke espeˈɾaɾ" },
+        { "es": "¿Puedes **ayudar**?", "ru": "Можешь помочь?", "ipa": "ˈpwedes ajuˈdaɾ" },
+        { "es": "Mañana tengo que desayunar **temprano**.", "ru": "Завтра мне нужно рано позавтракать.", "ipa": "maˈɲana ˈtengo ke desajuˈnaɾ temˈpɾano" },
+        { "es": "Hoy voy a cenar **tarde**.", "ru": "Сегодня я буду ужинать поздно.", "ipa": "ˈoj ˈboj a θeˈnaɾ ˈtaɾde" },
+        { "es": "Voy a estudiar **más tarde**.", "ru": "Я буду учиться позже.", "ipa": "ˈboj a estuˈdjaɾ ˈmas ˈtaɾde" }
+      ],
+      "notes": [
+        "«Esperar — ждать. Tengo que esperar. 🔊 Ayudar — помогать. ¿Puedes ayudar? 🔊»",
+        "«Temprano — рано, tarde — поздно. 🔊 А más tarde — «позже», буквально «более поздно». 🔊»",
+        "«Не путайте с buenas tardes — «добрый день». Там tarde — это вторая половина дня. А просто tarde — «поздно».»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Necesito и tengo que",
+      "left": {
+        "label": "necesito — мне нужно (мне самому)",
+        "items": [
+          { "es": "Necesito descansar.", "ru": "Мне нужно отдохнуть." },
+          { "es": "Necesito dormir.", "ru": "Мне нужно поспать." }
+        ]
+      },
+      "right": {
+        "label": "tengo que — я должен (так надо)",
+        "items": [
+          { "es": "Tengo que trabajar.", "ru": "Мне нужно работать." },
+          { "es": "Tengo que esperar.", "ru": "Мне приходится ждать." }
+        ]
+      },
+      "notes": [
+        "«И necesito, и tengo que переводятся «мне нужно». Во многих фразах подходят оба, и ошибкой это не будет.»",
+        "«Но оттенок разный. Necesito — это ваша потребность: устал, нужно отдохнуть. Tengo que — обязанность или обстоятельства: так надо, так вышло.»",
+        "«В практике, где подходят оба, вы увидите оба варианта.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Не нужно",
+      "pattern": ["no tengo que / no tienes que", "+", "инфинитив"],
+      "text": "no tienes que — «тебе не нужно, не обязательно», а не «нельзя».",
+      "examples": [
+        { "es": "**No tienes que** hablar ahora.", "ru": "Тебе не нужно говорить сейчас.", "ipa": "no ˈtjenes ke aˈblaɾ aˈoɾa" },
+        { "es": "Mañana **no tengo que** trabajar.", "ru": "Завтра мне не нужно работать.", "ipa": "maˈɲana no ˈtengo ke tɾabaˈxaɾ" },
+        { "es": "**No tienes que** esperar.", "ru": "Тебе не нужно ждать.", "ipa": "no ˈtjenes ke espeˈɾaɾ" }
+      ],
+      "notes": [
+        "«Осторожно с отрицанием. No tienes que hablar — это не «тебе нельзя говорить», а «тебе не нужно, можешь не говорить».»",
+        "«Mañana no tengo que trabajar — завтра мне не нужно работать. Хорошая новость: можно отдыхать.»",
+        "«Если знаете английский: это ровно you don't have to, а не you mustn't.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Практика",
+      "hint": "Фраза по-русски → пауза → скажите вслух по-испански",
+      "notes": [
+        "«Теперь практика. Вы видите фразу по-русски — пока идёт полоска, скажите её вслух по-испански. Потом появится ответ. Не бойтесь ошибиться: главное — говорить.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Voy a, vas a",
+      "phrase": { "ru": "Завтра я буду работать.", "es": "Mañana voy a trabajar.", "alternatives": ["Voy a trabajar mañana."], "ipa": "maˈɲana ˈboj a tɾabaˈxaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Voy a, vas a",
+      "phrase": { "ru": "Ты будешь учиться сегодня?", "es": "¿Vas a estudiar hoy?", "alternatives": ["¿Hoy vas a estudiar?"], "ipa": "ˈbas a estuˈdjaɾ ˈoj" }
+    },
+    {
+      "type": "practice",
+      "group": "Voy a, vas a",
+      "phrase": { "ru": "Я буду готовить.", "es": "Voy a cocinar.", "ipa": "ˈboj a koθiˈnaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Voy a, vas a",
+      "phrase": { "ru": "Сегодня я не буду ужинать.", "es": "Hoy no voy a cenar.", "alternatives": ["No voy a cenar hoy."], "ipa": "ˈoj no ˈboj a θeˈnaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Voy a, vas a",
+      "phrase": { "ru": "Ты собираешься путешествовать?", "es": "¿Vas a viajar?", "ipa": "ˈbas a bjaˈxaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Voy a, vas a",
+      "phrase": { "ru": "Потом я буду читать.", "es": "Después voy a leer.", "alternatives": ["Luego voy a leer.", "Voy a leer después."], "ipa": "desˈpwes ˈboj a leˈeɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Voy a, vas a",
+      "phrase": { "ru": "Послезавтра я буду отдыхать.", "es": "Pasado mañana voy a descansar.", "ipa": "paˈsado maˈɲana ˈboj a deskanˈsaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Voy a, vas a",
+      "phrase": { "ru": "Ты будешь завтракать сейчас?", "es": "¿Vas a desayunar ahora?", "ipa": "ˈbas a desajuˈnaɾ aˈoɾa" }
+    },
+    {
+      "type": "practice",
+      "group": "Voy a, vas a",
+      "phrase": { "ru": "Я собираюсь выучить немецкий.", "es": "Voy a aprender alemán.", "ipa": "ˈboj a apɾenˈdeɾ aleˈman" }
+    },
+    {
+      "type": "practice",
+      "group": "Voy a, vas a",
+      "phrase": { "ru": "Я не собираюсь много покупать.", "es": "No voy a comprar mucho.", "ipa": "no ˈboj a komˈpɾaɾ ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Tengo que, tienes que",
+      "phrase": { "ru": "Мне нужно работать.", "es": "Tengo que trabajar.", "alternatives": ["Necesito trabajar."], "ipa": "ˈtengo ke tɾabaˈxaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Tengo que, tienes que",
+      "phrase": { "ru": "Тебе нужно больше учиться.", "es": "Tienes que estudiar más.", "alternatives": ["Necesitas estudiar más."], "ipa": "ˈtjenes ke estuˈdjaɾ ˈmas" }
+    },
+    {
+      "type": "practice",
+      "group": "Tengo que, tienes que",
+      "phrase": { "ru": "Потом мне нужно почитать.", "es": "Después tengo que leer.", "alternatives": ["Tengo que leer después.", "Luego tengo que leer."], "ipa": "desˈpwes ˈtengo ke leˈeɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Tengo que, tienes que",
+      "phrase": { "ru": "Тебе не нужно говорить сейчас.", "es": "No tienes que hablar ahora.", "ipa": "no ˈtjenes ke aˈblaɾ aˈoɾa" }
+    },
+    {
+      "type": "practice",
+      "group": "Tengo que, tienes que",
+      "phrase": { "ru": "Мне приходится ждать.", "es": "Tengo que esperar.", "ipa": "ˈtengo ke espeˈɾaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Tengo que, tienes que",
+      "phrase": { "ru": "Тебе сегодня нужно готовить?", "es": "¿Tienes que cocinar hoy?", "alternatives": ["¿Hoy tienes que cocinar?"], "ipa": "ˈtjenes ke koθiˈnaɾ ˈoj" }
+    },
+    {
+      "type": "practice",
+      "group": "Tengo que, tienes que",
+      "phrase": { "ru": "Завтра мне нужно рано позавтракать.", "es": "Mañana tengo que desayunar temprano.", "ipa": "maˈɲana ˈtengo ke desajuˈnaɾ temˈpɾano" }
+    },
+    {
+      "type": "practice",
+      "group": "Tengo que, tienes que",
+      "phrase": { "ru": "Завтра мне не нужно работать.", "es": "Mañana no tengo que trabajar.", "ipa": "maˈɲana no ˈtengo ke tɾabaˈxaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Tengo que, tienes que",
+      "phrase": { "ru": "Тебе нужно отдохнуть.", "es": "Tienes que descansar.", "alternatives": ["Necesitas descansar."], "ipa": "ˈtjenes ke deskanˈsaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Tengo que, tienes que",
+      "phrase": { "ru": "Сегодня мне нужно много заниматься.", "es": "Hoy tengo que practicar mucho.", "alternatives": ["Hoy necesito practicar mucho."], "ipa": "ˈoj ˈtengo ke pɾaktiˈkaɾ ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я хочу поужинать, но мне нужно работать.", "es": "Quiero cenar, pero tengo que trabajar.", "alternatives": ["Quiero cenar, pero necesito trabajar."], "ipa": "ˈkjeɾo θeˈnaɾ ˈpeɾo ˈtengo ke tɾabaˈxaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Сегодня я не могу погулять, мне нужно учиться.", "es": "Hoy no puedo pasear, tengo que estudiar.", "alternatives": ["Hoy no puedo pasear, necesito estudiar."], "ipa": "ˈoj no ˈpwedo paseˈaɾ ˈtengo ke estuˈdjaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Ты работаешь или учишься?", "es": "¿Trabajas o estudias?", "ipa": "tɾaˈbaxas o esˈtudjas" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Ты будешь ужинать или отдыхать?", "es": "¿Vas a cenar o descansar?", "alternatives": ["¿Vas a cenar o vas a descansar?"], "ipa": "ˈbas a θeˈnaɾ o deskanˈsaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я говорю по-английски, но собираюсь выучить испанский.", "es": "Hablo inglés, pero voy a aprender español.", "ipa": "ˈablo inˈgles ˈpeɾo ˈboj a apɾenˈdeɾ espaˈɲol" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я буду ужинать поздно.", "es": "Voy a cenar tarde.", "ipa": "ˈboj a θeˈnaɾ ˈtaɾde" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Можешь помочь сейчас?", "es": "¿Puedes ayudar ahora?", "ipa": "ˈpwedes ajuˈdaɾ aˈoɾa" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Завтра я буду петь и танцевать.", "es": "Mañana voy a cantar y bailar.", "ipa": "maˈɲana ˈboj a kanˈtaɾ i bajˈlaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Хочешь поплавать? — Да, но позже.", "es": "¿Quieres nadar? — Sí, pero más tarde.", "ipa": "ˈkjeɾes naˈdaɾ · ˈsi ˈpeɾo ˈmas ˈtaɾde" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мне не нужно ждать, я могу работать сейчас.", "es": "No tengo que esperar, puedo trabajar ahora.", "ipa": "no ˈtengo ke espeˈɾaɾ ˈpwedo tɾabaˈxaɾ aˈoɾa" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я много работаю, мне нужно отдыхать.", "es": "Trabajo mucho, tengo que descansar.", "alternatives": ["Trabajo mucho, necesito descansar."], "ipa": "tɾaˈbaxo ˈmutʃo ˈtengo ke deskanˈsaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Потом ты будешь заниматься испанским?", "es": "¿Después vas a practicar español?", "alternatives": ["¿Luego vas a practicar español?", "¿Vas a practicar español después?"], "ipa": "desˈpwes ˈbas a pɾaktiˈkaɾ espaˈɲol" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я преподаю английский, но завтра не буду работать.", "es": "Enseño inglés, pero mañana no voy a trabajar.", "ipa": "enˈseɲo inˈgles ˈpeɾo maˈɲana no ˈboj a tɾabaˈxaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Ты хочешь погулять сейчас или позже?", "es": "¿Quieres pasear ahora o más tarde?", "ipa": "ˈkjeɾes paseˈaɾ aˈoɾa o ˈmas ˈtaɾde" }
+    },
+    {
+      "type": "section",
+      "title": "Мини-диалог",
+      "notes": [
+        "«А теперь послушаем, как Ана и Карлос обсуждают планы на завтра. Все слова вы уже знаете.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Планы на завтра",
+      "lines": [
+        { "speaker": "carlos", "es": "Hola, Ana. ¿**Vas a** trabajar mañana?", "ru": "Привет, Ана. Ты завтра будешь работать?" },
+        { "speaker": "ana", "es": "No, pero **tengo que** estudiar español.", "ru": "Нет, но мне нужно учить испанский." },
+        { "speaker": "carlos", "es": "¿Y **después**? ¿Quieres pasear?", "ru": "А потом? Хочешь погулять?" },
+        { "speaker": "ana", "es": "Sí, pero **más tarde**. ¿Tú **vas a** trabajar?", "ru": "Да, но попозже. А ты будешь работать?" }
+      ],
+      "notes": [
+        "🔊 Проиграть диалог целиком, потом по репликам.",
+        "«Обратите внимание: «¿Tú vas a trabajar?». Обычно tú не говорят, но здесь Ана переводит разговор с себя на Карлоса: а ты?»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Планы на завтра",
+      "lines": [
+        { "speaker": "carlos", "es": "Sí, **voy a** trabajar. Y hoy **tengo que** cocinar.", "ru": "Да, буду. А сегодня мне нужно готовить." },
+        { "speaker": "ana", "es": "¿**Vas a** cenar **tarde**?", "ru": "Будешь ужинать поздно?" },
+        { "speaker": "carlos", "es": "No, **voy a** cenar ahora. ¡Hasta **mañana**!", "ru": "Нет, буду ужинать сейчас. До завтра!" },
+        { "speaker": "ana", "es": "¡Adiós, Carlos!", "ru": "Пока, Карлос!" }
+      ],
+      "notes": [
+        "«¡Hasta mañana! — «до завтра». Устроено как hasta luego: hasta, а потом — когда увидимся.»"
+      ]
+    },
+    {
+      "type": "final",
+      "title": "Теперь вы умеете",
+      "bullets": [
+        "Рассказывать о планах: voy a + инфинитив",
+        "Спрашивать о планах: ¿vas a…?",
+        "Говорить, что должны сделать: tengo que + инфинитив",
+        "Говорить, что делать не обязательно: no tienes que"
+      ],
+      "nextTitle": "Следующий урок",
+      "nextText": "Урок 5: он, мы, они — все лица",
+      "outro": "¡Hasta luego!",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Теперь у вас пять конструкций: quiero, puedo, necesito, voy a, tengo que. После каждой — просто глагол в начальной форме. С ними уже можно сказать очень много.»",
+        "«Попробуйте сегодня вслух рассказать, что вы будете делать завтра и что вам нужно сделать. В следующем уроке выучим все лица: он, мы, вы, они. ¡Hasta luego!»"
+      ]
+    }
+  ]
+}

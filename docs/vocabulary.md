@@ -3,7 +3,7 @@
 > Генерируется командой `npm run vocab:build`. Не редактировать вручную.
 > Готовя урок N, считайте изученным только то, что введено в уроках с номером меньше N.
 
-Уроков: 4 · слов: 70 · нет уроков: 4–9
+Уроков: 6 · слов: 106 · нет уроков: 6–9
 
 ## Урок 1 · A0-1 · Приветствие, знакомство
 
@@ -23,6 +23,18 @@
 
 **Грамматика:** инфинитив: окончания -ar, -er, -ir · глагол + инфинитив · quiero / quieres + инфинитив · puedo / puedes + инфинитив · necesito / necesitas + инфинитив
 
+## Урок 4 · A0-4 · Что я собираюсь делать
+
+**Слова (19):** voy a — я собираюсь, я буду · vas a — ты собираешься, ты будешь · a — связка в voy a + инфинитив · tengo que — я должен, мне нужно · tienes que — ты должен, тебе нужно · mañana — завтра · pasado mañana — послезавтра · después — потом, после · luego — потом · tarde — поздно · temprano — рано · más tarde — позже · o — или · comprar — покупать · cenar — ужинать · desayunar — завтракать · pasear — гулять · esperar — ждать · ayudar — помогать
+
+**Грамматика:** voy a / vas a + инфинитив — ближайшее будущее · tengo que / tienes que + инфинитив — обязанность · no tengo que / no tienes que — «не нужно, не обязательно»
+
+## Урок 5 · A0-5 · Он, мы, они: все лица
+
+**Слова (17):** él — он · ella — она · nosotros — мы · nosotras — мы (о женщинах) · vosotros — вы (нескольким, на «ты») · vosotras — вы (нескольким женщинам, на «ты») · ellos — они · ellas — они (о женщинах) · usted — вы (вежливо, одному человеку) · ustedes — вы (вежливо, нескольким) · ¿y usted? — а вы? · llegar — приезжать, приходить · preguntar — спрашивать · contestar — отвечать · terminar — заканчивать · juntos — вместе · el italiano — итальянский язык
+
+**Грамматика:** полное спряжение глаголов на -ar в настоящем времени · личные местоимения él, ella, nosotros, vosotros, ellos · usted и ustedes с формой третьего лица · vosotros в Испании и ustedes в Латинской Америке
+
 ## Урок 10 · A0-10 · Глаголы на -er и -ir
 
 **Слова (18):** vivir — жить · beber — пить · escribir — писать · comprender — понимать · abrir — открывать · recibir — получать · vender — продавать · correr — бегать · en — в, на (где?) · el café — кофе · la cerveza — пиво · el pan — хлеб · la carne — мясо · el pescado — рыба (еда) · el periódico — газета · la revista — журнал · la carta — письмо · el centro — центр
@@ -36,11 +48,14 @@
 | ¿cómo te llamas? | как тебя зовут? | phrase | 1 |
 | ¿de dónde eres? | откуда ты? | phrase | 1 |
 | ¿y tú? | а ты? а тебя? | phrase | 1 |
+| ¿y usted? | а вы? | phrase | 5 |
+| a | связка в voy a + инфинитив | prep | 4 |
 | abrir | открывать | verb | 10 |
 | adiós | до свидания, пока | interj | 1 |
 | ahora | сейчас | adv | 3 |
 | el alemán | немецкий язык | noun | 2 |
 | aprender | учить, выучить | verb | 3 |
+| ayudar | помогать | verb | 4 |
 | bailar | танцевать | verb | 3 |
 | beber | пить | verb | 10 |
 | buenas noches | добрый вечер, спокойной ночи | phrase | 1 |
@@ -50,22 +65,32 @@
 | cantar | петь | verb | 3 |
 | la carne | мясо | noun | 10 |
 | la carta | письмо | noun | 10 |
+| cenar | ужинать | verb | 4 |
 | el centro | центр | noun | 10 |
 | la cerveza | пиво | noun | 10 |
 | el chino | китайский язык | noun | 2 |
 | cocinar | готовить | verb | 3 |
 | comer | есть | verb | 3 |
+| comprar | покупать | verb | 4 |
 | comprender | понимать | verb | 10 |
+| contestar | отвечать | verb | 5 |
 | correr | бегать | verb | 10 |
 | de nada | не за что | phrase | 1 |
+| desayunar | завтракать | verb | 4 |
 | descansar | отдыхать | verb | 3 |
+| después | потом, после | adv | 4 |
 | dormir | спать | verb | 3 |
 | e | и (перед i-, hi-) | conj | 2 |
+| él | он | pron | 5 |
+| ella | она | pron | 5 |
+| ellas | они (о женщинах) | pron | 5 |
+| ellos | они | pron | 5 |
 | en | в, на (где?) | prep | 10 |
 | enseñar | преподавать, учить кого-то | verb | 2 |
 | escribir | писать | verb | 10 |
 | escuchar | слушать | verb | 3 |
 | el español | испанский язык | noun | 2 |
+| esperar | ждать | verb | 4 |
 | estudiar | учиться, учить | verb | 2 |
 | el francés | французский язык | noun | 2 |
 | gracias | спасибо | interj | 1 |
@@ -74,14 +99,25 @@
 | hola | привет | interj | 1 |
 | hoy | сегодня | adv | 3 |
 | el inglés | английский язык | noun | 2 |
+| el italiano | итальянский язык | noun | 5 |
+| juntos | вместе | adj | 5 |
 | leer | читать | verb | 3 |
+| llegar | приезжать, приходить | verb | 5 |
+| luego | потом | adv | 4 |
+| mañana | завтра | adv | 4 |
 | más | больше | adv | 3 |
+| más tarde | позже | phrase | 4 |
 | me llamo | меня зовут | phrase | 1 |
 | mucho | много | adv | 2 |
 | nadar | плавать | verb | 3 |
 | necesitar | нуждаться, быть нужным | verb | 3 |
 | no | не, нет | adv | 2 |
+| nosotras | мы (о женщинах) | pron | 5 |
+| nosotros | мы | pron | 5 |
+| o | или | conj | 4 |
 | el pan | хлеб | noun | 10 |
+| pasado mañana | послезавтра | adv | 4 |
+| pasear | гулять | verb | 4 |
 | perdón | извините, извини | interj | 1 |
 | el periódico | газета | noun | 10 |
 | pero | но | conj | 2 |
@@ -90,16 +126,28 @@
 | poder | мочь | verb | 3 |
 | por favor | пожалуйста (просьба) | phrase | 1 |
 | practicar | практиковать, заниматься | verb | 3 |
+| preguntar | спрашивать | verb | 5 |
 | querer | хотеть | verb | 3 |
 | recibir | получать | verb | 10 |
 | la revista | журнал | noun | 10 |
 | el ruso | русский язык | noun | 2 |
 | sí | да | adv | 2 |
 | soy de | я из | phrase | 1 |
+| tarde | поздно | adv | 4 |
+| temprano | рано | adv | 4 |
+| tengo que | я должен, мне нужно | phrase | 4 |
+| terminar | заканчивать | verb | 5 |
+| tienes que | ты должен, тебе нужно | phrase | 4 |
 | trabajar | работать | verb | 2 |
 | tú | ты | pron | 2 |
+| usted | вы (вежливо, одному человеку) | pron | 5 |
+| ustedes | вы (вежливо, нескольким) | pron | 5 |
+| vas a | ты собираешься, ты будешь | phrase | 4 |
 | vender | продавать | verb | 10 |
 | viajar | путешествовать | verb | 3 |
 | vivir | жить | verb | 10 |
+| vosotras | вы (нескольким женщинам, на «ты») | pron | 5 |
+| vosotros | вы (нескольким, на «ты») | pron | 5 |
+| voy a | я собираюсь, я буду | phrase | 4 |
 | y | и | conj | 2 |
 | yo | я | pron | 2 |

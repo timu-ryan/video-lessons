@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 3,
+  "number": 5,
+  "level": "A0",
+  "planLesson": 5,
+  "title": "Он, мы, они: все лица",
+  "course": "Испанский с нуля",
+  "newVocabulary": [
+    { "es": "él", "ru": "он", "pos": "pron" },
+    { "es": "ella", "ru": "она", "pos": "pron" },
+    { "es": "nosotros", "ru": "мы", "pos": "pron" },
+    { "es": "nosotras", "ru": "мы (о женщинах)", "pos": "pron" },
+    { "es": "vosotros", "ru": "вы (нескольким, на «ты»)", "pos": "pron" },
+    { "es": "vosotras", "ru": "вы (нескольким женщинам, на «ты»)", "pos": "pron" },
+    { "es": "ellos", "ru": "они", "pos": "pron" },
+    { "es": "ellas", "ru": "они (о женщинах)", "pos": "pron" },
+    { "es": "usted", "ru": "вы (вежливо, одному человеку)", "pos": "pron" },
+    { "es": "ustedes", "ru": "вы (вежливо, нескольким)", "pos": "pron" },
+    { "es": "¿y usted?", "ru": "а вы?", "pos": "phrase" },
+    { "es": "llegar", "ru": "приезжать, приходить", "pos": "verb" },
+    { "es": "preguntar", "ru": "спрашивать", "pos": "verb" },
+    { "es": "contestar", "ru": "отвечать", "pos": "verb" },
+    { "es": "terminar", "ru": "заканчивать", "pos": "verb" },
+    { "es": "juntos", "ru": "вместе", "pos": "adj" },
+    { "es": "el italiano", "ru": "итальянский язык", "pos": "noun" }
+  ],
+  "newGrammar": [
+    "полное спряжение глаголов на -ar в настоящем времени",
+    "личные местоимения él, ella, nosotros, vosotros, ellos",
+    "usted и ustedes с формой третьего лица",
+    "vosotros в Испании и ustedes в Латинской Америке"
+  ],
+  "speakers": { "ana": "Ana", "carlos": "Carlos" },
+  "tableHeaders": { "es": "Испанский", "ru": "Перевод" },
+  "practiceGroups": [
+    { "name": "Он, она, вы" },
+    { "name": "Мы, вы, они" },
+    { "name": "Всё вместе" }
+  ],
+  "slides": [
+    {
+      "type": "title",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Привет! Мы уже умеем говорить о себе и спрашивать собеседника: hablo, hablas, trabajo, trabajas. Но пока не можем сказать, что делают другие люди.»",
+        "«Сегодня добавим все остальные лица: он, она, мы, вы, они. А ещё научимся вежливо обращаться к незнакомому человеку на «вы».»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Он и она",
+      "hint": "У «он» и «она» окончание -a",
+      "notes": [
+        "«Начнём с «он» и «она».»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Он и она",
+      "rows": [
+        { "es": "**Él** trabaja mucho.", "ru": "Он много работает.", "ipa": "ˈel tɾaˈbaxa ˈmutʃo" },
+        { "es": "**Ella** habla inglés.", "ru": "Она говорит по-английски.", "ipa": "ˈeja ˈabla inˈgles" },
+        { "es": "Él no estudia hoy.", "ru": "Он сегодня не учится.", "ipa": "ˈel no esˈtudja ˈoj" },
+        { "es": "Ella canta y baila.", "ru": "Она поёт и танцует.", "ipa": "ˈeja ˈkanta i ˈbajla" }
+      ],
+      "notes": [
+        "«Él — он. 🔊 Обратите внимание на знак ударения над é. Слово el без знака — совсем другое, до него дойдём в уроке 8.»",
+        "«Ella — она. 🔊 Двойное ll в Испании читаем почти как русское «й»: «эйя».»",
+        "«Посмотрите на глаголы: trabaja, habla, estudia. У «он» и «она» окончание -a.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Он, она: окончание -a",
+      "pattern": ["основа", "+", "-a"],
+      "text": "Убираем -ar и добавляем -a: hablar → habla.",
+      "examples": [
+        { "es": "Él **habla** ruso.", "ru": "Он говорит по-русски.", "ipa": "ˈel ˈabla ˈruso" },
+        { "es": "Ella **cocina** mucho.", "ru": "Она много готовит.", "ipa": "ˈeja koˈθina ˈmutʃo" },
+        { "es": "¿Ella **practica** español hoy?", "ru": "Она сегодня занимается испанским?", "ipa": "ˈeja pɾakˈtika espaˈɲol ˈoj" }
+      ],
+      "notes": [
+        "«Схема знакомая: убираем -ar, остаётся основа, добавляем окончание. Я — hablo, ты — hablas, он или она — habla.»",
+        "«Yo и tú мы обычно не произносим: hablo — и так ясно, что это я. А вот habla может значить и «он говорит», и «она говорит». Поэтому él и ella звучат чаще — когда из разговора непонятно, о ком речь.»",
+        "🔊 «Él habla ruso. Ella cocina mucho. ¿Ella practica español hoy?»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Мы, вы, они",
+      "hint": "-amos, -áis, -an",
+      "notes": [
+        "«Теперь множественное число: мы, вы и они. Здесь испанский различает больше, чем русский.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Мы и вы",
+      "rows": [
+        { "es": "**Nosotros** hablamos ruso.", "ru": "Мы говорим по-русски.", "ipa": "noˈsotɾos aˈblamos ˈruso" },
+        { "es": "**Nosotras** estudiamos español.", "ru": "Мы учим испанский.", "ipa": "noˈsotɾas estuˈdjamos espaˈɲol" },
+        { "es": "¿**Vosotros** trabajáis hoy?", "ru": "Вы сегодня работаете?", "ipa": "boˈsotɾos tɾabaˈxais ˈoj" },
+        { "es": "¿**Vosotras** bailáis?", "ru": "Вы танцуете?", "ipa": "boˈsotɾas bajˈlais" }
+      ],
+      "notes": [
+        "«Nosotros — мы. 🔊 Если в группе только женщины — nosotras. 🔊 Если есть хотя бы один мужчина — nosotros.»",
+        "«Vosotros — «вы», когда обращаемся на «ты» сразу к нескольким людям: к друзьям, коллегам, родственникам. 🔊 К нескольким подругам — vosotras. 🔊»",
+        "«В русском «вы» одно на все случаи, а в испанском их несколько. Вежливое «вы» разберём чуть позже.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Они",
+      "rows": [
+        { "es": "**Ellos** compran mucho.", "ru": "Они много покупают.", "ipa": "ˈejos ˈkompɾan ˈmutʃo" },
+        { "es": "**Ellas** cantan.", "ru": "Они поют.", "ipa": "ˈejas ˈkantan" },
+        { "es": "Ana y Carlos viajan mucho.", "ru": "Ана и Карлос много путешествуют.", "ipa": "ˈana i ˈkaɾlos ˈbjaxan ˈmutʃo" }
+      ],
+      "notes": [
+        "«Ellos — они. 🔊 Ellas — они, если это только женщины. 🔊»",
+        "«Ана и Карлос — женщина и мужчина. Про такую группу говорят ellos. Правило то же, что с nosotros: один мужчина в группе — и уже мужской род.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Вежливое «вы»",
+      "hint": "usted + форма «он, она»",
+      "notes": [
+        "«По-русски мы говорим «вы» незнакомому человеку, начальнику, пожилому соседу. В испанском для этого есть отдельное слово.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Usted и ustedes",
+      "rows": [
+        { "es": "¿**Usted** habla inglés?", "ru": "Вы говорите по-английски?", "ipa": "usˈted ˈabla inˈgles" },
+        { "es": "Me llamo Ana. **¿Y usted?**", "ru": "Меня зовут Ана. А вас?", "ipa": "me ˈjamo ˈana · i usˈted" },
+        { "es": "**Ustedes** trabajan mucho.", "ru": "Вы много работаете.", "ipa": "usˈtedes tɾaˈbaxan ˈmutʃo" }
+      ],
+      "notes": [
+        "«Usted — вежливое «вы» одному человеку. 🔊»",
+        "«¿Y usted? — «а вы?». Это вежливая пара к знакомому ¿y tú?. 🔊»",
+        "«Ustedes — «вы», когда вежливо обращаемся к нескольким людям. 🔊»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Usted + форма «он, она»",
+      "pattern": ["usted", "+", "глагол как у él"],
+      "text": "С usted глагол стоит в форме «он, она», с ustedes — в форме «они».",
+      "examples": [
+        { "es": "¿Usted **trabaja** hoy?", "ru": "Вы сегодня работаете?", "ipa": "usˈted tɾaˈbaxa ˈoj" },
+        { "es": "¿Usted **estudia** español?", "ru": "Вы учите испанский?", "ipa": "usˈted esˈtudja espaˈɲol" },
+        { "es": "Ustedes **cocinan** mucho.", "ru": "Вы много готовите.", "ipa": "usˈtedes koˈθinan ˈmutʃo" }
+      ],
+      "notes": [
+        "«Вот главная странность. По-русски мы говорим «вы работаете», а испанцы — буквально «вы работает»: usted trabaja. Глагол такой же, как у él и ella.»",
+        "«Так сложилось исторически: usted когда-то было выражением вроде «ваша милость». А о «милости» говорят в третьем лице — как о нём или о ней.»",
+        "«Если знаете английский: usted — это вежливое you, но глагол ставится не как с you, а как с he или she.»",
+        "🔊 «¿Usted trabaja hoy? ¿Usted estudia español? Ustedes cocinan mucho.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичная ошибка",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          { "es": "¿Usted **hablas** inglés?" },
+          { "es": "¿Ustedes **habláis** ruso?" }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          { "es": "¿Usted **habla** inglés?", "ru": "Вы говорите по-английски?" },
+          { "es": "¿Ustedes **hablan** ruso?", "ru": "Вы говорите по-русски?" }
+        ]
+      },
+      "notes": [
+        "«Частая ошибка — взять форму от tú или от vosotros, ведь по смыслу это тоже обращение к собеседнику.»",
+        "«Запомните пары: usted — как «он», ustedes — как «они».»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Испания и Латинская Америка",
+      "left": {
+        "label": "Испания",
+        "items": [
+          { "es": "¿**Vosotros** viajáis mañana?" },
+          { "es": "¿Vosotros cantáis?" }
+        ]
+      },
+      "right": {
+        "label": "Латинская Америка",
+        "items": [
+          { "es": "¿**Ustedes** viajan mañana?", "ru": "Вы завтра путешествуете?" },
+          { "es": "¿Ustedes cantan?", "ru": "Вы поёте?" }
+        ]
+      },
+      "notes": [
+        "«В Испании друзьям говорят vosotros, а незнакомым людям — ustedes.»",
+        "«В Латинской Америке vosotros не используют вообще: ustedes там говорят всем, и друзьям, и незнакомым. Мы учим испанский Испании, но вас поймут везде.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Все формы вместе",
+      "hint": "-o, -as, -a, -amos, -áis, -an",
+      "notes": [
+        "«Соберём все формы в одну таблицу.»"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "verb": "hablar",
+      "ru": "говорить",
+      "rows": [
+        { "pronoun": "yo", "stem": "habl", "ending": "o", "ru": "я говорю", "ipa": "ˈablo" },
+        { "pronoun": "tú", "stem": "habl", "ending": "as", "ru": "ты говоришь", "ipa": "ˈablas" },
+        { "pronoun": "él / ella / usted", "stem": "habl", "ending": "a", "ru": "он, она говорит; вы говорите", "ipa": "ˈabla" },
+        { "pronoun": "nosotros / nosotras", "stem": "habl", "ending": "amos", "ru": "мы говорим", "ipa": "aˈblamos" },
+        { "pronoun": "vosotros / vosotras", "stem": "habl", "ending": "áis", "ru": "вы говорите", "ipa": "aˈblais" },
+        { "pronoun": "ellos / ellas / ustedes", "stem": "habl", "ending": "an", "ru": "они говорят; вы говорите", "ipa": "ˈablan" }
+      ],
+      "notes": [
+        "«Hablo, hablas, habla, hablamos, habláis, hablan.»",
+        "«Обратите внимание: одна форма habla — сразу для él, ella и usted. И одна форма hablan — для ellos, ellas и ustedes.»"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "verb": "trabajar",
+      "ru": "работать",
+      "rows": [
+        { "pronoun": "yo", "stem": "trabaj", "ending": "o", "ru": "я работаю", "ipa": "tɾaˈbaxo" },
+        { "pronoun": "tú", "stem": "trabaj", "ending": "as", "ru": "ты работаешь", "ipa": "tɾaˈbaxas" },
+        { "pronoun": "él / ella / usted", "stem": "trabaj", "ending": "a", "ru": "он, она работает; вы работаете", "ipa": "tɾaˈbaxa" },
+        { "pronoun": "nosotros / nosotras", "stem": "trabaj", "ending": "amos", "ru": "мы работаем", "ipa": "tɾabaˈxamos" },
+        { "pronoun": "vosotros / vosotras", "stem": "trabaj", "ending": "áis", "ru": "вы работаете", "ipa": "tɾabaˈxais" },
+        { "pronoun": "ellos / ellas / ustedes", "stem": "trabaj", "ending": "an", "ru": "они работают; вы работаете", "ipa": "tɾaˈbaxan" }
+      ],
+      "notes": [
+        "«Любой правильный глагол на -ar спрягается так же: trabajo, trabajas, trabaja, trabajamos, trabajáis, trabajan.»",
+        "«Necesitar — тоже обычный глагол на -ar. Значит, теперь можно сказать: ella necesita trabajar, necesitamos estudiar.»",
+        "«А вот quiero, puedo, voy a и tengo que пока используем только для «я» и «ты». Их полные формы — в следующем уроке.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Где ударение",
+      "left": {
+        "label": "мы",
+        "items": [
+          { "es": "habl**amos**", "ru": "мы говорим" },
+          { "es": "trabaj**amos**", "ru": "мы работаем" },
+          { "es": "estudi**amos**", "ru": "мы учимся" }
+        ]
+      },
+      "right": {
+        "label": "вы (vosotros)",
+        "items": [
+          { "es": "habl**áis**", "ru": "вы говорите" },
+          { "es": "trabaj**áis**", "ru": "вы работаете" },
+          { "es": "estudi**áis**", "ru": "вы учитесь" }
+        ]
+      },
+      "notes": [
+        "«В большинстве форм ударение падает на основу: HAblo, HAblas, HAbla, HAblan.»",
+        "«А в «мы» и «вы» оно переходит на окончание: hablAmos, hablÁis. Знак над á в -áis как раз это и показывает.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Новые глаголы",
+      "hint": "Всё по той же схеме",
+      "notes": [
+        "«Теперь несколько новых глаголов на -ar. Спрягаются они точно так же.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Новые глаголы",
+      "rows": [
+        { "es": "Ellos **llegan** tarde.", "ru": "Они приходят поздно.", "ipa": "ˈejos ˈjegan ˈtaɾde" },
+        { "es": "Ella **pregunta** y él **contesta**.", "ru": "Она спрашивает, а он отвечает.", "ipa": "ˈeja pɾeˈgunta i ˈel konˈtesta" },
+        { "es": "**Terminamos** temprano.", "ru": "Мы заканчиваем рано.", "ipa": "teɾmiˈnamos temˈpɾano" },
+        { "es": "Ana y Carlos estudian **juntos**.", "ru": "Ана и Карлос учатся вместе.", "ipa": "ˈana i ˈkaɾlos esˈtudjan ˈxuntos" },
+        { "es": "Ellas hablan **italiano**.", "ru": "Они говорят по-итальянски.", "ipa": "ˈejas ˈablan itaˈljano" }
+      ],
+      "notes": [
+        "«Llegar — приезжать, приходить. Ellos llegan tarde. 🔊»",
+        "«Preguntar — спрашивать, contestar — отвечать. Ella pregunta y él contesta. 🔊»",
+        "«Terminar — заканчивать. Terminamos temprano. 🔊»",
+        "«Juntos — вместе. Это слово меняется по роду: если вместе только женщины — juntas. 🔊 Italiano — итальянский. 🔊»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Практика",
+      "hint": "Фраза по-русски → пауза → скажите вслух по-испански",
+      "notes": [
+        "«Теперь практика. Вы видите фразу по-русски — пока идёт полоска, скажите её вслух по-испански. Потом появится ответ. Не бойтесь ошибиться: главное — говорить.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Он, она, вы",
+      "phrase": { "ru": "Он много работает.", "es": "Él trabaja mucho.", "alternatives": ["Trabaja mucho."], "ipa": "ˈel tɾaˈbaxa ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Он, она, вы",
+      "phrase": { "ru": "Она говорит по-испански.", "es": "Ella habla español.", "ipa": "ˈeja ˈabla espaˈɲol" }
+    },
+    {
+      "type": "practice",
+      "group": "Он, она, вы",
+      "phrase": { "ru": "Он сегодня не готовит.", "es": "Él no cocina hoy.", "alternatives": ["Hoy él no cocina."], "ipa": "ˈel no koˈθina ˈoj" }
+    },
+    {
+      "type": "practice",
+      "group": "Он, она, вы",
+      "phrase": { "ru": "Она поёт, но не танцует.", "es": "Ella canta, pero no baila.", "ipa": "ˈeja ˈkanta ˈpeɾo no ˈbajla" }
+    },
+    {
+      "type": "practice",
+      "group": "Он, она, вы",
+      "phrase": { "ru": "Вы говорите по-английски?", "hint": "вежливо, одному человеку", "es": "¿Usted habla inglés?", "alternatives": ["¿Habla usted inglés?"], "ipa": "usˈted ˈabla inˈgles" }
+    },
+    {
+      "type": "practice",
+      "group": "Он, она, вы",
+      "phrase": { "ru": "Она учит итальянский.", "es": "Ella estudia italiano.", "ipa": "ˈeja esˈtudja itaˈljano" }
+    },
+    {
+      "type": "practice",
+      "group": "Он, она, вы",
+      "phrase": { "ru": "Он приходит поздно.", "es": "Él llega tarde.", "alternatives": ["Llega tarde."], "ipa": "ˈel ˈjega ˈtaɾde" }
+    },
+    {
+      "type": "practice",
+      "group": "Он, она, вы",
+      "phrase": { "ru": "Вы сегодня работаете?", "hint": "вежливо, одному человеку", "es": "¿Usted trabaja hoy?", "alternatives": ["¿Trabaja usted hoy?"], "ipa": "usˈted tɾaˈbaxa ˈoj" }
+    },
+    {
+      "type": "practice",
+      "group": "Мы, вы, они",
+      "phrase": { "ru": "Мы говорим по-русски.", "es": "Hablamos ruso.", "alternatives": ["Nosotros hablamos ruso."], "ipa": "aˈblamos ˈruso" }
+    },
+    {
+      "type": "practice",
+      "group": "Мы, вы, они",
+      "phrase": { "ru": "Они много покупают.", "es": "Ellos compran mucho.", "alternatives": ["Compran mucho."], "ipa": "ˈejos ˈkompɾan ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Мы, вы, они",
+      "phrase": { "ru": "Вы завтра путешествуете?", "hint": "к нескольким друзьям", "es": "¿Vosotros viajáis mañana?", "alternatives": ["¿Viajáis mañana?"], "ipa": "boˈsotɾos bjaˈxais maˈɲana" }
+    },
+    {
+      "type": "practice",
+      "group": "Мы, вы, они",
+      "phrase": { "ru": "Мы заканчиваем поздно.", "es": "Terminamos tarde.", "alternatives": ["Nosotros terminamos tarde."], "ipa": "teɾmiˈnamos ˈtaɾde" }
+    },
+    {
+      "type": "practice",
+      "group": "Мы, вы, они",
+      "phrase": { "ru": "Они не отвечают.", "es": "Ellos no contestan.", "alternatives": ["No contestan."], "ipa": "ˈejos no konˈtestan" }
+    },
+    {
+      "type": "practice",
+      "group": "Мы, вы, они",
+      "phrase": { "ru": "Вы много путешествуете?", "hint": "вежливо, нескольким", "es": "¿Ustedes viajan mucho?", "alternatives": ["¿Viajan ustedes mucho?"], "ipa": "usˈtedes ˈbjaxan ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Мы, вы, они",
+      "phrase": { "ru": "Мы вместе учим испанский.", "hint": "говорят две женщины", "es": "Nosotras estudiamos español juntas.", "alternatives": ["Estudiamos español juntas."], "ipa": "noˈsotɾas estuˈdjamos espaˈɲol ˈxuntas" }
+    },
+    {
+      "type": "practice",
+      "group": "Мы, вы, они",
+      "phrase": { "ru": "Вы сегодня танцуете?", "hint": "к нескольким подругам", "es": "¿Vosotras bailáis hoy?", "alternatives": ["¿Bailáis hoy?"], "ipa": "boˈsotɾas bajˈlais ˈoj" }
+    },
+    {
+      "type": "practice",
+      "group": "Мы, вы, они",
+      "phrase": { "ru": "Они преподают английский.", "es": "Ellos enseñan inglés.", "alternatives": ["Enseñan inglés."], "ipa": "ˈejos enˈseɲan inˈgles" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Ей нужно больше отдыхать.", "es": "Ella necesita descansar más.", "ipa": "ˈeja neθeˈsita deskanˈsaɾ ˈmas" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Нам нужно сейчас учиться.", "es": "Necesitamos estudiar ahora.", "alternatives": ["Ahora necesitamos estudiar.", "Nosotros necesitamos estudiar ahora."], "ipa": "neθesiˈtamos estuˈdjaɾ aˈoɾa" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Им нужно много работать.", "es": "Ellos necesitan trabajar mucho.", "alternatives": ["Necesitan trabajar mucho."], "ipa": "ˈejos neθeˈsitan tɾabaˈxaɾ ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я говорю по-испански, а он — по-итальянски.", "es": "Hablo español y él habla italiano.", "alternatives": ["Yo hablo español y él habla italiano.", "Yo hablo español, pero él habla italiano."], "ipa": "ˈablo espaˈɲol i ˈel ˈabla itaˈljano" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Она спрашивает, а я не отвечаю.", "es": "Ella pregunta y yo no contesto.", "alternatives": ["Ella pregunta, pero yo no contesto."], "ipa": "ˈeja pɾeˈgunta i ˈjo no konˈtesto" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Завтра мы ужинаем вместе.", "hint": "мужчина и женщина", "es": "Mañana cenamos juntos.", "alternatives": ["Cenamos juntos mañana."], "ipa": "maˈɲana θeˈnamos ˈxuntos" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Они завтракают рано, а ужинают поздно.", "es": "Ellos desayunan temprano y cenan tarde.", "alternatives": ["Desayunan temprano y cenan tarde."], "ipa": "ˈejos desaˈjunan temˈpɾano i ˈθenan ˈtaɾde" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мне нужно работать, а вы отдыхаете.", "hint": "к нескольким друзьям", "es": "Tengo que trabajar y vosotros descansáis.", "alternatives": ["Necesito trabajar y vosotros descansáis."], "ipa": "ˈtengo ke tɾabaˈxaɾ i boˈsotɾos deskanˈsais" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Он мало помогает.", "es": "Él ayuda poco.", "alternatives": ["Ayuda poco."], "ipa": "ˈel aˈjuda ˈpoko" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Завтра я буду готовить. А ты?", "es": "Mañana voy a cocinar. ¿Y tú?", "ipa": "maˈɲana ˈboj a koθiˈnaɾ · i ˈtu" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Они слушают и не отвечают.", "es": "Ellos escuchan y no contestan.", "alternatives": ["Escuchan y no contestan."], "ipa": "ˈejos esˈkutʃan i no konˈtestan" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Ана и Карлос говорят по-французски и по-немецки.", "es": "Ana y Carlos hablan francés y alemán.", "ipa": "ˈana i ˈkaɾlos ˈablan fɾanˈθes i aleˈman" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Вы вместе занимаетесь испанским?", "hint": "к нескольким друзьям", "es": "¿Practicáis español juntos?", "alternatives": ["¿Vosotros practicáis español juntos?"], "ipa": "pɾaktiˈkais espaˈɲol ˈxuntos" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Тебе не нужно ждать: мы приходим рано.", "es": "No tienes que esperar: llegamos temprano.", "alternatives": ["No tienes que esperar, llegamos temprano."], "ipa": "no ˈtjenes ke espeˈɾaɾ jeˈgamos temˈpɾano" }
+    },
+    {
+      "type": "section",
+      "title": "Мини-диалог",
+      "notes": [
+        "«А теперь послушаем, как Ана и Карлос знакомятся. Карлос видит Ану впервые, поэтому начинает вежливо.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Вы говорите по-испански?",
+      "lines": [
+        { "speaker": "carlos", "es": "Perdón, ¿usted **habla** español?", "ru": "Извините, вы говорите по-испански?" },
+        { "speaker": "ana", "es": "Sí, **hablo** español. Me llamo Ana. ¿Y usted?", "ru": "Да, говорю. Меня зовут Ана. А вас?" },
+        { "speaker": "carlos", "es": "Me llamo Carlos. ¿Usted **enseña** español?", "ru": "Меня зовут Карлос. Вы преподаёте испанский?" },
+        { "speaker": "ana", "es": "No, **estudio** español. Ella y yo **estudiamos** juntas.", "ru": "Нет, я его учу. Мы с ней учимся вместе." }
+      ],
+      "notes": [
+        "🔊 Проиграть диалог целиком, потом по репликам.",
+        "«Карлос обращается к Ане на usted: ¿usted habla español? — глагол в форме «он, она». А Ана отвечает вежливо: ¿Y usted?»",
+        "«Ella y yo estudiamos juntas — Ана говорит о себе и своей подруге. Обе женщины, поэтому juntas.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Вы говорите по-испански?",
+      "lines": [
+        { "speaker": "carlos", "es": "¿Y **practican** mucho?", "ru": "И много занимаетесь?" },
+        { "speaker": "ana", "es": "Sí, **practicamos** mucho. Pero hoy ella **trabaja**.", "ru": "Да, много. Но сегодня она работает." },
+        { "speaker": "carlos", "es": "Yo estudio inglés y necesito practicar más.", "ru": "Я учу английский, и мне нужно больше практиковаться." },
+        { "speaker": "ana", "es": "¿**Practicamos** juntos mañana?", "ru": "Позанимаемся завтра вместе?" }
+      ],
+      "notes": [
+        "«¿Y practican mucho? — Карлос спрашивает про Ану и её подругу вежливо, поэтому говорит ustedes и ставит глагол в форме «они».»",
+        "«¿Practicamos juntos mañana? — так по-испански предлагают что-то сделать вместе: просто форма «мы» с вопросительной интонацией. А juntos здесь в мужском роде, потому что в компании есть Карлос.»"
+      ]
+    },
+    {
+      "type": "final",
+      "title": "Теперь вы умеете",
+      "bullets": [
+        "Спрягать глаголы на -ar во всех лицах: habla, hablamos, hablan",
+        "Говорить, что делают другие: él, ella, nosotros, ellos",
+        "Вежливо обращаться на «вы»: usted, ustedes",
+        "Выбирать между vosotros и ustedes"
+      ],
+      "nextTitle": "Следующий урок",
+      "nextText": "Урок 6: querer, poder, ir и tener во всех лицах",
+      "outro": "¡Adiós!",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Теперь вы можете рассказать не только о себе, но и о других. Попробуйте сегодня описать вслух свой день и день знакомых: он много работает, она учит английский, мы ужинаем вместе.»",
+        "«В следующем уроке научимся говорить, чего хотят, что могут и что собираются делать другие люди. ¡Adiós!»"
+      ]
+    }
+  ]
+}
