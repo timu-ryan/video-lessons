@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 3,
+  "number": 7,
+  "level": "A0",
+  "planLesson": 7,
+  "title": "Мне нравится",
+  "course": "Испанский с нуля",
+  "newVocabulary": [
+    { "es": "gustar", "ru": "нравиться", "pos": "verb" },
+    { "es": "me gusta", "ru": "мне нравится", "pos": "phrase" },
+    { "es": "te gusta", "ru": "тебе нравится", "pos": "phrase" },
+    { "es": "le gusta", "ru": "ему, ей нравится; вам нравится (вежливо)", "pos": "phrase" },
+    { "es": "nos gusta", "ru": "нам нравится", "pos": "phrase" },
+    { "es": "os gusta", "ru": "вам нравится (нескольким, на «ты»)", "pos": "phrase" },
+    { "es": "les gusta", "ru": "им нравится; вам нравится (вежливо, нескольким)", "pos": "phrase" },
+    { "es": "muy", "ru": "очень", "pos": "adv" },
+    { "es": "bien", "ru": "хорошо", "pos": "adv" },
+    { "es": "mal", "ru": "плохо", "pos": "adv" },
+    { "es": "también", "ru": "тоже", "pos": "adv" },
+    { "es": "tampoco", "ru": "тоже не", "pos": "adv" },
+    { "es": "a mí también", "ru": "мне тоже", "pos": "phrase" },
+    { "es": "a mí tampoco", "ru": "мне тоже нет", "pos": "phrase" },
+    { "es": "¿y a ti?", "ru": "а тебе?", "pos": "phrase" },
+    { "es": "madrugar", "ru": "рано вставать", "pos": "verb" },
+    { "es": "limpiar", "ru": "убирать, убираться", "pos": "verb" }
+  ],
+  "newGrammar": [
+    "me / te / le / nos / os / les gusta + инфинитив",
+    "отрицание no me gusta",
+    "muy и mucho",
+    "también и tampoco"
+  ],
+  "speakers": { "ana": "Ana", "carlos": "Carlos" },
+  "tableHeaders": { "es": "Испанский", "ru": "Перевод" },
+  "practiceGroups": [
+    { "name": "Мне нравится" },
+    { "name": "Кому нравится" },
+    { "name": "Очень и тоже" },
+    { "name": "Всё вместе" }
+  ],
+  "slides": [
+    {
+      "type": "title",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Привет! Мы уже умеем сказать, что хотим, можем, должны и собираемся делать: quiero viajar, tengo que trabajar, voy a estudiar.»",
+        "«Сегодня научимся говорить, что нам нравится, а что нет. А ещё узнаем, как сказать «очень» и «мне тоже».»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Мне нравится",
+      "hint": "Как по-русски: «мне нравится» + инфинитив",
+      "notes": [
+        "«Чтобы сказать, что вам что-то нравится, испанцы говорят me gusta — буквально «мне нравится». И устроена эта конструкция точно как в русском.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Мне нравится",
+      "rows": [
+        { "es": "**Me gusta** leer.", "ru": "Мне нравится читать.", "ipa": "me ˈgusta leˈeɾ" },
+        { "es": "**No me gusta** cocinar.", "ru": "Я не люблю готовить.", "ipa": "no me ˈgusta koθiˈnaɾ" },
+        { "es": "¿**Te gusta** viajar?", "ru": "Тебе нравится путешествовать?", "ipa": "te ˈgusta bjaˈxaɾ" },
+        { "es": "No me gusta **madrugar**.", "ru": "Я не люблю рано вставать.", "ipa": "no me ˈgusta madɾuˈgaɾ" },
+        { "es": "No me gusta **limpiar**.", "ru": "Я не люблю убираться.", "ipa": "no me ˈgusta limˈpjaɾ" }
+      ],
+      "notes": [
+        "«Me gusta — мне нравится. Me gusta leer — мне нравится читать. 🔊»",
+        "«Отрицание — как обычно, no, и стоит оно в самом начале: no me gusta cocinar. 🔊 По-русски мы чаще скажем «я не люблю готовить», по-испански это тоже no me gusta.»",
+        "«Te gusta — тебе нравится. ¿Te gusta viajar? 🔊»",
+        "«Madrugar — рано вставать. Одно слово вместо двух! No me gusta madrugar. 🔊»",
+        "«Limpiar — убирать, убираться. No me gusta limpiar. 🔊»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Мне нравится + инфинитив",
+      "pattern": ["me gusta", "+", "инфинитив"],
+      "text": "gusta не меняется, даже если действий два.",
+      "examples": [
+        { "es": "Me gusta **bailar**.", "ru": "Мне нравится танцевать.", "ipa": "me ˈgusta bajˈlaɾ" },
+        { "es": "Me gusta **leer y cantar**.", "ru": "Мне нравится читать и петь.", "ipa": "me ˈgusta leˈeɾ i kanˈtaɾ" },
+        { "es": "¿Te gusta **hablar** español?", "ru": "Тебе нравится говорить по-испански?", "ipa": "te ˈgusta aˈblaɾ espaˈɲol" }
+      ],
+      "notes": [
+        "«Схема знакомая, как у quiero + инфинитив: сначала me gusta, потом инфинитив — что именно нравится.»",
+        "«Сам глагол называется gustar — нравиться. Но сегодня нам нужна только одна его форма: gusta, «нравится».»",
+        "«Даже если действий два — читать и петь, — остаётся gusta. Как по-русски: «мне нравится читать и петь».»",
+        "🔊 «Me gusta bailar. Me gusta leer y cantar. ¿Te gusta hablar español?»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Кому нравится",
+      "rows": [
+        { "es": "**Me gusta** nadar.", "ru": "Мне нравится плавать.", "ipa": "me ˈgusta naˈdaɾ" },
+        { "es": "**Te gusta** bailar.", "ru": "Тебе нравится танцевать.", "ipa": "te ˈgusta bajˈlaɾ" },
+        { "es": "**Le gusta** cocinar.", "ru": "Ему или ей нравится готовить.", "ipa": "le ˈgusta koθiˈnaɾ" }
+      ],
+      "notes": [
+        "«Теперь все лица. Как и в русском, меняется только «кому», а gusta остаётся.»",
+        "«Me — мне, te — тебе. 🔊»",
+        "«Le gusta — «ему нравится» или «ей нравится». 🔊 А ещё «вам нравится», когда обращаемся вежливо, на usted. Помните: usted всегда идёт с формами «он, она». Кого имеем в виду, понятно из разговора.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Кому нравится",
+      "rows": [
+        { "es": "**Nos gusta** pasear.", "ru": "Нам нравится гулять.", "ipa": "nos ˈgusta paseˈaɾ" },
+        { "es": "**Os gusta** viajar.", "ru": "Вам нравится путешествовать.", "ipa": "os ˈgusta bjaˈxaɾ" },
+        { "es": "**Les gusta** descansar.", "ru": "Им нравится отдыхать.", "ipa": "les ˈgusta deskanˈsaɾ" }
+      ],
+      "notes": [
+        "«Nos gusta — нам нравится. 🔊»",
+        "«Os gusta — вам нравится, когда говорим нескольким друзьям, как с vosotros. 🔊»",
+        "«Les gusta — им нравится. 🔊 И так же «вам нравится», когда вежливо обращаемся к нескольким людям, как с ustedes.»",
+        "«Итак: me, te, le, nos, os, les — и всегда gusta.»"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "verb": "gustar",
+      "ru": "нравиться",
+      "rows": [
+        { "pronoun": "a mí", "stem": "me ", "ending": "gusta", "ru": "мне нравится", "ipa": "me ˈgusta" },
+        { "pronoun": "a ti", "stem": "te ", "ending": "gusta", "ru": "тебе нравится", "ipa": "te ˈgusta" },
+        { "pronoun": "a él / a ella / a usted", "stem": "le ", "ending": "gusta", "ru": "ему, ей; вам (вежливо)", "ipa": "le ˈgusta" },
+        { "pronoun": "a nosotros / a nosotras", "stem": "nos ", "ending": "gusta", "ru": "нам нравится", "ipa": "nos ˈgusta" },
+        { "pronoun": "a vosotros / a vosotras", "stem": "os ", "ending": "gusta", "ru": "вам нравится", "ipa": "os ˈgusta" },
+        { "pronoun": "a ellos / a ellas / a ustedes", "stem": "les ", "ending": "gusta", "ru": "им; вам (вежливо)", "ipa": "les ˈgusta" }
+      ],
+      "notes": [
+        "«Соберём все формы на одном слайде. Меняется только маленькое слово впереди: me, te, le, nos, os, les. А gusta остаётся одним и тем же.»",
+        "«Слева — a mí, a ti, a él и так далее. Так уточняют, кому именно нравится. Подробно разберём это позже, а a mí встретится уже сегодня.»",
+        "🔊 «Me gusta, te gusta, le gusta, nos gusta, os gusta, les gusta.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичные ошибки",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          { "es": "Yo **gusto** leer." },
+          { "es": "**Me no** gusta cocinar." }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          { "es": "**Me gusta** leer.", "ru": "Мне нравится читать." },
+          { "es": "**No me** gusta cocinar.", "ru": "Я не люблю готовить." }
+        ]
+      },
+      "notes": [
+        "«Первая ошибка — yo gusto. Yo gusto значит «я нравлюсь». А нравится не вы, нравится действие. Поэтому me gusta — «мне нравится».»",
+        "«Если знаете английский, будьте особенно внимательны: I like так и хочется перевести как yo gusto. Думайте по-русски: «мне нравится».»",
+        "«Вторая ошибка — no не на своём месте. По-русски «мне не нравится», а по-испански no встаёт в самое начало, перед me: no me gusta.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Очень: muy и mucho",
+      "hint": "muy — перед «как?», mucho — после глагола",
+      "notes": [
+        "«По-русски «очень» — одно слово на все случаи: очень хорошо, очень нравится. В испанском их два: muy и mucho.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Очень",
+      "rows": [
+        { "es": "Hablas **muy bien** español.", "ru": "Ты очень хорошо говоришь по-испански.", "ipa": "ˈablas ˈmuj ˈbjen espaˈɲol" },
+        { "es": "Canto **muy mal**.", "ru": "Я очень плохо пою.", "ipa": "ˈkanto ˈmuj ˈmal" },
+        { "es": "Llego **muy tarde**.", "ru": "Я прихожу очень поздно.", "ipa": "ˈjego ˈmuj ˈtaɾde" },
+        { "es": "Me gusta **mucho**.", "ru": "Мне очень нравится.", "ipa": "me ˈgusta ˈmutʃo" }
+      ],
+      "notes": [
+        "«Bien — хорошо, muy bien — очень хорошо. Hablas muy bien español. 🔊 Эту фразу вы ещё не раз услышите от испанцев!»",
+        "«Mal — плохо. Canto muy mal. 🔊»",
+        "«Muy tarde — очень поздно. Llego muy tarde. 🔊»",
+        "«А вот «мне очень нравится» — me gusta mucho. 🔊 Почему здесь mucho, а не muy — сейчас разберём.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "muy или mucho",
+      "pattern": ["muy", "+", "как?"],
+      "text": "muy — перед «как?»: muy bien. mucho — после глагола: me gusta mucho.",
+      "examples": [
+        { "es": "Hablas **muy** bien.", "ru": "Ты очень хорошо говоришь.", "ipa": "ˈablas ˈmuj ˈbjen" },
+        { "es": "Me gusta **mucho** bailar.", "ru": "Мне очень нравится танцевать.", "ipa": "me ˈgusta ˈmutʃo bajˈlaɾ" },
+        { "es": "Trabajo **mucho**.", "ru": "Я много работаю.", "ipa": "tɾaˈbaxo ˈmutʃo" }
+      ],
+      "notes": [
+        "«Muy ставим перед словом, которое отвечает на вопрос «как?»: muy bien, muy mal, muy tarde, muy temprano.»",
+        "«Mucho ставим после глагола. Trabajo mucho — я много работаю, это вы уже знаете. А me gusta mucho — мне очень нравится. Одно и то же mucho переводится то как «много», то как «очень».»",
+        "«Можно сказать и me gusta mucho bailar, и me gusta bailar mucho — обе фразы правильные.»",
+        "🔊 «Hablas muy bien. Me gusta mucho bailar. Trabajo mucho.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичная ошибка",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          { "es": "Me gusta **muy**." },
+          { "es": "**Mucho** bien." }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          { "es": "Me gusta **mucho**.", "ru": "Мне очень нравится." },
+          { "es": "**Muy** bien.", "ru": "Очень хорошо." }
+        ]
+      },
+      "notes": [
+        "«После глагола muy не ставим: не me gusta muy, а me gusta mucho.»",
+        "«И наоборот: перед bien, mal, tarde — только muy. Mucho bien — ошибка.»",
+        "«Если знаете английский: muy работает как very, а mucho в me gusta mucho — как a lot в I like it a lot.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Мне тоже",
+      "hint": "también — тоже, tampoco — тоже не",
+      "notes": [
+        "«Когда собеседник говорит, что ему что-то нравится, хочется ответить «мне тоже». Разберём, как это сделать.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Мне тоже",
+      "rows": [
+        { "es": "Me gusta cantar. **¿Y a ti?**", "ru": "Мне нравится петь. А тебе?", "ipa": "me ˈgusta kanˈtaɾ · i a ˈti" },
+        { "es": "Sí, **a mí también**.", "ru": "Да, мне тоже.", "ipa": "ˈsi a ˈmi tamˈbjen" },
+        { "es": "No me gusta madrugar. **¿Y a ti?**", "ru": "Мне не нравится рано вставать. А тебе?", "ipa": "no me ˈgusta madɾuˈgaɾ · i a ˈti" },
+        { "es": "**A mí tampoco**.", "ru": "Мне тоже нет.", "ipa": "a ˈmi tamˈpoko" },
+        { "es": "Yo **también** hablo inglés.", "ru": "Я тоже говорю по-английски.", "ipa": "ˈjo tamˈbjen ˈablo inˈgles" }
+      ],
+      "notes": [
+        "«¿Y a ti? — а тебе? 🔊 Помните ¿y tú? из первого урока? После gusta оно меняется: не «а ты?», а «а тебе?» — ¿y a ti?»",
+        "«A mí también — мне тоже. 🔊 A mí — это «мне», ударная форма. Её ставим, когда отвечаем коротко, без глагола.»",
+        "«A mí tampoco — мне тоже нет, мне тоже не нравится. 🔊 По-русски в обоих ответах «тоже», а испанский различает: согласились с «да» — también, согласились с «нет» — tampoco.»",
+        "«С обычными глаголами «я тоже» — это yo también: yo también hablo inglés. 🔊»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Тоже и тоже не",
+      "pattern": ["a mí", "+", "también / tampoco"],
+      "text": "С gusta — a mí también. С другими глаголами — yo también.",
+      "examples": [
+        { "es": "**A mí también** me gusta leer.", "ru": "Мне тоже нравится читать.", "ipa": "a ˈmi tamˈbjen me ˈgusta leˈeɾ" },
+        { "es": "**A mí tampoco** me gusta cocinar.", "ru": "Мне тоже не нравится готовить.", "ipa": "a ˈmi tamˈpoko me ˈgusta koθiˈnaɾ" },
+        { "es": "**Yo tampoco** trabajo hoy.", "ru": "Я сегодня тоже не работаю.", "ipa": "ˈjo tamˈpoko tɾaˈbaxo ˈoj" }
+      ],
+      "notes": [
+        "«Можно ответить и полной фразой: a mí también me gusta leer. Но чаще отвечают коротко: a mí también.»",
+        "«Tampoco работает и с обычными глаголами: yo tampoco trabajo hoy. Заметьте: no здесь не нужно, tampoco уже само значит «тоже не».»",
+        "«Если знаете английский: a mí también — это me too, a mí tampoco — me neither.»",
+        "🔊 «A mí también me gusta leer. A mí tampoco me gusta cocinar. Yo tampoco trabajo hoy.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "¿Y tú? или ¿Y a ti?",
+      "left": {
+        "label": "обычный глагол",
+        "items": [
+          { "es": "Hablo inglés. ¿**Y tú**?" },
+          { "es": "**Yo** también." },
+          { "es": "**Yo** tampoco." }
+        ]
+      },
+      "right": {
+        "label": "gusta",
+        "items": [
+          { "es": "Me gusta leer. ¿**Y a ti**?" },
+          { "es": "**A mí** también." },
+          { "es": "**A mí** tampoco." }
+        ]
+      },
+      "notes": [
+        "«Слева обычные глаголы: «я говорю», «ты говоришь» — поэтому yo и tú. Справа gusta: «мне нравится», «тебе нравится» — поэтому a mí и a ti.»",
+        "«Проверяйте по русскому: «а ты?» или «а тебе?», «я тоже» или «мне тоже». Здесь испанский совпадает с русским.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Практика",
+      "hint": "Фраза по-русски → пауза → скажите вслух по-испански",
+      "notes": [
+        "«Теперь практика. Вы видите фразу по-русски — пока идёт полоска, скажите её вслух по-испански. Потом появится ответ. Не бойтесь ошибиться: главное — говорить.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Мне нравится",
+      "phrase": { "ru": "Мне нравится читать.", "es": "Me gusta leer.", "ipa": "me ˈgusta leˈeɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Мне нравится",
+      "phrase": { "ru": "Я не люблю готовить.", "es": "No me gusta cocinar.", "ipa": "no me ˈgusta koθiˈnaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Мне нравится",
+      "phrase": { "ru": "Тебе нравится танцевать?", "es": "¿Te gusta bailar?", "ipa": "te ˈgusta bajˈlaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Мне нравится",
+      "phrase": { "ru": "Мне нравится путешествовать.", "es": "Me gusta viajar.", "ipa": "me ˈgusta bjaˈxaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Мне нравится",
+      "phrase": { "ru": "Тебе не нравится рано вставать?", "es": "¿No te gusta madrugar?", "ipa": "no te ˈgusta madɾuˈgaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Мне нравится",
+      "phrase": { "ru": "Мне нравится плавать и петь.", "es": "Me gusta nadar y cantar.", "ipa": "me ˈgusta naˈdaɾ i kanˈtaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Мне нравится",
+      "phrase": { "ru": "Я не люблю убираться.", "es": "No me gusta limpiar.", "ipa": "no me ˈgusta limˈpjaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Мне нравится",
+      "phrase": { "ru": "Тебе нравится говорить по-английски?", "es": "¿Te gusta hablar inglés?", "ipa": "te ˈgusta aˈblaɾ inˈgles" }
+    },
+    {
+      "type": "practice",
+      "group": "Кому нравится",
+      "phrase": { "ru": "Нам нравится гулять.", "es": "Nos gusta pasear.", "ipa": "nos ˈgusta paseˈaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Кому нравится",
+      "phrase": {
+        "ru": "Ему нравится готовить.",
+        "es": "Le gusta cocinar.",
+        "alternatives": [
+          "A él le gusta cocinar."
+        ],
+        "ipa": "le ˈgusta koθiˈnaɾ"
+      },
+      "notes": [
+        "«Можно сказать и a él le gusta — так мы уточняем, кому именно. Подробно разберём это позже.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Кому нравится",
+      "phrase": {
+        "ru": "Ей не нравится рано вставать.",
+        "es": "No le gusta madrugar.",
+        "alternatives": [
+          "A ella no le gusta madrugar."
+        ],
+        "ipa": "no le ˈgusta madɾuˈgaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Кому нравится",
+      "phrase": { "ru": "Им нравится путешествовать.", "es": "Les gusta viajar.", "ipa": "les ˈgusta bjaˈxaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Кому нравится",
+      "phrase": { "ru": "Вам нравится танцевать?", "hint": "к нескольким друзьям", "es": "¿Os gusta bailar?", "ipa": "os ˈgusta bajˈlaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Кому нравится",
+      "phrase": {
+        "ru": "Вам нравится путешествовать?",
+        "hint": "вежливо, одному человеку",
+        "es": "¿Le gusta viajar?",
+        "alternatives": [
+          "¿A usted le gusta viajar?"
+        ],
+        "ipa": "le ˈgusta bjaˈxaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Кому нравится",
+      "phrase": { "ru": "Нам не нравится убираться.", "es": "No nos gusta limpiar.", "ipa": "no nos ˈgusta limˈpjaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Кому нравится",
+      "phrase": {
+        "ru": "Вам нравится готовить?",
+        "hint": "вежливо, нескольким",
+        "es": "¿Les gusta cocinar?",
+        "alternatives": [
+          "¿A ustedes les gusta cocinar?"
+        ],
+        "ipa": "les ˈgusta koθiˈnaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Кому нравится",
+      "phrase": { "ru": "Им не нравится ждать.", "es": "No les gusta esperar.", "ipa": "no les ˈgusta espeˈɾaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Кому нравится",
+      "phrase": { "ru": "Ты любишь ходить за покупками?", "es": "¿Te gusta ir de compras?", "ipa": "te ˈgusta ˈiɾ de ˈkompɾas" }
+    },
+    {
+      "type": "practice",
+      "group": "Очень и тоже",
+      "phrase": {
+        "ru": "Ты очень хорошо говоришь по-испански.",
+        "es": "Hablas muy bien español.",
+        "alternatives": [
+          "Hablas español muy bien."
+        ],
+        "ipa": "ˈablas ˈmuj ˈbjen espaˈɲol"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Очень и тоже",
+      "phrase": {
+        "ru": "Мне очень нравится танцевать.",
+        "es": "Me gusta mucho bailar.",
+        "alternatives": [
+          "Me gusta bailar mucho."
+        ],
+        "ipa": "me ˈgusta ˈmutʃo bajˈlaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Очень и тоже",
+      "phrase": { "ru": "Я очень плохо пою.", "es": "Canto muy mal.", "ipa": "ˈkanto ˈmuj ˈmal" }
+    },
+    {
+      "type": "practice",
+      "group": "Очень и тоже",
+      "phrase": { "ru": "Я не люблю ждать. А ты?", "es": "No me gusta esperar. ¿Y a ti?", "ipa": "no me ˈgusta espeˈɾaɾ · i a ˈti" },
+      "notes": [
+        "«По-русски здесь естественно «а ты?», но после gusta испанец спросит ¿y a ti?»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Очень и тоже",
+      "phrase": { "ru": "Мне тоже нравится плавать.", "es": "A mí también me gusta nadar.", "ipa": "a ˈmi tamˈbjen me ˈgusta naˈdaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Очень и тоже",
+      "phrase": { "ru": "Мне тоже не нравится рано вставать.", "es": "A mí tampoco me gusta madrugar.", "ipa": "a ˈmi tamˈpoko me ˈgusta madɾuˈgaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Очень и тоже",
+      "phrase": {
+        "ru": "Они приходят очень поздно.",
+        "es": "Ellos llegan muy tarde.",
+        "alternatives": [
+          "Llegan muy tarde."
+        ],
+        "ipa": "ˈejos ˈjegan ˈmuj ˈtaɾde"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Очень и тоже",
+      "phrase": {
+        "ru": "Я тоже много работаю.",
+        "es": "Yo también trabajo mucho.",
+        "alternatives": [
+          "También trabajo mucho."
+        ],
+        "ipa": "ˈjo tamˈbjen tɾaˈbaxo ˈmutʃo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Очень и тоже",
+      "phrase": {
+        "ru": "Мы сегодня тоже не работаем.",
+        "es": "Nosotros tampoco trabajamos hoy.",
+        "alternatives": [
+          "Tampoco trabajamos hoy."
+        ],
+        "ipa": "noˈsotɾos tamˈpoko tɾabaˈxamos ˈoj"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Очень и тоже",
+      "phrase": {
+        "ru": "Вы очень хорошо танцуете!",
+        "hint": "вежливо, одному человеку",
+        "es": "¡Usted baila muy bien!",
+        "alternatives": [
+          "¡Baila muy bien!"
+        ],
+        "ipa": "usˈted ˈbajla ˈmuj ˈbjen"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мне нравится путешествовать, но сегодня я должен работать.", "es": "Me gusta viajar, pero hoy tengo que trabajar.", "ipa": "me ˈgusta bjaˈxaɾ ˈpeɾo ˈoj ˈtengo ke tɾabaˈxaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Ты очень хорошо поёшь. Тебе нравится петь?", "es": "Cantas muy bien. ¿Te gusta cantar?", "ipa": "ˈkantas ˈmuj ˈbjen · te ˈgusta kanˈtaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Нам очень нравится плавать. Завтра мы будем плавать.",
+        "es": "Nos gusta mucho nadar. Mañana vamos a nadar.",
+        "alternatives": [
+          "Nos gusta nadar mucho. Mañana vamos a nadar."
+        ],
+        "ipa": "nos ˈgusta ˈmutʃo naˈdaɾ · maˈɲana ˈbamos a naˈdaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Им нравится танцевать, но сегодня они хотят отдыхать.", "es": "Les gusta bailar, pero hoy quieren descansar.", "ipa": "les ˈgusta bajˈlaɾ ˈpeɾo ˈoj ˈkjeɾen deskanˈsaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я не люблю рано вставать, но завтра мне нужно встать рано.", "es": "No me gusta madrugar, pero mañana tengo que madrugar.", "ipa": "no me ˈgusta madɾuˈgaɾ ˈpeɾo maˈɲana ˈtengo ke madɾuˈgaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Ты не любишь готовить? Я тоже не люблю.", "es": "¿No te gusta cocinar? A mí tampoco.", "ipa": "no te ˈgusta koθiˈnaɾ · a ˈmi tamˈpoko" },
+      "notes": [
+        "«Русское «я тоже не люблю» — это a mí tampoco. Не yo también!»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я говорю по-английски, но плохо.", "es": "Hablo inglés, pero mal.", "ipa": "ˈablo inˈgles ˈpeɾo ˈmal" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Он много работает, но ему нравится работать.",
+        "es": "Él trabaja mucho, pero le gusta trabajar.",
+        "alternatives": [
+          "Trabaja mucho, pero le gusta trabajar."
+        ],
+        "ipa": "ˈel tɾaˈbaxa ˈmutʃo ˈpeɾo le ˈgusta tɾabaˈxaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Хочешь потанцевать? Ты очень хорошо танцуешь.", "es": "¿Quieres bailar? Bailas muy bien.", "ipa": "ˈkjeɾes bajˈlaɾ · ˈbajlas ˈmuj ˈbjen" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Давай погуляем! Я очень люблю гулять.",
+        "es": "¡Vamos a pasear! Me gusta mucho pasear.",
+        "alternatives": [
+          "¡Vamos a pasear! Me gusta pasear mucho."
+        ],
+        "ipa": "ˈbamos a paseˈaɾ · me ˈgusta ˈmutʃo paseˈaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Ей нравится читать, но сегодня она не может.",
+        "es": "Le gusta leer, pero hoy no puede.",
+        "alternatives": [
+          "A ella le gusta leer, pero hoy no puede."
+        ],
+        "ipa": "le ˈgusta leˈeɾ ˈpeɾo ˈoj no ˈpwede"
+      }
+    },
+    {
+      "type": "section",
+      "title": "Мини-диалог",
+      "notes": [
+        "«А теперь послушаем, как Ана и Карлос рассказывают, что им нравится. Все слова вы уже знаете.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Что тебе нравится?",
+      "lines": [
+        { "speaker": "ana", "es": "Carlos, ¿**te gusta** viajar?", "ru": "Карлос, тебе нравится путешествовать?" },
+        { "speaker": "carlos", "es": "Sí, **mucho**. ¿**Y a ti**?", "ru": "Да, очень. А тебе?" },
+        { "speaker": "ana", "es": "**A mí también**. Y me gusta hablar español.", "ru": "Мне тоже. А ещё мне нравится говорить по-испански." },
+        { "speaker": "carlos", "es": "Hablas **muy bien** español.", "ru": "Ты очень хорошо говоришь по-испански." }
+      ],
+      "notes": [
+        "🔊 Проиграть диалог целиком, потом по репликам.",
+        "«Sí, mucho — да, очень. Короткий ответ: gusta можно не повторять.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Что тебе нравится?",
+      "lines": [
+        { "speaker": "ana", "es": "Gracias. ¿Te gusta **madrugar**?", "ru": "Спасибо. А ты любишь рано вставать?" },
+        { "speaker": "carlos", "es": "No, **no me gusta**. ¿Y a ti?", "ru": "Нет, не люблю. А ты?" },
+        { "speaker": "ana", "es": "**A mí tampoco**. Pero mañana tengo que madrugar.", "ru": "Я тоже. Но завтра мне придётся рано встать." },
+        { "speaker": "carlos", "es": "**Yo también**. ¡Hasta luego!", "ru": "Я тоже. Пока!" }
+      ],
+      "notes": [
+        "«Заметьте: в одном диалоге и a mí tampoco, и yo también. «Не люблю рано вставать» — это gusta, значит a mí tampoco. А «мне придётся встать» — tengo que, обычный глагол, поэтому yo también.»"
+      ]
+    },
+    {
+      "type": "final",
+      "title": "Теперь вы умеете",
+      "bullets": [
+        "Говорить, что вам нравится: me gusta leer",
+        "Спрашивать: ¿te gusta viajar?",
+        "Говорить о других: le gusta, nos gusta, les gusta",
+        "Различать muy и mucho: muy bien, me gusta mucho",
+        "Отвечать: a mí también, a mí tampoco"
+      ],
+      "nextTitle": "Следующий урок",
+      "nextText": "Урок 8: предметы — род, число и артикли",
+      "outro": "¡Adiós!",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Теперь вы можете рассказать не только о планах, но и о том, что любите. Попробуйте сегодня вслух сказать три вещи, которые вам нравятся, и три, которые нет.»",
+        "«В следующем уроке начнём называть предметы и узнаем, зачем испанцам артикли. ¡Adiós!»"
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 > Генерируется командой `npm run vocab:build`. Не редактировать вручную.
 > Готовя урок N, считайте изученным только то, что введено в уроках с номером меньше N.
 
-Уроков: 7 · слов: 120 · нет уроков: 7–9
+Уроков: 8 · слов: 137 · нет уроков: 8–9
 
 ## Урок 1 · A0-1 · Приветствие, знакомство
 
@@ -41,6 +41,12 @@
 
 **Грамматика:** querer и poder во всех лицах: e → ie, o → ue под ударением · tener que + инфинитив во всех лицах · полное спряжение ir · vamos a + инфинитив — «давай(те)…»
 
+## Урок 7 · A0-7 · Мне нравится
+
+**Слова (17):** gustar — нравиться · me gusta — мне нравится · te gusta — тебе нравится · le gusta — ему, ей нравится; вам нравится (вежливо) · nos gusta — нам нравится · os gusta — вам нравится (нескольким, на «ты») · les gusta — им нравится; вам нравится (вежливо, нескольким) · muy — очень · bien — хорошо · mal — плохо · también — тоже · tampoco — тоже не · a mí también — мне тоже · a mí tampoco — мне тоже нет · ¿y a ti? — а тебе? · madrugar — рано вставать · limpiar — убирать, убираться
+
+**Грамматика:** me / te / le / nos / os / les gusta + инфинитив · отрицание no me gusta · muy и mucho · también и tampoco
+
 ## Урок 10 · A0-10 · Глаголы на -er и -ir
 
 **Слова (18):** vivir — жить · beber — пить · escribir — писать · comprender — понимать · abrir — открывать · recibir — получать · vender — продавать · correr — бегать · en — в, на (где?) · el café — кофе · la cerveza — пиво · el pan — хлеб · la carne — мясо · el pescado — рыба (еда) · el periódico — газета · la revista — журнал · la carta — письмо · el centro — центр
@@ -54,9 +60,12 @@
 | ¡vamos! | пошли!, давай! | interj | 6 |
 | ¿cómo te llamas? | как тебя зовут? | phrase | 1 |
 | ¿de dónde eres? | откуда ты? | phrase | 1 |
+| ¿y a ti? | а тебе? | phrase | 7 |
 | ¿y tú? | а ты? а тебя? | phrase | 1 |
 | ¿y usted? | а вы? | phrase | 5 |
 | a | связка в voy a + инфинитив | prep | 4 |
+| a mí también | мне тоже | phrase | 7 |
+| a mí tampoco | мне тоже нет | phrase | 7 |
 | abrir | открывать | verb | 10 |
 | adiós | до свидания, пока | interj | 1 |
 | ahora | сейчас | adv | 3 |
@@ -65,6 +74,7 @@
 | ayudar | помогать | verb | 4 |
 | bailar | танцевать | verb | 3 |
 | beber | пить | verb | 10 |
+| bien | хорошо | adv | 7 |
 | buenas noches | добрый вечер, спокойной ночи | phrase | 1 |
 | buenas tardes | добрый день, добрый вечер | phrase | 1 |
 | buenos días | доброе утро, добрый день | phrase | 1 |
@@ -106,6 +116,7 @@
 | el francés | французский язык | noun | 2 |
 | ganar | зарабатывать, выигрывать | verb | 6 |
 | gracias | спасибо | interj | 1 |
+| gustar | нравиться | verb | 7 |
 | hablar | говорить | verb | 2 |
 | hasta luego | до встречи, пока | phrase | 1 |
 | hola | привет | interj | 1 |
@@ -115,21 +126,30 @@
 | ir de compras | ходить за покупками | phrase | 6 |
 | el italiano | итальянский язык | noun | 5 |
 | juntos | вместе | adj | 5 |
+| le gusta | ему, ей нравится; вам нравится (вежливо) | phrase | 7 |
 | leer | читать | verb | 3 |
+| les gusta | им нравится; вам нравится (вежливо, нескольким) | phrase | 7 |
+| limpiar | убирать, убираться | verb | 7 |
 | llamar | звонить | verb | 6 |
 | llegar | приезжать, приходить | verb | 5 |
 | luego | потом | adv | 4 |
+| madrugar | рано вставать | verb | 7 |
+| mal | плохо | adv | 7 |
 | mañana | завтра | adv | 4 |
 | más | больше | adv | 3 |
 | más tarde | позже | phrase | 4 |
+| me gusta | мне нравится | phrase | 7 |
 | me llamo | меня зовут | phrase | 1 |
 | mucho | много | adv | 2 |
+| muy | очень | adv | 7 |
 | nadar | плавать | verb | 3 |
 | necesitar | нуждаться, быть нужным | verb | 3 |
 | no | не, нет | adv | 2 |
+| nos gusta | нам нравится | phrase | 7 |
 | nosotras | мы (о женщинах) | pron | 5 |
 | nosotros | мы | pron | 5 |
 | o | или | conj | 4 |
+| os gusta | вам нравится (нескольким, на «ты») | phrase | 7 |
 | otra vez | ещё раз, снова | phrase | 6 |
 | el pan | хлеб | noun | 10 |
 | pasado mañana | послезавтра | adv | 4 |
@@ -152,7 +172,10 @@
 | sí | да | adv | 2 |
 | solo | только | adv | 6 |
 | soy de | я из | phrase | 1 |
+| también | тоже | adv | 7 |
+| tampoco | тоже не | adv | 7 |
 | tarde | поздно | adv | 4 |
+| te gusta | тебе нравится | phrase | 7 |
 | temprano | рано | adv | 4 |
 | tener que | быть должным, приходиться | phrase | 6 |
 | tengo que | я должен, мне нужно | phrase | 4 |
