@@ -1,0 +1,524 @@
+{
+  "schemaVersion": 3,
+  "number": 9,
+  "level": "A0",
+  "planLesson": 9,
+  "title": "Кто и какой: ser",
+  "course": "Испанский с нуля",
+  "newVocabulary": [
+    { "es": "ser", "ru": "быть", "pos": "verb" },
+    { "es": "de", "ru": "из", "pos": "prep" },
+    { "es": "el programador, la programadora", "ru": "программист, программистка", "pos": "noun" },
+    { "es": "el médico, la médica", "ru": "врач", "pos": "noun" },
+    { "es": "el profesor, la profesora", "ru": "учитель, учительница", "pos": "noun" },
+    { "es": "el ingeniero, la ingeniera", "ru": "инженер", "pos": "noun" },
+    { "es": "el / la estudiante", "ru": "студент, студентка", "pos": "noun" },
+    { "es": "Moscú", "ru": "Москва", "pos": "noun" },
+    { "es": "Madrid", "ru": "Мадрид", "pos": "noun" },
+    { "es": "Rusia", "ru": "Россия", "pos": "noun" },
+    { "es": "España", "ru": "Испания", "pos": "noun" },
+    { "es": "interesante", "ru": "интересный", "pos": "adj" },
+    { "es": "grande", "ru": "большой", "pos": "adj" },
+    { "es": "pequeño", "ru": "маленький", "pos": "adj" },
+    { "es": "nuevo", "ru": "новый", "pos": "adj" },
+    { "es": "viejo", "ru": "старый", "pos": "adj" },
+    { "es": "caro", "ru": "дорогой", "pos": "adj" },
+    { "es": "barato", "ru": "дешёвый", "pos": "adj" },
+    { "es": "bonito", "ru": "красивый", "pos": "adj" },
+    { "es": "fácil", "ru": "лёгкий", "pos": "adj" },
+    { "es": "difícil", "ru": "трудный", "pos": "adj" }
+  ],
+  "newGrammar": [
+    "настоящее время ser",
+    "ser + профессия без артикля",
+    "ser de + место, национальность",
+    "согласование прилагательных в роде и числе",
+    "прилагательное после существительного"
+  ],
+  "speakers": { "ana": "Ana", "carlos": "Carlos" },
+  "tableHeaders": { "es": "Испанский", "ru": "Перевод" },
+  "practiceGroups": [
+    { "name": "Кто и откуда" },
+    { "name": "Национальность и прилагательные" },
+    { "name": "Всё вместе" }
+  ],
+  "slides": [
+    {
+      "type": "title",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Привет! В самом первом уроке мы выучили готовую фразу soy de — «я из». Сегодня разберём, что это за soy.»",
+        "«Это глагол ser — «быть». С ним вы скажете, кто вы по профессии, откуда вы и какой предмет перед вами.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Кто я: ser",
+      "hint": "Soy — «я есть», в русском эту связку пропускаем",
+      "notes": [
+        "«В русском мы говорим «я программист» — и никакого глагола между словами. В испанском так нельзя: нужен глагол ser, «быть». Буквально получается «я есть программист».»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Профессии",
+      "rows": [
+        { "es": "**Soy** **programador**.", "ru": "Я программист.", "ipa": "ˈsoj pɾogɾamaˈdoɾ" },
+        { "es": "Quiero **ser** **médico**.", "ru": "Я хочу быть врачом.", "ipa": "ˈkjeɾo ˈseɾ ˈmediko" },
+        { "es": "Ella **es** **profesora**.", "ru": "Она учительница.", "ipa": "ˈeja ˈes pɾofeˈsoɾa" },
+        { "es": "¿**Eres** **ingeniero**?", "ru": "Ты инженер?", "ipa": "ˈeɾes inxeˈnjeɾo" },
+        { "es": "**Somos** **estudiantes**.", "ru": "Мы студенты.", "ipa": "ˈsomos estuˈdjantes" }
+      ],
+      "notes": [
+        "«Soy programador — я программист. 🔊 Soy — это «я есть».»",
+        "«Ser — начальная форма, «быть». Quiero ser médico — я хочу быть врачом. 🔊 Médico — ударение на é.»",
+        "«Ella es profesora — она учительница. 🔊 ¿Eres ingeniero? — ты инженер? 🔊 Ge перед e читаем как «хе».»",
+        "«Somos estudiantes — мы студенты. 🔊»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Профессия без артикля",
+      "pattern": ["ser", "+", "профессия"],
+      "text": "Артикль перед профессией не ставим.",
+      "examples": [
+        { "es": "**Soy** ingeniero.", "ru": "Я инженер.", "ipa": "ˈsoj inxeˈnjeɾo" },
+        { "es": "Él **es** estudiante.", "ru": "Он студент.", "ipa": "ˈel ˈes estuˈdjante" },
+        { "es": "¿Usted **es** médico?", "ru": "Вы врач?", "ipa": "usˈted ˈes ˈmediko" }
+      ],
+      "notes": [
+        "«Когда говорим, кем человек работает, артикль не нужен. Просто soy ingeniero, es estudiante.»",
+        "«Если знаете английский: там I'm a doctor, с артиклем. В испанском un или una здесь лишние.»"
+      ]
+    },
+    {
+      "type": "conjugation",
+      "verb": "ser",
+      "ru": "быть",
+      "rows": [
+        { "pronoun": "yo", "stem": "", "ending": "soy", "ru": "я есть", "ipa": "ˈsoj" },
+        { "pronoun": "tú", "stem": "", "ending": "eres", "ru": "ты есть", "ipa": "ˈeɾes" },
+        { "pronoun": "él / ella / usted", "stem": "", "ending": "es", "ru": "он, она есть; вы есть", "ipa": "ˈes" },
+        { "pronoun": "nosotros / nosotras", "stem": "", "ending": "somos", "ru": "мы есть", "ipa": "ˈsomos" },
+        { "pronoun": "vosotros / vosotras", "stem": "", "ending": "sois", "ru": "вы есть", "ipa": "ˈsojs" },
+        { "pronoun": "ellos / ellas / ustedes", "stem": "", "ending": "son", "ru": "они есть; вы есть", "ipa": "ˈson" }
+      ],
+      "notes": [
+        "«Ser — глагол неправильный: никакой основы и окончаний, каждую форму просто запоминаем. Soy, eres, es, somos, sois, son.»",
+        "«Хорошая новость: это самый частый глагол языка, поэтому формы запомнятся очень быстро.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Он и она",
+      "left": {
+        "label": "он",
+        "items": [
+          { "es": "Él es **programador**.", "ru": "Он программист." },
+          { "es": "Él es **médico**.", "ru": "Он врач." },
+          { "es": "Él es **estudiante**.", "ru": "Он студент." }
+        ]
+      },
+      "right": {
+        "label": "она",
+        "items": [
+          { "es": "Ella es **programadora**.", "ru": "Она программистка." },
+          { "es": "Ella es **médica**.", "ru": "Она врач." },
+          { "es": "Ella es **estudiante**.", "ru": "Она студентка." }
+        ]
+      },
+      "notes": [
+        "«Профессии меняются по роду. Если слово кончается на -o, для женщины будет -a: médico — médica.»",
+        "«Если на согласную — добавляем -a: programador — programadora, profesor — profesora.»",
+        "«А слова на -e обычно не меняются: estudiante — и студент, и студентка.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичная ошибка",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          { "es": "Soy **un** programador." },
+          { "es": "Ella es **una** profesora." }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          { "es": "Soy programador.", "ru": "Я программист." },
+          { "es": "Ella es profesora.", "ru": "Она учительница." }
+        ]
+      },
+      "notes": [
+        "«Мы только что выучили артикли, и так и хочется поставить un. Но с профессией после ser — без артикля.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Откуда вы: ser de",
+      "hint": "de — «из»",
+      "notes": [
+        "«Теперь вторая задача ser — сказать, откуда человек.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Страны и города",
+      "rows": [
+        { "es": "Soy **de** **Moscú**.", "ru": "Я из Москвы.", "ipa": "ˈsoj de mosˈku" },
+        { "es": "Ella es de **Madrid**.", "ru": "Она из Мадрида.", "ipa": "ˈeja ˈes de maˈdɾid" },
+        { "es": "Somos de **Rusia**.", "ru": "Мы из России.", "ipa": "ˈsomos de ˈrusja" },
+        { "es": "Ellos son de **España**.", "ru": "Они из Испании.", "ipa": "ˈejos ˈson de esˈpaɲa" }
+      ],
+      "notes": [
+        "«De — «из». Soy de Moscú — я из Москвы. 🔊 Ударение на последний слог: Moscú.»",
+        "«Madrid. 🔊 D в конце слова звучит очень мягко, почти не слышна.»",
+        "«Rusia — Россия. 🔊 R в начале слова раскатываем, как rr. España — Испания. 🔊 Ñ — это «нь».»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "ser de + место",
+      "pattern": ["ser", "+", "de", "+", "место"],
+      "text": "Soy de — та самая фраза из первого урока.",
+      "examples": [
+        { "es": "Carlos **es de** España.", "ru": "Карлос из Испании.", "ipa": "ˈkaɾlos ˈes de esˈpaɲa" },
+        { "es": "**Somos de** Moscú.", "ru": "Мы из Москвы.", "ipa": "ˈsomos de mosˈku" },
+        { "es": "¿**Eres de** Rusia?", "ru": "Ты из России?", "ipa": "ˈeɾes de ˈrusja" }
+      ],
+      "notes": [
+        "«Помните вопрос ¿de dónde eres? — «откуда ты?» Теперь понятно: eres — это «ты есть», а de — «из».»",
+        "«Меняем форму ser — и можем сказать, откуда кто угодно: es de, somos de, son de.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Национальность",
+      "rows": [
+        { "es": "Soy **ruso**.", "ru": "Я русский.", "ipa": "ˈsoj ˈruso" },
+        { "es": "Ella es **rusa**.", "ru": "Она русская.", "ipa": "ˈeja ˈes ˈrusa" },
+        { "es": "Él es **español**.", "ru": "Он испанец.", "ipa": "ˈel ˈes espaˈɲol" },
+        { "es": "Ellas son **españolas**.", "ru": "Они испанки.", "ipa": "ˈejas ˈson espaˈɲolas" },
+        { "es": "Somos **ingleses**.", "ru": "Мы англичане.", "ipa": "ˈsomos inˈgleses" }
+      ],
+      "notes": [
+        "«Названия языков вы уже знаете: el ruso, el español, el inglés. Те же слова без артикля означают национальность.»",
+        "«Для женщины добавляем -a или меняем -o на -a: ruso — rusa, español — española, inglés — inglesa, francés — francesa.»",
+        "«Во множественном числе у inglés и francés знак ударения пропадает: ingleses, franceses.»",
+        "«Пишем со строчной буквы, как в русском. Если знаете английский, не путайте: Russian там с заглавной, а в испанском ruso — со строчной.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Какой предмет",
+      "hint": "Прилагательное — после существительного",
+      "notes": [
+        "«Третья задача ser — описать предмет: какой он.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Какой предмет",
+      "rows": [
+        { "es": "El libro es **interesante**.", "ru": "Книга интересная.", "ipa": "el ˈlibɾo ˈes inteɾeˈsante" },
+        { "es": "La casa es **grande**.", "ru": "Дом большой.", "ipa": "la ˈkasa ˈes ˈgɾande" },
+        { "es": "La mesa es **pequeña**.", "ru": "Стол маленький.", "ipa": "la ˈmesa ˈes peˈkeɲa" },
+        { "es": "El coche es **nuevo**.", "ru": "Машина новая.", "ipa": "el ˈkotʃe ˈes ˈnwebo" },
+        { "es": "La silla es **vieja**.", "ru": "Стул старый.", "ipa": "la ˈsija ˈes ˈbjexa" }
+      ],
+      "notes": [
+        "«Interesante — интересный. 🔊 Grande — большой. 🔊»",
+        "«Pequeño — маленький. 🔊 Nuevo — новый. 🔊 Viejo — старый. 🔊»",
+        "«Посмотрите: la mesa es pequeña, хотя по-русски «стол маленький». Род берём из испанского слова: mesa — женского рода.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Ещё прилагательные",
+      "rows": [
+        { "es": "El piso es **caro**.", "ru": "Квартира дорогая.", "ipa": "el ˈpiso ˈes ˈkaɾo" },
+        { "es": "El ordenador es **barato**.", "ru": "Компьютер дешёвый.", "ipa": "el oɾdenaˈdoɾ ˈes baˈɾato" },
+        { "es": "La flor es **bonita**.", "ru": "Цветок красивый.", "ipa": "la ˈfloɾ ˈes boˈnita" },
+        { "es": "La clase es **fácil**.", "ru": "Занятие лёгкое.", "ipa": "la ˈklase ˈes ˈfaθil" },
+        { "es": "El chino es **difícil**.", "ru": "Китайский трудный.", "ipa": "el ˈtʃino ˈes diˈfiθil" }
+      ],
+      "notes": [
+        "«Caro — дорогой. 🔊 Barato — дешёвый. 🔊 Bonito — красивый. 🔊»",
+        "«Fácil — лёгкий, difícil — трудный. 🔊 Знак ударения показывает, куда падает ударение: fácil, difícil.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Согласование",
+      "pattern": ["сущ.", "+", "прил. того же рода и числа"],
+      "text": "-o меняется на -a, -os, -as. На -e и на согласную — только число.",
+      "examples": [
+        { "es": "El coche es **pequeño**.", "ru": "Машина маленькая.", "ipa": "el ˈkotʃe ˈes peˈkeɲo" },
+        { "es": "Las casas son **pequeñas**.", "ru": "Дома маленькие.", "ipa": "las ˈkasas ˈson peˈkeɲas" },
+        { "es": "Los libros son **interesantes**.", "ru": "Книги интересные.", "ipa": "los ˈlibɾos ˈson inteɾeˈsantes" }
+      ],
+      "notes": [
+        "«Прилагательное подстраивается под существительное, как в русском: дом большой, книга большая.»",
+        "«Если прилагательное кончается на -o, у него четыре формы: pequeño, pequeña, pequeños, pequeñas.»",
+        "«Grande, interesante, fácil по роду не меняются, только по числу: grandes, interesantes, fáciles.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Порядок слов",
+      "pattern": ["сущ.", "+", "прил."],
+      "text": "Прилагательное обычно стоит после существительного.",
+      "examples": [
+        { "es": "Necesito un coche **nuevo**.", "ru": "Мне нужна новая машина.", "ipa": "neθeˈsito un ˈkotʃe ˈnwebo" },
+        { "es": "Quiero comprar un piso **grande**.", "ru": "Я хочу купить большую квартиру.", "ipa": "ˈkjeɾo komˈpɾaɾ un ˈpiso ˈgɾande" },
+        { "es": "Quiero leer un libro **interesante**.", "ru": "Я хочу почитать интересную книгу.", "ipa": "ˈkjeɾo leˈeɾ un ˈlibɾo inteɾeˈsante" }
+      ],
+      "notes": [
+        "«В русском мы говорим «новая машина», прилагательное впереди. В испанском наоборот: un coche nuevo — буквально «машина новая».»",
+        "«В английском тоже a new car, поэтому и русский, и английский тут подталкивают к ошибке.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичные ошибки",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          { "es": "La mesa es **pequeño**." },
+          { "es": "Un **barato** piso." }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          { "es": "La mesa es **pequeña**.", "ru": "Стол маленький." },
+          { "es": "Un piso **barato**.", "ru": "Дешёвая квартира." }
+        ]
+      },
+      "notes": [
+        "«Первая ошибка: род по-русски. «Стол» мужского рода, а la mesa — женского. Смотрим на испанский артикль.»",
+        "«Вторая ошибка — порядок слов. Сначала предмет, потом какой он.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Практика",
+      "hint": "Фраза по-русски → пауза → скажите вслух по-испански",
+      "notes": [
+        "«Теперь практика. Вы видите фразу по-русски — пока идёт полоска, скажите её вслух по-испански. Потом появится ответ. Главное — говорить.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Кто и откуда",
+      "phrase": { "ru": "Я программист.", "hint": "говорит мужчина", "es": "Soy programador.", "alternatives": ["Yo soy programador."], "ipa": "ˈsoj pɾogɾamaˈdoɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Кто и откуда",
+      "phrase": { "ru": "Она врач.", "es": "Ella es médica.", "alternatives": ["Ella es médico."], "ipa": "ˈeja ˈes ˈmedika" }
+    },
+    {
+      "type": "practice",
+      "group": "Кто и откуда",
+      "phrase": { "ru": "Ты студент?", "hint": "к парню", "es": "¿Eres estudiante?", "ipa": "ˈeɾes estuˈdjante" }
+    },
+    {
+      "type": "practice",
+      "group": "Кто и откуда",
+      "phrase": { "ru": "Мы из Москвы.", "es": "Somos de Moscú.", "alternatives": ["Nosotros somos de Moscú."], "ipa": "ˈsomos de mosˈku" }
+    },
+    {
+      "type": "practice",
+      "group": "Кто и откуда",
+      "phrase": { "ru": "Он учитель.", "es": "Él es profesor.", "ipa": "ˈel ˈes pɾofeˈsoɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Кто и откуда",
+      "phrase": { "ru": "Вы инженер?", "hint": "вежливо, мужчине", "es": "¿Usted es ingeniero?", "alternatives": ["¿Es usted ingeniero?"], "ipa": "usˈted ˈes inxeˈnjeɾo" }
+    },
+    {
+      "type": "practice",
+      "group": "Кто и откуда",
+      "phrase": { "ru": "Они из Испании.", "es": "Ellos son de España.", "alternatives": ["Son de España."], "ipa": "ˈejos ˈson de esˈpaɲa" }
+    },
+    {
+      "type": "practice",
+      "group": "Кто и откуда",
+      "phrase": { "ru": "Вы из России?", "hint": "к нескольким друзьям", "es": "¿Sois de Rusia?", "alternatives": ["¿Vosotros sois de Rusia?"], "ipa": "ˈsojs de ˈrusja" }
+    },
+    {
+      "type": "practice",
+      "group": "Кто и откуда",
+      "phrase": { "ru": "Я не врач, я учительница.", "hint": "говорит женщина", "es": "No soy médica, soy profesora.", "ipa": "no ˈsoj ˈmedika ˈsoj pɾofeˈsoɾa" }
+    },
+    {
+      "type": "practice",
+      "group": "Национальность и прилагательные",
+      "phrase": { "ru": "Я русская.", "hint": "говорит женщина", "es": "Soy rusa.", "alternatives": ["Yo soy rusa."], "ipa": "ˈsoj ˈrusa" }
+    },
+    {
+      "type": "practice",
+      "group": "Национальность и прилагательные",
+      "phrase": { "ru": "Он испанец.", "es": "Él es español.", "ipa": "ˈel ˈes espaˈɲol" }
+    },
+    {
+      "type": "practice",
+      "group": "Национальность и прилагательные",
+      "phrase": { "ru": "Мы англичане.", "hint": "о мужчинах", "es": "Somos ingleses.", "alternatives": ["Nosotros somos ingleses."], "ipa": "ˈsomos inˈgleses" }
+    },
+    {
+      "type": "practice",
+      "group": "Национальность и прилагательные",
+      "phrase": { "ru": "Она француженка.", "es": "Ella es francesa.", "ipa": "ˈeja ˈes fɾanˈθesa" }
+    },
+    {
+      "type": "practice",
+      "group": "Национальность и прилагательные",
+      "phrase": { "ru": "Дом большой.", "es": "La casa es grande.", "ipa": "la ˈkasa ˈes ˈgɾande" }
+    },
+    {
+      "type": "practice",
+      "group": "Национальность и прилагательные",
+      "phrase": { "ru": "Стол маленький.", "es": "La mesa es pequeña.", "ipa": "la ˈmesa ˈes peˈkeɲa" }
+    },
+    {
+      "type": "practice",
+      "group": "Национальность и прилагательные",
+      "phrase": { "ru": "Машины новые.", "es": "Los coches son nuevos.", "ipa": "los ˈkotʃes ˈson ˈnwebos" }
+    },
+    {
+      "type": "practice",
+      "group": "Национальность и прилагательные",
+      "phrase": { "ru": "Книги интересные.", "es": "Los libros son interesantes.", "ipa": "los ˈlibɾos ˈson inteɾeˈsantes" }
+    },
+    {
+      "type": "practice",
+      "group": "Национальность и прилагательные",
+      "phrase": { "ru": "Испанский не трудный.", "es": "El español no es difícil.", "ipa": "el espaˈɲol no ˈes diˈfiθil" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я хочу большой дом.", "es": "Quiero una casa grande.", "ipa": "ˈkjeɾo ˈuna ˈkasa ˈgɾande" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мне нужна новая машина.", "es": "Necesito un coche nuevo.", "ipa": "neθeˈsito un ˈkotʃe ˈnwebo" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я собираюсь купить дешёвый компьютер.", "es": "Voy a comprar un ordenador barato.", "ipa": "ˈboj a komˈpɾaɾ un oɾdenaˈdoɾ baˈɾato" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Она испанка, но говорит по-русски.", "es": "Ella es española, pero habla ruso.", "ipa": "ˈeja ˈes espaˈɲola ˈpeɾo ˈabla ˈruso" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я хочу быть врачом.", "hint": "говорит мужчина", "es": "Quiero ser médico.", "ipa": "ˈkjeɾo ˈseɾ ˈmediko" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Ты хочешь быть программистом?", "hint": "к парню", "es": "¿Quieres ser programador?", "ipa": "ˈkjeɾes ˈseɾ pɾogɾamaˈdoɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мы учителя и преподаём испанский.", "hint": "о мужчинах", "es": "Somos profesores y enseñamos español.", "ipa": "ˈsomos pɾofeˈsoɾes i enseˈɲamos espaˈɲol" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Квартира красивая, но очень дорогая.", "es": "El piso es bonito, pero muy caro.", "alternatives": ["El piso es bonito, pero es muy caro."], "ipa": "el ˈpiso ˈes boˈnito ˈpeɾo ˈmuj ˈkaɾo" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Карлос инженер и много работает.", "es": "Carlos es ingeniero y trabaja mucho.", "ipa": "ˈkaɾlos ˈes inxeˈnjeɾo i tɾaˈbaxa ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Вы испанец?", "hint": "вежливо, мужчине", "es": "¿Usted es español?", "alternatives": ["¿Es usted español?"], "ipa": "usˈted ˈes espaˈɲol" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Занятие лёгкое, но мне нужно больше заниматься.", "es": "La clase es fácil, pero necesito practicar más.", "alternatives": ["La clase es fácil, pero necesito estudiar más."], "ipa": "la ˈklase ˈes ˈfaθil ˈpeɾo neθeˈsito pɾaktiˈkaɾ ˈmas" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Дети хотят маленькую собаку.", "es": "Los niños quieren un perro pequeño.", "ipa": "los ˈniɲos ˈkjeɾen un ˈpero peˈkeɲo" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мы студенты и много учимся.", "es": "Somos estudiantes y estudiamos mucho.", "ipa": "ˈsomos estuˈdjantes i estuˈdjamos ˈmutʃo" }
+    },
+    {
+      "type": "section",
+      "title": "Мини-диалог",
+      "notes": [
+        "«А теперь послушаем, как познакомились Ана и Карлос. Все слова вы уже знаете.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Кто ты?",
+      "lines": [
+        { "speaker": "carlos", "es": "Hola, me llamo Carlos. ¿Cómo te llamas?", "ru": "Привет, меня зовут Карлос. А тебя?" },
+        { "speaker": "ana", "es": "Me llamo Ana. ¿De dónde eres?", "ru": "Меня зовут Ана. Ты откуда?" },
+        { "speaker": "carlos", "es": "**Soy de** Moscú. ¿Y tú?", "ru": "Я из Москвы. А ты?" },
+        { "speaker": "ana", "es": "**Soy de** Madrid. **Soy española**.", "ru": "Я из Мадрида. Я испанка." }
+      ],
+      "notes": [
+        "🔊 Проиграть диалог целиком, потом по репликам.",
+        "«Первые реплики — фразы из самого первого урока. Теперь вы понимаете, как они устроены.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Кто ты?",
+      "lines": [
+        { "speaker": "carlos", "es": "¿**Eres profesora**?", "ru": "Ты учительница?" },
+        { "speaker": "ana", "es": "Sí, **soy profesora** de español. ¿Y tú?", "ru": "Да, я учительница испанского. А ты?" },
+        { "speaker": "carlos", "es": "**Soy programador**. Hablo español, pero poco.", "ru": "Я программист. Говорю по-испански, но мало." },
+        { "speaker": "ana", "es": "¡Hablas muy bien!", "ru": "Ты очень хорошо говоришь!" }
+      ],
+      "notes": [
+        "«Profesora de español — учительница испанского. Здесь de означает не «из», а «чего»: учительница какого предмета.»"
+      ]
+    },
+    {
+      "type": "final",
+      "title": "Теперь вы умеете",
+      "bullets": [
+        "Говорить, кто вы по профессии: soy programador",
+        "Говорить, откуда вы: soy de Moscú",
+        "Называть национальность: soy ruso, soy rusa",
+        "Описывать предметы: una casa grande"
+      ],
+      "nextTitle": "Следующий урок",
+      "nextText": "Урок 10: глаголы на -er и -ir",
+      "outro": "¡Adiós!",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Теперь вы можете представиться полностью: как вас зовут, откуда вы и кем работаете. Попробуйте сегодня сказать это вслух.»",
+        "«В следующем уроке выучим ещё две группы глаголов и научимся говорить, где живём и что едим. ¡Adiós!»"
+      ]
+    }
+  ]
+}
