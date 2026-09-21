@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 3,
+  "number": 8,
+  "level": "A0",
+  "planLesson": 8,
+  "title": "Предметы: род, число и артикли",
+  "course": "Испанский с нуля",
+  "newVocabulary": [
+    { "es": "el libro", "ru": "книга", "pos": "noun" },
+    { "es": "el bolígrafo", "ru": "ручка", "pos": "noun" },
+    { "es": "el teléfono", "ru": "телефон", "pos": "noun" },
+    { "es": "el coche", "ru": "машина", "pos": "noun" },
+    { "es": "el piso", "ru": "квартира", "pos": "noun" },
+    { "es": "la casa", "ru": "дом", "pos": "noun" },
+    { "es": "la mesa", "ru": "стол", "pos": "noun" },
+    { "es": "la silla", "ru": "стул", "pos": "noun" },
+    { "es": "la cama", "ru": "кровать", "pos": "noun" },
+    { "es": "la ventana", "ru": "окно", "pos": "noun" },
+    { "es": "la puerta", "ru": "дверь", "pos": "noun" },
+    { "es": "el niño", "ru": "ребёнок, мальчик", "pos": "noun" },
+    { "es": "la niña", "ru": "девочка", "pos": "noun" },
+    { "es": "el amigo", "ru": "друг", "pos": "noun" },
+    { "es": "la amiga", "ru": "подруга", "pos": "noun" },
+    { "es": "el perro", "ru": "собака", "pos": "noun" },
+    { "es": "el gato", "ru": "кот, кошка", "pos": "noun" },
+    { "es": "el ordenador", "ru": "компьютер", "pos": "noun" },
+    { "es": "el dinero", "ru": "деньги", "pos": "noun" },
+    { "es": "el trabajo", "ru": "работа", "pos": "noun" },
+    { "es": "la comida", "ru": "еда", "pos": "noun" },
+    { "es": "la música", "ru": "музыка", "pos": "noun" },
+    { "es": "la flor", "ru": "цветок", "pos": "noun" },
+    { "es": "la canción", "ru": "песня", "pos": "noun" },
+    { "es": "el día", "ru": "день", "pos": "noun" },
+    { "es": "el problema", "ru": "проблема", "pos": "noun" },
+    { "es": "la clase", "ru": "занятие, урок", "pos": "noun" },
+    { "es": "el / la / los / las", "ru": "определённый артикль", "pos": "art" },
+    { "es": "un / una / unos / unas", "ru": "неопределённый артикль", "pos": "art" }
+  ],
+  "newGrammar": [
+    "род существительных: -o и -a, исключения",
+    "множественное число: -s и -es",
+    "определённые артикли el, la, los, las",
+    "неопределённые артикли un, una, unos, unas"
+  ],
+  "speakers": { "ana": "Ana", "carlos": "Carlos" },
+  "tableHeaders": { "es": "Испанский", "ru": "Перевод" },
+  "practiceGroups": [
+    { "name": "Род и артикль" },
+    { "name": "Один и много" },
+    { "name": "Всё вместе" }
+  ],
+  "slides": [
+    {
+      "type": "title",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Привет! До сих пор мы говорили только о действиях: хочу работать, собираюсь учиться, мне нравится читать. Сегодня добавим предметы.»",
+        "«Вы узнаете, почему испанский стол — «он», а испанская машина — «она», и что за маленькие слова el, la, un, una стоят перед каждым существительным.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Предметы: он или она",
+      "hint": "Каждое слово — мужского или женского рода",
+      "notes": [
+        "«В русском у предметов есть род: стол — он, книга — она, окно — оно. В испанском родов только два: мужской и женский. Среднего нет вообще.»",
+        "«И самое важное: род испанского слова почти никогда не совпадает с русским. Книга по-русски «она», а вот дом по-испански — «он», зато машина — «она». Поэтому слово всегда учим вместе с его маленьким словом впереди: el или la.»",
+        "«Если знаете английский: там у предметов рода нет совсем, так что это придётся просто принять как новое.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "-o и -a",
+      "pattern": ["-o", "→", "el"],
+      "text": "Слова на -a — женского рода: la.",
+      "examples": [
+        { "es": "**El libro** ... **la casa**", "ru": "книга… дом", "ipa": "el ˈlibɾo · la ˈkasa" },
+        { "es": "Quiero comprar **el coche**.", "ru": "Я хочу купить машину.", "ipa": "ˈkjeɾo komˈpɾaɾ el ˈkotʃe" },
+        { "es": "Vamos a limpiar **la casa**.", "ru": "Давайте уберём дом.", "ipa": "ˈbamos a limˈpjaɾ la ˈkasa" }
+      ],
+      "notes": [
+        "«Правило простое: кончается на -o — мужской род, впереди ставим el. Кончается на -a — женский, впереди la.»",
+        "«Libro — кончается на -o, значит el libro. Casa — кончается на -a, значит la casa. Заметьте: по-русски «книга» — она, а по-испански el libro — он. Не переводите род, запоминайте испанский.»",
+        "«Пока смотрите на el и la просто как на метку рода. Что они означают, разберём через пару минут.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Мужской род — el",
+      "rows": [
+        { "es": "Quiero leer **el libro**.", "ru": "Я хочу почитать книгу.", "ipa": "ˈkjeɾo leˈeɾ el ˈlibɾo" },
+        { "es": "Necesito **el bolígrafo**.", "ru": "Мне нужна ручка.", "ipa": "neθeˈsito el boˈligɾafo" },
+        { "es": "Voy a comprar **el teléfono**.", "ru": "Я собираюсь купить телефон.", "ipa": "ˈboj a komˈpɾaɾ el teˈlefono" },
+        { "es": "Vamos a limpiar **el coche**.", "ru": "Давайте помоем машину.", "ipa": "ˈbamos a limˈpjaɾ el ˈkotʃe" },
+        { "es": "Vamos a limpiar **el piso**.", "ru": "Давайте уберём квартиру.", "ipa": "ˈbamos a limˈpjaɾ el ˈpiso" }
+      ],
+      "notes": [
+        "«Libro — книга. 🔊 Bolígrafo — ручка, ударение на í. 🔊»",
+        "«Teléfono — телефон, ударение на é. 🔊 Coche — машина; ch читаем как русское «ч». 🔊»",
+        "«Piso — квартира. 🔊 В Испании говорят именно piso, слово «apartamento» там почти не используют.»",
+        "«Обратите внимание: coche кончается не на -o, а на -e, но это слово мужского рода. Такие слова просто запоминаем с el.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Женский род — la",
+      "rows": [
+        { "es": "Necesito **la mesa**.", "ru": "Мне нужен стол.", "ipa": "neθeˈsito la ˈmesa" },
+        { "es": "Quiero comprar **la silla**.", "ru": "Я хочу купить стул.", "ipa": "ˈkjeɾo komˈpɾaɾ la ˈsija" },
+        { "es": "Voy a limpiar **la ventana**.", "ru": "Я помою окно.", "ipa": "ˈboj a limˈpjaɾ la benˈtana" },
+        { "es": "Necesito **la cama**.", "ru": "Мне нужна кровать.", "ipa": "neθeˈsito la ˈkama" },
+        { "es": "Vamos a limpiar **la puerta**.", "ru": "Давайте помоем дверь.", "ipa": "ˈbamos a limˈpjaɾ la ˈpweɾta" }
+      ],
+      "notes": [
+        "«Mesa — стол. 🔊 По-русски «он», по-испански la mesa — «она».»",
+        "«Silla — стул; ll читаем как «й». 🔊 Ventana — окно. 🔊»",
+        "«Cama — кровать. 🔊 Puerta — дверь. 🔊»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Люди и животные",
+      "rows": [
+        { "es": "**El niño** estudia mucho.", "ru": "Мальчик много учится.", "ipa": "el ˈniɲo esˈtudja ˈmutʃo" },
+        { "es": "**La niña** canta bien.", "ru": "Девочка хорошо поёт.", "ipa": "la ˈniɲa ˈkanta ˈbjen" },
+        { "es": "**El amigo** llega tarde.", "ru": "Друг приходит поздно.", "ipa": "el aˈmigo ˈjega ˈtaɾde" },
+        { "es": "**La amiga** trabaja mucho.", "ru": "Подруга много работает.", "ipa": "la aˈmiga tɾaˈbaxa ˈmutʃo" },
+        { "es": "**El perro** y **el gato** descansan.", "ru": "Собака и кот отдыхают.", "ipa": "el ˈpero i el ˈgato desˈkansan" }
+      ],
+      "notes": [
+        "«У людей род настоящий, и он виден в окончании: el niño — мальчик, la niña — девочка. Ñ читаем как «нь». 🔊»",
+        "«El amigo — друг, la amiga — подруга. Одно слово, два окончания. 🔊»",
+        "«А вот с животными снова ловушка: perro — собака — мужского рода, el perro. Gato — кот, el gato; про кошку скажут la gata.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Ещё предметы",
+      "rows": [
+        { "es": "Necesito **el ordenador** ahora.", "ru": "Мне нужен компьютер сейчас.", "ipa": "neθeˈsito el oɾdenaˈdoɾ aˈoɾa" },
+        { "es": "Trabajo mucho, pero gano poco **dinero**.", "ru": "Я много работаю, но мало зарабатываю.", "ipa": "tɾaˈbaxo ˈmutʃo ˈpeɾo ˈgano ˈpoko diˈneɾo" },
+        { "es": "Voy a terminar **el trabajo** tarde.", "ru": "Я закончу работу поздно.", "ipa": "ˈboj a teɾmiˈnaɾ el tɾaˈbaxo ˈtaɾde" },
+        { "es": "Vamos a comprar **la comida**.", "ru": "Давайте купим еду.", "ipa": "ˈbamos a komˈpɾaɾ la koˈmida" }
+      ],
+      "notes": [
+        "«Ordenador — компьютер. 🔊 Это слово Испании; в Латинской Америке говорят computadora.»",
+        "«Dinero — деньги. 🔊 По-русски это слово всегда во множественном числе, а по-испански — в единственном: el dinero.»",
+        "«Trabajo — работа. Глагол trabajo — «я работаю» — выглядит точно так же, различаем по маленькому слову: el trabajo — предмет. 🔊»",
+        "«Comida — еда. 🔊 Música — музыка, ударение на ú. 🔊»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Не по правилу",
+      "rows": [
+        { "es": "Quiero escuchar **la música**.", "ru": "Я хочу послушать музыку.", "ipa": "ˈkjeɾo eskuˈtʃaɾ la ˈmusika" },
+        { "es": "Hoy **el día** termina tarde.", "ru": "Сегодня день заканчивается поздно.", "ipa": "ˈoj el ˈdi.a teɾˈmina ˈtaɾde" },
+        { "es": "Vamos a estudiar **el problema**.", "ru": "Давайте разберём проблему.", "ipa": "ˈbamos a estuˈdjaɾ el pɾoˈblema" },
+        { "es": "**La clase** termina pronto.", "ru": "Занятие скоро заканчивается.", "ipa": "la ˈklase teɾˈmina ˈpɾonto" }
+      ],
+      "notes": [
+        "«Есть слова, которые правилу не подчиняются, и это самые частые слова языка.»",
+        "«Día — день. Кончается на -a, но род мужской: el día. Вы уже говорите buenos días — «добрый день», и там как раз мужское окончание -os. 🔊»",
+        "«Problema — проблема, тоже мужского рода: el problema. Так же ведут себя слова на -ma, которые пришли из греческого.»",
+        "«Clase — занятие, урок. Кончается на -e, и род женский: la clase. 🔊»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичная ошибка",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          { "es": "**la** día" },
+          { "es": "**la** problema" }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          { "es": "**el** día", "ru": "день" },
+          { "es": "**el** problema", "ru": "проблема" }
+        ]
+      },
+      "notes": [
+        "«Самая частая ошибка — поставить la к слову на -a, не подумав. Día и problema надо просто запомнить с el.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Один или много",
+      "hint": "Добавляем -s или -es",
+      "notes": [
+        "«Теперь научимся говорить не «книга», а «книги». Это самая лёгкая часть урока.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "-s и -es",
+      "pattern": ["гласная", "+", "-s"],
+      "text": "После согласной добавляем -es: flor → flores.",
+      "examples": [
+        { "es": "**Los niños** cantan.", "ru": "Дети поют.", "ipa": "los ˈniɲos ˈkantan" },
+        { "es": "Necesito **las sillas**.", "ru": "Мне нужны стулья.", "ipa": "neθeˈsito las ˈsijas" },
+        { "es": "Quiero comprar **las flores**.", "ru": "Я хочу купить цветы.", "ipa": "ˈkjeɾo komˈpɾaɾ las ˈfloɾes" }
+      ],
+      "notes": [
+        "«Если слово кончается на гласную, добавляем -s: libro — libros, casa — casas. Как в английском, только без исключений.»",
+        "«Если на согласную — добавляем -es: flor — flores.»",
+        "«И маленькое слово тоже становится множественным: el → los, la → las. Los niños, las sillas.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Множественное число",
+      "rows": [
+        { "es": "Vamos a limpiar **las puertas**.", "ru": "Давайте помоем двери.", "ipa": "ˈbamos a limˈpjaɾ las ˈpweɾtas" },
+        { "es": "Quiero comprar **las flores**.", "ru": "Я хочу купить цветы.", "ipa": "ˈkjeɾo komˈpɾaɾ las ˈfloɾes" },
+        { "es": "Vamos a escuchar **las canciones**.", "ru": "Давайте послушаем песни.", "ipa": "ˈbamos a eskuˈtʃaɾ las kanˈθjones" },
+        { "es": "**Los días** terminan tarde.", "ru": "Дни заканчиваются поздно.", "ipa": "los ˈdi.as teɾˈminan ˈtaɾde" }
+      ],
+      "notes": [
+        "«Flor — цветок, flores — цветы. 🔊»",
+        "«Canción — песня. 🔊 Во множественном числе знак ударения пропадает: canciones. Ударение и так падает куда нужно, значок больше не требуется.»",
+        "«Día — días. Слово мужского рода, поэтому los días, а не las.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Какой-то или тот самый",
+      "hint": "un / una — впервые · el / la — уже известный",
+      "notes": [
+        "«Теперь главное. Перед существительным в испанском почти всегда стоит маленькое слово, и их два вида. В русском таких слов нет, поэтому объясню через «какой-то» и «тот самый».»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "un и una — какой-то",
+      "pattern": ["un / una", "+", "предмет"],
+      "text": "Говорим о предмете впервые, собеседник его ещё не знает.",
+      "examples": [
+        { "es": "Necesito **un** bolígrafo.", "ru": "Мне нужна ручка.", "ipa": "neθeˈsito un boˈligɾafo" },
+        { "es": "Quiero comprar **una** mesa.", "ru": "Я хочу купить стол.", "ipa": "ˈkjeɾo komˈpɾaɾ ˈuna ˈmesa" },
+        { "es": "**Un** amigo llega mañana.", "ru": "Завтра приезжает друг.", "ipa": "un aˈmigo ˈjega maˈɲana" }
+      ],
+      "notes": [
+        "«Necesito un bolígrafo — мне нужна какая-нибудь ручка, любая. Неважно какая, лишь бы писала.»",
+        "«У мужского рода un, у женского una: un libro, una mesa.»",
+        "«Если знаете английский: un и una — это примерно a, только их два, по родам.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "el и la — тот самый",
+      "pattern": ["el / la", "+", "предмет"],
+      "text": "Предмет уже известен обоим: тот самый, о котором шла речь.",
+      "examples": [
+        { "es": "Voy a leer **el** libro.", "ru": "Я собираюсь прочитать книгу.", "ipa": "ˈboj a leˈeɾ el ˈlibɾo" },
+        { "es": "Necesito **el** teléfono ahora.", "ru": "Мне нужен телефон сейчас.", "ipa": "neθeˈsito el teˈlefono aˈoɾa" },
+        { "es": "Vamos a limpiar **la** casa.", "ru": "Давайте уберём дом.", "ipa": "ˈbamos a limˈpjaɾ la ˈkasa" }
+      ],
+      "notes": [
+        "«Voy a leer el libro — ту самую книгу, которую мы обсуждали или которая лежит на столе. Не любую.»",
+        "«По-русски мы такое показываем словами «этот», «тот самый» или просто интонацией. По-испански — маленьким словом el или la.»",
+        "«Если знаете английский: el и la — это the, только с родом и числом.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "un coche и el coche",
+      "left": {
+        "label": "какой-то",
+        "items": [
+          { "es": "Quiero comprar **un** coche.", "ru": "Хочу купить машину." },
+          { "es": "Necesito **una** silla.", "ru": "Мне нужен стул." }
+        ]
+      },
+      "right": {
+        "label": "тот самый",
+        "items": [
+          { "es": "Quiero comprar **el** coche.", "ru": "Хочу купить ту самую машину." },
+          { "es": "Necesito **la** silla.", "ru": "Мне нужен тот самый стул." }
+        ]
+      },
+      "notes": [
+        "«Quiero comprar un coche — хочу машину вообще, ещё не выбрал. Quiero comprar el coche — ту самую, которую смотрел вчера.»",
+        "«Русский язык эту разницу обычно не показывает словом, поэтому новичок просто не замечает выбора. Правило на первое время: первый раз упоминаю предмет — un или una, дальше про него же — el или la.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "unos и unas",
+      "rows": [
+        { "es": "Necesito **unos bolígrafos**.", "ru": "Мне нужны ручки.", "ipa": "neθeˈsito ˈunos boˈligɾafos" },
+        { "es": "Quiero comprar **unas flores**.", "ru": "Я хочу купить цветы.", "ipa": "ˈkjeɾo komˈpɾaɾ ˈunas ˈfloɾes" },
+        { "es": "**Unos amigos** llegan mañana.", "ru": "Завтра приезжают друзья.", "ipa": "ˈunos aˈmigos ˈjegan maˈɲana" },
+        { "es": "Vamos a cantar **unas canciones**.", "ru": "Давайте споём песни.", "ipa": "ˈbamos a kanˈtaɾ ˈunas kanˈθjones" }
+      ],
+      "notes": [
+        "«Во множественном числе un и una становятся unos и unas. Значение — «несколько, какие-то».»",
+        "«Unos bolígrafos — несколько ручек, каких именно, неважно.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичная ошибка",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          { "es": "Necesito coche." },
+          { "es": "Quiero comprar libro." }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          { "es": "Necesito **un** coche.", "ru": "Мне нужна машина." },
+          { "es": "Quiero comprar **un** libro.", "ru": "Я хочу купить книгу." }
+        ]
+      },
+      "notes": [
+        "«Русскоговорящие часто забывают артикль просто потому, что в русском его нет. Но в испанском существительное почти никогда не стоит голым.»",
+        "«Проверяйте себя так: назвали предмет — поставьте перед ним маленькое слово. Не уверены какое — un или una, если предмет новый, el или la, если уже известный.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Практика",
+      "hint": "Фраза по-русски → пауза → скажите вслух по-испански",
+      "notes": [
+        "«Теперь практика. Вы видите фразу по-русски — пока идёт полоска, скажите её вслух по-испански. Потом появится ответ. Не бойтесь ошибиться: главное — говорить.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Род и артикль",
+      "phrase": { "ru": "Мне нужна ручка.", "es": "Necesito un bolígrafo.", "ipa": "neθeˈsito un boˈligɾafo" }
+    },
+    {
+      "type": "practice",
+      "group": "Род и артикль",
+      "phrase": { "ru": "Я хочу купить машину.", "es": "Quiero comprar un coche.", "ipa": "ˈkjeɾo komˈpɾaɾ un ˈkotʃe" }
+    },
+    {
+      "type": "practice",
+      "group": "Род и артикль",
+      "phrase": { "ru": "Мальчик много учится.", "es": "El niño estudia mucho.", "ipa": "el ˈniɲo esˈtudja ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Род и артикль",
+      "phrase": { "ru": "Давайте уберём дом.", "es": "Vamos a limpiar la casa.", "ipa": "ˈbamos a limˈpjaɾ la ˈkasa" }
+    },
+    {
+      "type": "practice",
+      "group": "Род и артикль",
+      "phrase": { "ru": "Мне нужен стол.", "es": "Necesito una mesa.", "ipa": "neθeˈsito ˈuna ˈmesa" }
+    },
+    {
+      "type": "practice",
+      "group": "Род и артикль",
+      "phrase": { "ru": "Кот хочет спать.", "es": "El gato quiere dormir.", "ipa": "el ˈgato ˈkjeɾe doɾˈmiɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Род и артикль",
+      "phrase": { "ru": "Занятие скоро заканчивается.", "es": "La clase termina pronto.", "ipa": "la ˈklase teɾˈmina ˈpɾonto" }
+    },
+    {
+      "type": "practice",
+      "group": "Род и артикль",
+      "phrase": { "ru": "Сегодня день заканчивается поздно.", "es": "Hoy el día termina tarde.", "ipa": "ˈoj el ˈdi.a teɾˈmina ˈtaɾde" }
+    },
+    {
+      "type": "practice",
+      "group": "Один и много",
+      "phrase": { "ru": "Я хочу купить цветы.", "es": "Quiero comprar unas flores.", "alternatives": ["Quiero comprar flores."], "ipa": "ˈkjeɾo komˈpɾaɾ ˈunas ˈfloɾes" }
+    },
+    {
+      "type": "practice",
+      "group": "Один и много",
+      "phrase": { "ru": "Мне нужны ручки.", "es": "Necesito unos bolígrafos.", "ipa": "neθeˈsito ˈunos boˈligɾafos" }
+    },
+    {
+      "type": "practice",
+      "group": "Один и много",
+      "phrase": { "ru": "Дети много поют.", "es": "Los niños cantan mucho.", "ipa": "los ˈniɲos ˈkantan ˈmutʃo" }
+    },
+    {
+      "type": "practice",
+      "group": "Один и много",
+      "phrase": { "ru": "Давайте помоем окна.", "es": "Vamos a limpiar las ventanas.", "ipa": "ˈbamos a limˈpjaɾ las benˈtanas" }
+    },
+    {
+      "type": "practice",
+      "group": "Один и много",
+      "phrase": { "ru": "Завтра приезжают друзья.", "es": "Mañana llegan unos amigos.", "alternatives": ["Unos amigos llegan mañana."], "ipa": "maˈɲana ˈjegan ˈunos aˈmigos" }
+    },
+    {
+      "type": "practice",
+      "group": "Один и много",
+      "phrase": { "ru": "Собаки отдыхают.", "es": "Los perros descansan.", "ipa": "los ˈperos desˈkansan" }
+    },
+    {
+      "type": "practice",
+      "group": "Один и много",
+      "phrase": { "ru": "Мы хотим купить стулья.", "es": "Queremos comprar unas sillas.", "alternatives": ["Queremos comprar sillas."], "ipa": "keˈɾemos komˈpɾaɾ ˈunas ˈsijas" }
+    },
+    {
+      "type": "practice",
+      "group": "Один и много",
+      "phrase": { "ru": "Давайте послушаем песни.", "es": "Vamos a escuchar unas canciones.", "alternatives": ["Vamos a escuchar las canciones."], "ipa": "ˈbamos a eskuˈtʃaɾ ˈunas kanˈθjones" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мне нужен телефон.", "es": "Necesito un teléfono.", "ipa": "neθeˈsito un teˈlefono" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Я много работаю, но мало зарабатываю.", "es": "Trabajo mucho, pero gano poco.", "ipa": "tɾaˈbaxo ˈmutʃo ˈpeɾo ˈgano ˈpoko" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мне нужны деньги.", "es": "Necesito dinero.", "alternatives": ["Necesito el dinero."], "ipa": "neθeˈsito diˈneɾo" },
+      "notes": [
+        "«Dinero часто идёт совсем без артикля: речь о деньгах вообще, а не о конкретной сумме.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Ты хочешь послушать музыку?", "es": "¿Quieres escuchar música?", "alternatives": ["¿Quieres escuchar la música?"], "ipa": "ˈkjeɾes eskuˈtʃaɾ ˈmusika" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мне нравится покупать книги.", "es": "Me gusta comprar libros.", "ipa": "me ˈgusta komˈpɾaɾ ˈlibɾos" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Завтра мне нужно закончить работу.", "es": "Mañana tengo que terminar el trabajo.", "ipa": "maˈɲana ˈtengo ke teɾmiˈnaɾ el tɾaˈbaxo" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мы собираемся купить квартиру.", "es": "Vamos a comprar un piso.", "ipa": "ˈbamos a komˈpɾaɾ un ˈpiso" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Подруга приезжает поздно.", "es": "Una amiga llega tarde.", "alternatives": ["La amiga llega tarde."], "ipa": "ˈuna aˈmiga ˈjega ˈtaɾde" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Вы можете помочь?", "hint": "вежливо, одному человеку", "es": "¿Usted puede ayudar?", "alternatives": ["¿Puede usted ayudar?"], "ipa": "usˈted ˈpwede ajuˈdaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Они хотят купить дом.", "es": "Ellos quieren comprar una casa.", "alternatives": ["Quieren comprar una casa."], "ipa": "ˈejos ˈkjeɾen komˈpɾaɾ ˈuna ˈkasa" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Сегодня мы убираем квартиру.", "es": "Hoy limpiamos el piso.", "ipa": "ˈoj limˈpjamos el ˈpiso" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Вы покупаете еду?", "hint": "к нескольким друзьям", "es": "¿Compráis la comida?", "alternatives": ["¿Vosotros compráis la comida?"], "ipa": "komˈpɾais la koˈmida" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мне нужен компьютер сейчас.", "es": "Necesito el ordenador ahora.", "alternatives": ["Necesito un ordenador ahora."], "ipa": "neθeˈsito el oɾdenaˈdoɾ aˈoɾa" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Давайте разберём проблему.", "es": "Vamos a estudiar el problema.", "ipa": "ˈbamos a estuˈdjaɾ el pɾoˈblema" }
+    },
+    {
+      "type": "section",
+      "title": "Мини-диалог",
+      "notes": [
+        "«А теперь послушаем Ану и Карлоса. Карлос переезжает в новую квартиру. Все слова вы уже знаете.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Карлос переезжает",
+      "lines": [
+        { "speaker": "ana", "es": "¿Vas a comprar **el piso**?", "ru": "Ты будешь покупать квартиру?" },
+        { "speaker": "carlos", "es": "Sí. Necesito **una mesa** y **unas sillas**.", "ru": "Да. Мне нужны стол и стулья." },
+        { "speaker": "ana", "es": "¿Quieres ir de compras mañana?", "ru": "Хочешь завтра пойти за покупками?" },
+        { "speaker": "carlos", "es": "Claro. También necesito **una cama**.", "ru": "Конечно. Ещё мне нужна кровать." }
+      ],
+      "notes": [
+        "🔊 Проиграть диалог целиком, потом по репликам.",
+        "«Слушайте маленькие слова. El piso — та самая квартира, о которой они уже говорили. А una mesa — какой-то стол, Карлос его ещё не выбрал.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Карлос переезжает",
+      "lines": [
+        { "speaker": "ana", "es": "¿Y **el ordenador**?", "ru": "А компьютер?" },
+        { "speaker": "carlos", "es": "Voy a comprar **un ordenador** más tarde. Necesito **dinero**.", "ru": "Компьютер куплю позже. Мне нужны деньги." },
+        { "speaker": "ana", "es": "Yo puedo ayudar.", "ru": "Я могу помочь." },
+        { "speaker": "carlos", "es": "¡Gracias! Vamos a comprar **la mesa** mañana.", "ru": "Спасибо! Давай завтра купим стол." }
+      ],
+      "notes": [
+        "«¿Y el ordenador? — «А компьютер?». Знакомая конструкция: вы уже говорили ¿y tú?»",
+        "«И последняя реплика: la mesa. В начале разговора был una mesa — какой-то. Теперь стол уже обсудили, он стал «тем самым», и Карлос говорит la mesa. Вот вся логика артиклей в одном диалоге.»"
+      ]
+    },
+    {
+      "type": "final",
+      "title": "Теперь вы умеете",
+      "bullets": [
+        "Определять род: -o → el, -a → la",
+        "Помнить исключения: el día, el problema, la clase",
+        "Образовывать множественное число: -s и -es",
+        "Выбирать артикль: un coche и el coche",
+        "Говорить, что вам нужно и что вы хотите купить"
+      ],
+      "nextTitle": "Следующий урок",
+      "nextText": "Урок 9: кто и какой — глагол ser",
+      "outro": "¡Hasta luego!",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Главный совет: новое слово учите сразу с артиклем. Не «mesa», а «la mesa». Тогда род запомнится сам собой.»",
+        "«Сегодня осмотритесь вокруг и назовите пять предметов по-испански — с артиклем. В следующем уроке научимся говорить, кто вы и какой предмет: глагол ser. ¡Hasta luego!»"
+      ]
+    }
+  ]
+}

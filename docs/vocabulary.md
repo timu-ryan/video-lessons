@@ -3,7 +3,7 @@
 > Генерируется командой `npm run vocab:build`. Не редактировать вручную.
 > Готовя урок N, считайте изученным только то, что введено в уроках с номером меньше N.
 
-Уроков: 8 · слов: 137 · нет уроков: 8–9
+Уроков: 9 · слов: 166 · нет уроков: 9
 
 ## Урок 1 · A0-1 · Приветствие, знакомство
 
@@ -47,6 +47,12 @@
 
 **Грамматика:** me / te / le / nos / os / les gusta + инфинитив · отрицание no me gusta · muy и mucho · también и tampoco
 
+## Урок 8 · A0-8 · Предметы: род, число и артикли
+
+**Слова (29):** el libro — книга · el bolígrafo — ручка · el teléfono — телефон · el coche — машина · el piso — квартира · la casa — дом · la mesa — стол · la silla — стул · la cama — кровать · la ventana — окно · la puerta — дверь · el niño — ребёнок, мальчик · la niña — девочка · el amigo — друг · la amiga — подруга · el perro — собака · el gato — кот, кошка · el ordenador — компьютер · el dinero — деньги · el trabajo — работа · la comida — еда · la música — музыка · la flor — цветок · la canción — песня · el día — день · el problema — проблема · la clase — занятие, урок · el / la / los / las — определённый артикль · un / una / unos / unas — неопределённый артикль
+
+**Грамматика:** род существительных: -o и -a, исключения · множественное число: -s и -es · определённые артикли el, la, los, las · неопределённые артикли un, una, unos, unas
+
 ## Урок 10 · A0-10 · Глаголы на -er и -ir
 
 **Слова (18):** vivir — жить · beber — пить · escribir — писать · comprender — понимать · abrir — открывать · recibir — получать · vender — продавать · correr — бегать · en — в, на (где?) · el café — кофе · la cerveza — пиво · el pan — хлеб · la carne — мясо · el pescado — рыба (еда) · el periódico — газета · la revista — журнал · la carta — письмо · el centro — центр
@@ -63,6 +69,8 @@
 | ¿y a ti? | а тебе? | phrase | 7 |
 | ¿y tú? | а ты? а тебя? | phrase | 1 |
 | ¿y usted? | а вы? | phrase | 5 |
+| el / la / los / las | определённый артикль | art | 8 |
+| un / una / unos / unas | неопределённый артикль | art | 8 |
 | a | связка в voy a + инфинитив | prep | 4 |
 | a mí también | мне тоже | phrase | 7 |
 | a mí tampoco | мне тоже нет | phrase | 7 |
@@ -70,26 +78,35 @@
 | adiós | до свидания, пока | interj | 1 |
 | ahora | сейчас | adv | 3 |
 | el alemán | немецкий язык | noun | 2 |
+| la amiga | подруга | noun | 8 |
+| el amigo | друг | noun | 8 |
 | aprender | учить, выучить | verb | 3 |
 | ayudar | помогать | verb | 4 |
 | bailar | танцевать | verb | 3 |
 | beber | пить | verb | 10 |
 | bien | хорошо | adv | 7 |
+| el bolígrafo | ручка | noun | 8 |
 | buenas noches | добрый вечер, спокойной ночи | phrase | 1 |
 | buenas tardes | добрый день, добрый вечер | phrase | 1 |
 | buenos días | доброе утро, добрый день | phrase | 1 |
 | el café | кофе | noun | 10 |
+| la cama | кровать | noun | 8 |
 | caminar | ходить пешком | verb | 6 |
+| la canción | песня | noun | 8 |
 | cantar | петь | verb | 3 |
 | la carne | мясо | noun | 10 |
 | la carta | письмо | noun | 10 |
+| la casa | дом | noun | 8 |
 | cenar | ужинать | verb | 4 |
 | el centro | центр | noun | 10 |
 | la cerveza | пиво | noun | 10 |
 | el chino | китайский язык | noun | 2 |
 | claro | конечно | interj | 6 |
+| la clase | занятие, урок | noun | 8 |
+| el coche | машина | noun | 8 |
 | cocinar | готовить | verb | 3 |
 | comer | есть | verb | 3 |
+| la comida | еда | noun | 8 |
 | comprar | покупать | verb | 4 |
 | comprender | понимать | verb | 10 |
 | contestar | отвечать | verb | 5 |
@@ -98,6 +115,8 @@
 | desayunar | завтракать | verb | 4 |
 | descansar | отдыхать | verb | 3 |
 | después | потом, после | adv | 4 |
+| el día | день | noun | 8 |
+| el dinero | деньги | noun | 8 |
 | dormir | спать | verb | 3 |
 | e | и (перед i-, hi-) | conj | 2 |
 | él | он | pron | 5 |
@@ -113,8 +132,10 @@
 | esperar | ждать | verb | 4 |
 | esta noche | сегодня вечером | phrase | 6 |
 | estudiar | учиться, учить | verb | 2 |
+| la flor | цветок | noun | 8 |
 | el francés | французский язык | noun | 2 |
 | ganar | зарабатывать, выигрывать | verb | 6 |
+| el gato | кот, кошка | noun | 8 |
 | gracias | спасибо | interj | 1 |
 | gustar | нравиться | verb | 7 |
 | hablar | говорить | verb | 2 |
@@ -129,6 +150,7 @@
 | le gusta | ему, ей нравится; вам нравится (вежливо) | phrase | 7 |
 | leer | читать | verb | 3 |
 | les gusta | им нравится; вам нравится (вежливо, нескольким) | phrase | 7 |
+| el libro | книга | noun | 8 |
 | limpiar | убирать, убираться | verb | 7 |
 | llamar | звонить | verb | 6 |
 | llegar | приезжать, приходить | verb | 5 |
@@ -140,15 +162,20 @@
 | más tarde | позже | phrase | 4 |
 | me gusta | мне нравится | phrase | 7 |
 | me llamo | меня зовут | phrase | 1 |
+| la mesa | стол | noun | 8 |
 | mucho | много | adv | 2 |
+| la música | музыка | noun | 8 |
 | muy | очень | adv | 7 |
 | nadar | плавать | verb | 3 |
 | necesitar | нуждаться, быть нужным | verb | 3 |
+| la niña | девочка | noun | 8 |
+| el niño | ребёнок, мальчик | noun | 8 |
 | no | не, нет | adv | 2 |
 | nos gusta | нам нравится | phrase | 7 |
 | nosotras | мы (о женщинах) | pron | 5 |
 | nosotros | мы | pron | 5 |
 | o | или | conj | 4 |
+| el ordenador | компьютер | noun | 8 |
 | os gusta | вам нравится (нескольким, на «ты») | phrase | 7 |
 | otra vez | ещё раз, снова | phrase | 6 |
 | el pan | хлеб | noun | 10 |
@@ -157,36 +184,44 @@
 | perdón | извините, извини | interj | 1 |
 | el periódico | газета | noun | 10 |
 | pero | но | conj | 2 |
+| el perro | собака | noun | 8 |
 | el pescado | рыба (еда) | noun | 10 |
+| el piso | квартира | noun | 8 |
 | poco | мало | adv | 2 |
 | poder | мочь | verb | 3 |
 | por favor | пожалуйста (просьба) | phrase | 1 |
 | practicar | практиковать, заниматься | verb | 3 |
 | preguntar | спрашивать | verb | 5 |
+| el problema | проблема | noun | 8 |
 | pronto | скоро | adv | 6 |
+| la puerta | дверь | noun | 8 |
 | querer | хотеть | verb | 3 |
 | recibir | получать | verb | 10 |
 | regresar | возвращаться | verb | 6 |
 | la revista | журнал | noun | 10 |
 | el ruso | русский язык | noun | 2 |
 | sí | да | adv | 2 |
+| la silla | стул | noun | 8 |
 | solo | только | adv | 6 |
 | soy de | я из | phrase | 1 |
 | también | тоже | adv | 7 |
 | tampoco | тоже не | adv | 7 |
 | tarde | поздно | adv | 4 |
 | te gusta | тебе нравится | phrase | 7 |
+| el teléfono | телефон | noun | 8 |
 | temprano | рано | adv | 4 |
 | tener que | быть должным, приходиться | phrase | 6 |
 | tengo que | я должен, мне нужно | phrase | 4 |
 | terminar | заканчивать | verb | 5 |
 | tienes que | ты должен, тебе нужно | phrase | 4 |
 | trabajar | работать | verb | 2 |
+| el trabajo | работа | noun | 8 |
 | tú | ты | pron | 2 |
 | usted | вы (вежливо, одному человеку) | pron | 5 |
 | ustedes | вы (вежливо, нескольким) | pron | 5 |
 | vas a | ты собираешься, ты будешь | phrase | 4 |
 | vender | продавать | verb | 10 |
+| la ventana | окно | noun | 8 |
 | viajar | путешествовать | verb | 3 |
 | vivir | жить | verb | 10 |
 | vosotras | вы (нескольким женщинам, на «ты») | pron | 5 |
