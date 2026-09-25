@@ -70,8 +70,8 @@
       "text": "Инфинитив отвечает на вопрос «что делать?»",
       "examples": [
         { "es": "habl**ar**", "ru": "говорить", "ipa": "aˈblaɾ" },
-        { "es": "trabaj**ar**", "ru": "работать", "ipa": "tɾabaˈxaɾ" },
-        { "es": "estudi**ar**", "ru": "учиться", "ipa": "estuˈdjaɾ" }
+        { "es": "com**er**", "ru": "есть", "ipa": "koˈmeɾ" },
+        { "es": "dorm**ir**", "ru": "спать", "ipa": "doɾˈmiɾ" }
       ],
       "notes": [
         "«Все испанские глаголы в начальной форме заканчиваются на -ar, -er или -ir. Это как русское «-ть» в слове «говорить».»",
@@ -82,15 +82,15 @@
     {
       "type": "section",
       "title": "Хочу",
-      "hint": "quiero + инфинитив — как русское «хочу говорить»",
+      "hint": "querer + инфинитив — как русское «хочу говорить»",
       "notes": [
         "«Первое слово на сегодня — querer, хотеть. Оно работает точно как в русском: хочу — и дальше начальная форма.»"
       ]
     },
     {
       "type": "rule",
-      "title": "quiero + инфинитив",
-      "pattern": ["quiero", "+", "инфинитив"],
+      "title": "querer + инфинитив",
+      "pattern": ["querer", "+", "инфинитив"],
       "text": "Меняется только первый глагол, второй стоит в инфинитиве.",
       "examples": [
         { "es": "**Quiero** hablar español.", "ru": "Я хочу говорить по-испански.", "ipa": "ˈkjeɾo aˈblaɾ espaˈɲol" },
@@ -137,15 +137,15 @@
     {
       "type": "section",
       "title": "Могу",
-      "hint": "puedo + инфинитив",
+      "hint": "poder + инфинитив",
       "notes": [
         "«Второе слово — poder, мочь. Устроено точно так же: puedo и дальше инфинитив.»"
       ]
     },
     {
       "type": "rule",
-      "title": "puedo + инфинитив",
-      "pattern": ["puedo", "+", "инфинитив"],
+      "title": "poder + инфинитив",
+      "pattern": ["poder", "+", "инфинитив"],
       "text": "После puedo глагол тоже стоит в инфинитиве.",
       "examples": [
         { "es": "**Puedo** trabajar.", "ru": "Я могу работать.", "ipa": "ˈpwedo tɾabaˈxaɾ" },
@@ -189,15 +189,15 @@
     {
       "type": "section",
       "title": "Нужно",
-      "hint": "necesito + инфинитив — «мне нужно»",
+      "hint": "necesitar + инфинитив — «мне нужно»",
       "notes": [
         "«Третье слово — necesitar. Переводим его как «мне нужно» или «мне надо».»"
       ]
     },
     {
       "type": "rule",
-      "title": "necesito + инфинитив",
-      "pattern": ["necesito", "+", "инфинитив"],
+      "title": "necesitar + инфинитив",
+      "pattern": ["necesitar", "+", "инфинитив"],
       "text": "necesito — «мне нужно», «я должен».",
       "examples": [
         { "es": "**Necesito** trabajar.", "ru": "Мне нужно работать.", "ipa": "neθeˈsito tɾabaˈxaɾ" },

@@ -58,12 +58,30 @@
       ]
     },
     {
+      "type": "rule",
+      "title": "Форма «я»",
+      "pattern": ["основа", "+", "-o"],
+      "text": "Убираем -ar и добавляем -o: hablar → hablo.",
+      "examples": [
+        { "es": "hablar — **Hablo** inglés.", "ru": "Я говорю по-английски.", "ipa": "aˈblaɾ · ˈablo inˈgles" },
+        { "es": "estudiar — **Estudio** mucho.", "ru": "Я много учусь.", "ipa": "estuˈdjaɾ · esˈtudjo ˈmutʃo" },
+        { "es": "trabajar — **Trabajo**.", "ru": "Я работаю.", "ipa": "tɾabaˈxaɾ · tɾaˈbaxo" }
+      ],
+      "notes": [
+        "«Все три глагола кончаются на -ar. Это начальная форма, как русское «-ть» в словах «говорить», «работать».»",
+        "«Все испанские глаголы в начальной форме заканчиваются на -ar, -er или -ir. Сегодня берём только первую группу, на -ar; остальные разберём в следующем уроке.»",
+        "«Отрезаем -ar — остаётся основа: habl-, trabaj-, estudi-. Добавляем -o — получается «я»: hablo, trabajo, estudio.»",
+        "«Слово «я» отдельно говорить не нужно. Как в русском «говорю»: и так понятно, кто говорит.»",
+        "🔊 «Hablo inglés. Estudio mucho. Trabajo.»"
+      ]
+    },
+    {
       "type": "table",
       "title": "Первые глаголы",
       "rows": [
-        { "es": "hablar — **Hablo** **español**.", "ru": "Я говорю по-испански.", "ipa": "aˈblaɾ · ˈablo espaˈɲol" },
-        { "es": "trabajar — **Trabajo** **mucho**.", "ru": "Я много работаю.", "ipa": "tɾabaˈxaɾ · tɾaˈbaxo ˈmutʃo" },
-        { "es": "estudiar — **Estudio** **inglés**.", "ru": "Я учу английский.", "ipa": "estuˈdjaɾ · esˈtudjo inˈgles" }
+        { "es": "**Hablo** **español**.", "ru": "Я говорю по-испански.", "ipa": "ˈablo espaˈɲol" },
+        { "es": "**Trabajo** **mucho**.", "ru": "Я много работаю.", "ipa": "tɾaˈbaxo ˈmutʃo" },
+        { "es": "**Estudio** **inglés**.", "ru": "Я учу английский.", "ipa": "esˈtudjo inˈgles" }
       ],
       "notes": [
         "«Hablar — говорить. Hablo español — я говорю по-испански. 🔊 Помните: h не читается никогда.»",
@@ -74,28 +92,27 @@
       ]
     },
     {
-      "type": "rule",
-      "title": "Форма «я»",
-      "pattern": ["основа", "+", "-o"],
-      "text": "Убираем -ar и добавляем -o: hablar → hablo.",
-      "examples": [
-        { "es": "**Hablo** inglés.", "ru": "Я говорю по-английски.", "ipa": "ˈablo inˈgles" },
-        { "es": "**Estudio** mucho.", "ru": "Я много учусь.", "ipa": "esˈtudjo ˈmutʃo" },
-        { "es": "**Trabajo**.", "ru": "Я работаю.", "ipa": "tɾaˈbaxo" }
-      ],
-      "notes": [
-        "«Все три глагола кончаются на -ar. Это начальная форма, как русское «-ть» в словах «говорить», «работать».»",
-        "«Отрезаем -ar — остаётся основа: habl-, trabaj-, estudi-. Добавляем -o — получается «я»: hablo, trabajo, estudio.»",
-        "«Слово «я» отдельно говорить не нужно. Как в русском «говорю»: и так понятно, кто говорит.»",
-        "🔊 «Hablo inglés. Estudio mucho. Trabajo.»"
-      ]
-    },
-    {
       "type": "section",
       "title": "Форма «ты»",
       "hint": "Убираем -ar и добавляем -as",
       "notes": [
         "«Теперь обратимся к собеседнику: «ты говоришь», «ты работаешь».»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Форма «ты»",
+      "pattern": ["основа", "+", "-as"],
+      "text": "Убираем -ar и добавляем -as: hablar → hablas.",
+      "examples": [
+        { "es": "**Hablas** inglés.", "ru": "Ты говоришь по-английски.", "ipa": "ˈablas inˈgles" },
+        { "es": "**Estudias** español.", "ru": "Ты учишь испанский.", "ipa": "esˈtudjas espaˈɲol" },
+        { "es": "**Trabajas**.", "ru": "Ты работаешь.", "ipa": "tɾaˈbaxas" }
+      ],
+      "notes": [
+        "«Основа та же, меняется только окончание: отрезаем -ar и добавляем -as.»",
+        "«Как и с -o, слово «ты» отдельно говорить не нужно: окончание -as уже показывает, к кому обращаемся.»",
+        "🔊 «Hablas inglés. Estudias español. Trabajas.»"
       ]
     },
     {
@@ -169,19 +186,6 @@
       ]
     },
     {
-      "type": "table",
-      "title": "Да и нет",
-      "rows": [
-        { "es": "**No** hablo inglés.", "ru": "Я не говорю по-английски.", "ipa": "no ˈablo inˈgles" },
-        { "es": "Tú **no** estudias.", "ru": "Ты не учишься.", "ipa": "ˈtu no esˈtudjas" },
-        { "es": "**Sí**, estudio español.", "ru": "Да, я учу испанский.", "ipa": "ˈsi esˈtudjo espaˈɲol" }
-      ],
-      "notes": [
-        "«No — это и «не», и «нет». No hablo inglés — я не говорю по-английски. 🔊»",
-        "«Sí — да. 🔊 Над i стоит знак ударения.»"
-      ]
-    },
-    {
       "type": "rule",
       "title": "Отрицание",
       "pattern": ["no", "+", "глагол"],
@@ -195,6 +199,19 @@
         "«Всё как в русском: «не работаю» — no trabajo. No стоит прямо перед глаголом.»",
         "«Последний пример: no два раза. Первое no — «нет», второе — «не». Как в русском «нет, не учусь».»",
         "«Если знаете английский: никаких do и don't. Просто no перед глаголом.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Да и нет",
+      "rows": [
+        { "es": "**No** hablo inglés.", "ru": "Я не говорю по-английски.", "ipa": "no ˈablo inˈgles" },
+        { "es": "Tú **no** estudias.", "ru": "Ты не учишься.", "ipa": "ˈtu no esˈtudjas" },
+        { "es": "**Sí**, estudio español.", "ru": "Да, я учу испанский.", "ipa": "ˈsi esˈtudjo espaˈɲol" }
+      ],
+      "notes": [
+        "«No — это и «не», и «нет». No hablo inglés — я не говорю по-английски. 🔊»",
+        "«Sí — да. 🔊 Над i стоит знак ударения.»"
       ]
     },
     {
