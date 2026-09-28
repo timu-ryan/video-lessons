@@ -9,7 +9,7 @@
     { "es": "hablar", "ru": "говорить", "pos": "verb" },
     { "es": "trabajar", "ru": "работать", "pos": "verb" },
     { "es": "estudiar", "ru": "учиться, учить", "pos": "verb" },
-    { "es": "enseñar", "ru": "преподавать, учить кого-то", "pos": "verb" },
+    { "es": "enseñar", "ru": "преподавать, учить кого-то", "pos": "verb", "ipa": "enseˈɲaɾ" },
     { "es": "yo", "ru": "я", "pos": "pron" },
     { "es": "tú", "ru": "ты", "pos": "pron" },
     { "es": "no", "ru": "не, нет", "pos": "adv" },

@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# HTML для отладки вёрстки конспектов (--html)
+handouts/**/*.html

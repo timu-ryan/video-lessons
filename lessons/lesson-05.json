@@ -17,9 +17,9 @@
     { "es": "usted", "ru": "вы (вежливо, одному человеку)", "pos": "pron" },
     { "es": "ustedes", "ru": "вы (вежливо, нескольким)", "pos": "pron" },
     { "es": "¿y usted?", "ru": "а вы?", "pos": "phrase" },
-    { "es": "llegar", "ru": "приезжать, приходить", "pos": "verb" },
-    { "es": "preguntar", "ru": "спрашивать", "pos": "verb" },
-    { "es": "contestar", "ru": "отвечать", "pos": "verb" },
+    { "es": "llegar", "ru": "приезжать, приходить", "pos": "verb", "ipa": "jeˈgaɾ" },
+    { "es": "preguntar", "ru": "спрашивать", "pos": "verb", "ipa": "pɾegunˈtaɾ" },
+    { "es": "contestar", "ru": "отвечать", "pos": "verb", "ipa": "kontesˈtaɾ" },
     { "es": "terminar", "ru": "заканчивать", "pos": "verb" },
     { "es": "juntos", "ru": "вместе", "pos": "adj" },
     { "es": "el italiano", "ru": "итальянский язык", "pos": "noun" }

@@ -6,9 +6,9 @@
   "title": "Хочу, могу, нужно",
   "course": "Испанский с нуля",
   "newVocabulary": [
-    { "es": "querer", "ru": "хотеть", "pos": "verb" },
-    { "es": "poder", "ru": "мочь", "pos": "verb" },
-    { "es": "necesitar", "ru": "нуждаться, быть нужным", "pos": "verb" },
+    { "es": "querer", "ru": "хотеть", "pos": "verb", "ipa": "keˈɾeɾ" },
+    { "es": "poder", "ru": "мочь", "pos": "verb", "ipa": "poˈdeɾ" },
+    { "es": "necesitar", "ru": "нуждаться, быть нужным", "pos": "verb", "ipa": "neθesiˈtaɾ" },
     { "es": "aprender", "ru": "учить, выучить", "pos": "verb" },
     { "es": "comer", "ru": "есть", "pos": "verb" },
     { "es": "leer", "ru": "читать", "pos": "verb" },

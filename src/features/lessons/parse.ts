@@ -220,6 +220,7 @@ function vocabulary(file: string, raw: Record<string, unknown>): void {
       if (!isObject(entry)) throw new LessonError(where, 'запись словаря должна быть объектом')
       str(where, entry, 'es')
       str(where, entry, 'ru')
+      optStr(where, entry, 'ipa')
       if (!(PARTS_OF_SPEECH as readonly string[]).includes(entry.pos as string)) {
         throw new LessonError(
           where,

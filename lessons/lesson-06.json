@@ -7,7 +7,7 @@
   "course": "Испанский с нуля",
   "newVocabulary": [
     { "es": "ir", "ru": "идти, ехать", "pos": "verb" },
-    { "es": "tener que", "ru": "быть должным, приходиться", "pos": "phrase" },
+    { "es": "tener que", "ru": "быть должным, приходиться", "pos": "phrase", "ipa": "teˈneɾ ke" },
     { "es": "llamar", "ru": "звонить", "pos": "verb" },
     { "es": "caminar", "ru": "ходить пешком", "pos": "verb" },
     { "es": "entrar", "ru": "входить", "pos": "verb" },
@@ -18,7 +18,7 @@
     { "es": "solo", "ru": "только", "pos": "adv" },
     { "es": "esta noche", "ru": "сегодня вечером", "pos": "phrase" },
     { "es": "otra vez", "ru": "ещё раз, снова", "pos": "phrase" },
-    { "es": "claro", "ru": "конечно", "pos": "interj" },
+    { "es": "claro", "ru": "конечно", "pos": "interj", "ipa": "ˈklaɾo" },
     { "es": "¡vamos!", "ru": "пошли!, давай!", "pos": "interj" }
   ],
   "newGrammar": [

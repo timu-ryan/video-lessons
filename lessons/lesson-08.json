@@ -29,7 +29,7 @@
     { "es": "la comida", "ru": "еда", "pos": "noun" },
     { "es": "la música", "ru": "музыка", "pos": "noun" },
     { "es": "la flor", "ru": "цветок", "pos": "noun" },
-    { "es": "la canción", "ru": "песня", "pos": "noun" },
+    { "es": "la canción", "ru": "песня", "pos": "noun", "ipa": "la kanˈθjon" },
     { "es": "el día", "ru": "день", "pos": "noun" },
     { "es": "el problema", "ru": "проблема", "pos": "noun" },
     { "es": "la clase", "ru": "занятие, урок", "pos": "noun" },

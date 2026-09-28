@@ -241,6 +241,12 @@ export interface VocabularyEntrySource {
   es: string
   ru: string
   pos: (typeof PARTS_OF_SPEECH)[number]
+  /**
+   * Транскрипция словарной формы — для PDF-конспекта. Нужна, только если слово
+   * не встречается в фразах урока с `ipa` отдельным словом (инфинитив, который
+   * на слайдах только в спряжённой форме).
+   */
+  ipa?: string
 }
 
 export interface LessonSource {

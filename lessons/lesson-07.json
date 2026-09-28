@@ -6,7 +6,7 @@
   "title": "Мне нравится",
   "course": "Испанский с нуля",
   "newVocabulary": [
-    { "es": "gustar", "ru": "нравиться", "pos": "verb" },
+    { "es": "gustar", "ru": "нравиться", "pos": "verb", "ipa": "gusˈtaɾ" },
     { "es": "me gusta", "ru": "мне нравится", "pos": "phrase" },
     { "es": "te gusta", "ru": "тебе нравится", "pos": "phrase" },
     { "es": "le gusta", "ru": "ему, ей нравится; вам нравится (вежливо)", "pos": "phrase" },
