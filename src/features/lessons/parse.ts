@@ -34,6 +34,10 @@ const MAX_RULE_EXAMPLES = 3
 const MAX_COMPARE_ITEMS = 3
 const MAX_ALTERNATIVES = 2
 
+/** Краткий конспект должен уместиться на одну страницу A4. */
+const SUMMARY_PHRASES = { min: 6, max: 10 }
+const SUMMARY_PRACTICE = { min: 3, max: 5 }
+
 class LessonError extends Error {
   constructor(where: string, message: string) {
     super(`${where}: ${message}`)
@@ -183,16 +187,7 @@ function slide(file: string, index: number, value: unknown, levelA0: boolean): S
   if (type === 'practice') {
     const p = phrase(`${where}, phrase`, value.phrase, { ipa: levelA0 })
     optStr(`${where}, phrase`, p, 'hint')
-    if (p.alternatives !== undefined) {
-      list(`${where}, phrase`, p, 'alternatives', MAX_ALTERNATIVES).forEach((alt, i) => {
-        if (typeof alt !== 'string' || alt === '') {
-          throw new LessonError(`${where}, alternatives[${i}]`, 'вариант ответа — непустая строка')
-        }
-        if (hasUnclosedMark(alt)) {
-          throw new LessonError(`${where}, alternatives[${i}]`, `не закрыто выделение **: «${alt}»`)
-        }
-      })
-    }
+    alternatives(where, p)
     if (value.pauseMs !== undefined && (typeof value.pauseMs !== 'number' || value.pauseMs <= 0)) {
       throw new LessonError(where, 'pauseMs — число больше нуля')
     }
@@ -239,6 +234,54 @@ function vocabulary(file: string, raw: Record<string, unknown>): void {
   }
 }
 
+function count(where: string, items: unknown[], key: string, range: { min: number; max: number }): void {
+  if (items.length < range.min || items.length > range.max) {
+    throw new LessonError(where, `в «${key}» элементов: ${items.length}, нужно от ${range.min} до ${range.max}`)
+  }
+}
+
+function alternatives(where: string, p: Record<string, unknown>): void {
+  if (p.alternatives === undefined) return
+  list(where, p, 'alternatives', MAX_ALTERNATIVES).forEach((alt, i) => {
+    if (typeof alt !== 'string' || alt === '') {
+      throw new LessonError(`${where}, alternatives[${i}]`, 'вариант ответа — непустая строка')
+    }
+    if (hasUnclosedMark(alt)) {
+      throw new LessonError(`${where}, alternatives[${i}]`, `не закрыто выделение **: «${alt}»`)
+    }
+  })
+}
+
+function summary(file: string, raw: Record<string, unknown>): void {
+  if (raw.summary === undefined) return
+  const where = `${file}, summary`
+  if (!isObject(raw.summary)) throw new LessonError(where, 'summary должен быть объектом')
+  const value = raw.summary
+
+  const phrases = list(where, value, 'phrases')
+  count(where, phrases, 'phrases', SUMMARY_PHRASES)
+  phrases.forEach((p, i) => phrase(`${where}, phrases[${i}]`, p, { ipa: false }))
+
+  str(where, value, 'rule')
+  marks(where, value, 'rule')
+
+  if (!isObject(value.mistake)) throw new LessonError(where, 'mistake — объект { wrong, right }')
+  for (const side of ['wrong', 'right'] as const) {
+    const at = `${where}, mistake.${side}`
+    const p = phrase(at, value.mistake[side], { ipa: false, ru: false })
+    optStr(at, p, 'label')
+  }
+
+  const practice = list(where, value, 'practice')
+  count(where, practice, 'practice', SUMMARY_PRACTICE)
+  practice.forEach((item, i) => {
+    const at = `${where}, practice[${i}]`
+    const p = phrase(at, item, { ipa: false })
+    optStr(at, p, 'hint')
+    alternatives(at, p)
+  })
+}
+
 /**
  * @param file имя файла — попадает в текст ошибки
  * @param expectedNumber номер из имени файла: lesson-07.json → 7
@@ -272,6 +315,7 @@ export function parseLesson(file: string, expectedNumber: number, raw: unknown):
   str(file, raw, 'title')
   str(file, raw, 'course')
   vocabulary(file, raw)
+  summary(file, raw)
 
   if (!isObject(raw.speakers)) throw new LessonError(file, 'нет объекта speakers')
   for (const [key, name] of Object.entries(raw.speakers)) {

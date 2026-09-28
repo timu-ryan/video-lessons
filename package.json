@@ -11,6 +11,7 @@
     "check:slides": "node scripts/check-slides.mjs --url=http://localhost:5173",
     "lessons:validate": "tsx scripts/lessons-validate.ts",
     "lessons:pdf": "tsx scripts/lesson-pdf.ts",
+    "lessons:summary": "tsx scripts/lesson-summary.ts",
     "vocab:build": "tsx scripts/vocab-build.ts",
     "vocab:check": "tsx scripts/vocab-check.ts"
   },

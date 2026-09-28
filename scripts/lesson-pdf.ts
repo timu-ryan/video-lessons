@@ -5,14 +5,13 @@
  * практика «переведи сам» с пустой колонкой → диалоги → новые слова →
  * итог урока → ответы с новой страницы. `notes` в конспект не попадают.
  *
- * Результат — handouts/lesson-NN.pdf; с `--html` рядом кладётся .html
- * для отладки вёрстки.
+ * Результат — handouts/free/lesson-NN.pdf или handouts/paid/lesson-NN.pdf
+ * (граница — freeFullUntil в handouts.config.ts); с `--html` рядом кладётся
+ * .html для отладки вёрстки.
  */
-import { mkdirSync, writeFileSync } from 'node:fs'
-import { join, relative } from 'node:path'
+import { relative } from 'node:path'
 import { chromium } from 'playwright'
 import type {
-  CompareSlideSource,
   ConjugationSlideSource,
   DialogueSlideSource,
   LessonSource,
@@ -21,13 +20,18 @@ import type {
   SlideSource,
   TableSlideSource,
 } from '../src/features/lessons/source.ts'
-import { plainText, splitMarks } from '../src/features/slides/markup.ts'
+import { plainText } from '../src/features/slides/markup.ts'
+import {
+  escape,
+  handoutPath,
+  htmlPage,
+  ipa,
+  marked,
+  printPdf,
+  renderCompare,
+  renderHeader,
+} from './handout-common.ts'
 import { loadLessons, ROOT } from './lessons.ts'
-
-const OUT_DIR = join(ROOT, 'handouts')
-
-/** Канал курса — в подвале каждой страницы. */
-const TELEGRAM = 'espanolcontim'
 
 const args = process.argv.slice(2)
 const withHtml = args.includes('--html')
@@ -47,18 +51,6 @@ if (!found) {
 }
 
 // --- html --------------------------------------------------------------------
-
-const escape = (text: string): string =>
-  text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
-
-/** `**…**` → `<strong>`. */
-const marked = (text: string): string =>
-  splitMarks(text)
-    .map((part) => (part.marked ? `<strong>${escape(part.text)}</strong>` : escape(part.text)))
-    .join('')
-
-const ipa = (value: string | undefined): string =>
-  value ? `<span class="ipa">[${escape(value)}]</span>` : ''
 
 const CYRILLIC = /[а-яё]/i
 
@@ -139,21 +131,6 @@ function renderConjugation(slide: ConjugationSlideSource): string {
 <table class="words"><tbody>${rows}</tbody></table></div>`
 }
 
-function renderCompare(slide: CompareSlideSource): string {
-  const side = (s: CompareSlideSource['left']): string => {
-    const mark = s.tone === 'wrong' ? '✗ ' : s.tone === 'right' ? '✓ ' : ''
-    const items = s.items
-      .map(
-        (item) =>
-          `<li><span class="es">${marked(item.es)}</span>${item.ru ? `<br><span class="ru">${marked(item.ru)}</span>` : ''}</li>`,
-      )
-      .join('')
-    return `<div class="side ${s.tone ?? ''}"><div class="label">${mark}${escape(s.label)}</div><ul>${items}</ul></div>`
-  }
-  return `<div class="block"><h3>${escape(slide.title)}</h3>
-<div class="compare">${side(slide.left)}${side(slide.right)}</div></div>`
-}
-
 function renderTheory(lesson: LessonSource): string {
   const parts: string[] = []
   let section = ''
@@ -195,7 +172,7 @@ function renderTheory(lesson: LessonSource): string {
         pending.push(renderConjugation(slide))
         break
       case 'compare':
-        pending.push(renderCompare(slide))
+        pending.push(renderCompare(slide.title, slide.left, slide.right))
         break
       default:
         break
@@ -332,36 +309,16 @@ function renderVocabulary(lesson: LessonSource, all: LessonSource[]): string {
 ${tbody(rows)}</table></section>`
 }
 
-function renderSummary(lesson: LessonSource): string {
+function renderOutcome(lesson: LessonSource): string {
   const final = lesson.slides.find((s) => s.type === 'final')
   if (!final || final.bullets.length === 0) return ''
   const bullets = final.bullets.map((b) => `<li>${escape(b)}</li>`).join('')
-  return `<section class="block"><h2>${escape(final.title)}</h2><ul class="summary">${bullets}</ul>
+  return `<section class="block"><h2>${escape(final.title)}</h2><ul class="outcome">${bullets}</ul>
 <p class="next"><b>${escape(final.nextTitle)}:</b> ${escape(final.nextText)}</p></section>`
 }
 
+/** Своё для полного конспекта; общее — BASE_STYLE в handout-common.ts. */
 const STYLE = `
-@page { size: A4; margin: 15mm 15mm 18mm; }
-* { box-sizing: border-box; }
-body { font-family: 'Noto Sans', 'DejaVu Sans', sans-serif; font-size: 10.5pt; line-height: 1.4; color: #1a1a1a; margin: 0; }
-header { border-bottom: 2px solid #b8452e; padding-bottom: 4mm; margin-bottom: 6mm; }
-header .course { color: #777; font-size: 9pt; text-transform: uppercase; letter-spacing: .08em; }
-header h1 { font-size: 20pt; margin: 1mm 0; }
-header .meta { color: #555; }
-h2, h3, p.hint { break-after: avoid; }
-h2 { font-size: 14pt; color: #b8452e; margin: 7mm 0 2mm; }
-h3 { font-size: 11pt; margin: 4mm 0 1.5mm; }
-p.hint { color: #555; font-style: italic; margin: 0 0 2mm; }
-.block { break-inside: avoid; }
-.es { font-weight: 600; }
-strong { color: #b8452e; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
-.ipa { font-family: 'DejaVu Sans Mono', monospace; font-size: 8.5pt; color: #777; white-space: nowrap; }
-.ru { color: #444; }
-table { width: 100%; border-collapse: collapse; }
-thead { display: table-header-group; }
-tr, tbody.keep { break-inside: avoid; }
-th { text-align: left; font-size: 8.5pt; font-weight: 600; color: #777; border-bottom: 1px solid #999; padding: 1mm 2mm; }
-td { padding: 1.3mm 2mm; border-bottom: 1px solid #ddd; vertical-align: top; }
 col.c-es { width: 38%; } col.c-ipa { width: 27%; }
 td.pronoun { color: #555; width: 30%; }
 .pattern { margin: 1mm 0 2mm; }
@@ -372,21 +329,9 @@ td.pronoun { color: #555; width: 30%; }
 .rule p.text { margin: 0 0 1.5mm; }
 .examples { margin: 0; padding-left: 5mm; }
 .examples li { margin-bottom: 1mm; }
-.compare { display: flex; gap: 4mm; }
-.compare .side { flex: 1; border: 1px solid #ddd; border-radius: 2mm; padding: 2mm 3mm; }
-.compare .label { font-weight: 600; color: #555; margin-bottom: 1mm; }
-.compare ul { margin: 0; padding-left: 4mm; }
-.compare .wrong .label { color: #b3261e; }
-.compare .wrong .es { text-decoration: line-through; color: #777; }
-.compare .right .label { color: #2e7d32; }
-col.c-num { width: 8mm; } col.c-ru { width: 45%; }
-td.num { color: #777; text-align: right; }
-.practice tr.task td { height: 11mm; }
-.practice td.blank { border-left: 1px solid #ddd; }
-.task-hint { color: #777; font-style: italic; }
-.alt { color: #555; font-weight: 400; }
+col.c-ru { width: 45%; }
 .dialogue td.speaker { width: 22mm; font-weight: 600; color: #555; }
-.summary { margin: 0; padding-left: 5mm; }
+.outcome { margin: 0; padding-left: 5mm; }
 .next { color: #555; }
 .answers { break-before: page; }
 .answers h2 { margin-top: 0; }
@@ -394,45 +339,32 @@ td.num { color: #777; text-align: right; }
 
 function renderHandout(lesson: LessonSource, all: LessonSource[]): string {
   const grammar = lesson.newGrammar ?? []
-  return `<!doctype html><html lang="ru"><head><meta charset="utf-8">
-<title>Урок ${lesson.number}. ${escape(lesson.title)}</title><style>${STYLE}</style></head><body>
-<header><div class="course">${escape(lesson.course)}</div>
-<h1>Урок ${lesson.number}. ${escape(lesson.title)}</h1>
-<div class="meta">Уровень ${lesson.level}, урок ${lesson.planLesson}${grammar.length > 0 ? ` · Грамматика: ${grammar.map(escape).join(', ')}` : ''}</div></header>
+  const meta = `Уровень ${lesson.level}, урок ${lesson.planLesson}${grammar.length > 0 ? ` · Грамматика: ${grammar.map(escape).join(', ')}` : ''}`
+  return htmlPage(
+    lesson,
+    lesson.title,
+    STYLE,
+    `${renderHeader(lesson, meta)}
 ${renderTheory(lesson)}
 ${renderPractice(lesson, false)}
 ${renderDialogues(lesson)}
 ${renderVocabulary(lesson, all)}
-${renderSummary(lesson)}
-${renderPractice(lesson, true)}
-</body></html>`
+${renderOutcome(lesson)}
+${renderPractice(lesson, true)}`,
+  )
 }
 
 // --- pdf ---------------------------------------------------------------------
 
 const { lesson } = found
-const name = `lesson-${String(lesson.number).padStart(2, '0')}`
 const html = renderHandout(
   lesson,
   lessons.map((file) => file.lesson),
 )
-mkdirSync(OUT_DIR, { recursive: true })
-if (withHtml) writeFileSync(join(OUT_DIR, `${name}.html`), html)
-
+const out = handoutPath(lesson, 'full')
 const browser = await chromium.launch()
 try {
-  const page = await browser.newPage()
-  await page.setContent(html, { waitUntil: 'load' })
-  const out = join(OUT_DIR, `${name}.pdf`)
-  await page.pdf({
-    path: out,
-    format: 'A4',
-    printBackground: true,
-    preferCSSPageSize: true,
-    displayHeaderFooter: true,
-    headerTemplate: '<span></span>',
-    footerTemplate: `<div style="width:100%;font-size:8px;color:#888;font-family:'Noto Sans','DejaVu Sans',sans-serif;padding:0 15mm;display:flex;justify-content:space-between"><span>Урок ${lesson.number}. ${escape(lesson.title)} · <a href="https://t.me/${TELEGRAM}" style="color:#b8452e;text-decoration:none">@${TELEGRAM}</a></span><span><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>`,
-  })
+  await printPdf(browser, lesson, html, out, { pageNumbers: true, html: withHtml })
   console.log(`✓ ${relative(ROOT, out)}`)
 } finally {
   await browser.close()

@@ -73,7 +73,10 @@ B1 — 65–84. `planLesson` — номер внутри уровня по пл�
 - `docs/vocabulary.md` меняется только через `npm run vocab:build`.
 - Изменения схемы урока (новые поля, типы слайдов) — сначала в `parse.ts`
   и `docs/lessons-guide.md`, затем в эталоне и формате сценария.
-- PDF-конспект урока для учеников: `/notes NN` или `npm run lessons:pdf -- NN`
-  → `handouts/lesson-NN.pdf` (PDF в git; `--html` сохраняет HTML для отладки
-  вёрстки).
+- PDF-конспекты для учеников (PDF в git; `--html` сохраняет HTML для отладки):
+  - полный: `/notes NN` или `npm run lessons:pdf -- NN` →
+    `handouts/free|paid/lesson-NN.pdf`;
+  - краткий (выжимка на 1 страницу, из блока `summary`): `/summary NN` или
+    `npm run lessons:summary -- [NN] [--ipa]` → `handouts/free/lesson-NN-summary.pdf`.
+  - Граница бесплатного и ссылки — `scripts/handouts.config.ts`.
 - Код в стиле проекта: TypeScript.

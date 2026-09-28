@@ -453,5 +453,29 @@
         "«В следующем уроке начнём рассказывать о себе: на каких языках вы говорите и чем занимаетесь. ¡Hasta luego! ¡Adiós!»"
       ]
     }
-  ]
+  ],
+  "summary": {
+    "phrases": [
+      { "es": "Hola.", "ru": "Привет.", "ipa": "ˈola" },
+      { "es": "Buenos días.", "ru": "Доброе утро, добрый день.", "ipa": "ˈbwenos ˈdi.as" },
+      { "es": "Buenas tardes.", "ru": "Добрый день, добрый вечер.", "ipa": "ˈbwenas ˈtaɾdes" },
+      { "es": "Buenas noches.", "ru": "Добрый вечер, спокойной ночи.", "ipa": "ˈbwenas ˈnotʃes" },
+      { "es": "Gracias.", "ru": "Спасибо.", "ipa": "ˈgɾaθjas" },
+      { "es": "¿Cómo te llamas?", "ru": "Как тебя зовут?", "ipa": "ˈkomo te ˈjamas" },
+      { "es": "Me llamo…", "ru": "Меня зовут…", "ipa": "me ˈjamo" },
+      { "es": "¿De dónde eres?", "ru": "Откуда ты?", "ipa": "de ˈdonde ˈeɾes" },
+      { "es": "Soy de…", "ru": "Я из…", "ipa": "ˈsoj de" }
+    ],
+    "rule": "Слово кончается на гласную, **n** или **s** — ударение на предпоследний слог: **no**ches, **lla**mas. На другую согласную — на последний: Ma**drid**. Исключения пишутся со знаком ударения: Mos**cú**, **dón**de.",
+    "mistake": {
+      "wrong": { "label": "так не читают", "es": "hola", "ru": "«хола»" },
+      "right": { "label": "так читают", "es": "hola", "ru": "«ола» — h не читается" }
+    },
+    "practice": [
+      { "ru": "Привет! Меня зовут Карлос.", "es": "Hola. Me llamo Carlos.", "alternatives": ["Hola, me llamo Carlos."] },
+      { "ru": "Откуда ты?", "es": "¿De dónde eres?" },
+      { "ru": "Я из Москвы.", "es": "Soy de Moscú." },
+      { "ru": "Добрый вечер! Я из Валенсии.", "es": "Buenas noches. Soy de Valencia.", "hint": "в 10 вечера" }
+    ]
+  }
 }

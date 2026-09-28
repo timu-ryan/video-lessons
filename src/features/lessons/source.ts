@@ -249,6 +249,29 @@ export interface VocabularyEntrySource {
   ipa?: string
 }
 
+/** Сторона «типичной ошибки» в выжимке: одна фраза и подпись колонки. */
+export interface SummaryMistakeSideSource {
+  /** По умолчанию «так не говорят» / «так говорят». */
+  label?: string
+  es: string
+  ru?: string
+}
+
+/**
+ * Краткий конспект (выжимка) — одна страница A4 для Telegram. Содержимое
+ * пишется явно, а не выбирается из слайдов: выжимка — отдельный текст.
+ */
+export interface SummarySource {
+  /** Ключевые фразы, 6–10. `ipa` необязательна: выводится флагом `--ipa`. */
+  phrases: PhraseSource[]
+  /** Главное правило урока, 2–3 строки. `**…**` выделяет. */
+  rule: string
+  /** Одна типичная ошибка: ✗ слева, ✓ справа. */
+  mistake: { wrong: SummaryMistakeSideSource; right: SummaryMistakeSideSource }
+  /** Мини-практика, 3–5 заданий; ответы печатаются на той же странице. */
+  practice: PracticePhraseSource[]
+}
+
 export interface LessonSource {
   schemaVersion: number
   /** Сквозной номер урока, 1–84; он же в имени файла. Отдельного `id` нет. */
@@ -272,4 +295,6 @@ export interface LessonSource {
   tableHeaders: { es: string; ru: string }
   practiceGroups: PracticeGroupSource[]
   slides: SlideSource[]
+  /** Краткий конспект. Нет блока — выжимка для урока не собирается. */
+  summary?: SummarySource
 }
