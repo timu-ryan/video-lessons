@@ -55,6 +55,22 @@
       ]
     },
     {
+      "type": "rule",
+      "title": "Он, она: окончание -a",
+      "pattern": ["основа", "+", "-a"],
+      "text": "Убираем -ar и добавляем -a: hablar → habla.",
+      "examples": [
+        { "es": "Ana **habla** ruso.", "ru": "Ана говорит по-русски.", "ipa": "ˈana ˈabla ˈruso" },
+        { "es": "Carlos **trabaja** mucho.", "ru": "Карлос много работает.", "ipa": "ˈkaɾlos tɾaˈbaxa ˈmutʃo" },
+        { "es": "¿Ana **cocina** hoy?", "ru": "Ана сегодня готовит?", "ipa": "ˈana koˈθina ˈoj" }
+      ],
+      "notes": [
+        "«Схема знакомая: убираем -ar, остаётся основа, добавляем окончание. Я — hablo, ты — hablas, он или она — habla.»",
+        "🔊 «Ana habla ruso. Carlos trabaja mucho. ¿Ana cocina hoy?»",
+        "«Yo и tú мы обычно не произносим: hablo — и так ясно, что это я. А вот habla может значить и «он говорит», и «она говорит». Поэтому él и ella звучат чаще — когда из разговора непонятно, о ком речь.»"
+      ]
+    },
+    {
       "type": "table",
       "title": "Он и она",
       "rows": [
@@ -66,23 +82,7 @@
       "notes": [
         "«Él — он. 🔊 Обратите внимание на знак ударения над é. Слово el без знака — совсем другое, до него дойдём в уроке 8.»",
         "«Ella — она. 🔊 Двойное ll в Испании читаем почти как русское «й»: «эйя».»",
-        "«Посмотрите на глаголы: trabaja, habla, estudia. У «он» и «она» окончание -a.»"
-      ]
-    },
-    {
-      "type": "rule",
-      "title": "Он, она: окончание -a",
-      "pattern": ["основа", "+", "-a"],
-      "text": "Убираем -ar и добавляем -a: hablar → habla.",
-      "examples": [
-        { "es": "Él **habla** ruso.", "ru": "Он говорит по-русски.", "ipa": "ˈel ˈabla ˈruso" },
-        { "es": "Ella **cocina** mucho.", "ru": "Она много готовит.", "ipa": "ˈeja koˈθina ˈmutʃo" },
-        { "es": "¿Ella **practica** español hoy?", "ru": "Она сегодня занимается испанским?", "ipa": "ˈeja pɾakˈtika espaˈɲol ˈoj" }
-      ],
-      "notes": [
-        "«Схема знакомая: убираем -ar, остаётся основа, добавляем окончание. Я — hablo, ты — hablas, он или она — habla.»",
-        "«Yo и tú мы обычно не произносим: hablo — и так ясно, что это я. А вот habla может значить и «он говорит», и «она говорит». Поэтому él и ella звучат чаще — когда из разговора непонятно, о ком речь.»",
-        "🔊 «Él habla ruso. Ella cocina mucho. ¿Ella practica español hoy?»"
+        "«Глагол с él и ella одинаковый, с окончанием -a: trabaja, habla, estudia.»"
       ]
     },
     {
@@ -90,7 +90,39 @@
       "title": "Мы, вы, они",
       "hint": "-amos, -áis, -an",
       "notes": [
-        "«Теперь множественное число: мы, вы и они. Здесь испанский различает больше, чем русский.»"
+        "«Теперь множественное число: мы, вы и они. Схема та же: основа плюс окончание.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Мы: окончание -amos",
+      "pattern": ["основа", "+", "-amos"],
+      "text": "Убираем -ar и добавляем -amos: hablar → hablamos.",
+      "examples": [
+        { "es": "**Hablamos** español.", "ru": "Мы говорим по-испански.", "ipa": "aˈblamos espaˈɲol" },
+        { "es": "**Cocinamos** mucho.", "ru": "Мы много готовим.", "ipa": "koθiˈnamos ˈmutʃo" },
+        { "es": "Mañana **viajamos**.", "ru": "Завтра мы путешествуем.", "ipa": "maˈɲana bjaˈxamos" }
+      ],
+      "notes": [
+        "«Мы — окончание -amos.»",
+        "🔊 «Hablamos español. Cocinamos mucho. Mañana viajamos.»",
+        "«Как и с yo, «мы» обычно не произносим: hablamos español — и так ясно, что это мы.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Вы: окончание -áis",
+      "pattern": ["основа", "+", "-áis"],
+      "text": "Убираем -ar и добавляем -áis: hablar → habláis.",
+      "examples": [
+        { "es": "¿**Habláis** inglés?", "ru": "Вы говорите по-английски?", "ipa": "aˈblais inˈgles" },
+        { "es": "**Cantáis** mucho.", "ru": "Вы много поёте.", "ipa": "kanˈtais ˈmutʃo" },
+        { "es": "¿**Estudiáis** español?", "ru": "Вы учите испанский?", "ipa": "estuˈdjais espaˈɲol" }
+      ],
+      "notes": [
+        "«Вы — окончание -áis, со знаком ударения над á.»",
+        "🔊 «¿Habláis inglés? Cantáis mucho. ¿Estudiáis español?»",
+        "«Это «вы», когда говорим сразу нескольким людям. Каким именно — сейчас разберём.»"
       ]
     },
     {
@@ -106,6 +138,22 @@
         "«Nosotros — мы. 🔊 Если в группе только женщины — nosotras. 🔊 Если есть хотя бы один мужчина — nosotros.»",
         "«Vosotros — «вы», когда обращаемся на «ты» сразу к нескольким людям: к друзьям, коллегам, родственникам. 🔊 К нескольким подругам — vosotras. 🔊»",
         "«В русском «вы» одно на все случаи, а в испанском их несколько. Вежливое «вы» разберём чуть позже.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Они: окончание -an",
+      "pattern": ["основа", "+", "-an"],
+      "text": "Убираем -ar и добавляем -an: hablar → hablan.",
+      "examples": [
+        { "es": "Ana y Carlos **hablan** ruso.", "ru": "Ана и Карлос говорят по-русски.", "ipa": "ˈana i ˈkaɾlos ˈablan ˈruso" },
+        { "es": "**Trabajan** mucho.", "ru": "Они много работают.", "ipa": "tɾaˈbaxan ˈmutʃo" },
+        { "es": "No **estudian** hoy.", "ru": "Они сегодня не учатся.", "ipa": "no esˈtudjan ˈoj" }
+      ],
+      "notes": [
+        "«Они — окончание -an.»",
+        "🔊 «Ana y Carlos hablan ruso. Trabajan mucho. No estudian hoy.»",
+        "«Легко запомнить: это форма «он, она» плюс n. Habla — hablan, trabaja — trabajan.»"
       ]
     },
     {
@@ -130,6 +178,40 @@
       ]
     },
     {
+      "type": "rule",
+      "title": "Usted + форма «он, она»",
+      "pattern": ["usted", "+", "глагол как у él"],
+      "text": "С usted глагол стоит в форме «он, она».",
+      "examples": [
+        { "es": "¿Usted **trabaja** hoy?", "ru": "Вы сегодня работаете?", "ipa": "usˈted tɾaˈbaxa ˈoj" },
+        { "es": "¿Usted **estudia** español?", "ru": "Вы учите испанский?", "ipa": "usˈted esˈtudja espaˈɲol" },
+        { "es": "¿Usted **viaja** mañana?", "ru": "Вы завтра путешествуете?", "ipa": "usˈted ˈbjaxa maˈɲana" }
+      ],
+      "notes": [
+        "«Это слово — usted, вежливое «вы» одному человеку. 🔊»",
+        "«Вот главная странность. По-русски мы говорим «вы работаете», а испанцы — буквально «вы работает»: usted trabaja. Глагол такой же, как у él и ella.»",
+        "«Так сложилось исторически: usted когда-то было выражением вроде «ваша милость». А о «милости» говорят в третьем лице — как о нём или о ней.»",
+        "«Если знаете английский: usted — это вежливое you, но глагол ставится не как с you, а как с he или she.»",
+        "🔊 «¿Usted trabaja hoy? ¿Usted estudia español? ¿Usted viaja mañana?»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Ustedes + форма «они»",
+      "pattern": ["ustedes", "+", "глагол как у ellos"],
+      "text": "С ustedes глагол стоит в форме «они».",
+      "examples": [
+        { "es": "Ustedes **cocinan** mucho.", "ru": "Вы много готовите.", "ipa": "usˈtedes koˈθinan ˈmutʃo" },
+        { "es": "¿Ustedes **hablan** español?", "ru": "Вы говорите по-испански?", "ipa": "usˈtedes ˈablan espaˈɲol" },
+        { "es": "Ustedes no **trabajan** hoy.", "ru": "Вы сегодня не работаете.", "ipa": "usˈtedes no tɾaˈbaxan ˈoj" }
+      ],
+      "notes": [
+        "«Если вежливо обращаемся к нескольким людям — ustedes. 🔊»",
+        "«Логика та же: usted — как «он», а ustedes — как «они». Ustedes cocinan — буквально «вы готовят».»",
+        "🔊 «Ustedes cocinan mucho. ¿Ustedes hablan español? Ustedes no trabajan hoy.»"
+      ]
+    },
+    {
       "type": "table",
       "title": "Usted и ustedes",
       "rows": [
@@ -138,26 +220,9 @@
         { "es": "**Ustedes** trabajan mucho.", "ru": "Вы много работаете.", "ipa": "usˈtedes tɾaˈbaxan ˈmutʃo" }
       ],
       "notes": [
-        "«Usted — вежливое «вы» одному человеку. 🔊»",
+        "«¿Usted habla inglés? — так вежливо спрашивают незнакомого человека. 🔊»",
         "«¿Y usted? — «а вы?». Это вежливая пара к знакомому ¿y tú?. 🔊»",
-        "«Ustedes — «вы», когда вежливо обращаемся к нескольким людям. 🔊»"
-      ]
-    },
-    {
-      "type": "rule",
-      "title": "Usted + форма «он, она»",
-      "pattern": ["usted", "+", "глагол как у él"],
-      "text": "С usted глагол стоит в форме «он, она», с ustedes — в форме «они».",
-      "examples": [
-        { "es": "¿Usted **trabaja** hoy?", "ru": "Вы сегодня работаете?", "ipa": "usˈted tɾaˈbaxa ˈoj" },
-        { "es": "¿Usted **estudia** español?", "ru": "Вы учите испанский?", "ipa": "usˈted esˈtudja espaˈɲol" },
-        { "es": "Ustedes **cocinan** mucho.", "ru": "Вы много готовите.", "ipa": "usˈtedes koˈθinan ˈmutʃo" }
-      ],
-      "notes": [
-        "«Вот главная странность. По-русски мы говорим «вы работаете», а испанцы — буквально «вы работает»: usted trabaja. Глагол такой же, как у él и ella.»",
-        "«Так сложилось исторически: usted когда-то было выражением вроде «ваша милость». А о «милости» говорят в третьем лице — как о нём или о ней.»",
-        "«Если знаете английский: usted — это вежливое you, но глагол ставится не как с you, а как с he или she.»",
-        "🔊 «¿Usted trabaja hoy? ¿Usted estudia español? Ustedes cocinan mucho.»"
+        "«Ustedes trabajan mucho — вежливо нескольким людям, глагол как у «они». 🔊»"
       ]
     },
     {
