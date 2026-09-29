@@ -676,5 +676,28 @@
         "«В следующем уроке начнём называть предметы и узнаем, зачем испанцам артикли. ¡Adiós!»"
       ]
     }
-  ]
+  ],
+  "summary": {
+    "phrases": [
+      { "es": "Me gusta leer.", "ru": "Мне нравится читать.", "ipa": "me ˈgusta leˈeɾ" },
+      { "es": "No me gusta cocinar.", "ru": "Я не люблю готовить.", "ipa": "no me ˈgusta koθiˈnaɾ" },
+      { "es": "¿Te gusta hablar español?", "ru": "Тебе нравится говорить по-испански?", "ipa": "te ˈgusta aˈblaɾ espaˈɲol" },
+      { "es": "Nos gusta mucho viajar.", "ru": "Нам очень нравится путешествовать.", "ipa": "nos ˈgusta ˈmutʃo bjaˈxaɾ" },
+      { "es": "Hablas muy bien español.", "ru": "Ты очень хорошо говоришь по-испански.", "ipa": "ˈablas ˈmuj ˈbjen espaˈɲol" },
+      { "es": "Me gusta cantar. ¿Y a ti?", "ru": "Мне нравится петь. А тебе?", "ipa": "me ˈgusta kanˈtaɾ · i a ˈti" },
+      { "es": "Sí, a mí también.", "ru": "Да, мне тоже.", "ipa": "ˈsi a ˈmi tamˈbjen" },
+      { "es": "A mí tampoco.", "ru": "Мне тоже нет.", "ipa": "a ˈmi tamˈpoko" }
+    ],
+    "rule": "**Me**, **te**, **le**, **nos**, **os**, **les** + gusta + инфинитив; gusta не меняется. No — в самом начале: **no me gusta**. **Muy** — перед «как?» (muy bien), **mucho** — после глагола (me gusta mucho).",
+    "mistake": {
+      "wrong": { "es": "Yo gusto leer." },
+      "right": { "es": "Me gusta leer.", "ru": "не «я нравлюсь», а «мне нравится»" }
+    },
+    "practice": [
+      { "ru": "Ты очень хорошо поёшь. Тебе нравится петь?", "es": "Cantas muy bien. ¿Te gusta cantar?" },
+      { "ru": "Им нравится танцевать, но сегодня они хотят отдыхать.", "es": "Les gusta bailar, pero hoy quieren descansar." },
+      { "ru": "Ты не любишь готовить? Я тоже не люблю.", "es": "¿No te gusta cocinar? A mí tampoco." },
+      { "ru": "Давай погуляем! Я очень люблю гулять.", "es": "¡Vamos a pasear! Me gusta mucho pasear.", "alternatives": ["¡Vamos a pasear! Me gusta pasear mucho."] }
+    ]
+  }
 }

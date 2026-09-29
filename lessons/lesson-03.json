@@ -182,7 +182,7 @@
       "notes": [
         "«Cocinar — готовить. No puedo cocinar. 🔊»",
         "«Nadar — плавать. Puedo nadar. 🔊»",
-        "«Bailar — танцевать. ¿Puedes bailar? 🔊 Buchstabe... то есть буквы ai читаем как «ай»: бАйлар.»",
+        "«Bailar — танцевать. ¿Puedes bailar? 🔊 Буквы ai читаем как «ай»: бАйлар.»",
         "«Cantar — петь. ¿Puedes cantar? 🔊 Здесь c перед a, поэтому читаем как «к».»"
       ]
     },
@@ -529,5 +529,30 @@
         "«В следующем уроке добавим планы и обязанности: «я собираюсь» и «я должен». ¡Hasta luego!»"
       ]
     }
-  ]
+  ],
+  "summary": {
+    "phrases": [
+      { "es": "Quiero hablar español.", "ru": "Я хочу говорить по-испански.", "ipa": "ˈkjeɾo aˈblaɾ espaˈɲol" },
+      { "es": "Quiero comer.", "ru": "Я хочу есть.", "ipa": "ˈkjeɾo koˈmeɾ" },
+      { "es": "Quiero dormir.", "ru": "Я хочу спать.", "ipa": "ˈkjeɾo doɾˈmiɾ" },
+      { "es": "Puedo nadar.", "ru": "Я могу плавать.", "ipa": "ˈpwedo naˈdaɾ" },
+      { "es": "¿Puedes bailar?", "ru": "Ты можешь танцевать?", "ipa": "ˈpwedes bajˈlaɾ" },
+      { "es": "No puedo hablar ahora.", "ru": "Я не могу говорить сейчас.", "ipa": "no ˈpwedo aˈblaɾ aˈoɾa" },
+      { "es": "Necesito descansar.", "ru": "Мне нужно отдохнуть.", "ipa": "neθeˈsito deskanˈsaɾ" },
+      { "es": "Necesito aprender español.", "ru": "Мне нужно выучить испанский.", "ipa": "neθeˈsito apɾenˈdeɾ espaˈɲol" },
+      { "es": "Quiero trabajar hoy.", "ru": "Я хочу работать сегодня.", "ipa": "ˈkjeɾo tɾabaˈxaɾ ˈoj" }
+    ],
+    "rule": "Лицо показывает только первый глагол: **quiero**, **puedo**, **necesito** (я) / **quieres**, **puedes**, **necesitas** (ты). Второй стоит в инфинитиве на **-ar**, **-er**, **-ir**: Quiero **hablar** español.",
+    "mistake": {
+      "wrong": { "es": "Quiero hablo español." },
+      "right": { "es": "Quiero hablar español.", "ru": "второй глагол — в инфинитиве" }
+    },
+    "practice": [
+      { "ru": "Сегодня я хочу отдохнуть.", "es": "Hoy quiero descansar.", "alternatives": ["Quiero descansar hoy."] },
+      { "ru": "Ты не можешь говорить по-французски?", "es": "¿No puedes hablar francés?" },
+      { "ru": "Я не хочу готовить, я хочу есть.", "es": "No quiero cocinar, quiero comer." },
+      { "ru": "Мне нужно работать сегодня, но я хочу спать.", "es": "Necesito trabajar hoy, pero quiero dormir." },
+      { "ru": "Спасибо, но сейчас я не могу.", "es": "Gracias, pero ahora no puedo.", "alternatives": ["Gracias, pero no puedo ahora."] }
+    ]
+  }
 }

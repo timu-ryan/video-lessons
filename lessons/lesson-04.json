@@ -495,5 +495,28 @@
         "«Попробуйте сегодня вслух рассказать, что вы будете делать завтра и что вам нужно сделать. В следующем уроке выучим все лица: он, мы, вы, они. ¡Hasta luego!»"
       ]
     }
-  ]
+  ],
+  "summary": {
+    "phrases": [
+      { "es": "Voy a estudiar español.", "ru": "Я собираюсь учить испанский.", "ipa": "ˈboj a estuˈdjaɾ espaˈɲol" },
+      { "es": "No voy a dormir.", "ru": "Я не буду спать.", "ipa": "no ˈboj a doɾˈmiɾ" },
+      { "es": "Mañana voy a trabajar.", "ru": "Завтра я буду работать.", "ipa": "maˈɲana ˈboj a tɾabaˈxaɾ" },
+      { "es": "¿Vas a pasear o descansar?", "ru": "Ты пойдёшь гулять или будешь отдыхать?", "ipa": "ˈbas a paseˈaɾ o deskanˈsaɾ" },
+      { "es": "Tengo que trabajar.", "ru": "Мне нужно работать.", "ipa": "ˈtengo ke tɾabaˈxaɾ" },
+      { "es": "¿Tienes que cocinar hoy?", "ru": "Тебе сегодня нужно готовить?", "ipa": "ˈtjenes ke koθiˈnaɾ ˈoj" },
+      { "es": "Mañana no tengo que trabajar.", "ru": "Завтра мне не нужно работать.", "ipa": "maˈɲana no ˈtengo ke tɾabaˈxaɾ" }
+    ],
+    "rule": "**Voy a** / **vas a** + инфинитив — план: я буду, я собираюсь. **Tengo que** / **tienes que** + инфинитив — обязанность: я должен. **No tienes que** — «не нужно», а не «нельзя».",
+    "mistake": {
+      "wrong": { "es": "Voy viajar." },
+      "right": { "es": "Voy a viajar.", "ru": "между voy и глаголом — a" }
+    },
+    "practice": [
+      { "ru": "Я хочу поужинать, но мне нужно работать.", "es": "Quiero cenar, pero tengo que trabajar.", "alternatives": ["Quiero cenar, pero necesito trabajar."] },
+      { "ru": "Ты будешь ужинать или отдыхать?", "es": "¿Vas a cenar o descansar?", "alternatives": ["¿Vas a cenar o vas a descansar?"] },
+      { "ru": "Я говорю по-английски, но собираюсь выучить испанский.", "es": "Hablo inglés, pero voy a aprender español." },
+      { "ru": "Мне не нужно ждать, я могу работать сейчас.", "es": "No tengo que esperar, puedo trabajar ahora." },
+      { "ru": "Хочешь поплавать? — Да, но позже.", "es": "¿Quieres nadar? — Sí, pero más tarde." }
+    ]
+  }
 }

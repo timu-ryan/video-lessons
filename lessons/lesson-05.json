@@ -580,5 +580,28 @@
         "«В следующем уроке научимся говорить, чего хотят, что могут и что собираются делать другие люди. ¡Adiós!»"
       ]
     }
-  ]
+  ],
+  "summary": {
+    "phrases": [
+      { "es": "Él trabaja mucho.", "ru": "Он много работает.", "ipa": "ˈel tɾaˈbaxa ˈmutʃo" },
+      { "es": "Ella habla inglés.", "ru": "Она говорит по-английски.", "ipa": "ˈeja ˈabla inˈgles" },
+      { "es": "Nosotros hablamos ruso.", "ru": "Мы говорим по-русски.", "ipa": "noˈsotɾos aˈblamos ˈruso" },
+      { "es": "¿Vosotros trabajáis hoy?", "ru": "Вы сегодня работаете?", "ipa": "boˈsotɾos tɾabaˈxais ˈoj" },
+      { "es": "Ellos compran mucho.", "ru": "Они много покупают.", "ipa": "ˈejos ˈkompɾan ˈmutʃo" },
+      { "es": "¿Usted habla inglés?", "ru": "Вы говорите по-английски?", "ipa": "usˈted ˈabla inˈgles" },
+      { "es": "Me llamo Ana. ¿Y usted?", "ru": "Меня зовут Ана. А вас?", "ipa": "me ˈjamo ˈana · i usˈted" },
+      { "es": "Ustedes trabajan mucho.", "ru": "Вы много работаете.", "ipa": "usˈtedes tɾaˈbaxan ˈmutʃo" }
+    ],
+    "rule": "Все лица: habl**o**, habl**as**, habl**a**, habl**amos**, habl**áis**, habl**an**. **Usted** — вежливое «вы» одному, глагол как у él; **ustedes** — нескольким, глагол как у ellos.",
+    "mistake": {
+      "wrong": { "es": "¿Usted hablas inglés?" },
+      "right": { "es": "¿Usted habla inglés?", "ru": "с usted — форма «он, она»" }
+    },
+    "practice": [
+      { "ru": "Ей нужно больше отдыхать.", "es": "Ella necesita descansar más." },
+      { "ru": "Нам нужно сейчас учиться.", "es": "Necesitamos estudiar ahora.", "alternatives": ["Ahora necesitamos estudiar.", "Nosotros necesitamos estudiar ahora."] },
+      { "ru": "Они завтракают рано, а ужинают поздно.", "es": "Ellos desayunan temprano y cenan tarde.", "alternatives": ["Desayunan temprano y cenan tarde."] },
+      { "ru": "Вы вместе занимаетесь испанским?", "hint": "к нескольким друзьям", "es": "¿Practicáis español juntos?", "alternatives": ["¿Vosotros practicáis español juntos?"] }
+    ]
+  }
 }

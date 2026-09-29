@@ -538,5 +538,29 @@
         "«В следующем уроке научимся говорить, чего мы хотим, что можем и что нам нужно. ¡Adiós!»"
       ]
     }
-  ]
+  ],
+  "summary": {
+    "phrases": [
+      { "es": "Hablo español.", "ru": "Я говорю по-испански.", "ipa": "ˈablo espaˈɲol" },
+      { "es": "Estudio inglés.", "ru": "Я учу английский.", "ipa": "esˈtudjo inˈgles" },
+      { "es": "Trabajo mucho.", "ru": "Я много работаю.", "ipa": "tɾaˈbaxo ˈmutʃo" },
+      { "es": "¿Hablas español?", "ru": "Ты говоришь по-испански?", "ipa": "ˈablas espaˈɲol" },
+      { "es": "No hablo inglés.", "ru": "Я не говорю по-английски.", "ipa": "no ˈablo inˈgles" },
+      { "es": "Sí, estudio español.", "ru": "Да, я учу испанский.", "ipa": "ˈsi esˈtudjo espaˈɲol" },
+      { "es": "Trabajo y estudio.", "ru": "Я работаю и учусь.", "ipa": "tɾaˈbaxo i esˈtudjo" },
+      { "es": "Estudio mucho, pero hablo poco.", "ru": "Я много учусь, но говорю мало.", "ipa": "esˈtudjo ˈmutʃo ˈpeɾo ˈablo ˈpoko" },
+      { "es": "Hablo español e inglés.", "ru": "Я говорю по-испански и по-английски.", "ipa": "ˈablo espaˈɲol e inˈgles" }
+    ],
+    "rule": "Глагол на **-ar**: убираем -ar и добавляем **-o** (я) или **-as** (ты): habl**o**, habl**as**. Yo и tú обычно не нужны. Отрицание — **no** перед глаголом, вопрос — интонацией: ¿Hablas español?",
+    "mistake": {
+      "wrong": { "es": "Hablo español y inglés." },
+      "right": { "es": "Hablo español e inglés.", "ru": "перед звуком [i] вместо y — e" }
+    },
+    "practice": [
+      { "ru": "Я говорю по-русски и по-английски.", "es": "Hablo ruso e inglés." },
+      { "ru": "Я говорю по-английски, но не говорю по-французски.", "es": "Hablo inglés, pero no hablo francés." },
+      { "ru": "Ты работаешь? — Нет, я учусь.", "es": "¿Trabajas? — No, estudio." },
+      { "ru": "Привет! Ты говоришь по-испански?", "es": "¡Hola! ¿Hablas español?", "alternatives": ["Hola, ¿hablas español?"] }
+    ]
+  }
 }
