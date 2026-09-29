@@ -35,18 +35,7 @@ newGrammar:
 
 ## section: Хотеть и мочь: все лица
 hint: Quiero и puedo вы уже знаете — добавим остальные лица
-> «Начнём с querer — хотеть и poder — мочь. Это неправильные глаголы, но неправильность у них предсказуемая. Сейчас покажу правило.»
-
-## rule: Под ударением e → ie, o → ue
-pattern: quer- | → | quier-
-text: Под ударением e превращается в ie, а o — в ue. В «мы» и «вы» ударение на окончании, и основа не меняется.
-- Ella **quiere** viajar. — Она хочет путешествовать.
-- **Podemos** hablar mañana. — Мы можем поговорить завтра.
-- ¿**Queréis** cenar juntos? — Хотите поужинать вместе?
-> «Посмотрите на quiero. В инфинитиве querer было просто e, а в форме «я» появилось ie. Почему? Потому что на этот слог падает ударение: QUIE-ro.»
-> «С poder то же самое, только o превращается в ue: PUE-do.»
-> «А в «мы» и «вы» ударение уходит на окончание: que-RE-mos, po-DÉIS. Основа остаётся как в инфинитиве.»
-> 🔊 «Ella quiere viajar. Podemos hablar mañana. ¿Queréis cenar juntos?»
+> «Начнём с querer — хотеть и poder — мочь. Это неправильные глаголы, но неправильность у них предсказуемая. Сначала посмотрим все формы querer.»
 
 ## conjugation: querer — хотеть
 - yo | quier·o | я хочу
@@ -56,8 +45,20 @@ text: Под ударением e превращается в ie, а o — в ue
 - vosotros / vosotras | quer·éis | вы хотите
 - ellos / ellas / ustedes | quier·en | они хотят
 > «Quiero, quieres, quiere, queremos, queréis, quieren.»
+> «Посмотрите на основу. В инфинитиве querer — просто e, а в quiero, quieres, quiere, quieren появляется ie. Почему? Потому что на этот слог падает ударение: QUIE-ro.»
+> «А в «мы» и «вы» ударение уходит на окончание: que-RE-mos, que-RÉIS. Поэтому основа остаётся как в инфинитиве: quer-.»
 > «Окончания похожи на знакомые -ar: там было -as, -a, -amos, а здесь -es, -e, -emos. Вместо a — e. Подробно такие глаголы разберём в уроке 10, а пока просто запомните эти формы.»
-> «Если знаете английский: querer — это want, и после него тоже идёт глагол: quiero viajar — I want to travel. Только без to.»
+
+## rule: Querer + инфинитив
+pattern: querer | + | инфинитив
+text: Меняется только querer, второй глагол — в начальной форме.
+- Ella **quiere** viajar. — Она хочет путешествовать.
+- ¿**Queréis** cenar juntos? — Хотите поужинать вместе?
+- Ellos **quieren** descansar. — Они хотят отдохнуть.
+> «Схема та же, что с quiero: меняется только querer, а второй глагол стоит в начальной форме.»
+> «Обратите внимание на queréis: в «вы» основа без ie.»
+> «Если знаете английский: querer — это want, и после него тоже идёт глагол: quiere viajar — she wants to travel. Только без to.»
+> 🔊 «Ella quiere viajar. ¿Queréis cenar juntos? Ellos quieren descansar.»
 
 ## conjugation: poder — мочь
 - yo | pued·o | я могу
@@ -67,7 +68,18 @@ text: Под ударением e превращается в ie, а o — в ue
 - vosotros / vosotras | pod·éis | вы можете
 - ellos / ellas / ustedes | pued·en | они могут
 > «Puedo, puedes, puede, podemos, podéis, pueden.»
+> «С poder то же самое, только o превращается в ue: PUE-do. А в «мы» и «вы» ударение на окончании: po-DE-mos, po-DÉIS.»
 > «Сравните с querer: схема одна и та же. Четыре формы с изменённой основой, а «мы» и «вы» — без изменений.»
+
+## rule: Poder + инфинитив
+pattern: poder | + | инфинитив
+text: После poder глагол тоже стоит в начальной форме.
+- **Podemos** hablar mañana. — Мы можем поговорить завтра.
+- Ella no **puede** esperar. — Она не может ждать.
+- ¿**Podéis** leer más tarde? — Вы можете почитать позже?
+> «Poder работает так же, как querer: меняется только poder, дальше — начальная форма.»
+> «Podemos, podéis — без ue, как в инфинитиве poder.»
+> 🔊 «Podemos hablar mañana. Ella no puede esperar. ¿Podéis leer más tarde?»
 
 ## compare: Меняется или нет
 left: ударение на основе
