@@ -1,0 +1,165 @@
+{
+  "number": 1,
+  "expressions": [
+    {
+      "es": "¿Qué tal?",
+      "ipa": "ke ˈtal",
+      "ru": "Как дела? Как ты?",
+      "note": "Самый частый вопрос после hola. Часто говорят одним духом: ¡Hola, qué tal!",
+      "example": { "es": "¡Hola, Carlos! ¿Qué tal?", "ru": "Привет, Карлос! Как дела?" }
+    },
+    {
+      "es": "¡Buenas!",
+      "ipa": "ˈbwenas",
+      "ru": "Здравствуйте! Привет!",
+      "note": "Короткое buenas tardes или buenas noches, годится в любое время дня. Так здороваются в магазине, в баре, с соседями.",
+      "example": { "es": "¡Buenas! ¿Qué tal?", "ru": "Здрасьте! Как дела?" }
+    },
+    {
+      "es": "Encantado. / Encantada.",
+      "ipa": "enkanˈtado / enkanˈtada",
+      "ru": "Очень приятно.",
+      "note": "Говорят при знакомстве. Мужчина — encantado, женщина — encantada: окончание зависит от того, кто говорит.",
+      "example": { "es": "Me llamo Ana. — Encantado. Me llamo Carlos.", "ru": "Меня зовут Ана. — Очень приятно. Меня зовут Карлос." }
+    },
+    {
+      "es": "¡Hasta mañana!",
+      "ipa": "ˈasta maˈɲana",
+      "ru": "До завтра!",
+      "note": "Устроено как hasta luego: hasta, а потом — когда увидимся. Mañana — «завтра», подробно — в уроке 4.",
+      "example": { "es": "Gracias, José. ¡Hasta mañana!", "ru": "Спасибо, Хосе. До завтра!" }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        { "ru": "Спасибо, Карлос! До свидания!", "es": "Gracias, Carlos. Adiós." },
+        { "ru": "Спасибо, Хорхе! — Не за что, Ана.", "es": "Gracias, Jorge. — De nada, Ana." },
+        { "ru": "Привет, Ана! Как дела?", "es": "¡Hola, Ana! ¿Qué tal?" },
+        { "ru": "Привет! Меня зовут Виктор. А тебя?", "es": "¡Hola! Me llamo Víctor. ¿Y tú?" },
+        { "ru": "Доброе утро, Ана! Откуда ты?", "es": "¡Buenos días, Ana! ¿De dónde eres?" },
+        { "ru": "Меня зовут Ана, я из Мадрида.", "es": "Me llamo Ana, soy de Madrid." },
+        {
+          "ru": "Я из Бильбао. А ты откуда?",
+          "es": "Soy de Bilbao. ¿Y tú?",
+          "alternatives": ["Soy de Bilbao. ¿De dónde eres?"]
+        },
+        { "ru": "Добрый вечер! Меня зовут Хосе.", "hint": "в 7 вечера", "es": "Buenas tardes. Me llamo José." },
+        { "ru": "Очень приятно! Я с Майорки.", "hint": "говорит девушка", "es": "Encantada. Soy de Mallorca." },
+        { "ru": "Спокойной ночи! До завтра!", "es": "Buenas noches. ¡Hasta mañana!" }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        { "wrong": "Ola, me llamo Ana.", "es": "**Hola**, me llamo Ana.", "ru": "Привет, меня зовут Ана.", "why": "h не читается, но пишется." },
+        { "wrong": "Hola, me yamo Víctor.", "es": "Hola, me **llamo** Víctor.", "ru": "Привет, меня зовут Виктор.", "why": "ll и y звучат одинаково, но пишется llamo." },
+        { "wrong": "Grasias, José.", "es": "**Gracias**, José.", "ru": "Спасибо, Хосе.", "why": "Здесь c: перед e и i она звучит как английское th." },
+        { "wrong": "Me llamo José, soy de Espania.", "es": "Me llamo José, soy de **España**.", "ru": "Меня зовут Хосе, я из Испании.", "why": "Звук «нь» — одна буква ñ." },
+        { "wrong": "Buenos dias, Víctor.", "es": "Buenos **días**, Víctor.", "ru": "Доброе утро, Виктор.", "why": "Знак на í: i ударная и читается отдельным слогом — dí-as." },
+        { "wrong": "Adios, Ana.", "es": "**Adiós**, Ana.", "ru": "До свидания, Ана.", "why": "Слово на s — по правилу ударение упало бы на a. Знак переносит его на o." },
+        { "wrong": "Me llamo Jorge. ¿Y tu?", "es": "Me llamo Jorge. ¿Y **tú**?", "ru": "Меня зовут Хорхе. А ты?", "why": "«Ты» — tú со знаком. Tu без знака — «твой»." },
+        { "wrong": "Hola. De dónde eres?", "es": "Hola. **¿**De dónde eres?", "ru": "Привет. Откуда ты?", "why": "Вопрос открывается перевёрнутым ¿ — его видно ещё до первого слова." }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Días, tardes или noches?",
+      "options": ["días", "tardes", "noches"],
+      "tasks": [
+        { "es": "¡Buenos ___, José!", "answer": "días", "ru": "Доброе утро, Хосе! — в 8 утра" },
+        { "es": "Buenas ___, Jorge.", "answer": "tardes", "ru": "Добрый день, Хорхе! — в 3 часа дня" },
+        { "es": "¡Buenas ___, Carlos!", "answer": "noches", "ru": "Спокойной ночи, Карлос!" },
+        { "es": "Buenos ___, Ana.", "answer": "días", "ru": "Добрый день, Ана! — в 11 утра" },
+        { "es": "Buenas ___. Me llamo Víctor.", "answer": "tardes", "ru": "Добрый вечер! — в 7 вечера" },
+        { "es": "Buenas ___. Soy de Bilbao.", "answer": "noches", "ru": "Добрый вечер! — в 10 вечера" }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        { "es": "¡Hola! Me llamo Jorge. Soy de Valencia.", "ru": "Привет! Меня зовут Хорхе. Я из Валенсии." },
+        { "es": "¡Buenas! ¿Qué tal?", "ru": "Здравствуйте! Как дела?" },
+        { "es": "Buenas tardes. ¿De dónde eres, Víctor?", "ru": "Добрый день. Откуда ты, Виктор?" },
+        { "es": "Perdón, ¿cómo te llamas? ¿Y de dónde eres?", "ru": "Извини, как тебя зовут? И откуда ты?" },
+        { "es": "Encantado. Soy de Moscú. ¿Y tú?", "ru": "Очень приятно. Я из Москвы. А ты?" },
+        { "es": "Adiós, Jorge. ¡Hasta mañana!", "ru": "Пока, Хорхе. До завтра!" }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Семь вечера в Мадриде",
+    "lines": [
+      { "speaker": "Carlos", "es": "¡Hola, Ana! ¡Buenas noches!", "ru": "Привет, Ана! Добрый вечер!" },
+      { "speaker": "Ana", "es": "¿Buenas noches? ¡Buenas tardes, Carlos!", "ru": "«Buenas noches»? В семь вечера ещё «buenas tardes», Карлос!" },
+      { "speaker": "Carlos", "es": "Perdón… ¡Buenas tardes! ¿Qué tal?", "ru": "Извини… Добрый день! Как дела?" },
+      { "speaker": "Ana", "es": "Carlos, José. José, Carlos.", "ru": "Карлос, это Хосе. Хосе, это Карлос." },
+      { "speaker": "José", "es": "Encantado. ¿De dónde eres?", "ru": "Очень приятно. Откуда ты?" },
+      { "speaker": "Carlos", "es": "Soy de Moscú. ¿Y tú?", "ru": "Я из Москвы. А ты?" },
+      { "speaker": "José", "es": "Soy de Sevilla.", "ru": "Я из Севильи." },
+      { "speaker": "Carlos", "es": "¡Encantado! ¡Buenas noches!", "ru": "Очень приятно! Добрый вечер!" },
+      { "speaker": "Ana y José", "es": "¡Buenas **tardes**, Carlos!", "ru": "Да «buenas tardes» же, Карлос!" }
+    ],
+    "questions": [
+      { "question": "Откуда Карлос?", "answer": "De Moscú." },
+      { "question": "Откуда Хосе?", "answer": "De Sevilla." },
+      { "question": "Как Карлосу поздороваться в семь вечера?", "answer": "¡Buenas tardes!" }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "¡Buenas! ¿Qué tal? ¡Hasta luego!",
+      "ru": "Здрасьте! Как дела? Пока! — весь разговор с соседом в лифте",
+      "ipa": "ˈbwenas · ke ˈtal · ˈasta ˈlwego"
+    },
+    {
+      "es": "¿Buenos días? ¡Buenas tardes!",
+      "ru": "Доброе утро? Уже день! — тому, кто проспал",
+      "ipa": "ˈbwenos ˈdi.as · ˈbwenas ˈtaɾdes"
+    },
+    {
+      "es": "Encantado. ¿Cómo te llamas? Perdón… ¿cómo te llamas?",
+      "ru": "Очень приятно. Как тебя зовут? Извини… как-как тебя зовут?",
+      "ipa": "enkanˈtado · ˈkomo te ˈjamas · peɾˈdon · ˈkomo te ˈjamas"
+    },
+    {
+      "es": "Perdón, perdón, perdón… ¡Gracias!",
+      "ru": "Простите, простите, простите… Спасибо! — пробираясь к выходу в метро",
+      "ipa": "peɾˈdon peɾˈdon peɾˈdon · ˈgɾaθjas"
+    },
+    {
+      "es": "Por favor, por favor, por favor…",
+      "ru": "Ну пожалуйста, пожалуйста, пожалуйста…",
+      "ipa": "poɾ faˈboɾ poɾ faˈboɾ poɾ faˈboɾ"
+    },
+    {
+      "es": "Hola, hola. Adiós, adiós.",
+      "ru": "Привет-привет. Пока-пока.",
+      "ipa": "ˈola ˈola · aˈdjos aˈdjos"
+    }
+  ],
+  "culture": {
+    "kind": "trabalenguas",
+    "title": "Скороговорка на r",
+    "es": "Tres tristes tigres tragan trigo en un trigal.",
+    "ipa": "ˈtɾes ˈtɾistes ˈtigɾes ˈtɾagan ˈtɾigo en un tɾiˈgal",
+    "ru": "Три грустных тигра глотают пшеницу на пшеничном поле.",
+    "text": "Одна из самых известных испанских скороговорок. Здесь везде одиночное r после t — один короткий удар кончиком языка, как в русском «три». Читайте сначала медленно, по слогам, потом всё быстрее. Смысла в ней немного — зато язык привыкает."
+  },
+  "yourTurn": {
+    "task": "Представьтесь, как при знакомстве: поздоровайтесь, назовите имя и город, спросите собеседника о том же и попрощайтесь. Потом прочитайте вслух.",
+    "template": ["¡Hola!", "Me llamo…", "Soy de…", "¿Y tú?"],
+    "model": [
+      { "es": "¡Buenas tardes!", "ru": "Добрый день!" },
+      { "es": "Me llamo Víctor.", "ru": "Меня зовут Виктор." },
+      { "es": "Soy de Kazán.", "ru": "Я из Казани." },
+      { "es": "¿Y tú? ¿Cómo te llamas?", "ru": "А тебя как зовут?" },
+      { "es": "¿De dónde eres?", "ru": "Откуда ты?" },
+      { "es": "¡Hasta luego!", "ru": "До встречи!" }
+    ]
+  }
+}

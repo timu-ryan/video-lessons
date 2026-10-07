@@ -5,6 +5,8 @@
 export const HANDOUTS = {
   /** Полные конспекты уроков 1–N бесплатные (A0), дальше — на Boosty. Выжимки бесплатны всегда. */
   freeFullUntil: 14,
+  /** Дополнительные материалы — только на Boosty, для всех уроков. */
+  freeExtras: false,
   telegram: 'espanolcontim',
   boosty: 'https://boosty.to/espanolcontim',
 }

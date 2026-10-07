@@ -30,6 +30,7 @@ import {
   printPdf,
   renderCompare,
   renderHeader,
+  tbody,
 } from './handout-common.ts'
 import { loadLessons, ROOT } from './lessons.ts'
 
@@ -53,26 +54,6 @@ if (!found) {
 // --- html --------------------------------------------------------------------
 
 const CYRILLIC = /[а-яё]/i
-
-/** Сколько строк таблицы не отрывать друг от друга в начале и в конце. */
-const KEEP_ROWS = 2
-
-/**
- * Тело таблицы: первые и последние KEEP_ROWS строк — в отдельных `tbody`,
- * которые не рвутся. На новую страницу не уходит одна последняя строка,
- * а под заголовком не остаётся одна первая.
- */
-function tbody(rows: string[]): string {
-  if (rows.length <= KEEP_ROWS * 2) return `<tbody class="keep">${rows.join('')}</tbody>`
-  const head = rows.slice(0, KEEP_ROWS)
-  const middle = rows.slice(KEEP_ROWS, -KEEP_ROWS)
-  const tail = rows.slice(-KEEP_ROWS)
-  return [
-    `<tbody class="keep">${head.join('')}</tbody>`,
-    middle.length > 0 ? `<tbody>${middle.join('')}</tbody>` : '',
-    `<tbody class="keep">${tail.join('')}</tbody>`,
-  ].join('')
-}
 
 /** Подряд идущие диалоги с одинаковым title — один диалог, как «1/2», «2/2» на слайдах. */
 function dialogueRuns(slides: SlideSource[]): { title: string; slides: DialogueSlideSource[] }[] {

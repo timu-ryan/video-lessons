@@ -1,6 +1,7 @@
 /**
- * Общее для PDF-конспектов: полного (lesson-pdf.ts) и краткого
- * (lesson-summary.ts). Разметка, стиль, шапка, раскладка free/paid, печать.
+ * Общее для PDF-конспектов: полного (lesson-pdf.ts), краткого
+ * (lesson-summary.ts) и допматериалов (lesson-extra.ts). Разметка, стиль,
+ * шапка, раскладка free/paid, печать.
  */
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -25,6 +26,26 @@ export const marked = (text: string): string =>
 
 export const ipa = (value: string | undefined): string =>
   value ? `<span class="ipa">[${escape(value)}]</span>` : ''
+
+/** Сколько строк таблицы не отрывать друг от друга в начале и в конце. */
+const KEEP_ROWS = 2
+
+/**
+ * Тело таблицы: первые и последние KEEP_ROWS строк — в отдельных `tbody`,
+ * которые не рвутся. На новую страницу не уходит одна последняя строка,
+ * а под заголовком не остаётся одна первая.
+ */
+export function tbody(rows: string[]): string {
+  if (rows.length <= KEEP_ROWS * 2) return `<tbody class="keep">${rows.join('')}</tbody>`
+  const head = rows.slice(0, KEEP_ROWS)
+  const middle = rows.slice(KEEP_ROWS, -KEEP_ROWS)
+  const tail = rows.slice(-KEEP_ROWS)
+  return [
+    `<tbody class="keep">${head.join('')}</tbody>`,
+    middle.length > 0 ? `<tbody>${middle.join('')}</tbody>` : '',
+    `<tbody class="keep">${tail.join('')}</tbody>`,
+  ].join('')
+}
 
 /** Сравнение в две колонки: ✗ и зачёркивание у `wrong`, ✓ у `right`. */
 export function renderCompare(title: string, left: CompareSideSource, right: CompareSideSource): string {
@@ -95,15 +116,23 @@ ${body}
 
 // --- файлы -------------------------------------------------------------------
 
-export type HandoutKind = 'full' | 'summary'
+export type HandoutKind = 'full' | 'summary' | 'extra'
 
-/** Полный конспект урока бесплатный? Выжимки бесплатны всегда. */
-export const isFree = (lesson: LessonSource, kind: HandoutKind): boolean =>
-  kind === 'summary' || lesson.number <= HANDOUTS.freeFullUntil
+/** Материал урока бесплатный? Выжимки бесплатны всегда, допматериалы — по freeExtras. */
+export function isFree(lesson: LessonSource, kind: HandoutKind): boolean {
+  if (kind === 'summary') return true
+  if (kind === 'extra') return HANDOUTS.freeExtras
+  return lesson.number <= HANDOUTS.freeFullUntil
+}
 
-/** handouts/free/lesson-01.pdf, handouts/free/lesson-01-summary.pdf, handouts/paid/lesson-15.pdf. */
+const SUFFIX: Record<HandoutKind, string> = { full: '', summary: '-summary', extra: '-extra' }
+
+/**
+ * handouts/free/lesson-01.pdf, handouts/free/lesson-01-summary.pdf,
+ * handouts/paid/lesson-15.pdf, handouts/paid/lesson-01-extra.pdf.
+ */
 export function handoutPath(lesson: LessonSource, kind: HandoutKind): string {
-  const name = `lesson-${String(lesson.number).padStart(2, '0')}${kind === 'summary' ? '-summary' : ''}`
+  const name = `lesson-${String(lesson.number).padStart(2, '0')}${SUFFIX[kind]}`
   return join(HANDOUTS_DIR, isFree(lesson, kind) ? 'free' : 'paid', `${name}.pdf`)
 }
 

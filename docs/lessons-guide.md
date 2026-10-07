@@ -456,3 +456,89 @@ final
   дальше — «на Boosty». Там же ссылки.
 - Полные конспекты лежат в `handouts/free/` или `handouts/paid/` по тому же
   правилу, выжимки — всегда в `handouts/free/`.
+
+## 14. Дополнительные материалы: `extras/lesson-NN.json`
+
+Платный PDF к уроку для подписчиков Boosty (все уроки, включая A0): практика,
+которой нет в уроке, мини-история, живые выражения и заметка об Испании.
+Составляет Claude Code командой `/extra NN` (`.claude/commands/extra.md` —
+там и правила содержания). Сборка — `npm run lessons:extra -- NN` в
+`handouts/paid/lesson-NN-extra.pdf`, затем переименование в
+«Урок N — дополнительные материалы.pdf».
+
+Файл лежит **отдельно от урока** нарочно:
+- `npm run vocab:build` читает только `lessons/`, поэтому бонусные выражения
+  **не попадают** в `docs/vocabulary.md`, и уроки на них не опираются;
+- пересборка урока из сценария допматериалы не затирает.
+
+Проверяется вместе с уроками: `npm run lessons:validate`. Слова —
+`npm run vocab:check -- NN` (отдельный раздел «Доп. материалы»).
+
+```json
+{
+  "number": 7,
+  "expressions": [
+    {
+      "es": "¡Me encanta!", "ipa": "me enˈkanta", "ru": "Обожаю!",
+      "note": "Сильнее, чем me gusta mucho. Подробно — в A1.",
+      "example": { "es": "¿Te gusta bailar? — ¡Me encanta!", "ru": "Тебе нравится танцевать? — Обожаю!" }
+    }
+  ],
+  "exercises": [
+    { "type": "translate", "title": "Переведите на испанский",
+      "tasks": [{ "ru": "Тебе нравится гулять?", "es": "¿Te gusta pasear?" }] },
+    { "type": "fix", "title": "Найдите ошибку",
+      "tasks": [{ "wrong": "Me gusta muy.", "es": "Me gusta **mucho**.", "ru": "Мне очень нравится.",
+                  "why": "После глагола — mucho." }] },
+    { "type": "gap", "title": "Muy или mucho?", "options": ["muy", "mucho"],
+      "tasks": [{ "es": "Hablas ___ bien.", "answer": "muy" }] },
+    { "type": "read", "title": "Переведите на русский",
+      "tasks": [{ "es": "No nos gusta esperar.", "ru": "Мы не любим ждать." }] }
+  ],
+  "story": {
+    "title": "Карлос и понедельник",
+    "lines": [{ "es": "Carlos trabaja mucho.", "ru": "Карлос много работает." }],
+    "glossary": [{ "es": "el lunes", "ru": "понедельник" }],
+    "questions": [{ "question": "¿A Carlos le gusta madrugar?", "answer": "No, no le gusta." }]
+  },
+  "phrases": [
+    { "es": "Me gusta mucho comer, pero no me gusta cocinar.", "ru": "Очень люблю есть, но не люблю готовить.",
+      "ipa": "me ˈgusta ˈmutʃo koˈmeɾ · ˈpeɾo no me ˈgusta koθiˈnaɾ" }
+  ],
+  "culture": {
+    "kind": "refrán", "title": "Кто рано встаёт…",
+    "es": "A quien madruga, Dios le ayuda.", "ipa": "a kjen maˈdɾuga ˈdjos le aˈjuda",
+    "ru": "Кто рано встаёт, тому Бог подаёт.",
+    "text": "Пояснение в 2–4 строки."
+  },
+  "yourTurn": {
+    "task": "Напишите три вещи, которые вы любите, и три — которые нет.",
+    "template": ["Me gusta…", "No me gusta…", "Me gusta mucho…"],
+    "model": [{ "es": "Me gusta mucho viajar.", "ru": "Я очень люблю путешествовать." }]
+  }
+}
+```
+
+| Поле | Что это | Сколько |
+|---|---|---|
+| `expressions` | Бонусные живые выражения: `{ es, ipa, ru, note?, example? }`. `ipa` обязательна. В словарь не входят. | 2–4 |
+| `exercises` | Блоки упражнений `{ type, title, tasks }`, нумерация заданий сквозная. | 2–5 блоков по 3–12, всего 20–40 |
+| — `translate` | С русского: задание как `phrase` в `practice` — `{ ru, es, hint?, alternatives? }`. | |
+| — `fix` | Найдите ошибку: `{ wrong, es, ru, why? }`. `wrong` печатается как есть; в `es` исправленное выделено `**…**`. | |
+| — `gap` | Вставьте слово: `options` на весь блок; задание `{ es, answer, ru? }`, в `es` ровно один `___`, `answer` — из `options`. | 2–3 варианта |
+| — `read` | С испанского: `{ es, ru }`, `ru` — ответ. | |
+| `story` | Мини-история: `title`, `lines` — `{ es, ru, speaker? }` (с `speaker` выводится как диалог), `glossary?` — слова вне словаря, `questions` — `{ question, answer }`. | 4–10 строк, до 2 слов, 2–4 вопроса |
+| `phrases` | Фразы с характером: `{ es, ru, ipa }`; `ipa` обязательна на A0. | 4–8 |
+| `culture` | «Испания изнутри»: `kind` — `refrán`, `trabalenguas`, `fact`, `song`; `title`, `text`; `es` + `ipa` + `ru?` — у пословицы и скороговорки обязательно. | одна |
+| `yourTurn` | «Ваш ход»: `task`, `template?` — начала фраз, `model` — образец (под строками для записи: задание открытое, это подсказка). | до 4 / 3–6 |
+
+- Порядок в PDF: живые выражения → практика → мини-история → фразы
+  с характером → Испания изнутри → ваш ход с образцом → ответы с новой
+  страницы.
+- `ipa` — по разделу 8, `β ð ɣ ʎ` запрещены и здесь.
+- `vocab:check` проверяет все испанские фразы, кроме `wrong` (ошибка там
+  нарочно), самих выражений и `culture` (цитата). Известными для допматериалов
+  считаются и выражения с глоссариями допматериалов уроков ≤ N.
+- `lessons:extra` предупреждает, если задание или фраза с характером дословно
+  повторяет фразу урока или выжимки, и если вышло больше 5 страниц
+  (обычно ровно 5: три страницы заданий, страница интересного, ответы).

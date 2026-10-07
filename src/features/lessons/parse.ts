@@ -38,16 +38,16 @@ const MAX_ALTERNATIVES = 2
 const SUMMARY_PHRASES = { min: 6, max: 10 }
 const SUMMARY_PRACTICE = { min: 3, max: 5 }
 
-class LessonError extends Error {
+export class LessonError extends Error {
   constructor(where: string, message: string) {
     super(`${where}: ${message}`)
   }
 }
 
-const isObject = (value: unknown): value is Record<string, unknown> =>
+export const isObject = (value: unknown): value is Record<string, unknown> =>
   typeof value === 'object' && value !== null && !Array.isArray(value)
 
-function str(where: string, host: Record<string, unknown>, key: string): string {
+export function str(where: string, host: Record<string, unknown>, key: string): string {
   const value = host[key]
   if (typeof value !== 'string' || value === '') {
     throw new LessonError(where, `поле «${key}» должно быть непустой строкой`)
@@ -55,12 +55,12 @@ function str(where: string, host: Record<string, unknown>, key: string): string 
   return value
 }
 
-function optStr(where: string, host: Record<string, unknown>, key: string): void {
+export function optStr(where: string, host: Record<string, unknown>, key: string): void {
   if (host[key] !== undefined) str(where, host, key)
 }
 
 /** Непустой массив не длиннее max — с понятной ошибкой в обоих случаях. */
-function list(where: string, host: Record<string, unknown>, key: string, max?: number): unknown[] {
+export function list(where: string, host: Record<string, unknown>, key: string, max?: number): unknown[] {
   const value = host[key]
   if (!Array.isArray(value) || value.length === 0) {
     throw new LessonError(where, `«${key}» должно быть непустым массивом`)
@@ -72,7 +72,7 @@ function list(where: string, host: Record<string, unknown>, key: string, max?: n
 }
 
 /** Парность `**` в строке с выделением нового. */
-function marks(where: string, host: Record<string, unknown>, key: string): void {
+export function marks(where: string, host: Record<string, unknown>, key: string): void {
   const value = host[key]
   if (typeof value === 'string' && hasUnclosedMark(value)) {
     throw new LessonError(where, `в «${key}» не закрыто выделение **: «${value}»`)
@@ -86,7 +86,7 @@ interface PhraseRules {
   ru?: boolean
 }
 
-function phrase(where: string, value: unknown, rules: PhraseRules): Record<string, unknown> {
+export function phrase(where: string, value: unknown, rules: PhraseRules): Record<string, unknown> {
   if (!isObject(value)) throw new LessonError(where, 'фраза должна быть объектом')
   str(where, value, 'es')
   if (rules.ru === false) optStr(where, value, 'ru')
@@ -234,13 +234,13 @@ function vocabulary(file: string, raw: Record<string, unknown>): void {
   }
 }
 
-function count(where: string, items: unknown[], key: string, range: { min: number; max: number }): void {
+export function count(where: string, items: unknown[], key: string, range: { min: number; max: number }): void {
   if (items.length < range.min || items.length > range.max) {
     throw new LessonError(where, `в «${key}» элементов: ${items.length}, нужно от ${range.min} до ${range.max}`)
   }
 }
 
-function alternatives(where: string, p: Record<string, unknown>): void {
+export function alternatives(where: string, p: Record<string, unknown>): void {
   if (p.alternatives === undefined) return
   list(where, p, 'alternatives', MAX_ALTERNATIVES).forEach((alt, i) => {
     if (typeof alt !== 'string' || alt === '') {

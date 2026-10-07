@@ -18,10 +18,16 @@
  * Адрес находки — тип слайда и номер фразы этого типа по порядку в уроке:
  * practice-14 — четырнадцатое задание, dialogue-05 — пятая реплика,
  * rule-04 — четвёртый пример, compare-07 — седьмая строка сравнения.
+ *
+ * Если есть extras/lesson-NN.json — отдельным разделом проверяются и
+ * допматериалы (extraTexts в extras.ts). Для них известны ещё выражения
+ * и глоссарии допматериалов уроков ≤ N: подписчики их уже видели. В словарь
+ * курса эти слова не входят, и уроки на них не опираются.
  */
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { LessonSource, VocabularyEntrySource } from '../src/features/lessons/source.ts'
+import { type ExtraSource, extraTexts, loadExtras } from './extras.ts'
 import { collator, loadLessons, ROOT, tokenize, withoutArticle } from './lessons.ts'
 
 const IGNORE_FILE = join(ROOT, 'tools', 'vocab-ignore.txt')
@@ -60,8 +66,7 @@ for (const { lesson } of lessons) {
   if (lesson.number <= target) addKnown(lesson)
 }
 
-// слово → адреса, где встретилось, в порядке урока
-const unknown = new Map<string, string[]>()
+const lessonPhrases: { where: string; texts: string[] }[] = []
 const counters = new Map<string, number>()
 for (const slide of current.slides) {
   const texts: string[][] = (() => {
@@ -86,23 +91,53 @@ for (const slide of current.slides) {
   for (const phrase of texts) {
     const n = (counters.get(slide.type) ?? 0) + 1
     counters.set(slide.type, n)
-    const where = `${slide.type}-${String(n).padStart(2, '0')}`
-    for (const word of new Set(phrase.flatMap(tokenize))) {
-      if (known.has(word) || ignored.has(word)) continue
+    lessonPhrases.push({ where: `${slide.type}-${String(n).padStart(2, '0')}`, texts: phrase })
+  }
+}
+report(`Урок ${target}`, unknownWords(lessonPhrases, known))
+
+const { extras, errors: extraErrors } = loadExtras(lessons.map(({ lesson }) => lesson))
+for (const error of extraErrors) console.warn(`! пропущен: ${error}`)
+const extra = extras.find(({ lesson }) => lesson.number === target)?.extra
+if (extra) {
+  const knownInExtras = new Set(known)
+  for (const earlier of extras) {
+    if (earlier.lesson.number <= target) extraWords(earlier.extra).forEach((w) => knownInExtras.add(w))
+  }
+  report(`Доп. материалы урока ${target}`, unknownWords(extraTexts(extra), knownInExtras))
+}
+
+/** Слово → адреса, где встретилось, в порядке урока. */
+function unknownWords(
+  phrases: { where: string; texts: string[] }[],
+  knownWords: Set<string>,
+): Map<string, string[]> {
+  const unknown = new Map<string, string[]>()
+  for (const { where, texts } of phrases) {
+    for (const word of new Set(texts.flatMap(tokenize))) {
+      if (knownWords.has(word) || ignored.has(word)) continue
       const places = unknown.get(word) ?? []
       if (!places.includes(where)) places.push(where)
       unknown.set(word, places)
     }
   }
+  return unknown
 }
 
-if (unknown.size === 0) {
-  console.log(`✓ Урок ${target}: все слова известны`)
-} else {
-  console.warn(`Урок ${target}: слов, которые не вводились раньше, — ${unknown.size}`)
+function report(title: string, unknown: Map<string, string[]>): void {
+  if (unknown.size === 0) {
+    console.log(`✓ ${title}: все слова известны`)
+    return
+  }
+  console.warn(`${title}: слов, которые не вводились раньше, — ${unknown.size}`)
   for (const word of [...unknown.keys()].sort(collator.compare)) {
     console.warn(`  ${word} — ${unknown.get(word)!.join(', ')}`)
   }
+}
+
+/** Бонусные слова допматериалов: выражения и глоссарий истории — без артиклей. */
+function extraWords(extra: ExtraSource): string[] {
+  return [...extra.expressions, ...(extra.story.glossary ?? [])].flatMap((p) => tokenize(withoutArticle(p.es)))
 }
 
 // --- известные формы -----------------------------------------------------------

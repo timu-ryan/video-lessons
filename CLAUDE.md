@@ -14,6 +14,7 @@
 | `docs/vocabulary.md` | Накопленный словарь. **Генерируется**, руками не править. |
 | `scenarios/lesson-10.md` + `lessons/lesson-10.json` | Эталонная пара «сценарий → JSON». |
 | `src/features/lessons/parse.ts` | Валидация урока при загрузке. |
+| `extras/lesson-NN.json` | Дополнительные материалы к уроку (платные). Формат — раздел 14 справочника, разбор — `scripts/extras.ts`. |
 
 ## Нумерация
 
@@ -80,5 +81,10 @@ B1 — 65–84. `planLesson` — номер внутри уровня по пл�
     `handouts/free|paid/lesson-NN.pdf`;
   - краткий (выжимка на 1 страницу, из блока `summary`): `/summary NN` или
     `npm run lessons:summary -- [NN] [--ipa]` → `handouts/free/lesson-NN-summary.pdf`.
+  - дополнительные материалы (платно, для всех уроков): `/extra NN` составляет
+    `extras/lesson-NN.json` и собирает `npm run lessons:extra -- NN` →
+    `handouts/paid/Урок N — дополнительные материалы.pdf`.
   - Граница бесплатного и ссылки — `scripts/handouts.config.ts`.
+- Бонусные выражения из `extras/` в `docs/vocabulary.md` не входят: допматериалы
+  открыты не всем, поэтому сценарии и уроки на эти слова не опираются.
 - Код в стиле проекта: TypeScript.

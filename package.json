@@ -12,6 +12,7 @@
     "lessons:validate": "tsx scripts/lessons-validate.ts",
     "lessons:pdf": "tsx scripts/lesson-pdf.ts",
     "lessons:summary": "tsx scripts/lesson-summary.ts",
+    "lessons:extra": "tsx scripts/lesson-extra.ts",
     "vocab:build": "tsx scripts/vocab-build.ts",
     "vocab:check": "tsx scripts/vocab-check.ts"
   },

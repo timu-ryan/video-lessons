@@ -1,0 +1,180 @@
+{
+  "number": 7,
+  "expressions": [
+    {
+      "es": "¡Me encanta!",
+      "ipa": "me enˈkanta",
+      "ru": "Обожаю! Мне очень нравится!",
+      "note": "Сильнее, чем me gusta mucho, поэтому muy и mucho с ним не нужны. Устроено как gusta: me encanta, te encanta, le encanta. Подробно — в уроке 19.",
+      "example": { "es": "¿Te gusta cocinar? — ¡Me encanta!", "ru": "Тебе нравится готовить? — Обожаю!" }
+    },
+    {
+      "es": "Me da igual.",
+      "ipa": "me da iˈgwal",
+      "ru": "Мне всё равно.",
+      "note": "Когда правда всё равно, что выбрать. Звучит спокойно, не грубо.",
+      "example": { "es": "¿Cenamos ahora o más tarde? — Me da igual.", "ru": "Поужинаем сейчас или позже? — Мне всё равно." }
+    },
+    {
+      "es": "¡Qué rollo!",
+      "ipa": "ke ˈrojo",
+      "ru": "Вот тоска! Какая морока!",
+      "note": "Разговорное, очень испанское: про скучное или нудное дело. В Латинской Америке так почти не говорят.",
+      "example": { "es": "Mañana tengo que madrugar. ¡Qué rollo!", "ru": "Завтра мне рано вставать. Вот тоска!" }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        { "ru": "Мне нравится гулять, но я не люблю ждать.", "es": "Me gusta pasear, pero no me gusta esperar." },
+        { "ru": "Тебе нравится рано вставать? — Нет, не нравится.", "es": "¿Te gusta madrugar? — No, no me gusta." },
+        { "ru": "Нам нравится путешествовать вместе.", "es": "Nos gusta viajar juntos." },
+        { "ru": "Вам нравится петь?", "hint": "к нескольким друзьям", "es": "¿Os gusta cantar?" },
+        { "ru": "Мне тоже не нравится убираться.", "es": "A mí tampoco me gusta limpiar." },
+        {
+          "ru": "Ему не нравится готовить, но он очень любит есть.",
+          "es": "No le gusta cocinar, pero le gusta mucho comer.",
+          "alternatives": ["A él no le gusta cocinar, pero le gusta mucho comer."]
+        },
+        {
+          "ru": "Им нравится ходить по магазинам, но они не любят ждать.",
+          "es": "Les gusta ir de compras, pero no les gusta esperar."
+        },
+        {
+          "ru": "Завтра мне нужно рано встать, но я не хочу.",
+          "es": "Mañana tengo que madrugar, pero no quiero."
+        },
+        {
+          "ru": "Я хочу спать, но мне нужно учиться.",
+          "es": "Quiero dormir, pero tengo que estudiar.",
+          "alternatives": ["Quiero dormir, pero necesito estudiar."]
+        },
+        {
+          "ru": "Сегодня вечером мы идём по магазинам. — Я тоже!",
+          "es": "Esta noche vamos de compras. — ¡Yo también!"
+        }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        { "wrong": "Yo gusto cocinar.", "es": "**Me gusta** cocinar.", "ru": "Мне нравится готовить.", "why": "Нравится действие, а не я: me gusta." },
+        { "wrong": "Me no gusta caminar.", "es": "**No me** gusta caminar.", "ru": "Я не люблю ходить пешком.", "why": "No — в самом начале, перед me." },
+        { "wrong": "Les gusta muy pasear.", "es": "Les gusta **mucho** pasear.", "ru": "Им очень нравится гулять.", "why": "После глагола — mucho." },
+        { "wrong": "Cantas mucho bien.", "es": "Cantas **muy** bien.", "ru": "Ты очень хорошо поёшь.", "why": "Перед bien — только muy." },
+        { "wrong": "No me gusta madrugar. — Yo tampoco.", "es": "No me gusta madrugar. — **A mí** tampoco.", "ru": "Не люблю рано вставать. — Я тоже.", "why": "Отвечаем на gusta — значит a mí." },
+        { "wrong": "Trabajo mucho. ¿Y a ti?", "es": "Trabajo mucho. ¿**Y tú**?", "ru": "Я много работаю. А ты?", "why": "Trabajar — обычный глагол: ¿y tú?" },
+        { "wrong": "Nosotros quieremos descansar.", "es": "Nosotros **queremos** descansar.", "ru": "Мы хотим отдохнуть.", "why": "e → ie только под ударением, а в queremos ударение на окончании." }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Muy или mucho?",
+      "options": ["muy", "mucho"],
+      "tasks": [
+        { "es": "Llegamos ___ tarde.", "answer": "muy" },
+        { "es": "Me gusta ___ nadar.", "answer": "mucho" },
+        { "es": "Trabajas ___.", "answer": "mucho", "ru": "Ты много работаешь." },
+        { "es": "Ana canta ___ bien.", "answer": "muy" },
+        { "es": "Hablo francés ___ mal.", "answer": "muy" },
+        { "es": "No nos gusta ___ madrugar.", "answer": "mucho", "ru": "Нам не очень нравится рано вставать." }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "También или tampoco?",
+      "options": ["también", "tampoco"],
+      "tasks": [
+        { "es": "Me gusta bailar. — A mí ___.", "answer": "también" },
+        { "es": "Hoy no puedo cocinar. — Yo ___.", "answer": "tampoco" },
+        { "es": "No me gusta limpiar. — A mí ___.", "answer": "tampoco" },
+        { "es": "Carlos habla ruso, y Ana ___ habla ruso.", "answer": "también" }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        { "es": "¿Os gusta cocinar juntos?", "ru": "Вам нравится готовить вместе?" },
+        { "es": "Me gusta mucho viajar, pero no me gusta esperar.", "ru": "Я очень люблю путешествовать, но не люблю ждать." },
+        { "es": "Ella no quiere cocinar hoy. Quiere ir de compras.", "ru": "Она не хочет сегодня готовить. Хочет пойти по магазинам." },
+        { "es": "¿Le gusta leer? — Sí, pero ahora no puede: tiene que trabajar.", "ru": "Ему нравится читать? — Да, но сейчас он не может: ему нужно работать." },
+        { "es": "Pasado mañana no tenemos que madrugar.", "ru": "Послезавтра нам не нужно рано вставать." },
+        { "es": "Hablas muy bien. ¿Estudias mucho?", "ru": "Ты очень хорошо говоришь. Много учишься?" }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Карлос и ранний подъём",
+    "lines": [
+      { "es": "Carlos trabaja mucho.", "ru": "Карлос много работает." },
+      { "es": "Le gusta trabajar, pero no le gusta madrugar.", "ru": "Работать ему нравится, а вот рано вставать — нет." },
+      { "es": "Mañana Ana y Carlos van a viajar juntos.", "ru": "Завтра Ана и Карлос едут путешествовать вместе." },
+      { "es": "Tienen que madrugar.", "ru": "Им нужно рано встать." },
+      { "es": "Ana llama. Carlos no contesta.", "ru": "Ана звонит. Карлос не отвечает." },
+      { "es": "Ana llama otra vez.", "ru": "Ана звонит ещё раз." },
+      { "es": "Carlos contesta: «Ahora no puedo… Quiero dormir».", "ru": "Карлос отвечает: «Сейчас не могу… Хочу спать»." },
+      { "es": "Ana espera y espera. Llegan muy tarde, pero viajan juntos.", "ru": "Ана ждёт и ждёт. Они приезжают очень поздно, но путешествуют вместе." }
+    ],
+    "questions": [
+      { "question": "¿Carlos trabaja mucho?", "answer": "Sí, trabaja mucho." },
+      { "question": "¿Le gusta madrugar?", "answer": "No, no le gusta." },
+      { "question": "¿Ana y Carlos llegan temprano?", "answer": "No, llegan muy tarde." }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "No me gusta madrugar, pero me gusta mucho dormir.",
+      "ru": "Не люблю рано вставать, но очень люблю спать.",
+      "ipa": "no me ˈgusta madɾuˈgaɾ · ˈpeɾo me ˈgusta ˈmutʃo doɾˈmiɾ"
+    },
+    {
+      "es": "Me gusta mucho comer, pero no me gusta cocinar.",
+      "ru": "Очень люблю есть, но не люблю готовить.",
+      "ipa": "me ˈgusta ˈmutʃo koˈmeɾ · ˈpeɾo no me ˈgusta koθiˈnaɾ"
+    },
+    {
+      "es": "Me gusta cocinar. No me gusta limpiar.",
+      "ru": "Готовить люблю. Убирать — нет.",
+      "ipa": "me ˈgusta koθiˈnaɾ · no me ˈgusta limˈpjaɾ"
+    },
+    {
+      "es": "Canto muy mal, pero me gusta mucho cantar.",
+      "ru": "Пою я очень плохо, но петь очень люблю.",
+      "ipa": "ˈkanto ˈmuj ˈmal · ˈpeɾo me ˈgusta ˈmutʃo kanˈtaɾ"
+    },
+    {
+      "es": "Hoy no quiero trabajar. Hoy quiero descansar.",
+      "ru": "Сегодня я не хочу работать. Сегодня я хочу отдыхать.",
+      "ipa": "ˈoj no ˈkjeɾo tɾabaˈxaɾ · ˈoj ˈkjeɾo deskanˈsaɾ"
+    },
+    {
+      "es": "¿Madrugar? A mí no me gusta.",
+      "ru": "Рано вставать? Нет, это не для меня.",
+      "ipa": "madɾuˈgaɾ · a ˈmi no me ˈgusta"
+    }
+  ],
+  "culture": {
+    "kind": "refrán",
+    "title": "Кто рано встаёт…",
+    "es": "A quien madruga, Dios le ayuda.",
+    "ipa": "a kjen maˈdɾuga ˈdjos le aˈjuda",
+    "ru": "Кто рано встаёт, тому Бог подаёт.",
+    "text": "Самая известная испанская пословица про madrugar. Но у тех, кто не любит рано вставать, есть ответ — другая пословица: «No por mucho madrugar amanece más temprano». Дословно: «Сколько ни вставай рано, раньше не рассветёт», то есть всему своё время."
+  },
+  "yourTurn": {
+    "task": "Напишите три вещи, которые вы любите делать, и три, которые не любите. Потом прочитайте их вслух.",
+    "template": ["Me gusta…", "Me gusta mucho…", "No me gusta…"],
+    "model": [
+      { "es": "Me gusta mucho viajar.", "ru": "Я очень люблю путешествовать." },
+      { "es": "Me gusta leer y nadar.", "ru": "Мне нравится читать и плавать." },
+      { "es": "Me gusta pasear.", "ru": "Мне нравится гулять." },
+      { "es": "No me gusta madrugar.", "ru": "Я не люблю рано вставать." },
+      { "es": "No me gusta esperar.", "ru": "Я не люблю ждать." },
+      { "es": "No me gusta ir de compras.", "ru": "Я не люблю ходить по магазинам." }
+    ]
+  }
+}

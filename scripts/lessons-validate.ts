@@ -10,9 +10,12 @@
  *   - planLesson = number − начало уровня + 1;
  *   - пара level + planLesson не повторяется.
  *
- * Номер в имени файла сверяет сам parse.ts. Код выхода 1, если есть ошибки.
+ * Номер в имени файла сверяет сам parse.ts. Заодно проверяются допматериалы
+ * extras/*.json (scripts/extras.ts): у каждого есть урок, формат и лимиты
+ * соблюдены. Код выхода 1, если есть ошибки.
  */
 import { deriveLesson } from '../src/features/lessons/derive.ts'
+import { loadExtras } from './extras.ts'
 import { LEVEL_RANGES, loadLessons } from './lessons.ts'
 
 const { lessons, errors } = loadLessons(deriveLesson)
@@ -44,9 +47,12 @@ for (const { file, lesson } of lessons) {
   }
 }
 
+const { extras, errors: extraErrors } = loadExtras(lessons.map(({ lesson }) => lesson))
+errors.push(...extraErrors)
+
 if (errors.length > 0) {
   for (const error of errors) console.error(`✗ ${error}`)
   console.error(`\nОшибок: ${errors.length}`)
   process.exit(1)
 }
-console.log(`✓ Уроков: ${lessons.length}, ошибок нет`)
+console.log(`✓ Уроков: ${lessons.length}, доп. материалов: ${extras.length}, ошибок нет`)
