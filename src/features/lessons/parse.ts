@@ -282,6 +282,32 @@ function summary(file: string, raw: Record<string, unknown>): void {
   })
 }
 
+function handoutTables(file: string, raw: Record<string, unknown>): void {
+  if (raw.handoutTables === undefined) return
+  if (!Array.isArray(raw.handoutTables)) throw new LessonError(file, 'handoutTables — массив таблиц')
+  raw.handoutTables.forEach((table, t) => {
+    const where = `${file}, handoutTables[${t}]`
+    if (!isObject(table)) throw new LessonError(where, 'таблица должна быть объектом')
+    str(where, table, 'title')
+    const columns = list(where, table, 'columns')
+    columns.forEach((column, i) => {
+      if (typeof column !== 'string' || column === '') {
+        throw new LessonError(`${where}, columns[${i}]`, 'подпись колонки — непустая строка')
+      }
+    })
+    list(where, table, 'rows').forEach((row, r) => {
+      const at = `${where}, rows[${r}]`
+      if (!isObject(row)) throw new LessonError(at, 'строка должна быть объектом { label, cells }')
+      str(at, row, 'label')
+      const cells = list(at, row, 'cells')
+      if (cells.length !== columns.length) {
+        throw new LessonError(at, `ячеек: ${cells.length}, а колонок: ${columns.length}`)
+      }
+      cells.forEach((cell, i) => phrase(`${at}, cells[${i}]`, cell, { ipa: false, ru: false }))
+    })
+  })
+}
+
 /**
  * @param file имя файла — попадает в текст ошибки
  * @param expectedNumber номер из имени файла: lesson-07.json → 7
@@ -316,6 +342,7 @@ export function parseLesson(file: string, expectedNumber: number, raw: unknown):
   str(file, raw, 'course')
   vocabulary(file, raw)
   summary(file, raw)
+  handoutTables(file, raw)
 
   if (!isObject(raw.speakers)) throw new LessonError(file, 'нет объекта speakers')
   for (const [key, name] of Object.entries(raw.speakers)) {

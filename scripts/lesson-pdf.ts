@@ -2,6 +2,7 @@
  * PDF-конспект урока для печати на A4: `npm run lessons:pdf -- N [--html]`.
  *
  * Порядок: шапка → теория (table, rule, conjugation, compare по разделам) →
+ * сводные таблицы (handoutTables) →
  * практика «переведи сам» с пустой колонкой → диалоги → новые слова →
  * итог урока → ответы с новой страницы. `notes` в конспект не попадают.
  *
@@ -163,6 +164,27 @@ function renderTheory(lesson: LessonSource): string {
   return parts.join('')
 }
 
+/** Сводные таблицы: подписи строк слева, в ячейке «es — ru». */
+function renderHandoutTables(lesson: LessonSource): string {
+  return (lesson.handoutTables ?? [])
+    .map((table) => {
+      const head = table.columns.map((column) => `<th>${escape(column)}</th>`).join('')
+      const rows = table.rows.map((row) => {
+        const cells = row.cells
+          .map(
+            (cell) =>
+              `<td><span class="es">${marked(cell.es)}</span>${cell.ru ? ` — <span class="ru">${marked(cell.ru)}</span>` : ''}</td>`,
+          )
+          .join('')
+        return `<tr><td class="label">${escape(row.label)}</td>${cells}</tr>`
+      })
+      return `<section class="block"><h2>${escape(table.title)}</h2>
+<table class="grid"><thead><tr><th></th>${head}</tr></thead>
+${tbody(rows)}</table></section>`
+    })
+    .join('')
+}
+
 interface Task {
   n: number
   slide: PracticeSlideSource
@@ -302,6 +324,7 @@ function renderOutcome(lesson: LessonSource): string {
 const STYLE = `
 col.c-es { width: 38%; } col.c-ipa { width: 27%; }
 td.pronoun { color: #555; width: 30%; }
+.grid td.label { color: #555; width: 30%; }
 .pattern { margin: 1mm 0 2mm; }
 .pattern span { display: inline-block; padding: .6mm 2.5mm; border-radius: 1.5mm; margin-right: 1.5mm; }
 .pattern .chip { background: #f3dcd5; font-weight: 600; }
@@ -327,6 +350,7 @@ function renderHandout(lesson: LessonSource, all: LessonSource[]): string {
     STYLE,
     `${renderHeader(lesson, meta)}
 ${renderTheory(lesson)}
+${renderHandoutTables(lesson)}
 ${renderPractice(lesson, false)}
 ${renderDialogues(lesson)}
 ${renderVocabulary(lesson, all)}

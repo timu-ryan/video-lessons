@@ -272,6 +272,22 @@ export interface SummarySource {
   practice: PracticePhraseSource[]
 }
 
+/** Ячейка сводной таблицы: «**el** libro — книга». */
+export interface HandoutCellSource {
+  es: string
+  ru?: string
+}
+
+/**
+ * Сводная таблица только для полного конспекта, на слайды не выводится:
+ * подписи строк слева, по ячейке на каждую колонку.
+ */
+export interface HandoutTableSource {
+  title: string
+  columns: string[]
+  rows: { label: string; cells: HandoutCellSource[] }[]
+}
+
 export interface LessonSource {
   schemaVersion: number
   /** Сквозной номер урока, 1–84; он же в имени файла. Отдельного `id` нет. */
@@ -297,4 +313,6 @@ export interface LessonSource {
   slides: SlideSource[]
   /** Краткий конспект. Нет блока — выжимка для урока не собирается. */
   summary?: SummarySource
+  /** Сводные таблицы полного конспекта — после теории, перед практикой. */
+  handoutTables?: HandoutTableSource[]
 }

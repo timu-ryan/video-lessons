@@ -543,5 +543,40 @@
         "«Сегодня осмотритесь вокруг и назовите пять предметов по-испански — с артиклем. В следующем уроке научимся говорить, кто вы и какой предмет: глагол ser. ¡Hasta luego!»"
       ]
     }
+  ],
+  "summary": {
+    "phrases": [
+      { "es": "Quiero leer **el libro**.", "ru": "Я хочу почитать книгу.", "ipa": "ˈkjeɾo leˈeɾ el ˈlibɾo" },
+      { "es": "Necesito **la mesa**.", "ru": "Мне нужен стол.", "ipa": "neθeˈsito la ˈmesa" },
+      { "es": "**El perro** y **el gato** descansan.", "ru": "Собака и кот отдыхают.", "ipa": "el ˈpero i el ˈgato desˈkansan" },
+      { "es": "Hoy **el día** termina tarde.", "ru": "Сегодня день заканчивается поздно.", "ipa": "ˈoj el ˈdi.a teɾˈmina ˈtaɾde" },
+      { "es": "Vamos a estudiar **el problema**.", "ru": "Давайте разберём проблему.", "ipa": "ˈbamos a estuˈdjaɾ el pɾoˈblema" },
+      { "es": "Quiero comprar **las flores**.", "ru": "Я хочу купить цветы.", "ipa": "ˈkjeɾo komˈpɾaɾ las ˈfloɾes" },
+      { "es": "Necesito **unos bolígrafos**.", "ru": "Мне нужны ручки.", "ipa": "neθeˈsito ˈunos boˈligɾafos" },
+      { "es": "**Unos amigos** llegan mañana.", "ru": "Завтра приезжают друзья.", "ipa": "ˈunos aˈmigos ˈjegan maˈɲana" }
+    ],
+    "rule": "На **-o** — **el**, на **-a** — **la**: el libro, la casa. Исключения запоминаем: **el día**, **el problema**. Множественное: гласная + **-s**, согласная + **-es**: las flor**es**. **Un / una** — какой-то, впервые; **el / la** — тот самый, уже известный.",
+    "mistake": {
+      "wrong": { "es": "Necesito coche." },
+      "right": { "es": "Necesito **un** coche.", "ru": "Мне нужна машина." }
+    },
+    "practice": [
+      { "ru": "Мы собираемся купить квартиру.", "es": "Vamos a comprar un piso." },
+      { "ru": "Завтра мне нужно закончить работу.", "es": "Mañana tengo que terminar el trabajo." },
+      { "ru": "Мне нравится покупать книги.", "es": "Me gusta comprar libros." },
+      { "ru": "Вы покупаете еду?", "hint": "к нескольким друзьям", "es": "¿Compráis la comida?", "alternatives": ["¿Vosotros compráis la comida?"] }
+    ]
+  },
+  "handoutTables": [
+    {
+      "title": "Артикли: сводная таблица",
+      "columns": ["Единственное число", "Множественное число"],
+      "rows": [
+        { "label": "Мужской род, определённый", "cells": [{ "es": "**el** libro", "ru": "книга" }, { "es": "**los** libros", "ru": "книги" }] },
+        { "label": "Женский род, определённый", "cells": [{ "es": "**la** casa", "ru": "дом" }, { "es": "**las** casas", "ru": "дома" }] },
+        { "label": "Мужской род, неопределённый", "cells": [{ "es": "**un** libro", "ru": "книга" }, { "es": "**unos** libros", "ru": "несколько книг" }] },
+        { "label": "Женский род, неопределённый", "cells": [{ "es": "**una** casa", "ru": "дом" }, { "es": "**unas** casas", "ru": "несколько домов" }] }
+      ]
+    }
   ]
 }
