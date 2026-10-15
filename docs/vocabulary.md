@@ -3,7 +3,7 @@
 > Генерируется командой `npm run vocab:build`. Не редактировать вручную.
 > Готовя урок N, считайте изученным только то, что введено в уроках с номером меньше N.
 
-Уроков: 10 · слов: 187
+Уроков: 10 · слов: 188
 
 ## Урок 1 · A0-1 · Приветствие, знакомство
 
@@ -49,7 +49,7 @@
 
 ## Урок 8 · A0-8 · Предметы: род, число и артикли
 
-**Слова (29):** el libro — книга · el bolígrafo — ручка · el teléfono — телефон · el coche — машина · el piso — квартира · la casa — дом · la mesa — стол · la silla — стул · la cama — кровать · la ventana — окно · la puerta — дверь · el niño — ребёнок, мальчик · la niña — девочка · el amigo — друг · la amiga — подруга · el perro — собака · el gato — кот, кошка · el ordenador — компьютер · el dinero — деньги · el trabajo — работа · la comida — еда · la música — музыка · la flor — цветок · la canción — песня · el día — день · el problema — проблема · la clase — занятие, урок · el / la / los / las — определённый артикль · un / una / unos / unas — неопределённый артикль
+**Слова (30):** el libro — книга · el bolígrafo — ручка · el teléfono — телефон · el coche — машина · el piso — квартира · la casa — дом · la mesa — стол · la silla — стул · la cama — кровать · la ventana — окно · la puerta — дверь · el niño — ребёнок, мальчик · la niña — девочка · el amigo — друг · la amiga — подруга · el perro — собака · el gato — кот, кошка · el ordenador — компьютер · el dinero — деньги · el trabajo — работа · la comida — еда · la música — музыка · la flor — цветок · la canción — песня · el día — день · todo el día — весь день · el problema — проблема · la clase — занятие, урок · el / la / los / las — определённый артикль · un / una / unos / unas — неопределённый артикль
 
 **Грамматика:** род существительных: -o и -a, исключения · множественное число: -s и -es · определённые артикли el, la, los, las · неопределённые артикли un, una, unos, unas
 
@@ -240,6 +240,7 @@
 | tengo que | я должен, мне нужно | phrase | 4 |
 | terminar | заканчивать | verb | 5 |
 | tienes que | ты должен, тебе нужно | phrase | 4 |
+| todo el día | весь день | phrase | 8 |
 | trabajar | работать | verb | 2 |
 | el trabajo | работа | noun | 8 |
 | tú | ты | pron | 2 |
