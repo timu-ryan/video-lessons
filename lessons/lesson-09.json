@@ -65,30 +65,15 @@
       "rows": [
         { "es": "**Soy** **programador**.", "ru": "Я программист.", "ipa": "ˈsoj pɾogɾamaˈdoɾ" },
         { "es": "Quiero **ser** **médico**.", "ru": "Я хочу быть врачом.", "ipa": "ˈkjeɾo ˈseɾ ˈmediko" },
-        { "es": "Ella **es** **profesora**.", "ru": "Она учительница.", "ipa": "ˈeja ˈes pɾofeˈsoɾa" },
-        { "es": "¿**Eres** **ingeniero**?", "ru": "Ты инженер?", "ipa": "ˈeɾes inxeˈnjeɾo" },
-        { "es": "**Somos** **estudiantes**.", "ru": "Мы студенты.", "ipa": "ˈsomos estuˈdjantes" }
+        { "es": "**Soy** **profesora**.", "ru": "Я учительница.", "ipa": "ˈsoj pɾofeˈsoɾa" },
+        { "es": "¿Quieres **ser** **ingeniero**?", "ru": "Ты хочешь быть инженером?", "ipa": "ˈkjeɾes ˈseɾ inxeˈnjeɾo" },
+        { "es": "No **soy** **estudiante**.", "ru": "Я не студент.", "ipa": "no ˈsoj estuˈdjante" }
       ],
       "notes": [
         "«Soy programador — я программист. 🔊 Soy — это «я есть».»",
         "«Ser — начальная форма, «быть». Quiero ser médico — я хочу быть врачом. 🔊 Médico — ударение на é.»",
-        "«Ella es profesora — она учительница. 🔊 ¿Eres ingeniero? — ты инженер? 🔊 Ge перед e читаем как «хе».»",
-        "«Somos estudiantes — мы студенты. 🔊»"
-      ]
-    },
-    {
-      "type": "rule",
-      "title": "Профессия без артикля",
-      "pattern": ["ser", "+", "профессия"],
-      "text": "Артикль перед профессией не ставим.",
-      "examples": [
-        { "es": "**Soy** ingeniero.", "ru": "Я инженер.", "ipa": "ˈsoj inxeˈnjeɾo" },
-        { "es": "Él **es** estudiante.", "ru": "Он студент.", "ipa": "ˈel ˈes estuˈdjante" },
-        { "es": "¿Usted **es** médico?", "ru": "Вы врач?", "ipa": "usˈted ˈes ˈmediko" }
-      ],
-      "notes": [
-        "«Когда говорим, кем человек работает, артикль не нужен. Просто soy ingeniero, es estudiante.»",
-        "«Если знаете английский: там I'm a doctor, с артиклем. В испанском un или una здесь лишние.»"
+        "«Soy profesora — я учительница. 🔊 ¿Quieres ser ingeniero? — ты хочешь быть инженером? 🔊 Ge перед e читаем как «хе».»",
+        "«No soy estudiante — я не студент. 🔊»"
       ]
     },
     {
@@ -104,8 +89,23 @@
         { "pronoun": "ellos / ellas / ustedes", "stem": "", "ending": "son", "ru": "они есть; вы есть", "ipa": "ˈson" }
       ],
       "notes": [
-        "«Ser — глагол неправильный: никакой основы и окончаний, каждую форму просто запоминаем. Soy, eres, es, somos, sois, son.»",
+        "«Soy и ser вы уже видели. Теперь все формы. Ser — глагол неправильный: никакой основы и окончаний, каждую форму просто запоминаем. Soy, eres, es, somos, sois, son.»",
         "«Хорошая новость: это самый частый глагол языка, поэтому формы запомнятся очень быстро.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Профессия без артикля",
+      "pattern": ["ser", "+", "профессия"],
+      "text": "Артикль перед профессией не ставим.",
+      "examples": [
+        { "es": "**Soy** ingeniero.", "ru": "Я инженер.", "ipa": "ˈsoj inxeˈnjeɾo" },
+        { "es": "Él **es** estudiante.", "ru": "Он студент.", "ipa": "ˈel ˈes estuˈdjante" },
+        { "es": "¿Usted **es** médico?", "ru": "Вы врач?", "ipa": "usˈted ˈes ˈmediko" }
+      ],
+      "notes": [
+        "«Когда говорим, кем человек работает, артикль не нужен. Просто soy ingeniero, es estudiante.»",
+        "«Если знаете английский: там I'm a doctor, с артиклем. В испанском un или una здесь лишние.»"
       ]
     },
     {
@@ -165,21 +165,6 @@
       ]
     },
     {
-      "type": "table",
-      "title": "Страны и города",
-      "rows": [
-        { "es": "Soy **de** **Moscú**.", "ru": "Я из Москвы.", "ipa": "ˈsoj de mosˈku" },
-        { "es": "Ella es de **Madrid**.", "ru": "Она из Мадрида.", "ipa": "ˈeja ˈes de maˈdɾid" },
-        { "es": "Somos de **Rusia**.", "ru": "Мы из России.", "ipa": "ˈsomos de ˈrusja" },
-        { "es": "Ellos son de **España**.", "ru": "Они из Испании.", "ipa": "ˈejos ˈson de esˈpaɲa" }
-      ],
-      "notes": [
-        "«De — «из». Soy de Moscú — я из Москвы. 🔊 Ударение на последний слог: Moscú.»",
-        "«Madrid. 🔊 D в конце слова звучит очень мягко, почти не слышна.»",
-        "«Rusia — Россия. 🔊 R в начале слова раскатываем, как rr. España — Испания. 🔊 Ñ — это «нь».»"
-      ]
-    },
-    {
       "type": "rule",
       "title": "ser de + место",
       "pattern": ["ser", "+", "de", "+", "место"],
@@ -192,6 +177,21 @@
       "notes": [
         "«Помните вопрос ¿de dónde eres? — «откуда ты?» Теперь понятно: eres — это «ты есть», а de — «из».»",
         "«Меняем форму ser — и можем сказать, откуда кто угодно: es de, somos de, son de.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Страны и города",
+      "rows": [
+        { "es": "Soy **de** **Moscú**.", "ru": "Я из Москвы.", "ipa": "ˈsoj de mosˈku" },
+        { "es": "Ella es de **Madrid**.", "ru": "Она из Мадрида.", "ipa": "ˈeja ˈes de maˈdɾid" },
+        { "es": "Somos de **Rusia**.", "ru": "Мы из России.", "ipa": "ˈsomos de ˈrusja" },
+        { "es": "Ellos son de **España**.", "ru": "Они из Испании.", "ipa": "ˈejos ˈson de esˈpaɲa" }
+      ],
+      "notes": [
+        "«De — «из». Soy de Moscú — я из Москвы. 🔊 Ударение на последний слог: Moscú.»",
+        "«Madrid. 🔊 D в конце слова звучит очень мягко, почти не слышна.»",
+        "«Rusia — Россия. 🔊 R в начале слова раскатываем, как rr. España — Испания. 🔊 Ñ — это «нь».»"
       ]
     },
     {
