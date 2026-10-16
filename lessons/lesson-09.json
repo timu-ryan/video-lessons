@@ -520,5 +520,29 @@
         "«В следующем уроке выучим ещё две группы глаголов и научимся говорить, где живём и что едим. ¡Adiós!»"
       ]
     }
-  ]
+  ],
+  "summary": {
+    "phrases": [
+      { "es": "**Soy** programador.", "ru": "Я программист.", "ipa": "ˈsoj pɾogɾamaˈdoɾ" },
+      { "es": "Quiero **ser** médico.", "ru": "Я хочу быть врачом.", "ipa": "ˈkjeɾo ˈseɾ ˈmediko" },
+      { "es": "Soy **de** Moscú.", "ru": "Я из Москвы.", "ipa": "ˈsoj de mosˈku" },
+      { "es": "Ellos **son de** España.", "ru": "Они из Испании.", "ipa": "ˈejos ˈson de esˈpaɲa" },
+      { "es": "Ella es **rusa**.", "ru": "Она русская.", "ipa": "ˈeja ˈes ˈrusa" },
+      { "es": "Somos **ingleses**.", "ru": "Мы англичане.", "ipa": "ˈsomos inˈgleses" },
+      { "es": "La mesa es **pequeña**.", "ru": "Стол маленький.", "ipa": "la ˈmesa ˈes peˈkeɲa" },
+      { "es": "El coche es **nuevo**.", "ru": "Машина новая.", "ipa": "el ˈkotʃe ˈes ˈnwebo" }
+    ],
+    "rule": "**Ser** — «быть»: **soy, eres, es, somos, sois, son**. Профессия — без артикля: soy programador. Откуда — **ser de**: soy de Moscú. Прилагательное стоит после существительного и согласуется с ним: un coche **nuevo**, las casas **pequeñas**.",
+    "mistake": {
+      "wrong": { "es": "Soy **un** programador." },
+      "right": { "es": "Soy programador.", "ru": "Я программист." }
+    },
+    "practice": [
+      { "ru": "Она испанка, но говорит по-русски.", "es": "Ella es española, pero habla ruso." },
+      { "ru": "Мне нужна новая машина.", "es": "Necesito un coche nuevo." },
+      { "ru": "Квартира красивая, но очень дорогая.", "es": "El piso es bonito, pero muy caro.", "alternatives": ["El piso es bonito, pero es muy caro."] },
+      { "ru": "Карлос инженер и много работает.", "es": "Carlos es ingeniero y trabaja mucho." },
+      { "ru": "Вы из России?", "hint": "к нескольким друзьям", "es": "¿Sois de Rusia?", "alternatives": ["¿Vosotros sois de Rusia?"] }
+    ]
+  }
 }
