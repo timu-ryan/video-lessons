@@ -58,6 +58,7 @@ function checkIpa() {
     for (const [index, slide] of lesson.slides.entries()) {
       const phrases = [
         ...(slide.rows ?? []),
+        ...(slide.rows ?? []).flatMap((row) => row.forms ?? []),
         ...(slide.lines ?? []),
         ...(slide.examples ?? []),
         ...(slide.left?.items ?? []),

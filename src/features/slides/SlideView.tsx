@@ -1,6 +1,7 @@
 import type { Slide } from './types'
 import type { ViewOptions } from './views/options'
 import { CompareView } from './views/CompareView'
+import { ConjugationCompareView } from './views/ConjugationCompareView'
 import { ConjugationView } from './views/ConjugationView'
 import { DialogueView } from './views/DialogueView'
 import { FinalView } from './views/FinalView'
@@ -31,6 +32,8 @@ export function SlideView({
       return <RuleView slide={slide} step={step} options={options} />
     case 'conjugation':
       return <ConjugationView slide={slide} step={step} options={options} />
+    case 'conjugationCompare':
+      return <ConjugationCompareView slide={slide} step={step} options={options} />
     case 'compare':
       return <CompareView slide={slide} step={step} options={options} />
     case 'practice':

@@ -14,6 +14,7 @@ export function stepCount(slide: Slide): number {
     case 'rule':
       return slide.examples.length + 1 // 0: формула и пояснение, дальше примеры по одному
     case 'conjugation':
+    case 'conjugationCompare':
       return slide.rows.length
     case 'compare':
       // Пункты идут парами; короткая колонка просто кончается раньше.
@@ -43,6 +44,7 @@ export function slideLabel(slide: Slide): string {
     case 'table':
       return slide.part ? `${slide.title} ${slide.part[0]}/${slide.part[1]}` : slide.title
     case 'rule':
+    case 'conjugationCompare':
     case 'compare':
       return slide.title
     case 'conjugation':

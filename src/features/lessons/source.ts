@@ -140,6 +140,32 @@ export interface ConjugationSlideSource extends SlideSourceBase {
   rows: ConjugationRowSource[]
 }
 
+/** Форма глагола в сравнении спряжений: основа + окончание, без перевода. */
+export interface VerbFormSource {
+  stem: string
+  ending: string
+  ipa?: string
+}
+
+export interface ConjugationCompareRowSource {
+  pronoun: string
+  /** Формы по порядку `verbs`: forms[0] — первого глагола, forms[1] — второго. */
+  forms: VerbFormSource[]
+}
+
+/**
+ * Спряжение двух глаголов рядом: hablar и comer, comer и vivir. До 6 строк,
+ * у каждой строки — местоимение и форма каждого глагола. Перевод — только
+ * у инфинитивов в шапке колонок: лицо и так видно по местоимению.
+ */
+export interface ConjugationCompareSlideSource extends SlideSourceBase {
+  type: 'conjugationCompare'
+  title: string
+  /** Ровно два глагола: { verb: "hablar", ru: "говорить" }. */
+  verbs: { verb: string; ru: string }[]
+  rows: ConjugationCompareRowSource[]
+}
+
 /** Пункт колонки сравнения. `ru` не обязателен: у неверного варианта перевода нет. */
 export interface CompareItemSource {
   es: string
@@ -207,6 +233,7 @@ export type SlideSource =
   | TableSlideSource
   | RuleSlideSource
   | ConjugationSlideSource
+  | ConjugationCompareSlideSource
   | CompareSlideSource
   | PracticeSlideSource
   | DialogueSlideSource

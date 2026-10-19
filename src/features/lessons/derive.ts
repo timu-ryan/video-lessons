@@ -113,6 +113,16 @@ export function deriveLesson(source: LessonSource): Lesson {
           rows: raw.rows.map((row) => ({ ...row, es: `${row.stem}${row.ending}` })),
         }
 
+      case 'conjugationCompare':
+        return {
+          ...base,
+          type: 'conjugationCompare',
+          title: raw.title,
+          section,
+          verbs: raw.verbs,
+          rows: raw.rows,
+        }
+
       case 'compare':
         return {
           ...base,

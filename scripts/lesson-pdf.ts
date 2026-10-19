@@ -1,7 +1,8 @@
 /**
  * PDF-конспект урока для печати на A4: `npm run lessons:pdf -- N [--html]`.
  *
- * Порядок: шапка → теория (table, rule, conjugation, compare по разделам) →
+ * Порядок: шапка → теория (table, rule, conjugation, conjugationCompare,
+ * compare по разделам) →
  * сводные таблицы (handoutTables) →
  * практика «переведи сам» с пустой колонкой → диалоги → новые слова →
  * итог урока → ответы с новой страницы. `notes` в конспект не попадают.
@@ -13,6 +14,7 @@
 import { relative } from 'node:path'
 import { chromium } from 'playwright'
 import type {
+  ConjugationCompareSlideSource,
   ConjugationSlideSource,
   DialogueSlideSource,
   LessonSource,
@@ -113,6 +115,26 @@ function renderConjugation(slide: ConjugationSlideSource): string {
 <table class="words"><tbody>${rows}</tbody></table></div>`
 }
 
+/** Два глагола рядом: у каждого — форма и транскрипция, перевод — в шапке. */
+function renderConjugationCompare(slide: ConjugationCompareSlideSource): string {
+  const head = slide.verbs
+    .map((verb) => `<th colspan="2"><span class="es">${escape(verb.verb)}</span> — ${escape(verb.ru)}</th>`)
+    .join('')
+  const rows = slide.rows
+    .map((row) => {
+      const forms = row.forms
+        .map(
+          (form) =>
+            `<td class="es">${escape(form.stem)}<strong>${escape(form.ending)}</strong></td><td>${ipa(form.ipa)}</td>`,
+        )
+        .join('')
+      return `<tr><td class="pronoun">${escape(row.pronoun)}</td>${forms}</tr>`
+    })
+    .join('')
+  return `<div class="block"><h3>${escape(slide.title)}</h3>
+<table class="words"><thead><tr><th></th>${head}</tr></thead><tbody>${rows}</tbody></table></div>`
+}
+
 function renderTheory(lesson: LessonSource): string {
   const parts: string[] = []
   let section = ''
@@ -152,6 +174,9 @@ function renderTheory(lesson: LessonSource): string {
         break
       case 'conjugation':
         pending.push(renderConjugation(slide))
+        break
+      case 'conjugationCompare':
+        pending.push(renderConjugationCompare(slide))
         break
       case 'compare':
         pending.push(renderCompare(slide.title, slide.left, slide.right))
@@ -240,11 +265,15 @@ function renderDialogues(lesson: LessonSource): string {
   return `<section><h2>Диалоги</h2>${body}</section>`
 }
 
-/** «¿Cómo te llamas?» и «¿cómo te llamas?» — одно и то же. */
+/**
+ * «¿Cómo te llamas?» и «¿cómo te llamas?» — одно и то же. Тире убираем:
+ * в «vender — Vendo un coche.» слов столько же, сколько в «benˈdeɾ · ˈbendo un ˈkotʃe».
+ */
 const wordKey = (text: string): string =>
   plainText(text)
     .toLowerCase()
-    .replace(/[¿?¡!.,…]/g, '')
+    .replace(/[¿?¡!.,…—]/g, '')
+    .replace(/\s+/g, ' ')
     .trim()
 
 /** Все фразы урока с транскрипцией; таблицы первыми — это новые слова. */
@@ -258,6 +287,9 @@ function phrasesWithIpa(lesson: LessonSource): { es: string; ipa: string }[] {
     if (slide.type === 'compare') rest.push(...slide.left.items, ...slide.right.items)
     if (slide.type === 'conjugation') {
       rest.push(...slide.rows.map((row) => ({ es: row.stem + row.ending, ipa: row.ipa })))
+    }
+    if (slide.type === 'conjugationCompare') {
+      rest.push(...slide.rows.flatMap((row) => row.forms.map((f) => ({ es: f.stem + f.ending, ipa: f.ipa }))))
     }
   }
   return [...tables, ...rest].filter((p): p is { es: string; ipa: string } => Boolean(p.ipa))

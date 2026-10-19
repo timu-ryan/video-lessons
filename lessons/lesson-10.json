@@ -9,10 +9,10 @@
     { "es": "vivir", "ru": "жить", "pos": "verb" },
     { "es": "beber", "ru": "пить", "pos": "verb" },
     { "es": "escribir", "ru": "писать", "pos": "verb" },
-    { "es": "comprender", "ru": "понимать", "pos": "verb", "ipa": "kompɾenˈdeɾ" },
-    { "es": "abrir", "ru": "открывать", "pos": "verb", "ipa": "aˈbɾiɾ" },
-    { "es": "recibir", "ru": "получать", "pos": "verb", "ipa": "reθiˈbiɾ" },
-    { "es": "vender", "ru": "продавать", "pos": "verb", "ipa": "benˈdeɾ" },
+    { "es": "comprender", "ru": "понимать", "pos": "verb" },
+    { "es": "abrir", "ru": "открывать", "pos": "verb" },
+    { "es": "recibir", "ru": "получать", "pos": "verb" },
+    { "es": "vender", "ru": "продавать", "pos": "verb" },
     { "es": "correr", "ru": "бегать", "pos": "verb" },
     { "es": "en", "ru": "в, на (где?)", "pos": "prep" },
     { "es": "el café", "ru": "кофе", "pos": "noun" },
@@ -55,22 +55,6 @@
       ]
     },
     {
-      "type": "rule",
-      "title": "Спряжение на -er",
-      "pattern": ["основа", "+", "окончание"],
-      "text": "Убираем -er и добавляем окончание лица: comer → como.",
-      "examples": [
-        { "es": "**Como** poco.", "ru": "Я мало ем.", "ipa": "ˈkomo ˈpoko" },
-        { "es": "Ella **lee** mucho.", "ru": "Она много читает.", "ipa": "ˈeja ˈle.e ˈmutʃo" },
-        { "es": "¿**Aprendes** español?", "ru": "Ты учишь испанский?", "ipa": "aˈpɾendes espaˈɲol" }
-      ],
-      "notes": [
-        "«Схема та же, что с -ar. Берём глагол, убираем -er — остаётся основа. Потом добавляем окончание, которое показывает, кто действует.»",
-        "«Comer: убираем -er, остаётся com-. Я ем — como. Как и с -ar, «я» отдельно говорить не нужно: окончание -o уже говорит, что это я.»",
-        "🔊 «Como poco. Ella lee mucho. ¿Aprendes español?»"
-      ]
-    },
-    {
       "type": "conjugation",
       "verb": "comer",
       "ru": "есть",
@@ -83,42 +67,59 @@
         { "pronoun": "ellos / ellas / ustedes", "stem": "com", "ending": "en", "ru": "они едят", "ipa": "ˈkomen" }
       ],
       "notes": [
+        "«Схема та же, что с -ar. Берём глагол, убираем -er — остаётся основа com-. Потом добавляем окончание, которое показывает, кто действует.»",
         "«Вот все формы. Como, comes, come, comemos, coméis, comen.»",
+        "«Как и с -ar, «я» отдельно говорить не нужно: окончание -o уже говорит, что это я.»",
         "«Обратите внимание на ударение: в «мы» оно падает на окончание — comemos, а в «вы» над e стоит знак — coméis.»"
       ]
     },
     {
-      "type": "compare",
-      "title": "-ar и -er",
-      "left": {
-        "label": "-ar: hablar",
-        "items": [
-          { "es": "habl**as**", "ru": "ты говоришь" },
-          { "es": "habl**a**", "ru": "он говорит" },
-          { "es": "habl**amos**", "ru": "мы говорим" }
-        ]
-      },
-      "right": {
-        "label": "-er: comer",
-        "items": [
-          { "es": "com**es**", "ru": "ты ешь" },
-          { "es": "com**e**", "ru": "он ест" },
-          { "es": "com**emos**", "ru": "мы едим" }
-        ]
-      },
+      "type": "table",
+      "title": "Ем, читаю, учу",
+      "rows": [
+        { "es": "**Como** poco.", "ru": "Я мало ем.", "ipa": "ˈkomo ˈpoko" },
+        { "es": "¿**Aprendes** español?", "ru": "Ты учишь испанский?", "ipa": "aˈpɾendes espaˈɲol" },
+        { "es": "Ella **lee** mucho.", "ru": "Она много читает.", "ipa": "ˈeja ˈle.e ˈmutʃo" },
+        { "es": "Hoy **comemos** poco.", "ru": "Сегодня мы мало едим.", "ipa": "ˈoj koˈmemos ˈpoko" },
+        { "es": "Ellos **aprenden** inglés.", "ru": "Они учат английский.", "ipa": "ˈejos aˈpɾenden inˈgles" }
+      ],
       "notes": [
-        "«Сравните с глаголами на -ar. Разница почти одна: там, где у -ar была буква a, у -er появляется e.»",
-        "«Hablas — comes. Habla — come. Hablamos — comemos. А «я» у обеих групп одинаковое: hablo, como.»"
+        "«Теперь те же окончания в предложениях. Leer и aprender спрягаются точно так же, как comer.»",
+        "«Como poco — я мало ем. 🔊 ¿Aprendes español? — ты учишь испанский? 🔊»",
+        "«Ella lee mucho. 🔊 Две e подряд, и каждую произносим: le-e.»",
+        "«Hoy comemos poco. 🔊 Ellos aprenden inglés. 🔊»"
+      ]
+    },
+    {
+      "type": "conjugationCompare",
+      "title": "-ar и -er",
+      "verbs": [
+        { "verb": "hablar", "ru": "говорить" },
+        { "verb": "comer", "ru": "есть" }
+      ],
+      "rows": [
+        { "pronoun": "yo", "forms": [{ "stem": "habl", "ending": "o", "ipa": "ˈablo" }, { "stem": "com", "ending": "o", "ipa": "ˈkomo" }] },
+        { "pronoun": "tú", "forms": [{ "stem": "habl", "ending": "as", "ipa": "ˈablas" }, { "stem": "com", "ending": "es", "ipa": "ˈkomes" }] },
+        { "pronoun": "él / ella / usted", "forms": [{ "stem": "habl", "ending": "a", "ipa": "ˈabla" }, { "stem": "com", "ending": "e", "ipa": "ˈkome" }] },
+        { "pronoun": "nosotros / nosotras", "forms": [{ "stem": "habl", "ending": "amos", "ipa": "aˈblamos" }, { "stem": "com", "ending": "emos", "ipa": "koˈmemos" }] },
+        { "pronoun": "vosotros / vosotras", "forms": [{ "stem": "habl", "ending": "áis", "ipa": "aˈblais" }, { "stem": "com", "ending": "éis", "ipa": "koˈmeis" }] },
+        { "pronoun": "ellos / ellas / ustedes", "forms": [{ "stem": "habl", "ending": "an", "ipa": "ˈablan" }, { "stem": "com", "ending": "en", "ipa": "ˈkomen" }] }
+      ],
+      "notes": [
+        "«Теперь сравним все формы с глаголами на -ar. Разница почти одна: там, где у -ar была буква a, у -er появляется e.»",
+        "«Hablo — como: «я» у обеих групп одинаковое. Hablas — comes. Habla — come.»",
+        "«Hablamos — comemos. Habláis — coméis: знак ударения стоит на том же месте. Hablan — comen.»",
+        "«Итак, в окончаниях a меняется на e. Кроме «я»: там у обеих групп -o.»"
       ]
     },
     {
       "type": "table",
       "title": "Новые глаголы на -er",
       "rows": [
-        { "es": "Quiero **beber**.", "ru": "Я хочу пить.", "ipa": "ˈkjeɾo beˈbeɾ" },
-        { "es": "**Vendo** un coche.", "ru": "Я продаю машину.", "ipa": "ˈbendo un ˈkotʃe" },
-        { "es": "Ella **corre** mucho.", "ru": "Она много бегает.", "ipa": "ˈeja ˈkore ˈmutʃo" },
-        { "es": "No **comprendo**.", "ru": "Я не понимаю.", "ipa": "no komˈpɾendo" }
+        { "es": "beber — Quiero **beber**.", "ru": "Я хочу пить.", "ipa": "beˈbeɾ · ˈkjeɾo beˈbeɾ" },
+        { "es": "vender — **Vendo** un coche.", "ru": "Я продаю машину.", "ipa": "benˈdeɾ · ˈbendo un ˈkotʃe" },
+        { "es": "correr — Ella **corre** mucho.", "ru": "Она много бегает.", "ipa": "koˈreɾ · ˈeja ˈkore ˈmutʃo" },
+        { "es": "comprender — No **comprendo**.", "ru": "Я не понимаю.", "ipa": "kompɾenˈdeɾ · no komˈpɾendo" }
       ],
       "notes": [
         "«Теперь новые глаголы на -er — сразу в предложениях.»",
@@ -171,27 +172,24 @@
       ]
     },
     {
-      "type": "compare",
+      "type": "conjugationCompare",
       "title": "-er и -ir",
-      "left": {
-        "label": "-er: comer",
-        "items": [
-          { "es": "com**e**", "ru": "он ест" },
-          { "es": "com**emos**", "ru": "мы едим" },
-          { "es": "com**éis**", "ru": "вы едите" }
-        ]
-      },
-      "right": {
-        "label": "-ir: vivir",
-        "items": [
-          { "es": "viv**e**", "ru": "он живёт" },
-          { "es": "viv**imos**", "ru": "мы живём" },
-          { "es": "viv**ís**", "ru": "вы живёте" }
-        ]
-      },
+      "verbs": [
+        { "verb": "comer", "ru": "есть" },
+        { "verb": "vivir", "ru": "жить" }
+      ],
+      "rows": [
+        { "pronoun": "yo", "forms": [{ "stem": "com", "ending": "o", "ipa": "ˈkomo" }, { "stem": "viv", "ending": "o", "ipa": "ˈbibo" }] },
+        { "pronoun": "tú", "forms": [{ "stem": "com", "ending": "es", "ipa": "ˈkomes" }, { "stem": "viv", "ending": "es", "ipa": "ˈbibes" }] },
+        { "pronoun": "él / ella / usted", "forms": [{ "stem": "com", "ending": "e", "ipa": "ˈkome" }, { "stem": "viv", "ending": "e", "ipa": "ˈbibe" }] },
+        { "pronoun": "nosotros / nosotras", "forms": [{ "stem": "com", "ending": "emos", "ipa": "koˈmemos" }, { "stem": "viv", "ending": "imos", "ipa": "biˈbimos" }] },
+        { "pronoun": "vosotros / vosotras", "forms": [{ "stem": "com", "ending": "éis", "ipa": "koˈmeis" }, { "stem": "viv", "ending": "ís", "ipa": "biˈbis" }] },
+        { "pronoun": "ellos / ellas / ustedes", "forms": [{ "stem": "com", "ending": "en", "ipa": "ˈkomen" }, { "stem": "viv", "ending": "en", "ipa": "ˈbiben" }] }
+      ],
       "notes": [
-        "«Первая строка: come — vive. Одинаковое окончание.»",
-        "«А вот «мы» и «вы» отличаются: comemos — vivimos, coméis — vivís. Правило простое: в этих формах остаётся буква из инфинитива. Comer — e, vivir — i.»"
+        "«Сравним все формы с comer. Como — vivo, comes — vives, come — vive. Окончания одинаковые.»",
+        "«А вот «мы» и «вы» отличаются: comemos — vivimos, coméis — vivís. Правило простое: в этих формах остаётся буква из инфинитива. Comer — e, vivir — i.»",
+        "«А «они» снова одинаковое: comen — viven.»"
       ]
     },
     {
@@ -200,25 +198,29 @@
       "left": {
         "label": "так не говорят",
         "tone": "wrong",
-        "items": [{ "es": "Nosotros **vivemos**." }]
+        "items": [{ "es": "Nosotros **vivemos**." }, { "es": "Vosotros **vivéis**." }]
       },
       "right": {
         "label": "так говорят",
         "tone": "right",
-        "items": [{ "es": "Nosotros **vivimos**.", "ru": "Мы живём." }]
+        "items": [
+          { "es": "Nosotros **vivimos**.", "ru": "Мы живём." },
+          { "es": "Vosotros **vivís**.", "ru": "Вы живёте." }
+        ]
       },
       "notes": [
-        "«Самая частая ошибка — сказать «vivemos» по аналогии с comemos. Вспоминайте инфинитив: vivir, значит vivimos.»"
+        "«Самая частая ошибка — сказать «vivemos» по аналогии с comemos. Вспоминайте инфинитив: vivir, значит vivimos.»",
+        "«То же с «вы»: не vivéis, а vivís — снова буква i из инфинитива.»"
       ]
     },
     {
       "type": "table",
       "title": "Новые глаголы на -ir",
       "rows": [
-        { "es": "**Vivo** en Moscú.", "ru": "Я живу в Москве.", "ipa": "ˈbibo en mosˈku" },
-        { "es": "Ella **escribe** un libro.", "ru": "Она пишет книгу.", "ipa": "ˈeja esˈkɾibe un ˈlibɾo" },
-        { "es": "**Abro** el libro.", "ru": "Я открываю книгу.", "ipa": "ˈabɾo el ˈlibɾo" },
-        { "es": "Los niños **reciben** libros.", "ru": "Дети получают книги.", "ipa": "los ˈniɲos reˈθiben ˈlibɾos" }
+        { "es": "vivir — **Vivo** en Moscú.", "ru": "Я живу в Москве.", "ipa": "biˈbiɾ · ˈbibo en mosˈku" },
+        { "es": "escribir — Ella **escribe** un libro.", "ru": "Она пишет книгу.", "ipa": "eskɾiˈbiɾ · ˈeja esˈkɾibe un ˈlibɾo" },
+        { "es": "abrir — **Abro** el libro.", "ru": "Я открываю книгу.", "ipa": "aˈbɾiɾ · ˈabɾo el ˈlibɾo" },
+        { "es": "recibir — Los niños **reciben** libros.", "ru": "Дети получают книги.", "ipa": "reθiˈbiɾ · los ˈniɲos reˈθiben ˈlibɾos" }
       ],
       "notes": [
         "«Vivo en Moscú — я живу в Москве. 🔊»",

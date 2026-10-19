@@ -40,7 +40,8 @@ B1 — 65–84. `planLesson` — номер внутри уровня по пл�
    - `practiceGroups` — по заголовкам блоков `practice`, в порядке появления,
      без `pauseMs`;
    - `ipa` по конвенции раздела 8 справочника: в `table` всегда, на A0 — также
-     в `rule`, `conjugation`, `practice`. Кастильская широкая запись, никаких
+     в `rule`, `conjugation`, `conjugationCompare`, `practice`. Кастильская
+     широкая запись, никаких
      `β ð ɣ ʎ`.
    - `ipa` в `newVocabulary` — только у слов, которые не встречаются
      отдельным словом во фразах урока с `ipa` (инфинитив, который на слайдах
@@ -78,11 +79,12 @@ B1 — 65–84. `planLesson` — номер внутри уровня по пл�
   и `docs/lessons-guide.md`, затем в эталоне и формате сценария.
 - PDF-конспекты для учеников (PDF в git; `--html` сохраняет HTML для отладки).
   `/notes NN` собирает оба и переименовывает в «Урок N — полный конспект.pdf»
-  и «Урок N — краткий конспект.pdf», как у урока 1:
+  и «Урок N — краткий конспект.pdf» (+ `.png`), как у урока 1:
   - полный: `/notes NN` или `npm run lessons:pdf -- NN` →
     `handouts/free|paid/lesson-NN.pdf`;
   - краткий (выжимка на 1 страницу, из блока `summary`): `/summary NN` или
-    `npm run lessons:summary -- [NN] [--ipa]` → `handouts/free/lesson-NN-summary.pdf`.
+    `npm run lessons:summary -- [NN] [--ipa]` → `handouts/free/lesson-NN-summary.pdf`
+    и картинка той же страницы `lesson-NN-summary.png` для поста (нужен `pdftoppm`).
   - дополнительные материалы (платно, для всех уроков): `/extra NN` составляет
     `extras/lesson-NN.json` и собирает `npm run lessons:extra -- NN` →
     `handouts/paid/Урок N — дополнительные материалы.pdf`.

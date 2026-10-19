@@ -19,6 +19,7 @@ const SLIDE_FIELDS = {
   table: ['title', 'rows'],
   rule: ['title', 'pattern', 'examples'],
   conjugation: ['verb', 'ru', 'rows'],
+  conjugationCompare: ['title', 'verbs', 'rows'],
   compare: ['title', 'left', 'right'],
   practice: ['group', 'phrase'],
   dialogue: ['title', 'lines'],
@@ -30,6 +31,8 @@ const COMPARE_TONES = ['wrong', 'right']
 /** Сколько помещается в холст 1920×1080 — по типам слайдов. */
 const MAX_TABLE_ROWS = 5
 const MAX_CONJUGATION_ROWS = 6
+/** Две колонки форм рядом с местоимением — третья в ширину уже не входит. */
+const COMPARED_VERBS = 2
 const MAX_RULE_EXAMPLES = 3
 const MAX_COMPARE_ITEMS = 3
 const MAX_ALTERNATIVES = 2
@@ -100,10 +103,8 @@ export function phrase(where: string, value: unknown, rules: PhraseRules): Recor
   return value
 }
 
-function conjugationRow(where: string, value: unknown, ipa: boolean): void {
-  if (!isObject(value)) throw new LessonError(where, 'строка спряжения должна быть объектом')
-  str(where, value, 'pronoun')
-  str(where, value, 'ru')
+/** Форма глагола: stem + ending, у неправильной формы основа может быть пустой. */
+function verbForm(where: string, value: Record<string, unknown>, ipa: boolean): void {
   for (const key of ['stem', 'ending'] as const) {
     if (typeof value[key] !== 'string') {
       throw new LessonError(where, `поле «${key}» должно быть строкой (можно пустой)`)
@@ -114,6 +115,39 @@ function conjugationRow(where: string, value: unknown, ipa: boolean): void {
   }
   if (ipa) str(where, value, 'ipa')
   else optStr(where, value, 'ipa')
+}
+
+function conjugationRow(where: string, value: unknown, ipa: boolean): void {
+  if (!isObject(value)) throw new LessonError(where, 'строка спряжения должна быть объектом')
+  str(where, value, 'pronoun')
+  str(where, value, 'ru')
+  verbForm(where, value, ipa)
+}
+
+function conjugationCompare(where: string, value: Record<string, unknown>, ipa: boolean): void {
+  str(where, value, 'title')
+  const verbs = list(where, value, 'verbs')
+  if (verbs.length !== COMPARED_VERBS) {
+    throw new LessonError(where, `в «verbs» глаголов: ${verbs.length}, нужно ровно ${COMPARED_VERBS}`)
+  }
+  verbs.forEach((verb, i) => {
+    if (!isObject(verb)) throw new LessonError(`${where}, verbs[${i}]`, 'глагол должен быть объектом')
+    str(`${where}, verbs[${i}]`, verb, 'verb')
+    str(`${where}, verbs[${i}]`, verb, 'ru')
+  })
+  list(where, value, 'rows', MAX_CONJUGATION_ROWS).forEach((row, i) => {
+    const at = `${where}, строка ${i}`
+    if (!isObject(row)) throw new LessonError(at, 'строка спряжения должна быть объектом')
+    str(at, row, 'pronoun')
+    const forms = list(at, row, 'forms')
+    if (forms.length !== verbs.length) {
+      throw new LessonError(at, `в «forms» форм: ${forms.length}, а глаголов в «verbs»: ${verbs.length}`)
+    }
+    forms.forEach((form, j) => {
+      if (!isObject(form)) throw new LessonError(`${at}, forms[${j}]`, 'форма должна быть объектом')
+      verbForm(`${at}, forms[${j}]`, form, ipa)
+    })
+  })
 }
 
 function compareSide(where: string, value: unknown): void {
@@ -177,6 +211,8 @@ function slide(file: string, index: number, value: unknown, levelA0: boolean): S
       conjugationRow(`${where}, строка ${i}`, row, levelA0),
     )
   }
+
+  if (type === 'conjugationCompare') conjugationCompare(where, value, levelA0)
 
   if (type === 'compare') {
     str(where, value, 'title')

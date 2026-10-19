@@ -83,6 +83,26 @@ export interface ConjugationSlide extends SlideBase, SectionRef {
   rows: ConjugationRow[]
 }
 
+export interface VerbForm {
+  stem: string
+  ending: string
+  ipa?: string
+}
+
+/** Строка сравнения спряжений: формы по порядку `verbs`. */
+export interface ConjugationCompareRow {
+  pronoun: string
+  forms: VerbForm[]
+}
+
+/** Спряжение двух глаголов рядом: до 6 строк, открываются по одной. */
+export interface ConjugationCompareSlide extends SlideBase, SectionRef {
+  type: 'conjugationCompare'
+  title: string
+  verbs: { verb: string; ru: string }[]
+  rows: ConjugationCompareRow[]
+}
+
 /** Пункт сравнения: у неверного варианта перевода может не быть. */
 export interface CompareItem {
   es: string
@@ -153,6 +173,7 @@ export type Slide =
   | TableSlide
   | RuleSlide
   | ConjugationSlide
+  | ConjugationCompareSlide
   | CompareSlide
   | PracticeSlide
   | DialogueSlide

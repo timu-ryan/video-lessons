@@ -8,8 +8,10 @@
  * версии. Выжимка длиннее страницы — ошибка сборки.
  *
  * `--ipa` добавляет транскрипцию к ключевым фразам. Результат —
- * handouts/free/lesson-NN-summary.pdf.
+ * handouts/free/lesson-NN-summary.pdf и рядом картинка той же страницы
+ * lesson-NN-summary.png для поста (нужен pdftoppm из poppler-utils).
  */
+import { execFileSync } from 'node:child_process'
 import { relative } from 'node:path'
 import { chromium } from 'playwright'
 import type { LessonSource, SummarySource } from '../src/features/lessons/source.ts'
@@ -120,6 +122,16 @@ ${renderCta(lesson)}
 
 // --- pdf ---------------------------------------------------------------------
 
+/** Разрешение картинки: A4 → 1654 × 2339 px, мелкий текст ответов читается. */
+const PNG_DPI = 200
+
+/** Снимок первой страницы PDF рядом с ним: lesson-NN-summary.png. */
+function pdfToPng(pdf: string): string {
+  const prefix = pdf.replace(/\.pdf$/, '')
+  execFileSync('pdftoppm', ['-png', '-r', String(PNG_DPI), '-singlefile', pdf, prefix])
+  return `${prefix}.png`
+}
+
 const { lessons, errors } = loadLessons()
 const selected =
   target === undefined ? lessons : lessons.filter(({ lesson }) => lesson.number === target)
@@ -140,8 +152,14 @@ try {
     const out = handoutPath(lesson, 'summary')
     const html = renderSummaryPage(lesson, lesson.summary)
     const pages = await printPdf(browser, lesson, html, out, { pageNumbers: false, html: withHtml })
-    if (pages === 1) console.log(`✓ ${relative(ROOT, out)}`)
-    else failures.push(`урок ${lesson.number}: выжимка заняла ${pages} стр., нужна 1 — сократите summary`)
+    if (pages === 1) {
+      console.log(`✓ ${relative(ROOT, out)}`)
+      try {
+        console.log(`✓ ${relative(ROOT, pdfToPng(out))}`)
+      } catch (error) {
+        failures.push(`урок ${lesson.number}: картинка не собрана — ${(error as Error).message}`)
+      }
+    } else failures.push(`урок ${lesson.number}: выжимка заняла ${pages} стр., нужна 1 — сократите summary`)
   }
 } finally {
   await browser.close()

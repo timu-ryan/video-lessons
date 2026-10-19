@@ -40,16 +40,6 @@ newGrammar:
 hint: Отбрасываем -er и добавляем окончание
 > «Начнём с глаголов на -er. Два таких глагола вы уже знаете: comer — есть и leer — читать. Раньше мы использовали их только в начальной форме: quiero comer, tengo que leer.»
 
-## rule: Спряжение на -er
-pattern: основа | + | окончание
-text: Убираем -er и добавляем окончание лица: comer → como.
-- **Como** poco. — Я мало ем.
-- Ella **lee** mucho. — Она много читает.
-- ¿**Aprendes** español? — Ты учишь испанский?
-> «Схема та же, что с -ar. Берём глагол, убираем -er — остаётся основа. Потом добавляем окончание, которое показывает, кто действует.»
-> «Comer: убираем -er, остаётся com-. Я ем — como. Как и с -ar, «я» отдельно говорить не нужно: окончание -o уже говорит, что это я.»
-> 🔊 «Como poco. Ella lee mucho. ¿Aprendes español?»
-
 ## conjugation: comer — есть
 - yo | com·o | я ем
 - tú | com·es | ты ешь
@@ -57,23 +47,40 @@ text: Убираем -er и добавляем окончание лица: come
 - nosotros / nosotras | com·emos | мы едим
 - vosotros / vosotras | com·éis | вы едите
 - ellos / ellas / ustedes | com·en | они едят
+> «Схема та же, что с -ar. Берём глагол, убираем -er — остаётся основа com-. Потом добавляем окончание, которое показывает, кто действует.»
 > «Вот все формы. Como, comes, come, comemos, coméis, comen.»
+> «Как и с -ar, «я» отдельно говорить не нужно: окончание -o уже говорит, что это я.»
 > «Обратите внимание на ударение: в «мы» оно падает на окончание — comemos, а в «вы» над e стоит знак — coméis.»
 
-## compare: -ar и -er
-left: -ar: hablar
-right: -er: comer
-- habl**as** — ты говоришь || com**es** — ты ешь
-- habl**a** — он говорит || com**e** — он ест
-- habl**amos** — мы говорим || com**emos** — мы едим
-> «Сравните с глаголами на -ar. Разница почти одна: там, где у -ar была буква a, у -er появляется e.»
-> «Hablas — comes. Habla — come. Hablamos — comemos. А «я» у обеих групп одинаковое: hablo, como.»
+## table: Ем, читаю, учу
+- **Como** poco. — Я мало ем.
+- ¿**Aprendes** español? — Ты учишь испанский?
+- Ella **lee** mucho. — Она много читает.
+- Hoy **comemos** poco. — Сегодня мы мало едим.
+- Ellos **aprenden** inglés. — Они учат английский.
+> «Теперь те же окончания в предложениях. Leer и aprender спрягаются точно так же, как comer.»
+> «Como poco — я мало ем. 🔊 ¿Aprendes español? — ты учишь испанский? 🔊»
+> «Ella lee mucho. 🔊 Две e подряд, и каждую произносим: le-e.»
+> «Hoy comemos poco. 🔊 Ellos aprenden inglés. 🔊»
+
+## conjugationCompare: -ar и -er
+verbs: hablar — говорить | comer — есть
+- yo | habl·o | com·o
+- tú | habl·as | com·es
+- él / ella / usted | habl·a | com·e
+- nosotros / nosotras | habl·amos | com·emos
+- vosotros / vosotras | habl·áis | com·éis
+- ellos / ellas / ustedes | habl·an | com·en
+> «Теперь сравним все формы с глаголами на -ar. Разница почти одна: там, где у -ar была буква a, у -er появляется e.»
+> «Hablo — como: «я» у обеих групп одинаковое. Hablas — comes. Habla — come.»
+> «Hablamos — comemos. Habláis — coméis: знак ударения стоит на том же месте. Hablan — comen.»
+> «Итак, в окончаниях a меняется на e. Кроме «я»: там у обеих групп -o.»
 
 ## table: Новые глаголы на -er
-- Quiero **beber**. — Я хочу пить.
-- **Vendo** un coche. — Я продаю машину.
-- Ella **corre** mucho. — Она много бегает.
-- No **comprendo**. — Я не понимаю.
+- beber — Quiero **beber**. — Я хочу пить.
+- vender — **Vendo** un coche. — Я продаю машину.
+- correr — Ella **corre** mucho. — Она много бегает.
+- comprender — No **comprendo**. — Я не понимаю.
 > «Теперь новые глаголы на -er — сразу в предложениях.»
 > «Beber — пить. Quiero beber — я хочу пить. 🔊»
 > «Vender — продавать. Vendo un coche — я продаю машину. 🔊 Помните: b и v звучат одинаково.»
@@ -105,26 +112,31 @@ hint: Почти как -er: отличаются только «мы» и «в�
 > «Vivir — жить. Vivo, vives, vive, vivimos, vivís, viven.»
 > «Послушайте: vivo, vives, vive — ровно как у comer. Меняются только «мы» и «вы».»
 
-## compare: -er и -ir
-left: -er: comer
-right: -ir: vivir
-- com**e** — он ест || viv**e** — он живёт
-- com**emos** — мы едим || viv**imos** — мы живём
-- com**éis** — вы едите || viv**ís** — вы живёте
-> «Первая строка: come — vive. Одинаковое окончание.»
+## conjugationCompare: -er и -ir
+verbs: comer — есть | vivir — жить
+- yo | com·o | viv·o
+- tú | com·es | viv·es
+- él / ella / usted | com·e | viv·e
+- nosotros / nosotras | com·emos | viv·imos
+- vosotros / vosotras | com·éis | viv·ís
+- ellos / ellas / ustedes | com·en | viv·en
+> «Сравним все формы с comer. Como — vivo, comes — vives, come — vive. Окончания одинаковые.»
 > «А вот «мы» и «вы» отличаются: comemos — vivimos, coméis — vivís. Правило простое: в этих формах остаётся буква из инфинитива. Comer — e, vivir — i.»
+> «А «они» снова одинаковое: comen — viven.»
 
 ## compare: Типичная ошибка
 left [wrong]: так не говорят
 right [right]: так говорят
 - Nosotros **vivemos**. || Nosotros **vivimos**. — Мы живём.
+- Vosotros **vivéis**. || Vosotros **vivís**. — Вы живёте.
 > «Самая частая ошибка — сказать «vivemos» по аналогии с comemos. Вспоминайте инфинитив: vivir, значит vivimos.»
+> «То же с «вы»: не vivéis, а vivís — снова буква i из инфинитива.»
 
 ## table: Новые глаголы на -ir
-- **Vivo** en Moscú. — Я живу в Москве.
-- Ella **escribe** un libro. — Она пишет книгу.
-- **Abro** el libro. — Я открываю книгу.
-- Los niños **reciben** libros. — Дети получают книги.
+- vivir — **Vivo** en Moscú. — Я живу в Москве.
+- escribir — Ella **escribe** un libro. — Она пишет книгу.
+- abrir — **Abro** el libro. — Я открываю книгу.
+- recibir — Los niños **reciben** libros. — Дети получают книги.
 > «Vivo en Moscú — я живу в Москве. 🔊»
 > «Escribir — писать. Ella escribe un libro. 🔊»
 > «Abrir — открывать. Abro el libro. 🔊»

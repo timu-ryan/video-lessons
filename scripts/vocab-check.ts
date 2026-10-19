@@ -9,7 +9,7 @@
  *     ещё -a и -as;
  *   - у глаголов — инфинитив и шесть форм настоящего времени правильного
  *     спряжения по окончанию -ar / -er / -ir;
- *   - формы из слайдов conjugation (stem + ending);
+ *   - формы из слайдов conjugation и conjugationCompare (stem + ending);
  *   - слова из `es` строк table.
  *
  * Проверяется `es` и `alternatives` в rule, practice, dialogue, compare.
@@ -147,6 +147,9 @@ function addKnown(lesson: LessonSource): void {
   for (const slide of lesson.slides) {
     if (slide.type === 'conjugation') {
       for (const row of slide.rows) tokenize(row.stem + row.ending).forEach(add)
+    }
+    if (slide.type === 'conjugationCompare') {
+      for (const form of slide.rows.flatMap((row) => row.forms)) tokenize(form.stem + form.ending).forEach(add)
     }
     if (slide.type === 'table') {
       for (const row of slide.rows) tokenize(row.es).forEach(add)
