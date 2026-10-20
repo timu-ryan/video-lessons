@@ -1,0 +1,343 @@
+{
+  "number": 6,
+  "expressions": [
+    {
+      "es": "¿Se puede?",
+      "ipa": "se ˈpwede",
+      "ru": "Можно? (войти)",
+      "note": "Так спрашивают, заглянув в кабинет или в комнату. Se — как в ¿Cómo se dice…?: не «я могу», а «можно».",
+      "example": {
+        "es": "¿Se puede? — ¡Claro! Pero tienes que esperar.",
+        "ru": "Можно? — Конечно! Но придётся подождать."
+      }
+    },
+    {
+      "es": "Me tengo que ir.",
+      "ipa": "me ˈtengo ke ˈiɾ",
+      "ru": "Мне пора. Мне надо идти.",
+      "note": "Дословно «я должен уйти»: ir с me — «уходить». Можно и Tengo que irme. Подробно — в уроке 20.",
+      "example": {
+        "es": "¿Estudiamos juntos? — Perdón… me tengo que ir.",
+        "ru": "Позанимаемся вместе? — Извини… мне пора."
+      }
+    },
+    {
+      "es": "Vamos a ver…",
+      "ipa": "ˈbamos a ˈbeɾ",
+      "ru": "Посмотрим… Так-так…",
+      "note": "Дословно «давай посмотрим»: ver — «смотреть, видеть». Часто просто a ver. Так тянут с ответом.",
+      "example": {
+        "es": "¿Vas a estudiar esta noche? — Vamos a ver…",
+        "ru": "Будешь сегодня вечером заниматься? — Посмотрим…"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        {
+          "ru": "Вы можете подождать?",
+          "hint": "вежливо, одному человеку",
+          "es": "¿Usted puede esperar?",
+          "alternatives": [
+            "¿Puede usted esperar?",
+            "¿Puede esperar?"
+          ]
+        },
+        {
+          "ru": "Давайте поужинаем попозже!",
+          "es": "¡Vamos a cenar más tarde!"
+        },
+        {
+          "ru": "Ана и Карлос приезжают сегодня вечером.",
+          "es": "Ana y Carlos llegan esta noche."
+        },
+        {
+          "ru": "Вам завтра нужно работать?",
+          "hint": "к нескольким друзьям",
+          "es": "¿Mañana tenéis que trabajar?",
+          "alternatives": [
+            "¿Tenéis que trabajar mañana?"
+          ]
+        },
+        {
+          "ru": "Мы заканчиваем поздно, а они — рано.",
+          "es": "Nosotros terminamos tarde y ellos terminan temprano."
+        },
+        {
+          "ru": "Вы идёте по магазинам сегодня вечером?",
+          "hint": "вежливо, нескольким людям",
+          "es": "¿Ustedes van de compras esta noche?",
+          "alternatives": [
+            "¿Van ustedes de compras esta noche?"
+          ]
+        },
+        {
+          "ru": "Он хочет больше зарабатывать, но не хочет работать.",
+          "es": "Quiere ganar más, pero no quiere trabajar.",
+          "alternatives": [
+            "Él quiere ganar más, pero no quiere trabajar."
+          ]
+        },
+        {
+          "ru": "Хочешь пойти вместе? — Конечно! Но мне нужно скоро вернуться.",
+          "hint": "хотя бы один из вас мужчина",
+          "es": "¿Quieres ir juntos? — ¡Claro! Pero tengo que regresar pronto."
+        }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        {
+          "wrong": "¿Usted quieres cenar?",
+          "es": "¿Usted **quiere** cenar?",
+          "ru": "Вы хотите поужинать?",
+          "why": "С usted — форма «он, она»."
+        },
+        {
+          "wrong": "¿Puedemos entrar?",
+          "es": "¿**Podemos** entrar?",
+          "ru": "Можно нам войти?",
+          "why": "В «мы» основа как в poder."
+        },
+        {
+          "wrong": "Nosotros tienemos que esperar.",
+          "es": "Nosotros **tenemos** que esperar.",
+          "ru": "Нам нужно подождать.",
+          "why": "В «мы» основа как в tener."
+        },
+        {
+          "wrong": "Hoy vamos a compras.",
+          "es": "Hoy vamos **de** compras.",
+          "ru": "Сегодня мы идём за покупками.",
+          "why": "Ir de compras — с de."
+        },
+        {
+          "wrong": "¿Vosotros vas a cenar?",
+          "es": "¿Vosotros **vais** a cenar?",
+          "ru": "Вы будете ужинать?",
+          "why": "С vosotros — vais."
+        },
+        {
+          "wrong": "¡Vamos caminar un poco!",
+          "es": "¡Vamos **a** caminar un poco!",
+          "ru": "Давай немного пройдёмся!",
+          "why": "Vamos a + инфинитив: a не пропускаем."
+        },
+        {
+          "wrong": "Ana y Carlos quieren viajan juntos.",
+          "es": "Ana y Carlos quieren **viajar** juntos.",
+          "ru": "Ана и Карлос хотят путешествовать вместе.",
+          "why": "Меняется только querer, второй глагол — в начальной форме."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Ie или e?",
+      "options": [
+        "ie",
+        "e"
+      ],
+      "tasks": [
+        {
+          "es": "Ellos qu___ren cenar tarde.",
+          "answer": "ie"
+        },
+        {
+          "es": "Nosotros t___nemos que regresar pronto.",
+          "answer": "e"
+        },
+        {
+          "es": "¿Usted qu___re esperar?",
+          "answer": "ie"
+        },
+        {
+          "es": "¿Qu___réis caminar un poco?",
+          "answer": "e"
+        },
+        {
+          "es": "Chicos, no t___néis que llegar temprano.",
+          "answer": "e"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Va, vais или van?",
+      "options": [
+        "va",
+        "vais",
+        "van"
+      ],
+      "tasks": [
+        {
+          "es": "Ana ___ de compras hoy.",
+          "answer": "va"
+        },
+        {
+          "es": "¿Vosotros ___ a llamar?",
+          "answer": "vais"
+        },
+        {
+          "es": "Carlos y José ___ a llegar tarde.",
+          "answer": "van"
+        },
+        {
+          "es": "¿Ustedes ___ a cenar?",
+          "answer": "van"
+        },
+        {
+          "es": "Ana y tú, ¿___ a bailar o no?",
+          "answer": "vais"
+        }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        {
+          "es": "Carlos solo come y descansa.",
+          "ru": "Карлос только ест и отдыхает."
+        },
+        {
+          "es": "Ellos ganan poco, pero viajan mucho.",
+          "ru": "Они мало зарабатывают, но много путешествуют."
+        },
+        {
+          "es": "No tenéis que esperar: podéis entrar.",
+          "ru": "Вам не нужно ждать: можете заходить."
+        },
+        {
+          "es": "Voy de compras. Solo voy a comprar un poco.",
+          "ru": "Иду по магазинам. Куплю совсем чуть-чуть."
+        },
+        {
+          "es": "Queremos cenar juntos, pero Ana tiene que trabajar y Carlos tiene que dormir.",
+          "ru": "Мы хотим поужинать вместе, но Ане нужно работать, а Карлосу — спать."
+        }
+      ]
+    }
+  ],
+  "story": {
+    "title": "У бабушки большие планы",
+    "lines": [
+      {
+        "speaker": "Abuela",
+        "es": "¡Hola, chicos! ¡Vamos a caminar!",
+        "ru": "Привет, ребята! Пойдёмте пройдёмся!"
+      },
+      {
+        "speaker": "Carlos",
+        "es": "¿Ahora? Perdone, no puedo: tengo que estudiar ruso.",
+        "ru": "Сейчас? Простите, не могу: мне нужно заниматься русским."
+      },
+      {
+        "speaker": "Abuela",
+        "es": "¿Y después? ¿Queréis bailar?",
+        "ru": "А потом? Хотите потанцевать?"
+      },
+      {
+        "speaker": "Ana",
+        "es": "Abuela, Carlos no baila: solo espera.",
+        "ru": "Бабушка, Карлос не танцует: он только ждёт."
+      },
+      {
+        "speaker": "Abuela",
+        "es": "Vale. ¿Y mañana? ¿Podéis nadar?",
+        "ru": "Ладно. А завтра? Поплавать можете?"
+      },
+      {
+        "speaker": "Carlos",
+        "es": "Mañana tengo que trabajar… y llamar… y esperar.",
+        "ru": "Завтра мне нужно работать… и звонить… и ждать."
+      },
+      {
+        "speaker": "Abuela",
+        "es": "Vale, vale… ¿Y esta noche? ¿Vais a cenar?",
+        "ru": "Ладно, ладно… А сегодня вечером? Ужинать будете?"
+      },
+      {
+        "speaker": "Carlos",
+        "es": "¡Claro! ¡Vamos!",
+        "ru": "Конечно! Пошли!"
+      }
+    ],
+    "questions": [
+      {
+        "question": "Что предлагает бабушка?",
+        "answer": "Caminar, bailar, nadar… y cenar."
+      },
+      {
+        "question": "¿Qué tiene que hacer Carlos mañana?",
+        "answer": "Tiene que trabajar, llamar y esperar."
+      },
+      {
+        "question": "¿Qué va a hacer Carlos esta noche?",
+        "answer": "Va a cenar."
+      }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "Puedo esperar. Pero no quiero.",
+      "ru": "Подождать я могу. Но не хочу.",
+      "ipa": "ˈpwedo espeˈɾaɾ · ˈpeɾo no ˈkjeɾo"
+    },
+    {
+      "es": "Quiero ganar más y trabajar poco. ¿Se puede?",
+      "ru": "Хочу больше зарабатывать и мало работать. Так можно?",
+      "ipa": "ˈkjeɾo gaˈnaɾ ˈmas i tɾabaˈxaɾ ˈpoko · se ˈpwede"
+    },
+    {
+      "es": "Hoy no puedo, mañana no puedo… ¿Pasado mañana? ¡Claro!",
+      "ru": "Сегодня не могу, завтра не могу… Послезавтра? Конечно! — встреча старых друзей",
+      "ipa": "ˈoj no ˈpwedo maˈɲana no ˈpwedo · paˈsado maˈɲana · ˈklaɾo"
+    },
+    {
+      "es": "Tenemos que hablar. — ¿Ahora? No puedo, tengo que… dormir.",
+      "ru": "Нам надо поговорить. — Сейчас? Не могу, мне нужно… спать.",
+      "ipa": "teˈnemos ke aˈblaɾ · aˈoɾa · no ˈpwedo ˈtengo ke · doɾˈmiɾ"
+    }
+  ],
+  "culture": {
+    "kind": "song",
+    "title": "Песня, где всё наоборот",
+    "es": "Vamos a contar mentiras",
+    "ipa": "ˈbamos a konˈtaɾ menˈtiɾas",
+    "ru": "Давайте рассказывать небылицы",
+    "text": "Народная детская песня: автора у неё нет, а в Испании её знают с детства. Всё в ней наоборот: зайцы бегают по морю, а сардины — по горам. В названии — конструкция из урока: vamos a + инфинитив, «давайте…». Contar — «рассказывать», mentiras — «враки». Записей много — поищите по названию."
+  },
+  "yourTurn": {
+    "task": "Расскажите о планах — своих и близких: кто что хочет, может и должен сделать. В конце предложите сделать что-нибудь вместе. Напишите 4–5 фраз и прочитайте их вслух.",
+    "template": [
+      "Yo quiero…, pero tengo que…",
+      "Él / Ella puede… / no puede…",
+      "Ellos van a…",
+      "¡Vamos a…!"
+    ],
+    "model": [
+      {
+        "es": "Yo quiero descansar, pero tengo que trabajar.",
+        "ru": "Я хочу отдохнуть, но мне нужно работать."
+      },
+      {
+        "es": "Ella quiere ir de compras, pero no puede: tiene que estudiar.",
+        "ru": "Она хочет пойти по магазинам, но не может: ей нужно учиться."
+      },
+      {
+        "es": "Ellos van a viajar pasado mañana.",
+        "ru": "Послезавтра они едут путешествовать."
+      },
+      {
+        "es": "¡Vamos a pasear juntos esta noche!",
+        "ru": "Давайте погуляем вместе сегодня вечером!"
+      }
+    ]
+  }
+}

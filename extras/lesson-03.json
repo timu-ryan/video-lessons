@@ -1,0 +1,170 @@
+{
+  "number": 3,
+  "expressions": [
+    {
+      "es": "¡Vale!",
+      "ipa": "ˈbale",
+      "ru": "Хорошо! Ладно! Давай!",
+      "note": "Главное «да» в Испании: так отвечают на ¿Quieres…? и ¿Puedes…? В Латинской Америке чаще скажут está bien или dale. Подробно — в уроке 83.",
+      "example": { "es": "¿Quieres practicar? — ¡Vale!", "ru": "Хочешь позаниматься? — Давай!" }
+    },
+    {
+      "es": "¡No puedo más!",
+      "ipa": "no ˈpwedo ˈmas",
+      "ru": "Больше не могу! Сил нет!",
+      "note": "Когда устали, наелись или больше не выдерживаете. Más здесь — то самое «больше» из урока.",
+      "example": { "es": "¿Quieres comer más? — ¡No, no puedo más!", "ru": "Хочешь ещё поесть? — Нет, больше не могу!" }
+    },
+    {
+      "es": "Como quieras.",
+      "ipa": "ˈkomo ˈkjeɾas",
+      "ru": "Как хочешь. Как скажешь.",
+      "note": "Решай сам. С обиженным тоном — «ну, как хочешь…». Quieras — особая форма querer, подробно — в уроке 65.",
+      "example": { "es": "¿Puedo cantar? — Como quieras…", "ru": "Можно я спою? — Ну, как хочешь…" }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        { "ru": "Хочешь потанцевать?", "es": "¿Quieres bailar?" },
+        { "ru": "Спасибо, но я не хочу.", "es": "Gracias, pero no quiero." },
+        { "ru": "Извини, ты можешь говорить по-русски?", "es": "Perdón, ¿puedes hablar ruso?" },
+        { "ru": "Ты можешь готовить сегодня? — Нет, не могу.", "es": "¿Puedes cocinar hoy? — No, no puedo." },
+        { "ru": "Ты много работаешь и мало отдыхаешь.", "es": "Trabajas mucho y descansas poco." },
+        {
+          "ru": "Ты хочешь выучить китайский? — Куда там!",
+          "es": "¿Quieres aprender chino? — ¡Qué va!",
+          "alternatives": ["¿Quieres estudiar chino? — ¡Qué va!"]
+        },
+        { "ru": "Есть я могу много, а вот готовить — не могу.", "es": "Puedo comer mucho, pero no puedo cocinar." },
+        { "ru": "Я хочу много путешествовать, но мне нужно работать.", "es": "Quiero viajar mucho, pero necesito trabajar." },
+        { "ru": "Сегодня не могу: мне нужно учиться. Но хочу танцевать!", "es": "Hoy no puedo: necesito estudiar. ¡Pero quiero bailar!" }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        { "wrong": "¿Queres viajar?", "es": "¿**Quieres** viajar?", "ru": "Ты хочешь путешествовать?", "why": "В формах querer — ie." },
+        { "wrong": "No podo nadar hoy.", "es": "No **puedo** nadar hoy.", "ru": "Сегодня я не могу плавать.", "why": "В формах poder — ue." },
+        { "wrong": "Quiero hablo ruso.", "es": "Quiero **hablar** ruso.", "ru": "Я хочу говорить по-русски.", "why": "Второй глагол — в инфинитиве." },
+        { "wrong": "¿Puedes cantas ahora?", "es": "¿Puedes **cantar** ahora?", "ru": "Ты можешь спеть сейчас?", "why": "После puedes — инфинитив." },
+        { "wrong": "Necesito leo más.", "es": "Necesito **leer** más.", "ru": "Мне нужно больше читать.", "why": "После necesito — инфинитив." },
+        {
+          "wrong": "Me necesito cocinar hoy.",
+          "es": "**Necesito** cocinar hoy.",
+          "ru": "Мне нужно сегодня готовить.",
+          "why": "«Мне» уже внутри necesito."
+        },
+        {
+          "wrong": "Necesito descansar mas.",
+          "es": "Necesito descansar **más**.",
+          "ru": "Мне нужно больше отдыхать.",
+          "why": "«Больше» — más со знаком."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Окончание: -o, -as или -ar?",
+      "options": ["o", "as", "ar"],
+      "tasks": [
+        { "es": "Quiero cant___.", "answer": "ar" },
+        { "es": "Hoy yo cocin___.", "answer": "o" },
+        { "es": "Tú bail___ y yo canto.", "answer": "as" },
+        { "es": "No puedo trabaj___ hoy.", "answer": "ar" },
+        { "es": "Ana, ¿tú viaj___ mucho?", "answer": "as" },
+        { "es": "¿Necesitas escuch___ más?", "answer": "ar" },
+        { "es": "Yo no nad___, pero quiero aprender.", "answer": "o" }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Quiero, puedo или necesito?",
+      "options": ["quiero", "puedo", "necesito"],
+      "tasks": [
+        { "es": "Hoy no ___ trabajar.", "answer": "puedo", "ru": "Сегодня я не могу работать." },
+        { "es": "Ahora ___ dormir.", "answer": "necesito", "ru": "Сейчас мне нужно поспать." },
+        { "es": "No ___ cocinar hoy.", "answer": "quiero", "ru": "Я не хочу сегодня готовить." },
+        { "es": "Ana, ___ bailar, pero no puedo.", "answer": "quiero", "ru": "Ана, я хочу танцевать, но не могу." }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        { "es": "No puedo dormir. Necesito leer.", "ru": "Не могу уснуть. Надо почитать." },
+        { "es": "¿Quieres cantar? — Sí, pero no puedo.", "ru": "Хочешь спеть? — Хочу, но не могу." },
+        { "es": "Hoy no cocino. ¿Cocinas tú?", "ru": "Сегодня я не готовлю. Готовишь ты?" },
+        { "es": "Carlos, ¡no necesitas comer más!", "ru": "Карлос, тебе не нужно больше есть!" },
+        { "es": "Trabajo, estudio, cocino… ¡Necesito descansar!", "ru": "Работаю, учусь, готовлю… Мне нужно отдохнуть!" }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Карлос учит русский",
+    "lines": [
+      { "speaker": "Carlos", "es": "Ana, ¡quiero aprender ruso!", "ru": "Ана, я хочу выучить русский!" },
+      { "speaker": "Ana", "es": "¡Vale! ¿Puedes practicar ahora?", "ru": "Давай! Можешь позаниматься прямо сейчас?" },
+      { "speaker": "Carlos", "es": "¿Ahora? No, ahora necesito comer.", "ru": "Сейчас? Нет, сейчас мне нужно поесть." },
+      { "speaker": "Ana", "es": "Vale. ¿Y hoy? ¿Puedes estudiar hoy?", "ru": "Ладно. А сегодня? Сегодня сможешь позаниматься?" },
+      { "speaker": "Carlos", "es": "Hoy no puedo. Necesito descansar… y dormir.", "ru": "Сегодня не могу. Мне нужно отдохнуть… и поспать." },
+      { "speaker": "Ana", "es": "Carlos… ¿quieres aprender ruso?", "ru": "Карлос… ты хочешь выучить русский?" },
+      { "speaker": "Carlos", "es": "¡Sí, quiero! Pero no quiero estudiar.", "ru": "Хочу, конечно! Но учиться не хочу." },
+      { "speaker": "Ana", "es": "¿Cómo se dice «mañana» en ruso, Carlos?", "ru": "Карлос, а как по-русски «mañana»?" },
+      { "speaker": "Carlos", "es": "¡«Завтра»! ¡Hablo ruso, Ana!", "ru": "«Завтра»! Вот видишь, Ана, я говорю по-русски!" }
+    ],
+    "questions": [
+      { "question": "Почему Карлос не может позаниматься сейчас?", "answer": "«Necesito comer.»" },
+      { "question": "Чего Карлос не хочет?", "answer": "«No quiero estudiar.»" },
+      { "question": "Какое русское слово Карлос уже знает?", "answer": "«Завтра» — mañana." }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "¿Cantar? No puedo. ¿Comer? ¡Sí, puedo!",
+      "ru": "Петь? Не могу. Есть? Это могу!",
+      "ipa": "kanˈtaɾ · no ˈpwedo · koˈmeɾ · ˈsi ˈpwedo"
+    },
+    {
+      "es": "Quiero dormir, necesito dormir… ¡y no puedo!",
+      "ru": "Хочу спать, надо спать… и не могу уснуть! — в три часа ночи",
+      "ipa": "ˈkjeɾo doɾˈmiɾ · neθeˈsito doɾˈmiɾ · i no ˈpwedo"
+    },
+    {
+      "es": "Necesito viajar. No «quiero» — ¡necesito!",
+      "ru": "Мне нужно в путешествие. Не «хочу», а «нужно»!",
+      "ipa": "neθeˈsito bjaˈxaɾ · no ˈkjeɾo · neθeˈsito"
+    },
+    {
+      "es": "Puedo trabajar mucho… pero no quiero.",
+      "ru": "Много работать я могу… но не хочу.",
+      "ipa": "ˈpwedo tɾabaˈxaɾ ˈmutʃo · ˈpeɾo no ˈkjeɾo"
+    },
+    {
+      "es": "No necesito comer más… ¡pero quiero!",
+      "ru": "Мне не нужно больше есть… но так хочется! — про десерт",
+      "ipa": "no neθeˈsito koˈmeɾ ˈmas · ˈpeɾo ˈkjeɾo"
+    }
+  ],
+  "culture": {
+    "kind": "refrán",
+    "title": "Хотеть — значит мочь",
+    "es": "Querer es poder.",
+    "ipa": "keˈɾeɾ es poˈdeɾ",
+    "ru": "Хотеть — значит мочь.",
+    "text": "Одна из самых известных испанских пословиц — и прямо по теме урока: оба глагола в ней в инфинитиве, который работает здесь как существительное. Русский аналог — «где хотенье, там и уменье». Es — форма глагола ser, подробно — в уроке 9."
+  },
+  "yourTurn": {
+    "task": "Расскажите о своём дне: чего вы хотите, что можете и что вам нужно сделать. Напишите 4–5 фраз и прочитайте их вслух.",
+    "template": ["Quiero…", "Puedo… / No puedo…", "Necesito…", "Hoy… / Ahora…"],
+    "model": [
+      { "es": "Quiero aprender español y viajar.", "ru": "Я хочу выучить испанский и путешествовать." },
+      { "es": "Puedo nadar, pero no puedo bailar.", "ru": "Плавать я могу, а танцевать — нет." },
+      { "es": "Hoy necesito trabajar mucho.", "ru": "Сегодня мне нужно много работать." },
+      { "es": "Pero ahora quiero descansar.", "ru": "Но сейчас я хочу отдохнуть." }
+    ]
+  }
+}

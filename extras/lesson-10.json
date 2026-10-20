@@ -1,0 +1,194 @@
+{
+  "number": 10,
+  "expressions": [
+    {
+      "es": "¡Que aproveche!",
+      "ipa": "ke apɾoˈbetʃe",
+      "ru": "Приятного аппетита!",
+      "note": "Так говорят тому, кто ест: входя туда, где обедают, или проходя мимо чужого столика. Отвечают ¡Gracias! В Латинской Америке чаще говорят ¡Buen provecho! — в Испании его тоже поймут.",
+      "example": { "es": "¿Coméis pescado? ¡Que aproveche! — ¡Gracias!", "ru": "Едите рыбу? Приятного аппетита! — Спасибо!" }
+    },
+    {
+      "es": "¡Salud!",
+      "ipa": "saˈlud",
+      "ru": "За здоровье!",
+      "note": "Тост, когда поднимают бокалы: salud — «здоровье». Так же говорят, когда кто-то чихнул (в Испании ещё говорят ¡Jesús!).",
+      "example": { "es": "¿Bebemos una cerveza? — ¡Vale! ¡Salud!", "ru": "Выпьем пива? — Давай! За здоровье!" }
+    },
+    {
+      "es": "Es pan comido.",
+      "ipa": "ˈes ˈpan koˈmido",
+      "ru": "Проще простого. Раз плюнуть.",
+      "note": "Дословно — «это съеденный хлеб». Comido — «съеденный», от comer. Так говорят и в Испании, и в Латинской Америке.",
+      "example": { "es": "¿Escribir una carta en español? ¡Es pan comido!", "ru": "Написать письмо по-испански? Проще простого!" }
+    },
+    {
+      "es": "No me entero.",
+      "ipa": "no me enˈteɾo",
+      "ru": "Не врубаюсь. Ничего не понимаю.",
+      "note": "Разговорная замена no comprendo: так говорят, когда потеряли нить. Me — как в me llamo, подробно — в уроке 20. Очень испанское: в Латинской Америке скорее скажут no entiendo.",
+      "example": { "es": "Ana habla y habla… y yo no me entero.", "ru": "Ана говорит и говорит… а я ничего не понимаю." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        { "ru": "Ты пьёшь много кофе?", "es": "¿Bebes mucho café?" },
+        {
+          "ru": "Вы живёте вместе?",
+          "hint": "к нескольким друзьям",
+          "es": "¿Vivís juntos?",
+          "alternatives": ["¿Vosotros vivís juntos?"]
+        },
+        {
+          "ru": "Вы продаёте газеты?",
+          "hint": "вежливо, одному человеку",
+          "es": "¿Usted vende periódicos?",
+          "alternatives": ["¿Vende usted periódicos?", "¿Vende periódicos?"]
+        },
+        { "ru": "Не люблю бегать, но бегаю.", "es": "No me gusta correr, pero corro." },
+        { "ru": "Хосе из Севильи, но живёт в Москве.", "es": "José es de Sevilla, pero vive en Moscú." },
+        { "ru": "Ты работаешь в центре? — Нет, я работаю дома.", "es": "¿Trabajas en el centro? — No, trabajo en casa." },
+        {
+          "ru": "Ана пишет книгу, а Карлос — письмо.",
+          "es": "Ana escribe un libro y Carlos, una carta.",
+          "alternatives": ["Ana escribe un libro y Carlos escribe una carta."]
+        },
+        {
+          "ru": "Они живут в Испании, но не говорят по-испански.",
+          "es": "Viven en España, pero no hablan español.",
+          "alternatives": ["Ellos viven en España, pero no hablan español."]
+        },
+        { "ru": "Сегодня мы едим дома: я готовлю, а ты убираешь.", "es": "Hoy comemos en casa: yo cocino y tú limpias." },
+        {
+          "ru": "Мы продаём старую машину и покупаем новую.",
+          "es": "Vendemos el coche viejo y compramos un coche nuevo."
+        }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        { "wrong": "Ana y yo vivemos en Madrid.", "es": "Ana y yo **vivimos** en Madrid.", "ru": "Мы с Аной живём в Мадриде.", "why": "Vivir — на -ir: в «мы» остаётся i из инфинитива." },
+        { "wrong": "¿Escribéis en español?", "es": "¿**Escribís** en español?", "ru": "Вы пишете по-испански?", "why": "Escribir — на -ir: «вы» — -ís, без e." },
+        { "wrong": "¿Comís carne?", "es": "¿**Coméis** carne?", "ru": "Вы едите мясо?", "why": "Comer — на -er: «вы» — -éis. -ís бывает только у -ir." },
+        { "wrong": "Carlos coma mucho pan.", "es": "Carlos **come** mucho pan.", "ru": "Карлос ест много хлеба.", "why": "Comer — на -er: «он» — -e. Окончание -a — у глаголов на -ar." },
+        { "wrong": "Trabajamos en centro.", "es": "Trabajamos en **el** centro.", "ru": "Мы работаем в центре.", "why": "Центр конкретный — с артиклем: en el centro." },
+        { "wrong": "La cerveza es muy barato.", "es": "La cerveza es muy **barata**.", "ru": "Пиво очень дешёвое.", "why": "Cerveza — женского рода, хоть «пиво» — оно." },
+        { "wrong": "Yo gusta leer el periódico.", "es": "**Me** gusta leer el periódico.", "ru": "Мне нравится читать газету.", "why": "«Мне нравится» — me gusta, а не yo." },
+        { "wrong": "¿Puedemos beber café ahora?", "es": "¿**Podemos** beber café ahora?", "ru": "Мы можем сейчас выпить кофе?", "why": "В «мы» основа не меняется: podemos." }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "-emos или -imos?",
+      "options": ["emos", "imos"],
+      "tasks": [
+        { "es": "Viv___ juntos.", "answer": "imos" },
+        { "es": "Beb___ mucho café.", "answer": "emos" },
+        { "es": "Escrib___ una carta.", "answer": "imos" },
+        { "es": "Vend___ el coche.", "answer": "emos" },
+        { "es": "Abr___ la ventana.", "answer": "imos" },
+        { "es": "Le___ el periódico juntos.", "answer": "emos" }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "En или de?",
+      "options": ["en", "de"],
+      "tasks": [
+        { "es": "Ana vive ___ Madrid.", "answer": "en" },
+        { "es": "Carlos es ___ Moscú.", "answer": "de" },
+        { "es": "¿Trabajas ___ casa?", "answer": "en" },
+        { "es": "La profesora es ___ Sevilla.", "answer": "de" },
+        { "es": "Hoy comemos ___ el centro.", "answer": "en" },
+        { "es": "Los niños son ___ España, pero viven en Rusia.", "answer": "de" }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        { "es": "Abro la puerta: es la abuela… otra vez.", "ru": "Открываю дверь — а там бабушка… опять." },
+        { "es": "Ellos corren todo el día, y nosotros… comemos.", "ru": "Они бегают весь день, а мы… едим." },
+        { "es": "¿Os gusta cocinar? — Nos gusta comer.", "ru": "Вам нравится готовить? — Нам нравится есть." },
+        { "es": "Los niños no comen pescado, no comen carne… pero comen mucho pan.", "ru": "Дети не едят рыбу, не едят мясо… зато едят много хлеба." },
+        { "es": "Ana bebe café, lee el periódico y escribe. Carlos bebe café… y bebe café.", "ru": "Ана пьёт кофе, читает газету и пишет. Карлос пьёт кофе… и пьёт кофе." }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Письмо от бабушки",
+    "lines": [
+      { "es": "Hoy Ana y Carlos reciben una carta. Es de la abuela.", "ru": "Сегодня Ана и Карлос получают письмо. Оно от бабушки." },
+      { "es": "La abuela vive en Sevilla. No llama: escribe cartas.", "ru": "Бабушка живёт в Севилье. Она не звонит — она пишет письма." },
+      { "es": "«Hola, chicos: yo vivo muy bien. Corro, nado y bailo todo el día.", "ru": "«Привет, ребята! Живу я прекрасно. Бегаю, плаваю и танцую весь день." },
+      { "es": "¿Y vosotros? ¿Corréis? ¿Coméis bien?»", "ru": "А вы? Бегаете? Хорошо едите?»" },
+      { "es": "Carlos escribe: «Abuela: comemos poco y corremos mucho».", "ru": "Карлос пишет: «Бабушка, мы мало едим и много бегаем»." },
+      { "es": "Ana lee la carta y pregunta: «Carlos, ¿tú corres?»", "ru": "Ана читает письмо и спрашивает: «Карлос, ты что, бегаешь?»" },
+      { "es": "«En la carta, sí», contesta Carlos.", "ru": "«В письме — да», — отвечает Карлос." },
+      { "es": "Pasado mañana llega otra carta.", "ru": "Послезавтра приходит ещё одно письмо." },
+      { "es": "«¡Qué bien! Mañana llego y corremos juntos. La abuela».", "ru": "«Как здорово! Завтра приезжаю — побегаем вместе. Бабушка»." },
+      { "es": "Ahora Carlos tiene que correr. ¡Qué remedio!", "ru": "Теперь Карлосу придётся бегать. Куда деваться!" }
+    ],
+    "questions": [
+      { "question": "¿La abuela llama?", "answer": "No, escribe cartas." },
+      { "question": "¿La abuela corre?", "answer": "Sí, corre, nada y baila todo el día." },
+      { "question": "¿Carlos corre mucho?", "answer": "No… solo en la carta." }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "No vivo en el centro: vivo en el trabajo.",
+      "ru": "Я живу не в центре. Я живу на работе.",
+      "ipa": "no ˈbibo en el ˈθentɾo · ˈbibo en el tɾaˈbaxo"
+    },
+    {
+      "es": "Quiero correr, pero la cama no quiere.",
+      "ru": "Я хочу бегать, но кровать против.",
+      "ipa": "ˈkjeɾo koˈreɾ · ˈpeɾo la ˈkama no ˈkjeɾe"
+    },
+    {
+      "es": "Vendo un piso: pequeño, viejo y muy caro.",
+      "ru": "Продаю квартиру: маленькую, старую и очень дорогую.",
+      "ipa": "ˈbendo un ˈpiso · peˈkeɲo ˈbjexo i ˈmuj ˈkaɾo"
+    },
+    {
+      "es": "Hoy no corro. Mañana… tampoco.",
+      "ru": "Сегодня я не бегаю. Завтра… тоже.",
+      "ipa": "ˈoj no ˈkoro · maˈɲana tamˈpoko"
+    },
+    {
+      "es": "En casa comemos poco. En casa de la abuela, mucho.",
+      "ru": "Дома мы едим мало. У бабушки — много.",
+      "ipa": "en ˈkasa koˈmemos ˈpoko · en ˈkasa de la aˈbwela ˈmutʃo"
+    },
+    {
+      "es": "¿Comprendes? — Sí, sí… No.",
+      "ru": "Понимаешь? — Да, да… Нет.",
+      "ipa": "komˈpɾendes · ˈsi ˈsi · ˈno"
+    }
+  ],
+  "culture": {
+    "kind": "fact",
+    "title": "Кофе по-испански",
+    "es": "un café solo · un cortado · un café con leche",
+    "ipa": "un kaˈfe ˈsolo · un koɾˈtado · un kaˈfe kon ˈletʃe",
+    "ru": "чёрный кофе · кофе с каплей молока · кофе с молоком",
+    "text": "В испанском баре кофе заказывают по-разному. Café solo — маленькая чашка крепкого чёрного кофе, как эспрессо; solo — то же слово, что «только»: кофе, и больше ничего. Cortado — тот же кофе с капелькой молока. Café con leche — кофе пополам с молоком, его часто пьют на завтрак. Летом популярен café con hielo: кофе приносят вместе со стаканом льда и переливают сами. Как заказывать в кафе — в уроке 27."
+  },
+  "yourTurn": {
+    "task": "Расскажите о себе: где вы живёте и работаете или учитесь, что едите и пьёте, что читаете. Добавьте одну честную деталь — что вы делаете мало или не делаете совсем. Напишите 4–5 фраз и прочитайте их вслух.",
+    "template": ["Vivo en… y trabajo en…", "Como… / No como…", "Bebo… / No bebo…", "Leo… / Escribo…"],
+    "model": [
+      { "es": "Vivo en Kazán y trabajo en el centro.", "ru": "Я живу в Казани и работаю в центре." },
+      { "es": "Como mucho pescado, pero no como carne.", "ru": "Я ем много рыбы, но не ем мясо." },
+      { "es": "Bebo café todo el día. Cerveza, poco.", "ru": "Пью кофе весь день. Пиво — мало." },
+      { "es": "Leo revistas en el teléfono.", "ru": "Читаю журналы в телефоне." },
+      { "es": "¿Correr? Mañana… o pasado mañana.", "ru": "Бегать? Завтра… или послезавтра." }
+    ]
+  }
+}

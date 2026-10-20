@@ -1,0 +1,180 @@
+{
+  "number": 2,
+  "expressions": [
+    {
+      "es": "un poco",
+      "ipa": "un ˈpoko",
+      "ru": "немного, чуть-чуть",
+      "note": "Poco — «мало», а un poco — «немного». Как в русском: «мало говорю» звучит как жалоба, «немного говорю» — уже неплохо. Перед языком часто добавляют de: hablo un poco de español. Un подробно — в уроке 8.",
+      "example": { "es": "¿Hablas alemán? — Sí, un poco.", "ru": "Ты говоришь по-немецки? — Да, немного." }
+    },
+    {
+      "es": "¿Cómo se dice en español?",
+      "ipa": "ˈkomo se ˈdiθe en espaˈɲol",
+      "ru": "Как это по-испански?",
+      "note": "Главный вопрос того, кто учит язык. Дословно — «как говорится по-испански?». Вместо español — любой язык: en ruso, en inglés. En подробно — в уроке 10.",
+      "example": { "es": "¿Cómo se dice «perdón» en inglés?", "ru": "Как по-английски «perdón»?" }
+    },
+    {
+      "es": "¡Qué va!",
+      "ipa": "ke ˈba",
+      "ru": "Да ну! Куда там! Ничего подобного!",
+      "note": "Разговорное решительное «нет»: так отвечают на вопрос, когда ответ даже смешно произнести. В Испании звучит постоянно. Дословно не переводится.",
+      "example": { "es": "¿Hablas chino? — ¡Qué va!", "ru": "Ты говоришь по-китайски? — Куда там!" }
+    },
+    {
+      "es": "hablar por los codos",
+      "ipa": "aˈblaɾ poɾ los ˈkodos",
+      "ru": "болтать без умолку",
+      "note": "Дословно — «говорить локтями» (el codo — «локоть»). Про того, у кого рот не закрывается. Без грубости, скорее с улыбкой.",
+      "example": { "es": "Carlos, ¡hablas por los codos!", "ru": "Карлос, ты болтаешь без умолку!" }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        { "ru": "Я учу китайский.", "es": "Estudio chino.", "alternatives": ["Yo estudio chino."] },
+        { "ru": "Ты преподаёшь французский?", "es": "¿Enseñas francés?", "alternatives": ["¿Tú enseñas francés?"] },
+        { "ru": "Я не говорю по-китайски.", "es": "No hablo chino.", "alternatives": ["Yo no hablo chino."] },
+        { "ru": "Извини, ты говоришь по-русски? — Да, немного.", "es": "Perdón, ¿hablas ruso? — Sí, un poco." },
+        { "ru": "Привет! Меня зовут Хорхе, я преподаю немецкий.", "es": "¡Hola! Me llamo Jorge y enseño alemán." },
+        {
+          "ru": "Я работаю, а ты учишься.",
+          "es": "Yo trabajo y tú estudias.",
+          "alternatives": ["Yo trabajo, pero tú estudias."]
+        },
+        { "ru": "Как по-русски «hola»?", "es": "¿Cómo se dice «hola» en ruso?" },
+        { "ru": "Я из Бильбао, говорю по-испански и по-английски.", "es": "Soy de Bilbao y hablo español e inglés." },
+        { "ru": "Ты говоришь по-французски? — Нет, но учу.", "es": "¿Hablas francés? — No, pero estudio francés." },
+        {
+          "ru": "Добрый вечер! Откуда ты? Ты говоришь по-испански?",
+          "hint": "в 7 вечера",
+          "es": "Buenas tardes. ¿De dónde eres? ¿Hablas español?"
+        }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        { "wrong": "¿Tú hablo chino?", "es": "¿Tú **hablas** chino?", "ru": "Ты говоришь по-китайски?", "why": "С tú — окончание -as." },
+        { "wrong": "Yo enseñas alemán.", "es": "Yo **enseño** alemán.", "ru": "Я преподаю немецкий.", "why": "С yo — окончание -o." },
+        { "wrong": "Sí, enseño aleman.", "es": "Sí, enseño **alemán**.", "ru": "Да, я преподаю немецкий.", "why": "Без знака ударение — на le." },
+        { "wrong": "Estudio chino y inglés.", "es": "Estudio chino **e** inglés.", "ru": "Я учу китайский и английский.", "why": "Перед звуком [i] — e." },
+        { "wrong": "Hablo inglés e francés.", "es": "Hablo inglés **y** francés.", "ru": "Я говорю по-английски и по-французски.", "why": "E — только перед звуком [i]." },
+        { "wrong": "¿Hablas el francés?", "es": "¿Hablas **francés**?", "ru": "Ты говоришь по-французски?", "why": "После hablar язык — без артикля." },
+        { "wrong": "¡Hola! Yo llamo Jorge.", "es": "¡Hola! **Me** llamo Jorge.", "ru": "Привет! Меня зовут Хорхе.", "why": "Yo llamo — «я зову»." }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Y, e или pero?",
+      "options": ["y", "e", "pero"],
+      "tasks": [
+        { "es": "Enseño ruso ___ francés.", "answer": "y" },
+        { "es": "Enseño ___ estudio.", "answer": "y" },
+        { "es": "Enseño chino ___ inglés.", "answer": "e" },
+        { "es": "¿Hablas francés ___ inglés?", "answer": "e" },
+        { "es": "¡Hola! Me llamo José ___ soy de Sevilla.", "answer": "y" },
+        { "es": "Hablo alemán, ___ no hablo chino.", "answer": "pero", "ru": "Я говорю по-немецки, но не говорю по-китайски." }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Yo или tú?",
+      "options": ["yo", "tú"],
+      "tasks": [
+        { "es": "Sí, ___ trabajo mucho.", "answer": "yo" },
+        { "es": "Ana, ¿___ estudias chino?", "answer": "tú" },
+        { "es": "Perdón, ¿___ hablas alemán?", "answer": "tú" },
+        { "es": "Tú trabajas y ___ estudio.", "answer": "yo" }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        { "es": "¿Enseñas inglés? — No, estudio inglés.", "ru": "Ты преподаёшь английский? — Нет, я его учу." },
+        { "es": "Tú hablas y yo trabajo.", "ru": "Ты разговариваешь, а я работаю." },
+        { "es": "¡Hola, José! ¿Qué tal? ¿Trabajas mucho?", "ru": "Привет, Хосе! Как дела? Много работаешь?" },
+        { "es": "Buenas tardes. Me llamo Víctor y enseño francés.", "ru": "Добрый день. Меня зовут Виктор, я преподаю французский." },
+        { "es": "¿Estudias mucho? — ¡Qué va! Trabajo mucho.", "ru": "Ты много учишься? — Куда там! Много работаю." },
+        {
+          "es": "Soy de Barcelona. Hablo español, inglés y un poco de francés.",
+          "ru": "Я из Барселоны. Говорю по-испански, по-английски и немного по-французски."
+        }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Карлос-полиглот",
+    "lines": [
+      { "speaker": "José", "es": "Carlos, ¿hablas inglés?", "ru": "Карлос, ты говоришь по-английски?" },
+      { "speaker": "Carlos", "es": "Sí, y francés. Y estudio alemán y chino.", "ru": "Да, и по-французски. А ещё учу немецкий и китайский." },
+      { "speaker": "José", "es": "¿Chino? ¿Hablas chino?", "ru": "Китайский? Ты говоришь по-китайски?" },
+      { "speaker": "Carlos", "es": "Sí, sí… un poco.", "ru": "Да-да… немного." },
+      { "speaker": "Ana", "es": "¿Un poco? ¡Qué va!", "ru": "Немного? Куда там!" },
+      { "speaker": "José", "es": "¿Cómo se dice «gracias» en chino?", "ru": "Как по-китайски «спасибо»?" },
+      { "speaker": "Carlos", "es": "Perdón, José… ¡Hasta luego!", "ru": "Извини, Хосе… Мне пора!" },
+      { "speaker": "Ana", "es": "¡Carlos! ¡Hablas mucho, pero estudias poco!", "ru": "Карлос! Говоришь ты много, а учишься мало!" }
+    ],
+    "questions": [
+      { "question": "Какие языки Карлос учит?", "answer": "Alemán y chino." },
+      { "question": "Карлос правда говорит по-китайски?", "answer": "¡Qué va!" },
+      { "question": "Что Карлос отвечает, когда Хосе его проверяет?", "answer": "«Perdón, José… ¡Hasta luego!»" }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "¿Qué tal? — Trabajo, trabajo y trabajo.",
+      "ru": "Как дела? — Работаю, работаю и работаю.",
+      "ipa": "ke ˈtal · tɾaˈbaxo tɾaˈbaxo i tɾaˈbaxo"
+    },
+    {
+      "es": "Perdón, no hablo español.",
+      "ru": "Извините, я не говорю по-испански. — на чистом испанском",
+      "ipa": "peɾˈdon no ˈablo espaˈɲol"
+    },
+    {
+      "es": "Estudio inglés, alemán y chino… y hablo español.",
+      "ru": "Учу английский, немецкий и китайский… а говорю по-испански.",
+      "ipa": "esˈtudjo inˈgles aleˈman i ˈtʃino · i ˈablo espaˈɲol"
+    },
+    {
+      "es": "No hablo francés, pero hablo mucho.",
+      "ru": "По-французски не говорю. Зато говорю много!",
+      "ipa": "no ˈablo fɾanˈθes ˈpeɾo ˈablo ˈmutʃo"
+    },
+    {
+      "es": "Sí, sí, estudio mucho…",
+      "ru": "Да-да, я много занимаюсь… — между двумя сериями",
+      "ipa": "ˈsi ˈsi esˈtudjo ˈmutʃo"
+    },
+    {
+      "es": "¡No, no y no!",
+      "ru": "Нет, нет и ещё раз нет!",
+      "ipa": "ˈno ˈno i ˈno"
+    }
+  ],
+  "culture": {
+    "kind": "fact",
+    "title": "Español или castellano?",
+    "es": "castellano",
+    "ipa": "kasteˈjano",
+    "ru": "кастильский",
+    "text": "Испанцы часто называют свой язык castellano — по области Кастилия. Так он назван и в Конституции Испании: в стране есть и другие языки, официальные в своих регионах. В Барселоне и на Майорке это каталанский (catalán), в Валенсии — валенсийский (valenciano), в Бильбао — баскский (euskera), в Галисии — галисийский (gallego). Поэтому указатели там часто на двух языках. А «¿Hablas castellano?» и «¿Hablas español?» — один и тот же вопрос."
+  },
+  "yourTurn": {
+    "task": "Расскажите о себе: на каких языках вы говорите и на каких нет, работаете вы или учитесь, что учите. Потом задайте те же вопросы собеседнику. Напишите 4–5 фраз и прочитайте их вслух.",
+    "template": ["Hablo…", "No hablo…", "Trabajo… / Estudio…", "¿Y tú? ¿Hablas…?"],
+    "model": [
+      { "es": "Me llamo Víctor. Soy de Kazán.", "ru": "Меня зовут Виктор. Я из Казани." },
+      { "es": "Hablo ruso e inglés, pero no hablo francés.", "ru": "Говорю по-русски и по-английски, но не по-французски." },
+      { "es": "Trabajo mucho y estudio español.", "ru": "Я много работаю и учу испанский." },
+      { "es": "Hablo español… un poco.", "ru": "По-испански говорю… немного." },
+      { "es": "¿Y tú? ¿Hablas inglés? ¿Trabajas?", "ru": "А ты? Говоришь по-английски? Работаешь?" }
+    ]
+  }
+}

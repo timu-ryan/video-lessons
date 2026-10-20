@@ -1,0 +1,180 @@
+{
+  "number": 9,
+  "expressions": [
+    {
+      "es": "¡Qué guay!",
+      "ipa": "ke ˈgwaj",
+      "ru": "Как круто! Класс!",
+      "note": "Qué + прилагательное — «какой…!»: ¡qué bonito!, ¡qué caro!, ¡qué fácil! Guay — очень испанское «классный», по роду не меняется: el piso es guay, la casa es guay. В Латинской Америке говорят иначе: в Мексике ¡qué padre!, в Колумбии и Венесуэле ¡qué chévere!",
+      "example": { "es": "El piso es grande, bonito y barato. — ¡Qué guay!", "ru": "Квартира большая, красивая и дешёвая. — Класс!" }
+    },
+    {
+      "es": "majo, maja",
+      "ipa": "ˈmaxo, ˈmaxa",
+      "ru": "славный, приятный (о человеке)",
+      "note": "Так в Испании говорят о человеке, с которым приятно общаться. Меняется по роду, как bonito: José es majo, Ana es maja. В Латинской Америке так почти не говорят — там simpático. О характере подробно — в уроке 23.",
+      "example": { "es": "José es muy majo, ¡pero habla por los codos!", "ru": "Хосе очень славный, но болтает без умолку!" }
+    },
+    {
+      "es": "Es que…",
+      "ipa": "ˈes ke",
+      "ru": "Дело в том, что… Понимаешь…",
+      "note": "С него начинают объяснение или вежливый отказ: с es que отказ звучит мягче. Es — та самая форма ser. Подробно — в уроке 36.",
+      "example": { "es": "¿Bailamos? — Es que bailo muy mal…", "ru": "Потанцуем? — Понимаешь, я очень плохо танцую…" }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        {
+          "ru": "Вы испанцы?",
+          "hint": "к нескольким друзьям",
+          "es": "¿Sois españoles?",
+          "alternatives": ["¿Vosotros sois españoles?"]
+        },
+        { "ru": "Китайский лёгкий? Куда там!", "es": "¿El chino es fácil? ¡Qué va!" },
+        {
+          "ru": "Она не испанка, она француженка.",
+          "es": "No es española, es francesa.",
+          "alternatives": ["Ella no es española, es francesa."]
+        },
+        {
+          "ru": "Кот большой, а собака маленькая.",
+          "es": "El gato es grande y el perro es pequeño.",
+          "alternatives": ["El gato es grande, pero el perro es pequeño."]
+        },
+        { "ru": "Вы идёте сегодня вечером танцевать?", "hint": "к нескольким друзьям", "es": "¿Vais a bailar esta noche?" },
+        { "ru": "Сегодня мы не можем: нам нужно работать.", "es": "Hoy no podemos: tenemos que trabajar." },
+        { "ru": "Хосе — врач, но не любит рано вставать.", "es": "José es médico, pero no le gusta madrugar." },
+        { "ru": "Мне нужен новый компьютер, но он очень дорогой.", "es": "Necesito un ordenador nuevo, pero es muy caro." },
+        {
+          "ru": "Нам нужны большой стол и стулья.",
+          "es": "Necesitamos una mesa grande y unas sillas.",
+          "alternatives": ["Necesitamos una mesa grande y sillas."]
+        },
+        {
+          "ru": "Мы хотим купить большую квартиру, но квартиры очень дорогие.",
+          "es": "Queremos comprar un piso grande, pero los pisos son muy caros."
+        }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        { "wrong": "Ana es una médica.", "es": "Ana es **médica**.", "ru": "Ана врач.", "why": "Профессия после ser — без артикля." },
+        { "wrong": "El piso es nueva.", "es": "El piso es **nuevo**.", "ru": "Квартира новая.", "why": "Piso — мужского рода, хоть «квартира» — она." },
+        { "wrong": "Las flores son bonita.", "es": "Las flores son **bonitas**.", "ru": "Цветы красивые.", "why": "Flores — множественное число, значит и bonitas." },
+        { "wrong": "Necesitamos un nuevo ordenador.", "es": "Necesitamos un ordenador **nuevo**.", "ru": "Нам нужен новый компьютер.", "why": "Прилагательное — после существительного." },
+        { "wrong": "Ella rusa, pero habla español muy bien.", "es": "Ella **es** rusa, pero habla español muy bien.", "ru": "Она русская, но очень хорошо говорит по-испански.", "why": "Связку «есть» в испанском не пропускаем." },
+        { "wrong": "La problema es difícil.", "es": "**El** problema es difícil.", "ru": "Проблема сложная.", "why": "Problema — мужского рода, хоть и на -a." },
+        { "wrong": "Mañana Ana y yo van de compras.", "es": "Mañana Ana y yo **vamos** de compras.", "ru": "Завтра мы с Аной идём по магазинам.", "why": "Ana y yo — это «мы»: vamos." },
+        { "wrong": "Tengo comprar un coche nuevo.", "es": "Tengo **que** comprar un coche nuevo.", "ru": "Мне нужно купить новую машину.", "why": "Tener que + инфинитив: que не пропускаем." }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "-o или -a?",
+      "options": ["o", "a"],
+      "tasks": [
+        { "es": "La cama es nuev___.", "answer": "a" },
+        { "es": "El coche es bonit___.", "answer": "o" },
+        { "es": "La mesa es barat___.", "answer": "a" },
+        { "es": "El perro es muy pequeñ___.", "answer": "o" },
+        { "es": "La canción es bonit___.", "answer": "a" },
+        { "es": "El problema es pequeñ___.", "answer": "o" }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Es или son?",
+      "options": ["es", "son"],
+      "tasks": [
+        { "es": "Los coches nuevos ___ caros.", "answer": "son" },
+        { "es": "Ana y José ___ españoles.", "answer": "son" },
+        { "es": "El chino y el alemán ___ difíciles.", "answer": "son" },
+        { "es": "El dinero no ___ un problema.", "answer": "es" },
+        { "es": "Todo el mundo ___ muy majo.", "answer": "es" }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        { "es": "¿Sois de Madrid? — Ella es de Madrid, y yo, de Sevilla.", "ru": "Вы из Мадрида? — Она из Мадрида, а я из Севильи." },
+        { "es": "El piso es pequeño, viejo y muy caro. ¡Qué rollo!", "ru": "Квартира маленькая, старая и очень дорогая. Вот тоска!" },
+        { "es": "Los niños quieren un gato, y el gato… no quiere niños.", "ru": "Дети хотят кота, а кот… детей не хочет." },
+        { "es": "¿Vamos a pasear? — Es que hoy no puedo: tengo que trabajar.", "ru": "Пойдём погуляем? — Понимаешь, сегодня не могу: мне нужно работать." },
+        { "es": "Ana es española y enseña español. Carlos es de Moscú y aprende español… poco a poco.", "ru": "Ана испанка и преподаёт испанский. Карлос из Москвы и учит испанский… потихоньку." }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Стол или кровать?",
+    "lines": [
+      { "es": "Por fin Ana y Carlos van a comprar la mesa.", "ru": "Наконец Ана и Карлос идут покупать стол." },
+      { "es": "La mesa grande es muy bonita, pero es muy cara.", "ru": "Большой стол очень красивый, но очень дорогой." },
+      { "es": "La mesa pequeña es barata, pero es muy vieja.", "ru": "Маленький стол дешёвый, но очень старый." },
+      { "es": "Ana pregunta: «Carlos, ¿qué quieres? ¿Una mesa grande, nueva y barata?»", "ru": "Ана спрашивает: «Карлос, чего ты хочешь? Большой, новый и дешёвый стол?»" },
+      { "es": "Carlos contesta: «No… Quiero una cama. Grande, nueva y barata».", "ru": "Карлос отвечает: «Нет… Я хочу кровать. Большую, новую и дешёвую»." },
+      { "es": "«¿Una cama? ¡Necesitamos una mesa, Carlos!»", "ru": "«Кровать? Нам нужен стол, Карлос!»" },
+      { "es": "«Ana, me gusta comer, pero me gusta más dormir».", "ru": "«Ана, есть я люблю, но спать — больше»." },
+      { "es": "Ana compra la mesa pequeña. Y Carlos… la cama grande.", "ru": "Ана покупает маленький стол. А Карлос… большую кровать." }
+    ],
+    "glossary": [{ "es": "por fin", "ru": "наконец" }],
+    "questions": [
+      { "question": "¿La mesa grande es barata?", "answer": "No, es muy cara." },
+      { "question": "¿La mesa pequeña es nueva?", "answer": "No, es muy vieja." },
+      { "question": "Что хочет Карлос?", "answer": "Quiere una cama grande, nueva y barata." },
+      { "question": "¿Ana compra la mesa grande?", "answer": "No, compra la mesa pequeña." }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "Madrugar es muy difícil. Dormir es muy fácil.",
+      "ru": "Рано вставать — очень трудно. Спать — очень легко.",
+      "ipa": "madɾuˈgaɾ ˈes ˈmuj diˈfiθil · doɾˈmiɾ ˈes ˈmuj ˈfaθil"
+    },
+    {
+      "es": "¿Un piso grande y barato? ¡Qué va!",
+      "ru": "Большая и дешёвая квартира? Куда там!",
+      "ipa": "un ˈpiso ˈgɾande i baˈɾato · ke ˈba"
+    },
+    {
+      "es": "Soy profesora: hablo mucho y escucho poco.",
+      "ru": "Я учительница: много говорю и мало слушаю.",
+      "ipa": "ˈsoj pɾofeˈsoɾa · ˈablo ˈmutʃo i esˈkutʃo ˈpoko"
+    },
+    {
+      "es": "Los niños son pequeños. Los problemas, no.",
+      "ru": "Дети маленькие. А проблемы — нет.",
+      "ipa": "los ˈniɲos ˈson peˈkeɲos · los pɾoˈblemas ˈno"
+    },
+    {
+      "es": "¿Cocinar? Es que soy programador…",
+      "ru": "Готовить? Понимаешь, я программист…",
+      "ipa": "koθiˈnaɾ · ˈes ke ˈsoj pɾogɾamaˈdoɾ"
+    }
+  ],
+  "culture": {
+    "kind": "refrán",
+    "title": "Дешёвое выходит дорогим",
+    "es": "Lo barato sale caro.",
+    "ipa": "lo baˈɾato ˈsale ˈkaɾo",
+    "ru": "Скупой платит дважды.",
+    "text": "Дословно — «дешёвое выходит дорогим»: сэкономил на покупке — потом заплатишь больше. Эту пословицу вспоминают, когда дешёвая вещь быстро ломается. Lo + прилагательное — «то, что…»: lo barato — «дешёвое», lo nuevo — «новое». Ане из истории она бы пригодилась: маленький стол дешёвый, но очень старый."
+  },
+  "yourTurn": {
+    "task": "Расскажите о себе, как при знакомстве: откуда вы, кто вы по национальности и профессии, на каких языках говорите. Потом опишите вашу квартиру или дом. Следите за родом: el piso pequeño, но la casa pequeña. Напишите 4–5 фраз и прочитайте их вслух.",
+    "template": ["Soy de… Soy…", "Soy… / Quiero ser…", "Hablo… y estudio…", "El piso es… / La casa es…"],
+    "model": [
+      { "es": "Soy de Kazán. Soy rusa.", "ru": "Я из Казани. Я русская." },
+      { "es": "Soy ingeniera, pero quiero ser profesora.", "ru": "Я инженер, но хочу быть учительницей." },
+      { "es": "Hablo ruso e inglés, y estudio español.", "ru": "Я говорю по-русски и по-английски и учу испанский." },
+      { "es": "El piso es pequeño, pero muy bonito.", "ru": "Квартира маленькая, но очень красивая." },
+      { "es": "Quiero un piso grande… un día de estos.", "ru": "Хочу большую квартиру… когда-нибудь." }
+    ]
+  }
+}

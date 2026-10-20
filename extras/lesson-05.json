@@ -1,0 +1,360 @@
+{
+  "number": 5,
+  "expressions": [
+    {
+      "es": "¡Hola, chicos!",
+      "ipa": "ˈola ˈtʃikos",
+      "ru": "Привет, ребята!",
+      "note": "Так здороваются с компанией — друзьями, коллегами, хоть всем за сорок. Только девушкам — chicas. Дальше — глагол в форме vosotros; в Латинской Америке — ustedes.",
+      "example": {
+        "es": "¡Hola, chicos! ¿Cenáis juntos hoy?",
+        "ru": "Привет, ребята! Ужинаете сегодня вместе?"
+      }
+    },
+    {
+      "es": "Perdone.",
+      "ipa": "peɾˈdone",
+      "ru": "Простите. Извините (вежливо).",
+      "note": "Perdón годится всем, perdone — только к usted: незнакомому, продавцу, соседу. Другу — perdona. Это форма просьбы, подробно — в уроке 48.",
+      "example": {
+        "es": "Perdone, ¿usted espera?",
+        "ru": "Простите, вы ждёте? — в очереди"
+      }
+    },
+    {
+      "es": "Entre nosotros…",
+      "ipa": "ˈentɾe noˈsotɾos",
+      "ru": "Между нами…",
+      "note": "Так начинают секрет или сплетню. Дальше те же местоимения: entre vosotros, entre ellos. Но «между тобой и мной» — entre tú y yo.",
+      "example": {
+        "es": "Entre nosotros… Carlos estudia poco.",
+        "ru": "Между нами… Карлос мало учится."
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        {
+          "ru": "Вы приезжаете завтра?",
+          "hint": "вежливо, одному человеку",
+          "es": "¿Usted llega mañana?",
+          "alternatives": [
+            "¿Llega usted mañana?"
+          ]
+        },
+        {
+          "ru": "Вы много занимаетесь?",
+          "hint": "к нескольким друзьям",
+          "es": "¿Practicáis mucho?",
+          "alternatives": [
+            "¿Vosotros practicáis mucho?"
+          ]
+        },
+        {
+          "ru": "Они спрашивают, а мы отвечаем.",
+          "es": "Ellos preguntan y nosotros contestamos.",
+          "alternatives": [
+            "Ellos preguntan, nosotros contestamos."
+          ]
+        },
+        {
+          "ru": "Ты будешь сегодня заниматься? — Ещё чего! Я буду отдыхать.",
+          "es": "¿Vas a estudiar hoy? — ¡Qué va! Voy a descansar.",
+          "alternatives": [
+            "¿Vas a practicar hoy? — ¡Qué va! Voy a descansar."
+          ]
+        },
+        {
+          "ru": "Мне не нужно рано завтракать: завтра мы не работаем.",
+          "es": "No tengo que desayunar temprano: mañana no trabajamos."
+        },
+        {
+          "ru": "Хочешь прийти пораньше? — Не могу: мне нужно работать.",
+          "es": "¿Quieres llegar más temprano? — No puedo: tengo que trabajar.",
+          "alternatives": [
+            "¿Quieres llegar más temprano? — No puedo: necesito trabajar."
+          ]
+        },
+        {
+          "ru": "Карлос приходит поздно и спрашивает: «Ужинаем?»",
+          "es": "Carlos llega tarde y pregunta: «¿Cenamos?»"
+        },
+        {
+          "ru": "Завтра готовлю я, а вы помогаете.",
+          "hint": "к нескольким друзьям",
+          "es": "Mañana cocino yo y vosotros ayudáis.",
+          "alternatives": [
+            "Mañana yo cocino y vosotros ayudáis."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        {
+          "wrong": "El no contesta.",
+          "es": "**Él** no contesta.",
+          "ru": "Он не отвечает.",
+          "why": "«Он» — él со знаком ударения."
+        },
+        {
+          "wrong": "¿Vosotros nadais hoy?",
+          "es": "¿Vosotros **nadáis** hoy?",
+          "ru": "Вы сегодня плаваете?",
+          "why": "В -áis нужен знак ударения."
+        },
+        {
+          "wrong": "¿Usted hablas francés?",
+          "es": "¿Usted **habla** francés?",
+          "ru": "Вы говорите по-французски?",
+          "why": "С usted — форма «он, она»."
+        },
+        {
+          "wrong": "¿Ustedes termináis hoy?",
+          "es": "¿Ustedes **terminan** hoy?",
+          "ru": "Вы сегодня заканчиваете?",
+          "why": "С ustedes — форма «они»."
+        },
+        {
+          "wrong": "Ana y Carlos llega mañana.",
+          "es": "Ana y Carlos **llegan** mañana.",
+          "ru": "Ана и Карлос приезжают завтра.",
+          "why": "Это «они» — окончание -an."
+        },
+        {
+          "wrong": "Ana y Carlos cocinan juntas.",
+          "es": "Ana y Carlos cocinan **juntos**.",
+          "ru": "Ана и Карлос готовят вместе.",
+          "why": "Есть мужчина — juntos."
+        },
+        {
+          "wrong": "¿Tienes llegar temprano?",
+          "es": "¿Tienes **que** llegar temprano?",
+          "ru": "Тебе нужно прийти рано?",
+          "why": "Tienes que + инфинитив."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Окончание: -a, -an или -ar?",
+      "options": [
+        "a",
+        "an",
+        "ar"
+      ],
+      "tasks": [
+        {
+          "es": "Ella pregunt___ mucho.",
+          "answer": "a"
+        },
+        {
+          "es": "Ellas cant___ y bailan.",
+          "answer": "an"
+        },
+        {
+          "es": "Tengo que termin___ hoy.",
+          "answer": "ar"
+        },
+        {
+          "es": "Ustedes no cen___ temprano.",
+          "answer": "an"
+        },
+        {
+          "es": "¿Vas a pregunt___ o vas a esperar?",
+          "answer": "ar"
+        },
+        {
+          "es": "Carlos trabaja mucho y necesit___ descansar.",
+          "answer": "a",
+          "ru": "Карлос много работает, и ему нужно отдохнуть."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Usted, vosotros или ustedes?",
+      "options": [
+        "usted",
+        "vosotros",
+        "ustedes"
+      ],
+      "tasks": [
+        {
+          "es": "Perdón, ¿___ habla ruso?",
+          "answer": "usted"
+        },
+        {
+          "es": "Ana, Carlos, ¿___ estudiáis o descansáis?",
+          "answer": "vosotros"
+        },
+        {
+          "es": "Buenos días. ¿___ desayunan ahora?",
+          "answer": "ustedes"
+        },
+        {
+          "es": "Hola, chicos. ¿___ practicáis juntos?",
+          "answer": "vosotros"
+        }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        {
+          "es": "Ana pregunta y Carlos contesta: «Mañana».",
+          "ru": "Ана спрашивает, а Карлос отвечает: «Завтра»."
+        },
+        {
+          "es": "¿Ustedes llegan hoy o mañana?",
+          "ru": "Вы приезжаете сегодня или завтра?"
+        },
+        {
+          "es": "Ellos hablan italiano y nosotros no… ¡pero escuchamos!",
+          "ru": "Они говорят по-итальянски, а мы нет… зато слушаем!"
+        },
+        {
+          "es": "Quiero aprender italiano, pero no tengo ganas de estudiar.",
+          "ru": "Хочу выучить итальянский, но заниматься неохота."
+        },
+        {
+          "es": "Usted trabaja mucho y descansa poco. ¡Necesita descansar más!",
+          "ru": "Вы много работаете и мало отдыхаете. Вам нужно больше отдыхать! — говорит врач"
+        }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Карлос и бабушка",
+    "lines": [
+      {
+        "speaker": "Carlos",
+        "es": "Buenas tardes. ¿Usted hablas ruso? Perdón… ¿usted **habla** ruso?",
+        "ru": "Добрый день. Вы говоришь по-русски? Ой, простите… вы говорите по-русски?"
+      },
+      {
+        "speaker": "Abuela",
+        "es": "Sí. Y estudio chino, nado, bailo, viajo… ¿Y usted?",
+        "ru": "Да. А ещё учу китайский, плаваю, танцую, путешествую… А вы?"
+      },
+      {
+        "speaker": "Carlos",
+        "es": "Yo trabajo mucho. Y descanso mucho.",
+        "ru": "Я много работаю. И много отдыхаю."
+      },
+      {
+        "speaker": "Abuela",
+        "es": "Ana, ¿vosotros bailáis juntos?",
+        "ru": "Ана, а вы вместе танцуете?"
+      },
+      {
+        "speaker": "Ana",
+        "es": "¿Juntos? ¡Qué va! Yo bailo y Carlos espera.",
+        "ru": "Вместе? Куда там! Я танцую, а Карлос ждёт."
+      },
+      {
+        "speaker": "Abuela",
+        "es": "Carlos, ¿bailamos ahora?",
+        "ru": "Карлос, потанцуем прямо сейчас?"
+      },
+      {
+        "speaker": "Carlos",
+        "es": "¿Ahora? Perdone… ¡no puedo más!",
+        "ru": "Сейчас? Простите… я уже без сил!"
+      },
+      {
+        "speaker": "Ana",
+        "es": "Abuela, Carlos baila mañana. O pasado mañana.",
+        "ru": "Бабушка, Карлос потанцует завтра. Или послезавтра."
+      }
+    ],
+    "glossary": [
+      {
+        "es": "la abuela",
+        "ru": "бабушка"
+      }
+    ],
+    "questions": [
+      {
+        "question": "Что делает бабушка Аны?",
+        "answer": "Estudia chino, nada, baila y viaja."
+      },
+      {
+        "question": "¿Ana y Carlos bailan juntos?",
+        "answer": "No. Ana baila y Carlos espera."
+      },
+      {
+        "question": "Какую ошибку Карлос делает в первой реплике?",
+        "answer": "«Usted hablas» — нужно «usted habla»."
+      }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "Nosotros cocinamos y vosotros… ¡ayudáis!",
+      "ru": "Мы готовим, а вы… помогаете! — гостям, которые пришли «просто поесть»",
+      "ipa": "noˈsotɾos koθiˈnamos i boˈsotɾos · ajuˈdais"
+    },
+    {
+      "es": "Ellos viajan, nosotros trabajamos. ¡Qué remedio!",
+      "ru": "Они путешествуют, а мы работаем. Куда деваться! — глядя на чужие фото из отпуска",
+      "ipa": "ˈejos ˈbjaxan noˈsotɾos tɾabaˈxamos · ke reˈmedjo"
+    },
+    {
+      "es": "Ellos cantan, nosotros bailamos y Carlos… cena.",
+      "ru": "Они поют, мы танцуем, а Карлос… ужинает. — на любой вечеринке",
+      "ipa": "ˈejos ˈkantan noˈsotɾos bajˈlamos i ˈkaɾlos · ˈθena"
+    },
+    {
+      "es": "Usted pregunta mucho. — Y usted contesta poco.",
+      "ru": "Вы много спрашиваете. — А вы мало отвечаете. — на собеседовании",
+      "ipa": "usˈted pɾeˈgunta ˈmutʃo · i usˈted konˈtesta ˈpoko"
+    },
+    {
+      "es": "¿Estudiamos juntos? Vale: tú estudias y yo descanso.",
+      "ru": "Позанимаемся вместе? Давай: ты занимаешься, а я отдыхаю. — план Карлоса",
+      "ipa": "estuˈdjamos ˈxuntos · ˈbale ˈtu esˈtudjas i ˈjo desˈkanso"
+    }
+  ],
+  "culture": {
+    "kind": "refrán",
+    "title": "Язык до Рима доведёт",
+    "es": "Preguntando se llega a Roma.",
+    "ipa": "pɾegunˈtando se ˈjega a ˈroma",
+    "ru": "Спрашивая, дойдёшь до Рима.",
+    "text": "Сразу два глагола из урока — preguntar и llegar. Не стесняйтесь спрашивать — так доберётесь куда угодно. Русский аналог — «спрос не бьёт в нос». Preguntando — «спрашивая», формы на -ando — в уроке 30; se llega — «доходят», как se в ¿Cómo se dice…?"
+  },
+  "yourTurn": {
+    "task": "Расскажите о себе и о близких: что делаете вы, что делают ваши друзья или родные, что вы делаете вместе. Напишите 4–5 фраз и прочитайте их вслух.",
+    "template": [
+      "Yo…",
+      "Él / Ella…",
+      "Nosotros…",
+      "Ellos / Ellas…"
+    ],
+    "model": [
+      {
+        "es": "Yo trabajo mucho y estudio español.",
+        "ru": "Я много работаю и учу испанский."
+      },
+      {
+        "es": "Ella enseña inglés y viaja mucho.",
+        "ru": "Она преподаёт английский и много путешествует."
+      },
+      {
+        "es": "Nosotros cenamos juntos y hablamos mucho.",
+        "ru": "Мы ужинаем вместе и много разговариваем."
+      },
+      {
+        "es": "Ellos llegan mañana y paseamos juntos.",
+        "ru": "Завтра они приезжают, и мы вместе идём гулять."
+      }
+    ]
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "number": 4,
+  "expressions": [
+    {
+      "es": "¡Voy!",
+      "ipa": "ˈboj",
+      "ru": "Иду! Сейчас!",
+      "note": "Так отвечают, когда зовут: к столу, к двери, к телефону. Это то же voy, что в voy a: voy a trabajar — дословно «иду работать». Глагол ir целиком — в уроке 6.",
+      "example": {
+        "es": "¡Carlos! ¿Vas a cenar? — ¡Voy, voy!",
+        "ru": "Карлос! Ты ужинать будешь? — Иду-иду!"
+      }
+    },
+    {
+      "es": "No tengo ganas.",
+      "ipa": "no ˈtengo ˈganas",
+      "ru": "Неохота. Мне не хочется.",
+      "note": "Тот же tengo, что в tengo que, но дословно — «не имею желания». С глаголом — через de: no tengo ganas de cocinar. Подробно — в уроке 36.",
+      "example": {
+        "es": "¿Quieres pasear? — Hoy no tengo ganas.",
+        "ru": "Хочешь погулять? — Сегодня неохота."
+      }
+    },
+    {
+      "es": "¡Qué remedio!",
+      "ipa": "ke reˈmedjo",
+      "ru": "Куда деваться! Что поделаешь!",
+      "note": "Про то, что делать не хочется, но придётся, — то есть про tengo que. Remedio — «выход»: выхода нет. В Мексике скажут ni modo.",
+      "example": {
+        "es": "¿Mañana vas a trabajar? — Sí, ¡qué remedio!",
+        "ru": "Завтра будешь работать? — Да, куда деваться!"
+      }
+    },
+    {
+      "es": "¿Qué vas a hacer?",
+      "ipa": "ke ˈbas a aˈθeɾ",
+      "ru": "Что будешь делать?",
+      "note": "Главный вопрос о планах. Hacer — «делать», подробно — в уроке 17; вопросы с qué — в уроке 11.",
+      "example": {
+        "es": "¿Qué vas a hacer mañana? — ¡Dormir!",
+        "ru": "Что будешь делать завтра? — Спать!"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        {
+          "ru": "Завтра я буду учиться. Или послезавтра.",
+          "es": "Mañana voy a estudiar. O pasado mañana.",
+          "alternatives": [
+            "Voy a estudiar mañana. O pasado mañana."
+          ]
+        },
+        {
+          "ru": "Сегодня готовишь ты, а я буду есть.",
+          "es": "Hoy cocinas tú y yo voy a comer.",
+          "alternatives": [
+            "Hoy tú cocinas y yo voy a comer."
+          ]
+        },
+        {
+          "ru": "Тебе не нужно ждать: я буду ужинать позже.",
+          "es": "No tienes que esperar: voy a cenar más tarde."
+        },
+        {
+          "ru": "Завтра я не буду много есть. — Ага, конечно…",
+          "es": "Mañana no voy a comer mucho. — Sí, sí…"
+        },
+        {
+          "ru": "Я не готовлю, но собираюсь научиться.",
+          "es": "No cocino, pero voy a aprender."
+        },
+        {
+          "ru": "Мне нужно работать, а я хочу спать.",
+          "es": "Tengo que trabajar, pero quiero dormir.",
+          "alternatives": [
+            "Necesito trabajar, pero quiero dormir."
+          ]
+        },
+        {
+          "ru": "Сегодня не могу заниматься: надо отдохнуть.",
+          "es": "Hoy no puedo practicar: necesito descansar.",
+          "alternatives": [
+            "Hoy no puedo practicar: tengo que descansar."
+          ]
+        },
+        {
+          "ru": "Говорю я много, а учусь мало. Завтра буду учиться!",
+          "es": "Hablo mucho, pero estudio poco. ¡Mañana voy a estudiar!"
+        },
+        {
+          "ru": "Сегодня ты будешь отдыхать, а я — работать? Ну уж нет!",
+          "es": "¿Hoy tú vas a descansar y yo voy a trabajar? ¡No!"
+        }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        {
+          "wrong": "Mañana voy cocinar.",
+          "es": "Mañana voy **a** cocinar.",
+          "ru": "Завтра я буду готовить.",
+          "why": "Voy a + инфинитив."
+        },
+        {
+          "wrong": "Pasado mañana vas a trabajas.",
+          "es": "Pasado mañana vas a **trabajar**.",
+          "ru": "Послезавтра ты будешь работать.",
+          "why": "Нужен инфинитив."
+        },
+        {
+          "wrong": "Hoy tengo estudiar mucho.",
+          "es": "Hoy tengo **que** estudiar mucho.",
+          "ru": "Сегодня мне нужно много учиться.",
+          "why": "Tengo que + инфинитив."
+        },
+        {
+          "wrong": "Quiero a pasear después.",
+          "es": "**Quiero pasear** después.",
+          "ru": "Потом я хочу погулять.",
+          "why": "После quiero — без a."
+        },
+        {
+          "wrong": "Ahora necesito que dormir.",
+          "es": "Ahora **necesito dormir**.",
+          "ru": "Сейчас мне нужно поспать.",
+          "why": "Que — только после tengo и tienes."
+        },
+        {
+          "wrong": "¿Vas a cenar? — Sí, vas a cenar ahora.",
+          "es": "¿Vas a cenar? — Sí, **voy** a cenar ahora.",
+          "ru": "Будешь ужинать? — Да, буду ужинать сейчас.",
+          "why": "О себе — voy, vas — о собеседнике."
+        },
+        {
+          "wrong": "Tengo que cocinar despues.",
+          "es": "Tengo que cocinar **después**.",
+          "ru": "Готовить мне нужно потом.",
+          "why": "Слово на s с ударением на последнем слоге — нужен знак."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "A или que?",
+      "options": [
+        "a",
+        "que"
+      ],
+      "tasks": [
+        {
+          "es": "Voy ___ descansar.",
+          "answer": "a"
+        },
+        {
+          "es": "¿Tienes ___ esperar mucho?",
+          "answer": "que"
+        },
+        {
+          "es": "¿Vas ___ pasear hoy?",
+          "answer": "a"
+        },
+        {
+          "es": "Hoy no tengo ___ cocinar.",
+          "answer": "que"
+        },
+        {
+          "es": "Pasado mañana no voy ___ desayunar temprano.",
+          "answer": "a"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Voy a, tengo que или no tengo que?",
+      "options": [
+        "voy a",
+        "tengo que",
+        "no tengo que"
+      ],
+      "tasks": [
+        {
+          "es": "Después ___ pasear. ¿Y tú?",
+          "answer": "voy a",
+          "ru": "Потом я пойду гулять. А ты?"
+        },
+        {
+          "es": "¿Cocinar? ___ cocinar, pero no quiero.",
+          "answer": "tengo que",
+          "ru": "Готовить? Надо, но не хочется."
+        },
+        {
+          "es": "Mañana ___ trabajar. ¡Voy a dormir mucho!",
+          "answer": "no tengo que"
+        },
+        {
+          "es": "Gracias, pero ___ esperar: puedo cenar ahora.",
+          "answer": "no tengo que"
+        }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        {
+          "es": "¿Qué vas a hacer hoy? — Voy a descansar.",
+          "ru": "Что ты будешь делать сегодня? — Отдыхать."
+        },
+        {
+          "es": "No tienes que cocinar hoy: ¡voy a cocinar yo!",
+          "ru": "Тебе не нужно сегодня готовить: готовить буду я!"
+        },
+        {
+          "es": "¿Vas a ayudar o vas a hablar por los codos?",
+          "ru": "Ты будешь помогать или болтать без умолку?"
+        },
+        {
+          "es": "Quiero desayunar, pero no tengo ganas de cocinar.",
+          "ru": "Хочу позавтракать, но готовить неохота."
+        },
+        {
+          "es": "¡No puedo más! Voy a descansar y después voy a estudiar… mañana.",
+          "ru": "Больше не могу! Сейчас отдохну, а потом буду заниматься… завтра."
+        }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Карлос и «mañana»",
+    "lines": [
+      {
+        "speaker": "Ana",
+        "es": "Carlos, ¿vas a estudiar ruso hoy?",
+        "ru": "Карлос, сегодня будешь заниматься русским?"
+      },
+      {
+        "speaker": "Carlos",
+        "es": "¿Hoy? No, hoy no puedo. Tengo que descansar.",
+        "ru": "Сегодня? Нет, сегодня не могу. Мне нужно отдохнуть."
+      },
+      {
+        "speaker": "Ana",
+        "es": "¿Y mañana? ¿Temprano?",
+        "ru": "А завтра? С утра пораньше?"
+      },
+      {
+        "speaker": "Carlos",
+        "es": "¿Temprano? ¡Qué va! Mañana voy a dormir… y desayunar… y después, estudiar mucho.",
+        "ru": "Пораньше? Куда там! Завтра я буду спать… завтракать… а потом — много заниматься."
+      },
+      {
+        "speaker": "Ana",
+        "es": "Carlos, ¿vas a estudiar mañana o pasado mañana?",
+        "ru": "Карлос, так ты будешь заниматься завтра или послезавтра?"
+      },
+      {
+        "speaker": "Carlos",
+        "es": "Pasado mañana. O… más tarde.",
+        "ru": "Послезавтра. Или… попозже."
+      },
+      {
+        "speaker": "Ana",
+        "es": "¡Carlos! ¡No vas a aprender ruso!",
+        "ru": "Карлос! Так ты не выучишь русский!"
+      },
+      {
+        "speaker": "Carlos",
+        "es": "¡Pero hablo ruso, Ana! «Завтра», «послезавтра»…",
+        "ru": "Но я же говорю по-русски, Ана! «Завтра», «послезавтра»…"
+      }
+    ],
+    "questions": [
+      {
+        "question": "Почему Карлос сегодня не будет заниматься?",
+        "answer": "«Tengo que descansar.»"
+      },
+      {
+        "question": "Что Карлос будет делать завтра утром?",
+        "answer": "«Voy a dormir… y desayunar.»"
+      },
+      {
+        "question": "Какие русские слова Карлос уже знает?",
+        "answer": "«Завтра» y «послезавтра»."
+      }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "Hoy no. Mañana. O pasado mañana.",
+      "ru": "Сегодня — нет. Завтра. Или послезавтра. — девиз Карлоса",
+      "ipa": "ˈoj ˈno · maˈɲana · o paˈsado maˈɲana"
+    },
+    {
+      "es": "¿Desayunar temprano? ¿Yo? ¡Qué va!",
+      "ru": "Завтракать рано? Мне? Ещё чего!",
+      "ipa": "desajuˈnaɾ temˈpɾano · ˈjo · ke ˈba"
+    },
+    {
+      "es": "Tengo que estudiar… pero después. Mucho después.",
+      "ru": "Мне надо заниматься… но потом. Сильно потом.",
+      "ipa": "ˈtengo ke estuˈdjaɾ · ˈpeɾo desˈpwes · ˈmutʃo desˈpwes"
+    },
+    {
+      "es": "¿Ayudar? Sí, sí… más tarde.",
+      "ru": "Помочь? Да-да… попозже. — когда просят помыть посуду",
+      "ipa": "ajuˈdaɾ · ˈsi ˈsi · ˈmas ˈtaɾde"
+    },
+    {
+      "es": "No tienes que ayudar… pero puedes.",
+      "ru": "Помогать не обязательно… но можно.",
+      "ipa": "no ˈtjenes ke ajuˈdaɾ · ˈpeɾo ˈpwedes"
+    },
+    {
+      "es": "Hoy voy a cocinar yo. — ¡No, por favor!",
+      "ru": "Сегодня готовлю я. — Только не это!",
+      "ipa": "ˈoj ˈboj a koθiˈnaɾ ˈjo · ˈno poɾ faˈboɾ"
+    }
+  ],
+  "culture": {
+    "kind": "fact",
+    "title": "Ужин в десять вечера",
+    "es": "la cena",
+    "ipa": "la ˈθena",
+    "ru": "ужин",
+    "text": "В Испании ужинают поздно: обычно в девять-десять вечера, а летом и по выходным — ещё позже. Главная еда дня — обед (la comida) часа в два-три, а завтрак скромный: кофе и тост. Одно из объяснений — часы: с 1940 года Испания живёт по центральноевропейскому времени, как Париж и Берлин, хотя по долготе ей ближе Лондон, поэтому солнце по часам встаёт и садится поздно. Так что «voy a cenar tarde» по-испански может значить и одиннадцать вечера."
+  },
+  "yourTurn": {
+    "task": "Расскажите о своём завтрашнем дне: что вы будете делать, что вам нужно сделать и чего делать не нужно. Напишите 4–5 фраз и прочитайте их вслух.",
+    "template": [
+      "Mañana voy a…",
+      "Tengo que…",
+      "No tengo que…",
+      "Después… / Más tarde…"
+    ],
+    "model": [
+      {
+        "es": "Mañana voy a trabajar, pero no mucho.",
+        "ru": "Завтра я буду работать, но немного."
+      },
+      {
+        "es": "Tengo que cocinar y estudiar español.",
+        "ru": "Мне нужно приготовить еду и позаниматься испанским."
+      },
+      {
+        "es": "Pasado mañana no tengo que trabajar.",
+        "ru": "Послезавтра мне не нужно работать."
+      },
+      {
+        "es": "Voy a dormir mucho y después voy a pasear.",
+        "ru": "Я буду долго спать, а потом пойду гулять."
+      },
+      {
+        "es": "¿Y tú? ¿Qué vas a hacer mañana?",
+        "ru": "А ты? Что ты будешь делать завтра?"
+      }
+    ]
+  }
+}

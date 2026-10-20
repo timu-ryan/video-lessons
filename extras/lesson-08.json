@@ -1,0 +1,190 @@
+{
+  "number": 8,
+  "expressions": [
+    {
+      "es": "un montón",
+      "ipa": "un monˈton",
+      "ru": "куча, очень много",
+      "note": "Разговорное «куча». После глагола — как mucho: trabajo un montón. С предметом — через de: un montón de libros. Montón — мужского рода, отсюда un.",
+      "example": { "es": "¿Vas a comprar libros? — Sí, un montón.", "ru": "Будешь покупать книги? — Да, целую кучу." }
+    },
+    {
+      "es": "un día de estos",
+      "ipa": "un ˈdi.a de ˈestos",
+      "ru": "на днях, как-нибудь",
+      "note": "Обещание без даты: сделаю… когда-нибудь. Día — мужского рода, поэтому un. Estos — «эти», подробно — в уроке 22.",
+      "example": { "es": "¿Vas a limpiar el piso hoy? — Hoy no… Un día de estos.", "ru": "Сегодня будешь убирать квартиру? — Сегодня нет… Как-нибудь на днях." }
+    },
+    {
+      "es": "todo el mundo",
+      "ipa": "ˈtodo el ˈmundo",
+      "ru": "все, все люди",
+      "note": "Дословно «весь мир». Устроено как todo el día — «весь день». Глагол — в форме «он»: todo el mundo canta, а не cantan.",
+      "example": { "es": "Todo el mundo baila, y Carlos… espera.", "ru": "Все танцуют, а Карлос… ждёт." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        { "ru": "Кот опять хочет есть.", "es": "El gato quiere comer otra vez." },
+        {
+          "ru": "Мне нужен компьютер, а не телефон.",
+          "es": "Necesito un ordenador, no un teléfono.",
+          "alternatives": ["Necesito el ordenador, no el teléfono."]
+        },
+        { "ru": "Дети не хотят спать.", "es": "Los niños no quieren dormir." },
+        {
+          "ru": "Вы завтра идёте по магазинам?",
+          "hint": "к нескольким друзьям",
+          "es": "¿Mañana vais de compras?",
+          "alternatives": ["¿Vais de compras mañana?"]
+        },
+        {
+          "ru": "Ты купишь стол завтра?",
+          "hint": "тот самый, о котором говорили",
+          "es": "¿Vas a comprar la mesa mañana?",
+          "alternatives": ["¿Compras la mesa mañana?"]
+        },
+        { "ru": "Я не люблю мыть окна.", "es": "No me gusta limpiar las ventanas.", "alternatives": ["No me gusta limpiar ventanas."] },
+        {
+          "ru": "Ана хочет собаку, а Карлос — кота.",
+          "es": "Ana quiere un perro y Carlos, un gato.",
+          "alternatives": ["Ana quiere un perro, pero Carlos quiere un gato."]
+        },
+        {
+          "ru": "Они хотят купить машину, но не могут.",
+          "es": "Quieren comprar un coche, pero no pueden."
+        },
+        {
+          "ru": "Мне нужно купить еду, но я не хочу идти по магазинам.",
+          "es": "Tengo que comprar comida, pero no quiero ir de compras.",
+          "alternatives": ["Necesito comprar comida, pero no quiero ir de compras."]
+        },
+        {
+          "ru": "Завтра приезжают подруги, и мне нужно убрать квартиру.",
+          "es": "Mañana llegan unas amigas y tengo que limpiar el piso."
+        }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        { "wrong": "Necesito la coche.", "es": "Necesito **el** coche.", "ru": "Мне нужна (эта) машина.", "why": "Coche — мужского рода, хоть «машина» — она." },
+        { "wrong": "Ana compra el mesa.", "es": "Ana compra **la** mesa.", "ru": "Ана покупает (этот) стол.", "why": "Mesa на -a — женский род, хоть «стол» — он." },
+        { "wrong": "Quiero comprar perro.", "es": "Quiero comprar **un** perro.", "ru": "Я хочу купить собаку.", "why": "Без артикля нельзя: новый предмет — un." },
+        { "wrong": "Ana y Carlos viajan unas días.", "es": "Ana y Carlos viajan **unos** días.", "ru": "Ана и Карлос несколько дней путешествуют.", "why": "Día — мужского рода: unos días." },
+        { "wrong": "Ana quiere ganar más dineros.", "es": "Ana quiere ganar más **dinero**.", "ru": "Ана хочет больше зарабатывать.", "why": "Dinero — единственное число, хоть «деньги» — множественное." },
+        { "wrong": "¿Puedes ayudar? — Sí, podo.", "es": "¿Puedes ayudar? — Sí, **puedo**.", "ru": "Можешь помочь? — Да, могу.", "why": "Под ударением o → ue: puedo." },
+        { "wrong": "Les gustan bailar y cantar.", "es": "Les **gusta** bailar y cantar.", "ru": "Им нравится танцевать и петь.", "why": "Нравится действие — всегда gusta, даже если «им»." }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "El или la?",
+      "options": ["el", "la"],
+      "tasks": [
+        { "es": "¿Puedes limpiar ___ ventana?", "answer": "la" },
+        { "es": "¿Tienes que terminar ___ trabajo hoy?", "answer": "el" },
+        { "es": "Hoy Ana limpia ___ coche.", "answer": "el" },
+        { "es": "Hoy ___ clase termina tarde.", "answer": "la" },
+        { "es": "Vamos a cantar ___ canción otra vez.", "answer": "la" },
+        { "es": "Carlos descansa todo ___ día.", "answer": "el" }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "-s или -es?",
+      "options": ["s", "es"],
+      "tasks": [
+        { "es": "Necesito unas silla___.", "answer": "s" },
+        { "es": "Queremos comprar unas flor___.", "answer": "es" },
+        { "es": "Necesitamos unos ordenador___.", "answer": "es" },
+        { "es": "Vamos a limpiar los coche___.", "answer": "s" },
+        { "es": "Hoy no quiero problema___.", "answer": "s" }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        { "es": "¿Carlos limpia el piso? ¡Qué va!", "ru": "Карлос убирает квартиру? Куда там!" },
+        { "es": "Los niños cantan, y el perro también.", "ru": "Дети поют, и собака тоже." },
+        { "es": "¿Vosotros limpiáis la casa juntos? — ¡Claro! Yo limpio y él descansa.", "ru": "Вы убираете дом вместе? — Конечно! Я убираю, а он отдыхает." },
+        { "es": "Queremos comprar un piso. El problema: ganamos poco dinero.", "ru": "Мы хотим купить квартиру. Проблема в том, что мы мало зарабатываем." },
+        { "es": "Ana trabaja todo el día. Carlos también: trabaja un poco y descansa mucho.", "ru": "Ана работает весь день. Карлос тоже: немного работает и много отдыхает." }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Карлос покупает стол",
+    "lines": [
+      { "es": "Hoy Ana y Carlos van a comprar una mesa.", "ru": "Сегодня Ана и Карлос собираются купить стол." },
+      { "es": "Pero Carlos quiere comprar un teléfono.", "ru": "Но Карлос хочет купить телефон." },
+      { "es": "Ana espera.", "ru": "Ана ждёт." },
+      { "es": "Después Carlos compra unos libros, un bolígrafo y unas flores.", "ru": "Потом Карлос покупает книги, ручку и цветы." },
+      { "es": "Ana pregunta: «Carlos, ¿y la mesa?»", "ru": "Ана спрашивает: «Карлос, а стол?»" },
+      { "es": "Carlos contesta: «¿La mesa? Un día de estos. Ahora necesito dinero».", "ru": "Карлос отвечает: «Стол? Как-нибудь на днях. Сейчас мне нужны деньги»." },
+      { "es": "Esta noche Carlos llama: «Ana, mañana compramos la mesa, ¿vale?»", "ru": "Вечером Карлос звонит: «Ана, завтра покупаем стол, договорились?»" },
+      { "es": "Ana contesta: «¿Mañana? Un día de estos, Carlos. Un día de estos».", "ru": "Ана отвечает: «Завтра? Как-нибудь на днях, Карлос. Как-нибудь на днях»." }
+    ],
+    "questions": [
+      { "question": "¿Carlos compra la mesa?", "answer": "No, no compra la mesa." },
+      { "question": "Что покупает Карлос?", "answer": "Un teléfono, libros, un bolígrafo y flores." },
+      { "question": "Что Карлосу нужно сейчас?", "answer": "Necesita dinero." },
+      { "question": "¿Ana y Carlos van a comprar la mesa mañana?", "answer": "No… un día de estos." }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "Quiero un piso, un coche y un perro. Y dinero, claro.",
+      "ru": "Хочу квартиру, машину и собаку. И денег, конечно.",
+      "ipa": "ˈkjeɾo un ˈpiso un ˈkotʃe i un ˈpero · i diˈneɾo ˈklaɾo"
+    },
+    {
+      "es": "Me gusta mucho comprar libros. ¿Leer? No.",
+      "ru": "Очень люблю покупать книги. Читать? Нет.",
+      "ipa": "me ˈgusta ˈmutʃo komˈpɾaɾ ˈlibɾos · leˈeɾ · ˈno"
+    },
+    {
+      "es": "El perro quiere pasear. Yo quiero dormir.",
+      "ru": "Собака хочет гулять. А я хочу спать.",
+      "ipa": "el ˈpero ˈkjeɾe paseˈaɾ · ˈjo ˈkjeɾo doɾˈmiɾ"
+    },
+    {
+      "es": "El gato no trabaja, no limpia y come todo el día.",
+      "ru": "Кот не работает, не убирается и ест весь день.",
+      "ipa": "el ˈgato no tɾaˈbaxa no ˈlimpja i ˈkome ˈtodo el ˈdi.a"
+    },
+    {
+      "es": "Tengo que limpiar el piso… un día de estos.",
+      "ru": "Надо убрать квартиру… как-нибудь на днях.",
+      "ipa": "ˈtengo ke limˈpjaɾ el ˈpiso · un ˈdi.a de ˈestos"
+    },
+    {
+      "es": "Todo el mundo madruga. Yo no.",
+      "ru": "Все рано встают. А я — нет.",
+      "ipa": "ˈtodo el ˈmundo maˈdɾuga · ˈjo ˈno"
+    }
+  ],
+  "culture": {
+    "kind": "fact",
+    "title": "Почему la foto, а не el foto",
+    "es": "la foto · la moto",
+    "ipa": "la ˈfoto · la ˈmoto",
+    "ru": "фотография · мотоцикл",
+    "text": "В разговоре испанцы любят укорачивать длинные слова: la fotografía → la foto, la motocicleta → la moto, la televisión → la tele, la película («фильм») → la peli, el bolígrafo → el boli. Род при этом остаётся от полного слова. Поэтому la foto и la moto — женского рода, хоть и кончаются на -o. А настоящее исключение на -o, которое стоит запомнить сразу, — la mano, «рука»."
+  },
+  "yourTurn": {
+    "task": "Представьте, что вы переезжаете. Напишите, что вам нужно для новой квартиры, что вы хотите купить и что купите когда-нибудь потом. Следите за артиклями. Напишите 4–5 фраз и прочитайте их вслух.",
+    "template": ["Necesito un… / una…", "Quiero comprar unos… / unas…", "No necesito…", "Voy a comprar… un día de estos."],
+    "model": [
+      { "es": "Necesito una cama y unas sillas.", "ru": "Мне нужны кровать и стулья." },
+      { "es": "Quiero comprar una mesa y unas flores.", "ru": "Хочу купить стол и цветы." },
+      { "es": "No necesito un teléfono.", "ru": "Телефон мне не нужен." },
+      { "es": "Voy a comprar un coche… un día de estos.", "ru": "Машину куплю… как-нибудь на днях." }
+    ]
+  }
+}
