@@ -469,5 +469,29 @@
         "«В следующем уроке научимся задавать вопросы: что, где, когда и почему. ¡Adiós!»"
       ]
     }
-  ]
+  ],
+  "summary": {
+    "phrases": [
+      { "es": "**Como** poco.", "ru": "Я мало ем.", "ipa": "ˈkomo ˈpoko" },
+      { "es": "¿**Aprendes** español?", "ru": "Ты учишь испанский?", "ipa": "aˈpɾendes espaˈɲol" },
+      { "es": "Hoy **comemos** poco.", "ru": "Сегодня мы мало едим.", "ipa": "ˈoj koˈmemos ˈpoko" },
+      { "es": "No bebo **café**.", "ru": "Я не пью кофе.", "ipa": "no ˈbebo kaˈfe" },
+      { "es": "No **comprendo**.", "ru": "Я не понимаю.", "ipa": "no komˈpɾendo" },
+      { "es": "**Vivo** en Moscú.", "ru": "Я живу в Москве.", "ipa": "ˈbibo en mosˈku" },
+      { "es": "Vivimos en el **centro**.", "ru": "Мы живём в центре.", "ipa": "biˈbimos en el ˈθentɾo" },
+      { "es": "Ella **escribe** un libro.", "ru": "Она пишет книгу.", "ipa": "ˈeja esˈkɾibe un ˈlibɾo" }
+    ],
+    "rule": "Отбрасываем **-er** / **-ir** и добавляем окончание: **-o, -es, -e, -emos, -éis, -en** — como, comes, come… У **-ir** иначе только «мы» и «вы»: viv**imos**, viv**ís**. Где? — **en** + место: vivo **en** Moscú.",
+    "mistake": {
+      "wrong": { "es": "Nosotros **vivemos**." },
+      "right": { "es": "Nosotros **vivimos**.", "ru": "Мы живём." }
+    },
+    "practice": [
+      { "ru": "Я не ем мясо.", "es": "No como carne." },
+      { "ru": "Мы едим рыбу дома.", "es": "Comemos pescado en casa." },
+      { "ru": "Она русская, но живёт в Мадриде.", "es": "Ella es rusa, pero vive en Madrid." },
+      { "ru": "Они пьют кофе и читают газету.", "es": "Ellos beben café y leen el periódico." },
+      { "ru": "Ты понимаешь по-испански?", "es": "¿Comprendes español?", "alternatives": ["¿Comprendes el español?"] }
+    ]
+  }
 }
