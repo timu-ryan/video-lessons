@@ -3,7 +3,7 @@
 > Генерируется командой `npm run vocab:build`. Не редактировать вручную.
 > Готовя урок N, считайте изученным только то, что введено в уроках с номером меньше N.
 
-Уроков: 10 · слов: 188
+Уроков: 11 · слов: 205
 
 ## Урок 1 · A0-1 · Приветствие, знакомство
 
@@ -65,6 +65,12 @@
 
 **Грамматика:** настоящее время глаголов на -er · настоящее время глаголов на -ir · en + место
 
+## Урок 11 · A0-11 · Вопросы
+
+**Слова (17):** qué — что, какой · quién — кто · dónde — где · cuándo — когда · cómo — как · cuánto — сколько · por qué — почему · porque — потому что · el idioma — язык · el país — страна · la pregunta — вопрос · la respuesta — ответ · la palabra — слово · la universidad — университет · la oficina — офис · la biblioteca — библиотека · visitar — посещать, побывать
+
+**Грамматика:** вопросительные слова со знаком ударения · порядок слов в вопросе: вопросительное слово + глагол + подлежащее · ¿por qué…? — porque… · cuánto / cuánta / cuántos / cuántas + существительное · предлог перед вопросительным словом: ¿de dónde?, ¿en qué?
+
 ## Алфавитный указатель
 
 | es | ru | pos | урок |
@@ -92,6 +98,7 @@
 | bailar | танцевать | verb | 3 |
 | barato | дешёвый | adj | 9 |
 | beber | пить | verb | 10 |
+| la biblioteca | библиотека | noun | 11 |
 | bien | хорошо | adv | 7 |
 | el bolígrafo | ручка | noun | 8 |
 | bonito | красивый | adj | 9 |
@@ -117,10 +124,13 @@
 | cocinar | готовить | verb | 3 |
 | comer | есть | verb | 3 |
 | la comida | еда | noun | 8 |
+| cómo | как | adv | 11 |
 | comprar | покупать | verb | 4 |
 | comprender | понимать | verb | 10 |
 | contestar | отвечать | verb | 5 |
 | correr | бегать | verb | 10 |
+| cuándo | когда | adv | 11 |
+| cuánto | сколько | pron | 11 |
 | de | из | prep | 9 |
 | de nada | не за что | phrase | 1 |
 | desayunar | завтракать | verb | 4 |
@@ -129,6 +139,7 @@
 | el día | день | noun | 8 |
 | difícil | трудный | adj | 9 |
 | el dinero | деньги | noun | 8 |
+| dónde | где | adv | 11 |
 | dormir | спать | verb | 3 |
 | e | и (перед i-, hi-) | conj | 2 |
 | él | он | pron | 5 |
@@ -157,6 +168,7 @@
 | hasta luego | до встречи, пока | phrase | 1 |
 | hola | привет | interj | 1 |
 | hoy | сегодня | adv | 3 |
+| el idioma | язык | noun | 11 |
 | el ingeniero, la ingeniera | инженер | noun | 9 |
 | el inglés | английский язык | noun | 2 |
 | interesante | интересный | adj | 9 |
@@ -196,9 +208,12 @@
 | nosotros | мы | pron | 5 |
 | nuevo | новый | adj | 9 |
 | o | или | conj | 4 |
+| la oficina | офис | noun | 11 |
 | el ordenador | компьютер | noun | 8 |
 | os gusta | вам нравится (нескольким, на «ты») | phrase | 7 |
 | otra vez | ещё раз, снова | phrase | 6 |
+| el país | страна | noun | 11 |
+| la palabra | слово | noun | 11 |
 | el pan | хлеб | noun | 10 |
 | pasado mañana | послезавтра | adv | 4 |
 | pasear | гулять | verb | 4 |
@@ -212,16 +227,22 @@
 | poco | мало | adv | 2 |
 | poder | мочь | verb | 3 |
 | por favor | пожалуйста (просьба) | phrase | 1 |
+| por qué | почему | adv | 11 |
+| porque | потому что | conj | 11 |
 | practicar | практиковать, заниматься | verb | 3 |
+| la pregunta | вопрос | noun | 11 |
 | preguntar | спрашивать | verb | 5 |
 | el problema | проблема | noun | 8 |
 | el profesor, la profesora | учитель, учительница | noun | 9 |
 | el programador, la programadora | программист, программистка | noun | 9 |
 | pronto | скоро | adv | 6 |
 | la puerta | дверь | noun | 8 |
+| qué | что, какой | pron | 11 |
 | querer | хотеть | verb | 3 |
+| quién | кто | pron | 11 |
 | recibir | получать | verb | 10 |
 | regresar | возвращаться | verb | 6 |
+| la respuesta | ответ | noun | 11 |
 | la revista | журнал | noun | 10 |
 | Rusia | Россия | noun | 9 |
 | el ruso | русский язык | noun | 2 |
@@ -244,6 +265,7 @@
 | trabajar | работать | verb | 2 |
 | el trabajo | работа | noun | 8 |
 | tú | ты | pron | 2 |
+| la universidad | университет | noun | 11 |
 | usted | вы (вежливо, одному человеку) | pron | 5 |
 | ustedes | вы (вежливо, нескольким) | pron | 5 |
 | vas a | ты собираешься, ты будешь | phrase | 4 |
@@ -251,6 +273,7 @@
 | la ventana | окно | noun | 8 |
 | viajar | путешествовать | verb | 3 |
 | viejo | старый | adj | 9 |
+| visitar | посещать, побывать | verb | 11 |
 | vivir | жить | verb | 10 |
 | vosotras | вы (нескольким женщинам, на «ты») | pron | 5 |
 | vosotros | вы (нескольким, на «ты») | pron | 5 |

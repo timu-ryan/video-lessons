@@ -1,0 +1,563 @@
+{
+  "schemaVersion": 3,
+  "number": 11,
+  "level": "A0",
+  "planLesson": 11,
+  "title": "Вопросы",
+  "course": "Испанский с нуля",
+  "newVocabulary": [
+    { "es": "qué", "ru": "что, какой", "pos": "pron" },
+    { "es": "quién", "ru": "кто", "pos": "pron" },
+    { "es": "dónde", "ru": "где", "pos": "adv" },
+    { "es": "cuándo", "ru": "когда", "pos": "adv" },
+    { "es": "cómo", "ru": "как", "pos": "adv" },
+    { "es": "cuánto", "ru": "сколько", "pos": "pron" },
+    { "es": "por qué", "ru": "почему", "pos": "adv" },
+    { "es": "porque", "ru": "потому что", "pos": "conj" },
+    { "es": "el idioma", "ru": "язык", "pos": "noun" },
+    { "es": "el país", "ru": "страна", "pos": "noun" },
+    { "es": "la pregunta", "ru": "вопрос", "pos": "noun" },
+    { "es": "la respuesta", "ru": "ответ", "pos": "noun" },
+    { "es": "la palabra", "ru": "слово", "pos": "noun" },
+    { "es": "la universidad", "ru": "университет", "pos": "noun" },
+    { "es": "la oficina", "ru": "офис", "pos": "noun" },
+    { "es": "la biblioteca", "ru": "библиотека", "pos": "noun" },
+    { "es": "visitar", "ru": "посещать, побывать", "pos": "verb" }
+  ],
+  "newGrammar": [
+    "вопросительные слова со знаком ударения",
+    "порядок слов в вопросе: вопросительное слово + глагол + подлежащее",
+    "¿por qué…? — porque…",
+    "cuánto / cuánta / cuántos / cuántas + существительное",
+    "предлог перед вопросительным словом: ¿de dónde?, ¿en qué?"
+  ],
+  "speakers": { "ana": "Ana", "carlos": "Carlos" },
+  "tableHeaders": { "es": "Испанский", "ru": "Перевод" },
+  "practiceGroups": [
+    { "name": "Где, что, когда, кто" },
+    { "name": "Как, сколько, почему" },
+    { "name": "Откуда и где" },
+    { "name": "Всё вместе" }
+  ],
+  "slides": [
+    {
+      "type": "title",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Привет! Мы уже умеем рассказывать о себе: где живём, что едим, что любим. Но разговор — это не только ответы. Сегодня учимся задавать вопросы.»",
+        "«Где? Что? Когда? Кто? Как? Сколько? Почему? После этого урока вы сможете расспросить собеседника и объяснить, почему вы что-то делаете.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Вопросительные слова",
+      "hint": "Слово-вопрос — в начале, глагол — сразу за ним",
+      "notes": [
+        "«Вопросы мы уже задавали — одной интонацией: ¿Vives en Moscú? На такой вопрос отвечают «да» или «нет».»",
+        "«Сегодня добавим вопросительные слова. Они стоят в начале вопроса — так же, как в русском.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Где, что, когда, кто",
+      "rows": [
+        { "es": "¿**Dónde** vives?", "ru": "Где ты живёшь?", "ipa": "ˈdonde ˈbibes" },
+        { "es": "¿**Qué** lees?", "ru": "Что ты читаешь?", "ipa": "ˈke ˈle.es" },
+        { "es": "¿**Cuándo** trabajas?", "ru": "Когда ты работаешь?", "ipa": "ˈkwando tɾaˈbaxas" },
+        { "es": "¿**Quién** habla español?", "ru": "Кто говорит по-испански?", "ipa": "ˈkjen ˈabla espaˈɲol" }
+      ],
+      "notes": [
+        "«Dónde — где. ¿Dónde vives? — где ты живёшь? 🔊»",
+        "«Qué — что. ¿Qué lees? — что ты читаешь? 🔊»",
+        "«Cuándo — когда. ¿Cuándo trabajas? 🔊»",
+        "«Quién — кто. ¿Quién habla español? 🔊 После quién глагол стоит в форме «он»: quién habla — как в русском «кто говорит».»",
+        "«Заметьте две вещи. Первая: в начале вопроса стоит перевёрнутый знак ¿. Он показывает, что это вопрос, ещё до того, как вы дочитали фразу.»",
+        "«Вторая: на каждом вопросительном слове стоит знак ударения — dónde, qué, cuándo, quién. Зачем он, разберём чуть позже.»",
+        "«Интонация — как в русском: в вопросе с вопросительным словом голос к концу опускается.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Как и сколько",
+      "rows": [
+        { "es": "¿**Cómo** es Madrid?", "ru": "Какой он, Мадрид?", "ipa": "ˈkomo ˈes maˈdɾid" },
+        { "es": "¿**Cuánto** trabajas?", "ru": "Сколько ты работаешь?", "ipa": "ˈkwanto tɾaˈbaxas" },
+        { "es": "¿**Cuánto** dinero necesitas?", "ru": "Сколько денег тебе нужно?", "ipa": "ˈkwanto diˈneɾo neθeˈsitas" },
+        { "es": "¿**Cuántos idiomas** hablas?", "ru": "На скольких языках ты говоришь?", "ipa": "ˈkwantos iˈdjomas ˈablas" }
+      ],
+      "notes": [
+        "«Cómo — как. Это слово вы уже знаете по фразе ¿Cómo te llamas? — как тебя зовут?»",
+        "«А cómo вместе с ser спрашивает, какой кто-то или что-то. ¿Cómo es Madrid? — какой он, Мадрид? 🔊 Ответ — прилагательное: Es grande y bonito.»",
+        "«Cuánto — сколько. ¿Cuánto trabajas? 🔊 ¿Cuánto dinero necesitas? 🔊»",
+        "«¿Cuántos idiomas hablas? 🔊 Idioma — язык, на котором говорят. Хоть оно и кончается на -a, это мужской род: el idioma, как el problema и el día.»",
+        "«Почему здесь cuántos, с -s на конце? Сейчас разберём.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Сколько: cuánto",
+      "pattern": ["cuánto", "+", "существительное"],
+      "text": "Cuánto согласуется с существительным: cuánto, cuánta, cuántos, cuántas.",
+      "examples": [
+        { "es": "¿**Cuánta** cerveza bebes?", "ru": "Сколько пива ты пьёшь?", "ipa": "ˈkwanta θeɾˈbeθa ˈbebes" },
+        { "es": "¿**Cuántos** libros lees?", "ru": "Сколько книг ты читаешь?", "ipa": "ˈkwantos ˈlibɾos ˈle.es" },
+        { "es": "¿**Cuántas** cartas escribes?", "ru": "Сколько писем ты пишешь?", "ipa": "ˈkwantas ˈkaɾtas esˈkɾibes" }
+      ],
+      "notes": [
+        "«Перед существительным cuánto ведёт себя как прилагательное из урока 9: меняется по роду и числу.»",
+        "«La cerveza — женский род, значит cuánta cerveza. 🔊 Los libros — мужской род, множественное число: cuántos libros. 🔊 Las cartas — cuántas cartas. 🔊»",
+        "«El dinero — мужской род, единственное число, поэтому cuánto dinero: словарная форма.»",
+        "«Если существительного нет, как в ¿Cuánto trabajas?, cuánto не меняется.»",
+        "«Русское «сколько» не меняется, поэтому окончание здесь легко забыть. Смотрите на существительное.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Какой: qué или cómo",
+      "left": {
+        "label": "qué — какой именно",
+        "items": [
+          { "es": "¿**Qué** libro lees?" },
+          { "es": "¿**Qué** idioma estudias?" }
+        ]
+      },
+      "right": {
+        "label": "cómo es — какой он",
+        "items": [
+          { "es": "¿**Cómo** es el libro?" },
+          { "es": "¿**Cómo** es el español?" }
+        ]
+      },
+      "notes": [
+        "«Русское «какой» по-испански бывает двумя разными вопросами.»",
+        "«Если выбираем из многих — какую именно книгу, какой язык, — говорим qué + существительное. ¿Qué libro lees? — какую книгу ты читаешь? 🔊 ¿Qué idioma estudias? — какой язык ты учишь? 🔊»",
+        "«А если спрашиваем, какой предмет сам по себе — интересный, трудный, большой, — нужен cómo + ser. ¿Cómo es el libro? — и как книга, интересная? 🔊 ¿Cómo es el español? — какой он, испанский: лёгкий или трудный? 🔊»",
+        "«Ответ на cómo es — прилагательное: Es interesante. Es difícil.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Порядок слов",
+      "pattern": ["слово-вопрос", "+", "глагол", "+", "подлежащее"],
+      "text": "Глагол — сразу после вопросительного слова, подлежащее — после глагола.",
+      "examples": [
+        { "es": "¿Dónde **vive** Ana?", "ru": "Где живёт Ана?", "ipa": "ˈdonde ˈbibe ˈana" },
+        { "es": "¿Qué **lee** Carlos?", "ru": "Что читает Карлос?", "ipa": "ˈke ˈle.e ˈkaɾlos" },
+        { "es": "¿Cuándo **trabajan** ellos?", "ru": "Когда они работают?", "ipa": "ˈkwando tɾaˈbaxan ˈejos" }
+      ],
+      "notes": [
+        "«Теперь порядок слов. В испанском вопросе глагол идёт сразу за вопросительным словом.»",
+        "«Если подлежащее названо — Ана, Карлос, ellos, — оно стоит после глагола. ¿Dónde vive Ana? 🔊 ¿Qué lee Carlos? 🔊 ¿Cuándo trabajan ellos? 🔊»",
+        "«По-русски тоже можно сказать «Где живёт Ана?». Вот этот порядок и запоминайте.»",
+        "«Если знаете английский: никаких do и does. Where do you live? — просто ¿Dónde vives?»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичная ошибка",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          { "es": "¿Dónde **Ana vive**?" },
+          { "es": "¿Qué **Carlos lee**?" }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          { "es": "¿Dónde **vive Ana**?", "ru": "Где живёт Ана?" },
+          { "es": "¿Qué **lee Carlos**?", "ru": "Что читает Карлос?" }
+        ]
+      },
+      "notes": [
+        "«По-русски «Где Ана живёт?» звучит нормально, и так и хочется сказать ¿Dónde Ana vive?. По-испански так не говорят.»",
+        "«Вопросительное слово — и сразу глагол: ¿Dónde vive Ana? ¿Qué lee Carlos?»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Почему? — Потому что",
+      "hint": "Вопрос — por qué, ответ — porque",
+      "notes": [
+        "«Следующий раздел — как спросить о причине и как её объяснить.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Почему?",
+      "rows": [
+        { "es": "¿**Por qué** estudias español?", "ru": "Почему ты учишь испанский?", "ipa": "poɾ ˈke esˈtudjas espaˈɲol" },
+        { "es": "**Porque** quiero viajar.", "ru": "Потому что хочу путешествовать.", "ipa": "ˈpoɾke ˈkjeɾo bjaˈxaɾ" },
+        { "es": "visitar — Quiero **visitar** Moscú.", "ru": "Я хочу побывать в Москве.", "ipa": "bisiˈtaɾ · ˈkjeɾo bisiˈtaɾ mosˈku" }
+      ],
+      "notes": [
+        "«¿Por qué? — почему? Два слова и знак ударения на qué. ¿Por qué estudias español? 🔊»",
+        "«Ответ — porque, потому что. Одно слово и без знака. Porque quiero viajar. 🔊»",
+        "«Новый глагол — visitar, посещать. По-русски мы чаще скажем «побывать»: Quiero visitar Moscú — я хочу побывать в Москве. 🔊 Это обычный глагол на -ar: visito, visitas, visita.»",
+        "«Если знаете английский: por qué — why, porque — because, а visitar похож на visit.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Почему — потому что",
+      "left": {
+        "label": "вопрос: por qué",
+        "items": [
+          { "es": "¿**Por qué** trabajas?" },
+          { "es": "¿**Por qué** no comes carne?" },
+          { "es": "¿**Por qué** estudias inglés?" }
+        ]
+      },
+      "right": {
+        "label": "ответ: porque",
+        "items": [
+          { "es": "**Porque** necesito dinero." },
+          { "es": "**Porque** no me gusta." },
+          { "es": "**Porque** voy a viajar." }
+        ]
+      },
+      "notes": [
+        "«Слева вопросы, справа ответы.»",
+        "«¿Por qué trabajas? — Porque necesito dinero: почему ты работаешь? — потому что мне нужны деньги. 🔊»",
+        "«¿Por qué no comes carne? — Porque no me gusta: почему ты не ешь мясо? — потому что не люблю. 🔊»",
+        "«¿Por qué estudias inglés? — Porque voy a viajar: почему ты учишь английский? — потому что собираюсь путешествовать. 🔊»",
+        "«После porque идёт обычная фраза, как после русского «потому что».»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Со знаком и без",
+      "left": {
+        "label": "без знака",
+        "items": [
+          { "es": "**Como** pan." },
+          { "es": "Tengo **que** leer." },
+          { "es": "**Porque** quiero." }
+        ]
+      },
+      "right": {
+        "label": "со знаком — вопрос",
+        "items": [
+          { "es": "¿**Cómo** te llamas?" },
+          { "es": "¿**Qué** lees?" },
+          { "es": "¿**Por qué**?" }
+        ]
+      },
+      "notes": [
+        "«Теперь зачем знак ударения. Он показывает, что слово вопросительное. В речи такое слово звучит ударно и чётко, а на письме это видно по знаку.»",
+        "«Como pan — я ем хлеб: como — форма глагола comer. ¿Cómo te llamas? — как тебя зовут: здесь cómo — «как». 🔊»",
+        "«Tengo que leer — мне нужно читать: que без знака — часть конструкции tener que. ¿Qué lees? — что ты читаешь? 🔊»",
+        "«Porque quiero — потому что хочу. ¿Por qué? — почему? 🔊»",
+        "«В вопросах знак обязателен: без него это ошибка.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Вопрос, ответ, слово",
+      "rows": [
+        { "es": "No comprendo la **pregunta**.", "ru": "Я не понимаю вопрос.", "ipa": "no komˈpɾendo la pɾeˈgunta" },
+        { "es": "La **respuesta** es fácil.", "ru": "Ответ простой.", "ipa": "la resˈpwesta ˈes ˈfaθil" },
+        { "es": "¿Qué **palabra** no comprendes?", "ru": "Какое слово ты не понимаешь?", "ipa": "ˈke paˈlabɾa no komˈpɾendes" }
+      ],
+      "notes": [
+        "«И три слова, без которых на уроке не обойтись.»",
+        "«Pregunta — вопрос. No comprendo la pregunta. 🔊 Знакомо? Глагол preguntar — спрашивать — вы уже знаете.»",
+        "«Respuesta — ответ. La respuesta es fácil. 🔊 А вот глагол «отвечать» другой — contestar.»",
+        "«Palabra — слово. ¿Qué palabra no comprendes? 🔊 Снова qué + существительное: какое именно слово.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Вопрос с предлогом",
+      "hint": "Предлог стоит перед вопросительным словом",
+      "notes": [
+        "«Последний раздел. Бывает, что перед вопросительным словом нужен предлог: откуда — de dónde, в каком — en qué.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Откуда и где",
+      "rows": [
+        { "es": "¿**De dónde** es Ana?", "ru": "Откуда Ана?", "ipa": "de ˈdonde ˈes ˈana" },
+        { "es": "¿De qué **país** eres?", "ru": "Из какой ты страны?", "ipa": "de ˈke paˈis ˈeɾes" },
+        { "es": "¿En qué **universidad** estudias?", "ru": "В каком университете ты учишься?", "ipa": "en ˈke unibeɾsiˈdad esˈtudjas" },
+        { "es": "Trabajo en una **oficina**.", "ru": "Я работаю в офисе.", "ipa": "tɾaˈbaxo en ˈuna ofiˈθina" },
+        { "es": "Estudio en la **biblioteca**.", "ru": "Я занимаюсь в библиотеке.", "ipa": "esˈtudjo en la biblioˈteka" }
+      ],
+      "notes": [
+        "«¿De dónde eres? — откуда ты? — эту фразу вы знаете с первого урока. Теперь видно, как она устроена: de — «из», dónde — «где». ¿De dónde es Ana? 🔊»",
+        "«País — страна. ¿De qué país eres? — из какой ты страны? 🔊 Ударение на í, a и i произносим раздельно: pa-ís.»",
+        "«Universidad — университет. ¿En qué universidad estudias? 🔊 Предлог en тоже встаёт в самое начало.»",
+        "«Oficina — офис. Trabajo en una oficina. 🔊 Biblioteca — библиотека. Estudio en la biblioteca. 🔊»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичная ошибка",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          { "es": "¿**Dónde** eres **de**?" },
+          { "es": "¿**Qué** país eres **de**?" }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          { "es": "¿**De dónde** eres?", "ru": "Откуда ты?" },
+          { "es": "¿**De qué** país eres?", "ru": "Из какой ты страны?" }
+        ]
+      },
+      "notes": [
+        "«В испанском предлог никогда не остаётся в конце вопроса. Он идёт первым, а за ним — вопросительное слово.»",
+        "«Особенно легко ошибиться, если знаете английский: Where are you from? так и хочется перевести как ¿Dónde eres de?. Так нельзя — только ¿De dónde eres?»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Практика",
+      "hint": "Фраза по-русски → пауза → скажите вслух по-испански",
+      "notes": [
+        "«Теперь практика. Вы видите фразу по-русски — пока идёт полоска, скажите её вслух по-испански. Потом появится ответ. Не бойтесь ошибиться: главное — говорить.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Где, что, когда, кто",
+      "phrase": { "ru": "Где ты живёшь?", "es": "¿Dónde vives?", "ipa": "ˈdonde ˈbibes" }
+    },
+    {
+      "type": "practice",
+      "group": "Где, что, когда, кто",
+      "phrase": { "ru": "Что ты пьёшь?", "es": "¿Qué bebes?", "ipa": "ˈke ˈbebes" }
+    },
+    {
+      "type": "practice",
+      "group": "Где, что, когда, кто",
+      "phrase": { "ru": "Когда ты ужинаешь?", "es": "¿Cuándo cenas?", "ipa": "ˈkwando ˈθenas" }
+    },
+    {
+      "type": "practice",
+      "group": "Где, что, когда, кто",
+      "phrase": { "ru": "Кто говорит по-английски?", "es": "¿Quién habla inglés?", "ipa": "ˈkjen ˈabla inˈgles" }
+    },
+    {
+      "type": "practice",
+      "group": "Где, что, когда, кто",
+      "phrase": { "ru": "Где живёт Карлос?", "es": "¿Dónde vive Carlos?", "ipa": "ˈdonde ˈbibe ˈkaɾlos" }
+    },
+    {
+      "type": "practice",
+      "group": "Где, что, когда, кто",
+      "phrase": { "ru": "Что пишет Ана?", "es": "¿Qué escribe Ana?", "ipa": "ˈke esˈkɾibe ˈana" }
+    },
+    {
+      "type": "practice",
+      "group": "Где, что, когда, кто",
+      "phrase": { "ru": "Где вы работаете?", "hint": "вежливо, одному человеку", "es": "¿Dónde trabaja usted?", "alternatives": ["¿Dónde trabaja?"], "ipa": "ˈdonde tɾaˈbaxa usˈted" }
+    },
+    {
+      "type": "practice",
+      "group": "Где, что, когда, кто",
+      "phrase": { "ru": "Что вы едите?", "hint": "к нескольким друзьям", "es": "¿Qué coméis?", "alternatives": ["¿Qué coméis vosotros?"], "ipa": "ˈke koˈmeis" }
+    },
+    {
+      "type": "practice",
+      "group": "Как, сколько, почему",
+      "phrase": { "ru": "Как тебя зовут?", "es": "¿Cómo te llamas?", "ipa": "ˈkomo te ˈjamas" }
+    },
+    {
+      "type": "practice",
+      "group": "Как, сколько, почему",
+      "phrase": { "ru": "Какая она, Москва?", "es": "¿Cómo es Moscú?", "ipa": "ˈkomo ˈes mosˈku" }
+    },
+    {
+      "type": "practice",
+      "group": "Как, сколько, почему",
+      "phrase": { "ru": "Какую газету ты читаешь?", "es": "¿Qué periódico lees?", "ipa": "ˈke peˈɾjodiko ˈle.es" }
+    },
+    {
+      "type": "practice",
+      "group": "Как, сколько, почему",
+      "phrase": { "ru": "Сколько кофе ты пьёшь?", "es": "¿Cuánto café bebes?", "ipa": "ˈkwanto kaˈfe ˈbebes" }
+    },
+    {
+      "type": "practice",
+      "group": "Как, сколько, почему",
+      "phrase": { "ru": "Сколько журналов ты читаешь?", "es": "¿Cuántas revistas lees?", "ipa": "ˈkwantas reˈbistas ˈle.es" },
+      "notes": [
+        "«Revista — женский род, множественное число, поэтому cuántas.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Как, сколько, почему",
+      "phrase": { "ru": "Сколько вы зарабатываете?", "hint": "вежливо, одному человеку", "es": "¿Cuánto gana usted?", "alternatives": ["¿Cuánto gana?"], "ipa": "ˈkwanto ˈgana usˈted" }
+    },
+    {
+      "type": "practice",
+      "group": "Как, сколько, почему",
+      "phrase": { "ru": "На скольких языках говорит Ана?", "es": "¿Cuántos idiomas habla Ana?", "ipa": "ˈkwantos iˈdjomas ˈabla ˈana" }
+    },
+    {
+      "type": "practice",
+      "group": "Как, сколько, почему",
+      "phrase": { "ru": "Почему ты не пьёшь пиво? — Потому что не люблю.", "es": "¿Por qué no bebes cerveza? — Porque no me gusta.", "ipa": "poɾ ˈke no ˈbebes θeɾˈbeθa · ˈpoɾke no me ˈgusta" }
+    },
+    {
+      "type": "practice",
+      "group": "Как, сколько, почему",
+      "phrase": { "ru": "Почему вы учите английский?", "hint": "к нескольким друзьям", "es": "¿Por qué estudiáis inglés?", "alternatives": ["¿Por qué aprendéis inglés?"], "ipa": "poɾ ˈke estuˈdjais inˈgles" }
+    },
+    {
+      "type": "practice",
+      "group": "Откуда и где",
+      "phrase": { "ru": "Откуда ты?", "es": "¿De dónde eres?", "ipa": "de ˈdonde ˈeɾes" }
+    },
+    {
+      "type": "practice",
+      "group": "Откуда и где",
+      "phrase": { "ru": "Откуда Карлос?", "es": "¿De dónde es Carlos?", "ipa": "de ˈdonde ˈes ˈkaɾlos" }
+    },
+    {
+      "type": "practice",
+      "group": "Откуда и где",
+      "phrase": { "ru": "Откуда вы?", "hint": "к нескольким друзьям", "es": "¿De dónde sois?", "alternatives": ["¿De dónde sois vosotros?"], "ipa": "de ˈdonde ˈsojs" }
+    },
+    {
+      "type": "practice",
+      "group": "Откуда и где",
+      "phrase": { "ru": "Из какой вы страны?", "hint": "вежливо, одному человеку", "es": "¿De qué país es usted?", "alternatives": ["¿De qué país es?"], "ipa": "de ˈke paˈis ˈes usˈted" }
+    },
+    {
+      "type": "practice",
+      "group": "Откуда и где",
+      "phrase": { "ru": "На каком языке ты пишешь?", "es": "¿En qué idioma escribes?", "ipa": "en ˈke iˈdjoma esˈkɾibes" }
+    },
+    {
+      "type": "practice",
+      "group": "Откуда и где",
+      "phrase": { "ru": "В каком университете учится Ана?", "es": "¿En qué universidad estudia Ana?", "ipa": "en ˈke unibeɾsiˈdad esˈtudja ˈana" }
+    },
+    {
+      "type": "practice",
+      "group": "Откуда и где",
+      "phrase": { "ru": "Ты работаешь в офисе? — Нет, в библиотеке.", "es": "¿Trabajas en una oficina? — No, en la biblioteca.", "alternatives": ["¿Trabajas en una oficina? — No, en una biblioteca."], "ipa": "tɾaˈbaxas en ˈuna ofiˈθina · ˈno en la biblioˈteka" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Где ты хочешь жить?", "es": "¿Dónde quieres vivir?", "ipa": "ˈdonde ˈkjeɾes biˈbiɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Когда ты будешь работать?", "es": "¿Cuándo vas a trabajar?", "ipa": "ˈkwando ˈbas a tɾabaˈxaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Что тебе нравится читать?", "es": "¿Qué te gusta leer?", "ipa": "ˈke te ˈgusta leˈeɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Когда ты собираешься побывать в Москве?", "es": "¿Cuándo vas a visitar Moscú?", "ipa": "ˈkwando ˈbas a bisiˈtaɾ mosˈku" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Мы не понимаем вопрос.", "es": "No comprendemos la pregunta.", "ipa": "no kompɾenˈdemos la pɾeˈgunta" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Какое слово вы не понимаете?", "hint": "к нескольким друзьям", "es": "¿Qué palabra no comprendéis?", "alternatives": ["¿Qué palabra no comprendéis vosotros?"], "ipa": "ˈke paˈlabɾa no kompɾenˈdeis" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Почему ты хочешь выучить испанский?", "es": "¿Por qué quieres aprender español?", "alternatives": ["¿Por qué quieres estudiar español?"], "ipa": "poɾ ˈke ˈkjeɾes apɾenˈdeɾ espaˈɲol" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Потому что я собираюсь путешествовать.", "es": "Porque voy a viajar.", "ipa": "ˈpoɾke ˈboj a bjaˈxaɾ" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Ответ простой? — Нет, трудный.", "es": "¿La respuesta es fácil? — No, es difícil.", "alternatives": ["¿Es fácil la respuesta? — No, es difícil."], "ipa": "la resˈpwesta ˈes ˈfaθil · ˈno ˈes diˈfiθil" }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Какой он, университет? — Большой и красивый.", "es": "¿Cómo es la universidad? — Es grande y bonita.", "ipa": "ˈkomo ˈes la unibeɾsiˈdad · ˈes ˈgɾande i boˈnita" },
+      "notes": [
+        "«Universidad — женский род, поэтому bonita.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": { "ru": "Почему они не говорят по-испански? — Потому что они из России.", "es": "¿Por qué no hablan español? — Porque son de Rusia.", "ipa": "poɾ ˈke no ˈablan espaˈɲol · ˈpoɾke ˈson de ˈrusja" }
+    },
+    {
+      "type": "section",
+      "title": "Мини-диалог",
+      "notes": [
+        "«А теперь послушаем, как Ана расспрашивает Карлоса. Все слова вы уже знаете.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Почему испанский?",
+      "lines": [
+        { "speaker": "ana", "es": "¿**De dónde** eres, Carlos?", "ru": "Откуда ты, Карлос?" },
+        { "speaker": "carlos", "es": "Soy de Rusia. Vivo en Moscú, en el centro.", "ru": "Я из России. Живу в Москве, в центре." },
+        { "speaker": "ana", "es": "¿Y **dónde** trabajas?", "ru": "А где ты работаешь?" },
+        { "speaker": "carlos", "es": "En una oficina. Soy programador.", "ru": "В офисе. Я программист." }
+      ],
+      "notes": [
+        "🔊 Проиграть диалог целиком, потом по репликам.",
+        "«¿Y dónde trabajas? — «а где ты работаешь?». Y в начале вопроса — как русское «а»: так разговор и строится, один ответ — следующий вопрос.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Почему испанский?",
+      "lines": [
+        { "speaker": "ana", "es": "¿**Por qué** estudias español?", "ru": "Почему ты учишь испанский?" },
+        { "speaker": "carlos", "es": "**Porque** quiero vivir en España.", "ru": "Потому что хочу жить в Испании." },
+        { "speaker": "ana", "es": "¿Y **cuándo** vas a visitar Madrid?", "ru": "А когда ты собираешься в Мадрид?" },
+        { "speaker": "carlos", "es": "Pronto. ¡Muy pronto!", "ru": "Скоро. Очень скоро!" }
+      ],
+      "notes": [
+        "«На ¿Por qué? Карлос отвечает porque — одним словом, без знака.»",
+        "«¿Y cuándo vas a visitar Madrid? — вопросительное слово прекрасно работает и с voy a: cuándo vas a…»"
+      ]
+    },
+    {
+      "type": "final",
+      "title": "Теперь вы умеете",
+      "bullets": [
+        "Задавать вопросы: qué, quién, dónde, cuándo, cómo, cuánto",
+        "Спрашивать о причине и отвечать: ¿por qué? — porque",
+        "Ставить глагол сразу после вопросительного слова",
+        "Спрашивать с предлогом: ¿de dónde?, ¿en qué?"
+      ],
+      "nextTitle": "Следующий урок",
+      "nextText": "Урок 12: где и как — estar и hay",
+      "outro": "¡Hasta luego!",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Теперь вы умеете не только рассказывать о себе, но и расспрашивать других. Попробуйте сегодня задать вслух пять вопросов: где, что, когда, кто и почему.»",
+        "«В следующем уроке узнаем второй глагол «быть» — estar — и слово hay. Научимся говорить, где что находится и как вы себя чувствуете. ¡Hasta luego!»"
+      ]
+    }
+  ]
+}
