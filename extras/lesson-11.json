@@ -1,0 +1,167 @@
+{
+  "number": 11,
+  "expressions": [
+    {
+      "es": "¿Cómo?",
+      "ipa": "ˈkomo",
+      "ru": "Что-что? Простите? (переспросить)",
+      "note": "Так переспрашивают, если не расслышали. Вежливее, чем ¿Qué?: испанским детям напоминают — не ¿qué?, а ¿cómo? В Мексике говорят ¿Mande?",
+      "example": { "es": "¿Corremos mañana? — ¿Cómo? — ¿Corremos mañana? — ¿Cómo?", "ru": "Завтра бегаем? — Что-что? — Завтра бегаем? — Что-что?" }
+    },
+    {
+      "es": "¿Y eso?",
+      "ipa": "i ˈeso",
+      "ru": "А что так? С чего это?",
+      "note": "Разговорный вопрос о причине — живее, чем ¿por qué? Eso — «это», подробно — в уроке 22.",
+      "example": { "es": "Hoy no voy a correr. — ¿Y eso? — Es que no tengo ganas.", "ru": "Сегодня я не бегаю. — А что так? — Да неохота." }
+    },
+    {
+      "es": "¿Por qué no?",
+      "ipa": "poɾ ˈke ˈno",
+      "ru": "Почему бы и нет?",
+      "note": "Согласие, как в русском. Не путайте с porque no — «потому что нет»: так отвечают, когда объяснять не хотят.",
+      "example": { "es": "¿Cenamos juntos esta noche? — ¿Por qué no?", "ru": "Поужинаем вместе сегодня вечером? — Почему бы и нет?" }
+    },
+    {
+      "es": "¿Cuánto es?",
+      "ipa": "ˈkwanto ˈes",
+      "ru": "Сколько с меня?",
+      "note": "Так в баре или магазине спрашивают, сколько платить за всё. Цена одной вещи — ¿Cuánto cuesta?, подробно — в уроке 15.",
+      "example": { "es": "Un café y una cerveza, por favor. ¿Cuánto es?", "ru": "Кофе и пиво, пожалуйста. Сколько с меня?" }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        { "ru": "Кто сегодня убирается?", "es": "¿Quién limpia hoy?" },
+        { "ru": "Какую музыку ты слушаешь?", "es": "¿Qué música escuchas?" },
+        {
+          "ru": "Где вы ужинаете сегодня вечером?",
+          "hint": "к нескольким друзьям",
+          "es": "¿Dónde cenáis esta noche?",
+          "alternatives": ["¿Dónde cenáis vosotros esta noche?"]
+        },
+        {
+          "ru": "Сколько пива вы пьёте?",
+          "hint": "к нескольким друзьям",
+          "es": "¿Cuánta cerveza bebéis?",
+          "alternatives": ["¿Cuánta cerveza bebéis vosotros?"]
+        },
+        { "ru": "Откуда бабушка Аны?", "es": "¿De dónde es la abuela de Ana?" },
+        { "ru": "Почему ты сегодня не работаешь? — Потому что не хочу.", "es": "¿Por qué no trabajas hoy? — Porque no quiero." },
+        { "ru": "Китайский — трудный язык.", "es": "El chino es un idioma difícil." },
+        { "ru": "Квартира маленькая, но кровать большая.", "es": "El piso es pequeño, pero la cama es grande." },
+        { "ru": "Мы живём в центре, но работаем дома.", "es": "Vivimos en el centro, pero trabajamos en casa." },
+        { "ru": "Когда ты собираешься убраться? — Завтра. Или послезавтра.", "es": "¿Cuándo vas a limpiar? — Mañana. O pasado mañana." }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        { "wrong": "¿Donde trabajas?", "es": "¿**Dónde** trabajas?", "ru": "Где ты работаешь?", "why": "Слово-вопрос — со знаком." },
+        { "wrong": "¿Quién quieren café?", "es": "¿Quién **quiere** café?", "ru": "Кто хочет кофе?", "why": "После quién — форма «он»." },
+        { "wrong": "¿Qué José come?", "es": "¿Qué **come José**?", "ru": "Что ест Хосе?", "why": "Глагол — сразу за qué." },
+        { "wrong": "¿Porque no comes pescado?", "es": "¿**Por qué** no comes pescado?", "ru": "Почему ты не ешь рыбу?", "why": "«Почему» — por qué." },
+        { "wrong": "¿Cuánto flores compras?", "es": "¿**Cuántas** flores compras?", "ru": "Сколько цветов ты покупаешь?", "why": "Las flores — женский род." },
+        { "wrong": "¿Qué país es Ana de?", "es": "¿**De** qué país es Ana?", "ru": "Из какой страны Ана?", "why": "Предлог — в начале." },
+        { "wrong": "¿Abremos la ventana?", "es": "¿**Abrimos** la ventana?", "ru": "Откроем окно?", "why": "Abrir на -ir: -imos." },
+        { "wrong": "¿Es difícil la idioma?", "es": "¿Es difícil **el** idioma?", "ru": "Язык трудный?", "why": "Idioma — мужской род." }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Qué или cómo?",
+      "options": ["qué", "cómo"],
+      "tasks": [
+        { "es": "Ana, ¿___ idiomas hablas?", "answer": "qué" },
+        { "es": "¿Y ___ es el piso? — Pequeño, pero bonito.", "answer": "cómo" },
+        { "es": "¿Y ___ es la abuela? — ¡Muy maja!", "answer": "cómo" },
+        { "es": "Carlos, ¿___ coche quieres? — Nuevo y barato.", "answer": "qué" },
+        { "es": "¿Y ___ es la cerveza? — ¡Muy barata!", "answer": "cómo" }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Por qué или porque?",
+      "options": ["por qué", "porque"],
+      "tasks": [
+        { "es": "Ana, ¿___ madrugas? — Tengo que trabajar.", "answer": "por qué" },
+        { "es": "No estudio hoy ___ no tengo ganas.", "answer": "porque" },
+        { "es": "Y vosotros, ¿___ no bailáis? — Bailamos muy mal.", "answer": "por qué" },
+        { "es": "Carlos, ¿___ no cocinas? — Es que cocino muy mal.", "answer": "por qué" },
+        { "es": "No vivo en Madrid ___ es muy caro.", "answer": "porque" }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        { "es": "¿Qué estudia la abuela? — ¡Chino!", "ru": "Что учит бабушка? — Китайский!" },
+        { "es": "¿Cuándo descansas? — ¿Qué es eso?", "ru": "Когда ты отдыхаешь? — А что это такое?" },
+        { "es": "¿Quién cocina? — Carlos. — ¡Qué rollo!", "ru": "Кто готовит? — Карлос. — Вот тоска!" },
+        { "es": "¿Cuánto ganas? — Poco. — ¿Y cuánto trabajas? — ¡Mucho!", "ru": "Сколько ты зарабатываешь? — Мало. — А сколько работаешь? — Много!" }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Бабушкин допрос",
+    "lines": [
+      { "speaker": "Abuela", "es": "¡Hola, chicos! Carlos, ¿dónde corres? ¿Y cuándo?", "ru": "Привет, ребята! Карлос, где ты бегаешь? И когда?" },
+      { "speaker": "Carlos", "es": "¿Yo? En el centro. Temprano, ¡muy temprano!", "ru": "Я? В центре. Рано, очень рано!" },
+      { "speaker": "Ana", "es": "¿Temprano? ¿Carlos? ¡Qué va!", "ru": "Рано? Карлос? Куда там!" },
+      { "speaker": "Abuela", "es": "¿Y cuánto corres?", "ru": "И сколько ты бегаешь?" },
+      { "speaker": "Carlos", "es": "Mucho… Un poco… Muy poco.", "ru": "Много… Немного… Совсем чуть-чуть." },
+      { "speaker": "Abuela", "es": "¿Y por qué no corres más?", "ru": "А почему не больше?" },
+      { "speaker": "Carlos", "es": "Porque trabajo todo el día. Y mañana también.", "ru": "Потому что работаю весь день. И завтра тоже." },
+      { "speaker": "Ana", "es": "¿Mañana? Mañana no trabajas, Carlos. ¡Mañana corres!", "ru": "Завтра? Завтра ты не работаешь, Карлос. Завтра ты бегаешь!" }
+    ],
+    "questions": [
+      { "question": "¿Cuánto corre Carlos?", "answer": "Muy poco." },
+      { "question": "¿Por qué no corre más?", "answer": "Porque trabaja todo el día." },
+      { "question": "¿Carlos trabaja mañana?", "answer": "No. Mañana corre." }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "¿Por qué? — Porque sí.",
+      "ru": "Почему? — Потому что потому.",
+      "ipa": "poɾ ˈke · ˈpoɾke ˈsi"
+    },
+    {
+      "es": "¿Cuánto café? Poco: solo todo el día.",
+      "ru": "Сколько кофе? Немного: всего-то весь день.",
+      "ipa": "ˈkwanto kaˈfe · ˈpoko · ˈsolo ˈtodo el ˈdi.a"
+    },
+    {
+      "es": "¿El trabajo? Interesante. ¿El dinero? Poco.",
+      "ru": "Работа? Интересная. Деньги? Маловато.",
+      "ipa": "el tɾaˈbaxo · inteɾeˈsante · el diˈneɾo · ˈpoko"
+    },
+    {
+      "es": "La respuesta es «sí». ¿Y la pregunta?",
+      "ru": "Ответ — «да». А вопрос какой?",
+      "ipa": "la resˈpwesta ˈes ˈsi · i la pɾeˈgunta"
+    }
+  ],
+  "culture": {
+    "kind": "refrán",
+    "title": "Куда идёт Висенте?",
+    "es": "¿Dónde va Vicente? Donde va la gente.",
+    "ipa": "ˈdonde ˈba biˈθente · donde ˈba la ˈxente",
+    "ru": "Куда все, туда и я.",
+    "text": "Дословно — «Куда идёт Висенте? Куда идут люди»: так подшучивают над тем, кто делает как все. Висенте — ради рифмы с gente, «люди». Заметьте: в вопросе dónde со знаком, а в ответе donde — без него, как por qué и porque."
+  },
+  "yourTurn": {
+    "task": "Теперь бабушка Аны расспрашивает вас. Напишите пять её вопросов — откуда, где, что, почему и когда — и ответьте на них. Вопросительное слово — и сразу глагол!",
+    "template": ["¿De dónde…? — Soy de…", "¿Dónde…? — En…", "¿Qué…? — Me gusta…", "¿Por qué…? — Porque…"],
+    "model": [
+      { "es": "¿De dónde eres? — De Kazán, pero vivo en Moscú.", "ru": "Откуда ты? — Из Казани, но живу в Москве." },
+      { "es": "¿Qué te gusta hacer? — Leer, viajar… y dormir.", "ru": "Что ты любишь? — Читать, путешествовать… и спать." },
+      { "es": "¿Por qué aprendes español? — Porque quiero visitar España.", "ru": "Зачем учишь испанский? — Потому что хочу в Испанию." },
+      { "es": "¿Cuándo vas a visitar España? — Un día de estos.", "ru": "Когда поедешь? — Как-нибудь на днях." }
+    ]
+  }
+}

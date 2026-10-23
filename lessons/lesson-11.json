@@ -559,5 +559,29 @@
         "«В следующем уроке узнаем второй глагол «быть» — estar — и слово hay. Научимся говорить, где что находится и как вы себя чувствуете. ¡Hasta luego!»"
       ]
     }
-  ]
+  ],
+  "summary": {
+    "phrases": [
+      { "es": "¿**Dónde** vives?", "ru": "Где ты живёшь?", "ipa": "ˈdonde ˈbibes" },
+      { "es": "¿**Qué** lees?", "ru": "Что ты читаешь?", "ipa": "ˈke ˈle.es" },
+      { "es": "¿**Cuándo** trabajas?", "ru": "Когда ты работаешь?", "ipa": "ˈkwando tɾaˈbaxas" },
+      { "es": "¿**Cómo** es Madrid?", "ru": "Какой он, Мадрид?", "ipa": "ˈkomo ˈes maˈdɾid" },
+      { "es": "¿**Cuántos idiomas** hablas?", "ru": "На скольких языках ты говоришь?", "ipa": "ˈkwantos iˈdjomas ˈablas" },
+      { "es": "¿**Por qué** estudias español?", "ru": "Почему ты учишь испанский?", "ipa": "poɾ ˈke esˈtudjas espaˈɲol" },
+      { "es": "**Porque** quiero viajar.", "ru": "Потому что хочу путешествовать.", "ipa": "ˈpoɾke ˈkjeɾo bjaˈxaɾ" },
+      { "es": "¿**De dónde** es Ana?", "ru": "Откуда Ана?", "ipa": "de ˈdonde ˈes ˈana" }
+    ],
+    "rule": "Слово-вопрос — в начале, **глагол** сразу за ним, подлежащее — после: ¿Dónde **vive** Ana? Слова-вопросы пишутся **со знаком ударения**: qué, cómo, dónde. Предлог — **перед** словом-вопросом: ¿**De** dónde eres?",
+    "mistake": {
+      "wrong": { "es": "¿Dónde **Ana vive**?" },
+      "right": { "es": "¿Dónde **vive Ana**?", "ru": "Где живёт Ана?" }
+    },
+    "practice": [
+      { "ru": "Где ты хочешь жить?", "es": "¿Dónde quieres vivir?" },
+      { "ru": "Когда ты собираешься побывать в Москве?", "es": "¿Cuándo vas a visitar Moscú?" },
+      { "ru": "Какой он, университет? — Большой и красивый.", "es": "¿Cómo es la universidad? — Es grande y bonita." },
+      { "ru": "Почему ты хочешь выучить испанский?", "es": "¿Por qué quieres aprender español?", "alternatives": ["¿Por qué quieres estudiar español?"] },
+      { "ru": "Откуда Карлос?", "es": "¿De dónde es Carlos?" }
+    ]
+  }
 }
