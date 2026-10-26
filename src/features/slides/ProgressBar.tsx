@@ -21,7 +21,7 @@ export function ProgressBar({ value }: { value: number }) {
         style={{
           width: `${Math.round(value * 100)}%`,
           height: '100%',
-          background: 'var(--accent)',
+          background: 'var(--bar)',
           transition: 'width 200ms ease-out',
         }}
       />

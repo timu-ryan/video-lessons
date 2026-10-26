@@ -11,6 +11,7 @@
  * Предупреждает, если задание дословно повторяет фразу урока или его
  * выжимки, и если материалы заняли больше MAX_PAGES страниц. Результат —
  * handouts/paid/lesson-NN-extra.pdf (freeExtras в handouts.config.ts).
+ * `--theme=имя` — другая палитра (по умолчанию HANDOUTS.theme).
  */
 import { relative } from 'node:path'
 import { chromium } from 'playwright'
@@ -25,6 +26,7 @@ import {
 } from './extras.ts'
 import {
   escape,
+  handoutPalette,
   handoutPath,
   htmlPage,
   ipa,
@@ -46,9 +48,10 @@ const withHtml = args.includes('--html')
 const arg = args.find((a) => !a.startsWith('--'))
 const target = Number(arg)
 if (!arg || !Number.isInteger(target) || target <= 0) {
-  console.error('Использование: npm run lessons:extra -- <номер урока> [--html]')
+  console.error('Использование: npm run lessons:extra -- <номер урока> [--html] [--theme=палитра]')
   process.exit(1)
 }
+const palette = handoutPalette(args)
 
 const { lessons, errors: lessonErrors } = loadLessons()
 const lesson = lessons.find((file) => file.lesson.number === target)?.lesson
@@ -251,30 +254,30 @@ col.c-task { width: 50%; } col.c-phrase { width: 58%; }
 .practice tr.task td { height: 9mm; }
 .phrases .ipa { white-space: normal; }
 .expressions { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
-.expr { break-inside: avoid; border: 1px solid #ddd; border-left: 3px solid #b8452e; border-radius: 1.5mm; padding: 2mm 3mm; }
+.expr { break-inside: avoid; border: 1px solid var(--rule); border-left: 3px solid var(--bar); border-radius: 1.5mm; padding: 2mm 3mm; }
 .expr .head .es { font-size: 12pt; }
 .expr p { margin: 1mm 0 0; font-size: 9.5pt; }
-.expr .note { color: #555; }
+.expr .note { color: var(--text-2); }
 .options { margin: 0 0 1.5mm; break-after: avoid; }
-.chip { display: inline-block; padding: .6mm 2.5mm; border-radius: 1.5mm; background: #f3dcd5; font-weight: 600; margin-right: 1.5mm; }
-.gap { display: inline-block; width: 22mm; border-bottom: 1px solid #555; margin: 0 1mm; }
+.chip { display: inline-block; padding: .6mm 2.5mm; border-radius: 1.5mm; background: var(--chip); color: var(--es); font-weight: 600; margin-right: 1.5mm; }
+.gap { display: inline-block; width: 22mm; border-bottom: 1px solid var(--text-2); margin: 0 1mm; }
 .story-text { margin: 0 0 2mm; line-height: 1.6; font-weight: 400; }
-.dialogue td.speaker { width: 22mm; font-weight: 600; color: #555; }
-.glossary { font-size: 9pt; color: #555; margin: 1mm 0 0; }
-.culture { background: #faf0ec; border-left: 3px solid #b8452e; border-radius: 1.5mm; padding: 3mm 4mm; }
-.culture .kind { color: #b8452e; font-size: 8.5pt; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
+.dialogue td.speaker { width: 22mm; font-weight: 600; color: var(--text-2); }
+.glossary { font-size: 9pt; color: var(--text-2); margin: 1mm 0 0; }
+.culture { background: var(--note); border-left: 3px solid var(--bar); border-radius: 1.5mm; padding: 3mm 4mm; }
+.culture .kind { color: var(--accent); font-size: 8.5pt; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
 .culture h3 { margin-top: 1mm; }
 .culture p { margin: 0 0 1.5mm; }
 .culture .quote .es { font-size: 13pt; }
 .culture .text { margin: 0; }
-.lines div { height: 9mm; border-bottom: 1px solid #ccc; }
+.lines div { height: 9mm; border-bottom: 1px solid var(--rule); }
 .answers { break-before: page; }
 .answers h2 { margin-top: 0; }
 .answer-list { columns: 2; column-gap: 8mm; margin: 0; padding-left: 7mm; font-size: 9.5pt; }
 .answer-list li { break-inside: avoid; margin-bottom: 1mm; }
 .answers .story-text { font-size: 9.5pt; }
 .answers .dialogue td { padding: .5mm 2mm; border-bottom: none; font-size: 9.5pt; }
-.why { color: #666; font-size: 9pt; font-weight: 400; }
+.why { color: var(--text-2); font-size: 9pt; font-weight: 400; }
 .model { font-size: 9.5pt; }
 .model ul { margin: 0; padding-left: 5mm; }
 `
@@ -282,6 +285,7 @@ col.c-task { width: 50%; } col.c-phrase { width: 58%; }
 function renderExtra(lesson: LessonSource, extra: ExtraSource): string {
   return htmlPage(
     lesson,
+    palette,
     `${lesson.title} — дополнительные материалы`,
     STYLE,
     `${renderHeader(lesson, 'Дополнительные материалы: практика, история и живые выражения')}
@@ -338,6 +342,7 @@ try {
   const pages = await printPdf(browser, lesson, renderExtra(lesson, extra), out, {
     pageNumbers: true,
     html: withHtml,
+    palette,
   })
   const tasks = extra.exercises.map((block) => `${block.type} ${block.tasks.length}`).join(', ')
   console.log(`✓ ${relative(ROOT, out)} · стр. ${pages} · заданий: ${tasks}`)

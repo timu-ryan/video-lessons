@@ -9,7 +9,8 @@
  *
  * Результат — handouts/free/lesson-NN.pdf или handouts/paid/lesson-NN.pdf
  * (граница — freeFullUntil в handouts.config.ts); с `--html` рядом кладётся
- * .html для отладки вёрстки.
+ * .html для отладки вёрстки. `--theme=имя` — другая палитра
+ * (по умолчанию HANDOUTS.theme).
  */
 import { relative } from 'node:path'
 import { chromium } from 'playwright'
@@ -26,6 +27,7 @@ import type {
 import { plainText } from '../src/features/slides/markup.ts'
 import {
   escape,
+  handoutPalette,
   handoutPath,
   htmlPage,
   ipa,
@@ -42,9 +44,10 @@ const withHtml = args.includes('--html')
 const arg = args.find((a) => !a.startsWith('--'))
 const target = Number(arg)
 if (!arg || !Number.isInteger(target) || target <= 0) {
-  console.error('Использование: npm run lessons:pdf -- <номер урока> [--html]')
+  console.error('Использование: npm run lessons:pdf -- <номер урока> [--html] [--theme=палитра]')
   process.exit(1)
 }
+const palette = handoutPalette(args)
 
 const { lessons, errors } = loadLessons()
 const found = lessons.find(({ lesson }) => lesson.number === target)
@@ -355,20 +358,20 @@ function renderOutcome(lesson: LessonSource): string {
 /** Своё для полного конспекта; общее — BASE_STYLE в handout-common.ts. */
 const STYLE = `
 col.c-es { width: 38%; } col.c-ipa { width: 27%; }
-td.pronoun { color: #555; width: 30%; }
-.grid td.label { color: #555; width: 30%; }
+td.pronoun { color: var(--text-2); width: 30%; }
+.grid td.label { color: var(--text-2); width: 30%; }
 .pattern { margin: 1mm 0 2mm; }
 .pattern span { display: inline-block; padding: .6mm 2.5mm; border-radius: 1.5mm; margin-right: 1.5mm; }
-.pattern .chip { background: #f3dcd5; font-weight: 600; }
-.pattern .slot { border: 1px dashed #999; color: #555; }
-.pattern .plus { padding: 0 .5mm; color: #777; }
+.pattern .chip { background: var(--chip); color: var(--es); font-weight: 600; }
+.pattern .slot { border: 1px dashed var(--rule-strong); color: var(--text-2); }
+.pattern .plus { padding: 0 .5mm; color: var(--text-3); }
 .rule p.text { margin: 0 0 1.5mm; }
 .examples { margin: 0; padding-left: 5mm; }
 .examples li { margin-bottom: 1mm; }
 col.c-ru { width: 45%; }
-.dialogue td.speaker { width: 22mm; font-weight: 600; color: #555; }
+.dialogue td.speaker { width: 22mm; font-weight: 600; color: var(--text-2); }
 .outcome { margin: 0; padding-left: 5mm; }
-.next { color: #555; }
+.next { color: var(--text-2); }
 .answers { break-before: page; }
 .answers h2 { margin-top: 0; }
 `
@@ -378,6 +381,7 @@ function renderHandout(lesson: LessonSource, all: LessonSource[]): string {
   const meta = `Уровень ${lesson.level}, урок ${lesson.planLesson}${grammar.length > 0 ? ` · Грамматика: ${grammar.map(escape).join(', ')}` : ''}`
   return htmlPage(
     lesson,
+    palette,
     lesson.title,
     STYLE,
     `${renderHeader(lesson, meta)}
@@ -401,7 +405,7 @@ const html = renderHandout(
 const out = handoutPath(lesson, 'full')
 const browser = await chromium.launch()
 try {
-  await printPdf(browser, lesson, html, out, { pageNumbers: true, html: withHtml })
+  await printPdf(browser, lesson, html, out, { pageNumbers: true, html: withHtml, palette })
   console.log(`✓ ${relative(ROOT, out)}`)
 } finally {
   await browser.close()

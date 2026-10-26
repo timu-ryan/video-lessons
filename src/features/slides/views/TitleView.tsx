@@ -31,8 +31,8 @@ export function TitleView({ slide }: { slide: TitleSlide }) {
             fontSize: 46,
             fontWeight: 800,
             letterSpacing: '0.04em',
-            color: 'var(--bg)',
-            background: 'var(--accent)',
+            color: 'var(--on-badge)',
+            background: 'var(--badge)',
             borderRadius: 18,
             padding: '14px 30px',
           }}

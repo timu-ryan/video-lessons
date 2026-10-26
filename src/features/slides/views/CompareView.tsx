@@ -14,13 +14,26 @@ const GAP = 56
 function toneStyle(side: CompareSide, position: 'left' | 'right') {
   switch (side.tone) {
     case 'wrong':
-      return { accent: 'var(--bad)', text: 'var(--text-2)', icon: '✗ ', strike: true }
+      return {
+        accent: 'var(--bad)',
+        markBg: 'var(--mark-bg-bad)',
+        text: 'var(--text-2)',
+        icon: '✗ ',
+        strike: true,
+      }
     case 'right':
-      return { accent: 'var(--ok)', text: 'var(--text)', icon: '✓ ', strike: false }
+      return {
+        accent: 'var(--ok)',
+        markBg: 'var(--mark-bg-ok)',
+        text: 'var(--es)',
+        icon: '✓ ',
+        strike: false,
+      }
     default:
       return {
         accent: position === 'left' ? 'var(--accent)' : 'var(--accent-2)',
-        text: 'var(--text)',
+        markBg: 'var(--mark-bg)',
+        text: 'var(--es)',
         icon: '',
         strike: false,
       }
@@ -134,7 +147,7 @@ function Cell({
           textDecorationThickness: tone.strike ? 5 : undefined,
         }}
       >
-        <Marked text={item.es} color={tone.accent} />
+        <Marked text={item.es} color={tone.accent} background={tone.markBg} />
       </div>
       {options.transcription && item.ipa ? <Ipa>{item.ipa}</Ipa> : null}
       {options.translation && item.ru ? (

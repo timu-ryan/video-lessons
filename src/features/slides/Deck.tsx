@@ -15,7 +15,7 @@ import { useIdleCursor } from './useIdleCursor'
 
 /** Основной экран — тот, что пишется в OBS. Никакого интерфейса в кадре. */
 export function Deck({ lesson }: { lesson: Lesson }) {
-  const { settings, toggle } = useSettings()
+  const { settings, toggle, setTheme, cycleTheme } = useSettings()
   const nav = useDeckNav(lesson)
   useIdleCursor(1500)
 
@@ -44,6 +44,7 @@ export function Deck({ lesson }: { lesson: Lesson }) {
     translation: () => toggle('translation'),
     safeZone: () => toggle('safeZone'),
     progress: () => toggle('progress'),
+    theme: cycleTheme,
     fullscreen: toggleFullscreen,
     // Esc — назад к списку уроков. В полном экране эту клавишу забирает сам
     // браузер на выход из него, и уходить со слайда посреди записи не нужно.
@@ -73,6 +74,7 @@ export function Deck({ lesson }: { lesson: Lesson }) {
     step: nav.step,
     transcription: settings.transcription,
     translation: settings.translation,
+    theme: settings.theme,
     startedAt,
   }
   const stateRef = useRef(state)
@@ -99,6 +101,8 @@ export function Deck({ lesson }: { lesson: Lesson }) {
         writeStartedAt(now)
         // Новое состояние разошлётся эффектом ниже — он следит за startedAt.
         setStartedAt(now)
+      } else if (message.kind === 'theme') {
+        setTheme(message.theme)
       }
     }
 
@@ -108,14 +112,22 @@ export function Deck({ lesson }: { lesson: Lesson }) {
       channel.close()
       channelRef.current = null
     }
-  }, [])
+  }, [setTheme])
 
   useEffect(() => {
     channelRef.current?.postMessage({
       kind: 'state',
       state: stateRef.current,
     } satisfies PresenterMessage)
-  }, [lesson.id, nav.slideIndex, nav.step, settings.transcription, settings.translation, startedAt])
+  }, [
+    lesson.id,
+    nav.slideIndex,
+    nav.step,
+    settings.transcription,
+    settings.translation,
+    settings.theme,
+    startedAt,
+  ])
 
   return (
     <Stage>

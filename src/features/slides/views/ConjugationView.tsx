@@ -2,7 +2,7 @@ import { SAFE_COL_W } from '../canvas'
 import type { ConjugationSlide } from '../types'
 import type { ViewOptions } from './options'
 import { CompactHeader, Ipa, Reveal, SlideRoot } from './parts'
-import { FS } from './typography'
+import { FS, MARK } from './typography'
 
 /** «nosotros / nosotras» переносится на две строки — это дешевле, чем отнять ширину у формы. */
 const PRONOUN_COL = 340
@@ -71,7 +71,7 @@ export function ConjugationView({
                 }}
               >
                 {row.stem}
-                <span style={{ color: 'var(--accent)' }}>{row.ending}</span>
+                <span style={MARK}>{row.ending}</span>
               </div>
               {options.transcription && row.ipa ? <Ipa>{row.ipa}</Ipa> : null}
             </div>

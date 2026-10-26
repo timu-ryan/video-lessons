@@ -59,7 +59,7 @@ export function DialogueView({
                     fontSize: FS.dialogueEs,
                     fontWeight: 700,
                     lineHeight: 1.12,
-                    color: 'var(--text)',
+                    color: 'var(--es)',
                   }}
                 >
                   <Marked text={line.es} />

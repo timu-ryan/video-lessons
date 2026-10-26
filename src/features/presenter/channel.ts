@@ -1,5 +1,7 @@
 /** Синхронизация основного окна и окна докладчика через BroadcastChannel. */
 
+import type { ThemeName } from '../settings/palettes'
+
 export const CHANNEL_NAME = 'video-lessons.presenter'
 
 export interface DeckState {
@@ -8,6 +10,7 @@ export interface DeckState {
   step: number
   transcription: boolean
   translation: boolean
+  theme: ThemeName
   /** Отметка начала записи (мс), общая для обоих окон. */
   startedAt: number
 }
@@ -21,6 +24,8 @@ export type PresenterMessage =
   /** Кликер/клавиши в окне докладчика управляют основным окном. */
   | { kind: 'nav'; action: NavAction }
   | { kind: 'reset-timer' }
+  /** Палитру выбирают в окне докладчика, применяет и запоминает основное окно. */
+  | { kind: 'theme'; theme: ThemeName }
 
 export function openChannel(): BroadcastChannel | null {
   if (typeof BroadcastChannel === 'undefined') return null

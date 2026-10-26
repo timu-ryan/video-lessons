@@ -7,7 +7,8 @@
  * правило → типичная ошибка → мини-практика с ответами → призыв к полной
  * версии. Выжимка длиннее страницы — ошибка сборки.
  *
- * `--ipa` добавляет транскрипцию к ключевым фразам. Результат —
+ * `--ipa` добавляет транскрипцию к ключевым фразам, `--theme=имя` —
+ * другая палитра (по умолчанию HANDOUTS.theme). Результат —
  * handouts/free/lesson-NN-summary.pdf и рядом картинка той же страницы
  * lesson-NN-summary.png для поста (нужен pdftoppm из poppler-utils).
  */
@@ -17,6 +18,7 @@ import { chromium } from 'playwright'
 import type { LessonSource, SummarySource } from '../src/features/lessons/source.ts'
 import {
   escape,
+  handoutPalette,
   handoutPath,
   htmlPage,
   ipa,
@@ -35,9 +37,12 @@ const withHtml = args.includes('--html')
 const arg = args.find((a) => !a.startsWith('--'))
 const target = arg === undefined ? undefined : Number(arg)
 if (target !== undefined && (!Number.isInteger(target) || target <= 0)) {
-  console.error('Использование: npm run lessons:summary -- [номер урока] [--ipa] [--html]')
+  console.error(
+    'Использование: npm run lessons:summary -- [номер урока] [--ipa] [--html] [--theme=палитра]',
+  )
   process.exit(1)
 }
+const palette = handoutPalette(args)
 
 // --- html --------------------------------------------------------------------
 
@@ -95,18 +100,19 @@ header { margin-bottom: 3mm; }
 h2 { margin: 4mm 0 1.5mm; }
 col.c-es { width: 40%; } col.c-ipa { width: 25%; }
 col.c-ru { width: 50%; }
-.rule { margin: 0; padding: 2.5mm 3.5mm; background: #faf0ec; border-left: 3px solid #b8452e; border-radius: 1mm; }
+.rule { margin: 0; padding: 2.5mm 3.5mm; background: var(--note); border-left: 3px solid var(--bar); border-radius: 1mm; }
 .compare .side { padding: 1.5mm 3mm; }
 .practice tr.task td { height: 9mm; }
-p.answers { font-size: 8pt; color: #666; margin: 2mm 0 0; }
+p.answers { font-size: 8pt; color: var(--text-2); margin: 2mm 0 0; }
 p.answers span { margin-right: 3mm; }
-.cta { margin-top: auto; break-inside: avoid; padding: 3mm 4mm; border: 1.5px solid #b8452e; border-radius: 2mm; text-align: center; font-weight: 600; }
+.cta { margin-top: auto; break-inside: avoid; padding: 3mm 4mm; border: 1.5px solid var(--bar); border-radius: 2mm; text-align: center; font-weight: 600; }
 .cta a { text-decoration: none; }
 `
 
 function renderSummaryPage(lesson: LessonSource, summary: SummarySource): string {
   return htmlPage(
     lesson,
+    palette,
     `${lesson.title} — краткий конспект`,
     STYLE,
     `<div class="page">
@@ -151,7 +157,11 @@ try {
     }
     const out = handoutPath(lesson, 'summary')
     const html = renderSummaryPage(lesson, lesson.summary)
-    const pages = await printPdf(browser, lesson, html, out, { pageNumbers: false, html: withHtml })
+    const pages = await printPdf(browser, lesson, html, out, {
+      pageNumbers: false,
+      html: withHtml,
+      palette,
+    })
     if (pages === 1) {
       console.log(`✓ ${relative(ROOT, out)}`)
       try {

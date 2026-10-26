@@ -43,60 +43,10 @@
 }
 
 /* ----------------------------------------------------------------- тема --
-   Всё оформление слайдов живёт здесь. Чтобы сменить палитру, достаточно
-   переопределить переменные — компоненты цветов не знают.
-   Активная тема выбирается атрибутом data-theme на <html>. */
-
-:root,
-[data-theme='sand'] {
-  --bg: #faf6f0;
-  --bg-panel: #f3ece2;
-  --bg-panel-alt: #ede4d8;
-  --rule: #ddd0be;
-
-  --text: #1a1512;
-  --text-2: #5c5249; /* перевод */
-  --text-3: #8a7f73; /* транскрипция, служебное */
-
-  --accent: #b4471f; /* терракотовый */
-  --accent-2: #b07a12; /* шафрановый */
-  --accent-soft: #f0e0d3;
-
-  --speaker-a: #b4471f;
-  --speaker-b: #1f6b6b;
-  --speaker-c: #6b4a8a;
-
-  --ok: #2f6b3f;
-  --bad: #a5231d;
-  --bad-soft: #f6e2e0;
-
-  --shadow: 0 8px 40px rgb(26 21 18 / 0.07);
-}
-
-[data-theme='night'] {
-  --bg: #14100e;
-  --bg-panel: #1e1815;
-  --bg-panel-alt: #241d19;
-  --rule: #3a2f28;
-
-  --text: #f5efe8;
-  --text-2: #c3b6aa;
-  --text-3: #8e837a;
-
-  --accent: #e2643c;
-  --accent-2: #e8b04b;
-  --accent-soft: #33231b;
-
-  --speaker-a: #e2643c;
-  --speaker-b: #5fb3b3;
-  --speaker-c: #b492d8;
-
-  --ok: #6dc088;
-  --bad: #e8756c;
-  --bad-soft: #2e1c1a;
-
-  --shadow: 0 8px 40px rgb(0 0 0 / 0.45);
-}
+   Цвета — CSS-переменные, но значения живут не здесь, а в
+   features/settings/palettes.ts: оттуда же их берут PDF-конспекты.
+   main.tsx вставляет таблицу палитр, активная выбирается атрибутом
+   data-theme на <html>. Компоненты цветов не знают — только имена переменных. */
 
 /* Семейство для строк МФА: Noto Sans и DejaVu Sans покрывают блок
    IPA Extensions целиком, Manrope — нет. Задано переменной, потому что

@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { nextTheme, THEME_NAMES, THEMES, type ThemeName } from '../settings/palettes'
+import { applyTheme, readSettings } from '../settings/useSettings'
 import { SlideView } from '../slides/SlideView'
 import { Stage } from '../slides/Stage'
 import { slideLabel, stepCount } from '../slides/steps'
@@ -20,6 +22,7 @@ export function PresenterApp({ lesson }: { lesson: Lesson }) {
     step: 0,
     transcription: true,
     translation: true,
+    theme: readSettings().theme,
     startedAt: readStartedAt(),
   }))
   const [now, setNow] = useState(() => Date.now())
@@ -41,6 +44,9 @@ export function PresenterApp({ lesson }: { lesson: Lesson }) {
     }
   }, [])
 
+  // Миниатюры слайдов — в той же палитре, что и основное окно
+  useEffect(() => applyTheme(state.theme), [state.theme])
+
   useEffect(() => {
     const timer = window.setInterval(() => setNow(Date.now()), 500)
     return () => window.clearInterval(timer)
@@ -50,11 +56,16 @@ export function PresenterApp({ lesson }: { lesson: Lesson }) {
     channelRef.current?.postMessage({ kind: 'nav', action } satisfies PresenterMessage)
   }
 
+  const pickTheme = (theme: ThemeName) => {
+    channelRef.current?.postMessage({ kind: 'theme', theme } satisfies PresenterMessage)
+  }
+
   useHotkeys({
     next: () => send('next'),
     prev: () => send('prev'),
     first: () => send('first'),
     last: () => send('last'),
+    theme: () => pickTheme(nextTheme(state.theme)),
   })
 
   const slide = lesson.slides[Math.min(state.slideIndex, lesson.slides.length - 1)]
@@ -84,7 +95,7 @@ export function PresenterApp({ lesson }: { lesson: Lesson }) {
         overflowY: 'auto',
       }}
     >
-      <header style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
+      <header style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 20 }}>
         <div style={{ fontSize: 26, fontWeight: 800 }}>
           Слайд {state.slideIndex + 1}
           <span style={{ color: 'var(--text-3)' }}> / {lesson.slides.length}</span>
@@ -92,6 +103,7 @@ export function PresenterApp({ lesson }: { lesson: Lesson }) {
         <div style={{ fontSize: 15, color: 'var(--text-3)' }}>
           шаг {state.step + 1} / {stepCount(slide)}
         </div>
+        <ThemePicker current={state.theme} onPick={pickTheme} />
         <div style={{ flex: 1 }} />
         <div style={{ fontSize: 15, color: 'var(--text-3)' }}>
           {state.transcription ? 'T: транскрипция вкл' : 'T: транскрипция выкл'} ·{' '}
@@ -187,8 +199,62 @@ export function PresenterApp({ lesson }: { lesson: Lesson }) {
       <footer style={{ fontSize: 13, color: 'var(--text-3)', lineHeight: 1.6 }}>
         → / Space / PageDown — вперёд · ← / PageUp — назад · Home / End — первый / последний ·
         T — транскрипция · R — перевод · F — полный экран · G — зона камеры ·
-        B — полоска прогресса · P — это окно
+        B — полоска прогресса · C — палитра · P — это окно
       </footer>
+    </div>
+  )
+}
+
+/**
+ * Выбор палитры. Каждая кнопка — со своим data-theme, поэтому рисуется
+ * в собственной палитре: видно, что выбираешь. Применяет основное окно.
+ */
+function ThemePicker({
+  current,
+  onPick,
+}: {
+  current: ThemeName
+  onPick: (theme: ThemeName) => void
+}) {
+  return (
+    <div role="radiogroup" aria-label="Палитра" style={{ display: 'flex', gap: 6 }}>
+      {THEME_NAMES.map((name) => {
+        const active = name === current
+        return (
+          <button
+            key={name}
+            type="button"
+            role="radio"
+            aria-checked={active}
+            data-theme={name}
+            onClick={() => onPick(name)}
+            style={{
+              fontFamily: 'inherit',
+              fontSize: 13,
+              fontWeight: 700,
+              display: 'flex',
+              alignItems: 'center',
+              gap: 6,
+              color: 'var(--text)',
+              background: 'var(--bg)',
+              border: '2px solid var(--rule)',
+              borderRadius: 8,
+              padding: '5px 10px 5px 6px',
+              cursor: 'pointer',
+              // Активная палитра — она же палитра окна, так что --text виден на его фоне
+              outline: active ? '2px solid var(--text)' : 'none',
+              outlineOffset: 2,
+            }}
+          >
+            <span style={{ display: 'flex', borderRadius: 3, overflow: 'hidden' }}>
+              {['var(--text)', 'var(--accent)', 'var(--bar-2)'].map((color) => (
+                <span key={color} style={{ width: 8, height: 16, background: color }} />
+              ))}
+            </span>
+            {THEMES[name].label}
+          </button>
+        )
+      })}
     </div>
   )
 }

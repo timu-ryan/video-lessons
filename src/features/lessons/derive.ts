@@ -18,7 +18,7 @@ import type { LessonSource, SlideSource } from './source'
  * где эти значения появляются.
  */
 
-/** Цвета реплик раздаются по порядку говорящих; переменные живут в index.css. */
+/** Цвета реплик раздаются по порядку говорящих; значения — в settings/palettes.ts. */
 const SPEAKER_COLORS = ['var(--speaker-a)', 'var(--speaker-b)', 'var(--speaker-c)']
 
 /**

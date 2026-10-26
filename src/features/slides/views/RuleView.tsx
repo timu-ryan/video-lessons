@@ -101,7 +101,7 @@ export function RuleView({
                 fontWeight: 700,
                 lineHeight: 1.1,
                 letterSpacing: '-0.01em',
-                color: 'var(--text)',
+                color: 'var(--es)',
               }}
             >
               <Marked text={example.es} />

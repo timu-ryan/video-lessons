@@ -70,6 +70,8 @@ function resolve(event: KeyboardEvent): string | undefined {
       return 'presenter'
     case 'KeyB':
       return 'progress'
+    case 'KeyC':
+      return 'theme'
     default:
       return undefined
   }

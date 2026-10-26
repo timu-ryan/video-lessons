@@ -76,7 +76,7 @@ export function PracticeView({
           style={{
             height: '100%',
             borderRadius: 7,
-            background: 'var(--accent-2)',
+            background: 'var(--bar-2)',
             transformOrigin: 'left center',
             animation: revealed ? undefined : `pause-bar ${duration}ms linear forwards`,
             transform: revealed ? 'scaleX(1)' : undefined,

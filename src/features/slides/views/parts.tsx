@@ -1,7 +1,7 @@
 import type { CSSProperties, ReactNode } from 'react'
 import { CANVAS_H, CANVAS_W, PAD_TOP, PAD_X, SAFE_COL_W } from '../canvas'
 import { splitMarks } from '../markup'
-import { FS } from './typography'
+import { FS, MARK } from './typography'
 
 export function SlideRoot({ children, style }: { children: ReactNode; style?: CSSProperties }) {
   return (
@@ -97,7 +97,7 @@ export function CompactHeader({
           width: SAFE_COL_W,
           height: 4,
           marginTop: 14,
-          background: 'var(--accent)',
+          background: 'var(--bar)',
           flex: 'none',
         }}
       />
@@ -132,7 +132,7 @@ export function Rule() {
         height: 8,
         marginTop: 20,
         borderRadius: 4,
-        background: 'var(--accent)',
+        background: 'var(--bar)',
         flex: 'none',
       }}
     />
@@ -169,10 +169,18 @@ export function Reveal({
   )
 }
 
-/** Строка с выделением нового: в "Quiero **aprender**" слово подсвечено цветом. */
-export function Marked({ text, color = 'var(--accent)' }: { text: string; color?: string }) {
+/** Строка с выделением нового: в "Quiero **aprender**" слово подсвечено. */
+export function Marked({
+  text,
+  color = 'var(--mark)',
+  background = 'var(--mark-bg)',
+}: {
+  text: string
+  color?: string
+  background?: string
+}) {
   return splitMarks(text).map((part, index) => (
-    <span key={index} style={part.marked ? { color } : undefined}>
+    <span key={index} style={part.marked ? { ...MARK, color, background } : undefined}>
       {part.text}
     </span>
   ))

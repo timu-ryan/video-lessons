@@ -88,7 +88,9 @@ B1 — 65–84. `planLesson` — номер внутри уровня по пл�
   - дополнительные материалы (платно, для всех уроков): `/extra NN` составляет
     `extras/lesson-NN.json` и собирает `npm run lessons:extra -- NN` →
     `handouts/paid/Урок N — дополнительные материалы.pdf`.
-  - Граница бесплатного и ссылки — `scripts/handouts.config.ts`.
+  - Граница бесплатного, ссылки и палитра конспектов (`theme`) —
+    `scripts/handouts.config.ts`; разово — `--theme=имя` у любой из
+    команд `lessons:pdf|summary|extra`. Палитры — `src/features/settings/palettes.ts`.
 - Бонусные выражения из `extras/` в `docs/vocabulary.md` не входят: допматериалы
   открыты не всем, поэтому сценарии и уроки на эти слова не опираются.
 - Код в стиле проекта: TypeScript.
