@@ -3,7 +3,7 @@
 > Генерируется командой `npm run vocab:build`. Не редактировать вручную.
 > Готовя урок N, считайте изученным только то, что введено в уроках с номером меньше N.
 
-Уроков: 11 · слов: 205
+Уроков: 12 · слов: 229
 
 ## Урок 1 · A0-1 · Приветствие, знакомство
 
@@ -71,13 +71,21 @@
 
 **Грамматика:** вопросительные слова со знаком ударения · порядок слов в вопросе: вопросительное слово + глагол + подлежащее · ¿por qué…? — porque… · cuánto / cuánta / cuántos / cuántas + существительное · предлог перед вопросительным словом: ¿de dónde?, ¿en qué?
 
+## Урок 12 · A0-12 · Где и как: estar и hay
+
+**Слова (24):** estar — быть, находиться · hay — есть, имеется · aquí — здесь · con — с · el supermercado — супермаркет · el metro — метро · el bar — бар · el museo — музей · la plaza — площадь · la calle — улица · el hospital — больница · el colegio — школа · el gimnasio — спортзал · la cocina — кухня · el baño — туалет, ванная · cansado — уставший · enfermo — больной · contento — довольный · ocupado — занятый · listo — готовый · ¿cómo estás? — как ты?, как дела? · ¿qué tal? — как дела? · regular — так себе · fatal — ужасно, очень плохо
+
+**Грамматика:** настоящее время estar · estar en + место · ¿dónde está…? — где находится · estar + прилагательное состояния · hay + un / una + существительное · hay и está: неопределённое и конкретное · ser и estar: «кто, какой» и «где, как сейчас»
+
 ## Алфавитный указатель
 
 | es | ru | pos | урок |
 |---|---|---|---|
 | ¡vamos! | пошли!, давай! | interj | 6 |
+| ¿cómo estás? | как ты?, как дела? | phrase | 12 |
 | ¿cómo te llamas? | как тебя зовут? | phrase | 1 |
 | ¿de dónde eres? | откуда ты? | phrase | 1 |
+| ¿qué tal? | как дела? | phrase | 12 |
 | ¿y a ti? | а тебе? | phrase | 7 |
 | ¿y tú? | а ты? а тебя? | phrase | 1 |
 | ¿y usted? | а вы? | phrase | 5 |
@@ -94,8 +102,11 @@
 | la amiga | подруга | noun | 8 |
 | el amigo | друг | noun | 8 |
 | aprender | учить, выучить | verb | 3 |
+| aquí | здесь | adv | 12 |
 | ayudar | помогать | verb | 4 |
 | bailar | танцевать | verb | 3 |
+| el baño | туалет, ванная | noun | 12 |
+| el bar | бар | noun | 12 |
 | barato | дешёвый | adj | 9 |
 | beber | пить | verb | 10 |
 | la biblioteca | библиотека | noun | 11 |
@@ -106,9 +117,11 @@
 | buenas tardes | добрый день, добрый вечер | phrase | 1 |
 | buenos días | доброе утро, добрый день | phrase | 1 |
 | el café | кофе | noun | 10 |
+| la calle | улица | noun | 12 |
 | la cama | кровать | noun | 8 |
 | caminar | ходить пешком | verb | 6 |
 | la canción | песня | noun | 8 |
+| cansado | уставший | adj | 12 |
 | cantar | петь | verb | 3 |
 | la carne | мясо | noun | 10 |
 | caro | дорогой | adj | 9 |
@@ -121,12 +134,16 @@
 | claro | конечно | interj | 6 |
 | la clase | занятие, урок | noun | 8 |
 | el coche | машина | noun | 8 |
+| la cocina | кухня | noun | 12 |
 | cocinar | готовить | verb | 3 |
+| el colegio | школа | noun | 12 |
 | comer | есть | verb | 3 |
 | la comida | еда | noun | 8 |
 | cómo | как | adv | 11 |
 | comprar | покупать | verb | 4 |
 | comprender | понимать | verb | 10 |
+| con | с | prep | 12 |
+| contento | довольный | adj | 12 |
 | contestar | отвечать | verb | 5 |
 | correr | бегать | verb | 10 |
 | cuándo | когда | adv | 11 |
@@ -147,6 +164,7 @@
 | ellas | они (о женщинах) | pron | 5 |
 | ellos | они | pron | 5 |
 | en | в, на (где?) | prep | 10 |
+| enfermo | больной | adj | 12 |
 | enseñar | преподавать, учить кого-то | verb | 2 |
 | entrar | входить | verb | 6 |
 | escribir | писать | verb | 10 |
@@ -155,18 +173,23 @@
 | el español | испанский язык | noun | 2 |
 | esperar | ждать | verb | 4 |
 | esta noche | сегодня вечером | phrase | 6 |
+| estar | быть, находиться | verb | 12 |
 | estudiar | учиться, учить | verb | 2 |
 | fácil | лёгкий | adj | 9 |
+| fatal | ужасно, очень плохо | adv | 12 |
 | la flor | цветок | noun | 8 |
 | el francés | французский язык | noun | 2 |
 | ganar | зарабатывать, выигрывать | verb | 6 |
 | el gato | кот, кошка | noun | 8 |
+| el gimnasio | спортзал | noun | 12 |
 | gracias | спасибо | interj | 1 |
 | grande | большой | adj | 9 |
 | gustar | нравиться | verb | 7 |
 | hablar | говорить | verb | 2 |
 | hasta luego | до встречи, пока | phrase | 1 |
+| hay | есть, имеется | verb | 12 |
 | hola | привет | interj | 1 |
+| el hospital | больница | noun | 12 |
 | hoy | сегодня | adv | 3 |
 | el idioma | язык | noun | 11 |
 | el ingeniero, la ingeniera | инженер | noun | 9 |
@@ -181,6 +204,7 @@
 | les gusta | им нравится; вам нравится (вежливо, нескольким) | phrase | 7 |
 | el libro | книга | noun | 8 |
 | limpiar | убирать, убираться | verb | 7 |
+| listo | готовый | adj | 12 |
 | llamar | звонить | verb | 6 |
 | llegar | приезжать, приходить | verb | 5 |
 | luego | потом | adv | 4 |
@@ -194,8 +218,10 @@
 | me llamo | меня зовут | phrase | 1 |
 | el médico, la médica | врач | noun | 9 |
 | la mesa | стол | noun | 8 |
+| el metro | метро | noun | 12 |
 | Moscú | Москва | noun | 9 |
 | mucho | много | adv | 2 |
+| el museo | музей | noun | 12 |
 | la música | музыка | noun | 8 |
 | muy | очень | adv | 7 |
 | nadar | плавать | verb | 3 |
@@ -208,6 +234,7 @@
 | nosotros | мы | pron | 5 |
 | nuevo | новый | adj | 9 |
 | o | или | conj | 4 |
+| ocupado | занятый | adj | 12 |
 | la oficina | офис | noun | 11 |
 | el ordenador | компьютер | noun | 8 |
 | os gusta | вам нравится (нескольким, на «ты») | phrase | 7 |
@@ -224,6 +251,7 @@
 | el perro | собака | noun | 8 |
 | el pescado | рыба (еда) | noun | 10 |
 | el piso | квартира | noun | 8 |
+| la plaza | площадь | noun | 12 |
 | poco | мало | adv | 2 |
 | poder | мочь | verb | 3 |
 | por favor | пожалуйста (просьба) | phrase | 1 |
@@ -242,6 +270,7 @@
 | quién | кто | pron | 11 |
 | recibir | получать | verb | 10 |
 | regresar | возвращаться | verb | 6 |
+| regular | так себе | adv | 12 |
 | la respuesta | ответ | noun | 11 |
 | la revista | журнал | noun | 10 |
 | Rusia | Россия | noun | 9 |
@@ -251,6 +280,7 @@
 | la silla | стул | noun | 8 |
 | solo | только | adv | 6 |
 | soy de | я из | phrase | 1 |
+| el supermercado | супермаркет | noun | 12 |
 | también | тоже | adv | 7 |
 | tampoco | тоже не | adv | 7 |
 | tarde | поздно | adv | 4 |
