@@ -688,5 +688,37 @@
         "«В следующем уроке поговорим о том, что у вас есть: tener, «мой» и «твой», числа до тридцати. ¡Hasta luego!»"
       ]
     }
-  ]
+  ],
+  "summary": {
+    "phrases": [
+      { "es": "¿Dónde **estás**?", "ru": "Где ты?", "ipa": "ˈdonde esˈtas" },
+      { "es": "**Estoy** en la oficina.", "ru": "Я в офисе.", "ipa": "esˈtoj en la ofiˈθina" },
+      { "es": "Los niños **están** en casa.", "ru": "Дети дома.", "ipa": "los ˈniɲos esˈtan en ˈkasa" },
+      { "es": "¿Dónde está el **baño**?", "ru": "Где туалет?", "ipa": "ˈdonde esˈta el ˈbaɲo" },
+      { "es": "¿**Cómo estás**?", "ru": "Как ты?", "ipa": "ˈkomo esˈtas" },
+      { "es": "Hoy estoy **cansado**.", "ru": "Сегодня я устал.", "ipa": "ˈoj esˈtoj kanˈsado" },
+      { "es": "¿**Hay** un baño aquí?", "ru": "Здесь есть туалет?", "ipa": "ˈaj un ˈbaɲo aˈki" },
+      { "es": "**No hay** café.", "ru": "Кофе нет.", "ipa": "no ˈaj kaˈfe" }
+    ],
+    "rule": "Где ты и как ты сейчас — **estar**: Estoy en casa. Estoy cansado. Кто ты и какой — **ser**: Soy de Madrid. Новое, «какое-то» — **hay un / una**: Hay un bar aquí. Известное, «то самое» — **el / la … está**: El bar está aquí.",
+    "mistake": {
+      "wrong": { "es": "**Soy** en casa." },
+      "right": { "es": "**Estoy** en casa.", "ru": "Я дома." }
+    },
+    "practice": [
+      { "ru": "Я из Москвы, но сейчас я в Мадриде.", "es": "Soy de Moscú, pero ahora estoy en Madrid." },
+      { "ru": "Как Ана? — Болеет.", "es": "¿Cómo está Ana? — Está enferma." },
+      { "ru": "Книга интересная. Она на столе.", "es": "El libro es interesante. Está en la mesa." },
+      {
+        "ru": "Где Ана? — В библиотеке.",
+        "es": "¿Dónde está Ana? — En la biblioteca.",
+        "alternatives": ["¿Dónde está Ana? — Está en la biblioteca."]
+      },
+      {
+        "ru": "В центре есть музей.",
+        "es": "Hay un museo en el centro.",
+        "alternatives": ["En el centro hay un museo."]
+      }
+    ]
+  }
 }
