@@ -3,7 +3,7 @@
 > Генерируется командой `npm run vocab:build`. Не редактировать вручную.
 > Готовя урок N, считайте изученным только то, что введено в уроках с номером меньше N.
 
-Уроков: 12 · слов: 229
+Уроков: 13 · слов: 274
 
 ## Урок 1 · A0-1 · Приветствие, знакомство
 
@@ -77,6 +77,12 @@
 
 **Грамматика:** настоящее время estar · estar en + место · ¿dónde está…? — где находится · estar + прилагательное состояния · hay + un / una + существительное · hay и está: неопределённое и конкретное · ser и estar: «кто, какой» и «где, как сейчас»
 
+## Урок 13 · A0-13 · Моё: tener, притяжательные, числа
+
+**Слова (45):** tener — иметь · mi — мой, моя · tu — твой, твоя · su — его, её, их, ваш · nuestro — наш · vuestro — ваш (нескольким, на «ты») · la familia — семья · la madre — мать, мама · el padre — отец, папа; мн. родители · la hermana — сестра · el hermano — брат; мн. братья и сёстры · el hijo — сын; мн. дети · la hija — дочь · el año — год · cero — ноль · uno — один · dos — два · tres — три · cuatro — четыре · cinco — пять · seis — шесть · siete — семь · ocho — восемь · nueve — девять · diez — десять · once — одиннадцать · doce — двенадцать · trece — тринадцать · catorce — четырнадцать · quince — пятнадцать · dieciséis — шестнадцать · diecisiete — семнадцать · dieciocho — восемнадцать · diecinueve — девятнадцать · veinte — двадцать · veintiuno — двадцать один · veintidós — двадцать два · veintitrés — двадцать три · veinticuatro — двадцать четыре · veinticinco — двадцать пять · veintiséis — двадцать шесть · veintisiete — двадцать семь · veintiocho — двадцать восемь · veintinueve — двадцать девять · treinta — тридцать
+
+**Грамматика:** tener + существительное — «у меня есть» · hay и tener: «где-то есть» и «есть у кого-то» · притяжательные mi, tu, su и их множественное число · su — «его, её, их, ваш» · nuestro и vuestro: согласование в роде и числе · числа 0–30; uno → un, una · tener … años — возраст
+
 ## Алфавитный указатель
 
 | es | ru | pos | урок |
@@ -101,6 +107,7 @@
 | el alemán | немецкий язык | noun | 2 |
 | la amiga | подруга | noun | 8 |
 | el amigo | друг | noun | 8 |
+| el año | год | noun | 13 |
 | aprender | учить, выучить | verb | 3 |
 | aquí | здесь | adv | 12 |
 | ayudar | помогать | verb | 4 |
@@ -127,10 +134,13 @@
 | caro | дорогой | adj | 9 |
 | la carta | письмо | noun | 10 |
 | la casa | дом | noun | 8 |
+| catorce | четырнадцать | num | 13 |
 | cenar | ужинать | verb | 4 |
 | el centro | центр | noun | 10 |
+| cero | ноль | num | 13 |
 | la cerveza | пиво | noun | 10 |
 | el chino | китайский язык | noun | 2 |
+| cinco | пять | num | 13 |
 | claro | конечно | interj | 6 |
 | la clase | занятие, урок | noun | 8 |
 | el coche | машина | noun | 8 |
@@ -148,16 +158,24 @@
 | correr | бегать | verb | 10 |
 | cuándo | когда | adv | 11 |
 | cuánto | сколько | pron | 11 |
+| cuatro | четыре | num | 13 |
 | de | из | prep | 9 |
 | de nada | не за что | phrase | 1 |
 | desayunar | завтракать | verb | 4 |
 | descansar | отдыхать | verb | 3 |
 | después | потом, после | adv | 4 |
 | el día | день | noun | 8 |
+| diecinueve | девятнадцать | num | 13 |
+| dieciocho | восемнадцать | num | 13 |
+| dieciséis | шестнадцать | num | 13 |
+| diecisiete | семнадцать | num | 13 |
+| diez | десять | num | 13 |
 | difícil | трудный | adj | 9 |
 | el dinero | деньги | noun | 8 |
+| doce | двенадцать | num | 13 |
 | dónde | где | adv | 11 |
 | dormir | спать | verb | 3 |
+| dos | два | num | 13 |
 | e | и (перед i-, hi-) | conj | 2 |
 | él | он | pron | 5 |
 | ella | она | pron | 5 |
@@ -176,6 +194,7 @@
 | estar | быть, находиться | verb | 12 |
 | estudiar | учиться, учить | verb | 2 |
 | fácil | лёгкий | adj | 9 |
+| la familia | семья | noun | 13 |
 | fatal | ужасно, очень плохо | adv | 12 |
 | la flor | цветок | noun | 8 |
 | el francés | французский язык | noun | 2 |
@@ -188,6 +207,10 @@
 | hablar | говорить | verb | 2 |
 | hasta luego | до встречи, пока | phrase | 1 |
 | hay | есть, имеется | verb | 12 |
+| la hermana | сестра | noun | 13 |
+| el hermano | брат; мн. братья и сёстры | noun | 13 |
+| la hija | дочь | noun | 13 |
+| el hijo | сын; мн. дети | noun | 13 |
 | hola | привет | interj | 1 |
 | el hospital | больница | noun | 12 |
 | hoy | сегодня | adv | 3 |
@@ -208,6 +231,7 @@
 | llamar | звонить | verb | 6 |
 | llegar | приезжать, приходить | verb | 5 |
 | luego | потом | adv | 4 |
+| la madre | мать, мама | noun | 13 |
 | Madrid | Мадрид | noun | 9 |
 | madrugar | рано вставать | verb | 7 |
 | mal | плохо | adv | 7 |
@@ -219,6 +243,7 @@
 | el médico, la médica | врач | noun | 9 |
 | la mesa | стол | noun | 8 |
 | el metro | метро | noun | 12 |
+| mi | мой, моя | adj | 13 |
 | Moscú | Москва | noun | 9 |
 | mucho | много | adv | 2 |
 | el museo | музей | noun | 12 |
@@ -232,13 +257,18 @@
 | nos gusta | нам нравится | phrase | 7 |
 | nosotras | мы (о женщинах) | pron | 5 |
 | nosotros | мы | pron | 5 |
+| nuestro | наш | adj | 13 |
+| nueve | девять | num | 13 |
 | nuevo | новый | adj | 9 |
 | o | или | conj | 4 |
+| ocho | восемь | num | 13 |
 | ocupado | занятый | adj | 12 |
 | la oficina | офис | noun | 11 |
+| once | одиннадцать | num | 13 |
 | el ordenador | компьютер | noun | 8 |
 | os gusta | вам нравится (нескольким, на «ты») | phrase | 7 |
 | otra vez | ещё раз, снова | phrase | 6 |
+| el padre | отец, папа; мн. родители | noun | 13 |
 | el país | страна | noun | 11 |
 | la palabra | слово | noun | 11 |
 | el pan | хлеб | noun | 10 |
@@ -268,6 +298,7 @@
 | qué | что, какой | pron | 11 |
 | querer | хотеть | verb | 3 |
 | quién | кто | pron | 11 |
+| quince | пятнадцать | num | 13 |
 | recibir | получать | verb | 10 |
 | regresar | возвращаться | verb | 6 |
 | regular | так себе | adv | 12 |
@@ -275,11 +306,14 @@
 | la revista | журнал | noun | 10 |
 | Rusia | Россия | noun | 9 |
 | el ruso | русский язык | noun | 2 |
+| seis | шесть | num | 13 |
 | ser | быть | verb | 9 |
 | sí | да | adv | 2 |
+| siete | семь | num | 13 |
 | la silla | стул | noun | 8 |
 | solo | только | adv | 6 |
 | soy de | я из | phrase | 1 |
+| su | его, её, их, ваш | adj | 13 |
 | el supermercado | супермаркет | noun | 12 |
 | también | тоже | adv | 7 |
 | tampoco | тоже не | adv | 7 |
@@ -287,6 +321,7 @@
 | te gusta | тебе нравится | phrase | 7 |
 | el teléfono | телефон | noun | 8 |
 | temprano | рано | adv | 4 |
+| tener | иметь | verb | 13 |
 | tener que | быть должным, приходиться | phrase | 6 |
 | tengo que | я должен, мне нужно | phrase | 4 |
 | terminar | заканчивать | verb | 5 |
@@ -294,11 +329,26 @@
 | todo el día | весь день | phrase | 8 |
 | trabajar | работать | verb | 2 |
 | el trabajo | работа | noun | 8 |
+| trece | тринадцать | num | 13 |
+| treinta | тридцать | num | 13 |
+| tres | три | num | 13 |
 | tú | ты | pron | 2 |
+| tu | твой, твоя | adj | 13 |
 | la universidad | университет | noun | 11 |
+| uno | один | num | 13 |
 | usted | вы (вежливо, одному человеку) | pron | 5 |
 | ustedes | вы (вежливо, нескольким) | pron | 5 |
 | vas a | ты собираешься, ты будешь | phrase | 4 |
+| veinte | двадцать | num | 13 |
+| veinticinco | двадцать пять | num | 13 |
+| veinticuatro | двадцать четыре | num | 13 |
+| veintidós | двадцать два | num | 13 |
+| veintinueve | двадцать девять | num | 13 |
+| veintiocho | двадцать восемь | num | 13 |
+| veintiséis | двадцать шесть | num | 13 |
+| veintisiete | двадцать семь | num | 13 |
+| veintitrés | двадцать три | num | 13 |
+| veintiuno | двадцать один | num | 13 |
 | vender | продавать | verb | 10 |
 | la ventana | окно | noun | 8 |
 | viajar | путешествовать | verb | 3 |
@@ -308,5 +358,6 @@
 | vosotras | вы (нескольким женщинам, на «ты») | pron | 5 |
 | vosotros | вы (нескольким, на «ты») | pron | 5 |
 | voy a | я собираюсь, я буду | phrase | 4 |
+| vuestro | ваш (нескольким, на «ты») | adj | 13 |
 | y | и | conj | 2 |
 | yo | я | pron | 2 |
