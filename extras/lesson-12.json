@@ -1,0 +1,181 @@
+{
+  "number": 12,
+  "expressions": [
+    {
+      "es": "Estoy hecho polvo.",
+      "ipa": "esˈtoj ˈetʃo ˈpolbo",
+      "ru": "Я без сил. Я выжат как лимон.",
+      "note": "Сильнее, чем estoy cansado. Дословно — «превращён в пыль». Женщина скажет hecha polvo. Hecho — от hacer, подробно — в уроке 33.",
+      "example": { "es": "¿Cenamos juntos? — Hoy no, estoy hecha polvo.", "ru": "Поужинаем вместе? — Сегодня нет, я без сил." }
+    },
+    {
+      "es": "¡Ya está!",
+      "ipa": "ˈja esˈta",
+      "ru": "Готово! Всё!",
+      "note": "Говорят, когда дело сделано, а ещё чтобы успокоить: ya está, ya está — ну всё, всё. Está здесь не значит «находится». Ya — «уже», подробно — в уроке 34.",
+      "example": { "es": "¿Puedes abrir la ventana? — ¡Ya está!", "ru": "Можешь открыть окно? — Готово!" }
+    },
+    {
+      "es": "No hay de qué.",
+      "ipa": "no ˈaj de ˈke",
+      "ru": "Не за что.",
+      "note": "То же, что de nada, только чуть вежливее. Говорят и в Испании, и в Латинской Америке.",
+      "example": { "es": "Gracias, abuela. — No hay de qué.", "ru": "Спасибо, бабушка. — Не за что." }
+    },
+    {
+      "es": "estar en Babia",
+      "ipa": "esˈtaɾ en ˈbabja",
+      "ru": "витать в облаках",
+      "note": "Дословно — «быть в Бабии». Babia — горный край в провинции Леон: по самой известной версии, туда уезжали от дел короли. То же значит estar en la luna — «быть на луне»: так скажут и в Латинской Америке.",
+      "example": { "es": "¿Qué pregunta? Perdón, estoy en Babia.", "ru": "Какой вопрос? Извините, я задумался." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        {
+          "ru": "Где вы? — В баре.",
+          "hint": "к нескольким друзьям",
+          "es": "¿Dónde estáis? — En un bar.",
+          "alternatives": ["¿Dónde estáis? — En el bar."]
+        },
+        { "ru": "Что ты пьёшь? — Кофе. Весь день.", "es": "¿Qué bebes? — Café. Todo el día." },
+        {
+          "ru": "Дома есть кофе? — Нет, но есть пиво.",
+          "es": "¿Hay café en casa? — No, pero hay cerveza.",
+          "alternatives": ["¿En casa hay café? — No, pero hay cerveza."]
+        },
+        {
+          "ru": "Почему ты не ешь? — Потому что готовит Карлос.",
+          "es": "¿Por qué no comes? — Porque cocina Carlos.",
+          "alternatives": ["¿Por qué no comes? — Porque Carlos cocina."]
+        },
+        {
+          "ru": "Извините, вы заняты?",
+          "hint": "вежливо, мужчине",
+          "es": "Perdón, ¿usted está ocupado?",
+          "alternatives": ["Perdón, ¿está usted ocupado?", "Perdón, ¿está ocupado?"]
+        },
+        { "ru": "Ана учительница, но сегодня она очень устала.", "es": "Ana es profesora, pero hoy está muy cansada." },
+        { "ru": "Сколько книг ты читаешь? — Читаю мало, зато покупаю много.", "es": "¿Cuántos libros lees? — Leo poco, pero compro mucho." },
+        { "ru": "Мы не любим рано вставать, но нам нужно работать.", "es": "No nos gusta madrugar, pero tenemos que trabajar." },
+        { "ru": "Я не хочу быть в офисе: я хочу быть в кровати.", "es": "No quiero estar en la oficina: quiero estar en la cama." }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        { "wrong": "Ana en el supermercado.", "es": "Ana **está** en el supermercado.", "ru": "Ана в супермаркете.", "why": "Без глагола нельзя." },
+        { "wrong": "Soy en el bar.", "es": "**Estoy** en el bar.", "ru": "Я в баре.", "why": "Где ты — estar." },
+        { "wrong": "Hoy Carlos es cansado.", "es": "Hoy Carlos **está** cansado.", "ru": "Сегодня Карлос устал.", "why": "Как сейчас — estar." },
+        { "wrong": "Ana está profesora.", "es": "Ana **es** profesora.", "ru": "Ана учительница.", "why": "Профессия — ser." },
+        { "wrong": "Hay el bar en la calle.", "es": "Hay **un** bar en la calle.", "ru": "На улице есть бар.", "why": "После hay — не el, la." },
+        { "wrong": "Está un museo en la plaza.", "es": "**Hay** un museo en la plaza.", "ru": "На площади есть музей.", "why": "Какой-то музей — hay." },
+        { "wrong": "¿Cuándo Carlos llega?", "es": "¿Cuándo **llega Carlos**?", "ru": "Когда приезжает Карлос?", "why": "Глагол — сразу за cuándo." },
+        { "wrong": "La problema es difícil.", "es": "**El** problema es difícil.", "ru": "Проблема трудная.", "why": "Problema — мужской род." }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Hay или está?",
+      "options": ["hay", "está"],
+      "tasks": [
+        { "es": "Perdón, ¿___ un hospital aquí?", "answer": "hay" },
+        { "es": "Perdón, ¿dónde ___ el hospital?", "answer": "está" },
+        { "es": "En la cocina no ___ café. ¡Qué rollo!", "answer": "hay" },
+        { "es": "¿Qué ___ en la mesa? — Un libro y un gato.", "answer": "hay" },
+        { "es": "La cerveza ___ en la mesa. ¿Y el pan?", "answer": "está" }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Es или está?",
+      "options": ["es", "está"],
+      "tasks": [
+        { "es": "La abuela ___ en el gimnasio.", "answer": "está" },
+        { "es": "La abuela ___ de Sevilla.", "answer": "es" },
+        { "es": "Carlos ___ médico, pero hoy no trabaja.", "answer": "es" },
+        { "es": "¿Cómo ___ Carlos? — Enfermo, pero contento.", "answer": "está" },
+        { "es": "El ruso ___ un idioma difícil.", "answer": "es" }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        { "es": "¿Por qué corres? — Porque llega la abuela.", "ru": "Почему ты бежишь? — Едет бабушка." },
+        { "es": "Hay un problema: hay una cocina, pero no hay comida.", "ru": "Есть одна проблема: кухня есть, а еды нет." },
+        { "es": "Vendemos un piso: hay una cama, una silla y un gato.", "ru": "Продаём квартиру: есть кровать, стул и кот." },
+        { "es": "Ana y Carlos trabajan y el gato come. ¿Quién vive bien?", "ru": "Ана и Карлос работают, а кот ест. Кто хорошо живёт?" }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Карлос болеет",
+    "lines": [
+      { "speaker": "Abuela", "es": "Ana, hoy corremos. ¿Dónde está Carlos?", "ru": "Ана, сегодня бегаем. Где Карлос?" },
+      { "speaker": "Ana", "es": "No está en casa, abuela.", "ru": "Дома его нет, бабушка." },
+      { "speaker": "Abuela", "es": "¡Carlos! ¿Dónde estás? ¿Estás listo?", "ru": "Карлос! Ты где? Ты готов?" },
+      { "speaker": "Carlos", "es": "Abuela, estoy fatal. Estoy en el hospital.", "ru": "Бабушка, мне очень плохо. Я в больнице." },
+      { "speaker": "Abuela", "es": "¿En el hospital? ¿Y por qué hay música?", "ru": "В больнице? А почему там музыка?" },
+      { "speaker": "Carlos", "es": "Es que… en el hospital hay un bar.", "ru": "Ну… в больнице есть бар." },
+      { "speaker": "Ana", "es": "Abuela, Carlos está en el bar de la plaza. ¡Vamos!", "ru": "Бабушка, Карлос в баре на площади. Пошли!" },
+      { "speaker": "Abuela", "es": "¡Hola, Carlos! ¿Qué tal el enfermo?", "ru": "Привет, Карлос! Как наш больной?" },
+      { "speaker": "Carlos", "es": "Regular… Perdón, ¿dónde está el baño?", "ru": "Так себе… Извините, где туалет?" },
+      { "speaker": "Abuela", "es": "Ana, ¿hay una ventana en el baño?", "ru": "Ана, а в туалете есть окно?" }
+    ],
+    "questions": [
+      { "question": "¿Carlos está en el hospital?", "answer": "No, está en el bar de la plaza." },
+      { "question": "¿Carlos está enfermo?", "answer": "No, pero no quiere correr." }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "Estoy en el gimnasio… en el bar.",
+      "ru": "Я в спортзале… в баре.",
+      "ipa": "esˈtoj en el ximˈnasjo · en el ˈbaɾ"
+    },
+    {
+      "es": "¿Estás listo? — Sí, sí… Un día de estos.",
+      "ru": "Ты готов? — Да-да… Как-нибудь на днях.",
+      "ipa": "esˈtas ˈlisto · ˈsi ˈsi · un ˈdi.a de ˈestos"
+    },
+    {
+      "es": "¿Hay café? Estoy bien. ¿No hay café? Estoy fatal.",
+      "ru": "Есть кофе? Мне хорошо. Нет кофе? Мне ужасно.",
+      "ipa": "ˈaj kaˈfe · esˈtoj ˈbjen · no ˈaj kaˈfe · esˈtoj faˈtal"
+    },
+    {
+      "es": "Hay ganas de comer, pero no de cocinar.",
+      "ru": "Поесть хочется, а вот готовить — нет.",
+      "ipa": "ˈaj ˈganas de koˈmeɾ · ˈpeɾo no de koθiˈnaɾ"
+    },
+    {
+      "es": "Aquí hay un problema, y el problema soy yo.",
+      "ru": "Здесь есть проблема. И эта проблема — я.",
+      "ipa": "aˈki ˈaj un pɾoˈblema · i el pɾoˈblema ˈsoj ˈjo"
+    }
+  ],
+  "culture": {
+    "kind": "song",
+    "title": "Песня о Мадриде без моря",
+    "es": "Aquí no hay playa",
+    "ipa": "aˈki no ˈaj ˈplaja",
+    "ru": "Здесь нет пляжа",
+    "text": "Песня мадридской группы The Refrescos: вышла на их первом альбоме в 1989 году и стала одним из хитов того лета. Шутка простая: Мадрид стоит в глубине страны, далеко от моря, и пляжа в нём нет. В названии — конструкция из урока: aquí + no hay, «здесь нет». Новое только la playa — «пляж». В Испании её до сих пор ставят на праздниках — поищите по названию."
+  },
+  "yourTurn": {
+    "task": "Ответьте на вопросы из конца урока: ¿Dónde estás? ¿Cómo estás? ¿Qué hay en casa? Добавьте, откуда вы и чего дома нет. Напишите 4–5 фраз и прочитайте их вслух.",
+    "template": ["Soy de…, pero ahora estoy en…", "Hoy estoy…", "En casa hay…", "No hay…"],
+    "model": [
+      { "es": "Soy de Kazán, pero ahora estoy en Moscú, en la oficina.", "ru": "Я из Казани, но сейчас я в Москве, в офисе." },
+      { "es": "Hoy estoy regular: estoy muy cansada.", "ru": "Сегодня так себе: я очень устала." },
+      { "es": "En casa hay pan, café y un gato.", "ru": "Дома есть хлеб, кофе и кот." },
+      { "es": "No hay cerveza. ¡Qué rollo!", "ru": "Пива нет. Вот тоска!" },
+      { "es": "En la calle hay un supermercado, pero es muy caro.", "ru": "На улице есть супермаркет, но он очень дорогой." }
+    ]
+  }
+}
