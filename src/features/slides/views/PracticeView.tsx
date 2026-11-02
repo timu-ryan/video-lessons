@@ -35,6 +35,9 @@ export function PracticeView({
           marginTop: 28,
           width: SAFE_COL_W,
           minHeight: 200,
+          // Скрытый ответ тоже занимает место и не должен сжимать вопрос и полоску:
+          // иначе вопрос наезжает на полоску паузы, а сама она исчезает.
+          flexShrink: 0,
           fontSize: FS.prompt,
           fontWeight: 700,
           lineHeight: 1.12,
@@ -62,6 +65,7 @@ export function PracticeView({
       <div
         style={{
           marginTop: 12,
+          flexShrink: 0,
           width: 900,
           height: 14,
           borderRadius: 7,

@@ -1,10 +1,11 @@
 /**
  * Проверка вёрстки слайдов: прогоняет каждый слайд и каждый шаг урока
- * в холсте 1920×1080 и проверяет три вещи, которые нельзя ловить на глаз:
+ * в холсте 1920×1080 и проверяет то, что нельзя ловить на глаз:
  *
  *   1. ничего не заезжает в зону камеры (правый нижний угол 520×380);
  *   2. нет текста мельче 32px — видео смотрят с телефона;
- *   3. ничего не вылезает за пределы холста.
+ *   3. ничего не вылезает за пределы холста;
+ *   4. полоска паузы на практике видна и не наезжает на текст.
  *
  * Запуск: сначала `npm run dev`, потом `npm run check:slides`.
  * Флаги: --shots — сложить скриншоты слайдов в .shots/
@@ -151,11 +152,26 @@ for (const [modeName, mode] of Object.entries(MODES)) {
             bottom: Math.round(r.bottom - base.top),
           })
         }
-        return { out, w: base.width, h: base.height }
+        // Сама полоска — дорожка, бежит внутри неё заливка с анимацией pause-bar.
+        const track = [...(canvas ?? document.body).querySelectorAll('*')].find(
+          (el) => getComputedStyle(el).animationName === 'pause-bar',
+        )?.parentElement
+        const t = track?.getBoundingClientRect()
+        const bar = t && {
+          left: t.left - base.left,
+          top: t.top - base.top,
+          right: t.right - base.left,
+          bottom: t.bottom - base.top,
+        }
+        return { out, bar, w: base.width, h: base.height }
       })
 
       if (Math.round(boxes.w) !== 1920 || Math.round(boxes.h) !== 1080) {
         problems.push(`слайд ${i}: холст ${boxes.w}×${boxes.h}, ожидался 1920×1080`)
+      }
+
+      if (boxes.bar && boxes.bar.bottom - boxes.bar.top < 10) {
+        problems.push(`слайд ${i}/${s}: полоска паузы сжата, её не видно`)
       }
 
       for (const b of boxes.out) {
@@ -172,6 +188,10 @@ for (const [modeName, mode] of Object.entries(MODES)) {
           problems.push(
             `слайд ${i}/${s}: выход за холст [${b.left},${b.top},${b.right},${b.bottom}] — «${b.text}»`,
           )
+        }
+        const { bar } = boxes
+        if (bar && b.left < bar.right && b.right > bar.left && b.top < bar.bottom && b.bottom > bar.top) {
+          problems.push(`слайд ${i}/${s}: полоска паузы наезжает на текст — «${b.text}»`)
         }
       }
 
