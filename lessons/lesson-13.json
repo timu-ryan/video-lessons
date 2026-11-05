@@ -735,5 +735,33 @@
         "«В следующем уроке — итог уровня A0: соберём всё, что вы выучили, и разберём типичные ошибки. ¡Hasta luego!»"
       ]
     }
-  ]
+  ],
+  "summary": {
+    "phrases": [
+      { "es": "**Tengo** un gato.", "ru": "У меня есть кот.", "ipa": "ˈtengo un ˈgato" },
+      { "es": "No **tengo** dinero.", "ru": "У меня нет денег.", "ipa": "no ˈtengo diˈneɾo" },
+      { "es": "¿Tienes **hermanos**?", "ru": "У тебя есть братья или сёстры?", "ipa": "ˈtjenes eɾˈmanos" },
+      { "es": "**Mi** casa es pequeña.", "ru": "Мой дом маленький.", "ipa": "mi ˈkasa ˈes peˈkeɲa" },
+      { "es": "¿Dónde están **tus** libros?", "ru": "Где твои книги?", "ipa": "ˈdonde esˈtan tus ˈlibɾos" },
+      { "es": "**Su** madre es ingeniera.", "ru": "Её мама инженер.", "ipa": "su ˈmadɾe ˈes inxeˈnjeɾa" },
+      { "es": "**Nuestra** casa es vieja.", "ru": "Наш дом старый.", "ipa": "ˈnwestɾa ˈkasa ˈes ˈbjexa" },
+      { "es": "¿Cuántos **años** tienes?", "ru": "Сколько тебе лет?", "ipa": "ˈkwantos ˈaɲos ˈtjenes" },
+      { "es": "**Tengo** veinte **años**.", "ru": "Мне двадцать лет.", "ipa": "ˈtengo ˈbejnte ˈaɲos" }
+    ],
+    "rule": "Есть у кого-то — **tener**: Tengo un perro. Есть где-то — **hay**: Hay un perro aquí. Возраст — тоже **tener**: Tengo veinte años. **Mi, tu, su** — без артикля, а если предметов несколько — **mis, tus, sus**: mi casa, mis amigos.",
+    "mistake": {
+      "wrong": { "es": "**A mí** veinte años." },
+      "right": { "es": "**Tengo** veinte años.", "ru": "Мне двадцать лет." }
+    },
+    "practice": [
+      { "ru": "У тебя есть друзья в Мадриде?", "es": "¿Tienes amigos en Madrid?" },
+      {
+        "ru": "Мне двадцать пять лет, и я учитель.",
+        "es": "Tengo veinticinco años y soy profesor.",
+        "alternatives": ["Tengo veinticinco años, soy profesor."]
+      },
+      { "ru": "Мне нравится жить с родителями.", "es": "Me gusta vivir con mis padres." },
+      { "ru": "Я хочу купить машину, но у меня нет денег.", "es": "Quiero comprar un coche, pero no tengo dinero." }
+    ]
+  }
 }
