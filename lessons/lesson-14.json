@@ -1,0 +1,994 @@
+{
+  "schemaVersion": 3,
+  "number": 14,
+  "level": "A0",
+  "planLesson": 14,
+  "title": "Итоговый урок A0",
+  "course": "Испанский с нуля",
+  "newVocabulary": [],
+  "speakers": {
+    "ana": "Ana",
+    "carlos": "Carlos"
+  },
+  "tableHeaders": {
+    "es": "Испанский",
+    "ru": "Перевод"
+  },
+  "practiceGroups": [
+    {
+      "name": "Артикль, ser и estar"
+    },
+    {
+      "name": "Мы и нравится"
+    },
+    {
+      "name": "Рассказ о себе"
+    },
+    {
+      "name": "Всё вместе"
+    }
+  ],
+  "slides": [
+    {
+      "type": "title",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Привет! Это последний урок уровня A0. Позади тринадцать уроков и почти триста слов.»",
+        "«Новых слов сегодня нет. Соберём всё, что вы знаете, в рассказ о себе и разберём три типичные ошибки.»",
+        "«После этого урока вы сможете рассказать о себе в восьми-десяти фразах — и без этих ошибок.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Рассказ о себе",
+      "hint": "Кто я, откуда, что люблю и чего хочу",
+      "notes": [
+        "«Начнём с того, ради чего мы учили весь уровень, — с рассказа о себе. Вот как о себе рассказывает Карлос.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Кто я",
+      "rows": [
+        {
+          "es": "**Me llamo** Carlos.",
+          "ru": "Меня зовут Карлос.",
+          "ipa": "me ˈjamo ˈkaɾlos"
+        },
+        {
+          "es": "**Soy de** Moscú.",
+          "ru": "Я из Москвы.",
+          "ipa": "ˈsoj de mosˈku"
+        },
+        {
+          "es": "Ahora **estoy** en Madrid.",
+          "ru": "Сейчас я в Мадриде.",
+          "ipa": "aˈoɾa esˈtoj en maˈdɾid"
+        },
+        {
+          "es": "**Tengo** treinta **años**.",
+          "ru": "Мне тридцать лет.",
+          "ipa": "ˈtengo ˈtɾejnta ˈaɲos"
+        },
+        {
+          "es": "**Soy** programador.",
+          "ru": "Я программист.",
+          "ipa": "ˈsoj pɾogɾamaˈdoɾ"
+        }
+      ],
+      "notes": [
+        "«Me llamo Carlos — меня зовут Карлос. 🔊 Это фраза из самого первого урока.»",
+        "«Soy de Moscú — я из Москвы. 🔊 Откуда вы — это ser. Ahora estoy en Madrid — сейчас я в Мадриде. 🔊 Где вы сейчас — это estar.»",
+        "«Tengo treinta años — мне тридцать лет. 🔊 Возраст — tener, как в прошлом уроке.»",
+        "«Soy programador — я программист. 🔊 Профессия — снова ser, и без артикля.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Моя жизнь",
+      "rows": [
+        {
+          "es": "**Vivo** en Moscú, en el centro.",
+          "ru": "Я живу в Москве, в центре.",
+          "ipa": "ˈbibo en mosˈku en el ˈθentɾo"
+        },
+        {
+          "es": "**Trabajo** en una oficina.",
+          "ru": "Я работаю в офисе.",
+          "ipa": "tɾaˈbaxo en ˈuna ofiˈθina"
+        },
+        {
+          "es": "**Tengo** una hermana.",
+          "ru": "У меня есть сестра.",
+          "ipa": "ˈtengo ˈuna eɾˈmana"
+        },
+        {
+          "es": "**Mis** padres viven en Kazán.",
+          "ru": "Мои родители живут в Казани.",
+          "ipa": "mis ˈpadɾes ˈbiben en kaˈθan"
+        }
+      ],
+      "notes": [
+        "«Vivo en Moscú, en el centro. 🔊 Vivo — глагол на -ir из урока 10.»",
+        "«Trabajo en una oficina. 🔊 Об офисе говорим впервые, он какой-то, поэтому una.»",
+        "«Tengo una hermana. 🔊 «У меня есть» — это tener.»",
+        "«Mis padres viven en Kazán. 🔊 Родителей двое, поэтому mis, и глагол во множественном числе: viven.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Что люблю и хочу",
+      "rows": [
+        {
+          "es": "**Me gusta** viajar.",
+          "ru": "Мне нравится путешествовать.",
+          "ipa": "me ˈgusta bjaˈxaɾ"
+        },
+        {
+          "es": "**Estudio** español.",
+          "ru": "Я учу испанский.",
+          "ipa": "esˈtudjo espaˈɲol"
+        },
+        {
+          "es": "**Quiero** vivir en España.",
+          "ru": "Я хочу жить в Испании.",
+          "ipa": "ˈkjeɾo biˈbiɾ en esˈpaɲa"
+        },
+        {
+          "es": "Mañana **tengo que** trabajar.",
+          "ru": "Завтра мне нужно работать.",
+          "ipa": "maˈɲana ˈtengo ke tɾabaˈxaɾ"
+        },
+        {
+          "es": "**Voy a** estudiar español.",
+          "ru": "Я буду учить испанский.",
+          "ipa": "ˈboj a estuˈdjaɾ espaˈɲol"
+        }
+      ],
+      "notes": [
+        "«Me gusta viajar — мне нравится путешествовать. 🔊 Estudio español — я учу испанский. 🔊»",
+        "«Quiero vivir en España — я хочу жить в Испании. 🔊 Quiero плюс инфинитив — с урока 3.»",
+        "«Mañana tengo que trabajar — завтра мне нужно работать. 🔊 Voy a estudiar español — я буду учить испанский. 🔊 Tengo que и voy a — из урока 4.»",
+        "«Заметьте: после me gusta, quiero, tengo que и voy a второй глагол всегда в инфинитиве.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Связываем фразы",
+      "examples": [
+        {
+          "es": "Soy de Moscú, **pero** ahora estoy en Madrid.",
+          "ru": "Я из Москвы, но сейчас я в Мадриде.",
+          "ipa": "ˈsoj de mosˈku ˈpeɾo aˈoɾa esˈtoj en maˈdɾid"
+        },
+        {
+          "es": "Tengo treinta años **y** soy programador.",
+          "ru": "Мне тридцать лет, и я программист.",
+          "ipa": "ˈtengo ˈtɾejnta ˈaɲos i ˈsoj pɾogɾamaˈdoɾ"
+        },
+        {
+          "es": "Estudio español **porque** quiero vivir aquí.",
+          "ru": "Я учу испанский, потому что хочу жить здесь.",
+          "ipa": "esˈtudjo espaˈɲol ˈpoɾke ˈkjeɾo biˈbiɾ aˈki"
+        }
+      ],
+      "pattern": [
+        "фраза",
+        "+",
+        "y / pero / porque",
+        "+",
+        "фраза"
+      ],
+      "text": "y — и, pero — но, porque — потому что.",
+      "notes": [
+        "«Пока это просто список фраз. Чтобы получился рассказ, нужны три маленьких слова: y — и, pero — но, porque — потому что.»",
+        "«Soy de Moscú, pero ahora estoy en Madrid. 🔊 Tengo treinta años y soy programador. 🔊»",
+        "«Estudio español porque quiero vivir aquí. 🔊 Porque — одним словом и без знака, как в уроке 11.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Ошибка 1: артикль",
+      "hint": "В русском его нет, а в испанском он нужен часто",
+      "notes": [
+        "«Рассказ готов. Теперь разберём три типичные ошибки. Первая — артикль.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичная ошибка",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          {
+            "es": "Casa es grande."
+          },
+          {
+            "es": "Libro está en la mesa."
+          },
+          {
+            "es": "Hay bar en la plaza."
+          }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          {
+            "es": "**La** casa es grande.",
+            "ru": "Дом большой."
+          },
+          {
+            "es": "**El** libro está en la mesa.",
+            "ru": "Книга на столе."
+          },
+          {
+            "es": "Hay **un** bar en la plaza.",
+            "ru": "На площади есть бар."
+          }
+        ]
+      },
+      "notes": [
+        "«По-русски «дом большой» — и никаких маленьких слов. Поэтому так и хочется сказать casa es grande.»",
+        "«Но, как в уроке 8, испанское существительное обычно не стоит голым.»",
+        "«Знакомый предмет — el или la: la casa, el libro. Новый, какой-то — un или una. И после hay тоже: hay un bar.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Нужен или нет",
+      "rows": [
+        {
+          "es": "**El** coche es nuevo.",
+          "ru": "Машина новая.",
+          "ipa": "el ˈkotʃe ˈes ˈnwebo"
+        },
+        {
+          "es": "Tengo **un** perro.",
+          "ru": "У меня есть собака.",
+          "ipa": "ˈtengo un ˈpero"
+        },
+        {
+          "es": "Soy **profesora**.",
+          "ru": "Я учительница.",
+          "ipa": "ˈsoj pɾofeˈsoɾa"
+        },
+        {
+          "es": "**Mi** piso es pequeño.",
+          "ru": "Моя квартира маленькая.",
+          "ipa": "mi ˈpiso ˈes peˈkeɲo"
+        },
+        {
+          "es": "**No** tengo ordenador.",
+          "ru": "У меня нет компьютера.",
+          "ipa": "no ˈtengo oɾdenaˈdoɾ"
+        }
+      ],
+      "notes": [
+        "«Чаще всего перед существительным нужен артикль. El coche es nuevo — речь о знакомой машине: el. 🔊 Tengo un perro — о собаке говорим впервые: un. 🔊»",
+        "«А где артикля нет? Профессия после ser: soy profesora. 🔊 Это урок 9.»",
+        "«После mi, tu, su: mi piso es pequeño. 🔊 И с отрицанием un обычно не ставим: no tengo ordenador. 🔊»",
+        "«И ещё без артикля говорим о еде, напитках и деньгах, когда неважно, сколько: bebo café, necesito dinero.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Ошибка 2: ser вместо estar",
+      "hint": "Где и как — estar, возраст — tener",
+      "notes": [
+        "«Вторая ошибка — ser там, где нужен estar или tener.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичная ошибка",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          {
+            "es": "**Soy** en Madrid."
+          },
+          {
+            "es": "Mi madre **es** enferma."
+          },
+          {
+            "es": "**Soy** dieciocho años."
+          }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          {
+            "es": "**Estoy** en Madrid.",
+            "ru": "Я в Мадриде."
+          },
+          {
+            "es": "Mi madre **está** enferma.",
+            "ru": "Моя мама болеет."
+          },
+          {
+            "es": "**Tengo** dieciocho años.",
+            "ru": "Мне восемнадцать лет."
+          }
+        ]
+      },
+      "notes": [
+        "«По-русски «я в Мадриде» — глагола нет вовсе. А испанский требует глагол, и первым приходит ser: его мы выучили раньше. Но где вы — всегда estar.»",
+        "«Болеть, устать, быть занятым — это состояние сейчас, тоже estar: mi madre está enferma.»",
+        "«А возраст — не ser и не estar, а tener: tengo dieciocho años.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Soy, estoy, tengo, hay",
+      "rows": [
+        {
+          "es": "**Soy** de Rusia.",
+          "ru": "Я из России.",
+          "ipa": "ˈsoj de ˈrusja"
+        },
+        {
+          "es": "**Estoy** en casa.",
+          "ru": "Я дома.",
+          "ipa": "esˈtoj en ˈkasa"
+        },
+        {
+          "es": "**Estoy** muy cansada.",
+          "ru": "Я очень устала.",
+          "ipa": "esˈtoj ˈmuj kanˈsada"
+        },
+        {
+          "es": "**Tengo** veintitrés años.",
+          "ru": "Мне двадцать три года.",
+          "ipa": "ˈtengo bejntiˈtɾes ˈaɲos"
+        },
+        {
+          "es": "**Hay** un bar aquí.",
+          "ru": "Здесь есть бар.",
+          "ipa": "ˈaj un ˈbaɾ aˈki"
+        }
+      ],
+      "notes": [
+        "«Соберём всё вместе. Soy de Rusia — откуда я: ser. 🔊 Estoy en casa — где я: estar. 🔊»",
+        "«Estoy muy cansada — как я сейчас: тоже estar. 🔊 Tengo veintitrés años — возраст: tener. 🔊»",
+        "«Hay un bar aquí — что-то где-то есть: hay. 🔊 По-русски глагола здесь почти нет, а по-испански нужно выбрать одно из четырёх слов.»",
+        "«Если знаете английский: там почти везде to be — I am from Russia, I am at home, I am twenty-three. По-испански это soy, estoy и tengo.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Ошибка 3: gustar",
+      "hint": "Не «я люблю», а «мне нравится»: me gusta",
+      "notes": [
+        "«И последняя ошибка — с gustar. Помните yo gusto из урока 7? Та же ловушка ждёт и в других лицах.»"
+      ]
+    },
+    {
+      "type": "compare",
+      "title": "Типичная ошибка",
+      "left": {
+        "label": "так не говорят",
+        "tone": "wrong",
+        "items": [
+          {
+            "es": "¿Tú **gustas** viajar?"
+          },
+          {
+            "es": "Nosotros **gustamos** bailar."
+          },
+          {
+            "es": "Él **gusta** cocinar."
+          }
+        ]
+      },
+      "right": {
+        "label": "так говорят",
+        "tone": "right",
+        "items": [
+          {
+            "es": "¿**Te gusta** viajar?",
+            "ru": "Тебе нравится путешествовать?"
+          },
+          {
+            "es": "**Nos gusta** bailar.",
+            "ru": "Нам нравится танцевать."
+          },
+          {
+            "es": "**Le gusta** cocinar.",
+            "ru": "Ему нравится готовить."
+          }
+        ]
+      },
+      "notes": [
+        "«По-русски мы часто говорим «ты любишь путешествовать», «мы любим танцевать».»",
+        "«Фраза начинается с «ты» или «мы», и так и тянет сказать tú gustas, nosotros gustamos.»",
+        "«Если знаете английский: you like, we like — та же ловушка.»",
+        "«Но gustar — это «нравиться». Не «ты любишь», а «тебе нравится» — te gusta. Нам — nos gusta, ему — le gusta. А gusta с инфинитивом не меняется.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Нравится и не нравится",
+      "rows": [
+        {
+          "es": "**Me gusta** pasear.",
+          "ru": "Мне нравится гулять.",
+          "ipa": "me ˈgusta paseˈaɾ"
+        },
+        {
+          "es": "**A mí también.**",
+          "ru": "Мне тоже.",
+          "ipa": "a ˈmi tamˈbjen"
+        },
+        {
+          "es": "**No me gusta** correr.",
+          "ru": "Я не люблю бегать.",
+          "ipa": "no me ˈgusta koˈreɾ"
+        },
+        {
+          "es": "**A mí tampoco.**",
+          "ru": "Мне тоже нет.",
+          "ipa": "a ˈmi tamˈpoko"
+        },
+        {
+          "es": "¿**Os gusta** cantar?",
+          "ru": "Вам нравится петь?",
+          "ipa": "os ˈgusta kanˈtaɾ"
+        }
+      ],
+      "notes": [
+        "«Me gusta pasear — мне нравится гулять. 🔊 Согласиться — a mí también. 🔊 Не «я тоже», а «мне тоже», как в русском.»",
+        "«No me gusta correr — я не люблю бегать. 🔊 Русское «я не люблю» — тоже no me gusta, и no в самом начале.»",
+        "«Согласиться с «не нравится» — a mí tampoco, «мне тоже нет». 🔊»",
+        "«По-русски в обоих ответах «тоже», а испанский различает, как в уроке 7: на «да» — también, на «нет» — tampoco.»",
+        "«¿Os gusta cantar? — так спрашиваем нескольких друзей. 🔊 Им — les gusta, нам — nos gusta.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Практика",
+      "hint": "Фраза по-русски → пауза → скажите вслух по-испански",
+      "notes": [
+        "«Теперь практика. Вы видите фразу по-русски — пока идёт полоска, скажите её вслух по-испански. Потом появится ответ. Не бойтесь ошибиться: главное — говорить.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Артикль, ser и estar",
+      "phrase": {
+        "ru": "Я в офисе.",
+        "es": "Estoy en la oficina.",
+        "ipa": "esˈtoj en la ofiˈθina"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Артикль, ser и estar",
+      "phrase": {
+        "ru": "Телефон на столе.",
+        "es": "El teléfono está en la mesa.",
+        "ipa": "el teˈlefono esˈta en la ˈmesa"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Артикль, ser и estar",
+      "phrase": {
+        "ru": "Моя сестра врач.",
+        "es": "Mi hermana es médica.",
+        "ipa": "mi eɾˈmana ˈes ˈmedika"
+      },
+      "notes": [
+        "«Профессия — ser и без артикля: es médica.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Артикль, ser и estar",
+      "phrase": {
+        "ru": "Мой брат болеет.",
+        "es": "Mi hermano está enfermo.",
+        "ipa": "mi eɾˈmano esˈta enˈfeɾmo"
+      },
+      "notes": [
+        "«Болеть — это состояние, поэтому estar.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Артикль, ser и estar",
+      "phrase": {
+        "ru": "У меня нет машины.",
+        "es": "No tengo coche.",
+        "ipa": "no ˈtengo ˈkotʃe"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Артикль, ser и estar",
+      "phrase": {
+        "ru": "Мне двадцать девять лет.",
+        "es": "Tengo veintinueve años.",
+        "ipa": "ˈtengo bejntiˈnwebe ˈaɲos"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Артикль, ser и estar",
+      "phrase": {
+        "ru": "В центре есть музей?",
+        "es": "¿Hay un museo en el centro?",
+        "alternatives": [
+          "¿En el centro hay un museo?"
+        ],
+        "ipa": "ˈaj un muˈse.o en el ˈθentɾo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Артикль, ser и estar",
+      "phrase": {
+        "ru": "Ты дома? — Нет, я в спортзале.",
+        "es": "¿Estás en casa? — No, estoy en el gimnasio.",
+        "ipa": "esˈtas en ˈkasa · ˈno esˈtoj en el ximˈnasjo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Артикль, ser и estar",
+      "phrase": {
+        "ru": "Где дети? — В школе.",
+        "es": "¿Dónde están los niños? — En el colegio.",
+        "alternatives": [
+          "¿Dónde están los niños? — Están en el colegio."
+        ],
+        "ipa": "ˈdonde esˈtan los ˈniɲos · en el koˈlexjo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Мы и нравится",
+      "phrase": {
+        "ru": "Мы студенты.",
+        "es": "Somos estudiantes.",
+        "alternatives": [
+          "Nosotros somos estudiantes."
+        ],
+        "ipa": "ˈsomos estuˈdjantes"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Мы и нравится",
+      "phrase": {
+        "ru": "Мы много работаем.",
+        "es": "Trabajamos mucho.",
+        "alternatives": [
+          "Nosotros trabajamos mucho."
+        ],
+        "ipa": "tɾabaˈxamos ˈmutʃo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Мы и нравится",
+      "phrase": {
+        "ru": "Мы можем помочь.",
+        "es": "Podemos ayudar.",
+        "alternatives": [
+          "Nosotros podemos ayudar."
+        ],
+        "ipa": "poˈdemos ajuˈdaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Мы и нравится",
+      "phrase": {
+        "ru": "Мы живём в Москве.",
+        "es": "Vivimos en Moscú.",
+        "alternatives": [
+          "Nosotros vivimos en Moscú."
+        ],
+        "ipa": "biˈbimos en mosˈku"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Мы и нравится",
+      "phrase": {
+        "ru": "Тебе нравится танцевать?",
+        "es": "¿Te gusta bailar?",
+        "ipa": "te ˈgusta bajˈlaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Мы и нравится",
+      "phrase": {
+        "ru": "Ей нравится петь.",
+        "es": "Le gusta cantar.",
+        "alternatives": [
+          "A ella le gusta cantar."
+        ],
+        "ipa": "le ˈgusta kanˈtaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Мы и нравится",
+      "phrase": {
+        "ru": "Нам не нравится рано вставать.",
+        "es": "No nos gusta madrugar.",
+        "ipa": "no nos ˈgusta madɾuˈgaɾ"
+      },
+      "notes": [
+        "«No — в самом начале, перед nos.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Мы и нравится",
+      "phrase": {
+        "ru": "Вам нравится путешествовать?",
+        "hint": "к нескольким друзьям",
+        "es": "¿Os gusta viajar?",
+        "alternatives": [
+          "¿A vosotros os gusta viajar?"
+        ],
+        "ipa": "os ˈgusta bjaˈxaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Мы и нравится",
+      "phrase": {
+        "ru": "Мы учим испанский, потому что нам нравится путешествовать.",
+        "es": "Estudiamos español porque nos gusta viajar.",
+        "alternatives": [
+          "Aprendemos español porque nos gusta viajar."
+        ],
+        "ipa": "estuˈdjamos espaˈɲol ˈpoɾke nos ˈgusta bjaˈxaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Мы и нравится",
+      "phrase": {
+        "ru": "Мне нравится плавать. — Мне тоже.",
+        "es": "Me gusta nadar. — A mí también.",
+        "ipa": "me ˈgusta naˈdaɾ · a ˈmi tamˈbjen"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ о себе",
+      "phrase": {
+        "ru": "Я из Казани, но живу в Москве.",
+        "es": "Soy de Kazán, pero vivo en Moscú.",
+        "ipa": "ˈsoj de kaˈθan ˈpeɾo ˈbibo en mosˈku"
+      },
+      "notes": [
+        "«Это начало связного рассказа о себе — дальше фраза за фразой.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ о себе",
+      "phrase": {
+        "ru": "Мне двадцать восемь лет, я программистка.",
+        "es": "Tengo veintiocho años y soy programadora.",
+        "alternatives": [
+          "Tengo veintiocho años, soy programadora."
+        ],
+        "ipa": "ˈtengo bejnˈtjotʃo ˈaɲos i ˈsoj pɾogɾamaˈdoɾa"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ о себе",
+      "phrase": {
+        "ru": "Я много работаю.",
+        "es": "Trabajo mucho.",
+        "ipa": "tɾaˈbaxo ˈmutʃo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ о себе",
+      "phrase": {
+        "ru": "У меня есть брат, он врач.",
+        "es": "Tengo un hermano, es médico.",
+        "ipa": "ˈtengo un eɾˈmano ˈes ˈmediko"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ о себе",
+      "phrase": {
+        "ru": "Он живёт в Мадриде, и ему двадцать пять лет.",
+        "es": "Vive en Madrid y tiene veinticinco años.",
+        "alternatives": [
+          "Él vive en Madrid y tiene veinticinco años."
+        ],
+        "ipa": "ˈbibe en maˈdɾid i ˈtjene bejntiˈθinko ˈaɲos"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ о себе",
+      "phrase": {
+        "ru": "Мне нравится читать и путешествовать.",
+        "es": "Me gusta leer y viajar.",
+        "ipa": "me ˈgusta leˈeɾ i bjaˈxaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ о себе",
+      "phrase": {
+        "ru": "Я учу испанский, потому что хочу жить в Испании.",
+        "es": "Estudio español porque quiero vivir en España.",
+        "alternatives": [
+          "Aprendo español porque quiero vivir en España."
+        ],
+        "ipa": "esˈtudjo espaˈɲol ˈpoɾke ˈkjeɾo biˈbiɾ en esˈpaɲa"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ о себе",
+      "phrase": {
+        "ru": "Завтра мне нужно работать, но я буду учить испанский.",
+        "es": "Mañana tengo que trabajar, pero voy a estudiar español.",
+        "ipa": "maˈɲana ˈtengo ke tɾabaˈxaɾ ˈpeɾo ˈboj a estuˈdjaɾ espaˈɲol"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Откуда ты?",
+        "es": "¿De dónde eres?",
+        "ipa": "de ˈdonde ˈeɾes"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Сколько тебе лет?",
+        "es": "¿Cuántos años tienes?",
+        "ipa": "ˈkwantos ˈaɲos ˈtjenes"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Где ты работаешь?",
+        "es": "¿Dónde trabajas?",
+        "ipa": "ˈdonde tɾaˈbaxas"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Вы говорите по-английски?",
+        "hint": "вежливо, одному человеку",
+        "es": "¿Usted habla inglés?",
+        "alternatives": [
+          "¿Habla usted inglés?",
+          "¿Habla inglés?"
+        ],
+        "ipa": "usˈted ˈabla inˈgles"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Сегодня я не могу, мне нужно работать.",
+        "es": "Hoy no puedo, tengo que trabajar.",
+        "alternatives": [
+          "Hoy no puedo, necesito trabajar."
+        ],
+        "ipa": "ˈoj no ˈpwedo ˈtengo ke tɾabaˈxaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Ана устала, она хочет отдохнуть.",
+        "es": "Ana está cansada, quiere descansar.",
+        "alternatives": [
+          "Ana está cansada y quiere descansar."
+        ],
+        "ipa": "ˈana esˈta kanˈsada ˈkjeɾe deskanˈsaɾ"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Моя мама учительница, она живёт в Мадриде.",
+        "es": "Mi madre es profesora y vive en Madrid.",
+        "alternatives": [
+          "Mi madre es profesora, vive en Madrid."
+        ],
+        "ipa": "mi ˈmadɾe ˈes pɾofeˈsoɾa i ˈbibe en maˈdɾid"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Завтра мы будем ужинать с Карлосом.",
+        "es": "Mañana vamos a cenar con Carlos.",
+        "alternatives": [
+          "Mañana cenamos con Carlos."
+        ],
+        "ipa": "maˈɲana ˈbamos a θeˈnaɾ kon ˈkaɾlos"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Здесь нет супермаркета, но есть бар.",
+        "es": "Aquí no hay supermercado, pero hay un bar.",
+        "alternatives": [
+          "No hay supermercado aquí, pero hay un bar."
+        ],
+        "ipa": "aˈki no ˈaj supeɾmeɾˈkado ˈpeɾo ˈaj un ˈbaɾ"
+      },
+      "notes": [
+        "«С отрицанием un обычно не ставим: no hay supermercado. А «есть бар» — hay un bar.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Почему ты не хочешь работать? — Потому что я устал.",
+        "es": "¿Por qué no quieres trabajar? — Porque estoy cansado.",
+        "ipa": "poɾ ˈke no ˈkjeɾes tɾabaˈxaɾ · ˈpoɾke esˈtoj kanˈsado"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Тебе нравится жить в Мадриде? — Да, очень.",
+        "es": "¿Te gusta vivir en Madrid? — Sí, mucho.",
+        "alternatives": [
+          "¿Te gusta vivir en Madrid? — Sí, me gusta mucho."
+        ],
+        "ipa": "te ˈgusta biˈbiɾ en maˈdɾid · ˈsi ˈmutʃo"
+      },
+      "notes": [
+        "«Очень нравится — mucho, а не muy, как в уроке 7.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "У тебя есть братья или сёстры? — Да, у меня есть сестра.",
+        "es": "¿Tienes hermanos? — Sí, tengo una hermana.",
+        "ipa": "ˈtjenes eɾˈmanos · ˈsi ˈtengo ˈuna eɾˈmana"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Какая она, твоя квартира? — Маленькая, но красивая.",
+        "es": "¿Cómo es tu piso? — Es pequeño, pero bonito.",
+        "alternatives": [
+          "¿Cómo es tu piso? — Pequeño, pero bonito."
+        ],
+        "ipa": "ˈkomo ˈes tu ˈpiso · ˈes peˈkeɲo ˈpeɾo boˈnito"
+      },
+      "notes": [
+        "«Piso — мужской род: pequeño, bonito, хотя по-русски «маленькая, красивая».»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Мини-диалог",
+      "notes": [
+        "«А теперь послушаем, о чём Ана и Карлос говорят в конце ужина. Все слова вы уже знаете.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Жить в Мадриде",
+      "lines": [
+        {
+          "speaker": "ana",
+          "es": "Carlos, ¿**te gusta** vivir en Moscú?",
+          "ru": "Карлос, тебе нравится жить в Москве?"
+        },
+        {
+          "speaker": "carlos",
+          "es": "Sí, pero **quiero** vivir aquí, en Madrid.",
+          "ru": "Да, но я хочу жить здесь, в Мадриде."
+        },
+        {
+          "speaker": "ana",
+          "es": "¿Y tu trabajo?",
+          "ru": "А твоя работа?"
+        },
+        {
+          "speaker": "carlos",
+          "es": "**Soy** programador. **Puedo** trabajar en casa.",
+          "ru": "Я программист. Я могу работать дома."
+        }
+      ],
+      "notes": [
+        "🔊 Проиграть диалог целиком, потом по репликам.",
+        "«Помните, в прошлом уроке Ана и Карлос ужинали и говорили о семье? Ужин продолжается, и теперь Ана спрашивает о планах Карлоса.»",
+        "«¿Te gusta vivir en Moscú? — te gusta, а не tú gustas: «тебе нравится».»",
+        "«Soy programador — профессия: ser и без артикля.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Жить в Мадриде",
+      "lines": [
+        {
+          "speaker": "carlos",
+          "es": "Pero **tengo que** practicar más.",
+          "ru": "Но мне нужно больше заниматься."
+        },
+        {
+          "speaker": "ana",
+          "es": "¡**Podemos** practicar juntos!",
+          "ru": "Мы можем заниматься вместе!"
+        },
+        {
+          "speaker": "carlos",
+          "es": "¡Claro! ¿Mañana?",
+          "ru": "Конечно! Завтра?"
+        },
+        {
+          "speaker": "ana",
+          "es": "Mañana **estoy** ocupada, pero pasado mañana sí.",
+          "ru": "Завтра я занята, но послезавтра — да."
+        }
+      ],
+      "notes": [
+        "«Podemos practicar juntos — «мы можем», окончание -mos.»",
+        "«Mañana estoy ocupada: занята — это состояние, поэтому estar. Pasado mañana — послезавтра, из урока 4.»"
+      ]
+    },
+    {
+      "type": "final",
+      "title": "Теперь вы умеете",
+      "bullets": [
+        "Рассказывать о себе: me llamo, soy, tengo, vivo",
+        "Связывать фразы: y, pero, porque",
+        "Не забывать артикль: la casa es grande",
+        "Выбирать между ser, estar, tener и hay",
+        "Говорить, что нравится: me gusta, a mí tampoco"
+      ],
+      "nextTitle": "Следующий урок",
+      "nextText": "Урок 15: числа до 1000 и цены — ¿cuánto cuesta?",
+      "outro": "¡Hasta luego!",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Поздравляю: уровень A0 пройден! Теперь вы можете рассказать о себе: кто вы, откуда, сколько вам лет, что любите и чего хотите.»",
+        "«Попробуйте сегодня рассказать о себе вслух, восемь-десять фраз по образцу Карлоса. Запишите себя и послушайте: где артикль, где estar, где me gusta.»",
+        "«В следующем уроке начинается уровень A1: числа до тысячи и цены. ¡Hasta luego!»"
+      ]
+    }
+  ]
+}
