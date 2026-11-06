@@ -1,0 +1,164 @@
+{
+  "number": 13,
+  "expressions": [
+    {
+      "es": "Tengo hambre.",
+      "ipa": "ˈtengo ˈambɾe",
+      "ru": "Я хочу есть. Я голоден.",
+      "note": "Дословно — «у меня голод»: снова tener, как с возрастом. Так же tengo sed — хочу пить, tengo sueño — хочу спать.",
+      "example": { "es": "¿Tienes pan? Tengo hambre.", "ru": "У тебя есть хлеб? Я есть хочу." }
+    },
+    {
+      "es": "Tienes razón.",
+      "ipa": "ˈtjenes raˈθon",
+      "ru": "Ты прав. Ты права.",
+      "note": "Дословно — «у тебя есть правота». Вежливо — tiene razón. Подробно — в уроке 61.",
+      "example": { "es": "Carlos, ¡corres muy poco! — Tienes razón… Mañana corro.", "ru": "Карлос, ты очень мало бегаешь! — Ты права… Завтра побегаю." }
+    },
+    {
+      "es": "No tengo ni idea.",
+      "ipa": "no ˈtengo ni iˈde.a",
+      "ru": "Понятия не имею.",
+      "note": "Дословно — «у меня нет даже идеи». Коротко — ¡Ni idea! Так говорят и в Латинской Америке. Подробно — в уроке 83.",
+      "example": { "es": "¿Cuántos años tiene la abuela? — No tengo ni idea.", "ru": "Сколько лет бабушке? — Понятия не имею." }
+    },
+    {
+      "es": "mi media naranja",
+      "ipa": "mi ˈmedja naˈɾanxa",
+      "ru": "моя вторая половинка",
+      "note": "Дословно — «моя половинка апельсина»: так нежно зовут мужа, жену, любимого человека. Можно и tu media naranja, su media naranja.",
+      "example": { "es": "Mi media naranja cocina muy bien. Y yo como muy bien.", "ru": "Моя вторая половинка отлично готовит. А я отлично ем." }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        { "ru": "У меня есть компьютер, но нет стола.", "es": "Tengo un ordenador, pero no tengo mesa." },
+        { "ru": "Сколько тебе лет? — Двадцать пять. А тебе?", "es": "¿Cuántos años tienes? — Veinticinco. ¿Y tú?" },
+        { "ru": "У тебя есть хлеб? Дома хлеба нет.", "es": "¿Tienes pan? En casa no hay pan." },
+        { "ru": "Ваша кухня очень большая!", "hint": "к нескольким друзьям", "es": "¡Vuestra cocina es muy grande!" },
+        { "ru": "Ваши дети говорят по-русски?", "hint": "вежливо", "es": "¿Sus hijos hablan ruso?" },
+        { "ru": "Сколько у вас детей?", "hint": "к нескольким друзьям", "es": "¿Cuántos hijos tenéis?" },
+        { "ru": "Моему коту двенадцать лет: он старый, но довольный.", "es": "Mi gato tiene doce años: es viejo, pero está contento." },
+        { "ru": "Наши родители живут в Севилье, а мы живём в Мадриде.", "es": "Nuestros padres viven en Sevilla y nosotros vivimos en Madrid." },
+        { "ru": "Сколько лет твоей бабушке? — Это трудный вопрос.", "es": "¿Cuántos años tiene tu abuela? — Es una pregunta difícil." }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        { "wrong": "Mi padres viven en Kazán.", "es": "**Mis** padres viven en Kazán.", "ru": "Мои родители живут в Казани.", "why": "Родителей двое — mis." },
+        { "wrong": "La mi hermana es médica.", "es": "**Mi** hermana es médica.", "ru": "Моя сестра врач.", "why": "С mi артикль не нужен." },
+        { "wrong": "A mí veintiocho años.", "es": "**Tengo** veintiocho años.", "ru": "Мне двадцать восемь лет.", "why": "Возраст — tener." },
+        { "wrong": "Mi hermano es diecinueve años.", "es": "Mi hermano **tiene** diecinueve años.", "ru": "Моему брату девятнадцать лет.", "why": "Не ser, а tener." },
+        { "wrong": "Tengo un perro y dos gato.", "es": "Tengo un perro y dos **gatos**.", "ru": "У меня собака и две кошки.", "why": "После dos — мн. число." },
+        { "wrong": "Nuestro cocina es pequeña.", "es": "**Nuestra** cocina es pequeña.", "ru": "Наша кухня маленькая.", "why": "Cocina — женский род." },
+        { "wrong": "Mi hermana hay dos hijos.", "es": "Mi hermana **tiene** dos hijos.", "ru": "У моей сестры двое детей.", "why": "Есть у кого-то — tener." },
+        { "wrong": "¿Cuántos años tu madre tiene?", "es": "¿Cuántos años **tiene tu madre**?", "ru": "Сколько лет твоей маме?", "why": "Глагол — сразу за вопросом." }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Tu, tus или tú?",
+      "options": ["tu", "tus", "tú"],
+      "tasks": [
+        { "es": "Yo soy de Moscú. ¿Y ___?", "answer": "tú" },
+        { "es": "Carlos, ¿___ hermana es estudiante?", "answer": "tu" },
+        { "es": "¿Dónde viven ___ hijos?", "answer": "tus" },
+        { "es": "Ana, ¿___ quieres un café o una cerveza?", "answer": "tú" },
+        { "es": "¿Cuántos años tienen ___ hermanos?", "answer": "tus" }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Hay, tiene или está?",
+      "options": ["hay", "tiene", "está"],
+      "tasks": [
+        { "es": "Ana ___ un perro.", "answer": "tiene" },
+        { "es": "En la plaza ___ un bar.", "answer": "hay" },
+        { "es": "Carlos ___ en el bar… otra vez.", "answer": "está" },
+        { "es": "¿Dónde ___ tu madre? — En el hospital: es médica.", "answer": "está" },
+        { "es": "Mi piso es muy pequeño: no ___ cocina.", "answer": "tiene" }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        { "es": "¿Cuántos años tenéis, niños? — Juntos, ¡quince!", "ru": "Сколько вам лет, дети? — Вместе — пятнадцать!" },
+        { "es": "Tengo dos hijos, tres perros y muy poco dinero.", "ru": "У меня двое детей, три собаки и очень мало денег." },
+        { "es": "Mis padres tienen un coche nuevo, y yo tengo su coche viejo.", "ru": "У моих родителей новая машина, а у меня — их старая." },
+        { "es": "En nuestra familia hay tres médicos. ¿Y quién cocina? La abuela.", "ru": "В нашей семье три врача. А кто готовит? Бабушка." }
+      ]
+    }
+  ],
+  "story": {
+    "title": "А девушка у тебя есть?",
+    "lines": [
+      { "speaker": "Abuela", "es": "Carlos, ¿cuántos años tienes?", "ru": "Карлос, сколько тебе лет?" },
+      { "speaker": "Carlos", "es": "Treinta, abuela.", "ru": "Тридцать, бабушка." },
+      { "speaker": "Abuela", "es": "¿Treinta? ¿Y tienes piso?", "ru": "Тридцать? А квартира у тебя есть?" },
+      { "speaker": "Carlos", "es": "Sí, tengo un piso pequeño en Moscú.", "ru": "Да, у меня маленькая квартира в Москве." },
+      { "speaker": "Abuela", "es": "¿Y coche? ¿Tienes coche?", "ru": "А машина? Машина есть?" },
+      { "speaker": "Carlos", "es": "No, no tengo coche. Pero tengo un ordenador nuevo.", "ru": "Нет, машины нет. Зато у меня новый компьютер." },
+      { "speaker": "Abuela", "es": "¿Y novia? ¿Tienes novia?", "ru": "А девушка? Девушка у тебя есть?" },
+      { "speaker": "Carlos", "es": "Perdón… ¿dónde está el baño?", "ru": "Извините… а где туалет?" },
+      { "speaker": "Ana", "es": "Abuela, ¡por favor!", "ru": "Бабушка, ну пожалуйста!" },
+      { "speaker": "Abuela", "es": "Vale, vale. Carlos, el baño está aquí… y no tiene ventana.", "ru": "Ладно, ладно. Карлос, туалет вот здесь… и окна в нём нет." }
+    ],
+    "glossary": [{ "es": "la novia", "ru": "девушка (подруга), невеста" }],
+    "questions": [
+      { "question": "¿Carlos tiene coche?", "answer": "No, pero tiene un ordenador nuevo." },
+      { "question": "¿Carlos tiene novia?", "answer": "No contesta." }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "¿Cuántos años tienes? — Veintinueve… otra vez.",
+      "ru": "Сколько тебе лет? — Двадцать девять… опять.",
+      "ipa": "ˈkwantos ˈaɲos ˈtjenes · bejntiˈnwebe · ˈotɾa ˈbeθ"
+    },
+    {
+      "es": "Mi casa es tu casa… pero mi café es mi café.",
+      "ru": "Мой дом — твой дом… но мой кофе — это мой кофе.",
+      "ipa": "mi ˈkasa ˈes tu ˈkasa · ˈpeɾo mi kaˈfe ˈes mi kaˈfe"
+    },
+    {
+      "es": "No tengo coche, no tengo piso… pero tengo un gato.",
+      "ru": "Машины нет, квартиры нет… зато есть кот.",
+      "ipa": "no ˈtengo ˈkotʃe · no ˈtengo ˈpiso · ˈpeɾo ˈtengo un ˈgato"
+    },
+    {
+      "es": "Tengo treinta años y vivo con mis padres. ¡Qué remedio!",
+      "ru": "Мне тридцать, и я живу с родителями. Что поделаешь!",
+      "ipa": "ˈtengo ˈtɾejnta ˈaɲos i ˈbibo kon mis ˈpadɾes · ˈke reˈmedjo"
+    },
+    {
+      "es": "Mi madre llama: ¿Comes bien? ¿Tienes dinero?",
+      "ru": "Звонит мама: «Ты хорошо ешь? Деньги есть?»",
+      "ipa": "mi ˈmadɾe ˈjama · ˈkomes ˈbjen · ˈtjenes diˈneɾo"
+    }
+  ],
+  "culture": {
+    "kind": "fact",
+    "title": "Две фамилии",
+    "es": "Pablo Ruiz Picasso",
+    "ipa": "ˈpablo ˈrwiθ piˈkaso",
+    "ru": "Ruiz — фамилия отца, Picasso — фамилия матери",
+    "text": "В Испании у каждого две фамилии: обычно первая — от отца, вторая — от матери. Пикассо прославился под второй, материнской. Выходя замуж, испанка свою фамилию не меняет. Не путайте: фамилия — el apellido, а la familia — семья."
+  },
+  "yourTurn": {
+    "task": "Ответьте на вопросы из конца урока: ¿Cuántos años tienes? ¿Tienes hermanos? Добавьте, кто ваши родители и что есть у вас дома. Напишите 4–5 фраз и прочитайте их вслух.",
+    "template": ["Tengo … años y soy…", "Tengo un hermano / una hermana…", "Mi madre es… y mi padre…", "En casa tenemos…"],
+    "model": [
+      { "es": "Tengo veintisiete años y soy ingeniera.", "ru": "Мне двадцать семь лет, я инженер." },
+      { "es": "Tengo un hermano: tiene diecinueve años y es estudiante.", "ru": "У меня есть брат: ему девятнадцать, он студент." },
+      { "es": "Mi madre es profesora y mi padre es programador.", "ru": "Мама у меня учительница, а папа — программист." },
+      { "es": "Mis padres viven en Kazán, pero yo vivo en Moscú.", "ru": "Мои родители живут в Казани, а я — в Москве." },
+      { "es": "En casa no tenemos perro, pero tenemos un gato muy grande.", "ru": "Собаки у нас дома нет, зато есть очень большой кот." }
+    ]
+  }
+}
