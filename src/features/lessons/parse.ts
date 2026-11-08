@@ -1,4 +1,4 @@
-import { hasUnclosedMark } from '../slides/markup'
+import { hasUnclosedMark, plainText } from '../slides/markup'
 import type {
   DialogueLineSource,
   LessonSource,
@@ -23,6 +23,7 @@ const SLIDE_FIELDS = {
   compare: ['title', 'left', 'right'],
   practice: ['group', 'phrase'],
   dialogue: ['title', 'lines'],
+  text: ['title', 'sentences'],
   final: ['title', 'bullets', 'nextTitle', 'nextText'],
 } as const satisfies Record<SlideSource['type'], readonly string[]>
 
@@ -36,6 +37,13 @@ const COMPARED_VERBS = 2
 const MAX_RULE_EXAMPLES = 3
 const MAX_COMPARE_ITEMS = 3
 const MAX_ALTERNATIVES = 2
+/**
+ * Текст идёт абзацем, поэтому место съедают знаки, а не строки. Знаки без `**`,
+ * с пробелами между предложениями. 380 знаков испанского и 430 перевода
+ * доходят ровно до нижнего поля — лимит на строку меньше, с запасом на перенос.
+ */
+const MAX_TEXT_SENTENCES = 10
+const MAX_TEXT_CHARS = { es: 360, ru: 420 }
 
 /** Краткий конспект должен уместиться на одну страницу A4. */
 const SUMMARY_PHRASES = { min: 6, max: 10 }
@@ -234,6 +242,22 @@ function slide(file: string, index: number, value: unknown, levelA0: boolean): S
       phrase(`${where}, реплика ${i}`, line, { ipa: false })
       str(`${where}, реплика ${i}`, line as Record<string, unknown>, 'speaker')
     })
+  }
+
+  if (type === 'text') {
+    str(where, value, 'title')
+    const sentences = list(where, value, 'sentences', MAX_TEXT_SENTENCES).map((sentence, i) =>
+      phrase(`${where}, предложение ${i}`, sentence, { ipa: false }),
+    )
+    for (const key of ['es', 'ru'] as const) {
+      const chars = sentences.map((sentence) => plainText(sentence[key] as string)).join(' ').length
+      if (chars > MAX_TEXT_CHARS[key]) {
+        throw new LessonError(
+          where,
+          `в «${key}» знаков: ${chars}, в холст помещается ${MAX_TEXT_CHARS[key]} — разрежьте на слайды с тем же title`,
+        )
+      }
+    }
   }
 
   if (value.id !== undefined && typeof value.id !== 'string') {

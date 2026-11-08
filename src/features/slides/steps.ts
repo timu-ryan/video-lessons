@@ -11,6 +11,8 @@ export function stepCount(slide: Slide): number {
       return slide.rows.length // строки открываются по одной, первая — сразу
     case 'dialogue':
       return slide.lines.length
+    case 'text':
+      return slide.sentences.length // предложения по одному, первое — сразу
     case 'rule':
       return slide.examples.length + 1 // 0: формула и пояснение, дальше примеры по одному
     case 'conjugation':
@@ -52,6 +54,7 @@ export function slideLabel(slide: Slide): string {
     case 'practice':
       return `Практика ${slide.index}/${slide.total} — ${plainText(slide.phrase.ru)}`
     case 'dialogue':
+    case 'text':
       return slide.part ? `${slide.title} ${slide.part[0]}/${slide.part[1]}` : slide.title
     case 'final':
       return slide.title

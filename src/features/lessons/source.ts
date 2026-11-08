@@ -218,6 +218,18 @@ export interface DialogueSlideSource extends SlideSourceBase {
   lines: DialogueLineSource[]
 }
 
+/**
+ * Связный текст: рассказ о себе, мини-история. Предложения идут одним абзацем,
+ * перевод — абзацем под ним; открываются по одному предложению на шаг.
+ * Не больше 10 предложений, 360 знаков испанского и 420 перевода: длинный
+ * текст режьте на слайды с одинаковым `title` — появится «1/2».
+ */
+export interface TextSlideSource extends SlideSourceBase {
+  type: 'text'
+  title: string
+  sentences: PhraseSource[]
+}
+
 export interface FinalSlideSource extends SlideSourceBase {
   type: 'final'
   title: string
@@ -237,6 +249,7 @@ export type SlideSource =
   | CompareSlideSource
   | PracticeSlideSource
   | DialogueSlideSource
+  | TextSlideSource
   | FinalSlideSource
 
 export interface PracticeGroupSource {

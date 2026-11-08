@@ -187,6 +187,54 @@
       ]
     },
     {
+      "type": "text",
+      "title": "Рассказ Карлоса",
+      "sentences": [
+        {
+          "es": "Me llamo Carlos.",
+          "ru": "Меня зовут Карлос."
+        },
+        {
+          "es": "Soy de Moscú, **pero** ahora estoy en Madrid.",
+          "ru": "Я из Москвы, но сейчас я в Мадриде."
+        },
+        {
+          "es": "Tengo treinta años **y** soy programador.",
+          "ru": "Мне тридцать лет, и я программист."
+        },
+        {
+          "es": "En Moscú vivo en el centro **y** trabajo en una oficina.",
+          "ru": "В Москве я живу в центре и работаю в офисе."
+        },
+        {
+          "es": "Tengo una hermana.",
+          "ru": "У меня есть сестра."
+        },
+        {
+          "es": "Mis padres viven en Kazán.",
+          "ru": "Мои родители живут в Казани."
+        },
+        {
+          "es": "Me gusta viajar.",
+          "ru": "Мне нравится путешествовать."
+        },
+        {
+          "es": "Estudio español **porque** quiero vivir aquí.",
+          "ru": "Я учу испанский, потому что хочу жить здесь."
+        },
+        {
+          "es": "Mañana tengo que trabajar, **pero** voy a estudiar español.",
+          "ru": "Завтра мне нужно работать, но я буду учить испанский."
+        }
+      ],
+      "notes": [
+        "«Теперь соберём всё в один рассказ. Вот как Карлос рассказывает о себе — девять фраз.»",
+        "🔊 Прочитать рассказ по предложениям, потом целиком.",
+        "«Посмотрите на начало: soy de Moscú — откуда он, estoy en Madrid — где он сейчас, а vivo en el centro — где он живёт.»",
+        "«Без y, pero и porque это был бы просто список. С ними — связный рассказ.»"
+      ]
+    },
+    {
       "type": "section",
       "title": "Ошибка 1: артикль",
       "hint": "В русском его нет, а в испанском он нужен часто",

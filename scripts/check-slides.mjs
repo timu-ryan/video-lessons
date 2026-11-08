@@ -61,6 +61,7 @@ function checkIpa() {
         ...(slide.rows ?? []),
         ...(slide.rows ?? []).flatMap((row) => row.forms ?? []),
         ...(slide.lines ?? []),
+        ...(slide.sentences ?? []),
         ...(slide.examples ?? []),
         ...(slide.left?.items ?? []),
         ...(slide.right?.items ?? []),

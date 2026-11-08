@@ -61,6 +61,21 @@ text: y — и, pero — но, porque — потому что.
 > «Soy de Moscú, pero ahora estoy en Madrid. 🔊 Tengo treinta años y soy programador. 🔊»
 > «Estudio español porque quiero vivir aquí. 🔊 Porque — одним словом и без знака, как в уроке 11.»
 
+## text: Рассказ Карлоса
+- Me llamo Carlos. — Меня зовут Карлос.
+- Soy de Moscú, **pero** ahora estoy en Madrid. — Я из Москвы, но сейчас я в Мадриде.
+- Tengo treinta años **y** soy programador. — Мне тридцать лет, и я программист.
+- En Moscú vivo en el centro **y** trabajo en una oficina. — В Москве я живу в центре и работаю в офисе.
+- Tengo una hermana. — У меня есть сестра.
+- Mis padres viven en Kazán. — Мои родители живут в Казани.
+- Me gusta viajar. — Мне нравится путешествовать.
+- Estudio español **porque** quiero vivir aquí. — Я учу испанский, потому что хочу жить здесь.
+- Mañana tengo que trabajar, **pero** voy a estudiar español. — Завтра мне нужно работать, но я буду учить испанский.
+> «Теперь соберём всё в один рассказ. Вот как Карлос рассказывает о себе — девять фраз.»
+> 🔊 Прочитать рассказ по предложениям, потом целиком.
+> «Посмотрите на начало: soy de Moscú — откуда он, estoy en Madrid — где он сейчас, а vivo en el centro — где он живёт.»
+> «Без y, pero и porque это был бы просто список. С ними — связный рассказ.»
+
 ## section: Ошибка 1: артикль
 hint: В русском его нет, а в испанском он нужен часто
 > «Рассказ готов. Теперь разберём три типичные ошибки. Первая — артикль.»

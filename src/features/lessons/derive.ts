@@ -4,6 +4,7 @@ import type {
   Slide,
   Speaker,
   TableSlide,
+  TextSlide,
 } from '../slides/types'
 import { plainText } from '../slides/markup'
 import type { LessonSource, SlideSource } from './source'
@@ -156,6 +157,16 @@ export function deriveLesson(source: LessonSource): Lesson {
           lines: raw.lines,
         }
 
+      case 'text':
+        return {
+          ...base,
+          type: 'text',
+          title: raw.title,
+          section,
+          part: parts[index],
+          sentences: raw.sentences,
+        }
+
       case 'final':
         return {
           ...base,
@@ -193,13 +204,13 @@ function count(slides: SlideSource[], type: SlideSource['type']): number {
 
 /**
  * «1/2» у слайдов, на которые разрезан один раздел: подряд идущие таблицы
- * (или диалоги) с одинаковым заголовком. Именно подряд — одноимённый раздел
+ * (диалоги, тексты) с одинаковым заголовком. Именно подряд — одноимённый раздел
  * в другом месте урока не должен приклеиваться к этому.
  */
 function computeParts(slides: SlideSource[]): Record<number, [number, number] | undefined> {
   const parts: Record<number, [number, number] | undefined> = {}
-  const splittable = (s: SlideSource): s is TableSlide | DialogueSlide =>
-    s.type === 'table' || s.type === 'dialogue'
+  const splittable = (s: SlideSource): s is TableSlide | DialogueSlide | TextSlide =>
+    s.type === 'table' || s.type === 'dialogue' || s.type === 'text'
 
   let start = 0
   while (start < slides.length) {

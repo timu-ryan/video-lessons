@@ -311,6 +311,7 @@ function lessonPhrases(lesson: LessonSource): Set<string> {
     if (slide.type === 'rule') texts.push(...slide.examples.map((example) => example.es))
     if (slide.type === 'practice') texts.push(slide.phrase.es, ...(slide.phrase.alternatives ?? []))
     if (slide.type === 'dialogue') texts.push(...slide.lines.map((line) => line.es))
+    if (slide.type === 'text') texts.push(...slide.sentences.map((sentence) => sentence.es))
     if (slide.type === 'compare') {
       texts.push(...[...slide.left.items, ...slide.right.items].map((item) => item.es))
     }

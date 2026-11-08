@@ -157,6 +157,14 @@ export interface DialogueSlide extends SlideBase, SectionRef {
   lines: DialogueLine[]
 }
 
+/** Связный текст: испанский абзацем, перевод абзацем под ним, по предложению на шаг. */
+export interface TextSlide extends SlideBase, SectionRef {
+  type: 'text'
+  title: string
+  part?: [number, number]
+  sentences: Phrase[]
+}
+
 /** Финальная заставка. */
 export interface FinalSlide extends SlideBase {
   type: 'final'
@@ -177,6 +185,7 @@ export type Slide =
   | CompareSlide
   | PracticeSlide
   | DialogueSlide
+  | TextSlide
   | FinalSlide
 
 export type SlideType = Slide['type']

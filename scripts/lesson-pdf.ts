@@ -2,7 +2,7 @@
  * PDF-конспект урока для печати на A4: `npm run lessons:pdf -- N [--html]`.
  *
  * Порядок: шапка → теория (table, rule, conjugation, conjugationCompare,
- * compare по разделам) →
+ * compare, text по разделам) →
  * сводные таблицы (handoutTables) →
  * практика «переведи сам» с пустой колонкой → диалоги → новые слова →
  * итог урока → ответы с новой страницы. `notes` в конспект не попадают.
@@ -23,6 +23,7 @@ import type {
   RuleSlideSource,
   SlideSource,
   TableSlideSource,
+  TextSlideSource,
 } from '../src/features/lessons/source.ts'
 import { plainText } from '../src/features/slides/markup.ts'
 import {
@@ -86,6 +87,15 @@ function renderTable(lesson: LessonSource, title: string, slides: TableSlideSour
 <table class="words"><colgroup><col class="c-es"><col class="c-ipa"><col></colgroup>
 <thead><tr><th>${escape(headers.es)}</th><th>Произношение</th><th>${escape(headers.ru)}</th></tr></thead>
 ${tbody(rows)}</table></div>`
+}
+
+/** Текст абзацем, перевод — абзацем под ним, как на слайде. Части «1/2» — один текст. */
+function renderText(title: string, slides: TextSlideSource[]): string {
+  const sentences = slides.flatMap((slide) => slide.sentences)
+  const paragraph = (key: 'es' | 'ru') => sentences.map((s) => marked(s[key])).join(' ')
+  return `<div class="block"><h3>${escape(title)}</h3>
+<p class="story-text es">${paragraph('es')}</p>
+<p class="story-text ru">${paragraph('ru')}</p></div>`
 }
 
 function renderRule(slide: RuleSlideSource): string {
@@ -170,6 +180,17 @@ function renderTheory(lesson: LessonSource): string {
           i++
         }
         pending.push(renderTable(lesson, slide.title, run))
+        break
+      }
+      case 'text': {
+        const run = [slide]
+        while (true) {
+          const next = slides[i + 1]
+          if (next?.type !== 'text' || next.title !== slide.title) break
+          run.push(next)
+          i++
+        }
+        pending.push(renderText(slide.title, run))
         break
       }
       case 'rule':
@@ -370,6 +391,8 @@ td.pronoun { color: var(--text-2); width: 30%; }
 .examples li { margin-bottom: 1mm; }
 col.c-ru { width: 45%; }
 .dialogue td.speaker { width: 22mm; font-weight: 600; color: var(--text-2); }
+.story-text { margin: 0 0 1.5mm; line-height: 1.6; }
+.story-text.es { font-weight: 400; }
 .outcome { margin: 0; padding-left: 5mm; }
 .next { color: var(--text-2); }
 .answers { break-before: page; }

@@ -9,6 +9,7 @@ import { PracticeView } from './views/PracticeView'
 import { RuleView } from './views/RuleView'
 import { SectionView } from './views/SectionView'
 import { TableView } from './views/TableView'
+import { TextView } from './views/TextView'
 import { TitleView } from './views/TitleView'
 
 /** Единственное место, где тип слайда превращается в компонент. */
@@ -40,6 +41,8 @@ export function SlideView({
       return <PracticeView slide={slide} step={step} options={options} />
     case 'dialogue':
       return <DialogueView slide={slide} step={step} options={options} />
+    case 'text':
+      return <TextView slide={slide} step={step} options={options} />
     case 'final':
       return <FinalView slide={slide} step={step} />
   }

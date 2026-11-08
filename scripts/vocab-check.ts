@@ -12,12 +12,13 @@
  *   - формы из слайдов conjugation и conjugationCompare (stem + ending);
  *   - слова из `es` строк table.
  *
- * Проверяется `es` и `alternatives` в rule, practice, dialogue, compare.
+ * Проверяется `es` и `alternatives` в rule, practice, dialogue, compare, text.
  * Имена собственные — в tools/vocab-ignore.txt.
  *
  * Адрес находки — тип слайда и номер фразы этого типа по порядку в уроке:
  * practice-14 — четырнадцатое задание, dialogue-05 — пятая реплика,
- * rule-04 — четвёртый пример, compare-07 — седьмая строка сравнения.
+ * rule-04 — четвёртый пример, compare-07 — седьмая строка сравнения,
+ * text-03 — третье предложение текста.
  *
  * Если есть extras/lesson-NN.json — отдельным разделом проверяются и
  * допматериалы (extraTexts в extras.ts). Для них известны ещё выражения
@@ -77,6 +78,8 @@ for (const slide of current.slides) {
         return [[slide.phrase.es, ...(slide.phrase.alternatives ?? [])]]
       case 'dialogue':
         return slide.lines.map((line) => [line.es])
+      case 'text':
+        return slide.sentences.map((sentence) => [sentence.es])
       case 'compare': {
         // Пункты идут парами по строкам — адрес у строки один.
         const rows = Math.max(slide.left.items.length, slide.right.items.length)
