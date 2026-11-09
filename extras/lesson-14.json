@@ -1,0 +1,158 @@
+{
+  "number": 14,
+  "expressions": [
+    {
+      "es": "Me presento.",
+      "ipa": "me pɾeˈsento",
+      "ru": "Представлюсь. Позвольте представиться.",
+      "note": "Так начинают рассказ о себе: на занятии, на работе, в письме. Дословно — «представляю себя». Подробно о таких глаголах — в уроке 20.",
+      "example": { "es": "Hola. Me presento: me llamo Carlos y soy programador.", "ru": "Здравствуйте. Представлюсь: меня зовут Карлос, я программист." }
+    },
+    {
+      "es": "No pasa nada.",
+      "ipa": "no ˈpasa ˈnada",
+      "ru": "Ничего страшного. Всё в порядке.",
+      "note": "Самый частый ответ на «извините» и на чужую ошибку. Дословно — «ничего не происходит».",
+      "example": { "es": "Perdón, no comprendo. — ¡No pasa nada!", "ru": "Извините, я не понимаю. — Ничего страшного!" }
+    },
+    {
+      "es": "Poco a poco.",
+      "ipa": "ˈpoko a ˈpoko",
+      "ru": "Понемногу. Потихоньку.",
+      "note": "Poco — «мало», из урока 2. Так отвечают, когда спрашивают, как дела с учёбой или работой.",
+      "example": { "es": "¿Hablas español? — Poco a poco.", "ru": "Ты говоришь по-испански? — Потихоньку." }
+    },
+    {
+      "es": "¡Ánimo!",
+      "ipa": "ˈanimo",
+      "ru": "Держись! Не сдавайся!",
+      "note": "Так подбадривают перед трудным делом: экзаменом, работой, ранним подъёмом.",
+      "example": { "es": "Mañana tengo que madrugar. — ¡Ánimo!", "ru": "Завтра мне рано вставать. — Держись!" }
+    }
+  ],
+  "exercises": [
+    {
+      "type": "translate",
+      "title": "Переведите на испанский",
+      "tasks": [
+        { "ru": "Я из Казани, но сейчас я в Мадриде.", "es": "Soy de Kazán, pero ahora estoy en Madrid." },
+        { "ru": "Мне двадцать два года, я студентка.", "es": "Tengo veintidós años y soy estudiante." },
+        { "ru": "Где мой телефон? — На столе.", "es": "¿Dónde está mi teléfono? — En la mesa." },
+        { "ru": "Мы живём в центре, но работаем дома.", "es": "Vivimos en el centro, pero trabajamos en casa.", "alternatives": ["Nosotros vivimos en el centro, pero trabajamos en casa."] },
+        { "ru": "Им нравится танцевать?", "hint": "о друзьях", "es": "¿Les gusta bailar?", "alternatives": ["¿A ellos les gusta bailar?"] },
+        { "ru": "Нам нравится готовить, но не нравится убираться.", "es": "Nos gusta cocinar, pero no nos gusta limpiar." },
+        { "ru": "Сколько лет твоему брату? — Двадцать.", "es": "¿Cuántos años tiene tu hermano? — Veinte.", "alternatives": ["¿Cuántos años tiene tu hermano? — Tiene veinte años."] },
+        { "ru": "В нашей квартире нет кухни, зато есть два туалета.", "es": "En nuestro piso no hay cocina, pero hay dos baños.", "alternatives": ["Nuestro piso no tiene cocina, pero tiene dos baños."] },
+        { "ru": "Сегодня я не могу: мама болеет, и я дома.", "es": "Hoy no puedo: mi madre está enferma y estoy en casa." },
+        { "ru": "Я хочу говорить по-испански, но мне нужно больше заниматься.", "es": "Quiero hablar español, pero tengo que practicar más.", "alternatives": ["Quiero hablar español, pero necesito practicar más."] }
+      ]
+    },
+    {
+      "type": "fix",
+      "title": "Найдите ошибку",
+      "tasks": [
+        { "wrong": "Mesa es muy grande.", "es": "**La** mesa es muy grande.", "ru": "Стол очень большой.", "why": "Нужен артикль." },
+        { "wrong": "Hoy soy muy cansada.", "es": "Hoy **estoy** muy cansada.", "ru": "Сегодня я очень устала.", "why": "Состояние сейчас — estar." },
+        { "wrong": "Mi hermana es veintidós años.", "es": "Mi hermana **tiene** veintidós años.", "ru": "Моей сестре двадцать два года.", "why": "Возраст — tener." },
+        { "wrong": "Ella gusta pasear.", "es": "**Le gusta** pasear.", "ru": "Ей нравится гулять.", "why": "Не «она любит», а «ей нравится»." },
+        { "wrong": "¿Vosotros gustáis bailar?", "es": "¿**Os gusta** bailar?", "ru": "Вам нравится танцевать?", "why": "Не «вы любите», а «вам нравится»." },
+        { "wrong": "Ana y yo bebe café.", "es": "Ana y yo **bebemos** café.", "ru": "Мы с Аной пьём кофе.", "why": "Ana y yo — это «мы»: -mos." },
+        { "wrong": "En la plaza está un bar.", "es": "En la plaza **hay** un bar.", "ru": "На площади есть бар.", "why": "Что-то где-то есть — hay." },
+        { "wrong": "¿Porque no quieres cenar?", "es": "¿**Por qué** no quieres cenar?", "ru": "Почему ты не хочешь ужинать?", "why": "В вопросе — por qué." }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Soy, estoy или tengo?",
+      "options": ["soy", "estoy", "tengo"],
+      "tasks": [
+        { "es": "Yo ___ de Kazán.", "answer": "soy" },
+        { "es": "Yo ___ veinticuatro años.", "answer": "tengo" },
+        { "es": "No puedo correr: ___ enfermo.", "answer": "estoy" },
+        { "es": "No ___ hermanos, pero tengo tres gatos.", "answer": "tengo" },
+        { "es": "Yo ___ profesora, pero hoy no trabajo.", "answer": "soy" }
+      ]
+    },
+    {
+      "type": "gap",
+      "title": "Y, pero или porque?",
+      "options": ["y", "pero", "porque"],
+      "tasks": [
+        { "es": "Tengo una hermana ___ un hermano.", "answer": "y" },
+        { "es": "Quiero dormir, ___ tengo que trabajar.", "answer": "pero" },
+        { "es": "No como carne ___ no me gusta.", "answer": "porque" },
+        { "es": "Carlos está contento ___ hoy no corre.", "answer": "porque" },
+        { "es": "Mi piso es pequeño, ___ está en el centro.", "answer": "pero", "ru": "Квартира у меня маленькая, зато в центре." }
+      ]
+    },
+    {
+      "type": "read",
+      "title": "Переведите на русский",
+      "tasks": [
+        { "es": "¿Te gusta tu trabajo? — Me gusta el dinero.", "ru": "Тебе нравится твоя работа? — Мне нравятся деньги." },
+        { "es": "En casa somos tres. Con el gato, cuatro.", "ru": "Дома нас трое. С котом — четверо." },
+        { "es": "Mis padres viven en Kazán, y yo, en el metro.", "ru": "Мои родители живут в Казани, а я — в метро." },
+        { "es": "No hablo bien español, pero como muy bien.", "ru": "По-испански я говорю плохо, зато ем хорошо." }
+      ]
+    }
+  ],
+  "story": {
+    "title": "Экзамен у бабушки",
+    "lines": [
+      { "speaker": "Abuela", "es": "Carlos, hoy tienes examen de español. ¿Dónde estás ahora?", "ru": "Карлос, сегодня у тебя экзамен по испанскому. Где ты сейчас?" },
+      { "speaker": "Carlos", "es": "Soy en Madrid.", "ru": "Я… являюсь в Мадриде." },
+      { "speaker": "Abuela", "es": "¡Estoy, Carlos, estoy! ¿Y qué te gusta?", "ru": "Не soy, а estoy, Карлос! А что тебе нравится?" },
+      { "speaker": "Carlos", "es": "Yo gusto… No, no: me gusta dormir. Y comer.", "ru": "Я нравлюсь… Нет-нет: мне нравится спать. И есть." },
+      { "speaker": "Abuela", "es": "¿Y correr? ¿Te gusta correr?", "ru": "А бегать? Бегать тебе нравится?" },
+      { "speaker": "Carlos", "es": "No, no me gusta correr. Y a Ana tampoco.", "ru": "Нет, бегать я не люблю. И Ана тоже." },
+      { "speaker": "Abuela", "es": "¡Muy bien, Carlos! Mañana corremos juntos. Los tres.", "ru": "Отлично, Карлос! Завтра бегаем вместе. Втроём." },
+      { "speaker": "Ana", "es": "¿Los tres? ¡Carlos!", "ru": "Втроём?! Карлос!" }
+    ],
+    "glossary": [{ "es": "el examen", "ru": "экзамен" }],
+    "questions": [
+      { "question": "¿Qué le gusta a Carlos?", "answer": "Le gusta dormir y comer." },
+      { "question": "¿Quién corre mañana?", "answer": "La abuela, Ana y Carlos." }
+    ]
+  },
+  "phrases": [
+    {
+      "es": "Estudio español porque me gusta comer en España.",
+      "ru": "Я учу испанский, потому что люблю поесть в Испании.",
+      "ipa": "esˈtudjo espaˈɲol ˈpoɾke me ˈgusta koˈmeɾ en esˈpaɲa"
+    },
+    {
+      "es": "Quiero vivir en España, pero mi gato no quiere.",
+      "ru": "Я хочу жить в Испании, но мой кот против.",
+      "ipa": "ˈkjeɾo biˈbiɾ en esˈpaɲa · ˈpeɾo mi ˈgato no ˈkjeɾe"
+    },
+    {
+      "es": "Comemos juntos, bailamos juntos… pero no corremos juntos.",
+      "ru": "Едим вместе, танцуем вместе… а вот бегаем — нет.",
+      "ipa": "koˈmemos ˈxuntos · bajˈlamos ˈxuntos · ˈpeɾo no koˈremos ˈxuntos"
+    },
+    {
+      "es": "Mi familia es grande: mis padres, mi hermana, tres gatos y un perro.",
+      "ru": "Семья у меня большая: родители, сестра, три кота и собака.",
+      "ipa": "mi faˈmilja ˈes ˈgɾande · mis ˈpadɾes · mi eɾˈmana · ˈtɾes ˈgatos i un ˈpero"
+    }
+  ],
+  "culture": {
+    "kind": "refrán",
+    "title": "Кто говорит, тот ошибается",
+    "es": "Quien tiene boca se equivoca.",
+    "ipa": "kjen ˈtjene ˈboka se ekiˈboka",
+    "ru": "Кто имеет рот, тот ошибается.",
+    "text": "Дословно — «у кого есть рот, тот ошибается»: ошибаются все, кто говорит. Так успокаивают того, кто оговорился или перепутал слово, — и себя тоже. Похоже по-русски: не ошибается тот, кто ничего не делает."
+  },
+  "yourTurn": {
+    "task": "Расскажите о себе в 8–10 фразах, как Карлос в уроке: откуда вы, сколько вам лет, где живёте и работаете, что любите и чего хотите. Свяжите фразы словами y, pero, porque, потом проверьте: где артикль, где estar, где me gusta.",
+    "template": ["Soy de…, pero ahora vivo en…", "Tengo … años y soy…", "Me gusta…, pero no me gusta…", "Estudio español porque quiero…"],
+    "model": [
+      { "es": "Soy de Rusia, de Kazán, pero ahora vivo en Moscú.", "ru": "Я из России, из Казани, но сейчас живу в Москве." },
+      { "es": "Tengo veintiséis años y soy ingeniera.", "ru": "Мне двадцать шесть лет, я инженер." },
+      { "es": "Trabajo en una oficina en el centro, y hoy estoy muy cansada.", "ru": "Я работаю в офисе в центре, и сегодня я очень устала." },
+      { "es": "Me gusta leer y bailar, pero no me gusta cocinar.", "ru": "Я люблю читать и танцевать, но не люблю готовить." },
+      { "es": "Estudio español porque quiero visitar Sevilla y Barcelona.", "ru": "Я учу испанский, потому что хочу побывать в Севилье и Барселоне." }
+    ]
+  }
+}
