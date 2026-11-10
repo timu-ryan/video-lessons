@@ -14,7 +14,8 @@
     "lessons:summary": "tsx scripts/lesson-summary.ts",
     "lessons:extra": "tsx scripts/lesson-extra.ts",
     "vocab:build": "tsx scripts/vocab-build.ts",
-    "vocab:check": "tsx scripts/vocab-check.ts"
+    "vocab:check": "tsx scripts/vocab-check.ts",
+    "practice:gaps": "tsx scripts/practice-gaps.ts"
   },
   "dependencies": {
     "react": "^19.2.8",

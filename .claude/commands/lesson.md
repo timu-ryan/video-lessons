@@ -8,4 +8,8 @@
 `npm run lessons:validate`, `npm run vocab:build`, `npm run vocab:check -- NN`,
 `npm run check:slides -- --lesson=N`, затем краткий отчёт.
 
+Если номер с буквой p (`p1`) — это практический урок: сценарий
+`scenarios/practice-NN.md`, результат `lessons/practice-NN.json`. Отличия
+сборки — раздел 8 `docs/practice-writing.md`.
+
 Если файла сценария нет — скажи об этом и остановись.

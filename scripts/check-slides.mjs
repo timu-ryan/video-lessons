@@ -10,7 +10,8 @@
  * Запуск: сначала `npm run dev`, потом `npm run check:slides`.
  * Флаги: --shots — сложить скриншоты слайдов в .shots/
  *        --url=http://localhost:5173 — другой адрес dev-сервера
- *        --lesson=10 — какой урок проверять (по умолчанию — первый в lessons/)
+ *        --lesson=10 — какой урок проверять (по умолчанию — первый в lessons/);
+ *          практика — --lesson=p1
  */
 import { chromium } from 'playwright'
 import { mkdirSync, readdirSync, readFileSync } from 'node:fs'

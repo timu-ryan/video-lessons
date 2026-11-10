@@ -70,7 +70,7 @@ export function deriveLesson(source: LessonSource): Lesson {
           ...base,
           type: 'title',
           course: source.course,
-          lessonLabel: `Урок ${source.number}`,
+          lessonLabel: `${source.kind === 'practice' ? 'Практика' : 'Урок'} ${source.number}`,
           topic: source.title,
           agenda: raw.agenda ?? (agenda.length > 0 ? agenda : undefined),
         }
@@ -187,9 +187,12 @@ export function deriveLesson(source: LessonSource): Lesson {
     ids.add(s.id)
   }
 
+  const practice = source.kind === 'practice'
   return {
-    id: String(source.number),
+    id: practice ? `p${source.number}` : String(source.number),
+    kind: practice ? 'practice' : 'lesson',
     number: source.number,
+    afterLesson: source.afterLesson,
     level: source.level,
     planLesson: source.planLesson,
     title: source.title,

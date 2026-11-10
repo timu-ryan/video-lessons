@@ -1,5 +1,7 @@
 /**
  * Нет ли в уроке N слов, которые ещё не вводились: `npm run vocab:check -- N`.
+ * Практический урок: `npm run vocab:check -- pN` — известно всё из уроков
+ * до afterLesson включительно, своих новых слов у практики нет.
  *
  * Эвристика, поэтому только предупреждения и код выхода 0.
  *
@@ -29,7 +31,7 @@ import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { LessonSource, VocabularyEntrySource } from '../src/features/lessons/source.ts'
 import { type ExtraSource, extraTexts, loadExtras } from './extras.ts'
-import { collator, loadLessons, ROOT, tokenize, withoutArticle } from './lessons.ts'
+import { collator, loadLessons, loadPractices, ROOT, tokenize, withoutArticle } from './lessons.ts'
 
 const IGNORE_FILE = join(ROOT, 'tools', 'vocab-ignore.txt')
 
@@ -39,21 +41,27 @@ const ENDINGS = {
   ir: ['o', 'es', 'e', 'imos', 'ís', 'en'],
 } as const
 
-const arg = process.argv[2]
-const target = Number(arg)
+const arg = process.argv[2] ?? ''
+const isPractice = /^p\d+$/i.test(arg)
+const target = Number(isPractice ? arg.slice(1) : arg)
 if (!arg || !Number.isInteger(target) || target <= 0) {
-  console.error('Использование: npm run vocab:check -- <номер урока>')
+  console.error('Использование: npm run vocab:check -- <номер урока> | p<номер практики>')
   process.exit(1)
 }
 
 const { lessons, errors } = loadLessons()
 for (const error of errors) console.warn(`! пропущен: ${error}`)
 
-const current = lessons.find(({ lesson }) => lesson.number === target)?.lesson
+const label = `${isPractice ? 'Практика' : 'Урок'} ${target}`
+const practices = isPractice ? loadPractices() : undefined
+for (const error of practices?.errors ?? []) console.warn(`! пропущен: ${error}`)
+const current = (practices?.lessons ?? lessons).find(({ lesson }) => lesson.number === target)?.lesson
 if (!current) {
-  console.error(`Урок ${target} не найден среди загруженных lessons/*.json`)
+  console.error(`${label}: нет среди загруженных lessons/*.json`)
   process.exit(1)
 }
+/** Последний урок, слова которого считаются известными. */
+const knownUpTo = current.afterLesson ?? target
 
 const ignored = new Set(
   readFileSync(IGNORE_FILE, 'utf8')
@@ -64,7 +72,7 @@ const ignored = new Set(
 
 const known = new Set<string>()
 for (const { lesson } of lessons) {
-  if (lesson.number <= target) addKnown(lesson)
+  if (lesson.number <= knownUpTo) addKnown(lesson)
 }
 
 const lessonPhrases: { where: string; texts: string[] }[] = []
@@ -97,11 +105,11 @@ for (const slide of current.slides) {
     lessonPhrases.push({ where: `${slide.type}-${String(n).padStart(2, '0')}`, texts: phrase })
   }
 }
-report(`Урок ${target}`, unknownWords(lessonPhrases, known))
+report(label, unknownWords(lessonPhrases, known))
 
 const { extras, errors: extraErrors } = loadExtras(lessons.map(({ lesson }) => lesson))
 for (const error of extraErrors) console.warn(`! пропущен: ${error}`)
-const extra = extras.find(({ lesson }) => lesson.number === target)?.extra
+const extra = isPractice ? undefined : extras.find(({ lesson }) => lesson.number === target)?.extra
 if (extra) {
   const knownInExtras = new Set(known)
   for (const earlier of extras) {

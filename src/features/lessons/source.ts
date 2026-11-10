@@ -16,6 +16,12 @@
  * Пара level + planLesson не повторяется между файлами — это проверяется
  * при загрузке.
  *
+ * Практический урок (lessons/practice-NN.json, kind: "practice") — отдельная
+ * серия со своей нумерацией: number — сквозной номер практики (имя файла),
+ * planLesson — номер практики внутри уровня, afterLesson — урок, после
+ * которого она стоит. Новых слов и теории в ней нет. Правила —
+ * docs/practice-writing.md.
+ *
  * ────────────────────────────────────────────────────────────────────────
  * ВЫДЕЛЕНИЕ НОВОГО
  *
@@ -328,12 +334,25 @@ export interface HandoutTableSource {
   rows: { label: string; cells: HandoutCellSource[] }[]
 }
 
+/**
+ * Слайды практического урока: без теории (table, rule, conjugation, compare)
+ * — только задания и связная речь из уже знакомого.
+ */
+export const PRACTICE_SLIDE_TYPES = ['title', 'section', 'practice', 'text', 'dialogue', 'final'] as const
+
 export interface LessonSource {
   schemaVersion: number
-  /** Сквозной номер урока, 1–84; он же в имени файла. Отдельного `id` нет. */
+  /**
+   * Сквозной номер урока, 1–84, или практики; он же в имени файла
+   * (lesson-NN.json / practice-NN.json). Отдельного `id` нет.
+   */
   number: number
+  /** Нет поля — обычный урок; "practice" — практический урок, только в practice-NN.json. */
+  kind?: 'practice'
+  /** Только у практики: сквозной номер урока, после которого она стоит. */
+  afterLesson?: number
   level: Level
-  /** Номер урока внутри уровня — как в плане курса. */
+  /** Номер урока (у практики — номера практики) внутри уровня. */
   planLesson: number
   title: string
   /** Название курса — на титульный слайд. */

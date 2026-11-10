@@ -32,6 +32,25 @@ newGrammar:
 
 `pos`: noun, verb, adj, adv, pron, prep, conj, art, num, interj, phrase.
 
+Практический урок (`scenarios/practice-NN.md`, правила — `docs/practice-writing.md`):
+
+```yaml
+---
+kind: practice
+number: 1             # сквозной номер практики, совпадает с именем файла
+level: A0
+planLesson: 1         # номер практики внутри уровня
+afterLesson: 4        # после какого урока стоит
+title: Я и ты: хочу, могу, собираюсь
+speakers:
+  ana: Ana
+  carlos: Carlos
+---
+```
+
+Без `newVocabulary` и `newGrammar`. Блоки — только `title`, `section`,
+`practice`, `text`, `dialogue`, `final`.
+
 ## Общие правила записи
 
 | Запись | Значение |

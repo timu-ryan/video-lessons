@@ -123,7 +123,9 @@ function LessonCard({ lesson }: { lesson: Lesson }) {
               color: 'var(--accent)',
             }}
           >
-            Урок {lesson.number} · {lesson.level}, урок {lesson.planLesson}
+            {lesson.kind === 'practice'
+              ? `Практика ${lesson.number} · ${lesson.level}, после урока ${lesson.afterLesson}`
+              : `Урок ${lesson.number} · ${lesson.level}, урок ${lesson.planLesson}`}
           </div>
           <h2
             style={{

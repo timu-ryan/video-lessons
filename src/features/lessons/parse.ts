@@ -4,7 +4,7 @@ import type {
   LessonSource,
   SlideSource,
 } from './source'
-import { LEVELS, PARTS_OF_SPEECH, SCHEMA_VERSION } from './source'
+import { LEVELS, PARTS_OF_SPEECH, PRACTICE_SLIDE_TYPES, SCHEMA_VERSION } from './source'
 
 /**
  * Разбор урока из JSON. Данные лежат вне TypeScript, поэтому опечатку
@@ -294,6 +294,42 @@ function vocabulary(file: string, raw: Record<string, unknown>): void {
   }
 }
 
+/**
+ * Практический урок: имя practice-NN.json ⇔ kind: "practice", есть afterLesson,
+ * новых слов и грамматики нет. Типы слайдов проверяются ниже, вместе со слайдами.
+ * @returns true, если это практика
+ */
+function practiceFields(file: string, raw: Record<string, unknown>): boolean {
+  if (raw.kind !== undefined && raw.kind !== 'practice') {
+    throw new LessonError(file, `kind — только "practice" или нет поля, а не «${String(raw.kind)}»`)
+  }
+  const isPractice = raw.kind === 'practice'
+  const practiceFile = /^practice-\d+\.json$/.test(file)
+  if (isPractice !== practiceFile) {
+    throw new LessonError(
+      file,
+      practiceFile
+        ? 'в файле practice-NN.json нужен kind: "practice"'
+        : 'kind: "practice" — только в файле practice-NN.json',
+    )
+  }
+  if (!isPractice) {
+    if (raw.afterLesson !== undefined) throw new LessonError(file, 'afterLesson бывает только у практики')
+    return false
+  }
+
+  if (!Number.isInteger(raw.afterLesson) || (raw.afterLesson as number) <= 0) {
+    throw new LessonError(file, 'afterLesson — сквозной номер урока, после которого стоит практика')
+  }
+  for (const key of ['newVocabulary', 'newGrammar'] as const) {
+    const value = raw[key]
+    if (value !== undefined && (!Array.isArray(value) || value.length > 0)) {
+      throw new LessonError(file, `в практике нет нового: ${key} — пустой массив или нет поля`)
+    }
+  }
+  return true
+}
+
 export function count(where: string, items: unknown[], key: string, range: { min: number; max: number }): void {
   if (items.length < range.min || items.length > range.max) {
     throw new LessonError(where, `в «${key}» элементов: ${items.length}, нужно от ${range.min} до ${range.max}`)
@@ -396,6 +432,7 @@ export function parseLesson(file: string, expectedNumber: number, raw: unknown):
   if (!Number.isInteger(raw.planLesson) || (raw.planLesson as number) <= 0) {
     throw new LessonError(file, 'planLesson — номер урока внутри уровня, целое больше нуля')
   }
+  const isPractice = practiceFields(file, raw)
   const levelA0 = raw.level === 'A0'
 
   str(file, raw, 'title')
@@ -440,6 +477,13 @@ export function parseLesson(file: string, expectedNumber: number, raw: unknown):
     if (s.id !== undefined) {
       if (ids.has(s.id)) throw new LessonError(file, `повторяется id слайда «${s.id}»`)
       ids.add(s.id)
+    }
+
+    if (isPractice && !(PRACTICE_SLIDE_TYPES as readonly string[]).includes(s.type)) {
+      throw new LessonError(
+        `${file}, слайд ${index}`,
+        `в практическом уроке нет теории: «${s.type}» нельзя, можно ${PRACTICE_SLIDE_TYPES.join(', ')}`,
+      )
     }
 
     if (s.type === 'practice' && !groupNames.has(s.group)) {

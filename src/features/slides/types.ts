@@ -197,10 +197,13 @@ export interface Speaker {
 }
 
 export interface Lesson {
-  /** Строковый номер: ключ реестра и часть адреса `#/lesson/1/0/0`. */
+  /** Ключ реестра и часть адреса: урок `#/lesson/1/0/0`, практика `#/lesson/p1/0/0`. */
   id: string
-  /** Сквозной номер в курсе. */
+  kind: 'lesson' | 'practice'
+  /** Сквозной номер в курсе — урока или практики, у них своя нумерация. */
   number: number
+  /** Только у практики: урок, после которого она стоит. */
+  afterLesson?: number
   level: string
   /** Номер внутри уровня — как в плане курса. */
   planLesson: number

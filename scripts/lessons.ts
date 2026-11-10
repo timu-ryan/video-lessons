@@ -11,8 +11,9 @@ import type { Level, LessonSource } from '../src/features/lessons/source.ts'
 export const ROOT = join(import.meta.dirname, '..')
 export const LESSONS_DIR = join(ROOT, 'lessons')
 
-/** Как в registry.ts: glob `lesson-*.json`, номер — из имени файла. */
+/** Как в registry.ts: glob `lesson-*.json` и `practice-*.json`, номер — из имени файла. */
 const FILE_PATTERN = /lesson-(\d+)\.json$/
+const PRACTICE_PATTERN = /practice-(\d+)\.json$/
 
 /** Сквозные номера уроков по уровням — из docs/course-plan.md. */
 export const LEVEL_RANGES: Partial<Record<Level, { first: number; last: number }>> = {
@@ -35,21 +36,38 @@ export interface LoadResult {
 }
 
 /**
+ * Уроки lesson-NN.json. Практика сюда не попадает: в ней нет новых слов,
+ * а конспекты и словарь собираются только по урокам.
+ *
  * @param check дополнительная проверка поверх parse.ts — например, deriveLesson,
  *   как в registry.ts; её исключение тоже попадёт в errors
  */
 export function loadLessons(check?: (lesson: LessonSource) => void): LoadResult {
+  return loadFiles('lesson-', FILE_PATTERN, 'lesson-NN.json', check)
+}
+
+/** Практические уроки practice-NN.json, по возрастанию number. */
+export function loadPractices(check?: (lesson: LessonSource) => void): LoadResult {
+  return loadFiles('practice-', PRACTICE_PATTERN, 'practice-NN.json', check)
+}
+
+function loadFiles(
+  prefix: string,
+  pattern: RegExp,
+  template: string,
+  check?: (lesson: LessonSource) => void,
+): LoadResult {
   const lessons: LessonFile[] = []
   const errors: string[] = []
 
   const files = readdirSync(LESSONS_DIR)
-    .filter((name) => name.startsWith('lesson-') && name.endsWith('.json'))
+    .filter((name) => name.startsWith(prefix) && name.endsWith('.json'))
     .sort()
 
   for (const file of files) {
-    const number = FILE_PATTERN.exec(file)?.[1]
+    const number = pattern.exec(file)?.[1]
     if (!number) {
-      errors.push(`${file}: имя не по шаблону lesson-NN.json`)
+      errors.push(`${file}: имя не по шаблону ${template}`)
       continue
     }
     try {
