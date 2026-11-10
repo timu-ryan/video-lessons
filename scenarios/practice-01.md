@@ -128,19 +128,8 @@ hint: Скажите по фразам, потом послушайте цели
 > 🔊 Прочитать рассказ целиком.
 > «Сколько конструкций в семи фразах: no tengo que, voy a, quiero. Попробуйте рассказать так же о своём завтрашнем дне.»
 
-## section: Диалог
-hint: Скажите реплики, потом послушайте диалог
-> «И последнее — диалог Аны и Карлоса. Сначала вы говорите за обоих: в подсказке — кто говорит. Потом послушаем, как это звучит.»
-
-## practice: Диалог
-- Привет, Ана. Ты сегодня работаешь? [Карлос] → Hola, Ana. ¿Trabajas hoy? | Hola, Ana. ¿Hoy trabajas?
-- Да, мне нужно работать. А ты? [Ана] → Sí, tengo que trabajar. ¿Y tú? | Sí, necesito trabajar. ¿Y tú?
-- А я буду много покупать. Можешь помочь? [Карлос] → Yo voy a comprar mucho. ¿Puedes ayudar? | Voy a comprar mucho. ¿Puedes ayudar?
-- Сегодня не могу, извини. А завтра? [Ана] → Hoy no puedo, perdón. ¿Y mañana?
-- Завтра мне нужно учиться. [Карлос] → Mañana tengo que estudiar. | Mañana necesito estudiar.
-- Послезавтра я могу помочь. [Ана] → Pasado mañana puedo ayudar.
-- Спасибо, Ана! До послезавтра! [Карлос] → ¡Gracias, Ana! ¡Hasta pasado mañana!
-- Не за что. Пока! [Ана] → De nada. ¡Hasta luego! | De nada. ¡Adiós!
+## section: Мини-диалог
+> «А теперь послушаем, как Карлос просит Ану помочь. Все слова вы уже знаете.»
 
 ## dialogue: ¿Puedes ayudar?
 - carlos: Hola, Ana. ¿**Trabajas** hoy? — Привет, Ана. Ты сегодня работаешь?

@@ -33,9 +33,6 @@
     },
     {
       "name": "Рассказ"
-    },
-    {
-      "name": "Диалог"
     }
   ],
   "slides": [
@@ -776,106 +773,10 @@
     },
     {
       "type": "section",
-      "title": "Диалог",
-      "hint": "Скажите реплики, потом послушайте диалог",
+      "title": "Мини-диалог",
       "notes": [
-        "«И последнее — диалог Аны и Карлоса. Сначала вы говорите за обоих: в подсказке — кто говорит. Потом послушаем, как это звучит.»"
+        "«А теперь послушаем, как Карлос просит Ану помочь. Все слова вы уже знаете.»"
       ]
-    },
-    {
-      "type": "practice",
-      "group": "Диалог",
-      "phrase": {
-        "ru": "Привет, Ана. Ты сегодня работаешь?",
-        "hint": "Карлос",
-        "es": "Hola, Ana. ¿Trabajas hoy?",
-        "alternatives": [
-          "Hola, Ana. ¿Hoy trabajas?"
-        ],
-        "ipa": "ˈola ˈana · tɾaˈbaxas ˈoj"
-      }
-    },
-    {
-      "type": "practice",
-      "group": "Диалог",
-      "phrase": {
-        "ru": "Да, мне нужно работать. А ты?",
-        "hint": "Ана",
-        "es": "Sí, tengo que trabajar. ¿Y tú?",
-        "alternatives": [
-          "Sí, necesito trabajar. ¿Y tú?"
-        ],
-        "ipa": "ˈsi ˈtengo ke tɾabaˈxaɾ · i ˈtu"
-      }
-    },
-    {
-      "type": "practice",
-      "group": "Диалог",
-      "phrase": {
-        "ru": "А я буду много покупать. Можешь помочь?",
-        "hint": "Карлос",
-        "es": "Yo voy a comprar mucho. ¿Puedes ayudar?",
-        "alternatives": [
-          "Voy a comprar mucho. ¿Puedes ayudar?"
-        ],
-        "ipa": "ˈjo ˈboj a komˈpɾaɾ ˈmutʃo · ˈpwedes ajuˈdaɾ"
-      }
-    },
-    {
-      "type": "practice",
-      "group": "Диалог",
-      "phrase": {
-        "ru": "Сегодня не могу, извини. А завтра?",
-        "hint": "Ана",
-        "es": "Hoy no puedo, perdón. ¿Y mañana?",
-        "ipa": "ˈoj no ˈpwedo peɾˈdon · i maˈɲana"
-      }
-    },
-    {
-      "type": "practice",
-      "group": "Диалог",
-      "phrase": {
-        "ru": "Завтра мне нужно учиться.",
-        "hint": "Карлос",
-        "es": "Mañana tengo que estudiar.",
-        "alternatives": [
-          "Mañana necesito estudiar."
-        ],
-        "ipa": "maˈɲana ˈtengo ke estuˈdjaɾ"
-      }
-    },
-    {
-      "type": "practice",
-      "group": "Диалог",
-      "phrase": {
-        "ru": "Послезавтра я могу помочь.",
-        "hint": "Ана",
-        "es": "Pasado mañana puedo ayudar.",
-        "ipa": "paˈsado maˈɲana ˈpwedo ajuˈdaɾ"
-      }
-    },
-    {
-      "type": "practice",
-      "group": "Диалог",
-      "phrase": {
-        "ru": "Спасибо, Ана! До послезавтра!",
-        "hint": "Карлос",
-        "es": "¡Gracias, Ana! ¡Hasta pasado mañana!",
-        "ipa": "ˈgɾaθjas ˈana · ˈasta paˈsado maˈɲana"
-      }
-    },
-    {
-      "type": "practice",
-      "group": "Диалог",
-      "phrase": {
-        "ru": "Не за что. Пока!",
-        "hint": "Ана",
-        "es": "De nada. ¡Hasta luego!",
-        "alternatives": [
-          "De nada. ¡Adiós!"
-        ],
-        "ipa": "de ˈnada · ˈasta ˈlwego"
-      }
     },
     {
       "type": "dialogue",
