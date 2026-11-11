@@ -1,5 +1,6 @@
 /**
- * PDF-конспект урока для печати на A4: `npm run lessons:pdf -- N [--html]`.
+ * PDF-конспект урока для печати на A4: `npm run lessons:pdf -- N [--html]`,
+ * практического урока — `npm run lessons:pdf -- pN`.
  *
  * Порядок: шапка → теория (table, rule, conjugation, conjugationCompare,
  * compare, text по разделам) →
@@ -7,10 +8,15 @@
  * практика «переведи сам» с пустой колонкой → диалоги → новые слова →
  * итог урока → ответы с новой страницы. `notes` в конспект не попадают.
  *
- * Результат — handouts/free/lesson-NN.pdf или handouts/paid/lesson-NN.pdf
- * (граница — freeFullUntil в handouts.config.ts); с `--html` рядом кладётся
- * .html для отладки вёрстки. `--theme=имя` — другая палитра
- * (по умолчанию HANDOUTS.theme).
+ * У практики теории и новых слов нет: практика → диалоги → итог → ответы.
+ * Её `text` повторяет задания группы «Рассказ», поэтому он идёт после
+ * ответов, а не перед заданиями.
+ *
+ * Результат — handouts/free/lesson-NN.pdf или handouts/paid/lesson-NN.pdf,
+ * у практики — practice-NN.pdf (граница — freeFullUntil в
+ * handouts.config.ts, практика — как урок, после которого она стоит);
+ * с `--html` рядом кладётся .html для отладки вёрстки. `--theme=имя` —
+ * другая палитра (по умолчанию HANDOUTS.theme).
  */
 import { relative } from 'node:path'
 import { chromium } from 'playwright'
@@ -38,23 +44,28 @@ import {
   renderHeader,
   tbody,
 } from './handout-common.ts'
-import { loadLessons, ROOT } from './lessons.ts'
+import { LEVEL_RANGES, loadLessons, loadPractices, ROOT } from './lessons.ts'
 
 const args = process.argv.slice(2)
 const withHtml = args.includes('--html')
 const arg = args.find((a) => !a.startsWith('--'))
-const target = Number(arg)
+const isPractice = /^p\d+$/i.test(arg ?? '')
+const target = Number(isPractice ? arg!.slice(1) : arg)
 if (!arg || !Number.isInteger(target) || target <= 0) {
-  console.error('Использование: npm run lessons:pdf -- <номер урока> [--html] [--theme=палитра]')
+  console.error(
+    'Использование: npm run lessons:pdf -- <номер урока> | p<номер практики> [--html] [--theme=палитра]',
+  )
   process.exit(1)
 }
 const palette = handoutPalette(args)
 
 const { lessons, errors } = loadLessons()
-const found = lessons.find(({ lesson }) => lesson.number === target)
+const practices = isPractice ? loadPractices() : undefined
+const found = (practices ?? { lessons }).lessons.find(({ lesson }) => lesson.number === target)
 if (!found) {
-  for (const error of errors) console.error(`✗ ${error}`)
-  console.error(`\nУрок ${target} не найден или не прошёл проверку (npm run lessons:validate).`)
+  for (const error of practices?.errors ?? errors) console.error(`✗ ${error}`)
+  const missing = isPractice ? `Практика ${target} не найдена или не прошла` : `Урок ${target} не найден или не прошёл`
+  console.error(`\n${missing} проверку (npm run lessons:validate).`)
   process.exit(1)
 }
 
@@ -62,15 +73,27 @@ if (!found) {
 
 const CYRILLIC = /[а-яё]/i
 
-/** Подряд идущие диалоги с одинаковым title — один диалог, как «1/2», «2/2» на слайдах. */
-function dialogueRuns(slides: SlideSource[]): { title: string; slides: DialogueSlideSource[] }[] {
-  const runs: { title: string; slides: DialogueSlideSource[] }[] = []
+interface RunSlide {
+  dialogue: DialogueSlideSource
+  text: TextSlideSource
+}
+
+/**
+ * Подряд идущие диалоги (тексты) с одинаковым title — один диалог,
+ * как «1/2», «2/2» на слайдах.
+ */
+function runsOf<T extends keyof RunSlide>(
+  slides: SlideSource[],
+  type: T,
+): { title: string; slides: RunSlide[T][] }[] {
+  const runs: { title: string; slides: RunSlide[T][] }[] = []
   slides.forEach((slide, i) => {
-    if (slide.type !== 'dialogue') return
+    if (slide.type !== type) return
+    const current = slide as RunSlide[T]
     const previous = slides[i - 1]
     const last = runs.at(-1)
-    if (last && previous?.type === 'dialogue' && previous.title === slide.title) last.slides.push(slide)
-    else runs.push({ title: slide.title, slides: [slide] })
+    if (last && previous?.type === type && previous.title === current.title) last.slides.push(current)
+    else runs.push({ title: current.title, slides: [current] })
   })
   return runs
 }
@@ -273,7 +296,7 @@ function renderPractice(lesson: LessonSource, answers: boolean): string {
 }
 
 function renderDialogues(lesson: LessonSource): string {
-  const runs = dialogueRuns(lesson.slides)
+  const runs = runsOf(lesson.slides, 'dialogue')
   if (runs.length === 0) return ''
   const body = runs
     .map((run) => {
@@ -399,6 +422,44 @@ col.c-ru { width: 45%; }
 .answers h2 { margin-top: 0; }
 `
 
+/** Рассказ практики целиком — после ответов: он дословно повторяет задания. */
+function renderStories(lesson: LessonSource): string {
+  const runs = runsOf(lesson.slides, 'text')
+  if (runs.length === 0) return ''
+  return `<section><h2>Рассказ целиком</h2>${runs.map((run) => renderText(run.title, run.slides)).join('')}</section>`
+}
+
+/**
+ * «уроки 1–4»: от урока после предыдущей практики уровня (или от первого
+ * урока уровня) до afterLesson.
+ */
+function practiceRange(practice: LessonSource, all: LessonSource[]): string {
+  const last = practice.afterLesson
+  if (last === undefined) return ''
+  const previous = all
+    .filter((other) => other.level === practice.level && other.number < practice.number)
+    .at(-1)?.afterLesson
+  const first = previous !== undefined ? previous + 1 : (LEVEL_RANGES[practice.level]?.first ?? last)
+  return first === last ? `урок ${last}` : `уроки ${first}–${last}`
+}
+
+function renderPracticeHandout(practice: LessonSource, all: LessonSource[]): string {
+  const range = practiceRange(practice, all)
+  const meta = `Уровень ${practice.level}, практика ${practice.planLesson}${range ? ` · Повторяем ${range}` : ''}`
+  return htmlPage(
+    practice,
+    palette,
+    practice.title,
+    STYLE,
+    `${renderHeader(practice, meta)}
+${renderPractice(practice, false)}
+${renderDialogues(practice)}
+${renderOutcome(practice)}
+${renderPractice(practice, true)}
+${renderStories(practice)}`,
+  )
+}
+
 function renderHandout(lesson: LessonSource, all: LessonSource[]): string {
   const grammar = lesson.newGrammar ?? []
   const meta = `Уровень ${lesson.level}, урок ${lesson.planLesson}${grammar.length > 0 ? ` · Грамматика: ${grammar.map(escape).join(', ')}` : ''}`
@@ -421,10 +482,15 @@ ${renderPractice(lesson, true)}`,
 // --- pdf ---------------------------------------------------------------------
 
 const { lesson } = found
-const html = renderHandout(
-  lesson,
-  lessons.map((file) => file.lesson),
-)
+const html = practices
+  ? renderPracticeHandout(
+      lesson,
+      practices.lessons.map((file) => file.lesson),
+    )
+  : renderHandout(
+      lesson,
+      lessons.map((file) => file.lesson),
+    )
 const out = handoutPath(lesson, 'full')
 const browser = await chromium.launch()
 try {

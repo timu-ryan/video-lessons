@@ -89,10 +89,14 @@ export function renderCompare(title: string, left: CompareSideSource, right: Com
 <div class="compare">${side(left)}${side(right)}</div></div>`
 }
 
+/** «Урок 5» или «Практика 1»: у практики своя нумерация. */
+export const lessonLabel = (lesson: LessonSource): string =>
+  `${lesson.kind === 'practice' ? 'Практика' : 'Урок'} ${lesson.number}`
+
 /** Шапка первой страницы: курс, «Урок N. Тема», строка под заголовком. */
 export const renderHeader = (lesson: LessonSource, meta: string): string =>
   `<header><div class="course">${escape(lesson.course)}</div>
-<h1>Урок ${lesson.number}. ${escape(lesson.title)}</h1>
+<h1>${lessonLabel(lesson)}. ${escape(lesson.title)}</h1>
 <div class="meta">${meta}</div></header>`
 
 /** Стиль, общий для обоих конспектов; каждый дописывает своё. Цвета — из палитры. */
@@ -144,7 +148,7 @@ export const htmlPage = (
   body: string,
 ): string =>
   `<!doctype html><html lang="ru"><head><meta charset="utf-8">
-<title>Урок ${lesson.number}. ${escape(title)}</title><style>:root { ${cssVars(palette)} }${BASE_STYLE}${style}</style></head><body>
+<title>${lessonLabel(lesson)}. ${escape(title)}</title><style>:root { ${cssVars(palette)} }${BASE_STYLE}${style}</style></head><body>
 ${body}
 </body></html>`
 
@@ -152,21 +156,26 @@ ${body}
 
 export type HandoutKind = 'full' | 'summary' | 'extra'
 
-/** Материал урока бесплатный? Выжимки бесплатны всегда, допматериалы — по freeExtras. */
+/**
+ * Материал урока бесплатный? Выжимки бесплатны всегда, допматериалы — по
+ * freeExtras. Практика — как урок, после которого она стоит.
+ */
 export function isFree(lesson: LessonSource, kind: HandoutKind): boolean {
   if (kind === 'summary') return true
   if (kind === 'extra') return HANDOUTS.freeExtras
-  return lesson.number <= HANDOUTS.freeFullUntil
+  return (lesson.afterLesson ?? lesson.number) <= HANDOUTS.freeFullUntil
 }
 
 const SUFFIX: Record<HandoutKind, string> = { full: '', summary: '-summary', extra: '-extra' }
 
 /**
  * handouts/free/lesson-01.pdf, handouts/free/lesson-01-summary.pdf,
- * handouts/paid/lesson-15.pdf, handouts/paid/lesson-01-extra.pdf.
+ * handouts/paid/lesson-15.pdf, handouts/paid/lesson-01-extra.pdf,
+ * handouts/free/practice-01.pdf.
  */
 export function handoutPath(lesson: LessonSource, kind: HandoutKind): string {
-  const name = `lesson-${String(lesson.number).padStart(2, '0')}${SUFFIX[kind]}`
+  const prefix = lesson.kind === 'practice' ? 'practice' : 'lesson'
+  const name = `${prefix}-${String(lesson.number).padStart(2, '0')}${SUFFIX[kind]}`
   return join(HANDOUTS_DIR, isFree(lesson, kind) ? 'free' : 'paid', `${name}.pdf`)
 }
 
@@ -201,7 +210,7 @@ export async function printPdf(
       preferCSSPageSize: true,
       displayHeaderFooter: true,
       headerTemplate: '<span></span>',
-      footerTemplate: `<div style="width:100%;font-size:8px;color:${options.palette['text-3']};font-family:'Noto Sans','DejaVu Sans',sans-serif;padding:0 15mm;display:flex;justify-content:space-between"><span>Урок ${lesson.number}. ${escape(lesson.title)} · <a href="${telegramUrl}" style="color:${options.palette.accent};text-decoration:none">@${HANDOUTS.telegram}</a></span>${options.pageNumbers ? '<span><span class="pageNumber"></span> / <span class="totalPages"></span></span>' : ''}</div>`,
+      footerTemplate: `<div style="width:100%;font-size:8px;color:${options.palette['text-3']};font-family:'Noto Sans','DejaVu Sans',sans-serif;padding:0 15mm;display:flex;justify-content:space-between"><span>${lessonLabel(lesson)}. ${escape(lesson.title)} · <a href="${telegramUrl}" style="color:${options.palette.accent};text-decoration:none">@${HANDOUTS.telegram}</a></span>${options.pageNumbers ? '<span><span class="pageNumber"></span> / <span class="totalPages"></span></span>' : ''}</div>`,
     })
     return pdf.toString('latin1').match(/\/Type\s*\/Page(?![a-z])/g)?.length ?? 0
   } finally {
