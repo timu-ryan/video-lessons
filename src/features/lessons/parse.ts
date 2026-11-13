@@ -199,6 +199,14 @@ function slide(file: string, index: number, value: unknown, levelA0: boolean): S
     }
   }
 
+  if (type === 'title' && value.topic !== undefined) {
+    list(where, value, 'topic').forEach((line, i) => {
+      if (typeof line !== 'string' || line === '') {
+        throw new LessonError(`${where}, topic[${i}]`, 'строка темы — непустая строка')
+      }
+    })
+  }
+
   if (type === 'rule') {
     str(where, value, 'title')
     list(where, value, 'pattern').forEach((token, i) => {
@@ -483,6 +491,13 @@ export function parseLesson(file: string, expectedNumber: number, raw: unknown):
       throw new LessonError(
         `${file}, слайд ${index}`,
         `в практическом уроке нет теории: «${s.type}» нельзя, можно ${PRACTICE_SLIDE_TYPES.join(', ')}`,
+      )
+    }
+
+    if (s.type === 'title' && s.topic && s.topic.join(' ') !== raw.title) {
+      throw new LessonError(
+        `${file}, слайд ${index}`,
+        `topic через пробел — «${s.topic.join(' ')}», а title урока — «${String(raw.title)}»: это должна быть одна тема, разбитая на строки`,
       )
     }
 

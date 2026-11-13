@@ -40,7 +40,7 @@ export function pauseMs(slide: Slide): number {
 export function slideLabel(slide: Slide): string {
   switch (slide.type) {
     case 'title':
-      return slide.topic
+      return slide.topic.join(' ')
     case 'section':
       return `${slide.number}. ${slide.title}`
     case 'table':

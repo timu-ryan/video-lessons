@@ -71,7 +71,7 @@ export function deriveLesson(source: LessonSource): Lesson {
           type: 'title',
           course: source.course,
           lessonLabel: `${source.kind === 'practice' ? 'Практика' : 'Урок'} ${source.number}`,
-          topic: source.title,
+          topic: raw.topic ?? [source.title],
           agenda: raw.agenda ?? (agenda.length > 0 ? agenda : undefined),
         }
 

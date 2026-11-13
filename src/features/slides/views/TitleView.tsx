@@ -52,7 +52,11 @@ export function TitleView({ slide }: { slide: TitleSlide }) {
           color: 'var(--text)',
         }}
       >
-        {slide.topic}
+        {slide.topic.map((line) => (
+          <span key={line} style={{ display: 'block' }}>
+            {line}
+          </span>
+        ))}
       </h1>
 
       {slide.agenda ? (
