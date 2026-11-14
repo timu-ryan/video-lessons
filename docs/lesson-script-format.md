@@ -49,7 +49,7 @@ speakers:
 ```
 
 Без `newVocabulary` и `newGrammar`. Блоки — только `title`, `section`,
-`practice`, `text`, `dialogue`, `final`.
+`table` (памятка форм), `practice`, `text`, `dialogue`, `final`.
 
 ## Общие правила записи
 

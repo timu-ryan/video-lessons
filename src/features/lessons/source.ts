@@ -340,10 +340,11 @@ export interface HandoutTableSource {
 }
 
 /**
- * Слайды практического урока: без теории (table, rule, conjugation, compare)
- * — только задания и связная речь из уже знакомого.
+ * Слайды практического урока: без теории (rule, conjugation, compare) —
+ * задания и связная речь из уже знакомого. table — только памятка форм перед
+ * заданиями, без новых слов (docs/practice-writing.md, раздел 3).
  */
-export const PRACTICE_SLIDE_TYPES = ['title', 'section', 'practice', 'text', 'dialogue', 'final'] as const
+export const PRACTICE_SLIDE_TYPES = ['title', 'section', 'table', 'practice', 'text', 'dialogue', 'final'] as const
 
 export interface LessonSource {
   schemaVersion: number

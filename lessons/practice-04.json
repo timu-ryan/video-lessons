@@ -1,0 +1,991 @@
+{
+  "schemaVersion": 3,
+  "kind": "practice",
+  "number": 4,
+  "level": "A0",
+  "planLesson": 4,
+  "afterLesson": 13,
+  "title": "Вопросы, estar и hay, числа",
+  "course": "Испанский с нуля",
+  "speakers": {
+    "ana": "Ana",
+    "carlos": "Carlos"
+  },
+  "tableHeaders": {
+    "es": "Испанский",
+    "ru": "Перевод"
+  },
+  "practiceGroups": [
+    {
+      "name": "Разминка"
+    },
+    {
+      "name": "Кто, что, где, когда"
+    },
+    {
+      "name": "Какой, сколько, почему, откуда"
+    },
+    {
+      "name": "Где и как: estar и hay"
+    },
+    {
+      "name": "Моё: tener, притяжательные, числа"
+    },
+    {
+      "name": "Вперемешку"
+    },
+    {
+      "name": "Рассказ"
+    }
+  ],
+  "slides": [
+    {
+      "type": "title",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Привет! Сегодня урок без нового — только практика по урокам 11–13: вопросы, estar и hay, «моё» и числа до тридцати.»",
+        "«Больше всего будет вопросов. После этой практики вы будете расспрашивать собеседника и рассказывать о себе и о семье быстрее и увереннее.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Разминка",
+      "hint": "Фраза по-русски → пауза → скажите вслух по-испански",
+      "notes": [
+        "«Начнём с разминки. Вы видите фразу по-русски — пока идёт полоска, скажите её вслух по-испански. Потом появится ответ. Не бойтесь ошибиться: главное — говорить.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "ru": "Где твой брат?",
+        "es": "¿Dónde está tu hermano?",
+        "ipa": "ˈdonde esˈta tu eɾˈmano"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "ru": "У тебя есть сестра?",
+        "es": "¿Tienes una hermana?",
+        "alternatives": [
+          "¿Tienes hermana?"
+        ],
+        "ipa": "ˈtjenes ˈuna eɾˈmana"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "ru": "Шесть или шестнадцать?",
+        "es": "¿Seis o dieciséis?",
+        "ipa": "ˈsejs o djeθiˈsejs"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "ru": "Четыре, три, два, один, ноль!",
+        "es": "¡Cuatro, tres, dos, uno, cero!",
+        "ipa": "ˈkwatɾo ˈtɾes ˈdos ˈuno ˈθeɾo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "ru": "Здесь есть больница?",
+        "es": "¿Hay un hospital aquí?",
+        "alternatives": [
+          "¿Aquí hay un hospital?"
+        ],
+        "ipa": "ˈaj un ospiˈtal aˈki"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "ru": "Как ты? — Так себе, я устала.",
+        "es": "¿Cómo estás? — Regular, estoy cansada.",
+        "ipa": "ˈkomo esˈtas · reguˈlaɾ esˈtoj kanˈsada"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "ru": "Откуда вы?",
+        "hint": "вежливо, нескольким",
+        "es": "¿De dónde son ustedes?",
+        "alternatives": [
+          "¿De dónde son?"
+        ],
+        "ipa": "de ˈdonde ˈson usˈtedes"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Разминка",
+      "phrase": {
+        "ru": "Вы готовы?",
+        "hint": "к нескольким подругам",
+        "es": "¿Estáis listas?",
+        "alternatives": [
+          "¿Vosotras estáis listas?"
+        ],
+        "ipa": "esˈtais ˈlistas"
+      }
+    },
+    {
+      "type": "section",
+      "title": "Кто, что, где, когда",
+      "hint": "Слово-вопрос → глагол → подлежащее",
+      "notes": [
+        "«Теперь вопросы — сегодня их будет больше всего.»",
+        "«Помните: глагол стоит сразу за вопросительным словом — ¿Dónde vive Ana?, а не ¿Dónde Ana vive? Это урок 11.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Кто, что, где, когда",
+      "phrase": {
+        "ru": "Кто здесь?",
+        "es": "¿Quién está aquí?",
+        "ipa": "ˈkjen esˈta aˈki"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Кто, что, где, когда",
+      "phrase": {
+        "ru": "Что пьют дети?",
+        "es": "¿Qué beben los niños?",
+        "ipa": "ˈke ˈbeben los ˈniɲos"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Кто, что, где, когда",
+      "phrase": {
+        "ru": "Где вы живёте?",
+        "hint": "вежливо, нескольким",
+        "es": "¿Dónde viven ustedes?",
+        "alternatives": [
+          "¿Dónde viven?"
+        ],
+        "ipa": "ˈdonde ˈbiben usˈtedes"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Кто, что, где, когда",
+      "phrase": {
+        "ru": "Когда вы ужинаете?",
+        "hint": "вежливо, одному человеку",
+        "es": "¿Cuándo cena usted?",
+        "alternatives": [
+          "¿Cuándo cena?"
+        ],
+        "ipa": "ˈkwando ˈθena usˈted"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Кто, что, где, когда",
+      "phrase": {
+        "ru": "Когда вы ходите за покупками?",
+        "hint": "к нескольким друзьям",
+        "es": "¿Cuándo vais de compras?",
+        "alternatives": [
+          "¿Cuándo vais vosotros de compras?"
+        ],
+        "ipa": "ˈkwando ˈbais de ˈkompɾas"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Кто, что, где, когда",
+      "phrase": {
+        "ru": "Где твой отец работает?",
+        "es": "¿Dónde trabaja tu padre?",
+        "ipa": "ˈdonde tɾaˈbaxa tu ˈpadɾe"
+      },
+      "notes": [
+        "«По-русски «Где твой отец работает?» звучит нормально. А по-испански глагол — сразу за dónde: ¿Dónde trabaja tu padre?»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Кто, что, где, когда",
+      "phrase": {
+        "ru": "Когда твои родители приезжают?",
+        "es": "¿Cuándo llegan tus padres?",
+        "ipa": "ˈkwando ˈjegan tus ˈpadɾes"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Кто, что, где, когда",
+      "phrase": {
+        "ru": "Кто готовит в твоей семье?",
+        "es": "¿Quién cocina en tu familia?",
+        "ipa": "ˈkjen koˈθina en tu faˈmilja"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Кто, что, где, когда",
+      "phrase": {
+        "ru": "Кто дома? — Мама и сестра.",
+        "es": "¿Quién está en casa? — Mi madre y mi hermana.",
+        "ipa": "ˈkjen esˈta en ˈkasa · mi ˈmadɾe i mi eɾˈmana"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Кто, что, где, когда",
+      "phrase": {
+        "ru": "Что ты учишь? — Испанский и английский.",
+        "es": "¿Qué estudias? — Español e inglés.",
+        "alternatives": [
+          "¿Qué aprendes? — Español e inglés."
+        ],
+        "ipa": "ˈke esˈtudjas · espaˈɲol e inˈgles"
+      },
+      "notes": [
+        "«Перед inglés — e, а не y: слово начинается со звука «и». Это урок 2.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Какой, сколько, почему, откуда",
+      "hint": "cuánto по роду · por qué — porque · de dónde",
+      "notes": [
+        "«Теперь «какой», «сколько», «почему» и «откуда». Помните: cuánto смотрит на существительное — cuánta cerveza, cuántos libros.»",
+        "«А предлог встаёт перед вопросительным словом: ¿de dónde?, ¿en qué? Это тоже урок 11.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Какой, сколько, почему, откуда",
+      "phrase": {
+        "ru": "Сколько хлеба нам нужно?",
+        "es": "¿Cuánto pan necesitamos?",
+        "ipa": "ˈkwanto ˈpan neθesiˈtamos"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Какой, сколько, почему, откуда",
+      "phrase": {
+        "ru": "Сколько мяса вы едите?",
+        "hint": "к нескольким друзьям",
+        "es": "¿Cuánta carne coméis?",
+        "alternatives": [
+          "¿Cuánta carne coméis vosotros?"
+        ],
+        "ipa": "ˈkwanta ˈkaɾne koˈmeis"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Какой, сколько, почему, откуда",
+      "phrase": {
+        "ru": "Сколько писем ты получаешь?",
+        "es": "¿Cuántas cartas recibes?",
+        "ipa": "ˈkwantas ˈkaɾtas reˈθibes"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Какой, сколько, почему, откуда",
+      "phrase": {
+        "ru": "Из какой страны ваш друг?",
+        "hint": "к нескольким друзьям",
+        "es": "¿De qué país es vuestro amigo?",
+        "ipa": "de ˈke paˈis ˈes ˈbwestɾo aˈmigo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Какой, сколько, почему, откуда",
+      "phrase": {
+        "ru": "В какой школе учатся ваши дети?",
+        "hint": "вежливо, одному человеку",
+        "es": "¿En qué colegio estudian sus hijos?",
+        "ipa": "en ˈke koˈlexjo esˈtudjan sus ˈixos"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Какой, сколько, почему, откуда",
+      "phrase": {
+        "ru": "С кем ты живёшь? — С родителями.",
+        "es": "¿Con quién vives? — Con mis padres.",
+        "ipa": "kon ˈkjen ˈbibes · kon mis ˈpadɾes"
+      },
+      "notes": [
+        "«С кем — con quién: предлог снова впереди. А «с родителями» — с чьими? С моими: con mis padres.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Какой, сколько, почему, откуда",
+      "phrase": {
+        "ru": "Сколько лет твоему брату? Двадцать три или двадцать шесть?",
+        "es": "¿Cuántos años tiene tu hermano? ¿Veintitrés o veintiséis?",
+        "ipa": "ˈkwantos ˈaɲos ˈtjene tu eɾˈmano · bejntiˈtɾes o bejntiˈsejs"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Какой, сколько, почему, откуда",
+      "phrase": {
+        "ru": "Какая она, твоя подруга? — Красивая и интересная.",
+        "es": "¿Cómo es tu amiga? — Es bonita e interesante.",
+        "alternatives": [
+          "¿Cómo es tu amiga? — Bonita e interesante."
+        ],
+        "ipa": "ˈkomo ˈes tu aˈmiga · ˈes boˈnita e inteɾeˈsante"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Какой, сколько, почему, откуда",
+      "phrase": {
+        "ru": "Почему ты дома? — Потому что сегодня я не работаю.",
+        "es": "¿Por qué estás en casa? — Porque hoy no trabajo.",
+        "ipa": "poɾ ˈke esˈtas en ˈkasa · ˈpoɾke ˈoj no tɾaˈbaxo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Какой, сколько, почему, откуда",
+      "phrase": {
+        "ru": "Почему вы хотите жить в Мадриде? — Потому что он очень красивый.",
+        "hint": "вежливо, одному человеку",
+        "es": "¿Por qué quiere vivir en Madrid? — Porque es muy bonito.",
+        "alternatives": [
+          "¿Por qué quiere usted vivir en Madrid? — Porque es muy bonito."
+        ],
+        "ipa": "poɾ ˈke ˈkjeɾe biˈbiɾ en maˈdɾid · ˈpoɾke ˈes ˈmuj boˈnito"
+      }
+    },
+    {
+      "type": "section",
+      "title": "Где и как: estar и hay",
+      "hint": "hay un — какой-то; el … está — тот самый",
+      "notes": [
+        "«Теперь estar и hay. Помните: hay — что-то где-то есть: hay un bar. А тот самый, конкретный — está: el bar está aquí. Это урок 12.»",
+        "«И где вы, как вы — estar, а кто вы и какой — ser: soy profesor, pero estoy cansado.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Где и как: estar и hay",
+      "phrase": {
+        "ru": "Как ваша мама?",
+        "hint": "вежливо, одному человеку",
+        "es": "¿Cómo está su madre?",
+        "ipa": "ˈkomo esˈta su ˈmadɾe"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Где и как: estar и hay",
+      "phrase": {
+        "ru": "Мы очень довольны.",
+        "es": "Estamos muy contentos.",
+        "alternatives": [
+          "Nosotros estamos muy contentos."
+        ],
+        "ipa": "esˈtamos ˈmuj konˈtentos"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Где и как: estar и hay",
+      "phrase": {
+        "ru": "Где девочки? — На кухне.",
+        "es": "¿Dónde están las niñas? — En la cocina.",
+        "alternatives": [
+          "¿Dónde están las niñas? — Están en la cocina."
+        ],
+        "ipa": "ˈdonde esˈtan las ˈniɲas · en la koˈθina"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Где и как: estar и hay",
+      "phrase": {
+        "ru": "В квартире пять стульев, но нет стола.",
+        "es": "En el piso hay cinco sillas, pero no hay mesa.",
+        "alternatives": [
+          "Hay cinco sillas en el piso, pero no hay mesa."
+        ],
+        "ipa": "en el ˈpiso ˈaj ˈθinko ˈsijas ˈpeɾo no ˈaj ˈmesa"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Где и как: estar и hay",
+      "phrase": {
+        "ru": "На занятии десять девочек и девять мальчиков.",
+        "es": "En la clase hay diez niñas y nueve niños.",
+        "alternatives": [
+          "Hay diez niñas y nueve niños en la clase."
+        ],
+        "ipa": "en la ˈklase ˈaj ˈdjeθ ˈniɲas i ˈnwebe ˈniɲos"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Где и как: estar и hay",
+      "phrase": {
+        "ru": "Здесь есть бар? — Да, он на площади.",
+        "es": "¿Hay un bar aquí? — Sí, está en la plaza.",
+        "alternatives": [
+          "¿Aquí hay un bar? — Sí, está en la plaza."
+        ],
+        "ipa": "ˈaj un ˈbaɾ aˈki · ˈsi esˈta en la ˈplaθa"
+      },
+      "notes": [
+        "«Сначала hay: есть ли вообще какой-то бар. А где он, тот самый, — está.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Где и как: estar и hay",
+      "phrase": {
+        "ru": "Здесь есть музей. Он очень интересный.",
+        "es": "Aquí hay un museo. Es muy interesante.",
+        "alternatives": [
+          "Hay un museo aquí. Es muy interesante."
+        ],
+        "ipa": "aˈki ˈaj un muˈse.o · ˈes ˈmuj inteɾeˈsante"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Где и как: estar и hay",
+      "phrase": {
+        "ru": "Моему сыну семнадцать лет, сейчас он в библиотеке.",
+        "es": "Mi hijo tiene diecisiete años y ahora está en la biblioteca.",
+        "alternatives": [
+          "Mi hijo tiene diecisiete años, ahora está en la biblioteca."
+        ],
+        "ipa": "mi ˈixo ˈtjene djeθiˈsjete ˈaɲos i aˈoɾa esˈta en la bibljoˈteka"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Где и как: estar и hay",
+      "phrase": {
+        "ru": "Мой брат врач, но сейчас он болеет.",
+        "es": "Mi hermano es médico, pero ahora está enfermo.",
+        "ipa": "mi eɾˈmano ˈes ˈmediko ˈpeɾo aˈoɾa esˈta enˈfeɾmo"
+      },
+      "notes": [
+        "«Врач — это кто он, поэтому ser. Болеет — как он сейчас, поэтому estar.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Моё: tener, притяжательные, числа",
+      "hint": "tengo · mi, su, nuestro · tengo veinte años",
+      "notes": [
+        "«Последняя тема — что у кого есть, чьё это и сколько кому лет.»",
+        "«Помните: nuestro и vuestro меняются по роду испанского слова, а возраст — это tener, а не soy. Это урок 13.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Чьё это?",
+      "rows": [
+        {
+          "es": "**mi** casa, **mis** padres",
+          "ru": "мой дом, мои родители",
+          "ipa": "mi ˈkasa mis ˈpadɾes"
+        },
+        {
+          "es": "**tu** coche, **tus** libros",
+          "ru": "твоя машина, твои книги",
+          "ipa": "tu ˈkotʃe tus ˈlibɾos"
+        },
+        {
+          "es": "**su** casa, **sus** padres",
+          "ru": "его дом, её родители",
+          "ipa": "su ˈkasa sus ˈpadɾes"
+        },
+        {
+          "es": "**nuestro** piso, **nuestra** casa",
+          "ru": "наша квартира, наш дом",
+          "ipa": "ˈnwestɾo ˈpiso ˈnwestɾa ˈkasa"
+        },
+        {
+          "es": "**vuestro** coche, **vuestra** casa",
+          "ru": "ваша машина, ваш дом",
+          "ipa": "ˈbwestɾo ˈkotʃe ˈbwestɾa ˈkasa"
+        }
+      ],
+      "notes": [
+        "«Напомню формы. Mi casa, mis padres. 🔊 Tu coche, tus libros. 🔊 Su casa, sus padres. 🔊 Su — это «его», «её», «их» и вежливое «ваш».»",
+        "«Nuestro piso, nuestra casa. 🔊 Vuestro coche, vuestra casa. 🔊»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Моё: tener, притяжательные, числа",
+      "phrase": {
+        "ru": "Пятнадцать, двадцать, двадцать пять, тридцать.",
+        "es": "Quince, veinte, veinticinco, treinta.",
+        "ipa": "ˈkinθe ˈbejnte bejntiˈθinko ˈtɾejnta"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Моё: tener, притяжательные, числа",
+      "phrase": {
+        "ru": "Наша кухня очень маленькая.",
+        "es": "Nuestra cocina es muy pequeña.",
+        "ipa": "ˈnwestɾa koˈθina ˈes ˈmuj peˈkeɲa"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Моё: tener, притяжательные, числа",
+      "phrase": {
+        "ru": "Где ваша собака?",
+        "hint": "к нескольким друзьям",
+        "es": "¿Dónde está vuestro perro?",
+        "ipa": "ˈdonde esˈta ˈbwestɾo ˈpero"
+      },
+      "notes": [
+        "«Perro — мужской род: vuestro perro, хотя по-русски «ваша собака».»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Моё: tener, притяжательные, числа",
+      "phrase": {
+        "ru": "Моим детям семь и тринадцать лет.",
+        "es": "Mis hijos tienen siete y trece años.",
+        "ipa": "mis ˈixos ˈtjenen ˈsjete i ˈtɾeθe ˈaɲos"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Моё: tener, притяжательные, числа",
+      "phrase": {
+        "ru": "Их дочери одиннадцать лет, а сыну девятнадцать.",
+        "es": "Su hija tiene once años y su hijo tiene diecinueve.",
+        "alternatives": [
+          "Su hija tiene once años y su hijo, diecinueve."
+        ],
+        "ipa": "su ˈixa ˈtjene ˈonθe ˈaɲos i su ˈixo ˈtjene djeθiˈnwebe"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Моё: tener, притяжательные, числа",
+      "phrase": {
+        "ru": "Сколько лет твоей дочери? — Восемь.",
+        "es": "¿Cuántos años tiene tu hija? — Ocho.",
+        "ipa": "ˈkwantos ˈaɲos ˈtjene tu ˈixa · ˈotʃo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Моё: tener, притяжательные, числа",
+      "phrase": {
+        "ru": "Сколько тебе лет? — Двадцать один.",
+        "es": "¿Cuántos años tienes? — Veintiuno.",
+        "ipa": "ˈkwantos ˈaɲos ˈtjenes · bejnˈtjuno"
+      },
+      "notes": [
+        "«Без años — просто veintiuno. А «мне двадцать один год» — tengo veintiún años.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Моё: tener, притяжательные, числа",
+      "phrase": {
+        "ru": "Её брату двадцать восемь лет, и у него двое детей.",
+        "es": "Su hermano tiene veintiocho años y dos hijos.",
+        "alternatives": [
+          "Su hermano tiene veintiocho años y tiene dos hijos."
+        ],
+        "ipa": "su eɾˈmano ˈtjene bejnˈtjotʃo ˈaɲos i ˈdos ˈixos"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Моё: tener, притяжательные, числа",
+      "phrase": {
+        "ru": "Мне не тридцать лет, мне двадцать девять!",
+        "es": "¡No tengo treinta años, tengo veintinueve!",
+        "ipa": "no ˈtengo ˈtɾejnta ˈaɲos ˈtengo bejntiˈnwebe"
+      }
+    },
+    {
+      "type": "section",
+      "title": "Вперемешку",
+      "hint": "Всё вместе: две части, вопрос и ответ",
+      "notes": [
+        "«А теперь всё вперемешку, вместе с прошлыми уроками. Фразы длиннее, во многих — вопрос и ответ.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Вперемешку",
+      "phrase": {
+        "ru": "Как тебя зовут и сколько тебе лет?",
+        "es": "¿Cómo te llamas y cuántos años tienes?",
+        "ipa": "ˈkomo te ˈjamas i ˈkwantos ˈaɲos ˈtjenes"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вперемешку",
+      "phrase": {
+        "ru": "Как дела? — Ужасно: у меня нет работы.",
+        "es": "¿Qué tal? — Fatal: no tengo trabajo.",
+        "alternatives": [
+          "¿Cómo estás? — Fatal: no tengo trabajo."
+        ],
+        "ipa": "ˈke ˈtal · faˈtal no ˈtengo tɾaˈbaxo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вперемешку",
+      "phrase": {
+        "ru": "Извините, где метро? — На площади.",
+        "es": "Perdón, ¿dónde está el metro? — En la plaza.",
+        "alternatives": [
+          "Perdón, ¿dónde está el metro? — Está en la plaza."
+        ],
+        "ipa": "peɾˈdon ˈdonde esˈta el ˈmetɾo · en la ˈplaθa"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вперемешку",
+      "phrase": {
+        "ru": "Дома есть еда? — Нет, но у меня есть деньги.",
+        "es": "¿Hay comida en casa? — No, pero tengo dinero.",
+        "alternatives": [
+          "¿En casa hay comida? — No, pero tengo dinero."
+        ],
+        "ipa": "ˈaj koˈmida en ˈkasa · ˈno ˈpeɾo ˈtengo diˈneɾo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вперемешку",
+      "phrase": {
+        "ru": "Мне двадцать один год. А вам? — Двадцать четыре.",
+        "hint": "вежливо, одному человеку",
+        "es": "Tengo veintiún años. ¿Y usted? — Veinticuatro.",
+        "ipa": "ˈtengo bejnˈtjun ˈaɲos · i usˈted · bejntiˈkwatɾo"
+      },
+      "notes": [
+        "«По-русски «а вам?», но возраст — это tener, а не gusta. Поэтому ¿y usted?, без a.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Вперемешку",
+      "phrase": {
+        "ru": "Почему вы ходите пешком? — Потому что нам нравится.",
+        "hint": "к нескольким друзьям",
+        "es": "¿Por qué camináis? — Porque nos gusta.",
+        "alternatives": [
+          "¿Por qué camináis? — Porque nos gusta caminar."
+        ],
+        "ipa": "poɾ ˈke kamiˈnais · ˈpoɾke nos ˈgusta"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вперемешку",
+      "phrase": {
+        "ru": "Я буду в Мадриде четырнадцать дней.",
+        "es": "Voy a estar en Madrid catorce días.",
+        "alternatives": [
+          "Voy a estar catorce días en Madrid."
+        ],
+        "ipa": "ˈboj a esˈtaɾ en maˈdɾid kaˈtoɾθe ˈdi.as"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вперемешку",
+      "phrase": {
+        "ru": "Мне нужно выучить двенадцать слов.",
+        "es": "Tengo que aprender doce palabras.",
+        "alternatives": [
+          "Necesito aprender doce palabras."
+        ],
+        "ipa": "ˈtengo ke apɾenˈdeɾ ˈdoθe paˈlabɾas"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вперемешку",
+      "phrase": {
+        "ru": "Почему ты продаёшь свою машину? — Потому что она старая.",
+        "es": "¿Por qué vendes tu coche? — Porque es viejo.",
+        "ipa": "poɾ ˈke ˈbendes tu ˈkotʃe · ˈpoɾke ˈes ˈbjexo"
+      },
+      "notes": [
+        "«Coche — мужской род, поэтому viejo, хотя машина по-русски «она». А «свою» — просто tu.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Вперемешку",
+      "phrase": {
+        "ru": "Вопрос лёгкий, а ответ трудный.",
+        "es": "La pregunta es fácil, pero la respuesta es difícil.",
+        "alternatives": [
+          "La pregunta es fácil y la respuesta es difícil."
+        ],
+        "ipa": "la pɾeˈgunta ˈes ˈfaθil ˈpeɾo la resˈpwesta ˈes diˈfiθil"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вперемешку",
+      "phrase": {
+        "ru": "Мы устали, потому что работаем весь день.",
+        "hint": "говорят две женщины",
+        "es": "Estamos cansadas porque trabajamos todo el día.",
+        "alternatives": [
+          "Nosotras estamos cansadas porque trabajamos todo el día."
+        ],
+        "ipa": "esˈtamos kanˈsadas ˈpoɾke tɾabaˈxamos ˈtodo el ˈdi.a"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вперемешку",
+      "phrase": {
+        "ru": "Его родители живут в Мадриде, но сейчас они в Москве.",
+        "es": "Sus padres viven en Madrid, pero ahora están en Moscú.",
+        "ipa": "sus ˈpadɾes ˈbiben en maˈdɾid ˈpeɾo aˈoɾa esˈtan en mosˈku"
+      }
+    },
+    {
+      "type": "section",
+      "title": "Рассказ",
+      "hint": "Скажите по фразам, потом послушайте целиком",
+      "notes": [
+        "«Представьте: вы знакомитесь с новыми друзьями в Испании и рассказываете о себе. Говорите фраза за фразой, а потом послушаем всё целиком.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ",
+      "phrase": {
+        "ru": "Мне двадцать семь лет, и я живу в Мадриде.",
+        "es": "Tengo veintisiete años y vivo en Madrid.",
+        "ipa": "ˈtengo bejntiˈsjete ˈaɲos i ˈbibo en maˈdɾid"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ",
+      "phrase": {
+        "ru": "Я живу с сестрой в центре.",
+        "es": "Vivo con mi hermana en el centro.",
+        "ipa": "ˈbibo kon mi eɾˈmana en el ˈθentɾo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ",
+      "phrase": {
+        "ru": "Наша квартира старая, но очень красивая.",
+        "es": "Nuestro piso es viejo, pero muy bonito.",
+        "ipa": "ˈnwestɾo ˈpiso ˈes ˈbjexo ˈpeɾo ˈmuj boˈnito"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ",
+      "phrase": {
+        "ru": "На нашей улице есть супермаркет и спортзал.",
+        "es": "En nuestra calle hay un supermercado y un gimnasio.",
+        "alternatives": [
+          "Hay un supermercado y un gimnasio en nuestra calle."
+        ],
+        "ipa": "en ˈnwestɾa ˈkaje ˈaj un supeɾmeɾˈkado i un ximˈnasjo"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ",
+      "phrase": {
+        "ru": "Моей сестре восемнадцать лет, она студентка.",
+        "es": "Mi hermana tiene dieciocho años y es estudiante.",
+        "alternatives": [
+          "Mi hermana tiene dieciocho años, es estudiante."
+        ],
+        "ipa": "mi eɾˈmana ˈtjene djeˈθjotʃo ˈaɲos i ˈes estuˈdjante"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ",
+      "phrase": {
+        "ru": "Сейчас она в университете, а я дома.",
+        "es": "Ahora está en la universidad y yo estoy en casa.",
+        "alternatives": [
+          "Ahora ella está en la universidad y yo estoy en casa."
+        ],
+        "ipa": "aˈoɾa esˈta en la unibeɾsiˈdad i ˈjo esˈtoj en ˈkasa"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Рассказ",
+      "phrase": {
+        "ru": "А вы? Где вы живёте и с кем?",
+        "hint": "к нескольким друзьям",
+        "es": "¿Y vosotros? ¿Dónde vivís y con quién?",
+        "ipa": "i boˈsotɾos · ˈdonde biˈbis i kon ˈkjen"
+      }
+    },
+    {
+      "type": "text",
+      "title": "Где я живу",
+      "sentences": [
+        {
+          "es": "**Tengo** veintisiete **años y** vivo en Madrid.",
+          "ru": "Мне двадцать семь лет, и я живу в Мадриде."
+        },
+        {
+          "es": "Vivo **con mi** hermana en el centro.",
+          "ru": "Я живу с сестрой в центре."
+        },
+        {
+          "es": "**Nuestro** piso **es viejo**, **pero** muy **bonito**.",
+          "ru": "Наша квартира старая, но очень красивая."
+        },
+        {
+          "es": "En **nuestra** calle **hay un** supermercado **y un** gimnasio.",
+          "ru": "На нашей улице есть супермаркет и спортзал."
+        },
+        {
+          "es": "**Mi** hermana **tiene** dieciocho **años y es** estudiante.",
+          "ru": "Моей сестре восемнадцать лет, она студентка."
+        },
+        {
+          "es": "Ahora **está** en la universidad **y** yo **estoy** en casa.",
+          "ru": "Сейчас она в университете, а я дома."
+        },
+        {
+          "es": "¿Y vosotros? ¿**Dónde** vivís **y con quién**?",
+          "ru": "А вы? Где вы живёте и с кем?"
+        }
+      ],
+      "notes": [
+        "«А теперь весь рассказ целиком.»",
+        "🔊 Прочитать рассказ целиком.",
+        "«Заметьте: квартира по-русски «она», а piso — «он». Поэтому nuestro piso, viejo, bonito.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Мини-диалог",
+      "notes": [
+        "«А теперь послушаем Ану и Карлоса за ужином в Мадриде. Все слова вы уже знаете.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Qué tal, Carlos?",
+      "lines": [
+        {
+          "speaker": "ana",
+          "es": "Carlos, ¿**qué tal**? ¿**Estás** cansado?",
+          "ru": "Карлос, как дела? Устал?"
+        },
+        {
+          "speaker": "carlos",
+          "es": "Sí, **estoy cansado**, pero muy **contento**.",
+          "ru": "Да, устал, но очень доволен."
+        },
+        {
+          "speaker": "ana",
+          "es": "¿Contento? ¿**Por qué**?",
+          "ru": "Доволен? Почему?"
+        },
+        {
+          "speaker": "carlos",
+          "es": "**Porque estoy** aquí, en Madrid.",
+          "ru": "Потому что я здесь, в Мадриде."
+        }
+      ],
+      "notes": [
+        "🔊 Проиграть диалог целиком, потом по репликам.",
+        "«Помните ужин Аны и Карлоса из урока 13? Вот как он начинался: Карлос только что приехал и очень устал.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "¿Qué tal, Carlos?",
+      "lines": [
+        {
+          "speaker": "ana",
+          "es": "¿Y **qué** quieres cenar? **Hay** pescado y carne.",
+          "ru": "А что ты хочешь на ужин? Есть рыба и мясо."
+        },
+        {
+          "speaker": "carlos",
+          "es": "¿**Cómo es** el pescado aquí?",
+          "ru": "А какая здесь рыба?"
+        },
+        {
+          "speaker": "ana",
+          "es": "**Es caro**, pero la carne **es barata**.",
+          "ru": "Дорогая, но мясо дешёвое."
+        },
+        {
+          "speaker": "carlos",
+          "es": "¡Muy bien! Carne y cerveza.",
+          "ru": "Отлично! Мясо и пиво."
+        }
+      ],
+      "notes": [
+        "«¿Cómo es el pescado? — какая она, рыба: cómo es, как в уроке 11. А el pescado — мужского рода, поэтому caro, хотя рыба по-русски «она».»"
+      ]
+    },
+    {
+      "type": "final",
+      "title": "Что мы повторили",
+      "bullets": [
+        "Задавать вопросы: ¿quién?, ¿cuántos?, ¿por qué?, ¿con quién?",
+        "Говорить, где вы и как вы: estoy en casa, estoy cansado",
+        "Выбирать между hay и está: hay un bar, el bar está aquí",
+        "Говорить, чьё это: mi casa, su hijo, nuestro piso",
+        "Называть возраст: tengo veintinueve años"
+      ],
+      "nextTitle": "Следующий урок",
+      "nextText": "Урок 14: итог A0 — me llamo, soy, tengo, quiero",
+      "outro": "¡Hasta luego!",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Отлично! Теперь вы расспрашиваете собеседника, говорите, где что находится, чьё это и сколько кому лет.»",
+        "«Если какой-то блок дался трудно, вернитесь к его уроку — одиннадцатому, двенадцатому или тринадцатому — и пройдите практику ещё раз.»",
+        "«В следующем уроке — итог уровня A0: соберём всё, что вы выучили, и разберём типичные ошибки. ¡Hasta luego!»"
+      ]
+    }
+  ]
+}
