@@ -1,0 +1,920 @@
+{
+  "schemaVersion": 3,
+  "number": 15,
+  "level": "A1",
+  "planLesson": 1,
+  "title": "Начните говорить по-испански: хочу, могу, нужно",
+  "course": "Испанский с нуля",
+  "newVocabulary": [
+    {
+      "es": "buscar",
+      "ru": "искать",
+      "pos": "verb"
+    },
+    {
+      "es": "probar",
+      "ru": "пробовать, попробовать",
+      "pos": "verb"
+    },
+    {
+      "es": "mejorar",
+      "ru": "улучшать, улучшить",
+      "pos": "verb"
+    }
+  ],
+  "newGrammar": [],
+  "speakers": {
+    "ana": "Ana",
+    "carlos": "Carlos"
+  },
+  "tableHeaders": {
+    "es": "Испанский",
+    "ru": "Перевод"
+  },
+  "practiceGroups": [
+    {
+      "name": "Хочу, могу, нужно"
+    },
+    {
+      "name": "Вопросы и ответы"
+    },
+    {
+      "name": "Всё вместе"
+    }
+  ],
+  "slides": [
+    {
+      "type": "title",
+      "topic": [
+        "Начните говорить по-испански:",
+        "хочу, могу, нужно"
+      ],
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Привет! Это первый урок уровня A1. Сегодня будем говорить о том, чего вы хотите, что можете и что вам нужно сделать.»",
+        "«Если вы впервые открыли урок испанского, можно начать прямо здесь. Я объясню все слова и формы, которые нам понадобятся.»",
+        "«Если вы прошли A0, потренируем знакомые конструкции и добавим три новых глагола: искать, пробовать и улучшать.»",
+        "«К концу урока вы сможете сами собрать несколько фраз о себе и задать вопрос собеседнику.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Хочу говорить",
+      "hint": "Одно «хочу» — много разных действий",
+      "notes": [
+        "«Представьте: вы хотите заговорить по-испански. Начнём с этого желания и сразу соберём первую фразу.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Хочу + действие",
+      "pattern": [
+        "quiero",
+        "+",
+        "инфинитив"
+      ],
+      "text": "Quiero — я хочу. После него — действие в начальной форме.",
+      "examples": [
+        {
+          "es": "hablar — **Quiero** hablar.",
+          "ru": "Я хочу поговорить."
+        },
+        {
+          "es": "viajar — **Quiero** viajar.",
+          "ru": "Я хочу путешествовать."
+        },
+        {
+          "es": "descansar — **Quiero** descansar.",
+          "ru": "Я хочу отдохнуть."
+        }
+      ],
+      "notes": [
+        "«Querer — хотеть. А «я хочу» — quiero. 🔊 Qu читается как к: кье́ро. Ударение на первый слог.»",
+        "«Hablar — говорить, поговорить. 🔊 Буква h не читается, ударение на последний слог: абла́р.»",
+        "«Говорить, работать, отдыхать — это начальная форма глагола, или инфинитив. В русском часто слышим -ть, в испанском видим -ar, -er или -ir.»",
+        "«Quiero hablar — я хочу поговорить. 🔊 Как в русском: «хочу» плюс «поговорить». Второй глагол остаётся в начальной форме.»",
+        "«Перед фразой видите инфинитив: hablar. Так будем показывать незнакомые глаголы: сначала само действие, потом фразу с ним.»",
+        "«Viajar — путешествовать, j читаем как х. Quiero viajar. 🔊 Descansar — отдыхать, отдохнуть. Quiero descansar. 🔊»",
+        "«В viajar и descansar ударение на последний слог. Меняем действие, а quiero остаётся тем же.»",
+        "«В quiero уже понятно, что речь обо мне. Поэтому отдельное слово «я» здесь обычно не нужно.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Чего я хочу",
+      "rows": [
+        {
+          "es": "Quiero hablar **español**.",
+          "ru": "Я хочу говорить по-испански.",
+          "ipa": "ˈkjeɾo aˈblaɾ espaˈɲol"
+        },
+        {
+          "es": "aprender — Quiero **aprender** español.",
+          "ru": "Я хочу выучить испанский.",
+          "ipa": "apɾenˈdeɾ · ˈkjeɾo apɾenˈdeɾ espaˈɲol"
+        },
+        {
+          "es": "probar — Quiero **probar**.",
+          "ru": "Я хочу попробовать.",
+          "ipa": "pɾoˈbaɾ · ˈkjeɾo pɾoˈbaɾ"
+        },
+        {
+          "es": "mejorar — Quiero **mejorar**.",
+          "ru": "Я хочу стать лучше.",
+          "ipa": "mexoˈɾaɾ · ˈkjeɾo mexoˈɾaɾ"
+        },
+        {
+          "es": "Quiero mejorar **mi español**.",
+          "ru": "Я хочу улучшить свой испанский.",
+          "ipa": "ˈkjeɾo mexoˈɾaɾ mi espaˈɲol"
+        }
+      ],
+      "notes": [
+        "«Español — испанский язык. 🔊 Знак над ñ даёт звук, похожий на мягкое нь. Ударение в español — на последний слог.»",
+        "«Quiero hablar español — я хочу говорить по-испански. 🔊 Никакого отдельного слова для русского «по-» здесь не нужно.»",
+        "«Aprender — учить, выучить. Quiero aprender español. 🔊 У aprender окончание -er, но после quiero оно тоже остаётся как есть.»",
+        "«Probar — пробовать, попробовать. Ударение на последний слог. Quiero probar — я хочу попробовать. 🔊 Например, вам предлагают новое занятие.»",
+        "«Mejorar — улучшать, а без дополнения может значить «становиться лучше». j — как х. Quiero mejorar — я хочу стать лучше. 🔊»",
+        "«Mi — мой, моя. Mi español — мой испанский. Quiero mejorar mi español — я хочу улучшить свой испанский. 🔊 Ударение в mejorar на последний слог.»",
+        "«В русском здесь «свой», а в испанском «мой»: mi español. Запомните это сочетание целиком.»",
+        "«А теперь выберите желание для себя: говорить по-испански, попробовать новое занятие или улучшить свой испанский. Скажите фразу с quiero.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Могу и нужно",
+      "hint": "Puedo — я могу, necesito — мне нужно",
+      "notes": [
+        "«Желание назвали. Теперь скажем, что вы можете сделать и что вам нужно. Менять будем только первое слово.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Могу + действие",
+      "pattern": [
+        "puedo",
+        "+",
+        "инфинитив"
+      ],
+      "text": "Puedo — я могу. Второй глагол остаётся в начальной форме.",
+      "examples": [
+        {
+          "es": "**Puedo** aprender español.",
+          "ru": "Я могу выучить испанский."
+        },
+        {
+          "es": "**Puedo** probar.",
+          "ru": "Я могу попробовать."
+        },
+        {
+          "es": "buscar — Puedo **buscar** trabajo.",
+          "ru": "Я могу поискать работу."
+        }
+      ],
+      "notes": [
+        "«Poder — мочь. «Я могу» — puedo. 🔊 Ударение на первый слог: пуэ́до.»",
+        "«Puedo aprender español — я могу выучить испанский. 🔊 После puedo — тот же инфинитив, что после quiero.»",
+        "«Puedo probar — я могу попробовать. 🔊 Знакомое действие, но теперь говорим о возможности.»",
+        "«Buscar — искать. Trabajo — работа. Вместе buscar trabajo — искать работу. Puedo buscar trabajo. 🔊»",
+        "«В buscar c звучит как к, ударение на последний слог. В сочетании buscar trabajo перед trabajo ничего не добавляем.»",
+        "«Не обязательно говорить о большом результате. Можно сказать: я могу немного поговорить. Сейчас добавим нужные слова.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Что я могу",
+      "rows": [
+        {
+          "es": "Puedo hablar **un poco**.",
+          "ru": "Я могу немного поговорить.",
+          "ipa": "ˈpwedo aˈblaɾ un ˈpoko"
+        },
+        {
+          "es": "Puedo descansar **ahora**.",
+          "ru": "Я могу отдохнуть сейчас.",
+          "ipa": "ˈpwedo deskanˈsaɾ aˈoɾa"
+        },
+        {
+          "es": "Puedo viajar **mañana**.",
+          "ru": "Я могу путешествовать завтра.",
+          "ipa": "ˈpwedo bjaˈxaɾ maˈɲana"
+        },
+        {
+          "es": "trabajar — Puedo **trabajar**.",
+          "ru": "Я могу работать.",
+          "ipa": "tɾabaˈxaɾ · ˈpwedo tɾabaˈxaɾ"
+        },
+        {
+          "es": "buscar — Puedo **buscar**.",
+          "ru": "Я могу поискать.",
+          "ipa": "busˈkaɾ · ˈpwedo busˈkaɾ"
+        }
+      ],
+      "notes": [
+        "«Un poco — немного. Запомним вместе: un poco. Puedo hablar un poco. 🔊 Не обещаем свободную речь, говорим о том, что уже можем.»",
+        "«Ahora — сейчас. h не читается, ударение на о: ао́ра. Puedo descansar ahora. 🔊»",
+        "«Mañana — завтра, ударение на слог с ñ: манья́на. Puedo viajar mañana. 🔊»",
+        "«Trabajar — работать. j снова звучит как х, ударение на последний слог. Puedo trabajar. 🔊»",
+        "«Puedo buscar — я могу поискать. 🔊 Например, мы уже говорим о работе: тогда trabajo можно не повторять.»",
+        "«Что вы можете сделать сейчас: немного поговорить, поработать или отдохнуть? Соберите свой ответ с puedo.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Мне нужно + действие",
+      "pattern": [
+        "necesito",
+        "+",
+        "инфинитив"
+      ],
+      "text": "Necesito — мне нужно. После него — действие в начальной форме.",
+      "examples": [
+        {
+          "es": "**Necesito** aprender español.",
+          "ru": "Мне нужно выучить испанский."
+        },
+        {
+          "es": "**Necesito** buscar trabajo.",
+          "ru": "Мне нужно искать работу."
+        },
+        {
+          "es": "**Necesito** mejorar mi español.",
+          "ru": "Мне нужно улучшить свой испанский."
+        }
+      ],
+      "notes": [
+        "«Necesitar — нуждаться. Для «мне нужно что-то сделать» берём necesito и добавляем действие. 🔊 Ударение на слог si.»",
+        "«В испанском Испании c перед e, как в necesito, — межзубный звук: кончик языка слегка между зубами, и выдыхаем.»",
+        "«Во многих странах Латинской Америки здесь звучит с. А сочетание глаголов одинаковое: necesito aprender español. 🔊»",
+        "«Necesito buscar trabajo — мне нужно искать работу. 🔊 Necesito mejorar mi español — мне нужно улучшить свой испанский. 🔊»",
+        "«По-русски «мне нужно», а по-испански отдельного слова «мне» в этой модели нет: достаточно necesito.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Что мне нужно",
+      "rows": [
+        {
+          "es": "practicar — Necesito **practicar**.",
+          "ru": "Мне нужно практиковаться.",
+          "ipa": "pɾaktiˈkaɾ · neθeˈsito pɾaktiˈkaɾ"
+        },
+        {
+          "es": "Necesito practicar **hoy**.",
+          "ru": "Мне нужно практиковаться сегодня.",
+          "ipa": "neθeˈsito pɾaktiˈkaɾ ˈoj"
+        },
+        {
+          "es": "Necesito hablar español.",
+          "ru": "Мне нужно говорить по-испански.",
+          "ipa": "neθeˈsito aˈblaɾ espaˈɲol"
+        },
+        {
+          "es": "Necesito descansar.",
+          "ru": "Мне нужно отдохнуть.",
+          "ipa": "neθeˈsito deskanˈsaɾ"
+        }
+      ],
+      "notes": [
+        "«Practicar — практиковаться, заниматься. Здесь речь о языке. Necesito practicar. 🔊 Обе буквы c в practicar звучат как к.»",
+        "«Hoy — сегодня, h не читается: ой. Necesito practicar hoy. 🔊 Hoy можно поставить и в начало: hoy necesito practicar.»",
+        "«Necesito hablar español. 🔊 Necesito descansar. 🔊 По-русски это «мне нужно говорить» и «мне нужно отдохнуть».»",
+        "«Выберите, что вам нужно сегодня: работать, практиковаться или отдыхать. Скажите про себя с necesito.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Не хочу — не могу",
+      "hint": "No ставим перед quiero, puedo или necesito",
+      "notes": [
+        "«Три модели готовы. Добавим одно маленькое слово — и вы сможете отказаться или сказать, что сейчас не получается.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Отрицание с no",
+      "pattern": [
+        "no",
+        "+",
+        "quiero / puedo / necesito",
+        "+",
+        "инфинитив"
+      ],
+      "text": "No перед первым глаголом — «не».",
+      "examples": [
+        {
+          "es": "**No** quiero viajar.",
+          "ru": "Я не хочу путешествовать."
+        },
+        {
+          "es": "**No** puedo descansar.",
+          "ru": "Я не могу отдохнуть."
+        }
+      ],
+      "notes": [
+        "«No — не. Ставим его перед первым глаголом: no quiero, no puedo, no necesito. Второй глагол не меняется.»",
+        "«No quiero viajar — я не хочу путешествовать. 🔊 No puedo descansar — я не могу отдохнуть. 🔊»",
+        "«Место для «не» такое же, как в русском: перед «хочу», «могу» или «нужно».»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Когда не получается",
+      "rows": [
+        {
+          "es": "Hoy **no puedo** trabajar.",
+          "ru": "Сегодня я не могу работать.",
+          "ipa": "ˈoj no ˈpwedo tɾabaˈxaɾ"
+        },
+        {
+          "es": "**No quiero** trabajar ahora.",
+          "ru": "Я не хочу работать сейчас.",
+          "ipa": "no ˈkjeɾo tɾabaˈxaɾ aˈoɾa"
+        },
+        {
+          "es": "**No necesito** descansar.",
+          "ru": "Мне не нужно отдыхать.",
+          "ipa": "no neθeˈsito deskanˈsaɾ"
+        },
+        {
+          "es": "Ahora **no puedo** hablar.",
+          "ru": "Сейчас я не могу поговорить.",
+          "ipa": "aˈoɾa no ˈpwedo aˈblaɾ"
+        }
+      ],
+      "notes": [
+        "«Hoy no puedo trabajar. 🔊 No quiero trabajar ahora. 🔊 «Не могу» и «не хочу» — разные вещи, выбираем по смыслу.»",
+        "«No necesito descansar — мне не нужно отдыхать. 🔊 Это значит, что необходимости нет, а не что отдыхать нельзя.»",
+        "«Ahora no puedo hablar. 🔊 Слово ahora можем поставить в начало или в конец: no puedo hablar ahora — смысл тот же.»",
+        "«Вспомните то, чего вы сейчас не хотите или не можете делать. Скажите одну фразу с no quiero или no puedo.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Спрашиваем собеседника",
+      "hint": "От «я хочу» к «ты хочешь» и короткому ответу",
+      "notes": [
+        "«О себе уже сказали. Теперь обратимся к одному человеку на «ты»: вместо «я хочу» нам понадобится «ты хочешь».»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Теперь о собеседнике",
+      "rows": [
+        {
+          "es": "**Quieres** hablar español.",
+          "ru": "Ты хочешь говорить по-испански.",
+          "ipa": "ˈkjeɾes aˈblaɾ espaˈɲol"
+        },
+        {
+          "es": "**Puedes** trabajar mañana.",
+          "ru": "Ты можешь работать завтра.",
+          "ipa": "ˈpwedes tɾabaˈxaɾ maˈɲana"
+        },
+        {
+          "es": "**Necesitas** descansar.",
+          "ru": "Тебе нужно отдохнуть.",
+          "ipa": "neθeˈsitas deskanˈsaɾ"
+        }
+      ],
+      "notes": [
+        "«Quiero — я хочу, quieres — ты хочешь. Quieres hablar español. 🔊 Меняется только первое слово, hablar остаётся как есть.»",
+        "«Puedo — я могу, puedes — ты можешь. Puedes trabajar mañana. 🔊 Ударение в quieres и puedes на первый слог.»",
+        "«Necesito — мне нужно, necesitas — тебе нужно. Necesitas descansar. 🔊 Ударение по-прежнему на si.»",
+        "«В этих трёх моделях форма первого глагола уже показывает, о ком речь. Отдельное слово «ты» тоже можно не говорить.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Как задать вопрос",
+      "pattern": [
+        "¿",
+        "quieres / puedes / necesitas",
+        "+",
+        "инфинитив",
+        "?"
+      ],
+      "text": "Слова остаются на месте, меняется интонация.",
+      "examples": [
+        {
+          "es": "¿**Quieres** descansar?",
+          "ru": "Ты хочешь отдохнуть?"
+        },
+        {
+          "es": "¿**Necesitas** trabajar hoy?",
+          "ru": "Тебе нужно работать сегодня?"
+        },
+        {
+          "es": "¿**No puedes** hablar?",
+          "ru": "Ты не можешь поговорить?"
+        }
+      ],
+      "notes": [
+        "«Как и по-русски, можно превратить утверждение в вопрос интонацией. Quieres descansar — ты хочешь отдохнуть. ¿Quieres descansar? 🔊»",
+        "«¿Necesitas trabajar hoy? 🔊 Порядок слов остаётся тем же. С no — тоже: ¿No puedes hablar? 🔊»",
+        "«В испанском два вопросительных знака: перевёрнутый в начале и обычный в конце. По первому сразу видно, где начинается вопрос.»",
+        "«Если знаете английский: в этих испанских вопросах не нужно отдельного do. Меняем интонацию — и можно спрашивать.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Вопрос и ответ",
+      "rows": [
+        {
+          "es": "¿Quieres practicar?",
+          "ru": "Ты хочешь практиковаться?",
+          "ipa": "ˈkjeɾes pɾaktiˈkaɾ"
+        },
+        {
+          "es": "**Sí**, quiero practicar.",
+          "ru": "Да, я хочу практиковаться.",
+          "ipa": "ˈsi ˈkjeɾo pɾaktiˈkaɾ"
+        },
+        {
+          "es": "¿Puedes hablar ahora?",
+          "ru": "Ты можешь поговорить сейчас?",
+          "ipa": "ˈpwedes aˈblaɾ aˈoɾa"
+        },
+        {
+          "es": "Ahora **no puedo**.",
+          "ru": "Сейчас не могу.",
+          "ipa": "aˈoɾa no ˈpwedo"
+        }
+      ],
+      "notes": [
+        "«¿Quieres practicar? — Sí, quiero practicar. 🔊 Sí — да. Ударение обозначено знаком над í.»",
+        "«¿Puedes hablar ahora? — Ahora no puedo. 🔊 Короткий ответ понятен: спрашивали о разговоре, поэтому hablar можно не повторять.»",
+        "«Так же можно коротко ответить quiero, puedo или necesito, если из вопроса понятно, о каком действии речь.»",
+        "«Ответьте мне про себя: ¿Quieres practicar? 🔊 Скажите «да, хочу» или «не хочу» с нужной формой глагола.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Да и нет",
+      "rows": [
+        {
+          "es": "¿Necesitas descansar?",
+          "ru": "Тебе нужно отдохнуть?",
+          "ipa": "neθeˈsitas deskanˈsaɾ"
+        },
+        {
+          "es": "**No**, no necesito descansar.",
+          "ru": "Нет, мне не нужно отдыхать.",
+          "ipa": "no no neθeˈsito deskanˈsaɾ"
+        },
+        {
+          "es": "**Sí**, necesito descansar.",
+          "ru": "Да, мне нужно отдохнуть.",
+          "ipa": "ˈsi neθeˈsito deskanˈsaɾ"
+        }
+      ],
+      "notes": [
+        "«¿Necesitas descansar? 🔊 Можно ответить: no, no necesito descansar. 🔊 Первое no — отдельный ответ «нет», второе — «не» перед глаголом.»",
+        "«Если отдых нужен: sí, necesito descansar. 🔊 Вопрос тот же, а ответ выбираете вы.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Соединяем мысли",
+      "hint": "Y — и, pero — но",
+      "notes": [
+        "«Теперь соединим две мысли. Например, хочется отдохнуть, а работа не ждёт. Здесь пригодятся «и» и «но».»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "И или но",
+      "pattern": [
+        "мысль",
+        "+",
+        "y / pero",
+        "+",
+        "мысль"
+      ],
+      "text": "Y — «и», pero — «но».",
+      "examples": [
+        {
+          "es": "Puedo hablar **y** quiero practicar.",
+          "ru": "Я могу говорить и хочу практиковаться."
+        },
+        {
+          "es": "Necesito trabajar, **pero** quiero descansar.",
+          "ru": "Мне нужно работать, но я хочу отдохнуть."
+        }
+      ],
+      "notes": [
+        "«Y — и, читается как и. Puedo hablar y quiero practicar. 🔊 Соединяем две мысли.»",
+        "«Pero — но, ударение на первый слог. Necesito trabajar, pero quiero descansar. 🔊 Здесь желания и дела расходятся.»",
+        "«С y можно соединить и два действия после одного глагола: хочу говорить и практиковаться. Сейчас посмотрим на такие фразы.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Уже несколько мыслей",
+      "rows": [
+        {
+          "es": "Quiero hablar **y** practicar.",
+          "ru": "Я хочу говорить и практиковаться.",
+          "ipa": "ˈkjeɾo aˈblaɾ i pɾaktiˈkaɾ"
+        },
+        {
+          "es": "Quiero hablar, **pero** no puedo.",
+          "ru": "Я хочу поговорить, но не могу.",
+          "ipa": "ˈkjeɾo aˈblaɾ ˈpeɾo no ˈpwedo"
+        },
+        {
+          "es": "Hoy no puedo, **pero** mañana sí.",
+          "ru": "Сегодня не могу, но завтра могу.",
+          "ipa": "ˈoj no ˈpwedo ˈpeɾo maˈɲana ˈsi"
+        }
+      ],
+      "notes": [
+        "«Quiero hablar y practicar. 🔊 Оба действия относятся к quiero, и оба остаются в начальной форме.»",
+        "«Quiero hablar, pero no puedo. 🔊 Не повторяем hablar: из первой части понятно, чего не могу.»",
+        "«Hoy no puedo, pero mañana sí. 🔊 Действие известно из разговора, а sí здесь заменяет повтор «завтра могу».»",
+        "«А теперь скажите про себя: чего хочется и что нужно сделать? Начните с quiero, добавьте pero и закончите с necesito.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Практика",
+      "hint": "Фраза по-русски → пауза → скажите вслух по-испански",
+      "notes": [
+        "«Теперь практика. Вы видите фразу по-русски — пока идёт полоска, скажите её вслух по-испански. Потом появится ответ. Не бойтесь ошибиться: главное — говорить.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Хочу, могу, нужно",
+      "phrase": {
+        "ru": "Я хочу выучить испанский.",
+        "es": "Quiero aprender español."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Хочу, могу, нужно",
+      "phrase": {
+        "ru": "Я хочу попробовать.",
+        "es": "Quiero probar."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Хочу, могу, нужно",
+      "phrase": {
+        "ru": "Я могу улучшить свой испанский.",
+        "es": "Puedo mejorar mi español."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Хочу, могу, нужно",
+      "phrase": {
+        "ru": "Я могу работать завтра.",
+        "es": "Puedo trabajar mañana.",
+        "alternatives": [
+          "Mañana puedo trabajar."
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Хочу, могу, нужно",
+      "phrase": {
+        "ru": "Мне нужно искать работу.",
+        "es": "Necesito buscar trabajo."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Хочу, могу, нужно",
+      "phrase": {
+        "ru": "Мне нужно практиковаться сегодня.",
+        "es": "Necesito practicar hoy.",
+        "alternatives": [
+          "Hoy necesito practicar."
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Хочу, могу, нужно",
+      "phrase": {
+        "ru": "Я не хочу работать сейчас.",
+        "es": "No quiero trabajar ahora.",
+        "alternatives": [
+          "Ahora no quiero trabajar."
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Хочу, могу, нужно",
+      "phrase": {
+        "ru": "Сегодня я не могу отдохнуть.",
+        "es": "Hoy no puedo descansar.",
+        "alternatives": [
+          "No puedo descansar hoy."
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Хочу, могу, нужно",
+      "phrase": {
+        "ru": "Завтра мне не нужно работать.",
+        "es": "Mañana no necesito trabajar.",
+        "alternatives": [
+          "No necesito trabajar mañana."
+        ]
+      },
+      "notes": [
+        "«Мне не нужно — no necesito. Отрицание ставим перед первым глаголом.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Вопросы и ответы",
+      "phrase": {
+        "ru": "Ты хочешь говорить по-испански?",
+        "es": "¿Quieres hablar español?"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вопросы и ответы",
+      "phrase": {
+        "ru": "Ты можешь работать сегодня?",
+        "es": "¿Puedes trabajar hoy?",
+        "alternatives": [
+          "¿Hoy puedes trabajar?"
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вопросы и ответы",
+      "phrase": {
+        "ru": "Тебе нужно искать работу?",
+        "es": "¿Necesitas buscar trabajo?"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вопросы и ответы",
+      "phrase": {
+        "ru": "Ты не хочешь попробовать?",
+        "es": "¿No quieres probar?"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вопросы и ответы",
+      "phrase": {
+        "ru": "Ты не можешь работать завтра?",
+        "es": "¿No puedes trabajar mañana?",
+        "alternatives": [
+          "¿Mañana no puedes trabajar?"
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вопросы и ответы",
+      "phrase": {
+        "ru": "Тебе не нужно работать сегодня?",
+        "es": "¿No necesitas trabajar hoy?",
+        "alternatives": [
+          "¿Hoy no necesitas trabajar?"
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вопросы и ответы",
+      "phrase": {
+        "ru": "Ты хочешь путешествовать? — Да, хочу путешествовать.",
+        "es": "¿Quieres viajar? — Sí, quiero viajar."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вопросы и ответы",
+      "phrase": {
+        "ru": "Ты можешь поговорить сейчас? — Сейчас не могу.",
+        "es": "¿Puedes hablar ahora? — Ahora no puedo."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Вопросы и ответы",
+      "phrase": {
+        "ru": "Тебе нужно отдохнуть? — Нет, мне не нужно отдыхать.",
+        "es": "¿Necesitas descansar? — No, no necesito descansar."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Я могу немного поговорить.",
+        "es": "Puedo hablar un poco."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Я хочу путешествовать и отдыхать.",
+        "es": "Quiero viajar y descansar."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Мне нужно работать, но я хочу отдохнуть.",
+        "es": "Necesito trabajar, pero quiero descansar."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Сейчас я не могу, но завтра могу.",
+        "es": "Ahora no puedo, pero mañana puedo.",
+        "alternatives": [
+          "Ahora no puedo, pero mañana sí."
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Я хочу путешествовать, но мне нужно работать.",
+        "es": "Quiero viajar, pero necesito trabajar."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Сегодня я не могу практиковаться.",
+        "es": "Hoy no puedo practicar.",
+        "alternatives": [
+          "No puedo practicar hoy."
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Завтра я хочу поискать работу.",
+        "es": "Mañana quiero buscar trabajo.",
+        "alternatives": [
+          "Quiero buscar trabajo mañana."
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Я хочу улучшить свой испанский.",
+        "es": "Quiero mejorar mi español."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Я хочу попробовать, но сейчас не могу.",
+        "es": "Quiero probar, pero ahora no puedo.",
+        "alternatives": [
+          "Quiero probar, pero no puedo ahora."
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Ты хочешь попробовать? — Да, но мне нужно работать.",
+        "es": "¿Quieres probar? — Sí, pero necesito trabajar."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Ты можешь немного поговорить сейчас? — Да, могу.",
+        "es": "¿Puedes hablar un poco ahora? — Sí, puedo."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Тебе нужно работать завтра? — Нет, завтра я могу отдыхать.",
+        "es": "¿Necesitas trabajar mañana? — No, mañana puedo descansar."
+      },
+      "notes": [
+        "«А теперь остановите видео и соберите две-три свои фразы: чего хотите, что можете и что нужно. Соедините хотя бы две мысли с y или pero.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Мини-диалог",
+      "notes": [
+        "«А теперь послушаем, как Ана и Карлос договариваются о практике испанского. Все слова вы уже знаете.»",
+        "«Ана — учительница испанского, Карлос — её друг. Он хочет практиковаться, но сегодня ему ещё нужно поработать.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Немного практики",
+      "lines": [
+        {
+          "speaker": "ana",
+          "es": "¿**Quieres** practicar español ahora?",
+          "ru": "Ты хочешь практиковаться в испанском сейчас?"
+        },
+        {
+          "speaker": "carlos",
+          "es": "**Quiero** practicar, pero **necesito** trabajar.",
+          "ru": "Я хочу практиковаться, но мне нужно работать."
+        },
+        {
+          "speaker": "ana",
+          "es": "¿**Puedes** hablar un poco?",
+          "ru": "Ты можешь немного поговорить?"
+        },
+        {
+          "speaker": "carlos",
+          "es": "Sí, **puedo** hablar un poco.",
+          "ru": "Да, я могу немного поговорить."
+        }
+      ],
+      "notes": [
+        "🔊 Проиграть диалог целиком, потом по репликам.",
+        "«Карлос не отказывается совсем: на небольшой разговор время есть. Слышите знакомые quiero, necesito и puedo?»",
+        "«¿Puedes hablar un poco? — вопрос Аны. Sí, puedo hablar un poco — ответ Карлоса. 🔊 Меняется только первый глагол.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Немного практики",
+      "lines": [
+        {
+          "speaker": "ana",
+          "es": "¿**Quieres probar**?",
+          "ru": "Ты хочешь попробовать?"
+        },
+        {
+          "speaker": "carlos",
+          "es": "Sí, **quiero mejorar** mi español.",
+          "ru": "Да, я хочу улучшить свой испанский."
+        },
+        {
+          "speaker": "ana",
+          "es": "¿**Puedes** practicar mañana?",
+          "ru": "Ты можешь практиковаться завтра?"
+        },
+        {
+          "speaker": "carlos",
+          "es": "Sí, mañana **puedo** practicar.",
+          "ru": "Да, завтра я могу практиковаться."
+        }
+      ],
+      "notes": [
+        "«Ана предлагает попробовать короткую практику. Карлос объясняет, чего хочет добиться: mejorar mi español — улучшить свой испанский.»",
+        "«Потом они договариваются продолжить завтра. Весь разговор получился из тех слов и форм, которые мы разобрали сегодня.»"
+      ]
+    },
+    {
+      "type": "final",
+      "title": "Теперь вы умеете",
+      "bullets": [
+        "Говорить о желаниях: quiero + инфинитив",
+        "Говорить о возможности и необходимости: puedo, necesito",
+        "Отрицать: no quiero, no puedo, no necesito",
+        "Спрашивать и отвечать: ¿puedes…? — sí, puedo",
+        "Соединять мысли: y — и, pero — но"
+      ],
+      "nextTitle": "Следующий урок",
+      "nextText": "Урок 16: числа до 1000 и цены — ¿cuánto cuesta?",
+      "outro": "¡Hasta luego!",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Теперь вы можете выразить желание, возможность и необходимость, задать вопрос и связать две мысли.»",
+        "«Попробуйте сегодня сказать вслух три фразы о себе. Используйте только те действия, которые подходят вам.»",
+        "«Если эти основы для вас новые, пройдите A0: там мы постепенно разберём чтение, другие формы глаголов и устройство предложений.»",
+        "«Если основы знакомы, продолжайте A1. В следующем уроке — числа до тысячи и цены: научимся спрашивать, сколько что стоит.»",
+        "«И фраза для прощания: hasta luego — до встречи. 🔊 В hasta буква h не читается. ¡Hasta luego!»"
+      ]
+    }
+  ]
+}

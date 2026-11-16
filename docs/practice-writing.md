@@ -227,7 +227,7 @@ outro: ¡Hasta luego!
 
 ## 8. Сборка JSON
 
-`/lesson pN` — по разделу «Как собрать урок из сценария» в `CLAUDE.md`,
+`/lesson pN` — по разделу «Как собрать урок из сценария» в `AGENTS.md`,
 с отличиями:
 
 - файлы: `scenarios/practice-NN.md` → `lessons/practice-NN.json`;

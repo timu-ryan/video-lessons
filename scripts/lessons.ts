@@ -18,9 +18,9 @@ const PRACTICE_PATTERN = /practice-(\d+)\.json$/
 /** Сквозные номера уроков по уровням — из docs/course-plan.md. */
 export const LEVEL_RANGES: Partial<Record<Level, { first: number; last: number }>> = {
   A0: { first: 1, last: 14 },
-  A1: { first: 15, last: 39 },
-  A2: { first: 40, last: 64 },
-  B1: { first: 65, last: 84 },
+  A1: { first: 15, last: 40 },
+  A2: { first: 41, last: 65 },
+  B1: { first: 66, last: 85 },
 }
 
 export interface LessonFile {

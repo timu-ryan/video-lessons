@@ -18,7 +18,7 @@ description: "Собирает JSON урока испанского из гот�
 Номер дополни ведущим нулём до двух цифр: сценарий `scenarios/lesson-NN.md`,
 результат `lessons/lesson-NN.json`.
 
-Действуй строго по разделу «Как собрать урок из сценария» в `CLAUDE.md`:
+Действуй строго по разделу «Как собрать урок из сценария» в `AGENTS.md`:
 сверка с планом, перенос без изменения содержания, `ipa`,
 `npm run lessons:validate`, `npm run vocab:build`, `npm run vocab:check -- NN`,
 `npm run check:slides -- --lesson=N`, затем краткий отчёт.
