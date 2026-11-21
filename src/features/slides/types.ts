@@ -34,6 +34,7 @@ export interface TitleSlide extends SlideBase {
   type: 'title'
   course: string
   lessonLabel: string
+  level: string
   /** Тема по строкам: каждая — с новой строки, внутри — обычный перенос. */
   topic: string[]
   agenda?: string[]

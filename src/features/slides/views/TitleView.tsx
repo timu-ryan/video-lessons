@@ -39,6 +39,20 @@ export function TitleView({ slide }: { slide: TitleSlide }) {
         >
           {slide.lessonLabel}
         </span>
+        <span
+          style={{
+            fontSize: 34,
+            fontWeight: 800,
+            letterSpacing: '0.04em',
+            color: 'var(--level-badge)',
+            background: 'var(--level-badge-bg)',
+            border: '3px solid var(--level-badge)',
+            borderRadius: 18,
+            padding: '11px 27px',
+          }}
+        >
+          УРОВЕНЬ {slide.level}
+        </span>
       </div>
 
       <h1

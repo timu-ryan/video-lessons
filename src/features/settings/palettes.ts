@@ -29,6 +29,8 @@ type ScreenVar =
   | 'bar-2' // полоска паузы на практике
   | 'badge' // плашка «Урок N»
   | 'on-badge' // текст на ней
+  | 'level-badge' // синяя рамка и текст метки уровня
+  | 'level-badge-bg' // белый фон метки уровня
   | 'speaker-a'
   | 'speaker-b'
   | 'speaker-c'
@@ -92,6 +94,8 @@ const SAND: Theme = {
     'bar-2': 'var(--accent-2)',
     badge: 'var(--accent)',
     'on-badge': 'var(--bg)',
+    'level-badge': '#0062A8',
+    'level-badge-bg': '#FFFFFF',
     'speaker-a': '#b4471f',
     'speaker-b': '#1f6b6b',
     'speaker-c': '#6b4a8a',
@@ -145,6 +149,8 @@ const NIGHT: Theme = {
     'bar-2': 'var(--accent-2)',
     badge: 'var(--accent)',
     'on-badge': 'var(--bg)',
+    'level-badge': '#0062A8',
+    'level-badge-bg': '#FFFFFF',
     'speaker-a': '#e2643c',
     'speaker-b': '#5fb3b3',
     'speaker-c': '#b492d8',
@@ -204,6 +210,8 @@ const VINO: Theme = {
     'bar-2': V.oro,
     badge: V.vino,
     'on-badge': V.superficie,
+    'level-badge': '#0062A8',
+    'level-badge-bg': '#FFFFFF',
     'speaker-a': V.vino,
     'speaker-b': V.oroOscuro,
     'speaker-c': V.apagado,
@@ -263,6 +271,8 @@ const SOROLLA = {
     'bar-2': '#F5A524',
     badge: 'var(--accent)',
     'on-badge': '#FFFFFF',
+    'level-badge': 'var(--accent)',
+    'level-badge-bg': '#FFFFFF',
     'speaker-a': '#0077C8',
     'speaker-b': '#00796B',
     'speaker-c': '#6D4CC2',
