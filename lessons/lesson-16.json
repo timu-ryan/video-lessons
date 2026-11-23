@@ -1,0 +1,1086 @@
+{
+  "schemaVersion": 3,
+  "number": 16,
+  "level": "A1",
+  "planLesson": 2,
+  "title": "Числа до 1000 и цены",
+  "course": "Испанский с нуля",
+  "newVocabulary": [
+    {
+      "es": "cuarenta",
+      "ru": "сорок",
+      "pos": "num"
+    },
+    {
+      "es": "cincuenta",
+      "ru": "пятьдесят",
+      "pos": "num"
+    },
+    {
+      "es": "por minuto",
+      "ru": "в минуту",
+      "pos": "phrase"
+    },
+    {
+      "es": "sesenta",
+      "ru": "шестьдесят",
+      "pos": "num"
+    },
+    {
+      "es": "setenta",
+      "ru": "семьдесят",
+      "pos": "num"
+    },
+    {
+      "es": "ochenta",
+      "ru": "восемьдесят",
+      "pos": "num"
+    },
+    {
+      "es": "noventa",
+      "ru": "девяносто",
+      "pos": "num"
+    },
+    {
+      "es": "cien",
+      "ru": "сто",
+      "pos": "num"
+    },
+    {
+      "es": "ciento",
+      "ru": "сто в составных числах",
+      "pos": "num"
+    },
+    {
+      "es": "doscientos",
+      "ru": "двести",
+      "pos": "num"
+    },
+    {
+      "es": "trescientos",
+      "ru": "триста",
+      "pos": "num"
+    },
+    {
+      "es": "cuatrocientos",
+      "ru": "четыреста",
+      "pos": "num"
+    },
+    {
+      "es": "quinientos",
+      "ru": "пятьсот",
+      "pos": "num"
+    },
+    {
+      "es": "seiscientos",
+      "ru": "шестьсот",
+      "pos": "num"
+    },
+    {
+      "es": "setecientos",
+      "ru": "семьсот",
+      "pos": "num"
+    },
+    {
+      "es": "ochocientos",
+      "ru": "восемьсот",
+      "pos": "num"
+    },
+    {
+      "es": "novecientos",
+      "ru": "девятьсот",
+      "pos": "num"
+    },
+    {
+      "es": "mil",
+      "ru": "тысяча",
+      "pos": "num"
+    },
+    {
+      "es": "el número",
+      "ru": "число, номер",
+      "pos": "noun"
+    },
+    {
+      "es": "el euro",
+      "ru": "евро",
+      "pos": "noun"
+    },
+    {
+      "es": "el rublo",
+      "ru": "рубль",
+      "pos": "noun",
+      "ipa": "ˈrublo"
+    },
+    {
+      "es": "costar",
+      "ru": "стоить",
+      "pos": "verb"
+    }
+  ],
+  "newGrammar": [
+    "десятки и единицы с y: treinta y uno",
+    "cien и ciento; сотни до mil",
+    "согласование сотен с существительным: doscientos / doscientas",
+    "uno перед существительным: treinta y un euros, treinta y una preguntas",
+    "годы и чтение номера телефона",
+    "вопрос о цене: ¿cuánto cuesta…? / ¿cuánto cuestan…?"
+  ],
+  "speakers": {
+    "ana": "Ana",
+    "carlos": "Carlos"
+  },
+  "tableHeaders": {
+    "es": "Испанский",
+    "ru": "Перевод"
+  },
+  "practiceGroups": [
+    {
+      "name": "Числа в знакомых фразах"
+    },
+    {
+      "name": "Цены и большие числа"
+    },
+    {
+      "name": "Всё вместе"
+    }
+  ],
+  "slides": [
+    {
+      "type": "title",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Привет! В прошлом уроке мы выбирали квартиру побольше и подешевле. Сегодня сможем спросить, сколько она стоит.»",
+        "«Числа до тридцати мы разобрали в уроке 13. Теперь дойдём до тысячи и научимся собирать большие числа из знакомых частей.»",
+        "«После урока вы сможете назвать цену, возраст, год и номер телефона. И понять, какая сумма звучит в ответе.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "От тридцати до ста",
+      "hint": "Десятки + y + единицы: treinta y uno",
+      "notes": [
+        "«Начнём с тридцати одного. До тридцати числа уже знакомы, а дальше появляется удобная модель.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Десятки и единицы",
+      "examples": [
+        {
+          "es": "Tengo **treinta y dos** años.",
+          "ru": "Мне тридцать два года."
+        },
+        {
+          "es": "Necesito **treinta y nueve** sillas.",
+          "ru": "Мне нужны тридцать девять стульев."
+        }
+      ],
+      "pattern": [
+        "десятки",
+        "+",
+        "y",
+        "+",
+        "единицы"
+      ],
+      "text": "В составных числах от 31 до 99 соединяем десятки и единицы через y.",
+      "notes": [
+        "«Treinta — тридцать, uno — один. Тридцать один — treinta y uno. 🔊 Между десятками и единицами ставим y.»",
+        "«Tengo treinta y dos años. Necesito treinta y nueve sillas. 🔊 Y читается как и.»",
+        "«От шестнадцати до двадцати девяти — одно слово. Десятки с единицами после тридцати пишем раздельно: treinta y uno.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Новые десятки",
+      "rows": [
+        {
+          "es": "Tengo **cuarenta** años.",
+          "ru": "Мне сорок лет.",
+          "ipa": "ˈtengo kwaˈɾenta ˈaɲos"
+        },
+        {
+          "es": "Leo **cincuenta** palabras **por minuto**.",
+          "ru": "Я читаю пятьдесят слов в минуту.",
+          "ipa": "ˈle.o θinˈkwenta paˈlabɾas poɾ miˈnuto"
+        }
+      ],
+      "notes": [
+        "«Cuarenta — сорок, cincuenta — пятьдесят. Tengo cuarenta años. 🔊»",
+        "«Por minuto — в минуту, то есть за одну минуту. Запомним это сочетание целиком.»",
+        "«Leo cincuenta palabras por minuto — я читаю пятьдесят слов в минуту. 🔊»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Новые десятки",
+      "rows": [
+        {
+          "es": "Mi madre tiene **sesenta** años.",
+          "ru": "Моей маме шестьдесят лет.",
+          "ipa": "mi ˈmadɾe ˈtjene seˈsenta ˈaɲos"
+        },
+        {
+          "es": "Necesito **setenta** sillas.",
+          "ru": "Мне нужны семьдесят стульев.",
+          "ipa": "neθeˈsito seˈtenta ˈsijas"
+        },
+        {
+          "es": "Vendo **ochenta** libros.",
+          "ru": "Я продаю восемьдесят книг.",
+          "ipa": "ˈbendo oˈtʃenta ˈlibɾos"
+        }
+      ],
+      "notes": [
+        "«Sesenta — шестьдесят: mi madre tiene sesenta años. 🔊 Setenta — семьдесят: necesito setenta sillas. 🔊 Слушайте середину слова.»",
+        "«Ochenta — восемьдесят. Vendo ochenta libros. 🔊 Ch читается как ч. Vendo — «я продаю», как в уроке 10.»",
+        "«Попробуйте собрать сорок пять и семьдесят восемь: cuarenta y cinco, setenta y ocho. 🔊 Десятки, y, единицы.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Девяносто и сто",
+      "rows": [
+        {
+          "es": "Aquí hay **noventa** casas.",
+          "ru": "Здесь девяносто домов.",
+          "ipa": "aˈki ˈaj noˈbenta ˈkasas"
+        },
+        {
+          "es": "El colegio tiene **cien** niños.",
+          "ru": "В школе сто детей.",
+          "ipa": "el koˈlexjo ˈtjene ˈθjen ˈniɲos"
+        }
+      ],
+      "notes": [
+        "«Noventa — девяносто. Aquí hay noventa casas. 🔊 Hay — что-то где-то есть, как в уроке 12.»",
+        "«Cien — сто. El colegio tiene cien niños. 🔊 Буквально «у школы есть сто детей». Так можно назвать число учеников.»",
+        "«В cien буква c перед i в Испании даёт межзубный звук, как в английском think.»",
+        "«Ровно сто — cien. А если после ста идут десятки или единицы, форма будет другой. Сейчас её покажу.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Сотни и тысяча",
+      "hint": "Cien — 100; ciento… — от 101 до 199",
+      "notes": [
+        "«Десятки готовы. Добавим сотни: сначала разберём разницу между cien и ciento, затем остальные числа.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Евро и рубли",
+      "rows": [
+        {
+          "es": "Tengo diez **euros**.",
+          "ru": "У меня десять евро.",
+          "ipa": "ˈtengo ˈdjeθ ˈeuɾos"
+        },
+        {
+          "es": "Tengo cien **rublos**.",
+          "ru": "У меня сто рублей.",
+          "ipa": "ˈtengo ˈθjen ˈrublos"
+        }
+      ],
+      "notes": [
+        "«Сотни пригодятся для денег. Сначала два слова: un euro — один евро, diez euros — десять евро. Tengo diez euros. 🔊»",
+        "«В русском «евро» не меняется, а по-испански во множественном числе добавляем -s: euros. Euro — мужского рода.»",
+        "«Un rublo — один рубль, cien rublos — сто рублей. Tengo cien rublos. 🔊 Rublo тоже мужского рода.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Сто и ещё немного",
+      "examples": [
+        {
+          "es": "Necesito **cien** euros.",
+          "ru": "Мне нужно сто евро."
+        },
+        {
+          "es": "Tengo **ciento tres** euros.",
+          "ru": "У меня сто три евро."
+        },
+        {
+          "es": "Hay **ciento treinta y seis** casas.",
+          "ru": "Есть сто тридцать шесть домов."
+        }
+      ],
+      "pattern": [
+        "ciento",
+        "+",
+        "десятки и единицы"
+      ],
+      "text": "100 — cien; числа 101–199 начинаются с ciento.",
+      "notes": [
+        "«Necesito cien euros — мне нужно ровно сто евро. Tengo ciento tres euros — у меня сто три евро. 🔊 Сравните cien и ciento.»",
+        "«Ciento — сто в составном числе. Hay ciento treinta y seis casas. 🔊 Здесь к сотне добавили ещё treinta y seis.»",
+        "«После ciento сразу идёт остаток числа. Y ставим только между десятками и единицами: treinta y seis.»",
+        "«По-русски «сто» не меняется, и хочется всюду оставить cien. Но сто три — ciento tres, с -to.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "От ста до четырёхсот",
+      "rows": [
+        {
+          "es": "Tengo **cien** euros.",
+          "ru": "У меня сто евро.",
+          "ipa": "ˈtengo ˈθjen ˈeuɾos"
+        },
+        {
+          "es": "Gano **ciento** veinte euros.",
+          "ru": "Я зарабатываю сто двадцать евро.",
+          "ipa": "ˈgano ˈθjento ˈbeinte ˈeuɾos"
+        },
+        {
+          "es": "Necesito **doscientos** euros.",
+          "ru": "Мне нужно двести евро.",
+          "ipa": "neθeˈsito dosˈθjentos ˈeuɾos"
+        }
+      ],
+      "notes": [
+        "«Tengo cien euros. Gano ciento veinte euros. 🔊 Ровно сто — cien, сто двадцать — ciento veinte.»",
+        "«Doscientos — двести. Necesito doscientos euros. 🔊»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "От ста до четырёхсот",
+      "rows": [
+        {
+          "es": "Compramos **trescientos** libros.",
+          "ru": "Мы покупаем триста книг.",
+          "ipa": "komˈpɾamos tɾesˈθjentos ˈlibɾos"
+        },
+        {
+          "es": "Hay **cuatrocientos** coches.",
+          "ru": "Есть четыреста машин.",
+          "ipa": "ˈaj kwatɾoˈθjentos ˈkotʃes"
+        }
+      ],
+      "notes": [
+        "«Trescientos — триста. Compramos trescientos libros. 🔊»",
+        "«Представьте, что покупаем книги для библиотеки. Или считаем машины на большой стоянке: hay cuatrocientos coches. 🔊»",
+        "«Cuatrocientos — четыреста. В этих сотнях легко узнать dos, tres и cuatro.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "От пятисот до девятисот",
+      "rows": [
+        {
+          "es": "Recibo **quinientos** euros.",
+          "ru": "Я получаю пятьсот евро.",
+          "ipa": "reˈθibo kiˈnjentos ˈeuɾos"
+        },
+        {
+          "es": "Gano **seiscientos** euros.",
+          "ru": "Я зарабатываю шестьсот евро.",
+          "ipa": "ˈgano seisˈθjentos ˈeuɾos"
+        },
+        {
+          "es": "Aquí hay **setecientos** libros.",
+          "ru": "Здесь семьсот книг.",
+          "ipa": "aˈki ˈaj seteˈθjentos ˈlibɾos"
+        }
+      ],
+      "notes": [
+        "«Quinientos — пятьсот. Recibo quinientos euros. 🔊 Здесь начало не как у cinco: quinientos.»",
+        "«Seiscientos — шестьсот: gano seiscientos euros. 🔊»",
+        "«Setecientos — семьсот: aquí hay setecientos libros. 🔊»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "От пятисот до девятисот",
+      "rows": [
+        {
+          "es": "¿Tienes **ochocientos** euros?",
+          "ru": "У тебя есть восемьсот евро?",
+          "ipa": "ˈtjenes otʃoˈθjentos ˈeuɾos"
+        },
+        {
+          "es": "¿Ganas **novecientos** euros?",
+          "ru": "Ты зарабатываешь девятьсот евро?",
+          "ipa": "ˈganas nobeˈθjentos ˈeuɾos"
+        }
+      ],
+      "notes": [
+        "«Ochocientos — восемьсот: ¿tienes ochocientos euros? 🔊»",
+        "«Novecientos — девятьсот: ¿ganas novecientos euros? 🔊»",
+        "«Особенно запомните три формы: quinientos, setecientos, novecientos. 🔊 Они не складываются из cinco, siete и nueve без изменений.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Тысяча и род сотен",
+      "rows": [
+        {
+          "es": "Necesito **mil** euros.",
+          "ru": "Мне нужна тысяча евро.",
+          "ipa": "neθeˈsito ˈmil ˈeuɾos"
+        },
+        {
+          "es": "Leo **doscientas** palabras.",
+          "ru": "Я читаю двести слов.",
+          "ipa": "ˈle.o dosˈθjentas paˈlabɾas"
+        },
+        {
+          "es": "Hay **novecientas** casas.",
+          "ru": "Есть девятьсот домов.",
+          "ipa": "ˈaj nobeˈθjentas ˈkasas"
+        },
+        {
+          "es": "Tenemos **quinientas** revistas.",
+          "ru": "У нас пятьсот журналов.",
+          "ipa": "teˈnemos kiˈnjentas reˈbistas"
+        }
+      ],
+      "notes": [
+        "«Mil — тысяча. Necesito mil euros. 🔊 Для числа тысяча достаточно mil, без un.»",
+        "«Сотни от двухсот до девятисот согласуются с существительным: doscientos euros, но doscientas palabras. 🔊»",
+        "«Palabra, casa, revista — женского рода. Поэтому doscientas palabras, novecientas casas, quinientas revistas. 🔊»",
+        "«Cien, ciento и mil по роду не меняются. А у остальных сотен выбираем -os или -as.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Собираем большое число",
+      "examples": [
+        {
+          "es": "Tengo **doscientos cuarenta y cinco** euros.",
+          "ru": "У меня двести сорок пять евро."
+        },
+        {
+          "es": "Hay **novecientas noventa y nueve** casas.",
+          "ru": "Есть девятьсот девяносто девять домов."
+        },
+        {
+          "es": "Quiero ganar **mil doscientos** euros.",
+          "ru": "Я хочу зарабатывать тысячу двести евро."
+        }
+      ],
+      "pattern": [
+        "сотня",
+        "+",
+        "десятки",
+        "+",
+        "y",
+        "+",
+        "единицы"
+      ],
+      "text": "Y соединяет десятки и единицы, перед десятками его нет.",
+      "notes": [
+        "«Doscientos cuarenta y cinco — двести сорок пять. 🔊 Сначала сотня, затем уже знакомое cuarenta y cinco.»",
+        "«Novecientas noventa y nueve casas. 🔊 Окончание сотни зависит от casas. А noventa y nueve остаётся как было.»",
+        "«Quiero ganar mil doscientos euros. 🔊 И за тысячу можно шагнуть той же моделью: mil doscientos — тысяча двести.»",
+        "«Выберите число от двухсот до девятисот и добавьте к нему десятки с единицами. Скажите получившееся число вслух.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Возраст, год и телефон",
+      "hint": "Те же числа в трёх повседневных ситуациях",
+      "notes": [
+        "«Теперь числа пригодятся вне списка: назовём возраст, год и номер телефона.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Называем год",
+      "examples": [
+        {
+          "es": "Es el año **mil novecientos noventa y cinco**.",
+          "ru": "Это тысяча девятьсот девяносто пятый год."
+        },
+        {
+          "es": "Es el año **mil novecientos**.",
+          "ru": "Это тысяча девятисотый год."
+        }
+      ],
+      "pattern": [
+        "el año",
+        "+",
+        "число"
+      ],
+      "text": "Номер года читаем как обычное целое число.",
+      "notes": [
+        "«Año — год, слово из урока 13. Но здесь не возраст, поэтому не tengo: es el año — это такой-то год.»",
+        "«По-русски год «девяносто пятый», а по-испански достаточно обычного числа: mil novecientos noventa y cinco. 🔊»",
+        "«Две тысячи — dos mil, без окончания -s у mil. Dos mil veintiséis — две тысячи двадцать шесть. 🔊»",
+        "«Если знаете английский: год часто делят на две части, nineteen ninety-five. По-испански здесь читаем число целиком.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Возраст и номер",
+      "rows": [
+        {
+          "es": "Tengo **treinta y cinco** años.",
+          "ru": "Мне тридцать пять лет.",
+          "ipa": "ˈtengo ˈtɾeinta i ˈθinko ˈaɲos"
+        },
+        {
+          "es": "Mi **número** es el veinte.",
+          "ru": "Мой номер: двадцать.",
+          "ipa": "mi ˈnumeɾo es el ˈbeinte"
+        },
+        {
+          "es": "Vivo en el **número** cuarenta.",
+          "ru": "Я живу в доме номер сорок.",
+          "ipa": "ˈbibo en el ˈnumeɾo kwaˈɾenta"
+        },
+        {
+          "es": "Es el año **dos mil veintiséis**.",
+          "ru": "Это две тысячи двадцать шестой год.",
+          "ipa": "es el ˈaɲo ˈdos ˈmil beintiˈseis"
+        }
+      ],
+      "notes": [
+        "«Tengo treinta y cinco años. 🔊 Модель возраста не изменилась: tener, число, años.»",
+        "«Número — число или номер, ударение на nú. Mi número es el veinte. 🔊 Представьте, что называете номер своей очереди.»",
+        "«Vivo en el número cuarenta. 🔊 Так можно назвать номер дома, если собеседник уже знает, о какой улице речь.»",
+        "«Es el año dos mil veintiséis. 🔊 Сначала dos mil, затем veintiséis. Никакого y между ними.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Номер телефона",
+      "examples": [
+        {
+          "es": "Mi teléfono es el **600 123 456**.",
+          "ru": "Мой номер телефона: 600 123 456."
+        }
+      ],
+      "pattern": [
+        "mi teléfono",
+        "+",
+        "es el",
+        "+",
+        "номер"
+      ],
+      "text": "Для тренировки называем номер по одной цифре.",
+      "notes": [
+        "«Teléfono — телефон, знакомое слово. В этой фразе называем его номер: mi teléfono es el…»",
+        "«Возьмём учебный номер: seis, cero, cero; uno, dos, tres; cuatro, cinco, seis. 🔊 Цифры можно читать по одной.»",
+        "«В разговоре цифры также объединяют в группы. Но по одной цифре тоже понятно, и все числа для этого вы уже знаете.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Телефон: по группам",
+      "examples": [
+        {
+          "es": "Seiscientos doce, treinta y cuatro, cincuenta y seis, setenta y ocho.",
+          "ru": "612 – 34 – 56 – 78."
+        }
+      ],
+      "pattern": [
+        "612",
+        "–",
+        "34",
+        "–",
+        "56",
+        "–",
+        "78"
+      ],
+      "text": "Первые три цифры вместе, остальные попарно.",
+      "notes": [
+        "«Есть и другой способ: первые три цифры читаем как одно число, остальные — попарно.»",
+        "🔊 «Seiscientos doce, treinta y cuatro, cincuenta y seis, setenta y ocho.»",
+        "«В seiscientos doce нет y: оно соединяет только десятки и единицы. А в treinta y cuatro, cincuenta y seis и setenta y ocho оно есть.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Спрашиваем о цене",
+      "hint": "Cuesta — стоит; cuestan — стоят",
+      "notes": [
+        "«Суммы мы уже называем. Теперь узнаем, как спросить точную цену и ответить: сколько стоит один предмет или несколько.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Сколько стоит?",
+      "examples": [
+        {
+          "es": "¿Cuánto **cuesta** el libro?",
+          "ru": "Сколько стоит книга?"
+        },
+        {
+          "es": "¿Cuánto **cuestan** los libros?",
+          "ru": "Сколько стоят книги?"
+        }
+      ],
+      "pattern": [
+        "¿cuánto cuesta…?",
+        "/",
+        "¿cuánto cuestan…?"
+      ],
+      "text": "Cuesta — об одном предмете; cuestan — о нескольких.",
+      "notes": [
+        "«Costar — стоить. Для цен нам нужны две формы: cuesta — стоит, cuestan — стоят. 🔊 В них вместо o появляется ue.»",
+        "«¿Cuánto cuesta el libro? ¿Cuánto cuestan los libros? 🔊 Выбираем форму по предмету, о котором спрашиваем.»",
+        "«Cuánto здесь не меняется: спрашиваем о цене. Cuántos libros — «сколько книг», а cuánto cuestan — «сколько стоят».»",
+        "«В ответе тоже cuesta или cuestan, затем сумма. Книга одна — cuesta; книг несколько — cuestan.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Называем цену",
+      "rows": [
+        {
+          "es": "costar — **Cuesta** un euro.",
+          "ru": "Стоит один евро.",
+          "ipa": "kosˈtaɾ · ˈkwesta un ˈeuɾo"
+        },
+        {
+          "es": "El libro **cuesta** quince euros.",
+          "ru": "Книга стоит пятнадцать евро.",
+          "ipa": "el ˈlibɾo ˈkwesta ˈkinθe ˈeuɾos"
+        },
+        {
+          "es": "Las sillas **cuestan** cien euros.",
+          "ru": "Стулья стоят сто евро.",
+          "ipa": "las ˈsijas ˈkwestan ˈθjen ˈeuɾos"
+        },
+        {
+          "es": "**Cuestan** cien rublos.",
+          "ru": "Они стоят сто рублей.",
+          "ipa": "ˈkwestan ˈθjen ˈrublos"
+        }
+      ],
+      "notes": [
+        "«Cuesta un euro. 🔊 О чём речь, уже понятно, поэтому предмет можно не повторять.»",
+        "«El libro cuesta quince euros. 🔊 Цена — пятнадцать евро, но книга одна: cuesta.»",
+        "«Las sillas cuestan cien euros. Cuestan cien rublos. 🔊 О нескольких предметах — cuestan.»",
+        "«Число евро не определяет форму глагола. Смотрим на то, что покупаем: один предмет или несколько.»"
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Один перед предметом",
+      "examples": [
+        {
+          "es": "Cuesta **treinta y un** euros.",
+          "ru": "Стоит тридцать один евро."
+        },
+        {
+          "es": "Cuesta **veintiún** euros.",
+          "ru": "Стоит двадцать один евро."
+        },
+        {
+          "es": "Tengo **treinta y una** revistas.",
+          "ru": "У меня тридцать один журнал."
+        }
+      ],
+      "pattern": [
+        "…uno",
+        "→",
+        "…un / …una",
+        "+",
+        "существительное"
+      ],
+      "text": "Перед мужским родом — un, перед женским — una.",
+      "notes": [
+        "«В уроке 13 было uno, но un libro и una casa. Здесь та же идея: число заканчивается на uno, а дальше стоит существительное.»",
+        "«Тридцать один само по себе — treinta y uno. Перед euros — treinta y un euros. 🔊 Слово euro мужского рода.»",
+        "«Двадцать один евро — veintiún euros. 🔊 У veintiún появляется знак ударения. А treinta y un остаётся тремя словами.»",
+        "«Revista — женского рода, поэтому treinta y una revistas. 🔊 По-русски «тридцать один журнал», а по-испански una.»"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Цена с единицей",
+      "rows": [
+        {
+          "es": "Cuesta **ciento un** euros.",
+          "ru": "Стоит сто один евро.",
+          "ipa": "ˈkwesta ˈθjento un ˈeuɾos"
+        },
+        {
+          "es": "Cuesta **ciento veintiún** euros.",
+          "ru": "Стоит сто двадцать один евро.",
+          "ipa": "ˈkwesta ˈθjento beinˈtjun ˈeuɾos"
+        },
+        {
+          "es": "Cuesta **mil** euros.",
+          "ru": "Стоит тысячу евро.",
+          "ipa": "ˈkwesta ˈmil ˈeuɾos"
+        }
+      ],
+      "notes": [
+        "«Cuesta ciento un euros. 🔊 Здесь сразу два выбора: не cien, а ciento; не uno, а un перед euros.»",
+        "«Cuesta ciento veintiún euros. 🔊 Меняем только последнюю часть, которая заканчивается на uno.»",
+        "«Cuesta mil euros. 🔊 Тысяча — просто mil. А «стоит» остаётся cuesta: говорим об одном предмете.»",
+        "«Представьте цену вещи, которую хотите купить. Назовите её с cuesta, а потом спросите цену другой вещи.»"
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Практика",
+      "hint": "Фраза по-русски → пауза → скажите вслух по-испански",
+      "notes": [
+        "«Теперь практика. Вы видите фразу по-русски — пока идёт полоска, скажите её вслух по-испански. Потом появится ответ. Не бойтесь ошибиться: главное — говорить.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Числа в знакомых фразах",
+      "phrase": {
+        "ru": "Мне тридцать пять лет.",
+        "es": "Tengo treinta y cinco años."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Числа в знакомых фразах",
+      "phrase": {
+        "ru": "Мы хотим купить сорок стульев.",
+        "es": "Queremos comprar cuarenta sillas."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Числа в знакомых фразах",
+      "phrase": {
+        "ru": "Мы читаем двести слов.",
+        "es": "Leemos doscientas palabras."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Числа в знакомых фразах",
+      "phrase": {
+        "ru": "Мне нужно выучить шестьдесят слов.",
+        "es": "Necesito aprender sesenta palabras."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Числа в знакомых фразах",
+      "phrase": {
+        "ru": "У нас есть двести евро.",
+        "es": "Tenemos doscientos euros."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Числа в знакомых фразах",
+      "phrase": {
+        "ru": "В школе сто детей.",
+        "es": "Hay cien niños en el colegio.",
+        "alternatives": [
+          "En el colegio hay cien niños."
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Числа в знакомых фразах",
+      "phrase": {
+        "ru": "Я хочу зарабатывать тысячу евро.",
+        "es": "Quiero ganar mil euros."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Числа в знакомых фразах",
+      "phrase": {
+        "ru": "Сколько тебе лет? — Мне тридцать восемь.",
+        "es": "¿Cuántos años tienes? — Tengo treinta y ocho años."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Числа в знакомых фразах",
+      "phrase": {
+        "ru": "Сколько книг в библиотеке? — Триста.",
+        "es": "¿Cuántos libros hay en la biblioteca? — Trescientos."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Цены и большие числа",
+      "phrase": {
+        "ru": "Книга стоит пятнадцать евро.",
+        "es": "El libro cuesta quince euros."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Цены и большие числа",
+      "phrase": {
+        "ru": "Сколько стоит книга?",
+        "es": "¿Cuánto cuesta el libro?"
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Цены и большие числа",
+      "phrase": {
+        "ru": "Они стоят сто рублей.",
+        "es": "Cuestan cien rublos."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Цены и большие числа",
+      "phrase": {
+        "ru": "Стулья стоят девяносто евро.",
+        "es": "Las sillas cuestan noventa euros."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Цены и большие числа",
+      "phrase": {
+        "ru": "Компьютер стоит девятьсот девяносто девять евро.",
+        "es": "El ordenador cuesta novecientos noventa y nueve euros."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Цены и большие числа",
+      "phrase": {
+        "ru": "Телефон стоит сто двадцать один евро.",
+        "es": "El teléfono cuesta ciento veintiún euros."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Цены и большие числа",
+      "phrase": {
+        "ru": "У меня есть только сто евро.",
+        "es": "Solo tengo cien euros."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Цены и большие числа",
+      "phrase": {
+        "ru": "Сколько стоят ручки? — Тридцать один евро.",
+        "es": "¿Cuánto cuestan los bolígrafos? — Treinta y un euros."
+      },
+      "notes": [
+        "«Euros — мужской род, поэтому treinta y un. Форму cuestan выбираем по bolígrafos.»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Цены и большие числа",
+      "phrase": {
+        "ru": "Сколько стоит кровать? — Пятьсот евро.",
+        "es": "¿Cuánto cuesta la cama? — Quinientos euros."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "У меня тридцать один вопрос.",
+        "es": "Tengo treinta y una preguntas."
+      },
+      "notes": [
+        "«Pregunta — женского рода, поэтому treinta y una, хотя по-русски «один вопрос».»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Я хочу компьютер, но у меня только пятьсот евро.",
+        "es": "Quiero un ordenador, pero solo tengo quinientos euros."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Завтра я собираюсь купить телефон.",
+        "es": "Mañana voy a comprar un teléfono."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Мне нужно больше работать.",
+        "es": "Necesito trabajar más.",
+        "alternatives": [
+          "Tengo que trabajar más."
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Мне нравится читать, но книга стоит сорок евро.",
+        "es": "Me gusta leer, pero el libro cuesta cuarenta euros."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Мой номер телефона — 600 123 456.",
+        "es": "Mi teléfono es el 600 123 456.",
+        "hint": "назовите по цифрам"
+      },
+      "notes": [
+        "«Говорим по цифрам: seis, cero, cero; uno, dos, tres; cuatro, cinco, seis. 🔊»"
+      ]
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Это две тысячи двадцать шестой год.",
+        "es": "Es el año dos mil veintiséis."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Твоя квартира дороже моей квартиры.",
+        "es": "Tu piso es más caro que mi piso."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "В нашей библиотеке семьсот книг.",
+        "es": "Hay setecientos libros en nuestra biblioteca.",
+        "alternatives": [
+          "En nuestra biblioteca hay setecientos libros."
+        ]
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Нам нужна квартира подешевле, потому что у нас мало денег.",
+        "es": "Necesitamos un piso más barato porque tenemos poco dinero."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Почему тебе нужны деньги? — Потому что я хочу купить книги.",
+        "es": "¿Por qué necesitas dinero? — Porque quiero comprar libros."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Сколько стоят книги? — Сто один евро.",
+        "es": "¿Cuánto cuestan los libros? — Ciento un euros."
+      }
+    },
+    {
+      "type": "practice",
+      "group": "Всё вместе",
+      "phrase": {
+        "ru": "Сколько стоит стол? — Двести евро.",
+        "es": "¿Cuánto cuesta la mesa? — Doscientos euros."
+      }
+    },
+    {
+      "type": "section",
+      "title": "Мини-диалог",
+      "notes": [
+        "«А теперь послушаем, как Ана и Карлос сравнивают цены на жильё. Все слова вы уже знаете.»",
+        "«Помните, Карлос хотел квартиру побольше и подешевле? Теперь они смотрят два объявления об аренде в центре. Цены — за месяц.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Два варианта",
+      "lines": [
+        {
+          "speaker": "ana",
+          "es": "Hay un piso **más grande** y muy bonito.",
+          "ru": "Есть квартира побольше и очень красивая."
+        },
+        {
+          "speaker": "carlos",
+          "es": "¿**Cuánto cuesta**? ¿Está en el centro?",
+          "ru": "Сколько она стоит? Она в центре?"
+        },
+        {
+          "speaker": "ana",
+          "es": "Sí, **cuesta novecientos euros**.",
+          "ru": "Да, стоит девятьсот евро."
+        },
+        {
+          "speaker": "carlos",
+          "es": "Es caro. **Solo tengo ochocientos euros**.",
+          "ru": "Она дорогая. У меня только восемьсот евро."
+        }
+      ],
+      "notes": [
+        "🔊 Проиграть диалог целиком, потом по репликам.",
+        "«Cuesta novecientos euros — цена девятьсот евро, но квартира одна. Поэтому cuesta, без -n.»",
+        "«Solo tengo ochocientos euros — у меня только восемьсот евро. 🔊 Solo из урока 6 помогает объяснить, почему вариант дорогой для Карлоса.»",
+        "«У Карлоса восемьсот евро на аренду. Первый вариант ему не подходит по цене, и Ана предлагает посмотреть другой.»"
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "Два варианта",
+      "lines": [
+        {
+          "speaker": "ana",
+          "es": "Hay un piso **más pequeño**: **setecientos cincuenta**.",
+          "ru": "Есть квартира поменьше: семьсот пятьдесят."
+        },
+        {
+          "speaker": "carlos",
+          "es": "Es **más barato**. ¿Está en el centro?",
+          "ru": "Она дешевле. Она в центре?"
+        },
+        {
+          "speaker": "ana",
+          "es": "Sí. **Podemos** visitar el piso mañana.",
+          "ru": "Да. Мы можем посмотреть квартиру завтра."
+        },
+        {
+          "speaker": "carlos",
+          "es": "¡Bien! **Vamos a visitar** el piso mañana.",
+          "ru": "Хорошо! Завтра мы посмотрим квартиру."
+        }
+      ],
+      "notes": [
+        "«Setecientos cincuenta. 🔊 Между сотней и десятками y не нужно. Понятно, что речь о цене в евро, поэтому всю фразу не повторяем.»",
+        "«Podemos visitar el piso mañana — можем посмотреть квартиру завтра. 🔊 Bien — хорошо; vamos a visitar — собираемся посмотреть, как в уроке 6.»",
+        "«Второй вариант меньше первого и дешевле. Они договариваются посмотреть его завтра; выбора квартиры и переезда пока нет.»"
+      ]
+    },
+    {
+      "type": "final",
+      "title": "Теперь вы умеете",
+      "bullets": [
+        "Собирать числа до тысячи: cuarenta y dos, quinientos, mil",
+        "Называть возраст: tengo treinta y cinco años",
+        "Называть год и номер телефона",
+        "Спрашивать цену: ¿cuánto cuesta?, ¿cuánto cuestan?",
+        "Называть сумму: cuesta ciento un euros"
+      ],
+      "nextTitle": "Следующий урок",
+      "nextText": "Урок 17: время и дни недели — ¿qué hora es?",
+      "outro": "¡Hasta luego!",
+      "notes": [
+        "🎥 КАМЕРА",
+        "«Теперь вы можете не только сказать «дороже», но и узнать цену: сколько стоит книга, телефон или квартира.»",
+        "«Назовите вслух свой возраст и номер телефона. Затем придумайте цены трём вещам и задайте вопрос о каждой.»",
+        "«В следующем уроке научимся говорить, который час, и договариваться о времени. Добавим дни недели. ¡Hasta luego!»"
+      ]
+    }
+  ]
+}

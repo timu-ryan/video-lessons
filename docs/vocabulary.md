@@ -3,7 +3,7 @@
 > Генерируется командой `npm run vocab:build`. Не редактировать вручную.
 > Готовя урок N, считайте изученным только то, что введено в уроках с номером меньше N.
 
-Уроков: 15 · слов: 276
+Уроков: 16 · слов: 298
 
 ## Урок 1 · A0-1 · Приветствие, знакомство
 
@@ -95,6 +95,12 @@
 
 **Грамматика:** сравнение: más / menos + прилагательное + que · сравнение после существительного: un piso más grande
 
+## Урок 16 · A1-2 · Числа до 1000 и цены
+
+**Слова (22):** cuarenta — сорок · cincuenta — пятьдесят · por minuto — в минуту · sesenta — шестьдесят · setenta — семьдесят · ochenta — восемьдесят · noventa — девяносто · cien — сто · ciento — сто в составных числах · doscientos — двести · trescientos — триста · cuatrocientos — четыреста · quinientos — пятьсот · seiscientos — шестьсот · setecientos — семьсот · ochocientos — восемьсот · novecientos — девятьсот · mil — тысяча · el número — число, номер · el euro — евро · el rublo — рубль · costar — стоить
+
+**Грамматика:** десятки и единицы с y: treinta y uno · cien и ciento; сотни до mil · согласование сотен с существительным: doscientos / doscientas · uno перед существительным: treinta y un euros, treinta y una preguntas · годы и чтение номера телефона · вопрос о цене: ¿cuánto cuesta…? / ¿cuánto cuestan…?
+
 ## Алфавитный указатель
 
 | es | ru | pos | урок |
@@ -152,7 +158,10 @@
 | cero | ноль | num | 13 |
 | la cerveza | пиво | noun | 10 |
 | el chino | китайский язык | noun | 2 |
+| cien | сто | num | 16 |
+| ciento | сто в составных числах | num | 16 |
 | cinco | пять | num | 13 |
+| cincuenta | пятьдесят | num | 16 |
 | claro | конечно | interj | 6 |
 | la clase | занятие, урок | noun | 8 |
 | el coche | машина | noun | 8 |
@@ -168,9 +177,12 @@
 | contento | довольный | adj | 12 |
 | contestar | отвечать | verb | 5 |
 | correr | бегать | verb | 10 |
+| costar | стоить | verb | 16 |
 | cuándo | когда | adv | 11 |
 | cuánto | сколько | pron | 11 |
+| cuarenta | сорок | num | 16 |
 | cuatro | четыре | num | 13 |
+| cuatrocientos | четыреста | num | 16 |
 | de | из | prep | 9 |
 | de nada | не за что | phrase | 1 |
 | desayunar | завтракать | verb | 4 |
@@ -188,6 +200,7 @@
 | dónde | где | adv | 11 |
 | dormir | спать | verb | 3 |
 | dos | два | num | 13 |
+| doscientos | двести | num | 16 |
 | e | и (перед i-, hi-) | conj | 2 |
 | él | он | pron | 5 |
 | ella | она | pron | 5 |
@@ -205,6 +218,7 @@
 | esta noche | сегодня вечером | phrase | 6 |
 | estar | быть, находиться | verb | 12 |
 | estudiar | учиться, учить | verb | 2 |
+| el euro | евро | noun | 16 |
 | fácil | лёгкий | adj | 9 |
 | la familia | семья | noun | 13 |
 | fatal | ужасно, очень плохо | adv | 12 |
@@ -257,6 +271,7 @@
 | la mesa | стол | noun | 8 |
 | el metro | метро | noun | 12 |
 | mi | мой, моя | adj | 13 |
+| mil | тысяча | num | 16 |
 | Moscú | Москва | noun | 9 |
 | mucho | много | adv | 2 |
 | el museo | музей | noun | 12 |
@@ -270,11 +285,16 @@
 | nos gusta | нам нравится | phrase | 7 |
 | nosotras | мы (о женщинах) | pron | 5 |
 | nosotros | мы | pron | 5 |
+| novecientos | девятьсот | num | 16 |
+| noventa | девяносто | num | 16 |
 | nuestro | наш | adj | 13 |
 | nueve | девять | num | 13 |
 | nuevo | новый | adj | 9 |
+| el número | число, номер | noun | 16 |
 | o | или | conj | 4 |
+| ochenta | восемьдесят | num | 16 |
 | ocho | восемь | num | 13 |
+| ochocientos | восемьсот | num | 16 |
 | ocupado | занятый | adj | 12 |
 | la oficina | офис | noun | 11 |
 | once | одиннадцать | num | 13 |
@@ -298,6 +318,7 @@
 | poco | мало | adv | 2 |
 | poder | мочь | verb | 3 |
 | por favor | пожалуйста (просьба) | phrase | 1 |
+| por minuto | в минуту | phrase | 16 |
 | por qué | почему | adv | 11 |
 | porque | потому что | conj | 11 |
 | practicar | практиковать, заниматься | verb | 3 |
@@ -313,15 +334,21 @@
 | querer | хотеть | verb | 3 |
 | quién | кто | pron | 11 |
 | quince | пятнадцать | num | 13 |
+| quinientos | пятьсот | num | 16 |
 | recibir | получать | verb | 10 |
 | regresar | возвращаться | verb | 6 |
 | regular | так себе | adv | 12 |
 | la respuesta | ответ | noun | 11 |
 | la revista | журнал | noun | 10 |
+| el rublo | рубль | noun | 16 |
 | Rusia | Россия | noun | 9 |
 | el ruso | русский язык | noun | 2 |
 | seis | шесть | num | 13 |
+| seiscientos | шестьсот | num | 16 |
 | ser | быть | verb | 9 |
+| sesenta | шестьдесят | num | 16 |
+| setecientos | семьсот | num | 16 |
+| setenta | семьдесят | num | 16 |
 | sí | да | adv | 2 |
 | siete | семь | num | 13 |
 | la silla | стул | noun | 8 |
@@ -346,6 +373,7 @@
 | trece | тринадцать | num | 13 |
 | treinta | тридцать | num | 13 |
 | tres | три | num | 13 |
+| trescientos | триста | num | 16 |
 | tú | ты | pron | 2 |
 | tu | твой, твоя | adj | 13 |
 | la universidad | университет | noun | 11 |
