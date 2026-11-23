@@ -89,9 +89,11 @@ export function renderCompare(title: string, left: CompareSideSource, right: Com
 <div class="compare">${side(left)}${side(right)}</div></div>`
 }
 
-/** «Урок 5» или «Практика 1»: у практики своя нумерация. */
+/** Урок — по номеру внутри уровня; после A0 указываем уровень. У практики своя нумерация. */
 export const lessonLabel = (lesson: LessonSource): string =>
-  `${lesson.kind === 'practice' ? 'Практика' : 'Урок'} ${lesson.number}`
+  lesson.kind === 'practice'
+    ? `Практика ${lesson.number}`
+    : `Урок ${lesson.planLesson}${lesson.level === 'A0' ? '' : ` (${lesson.level})`}`
 
 /** Шапка первой страницы: курс, «Урок N. Тема», строка под заголовком. */
 export const renderHeader = (lesson: LessonSource, meta: string): string =>

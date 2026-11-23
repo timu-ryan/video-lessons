@@ -40,6 +40,67 @@
       "name": "Всё вместе"
     }
   ],
+  "summary": {
+    "phrases": [
+      {
+        "es": "Mi piso es **más pequeño**.",
+        "ru": "Моя квартира меньше.",
+        "ipa": "mi ˈpiso es mas peˈkeɲo"
+      },
+      {
+        "es": "Mi casa es **más barata**.",
+        "ru": "Мой дом дешевле.",
+        "ipa": "mi ˈkasa es mas baˈɾata"
+      },
+      {
+        "es": "Mi piso es **más caro que** tu piso.",
+        "ru": "Моя квартира дороже твоей квартиры.",
+        "ipa": "mi ˈpiso es mas ˈkaɾo ke tu ˈpiso"
+      },
+      {
+        "es": "Mi piso es **menos caro**.",
+        "ru": "Моя квартира менее дорогая.",
+        "ipa": "mi ˈpiso es ˈmenos ˈkaɾo"
+      },
+      {
+        "es": "**Quiero** un piso más grande.",
+        "ru": "Я хочу квартиру побольше.",
+        "ipa": "ˈkjeɾo un ˈpiso mas ˈgɾande"
+      },
+      {
+        "es": "Necesito un libro **más fácil**.",
+        "ru": "Мне нужна книга попроще.",
+        "ipa": "neθeˈsito un ˈlibɾo mas ˈfaθil"
+      }
+    ],
+    "rule": "**más / menos + прилагательное + que** — «более / менее …, чем». Если понятно, с чем сравниваем, часть с que можно опустить. Прилагательное согласуется с существительным: piso más caro, casa más cara.",
+    "mistake": {
+      "wrong": {
+        "es": "Mi piso es más caro tu piso."
+      },
+      "right": {
+        "es": "Mi piso es más caro **que** tu piso."
+      }
+    },
+    "practice": [
+      {
+        "es": "¿Tu piso es más caro?",
+        "ru": "Твоя квартира дороже?"
+      },
+      {
+        "es": "Sí, pero necesito una casa más barata.",
+        "ru": "Да, но мне нужен дом подешевле."
+      },
+      {
+        "es": "Quiero un piso más grande y más barato.",
+        "ru": "Я хочу квартиру побольше и подешевле."
+      },
+      {
+        "es": "Mi casa no es más grande que tu casa.",
+        "ru": "Мой дом не больше твоего дома."
+      }
+    ]
+  },
   "slides": [
     {
       "type": "title",

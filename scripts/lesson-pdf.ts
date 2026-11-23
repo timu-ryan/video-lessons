@@ -395,8 +395,20 @@ function renderOutcome(lesson: LessonSource): string {
   const final = lesson.slides.find((s) => s.type === 'final')
   if (!final || final.bullets.length === 0) return ''
   const bullets = final.bullets.map((b) => `<li>${escape(b)}</li>`).join('')
+  const nextText = lesson.kind === 'practice' ? final.nextText : final.nextText.replace(
+    /^Урок (\d+):/,
+    (label, value: string) => {
+      const number = Number(value)
+      for (const [level, range] of Object.entries(LEVEL_RANGES)) {
+        if (range && number >= range.first && number <= range.last) {
+          return `Урок ${number - range.first + 1}${level === 'A0' ? '' : ` (${level})`}:`
+        }
+      }
+      return label
+    },
+  )
   return `<section class="block"><h2>${escape(final.title)}</h2><ul class="outcome">${bullets}</ul>
-<p class="next"><b>${escape(final.nextTitle)}:</b> ${escape(final.nextText)}</p></section>`
+<p class="next"><b>${escape(final.nextTitle)}:</b> ${escape(nextText)}</p></section>`
 }
 
 /** Своё для полного конспекта; общее — BASE_STYLE в handout-common.ts. */
