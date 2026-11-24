@@ -1082,5 +1082,74 @@
         "«В следующем уроке научимся говорить, который час, и договариваться о времени. Добавим дни недели. ¡Hasta luego!»"
       ]
     }
-  ]
+  ],
+  "summary": {
+    "phrases": [
+      {
+        "es": "Tengo **treinta y cinco** años.",
+        "ru": "Мне тридцать пять лет.",
+        "ipa": "ˈtengo ˈtɾeinta i ˈθinko ˈaɲos"
+      },
+      {
+        "es": "Tengo **cien** euros.",
+        "ru": "У меня сто евро.",
+        "ipa": "ˈtengo ˈθjen ˈeuɾos"
+      },
+      {
+        "es": "Gano **ciento** veinte euros.",
+        "ru": "Я зарабатываю сто двадцать евро.",
+        "ipa": "ˈgano ˈθjento ˈbeinte ˈeuɾos"
+      },
+      {
+        "es": "Leo **doscientas** palabras.",
+        "ru": "Я читаю двести слов.",
+        "ipa": "ˈle.o dosˈθjentas paˈlabɾas"
+      },
+      {
+        "es": "Es el año **dos mil veintiséis**.",
+        "ru": "Это две тысячи двадцать шестой год.",
+        "ipa": "es el ˈaɲo ˈdos ˈmil beintiˈseis"
+      },
+      {
+        "es": "Las sillas **cuestan** cien euros.",
+        "ru": "Стулья стоят сто евро.",
+        "ipa": "las ˈsijas ˈkwestan ˈθjen ˈeuɾos"
+      },
+      {
+        "es": "Cuesta **mil** euros.",
+        "ru": "Стоит тысячу евро.",
+        "ipa": "ˈkwesta ˈmil ˈeuɾos"
+      }
+    ],
+    "rule": "В числах от 31 до 99 ставим **y** между десятками и единицами. Ровно 100 — **cien**, от 101 до 199 — **ciento** + остаток. О цене одного предмета говорим **cuesta**, о цене нескольких — **cuestan**.",
+    "mistake": {
+      "wrong": {
+        "es": "Tengo cien tres euros."
+      },
+      "right": {
+        "es": "Tengo **ciento tres** euros."
+      }
+    },
+    "practice": [
+      {
+        "ru": "У меня тридцать один вопрос.",
+        "es": "Tengo treinta y una preguntas."
+      },
+      {
+        "ru": "Мне нравится читать, но книга стоит сорок евро.",
+        "es": "Me gusta leer, pero el libro cuesta cuarenta euros."
+      },
+      {
+        "ru": "В нашей библиотеке семьсот книг.",
+        "es": "Hay setecientos libros en nuestra biblioteca.",
+        "alternatives": [
+          "En nuestra biblioteca hay setecientos libros."
+        ]
+      },
+      {
+        "ru": "Сколько стоят книги? — Сто один евро.",
+        "es": "¿Cuánto cuestan los libros? — Ciento un euros."
+      }
+    ]
+  }
 }
