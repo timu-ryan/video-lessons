@@ -28,7 +28,7 @@ export function TextView({
 }) {
   return (
     <SlideRoot>
-      <CompactHeader title={slide.title} section={slide.section} part={slide.part} />
+      <CompactHeader title={slide.title} part={slide.part} />
 
       <p
         style={{

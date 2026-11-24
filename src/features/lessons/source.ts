@@ -86,7 +86,7 @@ export interface SlideSourceBase {
   notes?: string[]
 }
 
-/** Титул: курс, урок и тема берутся из метаданных, оглавление — из разделов. */
+/** Титул: курс, урок и тема берутся из метаданных. */
 export interface TitleSlideSource extends SlideSourceBase {
   type: 'title'
   /**
@@ -94,7 +94,7 @@ export interface TitleSlideSource extends SlideSourceBase {
    * пробел дают ровно `title` урока. По умолчанию — `title` одной строкой.
    */
   topic?: string[]
-  /** Переопределение оглавления. По умолчанию — названия всех разделов урока. */
+  /** Дополнительные пункты под темой на титульном слайде. */
   agenda?: string[]
 }
 

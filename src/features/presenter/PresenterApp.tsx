@@ -68,8 +68,9 @@ export function PresenterApp({ lesson }: { lesson: Lesson }) {
     theme: () => pickTheme(nextTheme(state.theme)),
   })
 
-  const slide = lesson.slides[Math.min(state.slideIndex, lesson.slides.length - 1)]
-  const nextSlide = lesson.slides[state.slideIndex + 1]
+  const slideIndex = Math.min(state.slideIndex, lesson.slides.length - 1)
+  const slide = lesson.slides[slideIndex]
+  const nextSlide = lesson.slides[slideIndex + 1]
   const options = useMemo(
     () => ({
       transcription: state.transcription,
@@ -145,7 +146,7 @@ export function PresenterApp({ lesson }: { lesson: Lesson }) {
           <Caption>Сейчас — {slideLabel(slide)}</Caption>
           <Frame>
             <Stage fixedScale={THUMB_SCALE}>
-              <SlideView slide={slide} step={state.step} options={options} />
+              <SlideView lesson={lesson} slideIndex={slideIndex} step={state.step} options={options} />
             </Stage>
           </Frame>
         </div>
@@ -154,7 +155,7 @@ export function PresenterApp({ lesson }: { lesson: Lesson }) {
           <Frame>
             {nextSlide ? (
               <Stage fixedScale={THUMB_SCALE}>
-                <SlideView slide={nextSlide} step={0} options={options} />
+                <SlideView lesson={lesson} slideIndex={slideIndex + 1} step={0} options={options} />
               </Stage>
             ) : (
               <div

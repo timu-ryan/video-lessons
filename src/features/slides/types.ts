@@ -1,3 +1,5 @@
+import type { Level } from '../lessons/source'
+
 /**
  * Типы контента урока — то, что получают компоненты. Это НЕ форма JSON:
  * в файле урока нет ни нумерации, ни разбивки на части, ни названия раздела
@@ -24,11 +26,6 @@ export interface SlideBase {
   notes?: string[]
 }
 
-/** Раздел, в который попал слайд: «3 · Знакомство». Считается по порядку слайдов. */
-export interface SectionRef {
-  section?: string
-}
-
 /** Титульный слайд урока. Всё содержимое приходит из метаданных урока. */
 export interface TitleSlide extends SlideBase {
   type: 'title'
@@ -37,6 +34,7 @@ export interface TitleSlide extends SlideBase {
   level: string
   /** Тема по строкам: каждая — с новой строки, внутри — обычный перенос. */
   topic: string[]
+  /** Дополнительные пункты, заданные автором для титульного слайда. */
   agenda?: string[]
 }
 
@@ -50,7 +48,7 @@ export interface SectionSlide extends SlideBase {
 }
 
 /** Таблица фраз: строки открываются по одной. Не более 5 строк. */
-export interface TableSlide extends SlideBase, SectionRef {
+export interface TableSlide extends SlideBase {
   type: 'table'
   title: string
   /** [1, 2] → «1/2» в углу, когда раздел разрезан на несколько слайдов. */
@@ -61,7 +59,7 @@ export interface TableSlide extends SlideBase, SectionRef {
 }
 
 /** Правило: формула конструкции, пояснение, примеры по одному. */
-export interface RuleSlide extends SlideBase, SectionRef {
+export interface RuleSlide extends SlideBase {
   type: 'rule'
   title: string
   /** ["quiero", "+", "инфинитив"]: "+" — знак, остальное — плашки. */
@@ -78,7 +76,7 @@ export interface ConjugationRow extends Phrase {
 }
 
 /** Спряжение: до 6 строк, открываются по одной, окончания подсвечены. */
-export interface ConjugationSlide extends SlideBase, SectionRef {
+export interface ConjugationSlide extends SlideBase {
   type: 'conjugation'
   verb: string
   ru: string
@@ -98,7 +96,7 @@ export interface ConjugationCompareRow {
 }
 
 /** Спряжение двух глаголов рядом: до 6 строк, открываются по одной. */
-export interface ConjugationCompareSlide extends SlideBase, SectionRef {
+export interface ConjugationCompareSlide extends SlideBase {
   type: 'conjugationCompare'
   title: string
   verbs: { verb: string; ru: string }[]
@@ -120,7 +118,7 @@ export interface CompareSide {
 }
 
 /** Сравнение в две колонки; пункты — парами по строкам, строка за шаг. */
-export interface CompareSlide extends SlideBase, SectionRef {
+export interface CompareSlide extends SlideBase {
   type: 'compare'
   title: string
   left: CompareSide
@@ -152,7 +150,7 @@ export interface DialogueLine extends Phrase {
 }
 
 /** Диалог: реплики появляются построчно. */
-export interface DialogueSlide extends SlideBase, SectionRef {
+export interface DialogueSlide extends SlideBase {
   type: 'dialogue'
   title: string
   part?: [number, number]
@@ -160,7 +158,7 @@ export interface DialogueSlide extends SlideBase, SectionRef {
 }
 
 /** Связный текст: испанский абзацем, перевод абзацем под ним, по предложению на шаг. */
-export interface TextSlide extends SlideBase, SectionRef {
+export interface TextSlide extends SlideBase {
   type: 'text'
   title: string
   part?: [number, number]
@@ -206,10 +204,11 @@ export interface Lesson {
   number: number
   /** Только у практики: урок, после которого она стоит. */
   afterLesson?: number
-  level: string
+  level: Level
   /** Номер внутри уровня — как в плане курса. */
   planLesson: number
   title: string
   speakers: Record<string, Speaker>
   slides: Slide[]
+  sections: { title: string; slideIndex: number }[]
 }

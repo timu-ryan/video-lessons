@@ -24,7 +24,7 @@ export function RuleView({
 }) {
   return (
     <SlideRoot>
-      <CompactHeader title={slide.title} section={slide.section} />
+      <CompactHeader title={slide.title} />
 
       <div
         style={{

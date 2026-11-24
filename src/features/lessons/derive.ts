@@ -11,8 +11,8 @@ import type { LessonSource, SlideSource } from './source'
 
 /**
  * Достраивает урок до того, что ждут компоненты: нумерация практики,
- * «1/2» у разрезанных разделов, название раздела на каждом слайде, оглавление
- * на титуле, пауза практики, форма глагола в спряжении, цвета говорящих.
+ * «1/2» у разрезанных разделов, названия и позиции разделов, пауза практики,
+ * форма глагола в спряжении, цвета говорящих.
  *
  * Всё это в файле урока не хранится — иначе вставка одной фразы в середину
  * заставляла бы перенумеровывать весь файл вручную. Здесь — единственное место,
@@ -50,14 +50,13 @@ export function deriveLesson(source: LessonSource): Lesson {
 
   const pauseByGroup = new Map(source.practiceGroups.map((g) => [g.name, g.pauseMs]))
   const parts = computeParts(source.slides)
-  const agenda = source.slides.flatMap((s) => (s.type === 'section' ? [s.title] : []))
+  const sections: Lesson['sections'] = []
   const totals = {
     practice: count(source.slides, 'practice'),
   }
 
-  const seen = { section: 0, practice: 0 }
+  let practiceIndex = 0
   const perType = new Map<string, number>()
-  let section: string | undefined
 
   const slides = source.slides.map((raw, index): Slide => {
     const n = (perType.get(raw.type) ?? 0) + 1
@@ -73,13 +72,12 @@ export function deriveLesson(source: LessonSource): Lesson {
           lessonLabel: `${source.kind === 'practice' ? 'Практика' : 'Урок'} ${source.planLesson}`,
           level: source.level,
           topic: raw.topic ?? [source.title],
-          agenda: raw.agenda ?? (agenda.length > 0 ? agenda : undefined),
+          agenda: raw.agenda,
         }
 
       case 'section': {
-        seen.section += 1
-        const number = String(seen.section)
-        section = `${number} · ${raw.title}`
+        sections.push({ title: raw.title, slideIndex: index })
+        const number = String(sections.length)
         return { ...base, type: 'section', number, title: raw.title, hint: raw.hint }
       }
 
@@ -88,7 +86,6 @@ export function deriveLesson(source: LessonSource): Lesson {
           ...base,
           type: 'table',
           title: raw.title,
-          section,
           part: parts[index],
           headers: { ...source.tableHeaders, ...raw.headers },
           rows: raw.rows,
@@ -99,7 +96,6 @@ export function deriveLesson(source: LessonSource): Lesson {
           ...base,
           type: 'rule',
           title: raw.title,
-          section,
           pattern: raw.pattern,
           text: raw.text,
           examples: raw.examples,
@@ -111,7 +107,6 @@ export function deriveLesson(source: LessonSource): Lesson {
           type: 'conjugation',
           verb: raw.verb,
           ru: raw.ru,
-          section,
           rows: raw.rows.map((row) => ({ ...row, es: `${row.stem}${row.ending}` })),
         }
 
@@ -120,7 +115,6 @@ export function deriveLesson(source: LessonSource): Lesson {
           ...base,
           type: 'conjugationCompare',
           title: raw.title,
-          section,
           verbs: raw.verbs,
           rows: raw.rows,
         }
@@ -130,18 +124,17 @@ export function deriveLesson(source: LessonSource): Lesson {
           ...base,
           type: 'compare',
           title: raw.title,
-          section,
           left: raw.left,
           right: raw.right,
         }
 
       case 'practice': {
-        seen.practice += 1
+        practiceIndex += 1
         return {
           ...base,
           type: 'practice',
           group: raw.group,
-          index: seen.practice,
+          index: practiceIndex,
           total: totals.practice,
           phrase: raw.phrase,
           pauseMs: raw.pauseMs ?? pauseByGroup.get(raw.group) ?? autoPauseMs(raw.phrase.es),
@@ -153,7 +146,6 @@ export function deriveLesson(source: LessonSource): Lesson {
           ...base,
           type: 'dialogue',
           title: raw.title,
-          section,
           part: parts[index],
           lines: raw.lines,
         }
@@ -163,7 +155,6 @@ export function deriveLesson(source: LessonSource): Lesson {
           ...base,
           type: 'text',
           title: raw.title,
-          section,
           part: parts[index],
           sentences: raw.sentences,
         }
@@ -199,6 +190,7 @@ export function deriveLesson(source: LessonSource): Lesson {
     title: source.title,
     speakers,
     slides,
+    sections,
   }
 }
 

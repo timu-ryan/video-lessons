@@ -1,0 +1,108 @@
+.lesson-progress {
+  --progress-muted: color-mix(in srgb, var(--text-3) 78%, var(--text-2));
+  --progress-accent: color-mix(in srgb, var(--accent) 72%, var(--text-3));
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--progress-muted);
+}
+
+.lesson-progress-counter {
+  margin-top: 10px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.lesson-progress-levels {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.lesson-progress-levels li {
+  display: grid;
+  gap: 4px;
+}
+
+.lesson-progress-levels [aria-current='step'] {
+  color: var(--progress-accent);
+  font-weight: 750;
+}
+
+.lesson-progress-track {
+  height: 4px;
+  overflow: hidden;
+  background: var(--rule);
+  border-radius: 2px;
+}
+
+.lesson-progress-track > span {
+  display: block;
+  height: 100%;
+  background: color-mix(in srgb, var(--text-3) 60%, var(--rule));
+  border-radius: inherit;
+}
+
+.lesson-progress-levels [aria-current='step'] .lesson-progress-track {
+  background: color-mix(in srgb, var(--progress-accent) 45%, var(--rule));
+}
+
+.lesson-progress-levels [aria-current='step'] .lesson-progress-track > span {
+  background: var(--progress-accent);
+}
+
+.lesson-progress-sections {
+  position: relative;
+  min-height: 0;
+  margin: 16px 0 0;
+  padding: 0 0 4px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--progress-muted) transparent;
+  list-style: none;
+}
+
+.lesson-progress-sections li {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr);
+  align-items: start;
+  gap: 9px;
+  overflow-wrap: anywhere;
+}
+
+.lesson-progress-sections li + li {
+  margin-top: 5px;
+}
+
+.lesson-progress-marker {
+  justify-self: center;
+}
+
+.lesson-progress-sections [aria-current='step'] {
+  color: var(--text-2);
+}
+
+[aria-current='step'] > .lesson-progress-marker {
+  width: 3px;
+  height: 18px;
+  margin-top: 10px;
+  background: var(--progress-accent);
+  border-radius: 2px;
+}
+
+[data-done] > .lesson-progress-marker {
+  width: 8px;
+  height: 14px;
+  margin-top: 10px;
+  border: solid color-mix(in srgb, var(--progress-muted) 70%, var(--rule));
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

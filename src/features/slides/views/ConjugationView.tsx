@@ -24,7 +24,7 @@ export function ConjugationView({
 
   return (
     <SlideRoot>
-      <CompactHeader title={`${slide.verb} — ${slide.ru}`} section={slide.section} />
+      <CompactHeader title={`${slide.verb} — ${slide.ru}`} />
 
       <div
         style={{

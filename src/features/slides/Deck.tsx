@@ -13,7 +13,7 @@ import { toggleFullscreen, useHotkeys } from './useHotkeys'
 import { useDeckNav } from './useDeckNav'
 import { useIdleCursor } from './useIdleCursor'
 
-/** Основной экран — тот, что пишется в OBS. Никакого интерфейса в кадре. */
+/** Основной экран для записи в OBS. */
 export function Deck({ lesson }: { lesson: Lesson }) {
   const { settings, toggle, setTheme, cycleTheme } = useSettings()
   const nav = useDeckNav(lesson)
@@ -131,10 +131,7 @@ export function Deck({ lesson }: { lesson: Lesson }) {
 
   return (
     <Stage>
-      {/* key перезапускает анимации появления при смене слайда */}
-      <div key={slide.id} style={{ position: 'absolute', inset: 0 }} className="anim-fade">
-        <SlideView slide={slide} step={step} options={options} />
-      </div>
+      <SlideView lesson={lesson} slideIndex={nav.slideIndex} step={step} options={options} animate />
       {settings.progress ? <ProgressBar value={nav.progress} /> : null}
       {settings.safeZone ? <SafeZone /> : null}
     </Stage>

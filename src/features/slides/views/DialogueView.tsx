@@ -17,7 +17,7 @@ export function DialogueView({
 }) {
   return (
     <SlideRoot>
-      <CompactHeader title={slide.title} section={slide.section} part={slide.part} />
+      <CompactHeader title={slide.title} part={slide.part} />
 
       <div
         style={{

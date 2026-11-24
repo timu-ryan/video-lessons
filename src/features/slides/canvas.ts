@@ -27,5 +27,5 @@ export const PAD_TOP = 64
  */
 export const SAFE_COL_W = SAFE_X - PAD_X // 1272
 
-/** Ширина, доступная только выше камерной полосы (шапки, титулы). */
+/** Ширина для заголовков, которым нужна вся верхняя часть слайда. */
 export const FULL_COL_W = CANVAS_W - PAD_X * 2 // 1728

@@ -44,20 +44,16 @@ export function Eyebrow({ left, right }: { left?: string; right?: string }) {
 
 /**
  * Компактная шапка для слайдов с построчным контентом: название слева,
- * раздел и «1/2» справа. Экономит ~120px высоты по сравнению с крупным
+ * номер части справа. Экономит ~120px высоты по сравнению с крупным
  * заголовком — эта высота нужна строкам таблицы.
  */
 export function CompactHeader({
   title,
-  section,
   part,
 }: {
   title: string
-  section?: string
   part?: [number, number]
 }) {
-  const right = [section, part ? `${part[0]}/${part[1]}` : undefined].filter(Boolean).join(' · ')
-
   return (
     <>
       <div
@@ -77,18 +73,16 @@ export function CompactHeader({
         >
           {title}
         </h1>
-        {right ? (
+        {part ? (
           <div
             style={{
               fontSize: FS.meta,
               fontWeight: 700,
-              letterSpacing: '0.12em',
-              textTransform: 'uppercase',
               color: 'var(--text-3)',
               whiteSpace: 'nowrap',
             }}
           >
-            {right}
+            {part[0]}/{part[1]}
           </div>
         ) : null}
       </div>

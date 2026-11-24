@@ -71,8 +71,8 @@ export function HomeScreen() {
 }
 
 function LessonCard({ lesson }: { lesson: Lesson }) {
-  const title = titleOf(lesson)
-  const sections = lesson.slides.flatMap((slide) => (slide.type === 'section' ? [slide.title] : []))
+  const titleIndex = lesson.slides.findIndex((slide) => slide.type === 'title')
+  const { sections } = lesson
   const options = { transcription: true, translation: true, speakers: lesson.speakers }
 
   return (
@@ -106,9 +106,9 @@ function LessonCard({ lesson }: { lesson: Lesson }) {
             border: '1px solid var(--rule)',
           }}
         >
-          {title ? (
+          {titleIndex >= 0 ? (
             <Stage fixedScale={THUMB_SCALE}>
-              <SlideView slide={title} step={0} options={options} />
+              <SlideView lesson={lesson} slideIndex={titleIndex} step={0} options={options} />
             </Stage>
           ) : null}
         </div>
@@ -148,9 +148,9 @@ function LessonCard({ lesson }: { lesson: Lesson }) {
 
           {sections.length > 0 ? (
             <div style={{ marginTop: 14, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-              {sections.map((section, index) => (
+              {sections.map((section) => (
                 <span
-                  key={`${index}-${section}`}
+                  key={section.slideIndex}
                   style={{
                     fontSize: 13,
                     fontWeight: 600,
@@ -161,7 +161,7 @@ function LessonCard({ lesson }: { lesson: Lesson }) {
                     padding: '5px 12px',
                   }}
                 >
-                  {section}
+                  {section.title}
                 </span>
               ))}
             </div>
