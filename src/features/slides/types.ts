@@ -9,6 +9,8 @@ import type { Level } from '../lessons/source'
  * Компоненты знают только эти типы, но не сам урок.
  */
 
+import type { SummarySource } from '../lessons/source'
+
 /** Испанская единица: строка таблицы, задание практики, реплика диалога. */
 export interface Phrase {
   /** Испанский — переносится из сценария дословно. Может содержать **выделение**. */
@@ -208,6 +210,7 @@ export interface Lesson {
   /** Номер внутри уровня — как в плане курса. */
   planLesson: number
   title: string
+  summary?: SummarySource
   speakers: Record<string, Speaker>
   slides: Slide[]
   sections: { title: string; slideIndex: number }[]

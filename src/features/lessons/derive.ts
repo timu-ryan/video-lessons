@@ -188,6 +188,7 @@ export function deriveLesson(source: LessonSource): Lesson {
     level: source.level,
     planLesson: source.planLesson,
     title: source.title,
+    summary: source.summary,
     speakers,
     slides,
     sections,

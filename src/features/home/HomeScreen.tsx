@@ -2,7 +2,7 @@ import { lessonList } from '../lessons/registry'
 import { useSettings } from '../settings/useSettings'
 import { SlideView } from '../slides/SlideView'
 import { Stage } from '../slides/Stage'
-import { deckHash, presenterHash } from '../slides/route'
+import { deckHash, instagramHash, presenterHash } from '../slides/route'
 import type { Lesson, TitleSlide } from '../slides/types'
 
 /** Миниатюра титульного слайда: 1920×1080 → 384×216. */
@@ -52,6 +52,20 @@ export function HomeScreen() {
             {lessonList.length} {plural(lessonList.length, 'урок', 'урока', 'уроков')} в папке
             lessons/
           </p>
+          <a
+            href={instagramHash()}
+            style={{
+              display: 'inline-block',
+              marginTop: 18,
+              padding: '8px 14px',
+              borderRadius: 8,
+              background: 'var(--accent)',
+              color: 'var(--on-badge)',
+              fontWeight: 700,
+            }}
+          >
+            Карусели для Instagram
+          </a>
         </header>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
@@ -194,6 +208,20 @@ function LessonCard({ lesson }: { lesson: Lesson }) {
         >
           Окно докладчика
         </button>
+        {lesson.summary && (
+          <a
+            href={instagramHash(lesson.id)}
+            style={{
+              padding: '7px 13px',
+              fontSize: 13,
+              fontWeight: 700,
+              border: '1px solid var(--rule)',
+              borderRadius: 8,
+            }}
+          >
+            Карусель для Instagram
+          </a>
+        )}
       </div>
     </article>
   )
